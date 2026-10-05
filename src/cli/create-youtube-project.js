@@ -37,6 +37,10 @@ async function main() {
     title,
     topic,
     visualStyleId: visual.styleId ?? 'UNSET',
+    uploadMetadata: {
+      ...(meta.uploadMetadata ?? {}),
+      title
+    },
     createdAt: now,
     updatedAt: now
   });
