@@ -21,16 +21,15 @@ Vor Start müssen alle Bildnummern von Bild 01 bis Bild NN feststehen.
 ### 2. Drei Cover-Kandidaten
 
 Für Bild 01 genau drei temporäre Kandidaten erzeugen:
-
 - `TEMP_COVER_A.png`
 - `TEMP_COVER_B.png`
 - `TEMP_COVER_C.png`
 
 Keine weiteren Covervarianten.
 
-### 3. Einen Gewinner wählen
+### 3. Google Flow wählt den Gewinner
 
-Der Agent entscheidet automatisch anhand von:
+Google Flow entscheidet selbstständig anhand von:
 - Klarheit
 - Neugier
 - Lesbarkeit
@@ -38,14 +37,16 @@ Der Agent entscheidet automatisch anhand von:
 - fehlerfreier Darstellung
 - sachlicher/historischer Plausibilität
 
+Der Nutzer wählt nicht manuell.
+
 Danach:
 - Gewinner → `Bild 01.png`
 - zwei Verlierer löschen
 - keine Kopien der Verlierer behalten
 
-`Bild 01.png` wird anschließend als einzige Bildreferenz für alle weiteren Bilder verwendet.
+Wichtig: `Bild 01.png` wird danach **nicht** als Referenzbild für weitere Bilder verwendet.
 
-### 4. Restbilder in 5er-Blöcken
+### 4. Restbilder in 5er-Blöcken — ohne Bildreferenz
 
 Ohne Nutzer-Rückfrage weiterarbeiten.
 
@@ -64,8 +65,9 @@ Regeln:
 - maximal 5 aktive Generationen
 - jedes Bild nur einmal
 - keine A/B-Varianten für Nicht-Cover-Bilder
-- ausschließlich Bild 01 als Referenz
-- vorherige Szenenbilder niemals als Referenz
+- **keine Bildreferenz verwenden**
+- weder Bild 01 noch andere Cover oder vorherige Szenen als Vorlage benutzen
+- Stil ausschließlich über `config/visual-policy.json` und den vollständigen individuellen Textprompt halten
 - sofort korrekt benennen
 - nach jedem Block automatisch weiter
 
@@ -99,13 +101,16 @@ Nicht erlaubt:
 - zusätzliche Thumbnails
 - Zwischenstände
 
-## Referenzbild-Regel
+## Konsistenzregel ohne Referenzbild
 
-Nur `Bild 01.png` dient als visuelle Referenz.
+Die visuelle Konsistenz kommt ausschließlich aus:
+1. `config/visual-policy.json`
+2. dem vollständigen Prompt des jeweiligen Bildes
+3. den festen Kanalregeln für Linien, Farben, Figuren, Text und Informationsdesign
 
-Es stabilisiert Stil und Figurenwelt, aber nicht die Komposition.
+Kein bereits generiertes Bild wird als Stilvorlage verwendet.
 
-Neue Bilder müssen weiterhin individuell zum gesprochenen Inhalt geplant sein.
+Das ist absichtlich so, weil ein Cover auf Klickstärke optimiert ist und Karten, Diagramme, Multi-Panels oder andere Erklärformen sonst unnötig einengen kann.
 
 ## Kein Stoppen zwischen Blöcken
 
@@ -123,10 +128,11 @@ Ansonsten läuft die Produktion bis Bild NN und anschließend durch das Cleanup.
 
 Fertig bedeutet:
 - drei Cover wurden erzeugt
-- ein Gewinner gewählt
+- Google Flow hat selbst einen Gewinner gewählt
 - zwei Verlierer gelöscht
 - Gewinner heißt `Bild 01.png`
-- Gewinner war einzige Referenz
+- Bild 01 wurde nicht als Referenzbild weiterverwendet
+- für Bild 02–NN wurde überhaupt keine Bildreferenz benutzt
 - Bild 02–NN wurden in maximal 5er-Blöcken erzeugt
 - keine Bildnummer fehlt
 - keine temporären Dateien bleiben übrig
