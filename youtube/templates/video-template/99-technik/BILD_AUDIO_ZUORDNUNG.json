@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "voiceoverMaster": "01-voice-script/voice-script.txt",
+  "coverImageNumber": 1,
+  "videoFirstImageNumber": 1,
+  "videoLastImageNumber": null,
+  "sourceVoiceoverFile": null,
+  "audioMasterFile": null,
+  "alignmentEvidenceFile": null,
+  "images": [
+    {
+      "imageNumber": 1,
+      "imageFile": "Bild 01.png",
+      "startAnchor": "[EXAKTER STARTANKER AUS DEM SKRIPT]",
+      "endAnchor": null,
+      "visualPurpose": "",
+      "topicAnchor": "",
+      "visualForm": "",
+      "plannedHoldSeconds": null,
+      "actualStartSeconds": null,
+      "actualEndSeconds": null,
+      "alignmentConfidence": null
+    }
+  ]
+}

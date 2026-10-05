@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "phase1": "PENDING",
+  "phase2": "PENDING",
+  "phase3": "BLOCKED-WAITING-PHASE2",
+  "imagesReady": false,
+  "audioReady": false,
+  "renderReady": false
+}

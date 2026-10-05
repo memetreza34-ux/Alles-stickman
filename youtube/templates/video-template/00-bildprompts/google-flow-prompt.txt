@@ -1,0 +1,95 @@
+VISUAL_POLICY_FILE: config/visual-policy.json
+ACTIVE_STYLE_ID: UNSET
+
+GOOGLE FLOW MASTER PROMPT — [VIDEO-TITEL]
+
+IMPORTANT
+- This repository intentionally contains NO inherited visual world.
+- Before generating real assets, define the new visual world in `config/visual-policy.json` and replace `ACTIVE_STYLE_ID: UNSET` with the new style ID.
+- Do not copy visual rules, characters, palettes, prompts, topics or examples from any other repository.
+
+GOAL
+Generate only Bild 01 through Bild NN for this project.
+NN is content-driven and must come from Phase 1 planning.
+
+COVER RULE
+- Bild 01 is the cover AND the first video scene.
+- Generate Bild 01 exactly THREE times as temporary cover candidates.
+- Select exactly ONE winner and rename it `Bild 01.png`.
+- Discard the other two candidates.
+- Do not create Bild 00.
+- Do not create a separate thumbnail image.
+
+NON-COVER RULE
+- Generate Bild 02 through Bild NN exactly ONCE each.
+- No automatic alternate versions.
+- Maximum five active generations at once.
+- Rename each accepted image exactly once to `Bild NN.png`.
+
+FINAL FOLDER
+All final images must be flat in:
+`00-bildprompts/images/`
+
+Only `Bild 01.png` through `Bild NN.png` may remain there.
+
+VISUAL PLANNING RULE
+For every image, choose the clearest form for the current spoken idea and concrete topic.
+Do not force a specific actor type, composition, complexity level or illustration form unless the NEW visual policy explicitly requires it.
+
+Simple is allowed when simple is clearest.
+Complex is allowed when complexity genuinely improves understanding.
+
+Each image block must contain:
+- Audio Anchor
+- Visual Purpose
+- Topic Anchor
+- Visual Form
+- Planned Hold
+- Prompt
+
+IMAGE DENSITY
+- No fixed target image count.
+- One image = one clear visual purpose.
+- Split when a new core idea, cause/effect step, era, place, actor, route, example or independent visual explanation begins.
+- Target average hold: about 4.5–7.5 seconds.
+- Review above 9 seconds.
+- Prefer a meaningful split above 11 seconds.
+- Hard maximum: 16 seconds.
+- No filler images.
+
+VISIBLE TEXT
+For a German project, all readable text in generated images must be German unless the project metadata explicitly says otherwise.
+Avoid pseudo-text.
+
+BILDPLAN
+
+Bild 01 · [A–E] · [PLANZEIT]
+Audio Anchor: [EXACT SCRIPT ANCHOR]
+Visual Purpose: [ONE CLEAR PURPOSE]
+Topic Anchor: [CONCRETE TOPIC-SPECIFIC ELEMENT]
+Visual Form: [BEST FORM FOR THIS IDEA]
+Planned Hold: [SECONDS]
+Prompt: [COMPLETE IMAGE PROMPT USING ONLY THE NEW VISUAL POLICY]
+
+Bild 02 · [A–E] · [PLANZEIT]
+Audio Anchor: [EXACT SCRIPT ANCHOR]
+Visual Purpose: [ONE CLEAR PURPOSE]
+Topic Anchor: [CONCRETE TOPIC-SPECIFIC ELEMENT]
+Visual Form: [BEST FORM FOR THIS IDEA]
+Planned Hold: [SECONDS]
+Prompt: [COMPLETE IMAGE PROMPT USING ONLY THE NEW VISUAL POLICY]
+
+[CONTINUE THROUGH BILD NN]
+
+FINAL CHECK
+- new repository visual policy loaded
+- no inherited visual-world traces
+- Bild 01 = cover + first scene
+- exactly 3 cover candidates, 1 winner
+- Bild 02–NN exactly once each
+- no Bild 00
+- no reference-image inheritance unless the NEW visual policy explicitly introduces it
+- image count follows content density
+- each image has one clear visual purpose
+- every image matches both the spoken sentence and the concrete video topic
+- all final images are in one flat folder
