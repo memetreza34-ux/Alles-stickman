@@ -65,7 +65,6 @@ Regel:
 Nicht jede Szene braucht Menschen. Nicht jedes Bild muss eine klassische Szene sein.
 
 Erlaubt und erwünscht sind unter anderem:
-
 - Stickman-Handlungsszene
 - reine Objekt-/Fundstück-Erklärung
 - Nahaufnahme eines wichtigen Gegenstands
@@ -140,9 +139,11 @@ Diagramme, Karten, Zeitleisten und Infografiken müssen **nicht wie Fremdkörper
 Bild 01 ist:
 - Cover
 - erste Videoszene
-- einzige Bildreferenz für alle weiteren Bilder
+- **keine Referenzvorlage für spätere Bilder**
 
 Pro Video werden exakt drei Cover-Kandidaten erzeugt.
+
+**Google Flow wählt selbstständig den Gewinner. Der Nutzer wählt nicht manuell.**
 
 Ein starkes Cover hat:
 - eine Hauptidee
@@ -159,30 +160,27 @@ Wenn Text genutzt wird:
 - kein Pseudotext
 - keine exakte Typografie eines Referenzkanals kopieren
 
-## Referenzregel
+Nach der automatischen Auswahl:
+- Gewinner → `Bild 01.png`
+- zwei Verlierer löschen
+- keine Kopien der Verlierer behalten
 
-Nach Auswahl des Cover-Gewinners gilt:
+## Keine Bildreferenzen für Folgebilder
 
-`Bild 01.png` = einzige visuelle Bildreferenz für `Bild 02.png` bis `Bild NN.png`.
+Für `Bild 02.png` bis `Bild NN.png` wird **kein bereits erzeugtes Bild als Referenzvorlage** verwendet.
 
-Die Referenz stabilisiert:
-- Linienführung
-- Gesichtslogik
-- Figurenwelt
-- Farbgefühl
-- allgemeine Illustrationssprache
+Also ausdrücklich nicht:
+- `Bild 01.png`
+- andere Cover-Kandidaten
+- vorherige Szenenbilder
+- fremde Referenzbilder
 
-Sie darf **nicht** mechanisch kopiert werden bei:
-- Pose
-- Kamera
-- Hintergrund
-- Figurenposition
-- Komposition
-- Visual Form
+Die Konsistenz entsteht ausschließlich aus:
+1. `config/visual-policy.json`
+2. dem vollständigen individuellen Textprompt jedes Bildes
+3. den festen Regeln für Linien, Farben, Figuren, Text und Informationsdesign
 
-Das heißt: Bild 02 darf eine Karte sein, Bild 03 ein Multi-Panel, Bild 04 eine Handlungsszene und Bild 05 ein Diagramm – trotzdem müssen alle wie dieselbe Marke aussehen.
-
-Frühere Szenenbilder dürfen nicht als zusätzliche Referenz benutzt werden.
+Warum: Ein Cover ist auf Klickstärke optimiert. Würde man es als Referenzvorlage für Karten, Diagramme, Multi-Panels oder Objektgrafiken nutzen, kann es die visuelle Freiheit unnötig einschränken oder immer wieder ähnliche Kompositionen erzeugen.
 
 ## Historische Plausibilität
 
@@ -220,10 +218,11 @@ Bei historischen Themen:
 - unnötige Menschenmengen
 - unplausible moderne Gegenstände in historischen Szenen
 - fremde Logos oder Wasserzeichen
+- Verwendung eines bereits generierten Bildes als Referenzvorlage für ein neues Szenenbild
 
 ## Produktionsregel
 
-Nach dem Cover werden alle übrigen Bilder in maximal 5er-Blöcken erzeugt. Jedes Nicht-Cover-Bild wird genau einmal erzeugt, außer bei technischem Fehlschlag oder eindeutig unbrauchbarem Output.
+Nach dem automatisch gewählten Cover werden alle übrigen Bilder in maximal 5er-Blöcken erzeugt. Jedes Nicht-Cover-Bild wird genau einmal erzeugt, außer bei technischem Fehlschlag oder eindeutig unbrauchbarem Output.
 
 Am Ende liegen alle finalen Bilder gemeinsam und flach in:
 
