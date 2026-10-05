@@ -8,7 +8,9 @@ Style-ID: `alles-stickman-editorial-v1`
 
 Alles Stickman bekommt eine eigene, wiedererkennbare 2D-Erklärwelt. Die Referenzkanäle zeigen nur das Formatprinzip. Figuren, Linien, Farben, Cover und Kompositionen werden nicht kopiert.
 
-Die Bildwelt soll für Evolution, Steinzeit, Antike, Alltag, Erfindungen, Ressourcen, Karten und einfache Infografiken funktionieren.
+Die Bildwelt soll für Evolution, Steinzeit, Antike, Alltag, Erfindungen, Ressourcen, Karten, Diagramme, Infografiken und alle anderen sinnvollen Erklärformen funktionieren.
+
+Wichtig: **Konsistenz bedeutet gleiche Welt und gleiche Designlogik – nicht gleiche Bildart.** Ein Video darf visuell stark wechseln, solange Linien, Farben, Figurenlogik, Textbehandlung und Illustrationssprache zusammengehören.
 
 ## Figuren
 
@@ -48,7 +50,7 @@ Grundpalette:
 Regel:
 - wenige dominante Farben je Szene
 - natürliche, eher gedämpfte Grundpalette
-- kräftige Akzente nur für Blickführung, Gefahr, Feuer oder Hauptobjekte
+- kräftige Akzente nur für Blickführung, Gefahr, Feuer, wichtige Objekte oder wichtige Datenpunkte
 
 ## Hintergründe
 
@@ -58,22 +60,80 @@ Regel:
 - historische Architektur, Werkzeuge, Vegetation und Requisiten soweit möglich plausibel
 - Vordergrund, Mittelgrund und Hintergrund dürfen klar getrennt sein
 
-## Visual Forms
+## Visual Forms — ausdrücklich frei wählbar
 
-Nicht jede Szene braucht Menschen.
+Nicht jede Szene braucht Menschen. Nicht jedes Bild muss eine klassische Szene sein.
 
-Erlaubt und erwünscht:
+Erlaubt und erwünscht sind unter anderem:
+
 - Stickman-Handlungsszene
-- Objekt-/Fundstück-Erklärung
+- reine Objekt-/Fundstück-Erklärung
+- Nahaufnahme eines wichtigen Gegenstands
 - Vorher-Nachher-Vergleich
 - Ursache-Wirkung
-- Karte mit Route
+- Karte mit Route oder Ausbreitung
 - Zeitleiste
 - Schritt-für-Schritt-Prozess
-- Diagramm/Zahlenvergleich
+- Balken-, Linien- oder Mengenvergleich
+- einfache Statistik-/Zahlenvisualisierung
+- Infografik mit kurzen Labels
 - Querschnitt
+- Explosionsdarstellung / Bestandteile
 - Split-Screen
+- 2er- oder 3er-Multi-Panel
+- Hauptbild mit kleinen erklärenden Nebenfeldern
+- mehrere kleine Szenen in einem Bild, wenn sie gemeinsam einen Ablauf erklären
+- einfache Tabelle oder Matrix
+- großer Text-/Zahlenfokus mit unterstützender Illustration
+- Symbol-/Icon-Erklärung im Alles-Stickman-Stil
 - Umgebung ohne Menschen
+- reine Sachillustration ohne Figur
+
+Die Visual Form wird **pro Aussage neu gewählt**. Es gibt keine Pflicht, ständig Stickman-Figuren zu zeigen.
+
+## Mehrere Bilder / Panels in einem Frame
+
+Ein einzelnes 16:9-Bild darf mehrere Teilbilder enthalten, wenn dadurch die Erklärung besser wird.
+
+Gute Beispiele:
+- links „vorher“, rechts „nachher“
+- links Ursache, rechts Wirkung
+- drei Schritte eines Prozesses
+- drei verschiedene Epochen
+- Hauptszene plus zwei kleine Detailfelder
+- Karte plus kleines Objekt-/Figurenfeld
+
+Regeln:
+- klare Leserichtung
+- nicht zu viele kleine Panels
+- alle Panels bleiben in derselben Alles-Stickman-Welt
+- Panels müssen inhaltlich zusammengehören
+- keine zufällige Collage
+- Text, Pfeile oder Nummern dürfen die Leserichtung unterstützen
+
+## Text, Informationen und Diagramme
+
+Text ist erlaubt und kann bewusst Teil eines Bildes sein.
+
+Erlaubt:
+- kurze deutsche Überschriften
+- kurze Labels
+- Jahreszahlen
+- Namen
+- wichtige Zahlen
+- Pfeile
+- 1–3 sehr kurze Infozeilen, wenn nötig
+- Kartenbeschriftungen
+- Diagrammachsen/-werte, wenn sie gut lesbar bleiben
+
+Nicht erwünscht:
+- lange Absätze
+- Textwände
+- Pseudotext
+- kleine unlesbare Beschriftungen
+- überladene Dashboard-Optik
+
+Diagramme, Karten, Zeitleisten und Infografiken müssen **nicht wie Fremdkörper** aussehen. Sie verwenden dieselbe Palette, dieselbe Linienlogik, ähnliche Formen und denselben handgezeichneten Editorial-Charakter wie die übrigen Szenen.
 
 ## Cover / Bild 01
 
@@ -112,12 +172,15 @@ Die Referenz stabilisiert:
 - Farbgefühl
 - allgemeine Illustrationssprache
 
-Sie darf nicht mechanisch kopiert werden bei:
+Sie darf **nicht** mechanisch kopiert werden bei:
 - Pose
 - Kamera
 - Hintergrund
 - Figurenposition
 - Komposition
+- Visual Form
+
+Das heißt: Bild 02 darf eine Karte sein, Bild 03 ein Multi-Panel, Bild 04 eine Handlungsszene und Bild 05 ein Diagramm – trotzdem müssen alle wie dieselbe Marke aussehen.
 
 Frühere Szenenbilder dürfen nicht als zusätzliche Referenz benutzt werden.
 
@@ -135,6 +198,8 @@ Bei historischen Themen:
 - keine Fantasieschrift
 - keine langen Absätze
 - kurze Labels erlaubt
+- Zahlen und Jahreszahlen erlaubt
+- kurze Überschriften erlaubt
 - Karten und Diagramme dürfen kurze Beschriftungen enthalten
 
 ## Verboten
@@ -145,6 +210,9 @@ Bei historischen Themen:
 - Anime/Manga-Look
 - generische glänzende KI-3D-Optik
 - Pseudotext
+- lange Textwände statt visueller Erklärung
+- überladene Dashboard-Infografiken
+- zufällige Collagen ohne klare Leserichtung
 - deformierte Hände
 - zusätzliche Gliedmaßen
 - überladene Hintergründe ohne Erklärwert
