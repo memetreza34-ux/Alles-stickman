@@ -26,6 +26,12 @@ export async function validatePhase1(projectDirectory) {
   if (!visual.styleId || visual.styleId === 'UNSET') errors.push('visual-policy.styleId ist UNSET.');
   if (meta.visualStyleId !== visual.styleId) errors.push('video.json.visualStyleId entspricht nicht der aktiven neuen Bildwelt.');
   if (!meta.title || !meta.topic || !meta.topicSlug) errors.push('Titel, Thema oder Slug fehlen in video.json.');
+
+  const uploadMetadata = meta.uploadMetadata ?? {};
+  if (!String(uploadMetadata.title ?? '').trim()) errors.push('YouTube-Uploadtitel fehlt in video.json.uploadMetadata.title.');
+  if (!String(uploadMetadata.description ?? '').trim()) errors.push('YouTube-Beschreibung fehlt in video.json.uploadMetadata.description.');
+  if (!Array.isArray(uploadMetadata.tags)) errors.push('video.json.uploadMetadata.tags muss ein Array sein.');
+
   if (!Number.isInteger(meta.plannedImageCount) || meta.plannedImageCount < 1) errors.push('plannedImageCount muss in Phase 1 auf eine inhaltsgetriebene Bildzahl gesetzt werden.');
   if (!Number.isFinite(Number(meta.targetDurationSeconds)) || Number(meta.targetDurationSeconds) <= 0) errors.push('targetDurationSeconds fehlt.');
   if (meta.imageDensityPolicy?.fixedImageCountForbidden !== true) errors.push('Adaptive Bilddichte muss aktiv sein.');
