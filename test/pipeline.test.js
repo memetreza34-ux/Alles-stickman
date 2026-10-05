@@ -15,6 +15,13 @@ test('Repo besitzt die aktive Alles-Stickman-Bildwelt und leeren Themenbestand',
   assert.equal(visual.styleId, 'alles-stickman-editorial-v1');
   assert.equal(visual.referenceConsistency.coverWinnerIsSoleReference, true);
   assert.equal(visual.referenceConsistency.usePreviousGeneratedSceneAsReference, false);
+  assert.equal(visual.multiPanelPolicy.allowed, true);
+  assert.equal(visual.informationDesign.sameWorldRequired, true);
+  assert.equal(visual.textPolicy.labelsAllowed, true);
+  assert.equal(visual.textPolicy.numbersAllowed, true);
+  assert.ok(visual.visualForms.includes('Diagramm oder Zahlenvergleich'));
+  assert.ok(visual.visualForms.includes('2er- oder 3er-Multi-Panel'));
+  assert.ok(visual.visualForms.includes('Text-/Zahlenfokus mit unterstützender Illustration'));
   assert.deepEqual(registry.entries, []);
 });
 
@@ -39,7 +46,7 @@ test('Pipeline behält die verbindlichen Produktions- und Coverregeln', async ()
   assert.equal(policy.endHoldPolicy.targetSeconds, 1.3);
 });
 
-test('Projekt-Template enthält den Alles-Stickman-Flow-Ablauf und Upload-Metadaten', async () => {
+test('Projekt-Template enthält den Alles-Stickman-Flow-Ablauf, flexible Visual Forms und Upload-Metadaten', async () => {
   const meta = JSON.parse(await readFile('youtube/templates/video-template/99-technik/video.json', 'utf8'));
   const prompt = await readFile('youtube/templates/video-template/00-bildprompts/google-flow-prompt.txt', 'utf8');
   assert.equal(meta.visualStyleId, 'UNSET');
@@ -53,6 +60,10 @@ test('Projekt-Template enthält den Alles-Stickman-Flow-Ablauf und Upload-Metada
   assert.match(prompt, /5ER-BLÖCKEN/i);
   assert.match(prompt, /Keine feste Zielbildzahl/i);
   assert.match(prompt, /Bild 01\.png.*Bild NN\.png/is);
+  assert.match(prompt, /2er- oder 3er-Multi-Panel/i);
+  assert.match(prompt, /Diagramm/i);
+  assert.match(prompt, /Text ist ebenfalls erlaubt/i);
+  assert.match(prompt, /GLEICHE WELT/i);
 });
 
 test('YouTube-Export baut gültige SRT- und Zeitstempeldateien', () => {
