@@ -1,8 +1,8 @@
 {
-  "visualPolicyVersion": 3,
+  "visualPolicyVersion": 4,
   "status": "READY",
   "styleId": "alles-stickman-editorial-v1",
-  "description": "Eigenständige 2D-Stickman-Erklärwelt für den deutschsprachigen Kanal Alles Stickman: handgezeichnet wirkend, klar, ausdrucksstark, historisch lesbar und für lange Erklärvideos konsistent. Die Bildwelt ist formatflexibel: Handlungsszenen, Mehrfach-Panels, Karten, Diagramme, Prozesse, Text-/Infoelemente und andere Erklärformen dürfen frei kombiniert werden, solange dieselbe visuelle Sprache erhalten bleibt.",
+  "description": "Eigenständige 2D-Stickman-Erklärwelt für Alles Stickman. Die Konsistenz entsteht ausschließlich aus dieser Visual Policy und den vollständigen individuellen Textprompts; für Folgebilder werden bewusst keine Bildreferenzen verwendet.",
   "visibleTextLanguage": "de",
   "principles": [
     "Ein Bild erklärt genau eine klare Aussage, Handlung oder zusammengehörige Informationseinheit.",
@@ -108,13 +108,15 @@
     "composition": "1 Hauptidee, typischerweise 1–3 große Figuren oder 1 große Figur plus 1 Hauptobjekt; Hintergrund stark vereinfacht.",
     "text": "Wenn Text sinnvoll ist: maximal 2–4 kurze deutsche Wörter, groß, sauber geschrieben und mit sehr hohem Kontrast. Kein Pseudotext.",
     "textStyle": "warme helle Schrift oder gedämpfter Amber-Akzent mit dunkler Kontur; nicht die exakte Typografie oder Farbformel eines Referenzkanals kopieren.",
-    "winnerRule": "Von genau drei Kandidaten wird genau ein Gewinner automatisch ausgewählt. Nur der Gewinner wird Bild 01.png und danach als einzige visuelle Referenz für alle weiteren Bilder verwendet."
+    "winnerRule": "Google Flow bewertet die genau drei Kandidaten selbstständig und wählt genau einen Gewinner. Der Nutzer wählt nicht manuell. Der Gewinner wird Bild 01.png; die zwei Verlierer werden gelöscht. Der Gewinner wird NICHT als Referenzbild für Folgebilder verwendet."
   },
   "referenceConsistency": {
-    "coverWinnerIsSoleReference": true,
+    "useImageReferences": false,
+    "coverWinnerIsSoleReference": false,
     "useOtherCoverCandidatesAsReference": false,
     "usePreviousGeneratedSceneAsReference": false,
-    "referencePurpose": "Der Cover-Gewinner dient nur zur Konsistenz von Linienführung, Gesichtslogik, Farbgefühl und allgemeiner Figurenwelt. Pose, Kamera, Hintergrund, Layout und Visual Form dürfen nicht mechanisch kopiert werden.",
+    "consistencySource": "Nur config/visual-policy.json und der vollständige individuelle Textprompt des jeweiligen Bildes.",
+    "reason": "Eine Cover-Komposition ist auf Klickstärke optimiert und kann Karten, Diagramme, Multi-Panels und andere Erklärformen unnötig einengen. Deshalb wird die gemeinsame Bildwelt ohne Referenzbild über feste Stilregeln reproduziert.",
     "styleDriftForbidden": true
   },
   "textPolicy": {
@@ -134,9 +136,9 @@
     "Die beste Visual Form wird pro Bild nach Erklärwert gewählt; es gibt keine Pflicht, eine Stickman-Figur zu zeigen.",
     "Mehrere Teilbilder in einem Frame sind erlaubt, wenn sie gemeinsam eine klare Aussage erklären.",
     "Text, Zahlen, Diagramme, Karten, Pfeile, Labels und Infografiken sind erlaubt, solange sie korrekt, lesbar und im selben visuellen Schema gestaltet sind.",
+    "Für Bild 02 bis Bild NN wird kein Bild als Referenzvorlage verwendet, auch nicht Bild 01.",
+    "Konsistenz wird ausschließlich über die aktive Visual Policy und den vollständigen Prompt jedes Bildes gesteuert.",
     "Keine Füllbilder und keine austauschbaren Standardposen ohne Informationswert.",
-    "Gesichter, Kleidung und Requisiten müssen zwischen Szenen konsistent bleiben, wenn dieselbe Figur oder Epoche wiederkehrt.",
-    "Cover-Gewinner ist die einzige Bildreferenz für Bild 02 bis Bild NN.",
     "Bild 02 bis Bild NN jeweils nur einmal erzeugen; keine A/B-Varianten außer bei technischem Fehlschlag oder klar unbrauchbarem Output.",
     "Nach Abschluss dürfen im finalen Bilderordner ausschließlich Bild 01.png bis Bild NN.png liegen."
   ],
@@ -156,12 +158,14 @@
     "unnötige Menschenmengen",
     "moderne Gegenstände in historischen Szenen ohne inhaltlichen Grund",
     "historisch unplausible Uniformen, Werkzeuge oder Architektur, wenn sie vermeidbar sind",
-    "Wasserzeichen, Logos fremder Kanäle oder Markenzeichen aus Referenzbildern"
+    "Wasserzeichen, Logos fremder Kanäle oder Markenzeichen aus Referenzbildern",
+    "Verwendung eines zuvor generierten Bildes als visuelle Referenz für ein neues Szenenbild"
   ],
   "notes": [
     "Die Referenzkanäle dienen nur zur Analyse des Formats. Diese Bildwelt ist eine eigene Kanalidentität.",
     "Bei Unsicherheit über historische Details lieber vereinfachen als etwas Spezifisches zu erfinden.",
-    "Für ein neues Video wird der in Phase 1 ausgewählte Cover-Gewinner zur einzigen visuellen Referenz des gesamten Bildsatzes.",
+    "Google Flow wählt den Cover-Gewinner selbstständig; der Nutzer muss keinen Kandidaten auswählen.",
+    "Der Cover-Gewinner dient nur als finales Bild 01 und Thumbnail, nicht als Referenzvorlage.",
     "Konsistenz bedeutet gleiche Welt und gleiche Designlogik, nicht gleiche Bildart. Ein Video darf zwischen Szene, Karte, Diagramm, Multi-Panel, Objektbild, Prozess und Text-/Zahlenbild wechseln."
   ]
 }
