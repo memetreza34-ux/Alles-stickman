@@ -12,3 +12,6 @@ public/__render/
 **/99-technik/RENDER_PLAN.json
 **/03-export/*.mp4
 **/03-export/THUMBNAIL.png
+**/03-export/YOUTUBE_UPLOAD.txt
+**/03-export/SUBTITLES.srt
+**/03-export/TIMED_SCRIPT.txt
