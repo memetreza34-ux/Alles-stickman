@@ -14,6 +14,11 @@
   "targetDurationSeconds": null,
   "targetDurationRangeSeconds": null,
   "plannedImageCount": null,
+  "uploadMetadata": {
+    "title": "",
+    "description": "",
+    "tags": []
+  },
   "coverPolicy": {
     "firstSceneIsCover": true,
     "coverImageNumber": 1,
