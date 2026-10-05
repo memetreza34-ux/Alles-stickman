@@ -1,5 +1,5 @@
 {
-  "pipelineVersion": 2,
+  "pipelineVersion": 3,
   "projectSchemaVersion": 1,
   "languageDefault": "de",
   "aspectRatio": "16:9",
@@ -13,7 +13,7 @@
     "coverImageNumber": 1,
     "coverCandidateCount": 3,
     "autoSelectWinner": true,
-    "winnerBecomesSoleReference": true,
+    "winnerBecomesSoleReference": false,
     "deleteLosingCandidates": true,
     "temporaryCandidateNames": [
       "TEMP_COVER_A.png",
@@ -33,8 +33,10 @@
     "generationBatchSize": 5,
     "maxConcurrentGenerations": 5,
     "nonCoverGenerationCount": 1,
-    "useOnlyCoverWinnerAsReference": true,
+    "useImageReferences": false,
+    "useOnlyCoverWinnerAsReference": false,
     "usePreviousSceneAsReference": false,
+    "consistencySource": "config/visual-policy.json + vollständiger individueller Textprompt pro Bild",
     "finalImageDirectory": "00-bildprompts/images",
     "finalFolderMustBeFlat": true,
     "finalFolderOnlyNumberedImages": true,
