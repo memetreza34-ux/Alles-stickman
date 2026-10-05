@@ -5,6 +5,7 @@ import path from 'node:path';
 import test from 'node:test';
 
 import { evaluateTopic } from '../src/cli/check-youtube-topic.js';
+import { buildSrtFromWhisper, buildTimedScriptFromWhisper, buildUploadText, formatSrtTimestamp } from '../src/cli/finalize-youtube-export.js';
 import { normalizeText, similarity } from '../src/lib/pipeline.js';
 
 test('Repo besitzt die aktive Alles-Stickman-Bildwelt und leeren Themenbestand', async () => {
@@ -38,12 +39,13 @@ test('Pipeline behält die verbindlichen Produktions- und Coverregeln', async ()
   assert.equal(policy.endHoldPolicy.targetSeconds, 1.3);
 });
 
-test('Projekt-Template enthält den Alles-Stickman-Flow-Ablauf', async () => {
+test('Projekt-Template enthält den Alles-Stickman-Flow-Ablauf und Upload-Metadaten', async () => {
   const meta = JSON.parse(await readFile('youtube/templates/video-template/99-technik/video.json', 'utf8'));
   const prompt = await readFile('youtube/templates/video-template/00-bildprompts/google-flow-prompt.txt', 'utf8');
   assert.equal(meta.visualStyleId, 'UNSET');
   assert.equal(meta.topic, '');
   assert.equal(meta.title, '');
+  assert.deepEqual(meta.uploadMetadata, { title: '', description: '', tags: [] });
   assert.match(prompt, /ACTIVE_STYLE_ID: UNSET/);
   assert.match(prompt, /ALLES STICKMAN/i);
   assert.match(prompt, /GENAU 3 COVER/i);
@@ -51,6 +53,28 @@ test('Projekt-Template enthält den Alles-Stickman-Flow-Ablauf', async () => {
   assert.match(prompt, /5ER-BLÖCKEN/i);
   assert.match(prompt, /Keine feste Zielbildzahl/i);
   assert.match(prompt, /Bild 01\.png.*Bild NN\.png/is);
+});
+
+test('YouTube-Export baut gültige SRT- und Zeitstempeldateien', () => {
+  const whisper = {
+    segments: [
+      { start: 0, end: 4.25, text: 'Hallo und willkommen.' },
+      { start: 4.25, end: 10.1, text: 'Heute erklären wir das Thema.' }
+    ]
+  };
+  assert.equal(formatSrtTimestamp(4.25), '00:00:04,250');
+  const srt = buildSrtFromWhisper(whisper);
+  assert.match(srt, /1\n00:00:00,000 --> 00:00:04,250\nHallo und willkommen\./);
+  assert.match(srt, /2\n00:00:04,250 --> 00:00:10,100\nHeute erklären wir das Thema\./);
+  const timed = buildTimedScriptFromWhisper(whisper);
+  assert.match(timed, /\[00:00 - 00:04\] Hallo und willkommen\./);
+  assert.match(timed, /\[00:04 - 00:10\] Heute erklären wir das Thema\./);
+  const upload = buildUploadText({ title: 'Testtitel', description: 'Testbeschreibung', tags: ['Menschheit', 'Geschichte'] });
+  assert.match(upload, /TITEL\nTesttitel/);
+  assert.match(upload, /BESCHREIBUNG\nTestbeschreibung/);
+  assert.match(upload, /TAGS\nMenschheit, Geschichte/);
+  assert.match(upload, /SUBTITLES\.srt/);
+  assert.match(upload, /TIMED_SCRIPT\.txt/);
 });
 
 test('Textnormalisierung und Ähnlichkeit funktionieren', () => {
