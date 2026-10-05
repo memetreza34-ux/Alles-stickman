@@ -26,11 +26,25 @@ export async function validatePhase3(projectDirectory, { postRender = false } = 
   if (postRender) {
     const video = path.join(p.exportDir, 'FINAL_VIDEO.mp4');
     const thumbnail = path.join(p.exportDir, 'THUMBNAIL.png');
+    const upload = path.join(p.exportDir, 'YOUTUBE_UPLOAD.txt');
+    const subtitles = path.join(p.exportDir, 'SUBTITLES.srt');
+    const timedScript = path.join(p.exportDir, 'TIMED_SCRIPT.txt');
     const cover = path.join(p.imagesDir, 'Bild 01.png');
+
     if (!(await exists(video))) errors.push('FINAL_VIDEO.mp4 fehlt.');
     else if ((await fileSize(video)) < 100_000) errors.push('FINAL_VIDEO.mp4 ist verdächtig klein.');
+
     if (!(await exists(thumbnail))) errors.push('THUMBNAIL.png fehlt.');
     if (await exists(thumbnail) && await exists(cover) && (await sha256(thumbnail)) !== (await sha256(cover))) errors.push('THUMBNAIL.png ist nicht byte-identisch zu Bild 01.png.');
+
+    for (const [file, label] of [
+      [upload, 'YOUTUBE_UPLOAD.txt'],
+      [subtitles, 'SUBTITLES.srt'],
+      [timedScript, 'TIMED_SCRIPT.txt']
+    ]) {
+      if (!(await exists(file))) errors.push(`${label} fehlt im Exportordner.`);
+      else if ((await fileSize(file)) < 20) errors.push(`${label} ist verdächtig leer.`);
+    }
   }
 
   return { passed: errors.length === 0, errors };
