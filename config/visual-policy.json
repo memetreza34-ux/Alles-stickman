@@ -1,16 +1,18 @@
 {
-  "visualPolicyVersion": 2,
+  "visualPolicyVersion": 3,
   "status": "READY",
   "styleId": "alles-stickman-editorial-v1",
-  "description": "Eigenständige 2D-Stickman-Erklärwelt für den deutschsprachigen Kanal Alles Stickman: handgezeichnet wirkend, klar, ausdrucksstark, historisch lesbar und für lange Erklärvideos konsistent.",
+  "description": "Eigenständige 2D-Stickman-Erklärwelt für den deutschsprachigen Kanal Alles Stickman: handgezeichnet wirkend, klar, ausdrucksstark, historisch lesbar und für lange Erklärvideos konsistent. Die Bildwelt ist formatflexibel: Handlungsszenen, Mehrfach-Panels, Karten, Diagramme, Prozesse, Text-/Infoelemente und andere Erklärformen dürfen frei kombiniert werden, solange dieselbe visuelle Sprache erhalten bleibt.",
   "visibleTextLanguage": "de",
   "principles": [
-    "Ein Bild erklärt genau eine klare Aussage oder Handlung.",
+    "Ein Bild erklärt genau eine klare Aussage, Handlung oder zusammengehörige Informationseinheit.",
     "Die Szene muss auch ohne Voice-over in wenigen Sekunden verständlich sein.",
     "Figuren sind einfach, aber nicht generisch: klare Silhouette, starke Mimik, passende Haare, Kleidung und Requisiten.",
     "Historische Umgebung und Gegenstände müssen zur erzählten Epoche passen, soweit es die Quellenlage erlaubt.",
-    "Nicht jede Szene braucht Menschen: Karten, Objekte, Vergleiche, Prozesse, Zeitleisten und einfache Infografiken sind ausdrücklich erwünscht.",
-    "Der Stil bleibt über alle Videos erkennbar gleich, während Komposition, Epoche, Ort und Handlung variieren dürfen."
+    "Nicht jede Szene braucht Menschen: Karten, Objekte, Vergleiche, Prozesse, Zeitleisten, Diagramme, Text-/Infoelemente und reine Erklärgrafiken sind ausdrücklich erwünscht.",
+    "Ein einzelnes 16:9-Bild darf aus mehreren sinnvoll getrennten Teilbildern/Panels bestehen, wenn Vergleich, Ablauf oder Erklärung dadurch klarer wird.",
+    "Die konkrete Visual Form richtet sich nach dem Inhalt und darf von Bild zu Bild stark wechseln.",
+    "Der Stil bleibt über alle Videos erkennbar gleich, während Komposition, Epoche, Ort, Handlung und Erklärform frei variieren dürfen."
   ],
   "characterStyle": {
     "body": "Reduzierter Stickman-/Cartoon-Körper mit schlanken Gliedmaßen und einfacher klarer Torsoform; keine realistische Anatomie.",
@@ -36,26 +38,67 @@
     "sage": "#7B8A65",
     "mutedBlue": "#6B8FA3",
     "nightNavy": "#2B3948",
-    "rule": "Gedämpfte natürliche Grundpalette. Pro Szene wenige dominante Farben. Kräftigere Akzente nur für Blickführung, Gefahr, Feuer, wichtige Objekte oder Cover-Fokus."
+    "rule": "Gedämpfte natürliche Grundpalette. Pro Szene wenige dominante Farben. Kräftigere Akzente nur für Blickführung, Gefahr, Feuer, wichtige Objekte, Datenpunkte oder Cover-Fokus."
   },
   "backgroundStyle": {
     "detailLevel": "reduziert bis mittel",
-    "rule": "Hintergrund muss Ort, Epoche und Situation sofort erkennbar machen, darf aber Hauptfigur oder Hauptobjekt nicht überladen.",
+    "rule": "Hintergrund muss Ort, Epoche und Situation sofort erkennbar machen, darf aber Hauptfigur, Hauptobjekt oder Informationshierarchie nicht überladen.",
     "depth": "Vordergrund, Mittelgrund und Hintergrund dürfen klar getrennt sein; keine fotorealistische Tiefenunschärfe nötig.",
     "historicalAccuracy": "Architektur, Vegetation, Werkzeuge und Alltagsobjekte nach Möglichkeit quellenbasiert und zeitlich plausibel darstellen."
+  },
+  "informationDesign": {
+    "sameWorldRequired": true,
+    "rule": "Alle Erklärgrafiken müssen wie Bestandteile derselben Alles-Stickman-Welt aussehen: gleiche Linienlogik, Farbpalette, Formen, Textbehandlung und Illustrationssprache.",
+    "labels": "Kurze deutsche Labels, Zahlen, Jahreszahlen, Namen, Pfeile und einfache Überschriften sind erlaubt, wenn sie echten Erklärwert haben.",
+    "charts": "Balken, Linien, Kreise, Mengenvergleiche oder vereinfachte statistische Diagramme dürfen genutzt werden; klare Hierarchie statt Dashboard-Optik.",
+    "maps": "Vereinfachte Karten mit klaren Flächen, Routen, Pfeilen, Regionen und kurzen deutschen Labels; keine fotorealistischen Satellitenkarten.",
+    "timelines": "Einfache horizontale oder vertikale Zeitachsen mit wenigen klaren Stationen, Jahreszahlen und passenden Illustrationen.",
+    "processes": "Schrittfolgen dürfen mit Pfeilen, Nummern, Mini-Szenen oder Objektzuständen erklärt werden.",
+    "cutaways": "Querschnitte, Explosionsdarstellungen und vereinfachte Innenansichten sind erlaubt, wenn sie den Aufbau besser erklären.",
+    "numbers": "Wichtige Zahlen dürfen groß und visuell dominant erscheinen; sie müssen korrekt und gut lesbar sein.",
+    "textBlocks": "Keine langen Fließtexte. Kurze Informationszeilen oder 1–3 kompakte Stichpunkte sind nur erlaubt, wenn ein Bild ohne sie deutlich schlechter verständlich wäre."
+  },
+  "multiPanelPolicy": {
+    "allowed": true,
+    "purpose": "Mehrere Teilbilder in einem 16:9-Frame sind erlaubt, wenn sie einen Vergleich, Ablauf, Ursache-Wirkung, mehrere Perspektiven oder zusammengehörige Fakten besser erklären.",
+    "preferredLayouts": [
+      "2er-Split links/rechts",
+      "2er-Split oben/unten",
+      "3er-Sequenz",
+      "Vorher/Nachher",
+      "Ursache → Wirkung",
+      "Hauptbild plus kleine erklärende Nebenfelder"
+    ],
+    "rules": [
+      "Panels müssen klar getrennt und sofort lesbar sein.",
+      "Alle Panels verwenden dieselbe Alles-Stickman-Illustrationssprache.",
+      "Keine beliebige Collage ohne inhaltlichen Zusammenhang.",
+      "Nicht zu viele kleine Panels; Lesbarkeit auf YouTube hat Vorrang.",
+      "Text, Pfeile und Nummern dürfen Panels verbinden, wenn sie die Leserichtung verbessern."
+    ]
   },
   "visualForms": [
     "Stickman-Handlungsszene",
     "Objekt-/Fundstück-Erklärung",
+    "Detail-/Nahaufnahme eines wichtigen Objekts",
     "Vorher-Nachher-Vergleich",
     "Ursache-Wirkung-Szene",
     "Karte mit Route oder Ausbreitung",
     "Zeitleiste",
     "Schritt-für-Schritt-Prozess",
-    "einfaches Diagramm oder Zahlenvergleich",
+    "Diagramm oder Zahlenvergleich",
+    "Infografik mit kurzen Labels",
     "Querschnitt oder Aufbau",
+    "Explosionsdarstellung / Bestandteile",
     "Split-Screen-Vergleich",
-    "Umgebungsszene ohne Menschen"
+    "2er- oder 3er-Multi-Panel",
+    "Hauptbild mit kleinen erklärenden Nebenfeldern",
+    "Mini-Sequenz mehrerer Schritte in einem Frame",
+    "Tabelle oder Matrix in stark vereinfachter illustrativer Form",
+    "Text-/Zahlenfokus mit unterstützender Illustration",
+    "Symbol-/Icon-Erklärung im Alles-Stickman-Stil",
+    "Umgebungsszene ohne Menschen",
+    "reine Objekt- oder Sachillustration ohne Figur"
   ],
   "coverStyle": {
     "imageNumber": 1,
@@ -71,7 +114,7 @@
     "coverWinnerIsSoleReference": true,
     "useOtherCoverCandidatesAsReference": false,
     "usePreviousGeneratedSceneAsReference": false,
-    "referencePurpose": "Der Cover-Gewinner dient nur zur Konsistenz von Linienführung, Gesichtslogik, Farbgefühl und allgemeiner Figurenwelt. Pose, Kamera, Hintergrund und Bildaufbau dürfen nicht mechanisch kopiert werden.",
+    "referencePurpose": "Der Cover-Gewinner dient nur zur Konsistenz von Linienführung, Gesichtslogik, Farbgefühl und allgemeiner Figurenwelt. Pose, Kamera, Hintergrund, Layout und Visual Form dürfen nicht mechanisch kopiert werden.",
     "styleDriftForbidden": true
   },
   "textPolicy": {
@@ -79,12 +122,18 @@
     "pseudoTextForbidden": true,
     "longParagraphsInImageForbidden": true,
     "labelsAllowed": true,
+    "numbersAllowed": true,
+    "shortHeadlinesAllowed": true,
+    "shortInfoLinesAllowed": true,
     "mapsAndDiagramsMayUseShortLabels": true,
-    "rule": "Text nur einsetzen, wenn er die Erklärung klar verbessert."
+    "rule": "Text ist ein normales Erklärwerkzeug, aber kein Selbstzweck. Kurze Labels, Zahlen, Jahreszahlen, Überschriften und sehr kompakte Infozeilen sind erlaubt, wenn sie das Verständnis verbessern."
   },
   "rules": [
     "16:9-Komposition für 1920x1080.",
     "Szenen müssen mit der gesprochenen Aussage und dem konkreten Thema übereinstimmen.",
+    "Die beste Visual Form wird pro Bild nach Erklärwert gewählt; es gibt keine Pflicht, eine Stickman-Figur zu zeigen.",
+    "Mehrere Teilbilder in einem Frame sind erlaubt, wenn sie gemeinsam eine klare Aussage erklären.",
+    "Text, Zahlen, Diagramme, Karten, Pfeile, Labels und Infografiken sind erlaubt, solange sie korrekt, lesbar und im selben visuellen Schema gestaltet sind.",
     "Keine Füllbilder und keine austauschbaren Standardposen ohne Informationswert.",
     "Gesichter, Kleidung und Requisiten müssen zwischen Szenen konsistent bleiben, wenn dieselbe Figur oder Epoche wiederkehrt.",
     "Cover-Gewinner ist die einzige Bildreferenz für Bild 02 bis Bild NN.",
@@ -98,6 +147,9 @@
     "Anime-/Manga-Look",
     "glänzende generische KI-3D-Optik",
     "Pseudo-Schrift oder unlesbare Buchstaben",
+    "lange Textwände statt visueller Erklärung",
+    "überladene Dashboard-Infografiken mit zu vielen kleinen Informationen",
+    "zufällige Collagen ohne klare Leserichtung oder Zusammenhang",
     "deformierte Hände, zusätzliche Gliedmaßen oder anatomische KI-Fehler",
     "überladene Hintergründe ohne Erklärwert",
     "identische Pose und identische Bildkomposition über viele Szenen",
@@ -109,6 +161,7 @@
   "notes": [
     "Die Referenzkanäle dienen nur zur Analyse des Formats. Diese Bildwelt ist eine eigene Kanalidentität.",
     "Bei Unsicherheit über historische Details lieber vereinfachen als etwas Spezifisches zu erfinden.",
-    "Für ein neues Video wird der in Phase 1 ausgewählte Cover-Gewinner zur einzigen visuellen Referenz des gesamten Bildsatzes."
+    "Für ein neues Video wird der in Phase 1 ausgewählte Cover-Gewinner zur einzigen visuellen Referenz des gesamten Bildsatzes.",
+    "Konsistenz bedeutet gleiche Welt und gleiche Designlogik, nicht gleiche Bildart. Ein Video darf zwischen Szene, Karte, Diagramm, Multi-Panel, Objektbild, Prozess und Text-/Zahlenbild wechseln."
   ]
 }
