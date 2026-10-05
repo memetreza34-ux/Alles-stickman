@@ -22,6 +22,7 @@ Thema
 → Pacing-QC
 → Remotion-Render
 → Export-QC
+→ fertiges YouTube-Uploadpaket
 ```
 
 ## 0. Einmalige Einrichtung
@@ -80,7 +81,7 @@ youtube/<week>/<slug>/
     └── status.json
 ```
 
-## 3. Phase 1 — Recherche, Skript und Bildplan
+## 3. Phase 1 — Recherche, Skript, Bildplan und Upload-Metadaten
 
 Phase 1 muss vollständig festlegen:
 - Kernfrage
@@ -96,6 +97,19 @@ Phase 1 muss vollständig festlegen:
 - Planned Hold
 - vollständige Bildprompts
 - Render-/SFX-Plan
+- finalen YouTube-Titel
+- finale YouTube-Beschreibung
+- optionale YouTube-Tags
+
+Die Upload-Daten stehen in `99-technik/video.json`:
+
+```json
+"uploadMetadata": {
+  "title": "...",
+  "description": "...",
+  "tags": ["...", "..."]
+}
+```
 
 Bildplan-Regeln:
 - keine starre Bildzahl
@@ -111,6 +125,8 @@ Vor Asset-Erzeugung:
 ```bash
 npm run validate:youtube-phase1 -- --dir "youtube/<week>/<slug>"
 ```
+
+Der Phase-1-Check blockiert jetzt auch fehlenden Upload-Titel oder fehlende Beschreibung.
 
 ## 4. Google Flow — verbindlicher 5-Phasen-Ablauf
 
@@ -244,7 +260,7 @@ Prüfung:
 npm run validate:youtube-phase2 -- --dir "youtube/<week>/<slug>"
 ```
 
-## 8. Phase 3 — Audio, Alignment, Timeline und Render
+## 8. Phase 3 — Audio, Alignment, Timeline, Render und Export
 
 ```bash
 npm run phase3:youtube -- --dir "youtube/<week>/<slug>"
@@ -262,13 +278,68 @@ Reihenfolge:
 9. Pre-Render-QC
 10. Remotion rendern
 11. Thumbnail aus Bild 01 kopieren
-12. Post-Render-QC
+12. YouTube-Metadaten-Datei erzeugen
+13. SRT-Untertitel aus den echten Whisper-Zeitstempeln erzeugen
+14. lesbares Skript mit Zeitbereichen erzeugen
+15. Post-Render-QC für das gesamte Exportpaket
 
 Nur vorbereiten:
 
 ```bash
 npm run phase3:youtube -- --dir "youtube/<week>/<slug>" --prepare-only
 ```
+
+## 9. Finaler Exportordner
+
+Nach erfolgreicher Phase 3 enthält `03-export/` genau die Dateien, die für den Upload benötigt werden:
+
+```text
+03-export/
+├── FINAL_VIDEO.mp4
+├── THUMBNAIL.png
+├── YOUTUBE_UPLOAD.txt
+├── SUBTITLES.srt
+└── TIMED_SCRIPT.txt
+```
+
+### `FINAL_VIDEO.mp4`
+Das fertig gerenderte YouTube-Video.
+
+### `THUMBNAIL.png`
+Das finale Cover aus `Bild 01.png`.
+
+### `YOUTUBE_UPLOAD.txt`
+Enthält fertig zum Kopieren:
+- YouTube-Titel
+- YouTube-Beschreibung
+- Tags
+- Hinweise auf Video, Thumbnail und Untertiteldatei
+
+### `SUBTITLES.srt`
+Standard-Untertiteldatei mit exakten Zeitstempeln aus dem tatsächlich gesprochenen und optimierten Audio. Diese Datei kann direkt in YouTube Studio als Untertiteldatei hochgeladen werden.
+
+Beispiel:
+
+```text
+1
+00:00:00,000 --> 00:00:04,250
+Hallo und willkommen.
+
+2
+00:00:04,250 --> 00:00:10,100
+Heute erklären wir das Thema.
+```
+
+### `TIMED_SCRIPT.txt`
+Lesbare Version zum schnellen Kopieren, Prüfen oder manuellen Einfügen:
+
+```text
+[00:00 - 00:04] Hallo und willkommen.
+
+[00:04 - 00:10] Heute erklären wir das Thema.
+```
+
+Die Zeitstempel stammen aus Whisper und damit aus dem final verwendeten Audio, nicht aus bloßen Schätzungen des Skripts.
 
 ## Audio-Standard
 
@@ -289,6 +360,7 @@ Nach dem letzten gesprochenen Wort bleibt das letzte Bild standardmäßig 1,3 s 
 Ein Video ist erst fertig, wenn:
 - Thema geprüft ist
 - Recherche/Skript/Bildplan fertig sind
+- YouTube-Titel und Beschreibung fertig sind
 - aktive Bildwelt `READY` ist
 - genau 3 Cover-Kandidaten erzeugt wurden
 - genau 1 Cover-Gewinner als `Bild 01.png` übrig bleibt
@@ -302,6 +374,9 @@ Ein Video ist erst fertig, wenn:
 - echte Wortzeiten vorliegen
 - Timeline keine Lücken/Überlappungen hat
 - Pacing bestanden ist
-- Render existiert
-- Thumbnail aus Bild 01 erzeugt wurde
+- `FINAL_VIDEO.mp4` existiert
+- `THUMBNAIL.png` existiert
+- `YOUTUBE_UPLOAD.txt` existiert
+- `SUBTITLES.srt` existiert
+- `TIMED_SCRIPT.txt` existiert
 - Post-Render-QC bestanden ist
