@@ -8,11 +8,11 @@ Du produzierst selbstständig alle Bilder für dieses Testvideo. Halte dich an d
 
 VERBINDLICHER ABLAUF
 1. Erzeuge für Bild 01 GENAU 3 COVER-Kandidaten.
-2. Wähle selbst genau 1 Gewinner.
+2. GOOGLE FLOW wählt selbstständig genau 1 Gewinner. Der Nutzer wählt nicht manuell.
 3. Benenne den Gewinner `Bild 01.png`.
 4. Lösche die 2 Verlierer vollständig.
-5. `Bild 01.png` ist danach die EINZIGE visuelle Referenz für Bild 02 bis Bild 18.
-6. Nutze keine vorherigen Szenenbilder als Referenz.
+5. WICHTIG: Verwende danach KEINE Bildreferenz für Bild 02 bis Bild 18. Weder Bild 01 noch ein anderes Cover noch ein vorheriges Szenenbild darf als Referenz/Vorlage dienen.
+6. Die Konsistenz entsteht ausschließlich über `config/visual-policy.json` und den vollständigen individuellen Textprompt jedes Bildes.
 7. Erzeuge Bild 02 bis Bild 18 in maximalen 5ER-BLÖCKEN: 02–06, 07–11, 12–16, 17–18.
 8. Jedes Nicht-Cover-Bild genau einmal erzeugen; nur einen eindeutig kaputten technischen Output derselben Bildnummer neu erzeugen.
 9. Am Ende darf `00-bildprompts/images/` nur `Bild 01.png` bis `Bild 18.png` enthalten.
@@ -25,10 +25,11 @@ GLEICHE WELT
 - warme Elfenbein-Gesichter, einfache starke Mimik.
 - gedämpfte Naturfarben: Sand, Ocker, Rost, Salbei, gedecktes Blau.
 - flache Farbflächen, wenig Schattierung, kein 3D/Pixar, kein Fotorealismus, kein Anime.
-- Text ist ebenfalls erlaubt, aber nur kurz, korrekt deutsch und wenn er Erklärwert hat.
+- Text ist erlaubt, aber nur kurz, korrekt deutsch und wenn er Erklärwert hat.
 - Karten, Diagramme, Pfeile, Labels, 2er- oder 3er-Multi-Panel und Objektbilder sind ausdrücklich erlaubt.
 - Historische Requisiten plausibel halten, keine modernen Gegenstände ohne Grund.
 - Keine überladenen Collagen, kein Pseudotext, keine Wasserzeichen.
+- Gleiche Welt bedeutet gleiche Designlogik, NICHT gleiche Komposition. Es wird bewusst kein Referenzbild benutzt.
 
 BILDPLAN
 
@@ -44,124 +45,127 @@ Audio Anchor: Das Entscheidende war nicht eine geheime Technik
 Visual Purpose: Die drei Voraussetzungen für die Entzündung einfach verständlich machen.
 Topic Anchor: Hitze, Zunder, Luft
 Visual Form: Infografik / 3er-Informationslayout
-Prompt: 16:9 Alles-Stickman Infografik in drei großen klaren Bereichen mit den Labels `HITZE`, `ZUNDER`, `LUFT`. Hitze als Funke/Glut, Zunder als trockenes Grasnest, Luft als sanfte Pfeile. Keine Person nötig. Gleiche Linien, Palette und handgezeichnete Formensprache wie Bild 01. Sehr klar, nicht dashboardartig.
+Prompt: 16:9 Alles-Stickman Infografik in drei großen klaren Bereichen mit den Labels `HITZE`, `ZUNDER`, `LUFT`. Hitze als Funke/Glut, Zunder als trockenes Grasnest, Luft als sanfte Pfeile. Keine Person nötig. Dunkle leicht unregelmäßige Anthrazit-Konturen, warme gedämpfte Naturpalette, flache Farbflächen, handgezeichneter Editorial-Look. Sehr klar, nicht dashboardartig.
 
 Bild 03 · 5,5 s
 Audio Anchor: Eine der ältesten bekannten Methoden nutzte Funken
 Visual Purpose: Feuerstein und Pyrit als Funkenerzeuger erklären.
 Topic Anchor: Feuerstein und Eisenpyrit
 Visual Form: Objekt-/Fundstück-Erklärung
-Prompt: 16:9 Objekt-Erklärung im Alles-Stickman-Stil. Zwei große Objekte auf neutralem sandfarbenem Grund: links kantiger Feuerstein mit Label `FEUERSTEIN`, rechts metallisch-dunkler Pyrit mit Label `PYRIT`. Dazwischen ein kleiner Funken-Pfeil. Handgezeichnete Konturen, keine Fototexturen.
+Prompt: 16:9 Objekt-Erklärung im Alles-Stickman-Stil. Zwei große Objekte auf neutralem sandfarbenem Grund: links kantiger Feuerstein mit Label `FEUERSTEIN`, rechts metallisch-dunkler Pyrit mit Label `PYRIT`. Dazwischen ein kleiner Funken-Pfeil. Dunkle handgezeichnete Anthrazit-Konturen, gedämpfte Sand-/Ocker-/Rostfarben, flache Farbflächen, keine Fototexturen.
 
 Bild 04 · 6 s
 Audio Anchor: Dabei schlägt man den Feuerstein nicht einfach
 Visual Purpose: Klarstellen, dass nicht Feuerstein gegen Feuerstein die entscheidende Kombination ist.
 Topic Anchor: Feuerstein trifft Pyrit statt Feuerstein
 Visual Form: Stickman-Handlungsszene
-Prompt: 16:9 Handlungsszene. Derselbe prähistorische Stickman hält Feuerstein und Pyrit deutlich sichtbar. Kleine Nebenmarkierung: zwei Feuersteine mit rotem X; daneben Feuerstein + Pyrit mit grünem Haken. Hauptszene groß, Nebeninfo klein. Alles in derselben Bildwelt.
+Prompt: 16:9 Alles-Stickman Handlungsszene. Prähistorischer Stickman mit warmem Elfenbein-Kopf, dunklen leicht unregelmäßigen Konturen und vereinfachter Fellkleidung hält Feuerstein und Pyrit deutlich sichtbar. Kleine Nebenmarkierung: zwei Feuersteine mit rotem X; daneben Feuerstein + Pyrit mit grünem Haken. Hauptszene groß, Nebeninfo klein. Gedämpfte Naturfarben, flache Schattierung.
 
 Bild 05 · 6 s
 Audio Anchor: Er trifft auf Pyrit
 Visual Purpose: Zeigen, wie heiße Partikel den Zunder erreichen.
 Topic Anchor: Funken/heiße Partikel auf Zunder
 Visual Form: Detail-/Nahaufnahme eines wichtigen Objekts
-Prompt: 16:9 extreme illustrative Nahaufnahme: Feuerstein trifft Pyrit, wenige helle orange Funken fliegen direkt auf trockenes Zundermaterial. Keine Person nötig. Dunkler ruhiger Hintergrund für maximale Lesbarkeit, gleiche handgezeichnete Kontur und Palette.
+Prompt: 16:9 Alles-Stickman Nahaufnahme: Feuerstein trifft Pyrit, wenige helle orange Funken fliegen direkt auf trockenes Zundermaterial. Keine Person nötig. Dunkler ruhiger Hintergrund für maximale Lesbarkeit, handgezeichnete Anthrazit-Konturen, gedämpfte Palette mit orangefarbenem Fokusakzent.
 
 Bild 06 · 5 s
 Audio Anchor: Dieser Zunder konnte aus sehr trockenem Pflanzenmaterial
 Visual Purpose: Geeignete Zundermaterialien anschaulich machen.
 Topic Anchor: trockenes Gras, Rinde, Zunderpilz/Pilzmaterial
 Visual Form: Objekt-/Sachillustration mit kurzen Labels
-Prompt: 16:9 drei große Objektgruppen im selben Stil: trockenes Gras `GRAS`, trockene Rinde `RINDE`, geeignetes trockenes Pilzmaterial `PILZ`. Keine langen Texte. Sauber getrennt, warme Naturfarben.
+Prompt: 16:9 drei große Objektgruppen im Alles-Stickman-Editorial-Stil: trockenes Gras `GRAS`, trockene Rinde `RINDE`, geeignetes trockenes Pilzmaterial `PILZ`. Keine langen Texte. Sauber getrennt, handgezeichnete dunkle Konturen, warme gedämpfte Naturfarben.
 
 Bild 07 · 7 s
 Audio Anchor: Zuerst entsteht meist keine große Flamme
 Visual Purpose: Glut und offene Flamme unterscheiden.
 Topic Anchor: kleine Glut statt großer Flamme
 Visual Form: 2er-Multi-Panel
-Prompt: 16:9 2er-Split. Links kleine dunkle Zundermasse mit rotem Glutpunkt, Label `GLUT`. Rechts große Flamme ausgegraut bzw. mit kleinem `NOCH NICHT`. Gleiche Alles-Stickman-Linien, sehr wenige Elemente, klare Leserichtung.
+Prompt: 16:9 2er-Split im Alles-Stickman-Stil. Links kleine dunkle Zundermasse mit rotem Glutpunkt, Label `GLUT`. Rechts große Flamme ausgegraut bzw. mit kleinem `NOCH NICHT`. Wenige Elemente, klare Leserichtung, dunkle handgezeichnete Konturen, gedämpfte Naturpalette.
 
 Bild 08 · 5,5 s
 Audio Anchor: Durch vorsichtiges Pusten bekommt die Glut
 Visual Purpose: Erklären, warum vorsichtiges Pusten hilft.
 Topic Anchor: Glut, Pusten, Luftstrom
 Visual Form: Stickman-Handlungsszene mit Luft-Pfeilen
-Prompt: 16:9. Derselbe Stickman beugt sich vorsichtig über die Glut und pustet. Dezente hellblaue Luft-Pfeile zeigen den Luftstrom, der Glutpunkt wird heller orange. Kein übertriebener Sturm, Fokus auf Erklärung.
+Prompt: 16:9 Alles-Stickman Szene. Prähistorischer Stickman mit warmem Elfenbein-Kopf und vereinfachter Fellkleidung beugt sich vorsichtig über die Glut und pustet. Dezente hellblaue Luft-Pfeile zeigen den Luftstrom, der Glutpunkt wird heller orange. Gedämpfte Naturfarben, handgezeichnete Konturen, kein übertriebener Sturm.
 
 Bild 09 · 7 s
 Audio Anchor: Dann kommt sie in ein trockenes Zundernest
 Visual Purpose: Vom Glutpunkt zur sichtbaren Flamme führen.
 Topic Anchor: Zundernest, Glut, erste Flamme
 Visual Form: 3er-Mini-Sequenz
-Prompt: 16:9 dreiteilige horizontale Sequenz: 1 `GLUT` im Zunder, 2 Glut im trockenen Zundernest und vorsichtiges Pusten, 3 kleine erste Flamme. Pfeile zwischen den drei Schritten. Gleiche Bildwelt, große verständliche Formen.
+Prompt: 16:9 dreiteilige horizontale Alles-Stickman-Sequenz: 1 `GLUT` im Zunder, 2 Glut im trockenen Zundernest und vorsichtiges Pusten, 3 kleine erste Flamme. Pfeile zwischen den drei Schritten. Dunkle leicht unregelmäßige Konturen, warme Naturpalette, große verständliche Formen.
 
 Bild 10 · 5,5 s
 Audio Anchor: Es gab aber noch einen völlig anderen Weg
 Visual Purpose: Holzreibung als zweite grundlegende Methode einführen.
 Topic Anchor: Holzreibung
 Visual Form: Split-Screen-Vergleich
-Prompt: 16:9 Split-Screen. Links kurz Funkenmethode mit Feuerstein + Pyrit, rechts Holzreibung mit Holzstab auf trockenem Holzbrett. Kurze Labels `FUNKEN` und `REIBUNG`. Gleiche Palette und Linienlogik.
+Prompt: 16:9 Alles-Stickman Split-Screen. Links Funkenmethode mit Feuerstein + Pyrit, rechts Holzreibung mit Holzstab auf trockenem Holzbrett. Kurze Labels `FUNKEN` und `REIBUNG`. Gleiche Kanalpalette, dunkle handgezeichnete Konturen und flache Editorial-Flächen.
 
 Bild 11 · 6,5 s
 Audio Anchor: Ein Holzstab wird schnell gedreht oder gerieben
 Visual Purpose: Zeigen, wie Reibung Holzstaub erhitzt.
 Topic Anchor: Holzstab, Holzbrett, feiner Holzstaub
 Visual Form: Schritt-für-Schritt-Prozess
-Prompt: 16:9 Prozessbild mit drei großen Schritten: Holzstab auf Holzbrett, schnelle Drehbewegung durch klare Bewegungslinien, entstehender dunkler Holzstaub an der Kerbe. Nummern 1–3, keine langen Texte. Derselbe Editorial-Stil.
+Prompt: 16:9 Alles-Stickman Prozessbild mit drei großen Schritten: Holzstab auf Holzbrett, schnelle Drehbewegung durch klare Bewegungslinien, entstehender dunkler Holzstaub an der Kerbe. Nummern 1–3, keine langen Texte. Gedämpfte Naturfarben und handgezeichnete Anthrazit-Konturen.
 
 Bild 12 · 5,5 s
 Audio Anchor: Wenn alles trocken genug ist
 Visual Purpose: Die Entstehung einer kleinen Glut aus Holzstaub visualisieren.
 Topic Anchor: glühender Holzstaub
 Visual Form: Detail-/Nahaufnahme
-Prompt: 16:9 Makro-Illustration von feinem dunklem Holzstaub, in dessen Mitte ein kleiner rot-oranger Glutpunkt entsteht. Sehr reduzierter Hintergrund, hoher Fokus, handgezeichnete Textur.
+Prompt: 16:9 Alles-Stickman Makro-Illustration von feinem dunklem Holzstaub, in dessen Mitte ein kleiner rot-oranger Glutpunkt entsteht. Sehr reduzierter Hintergrund, hoher Fokus, handgezeichnete Textur, dunkle Konturen und warme gedämpfte Palette.
 
 Bild 13 · 6 s
 Audio Anchor: Und genau hier lag die Schwierigkeit
 Visual Purpose: Die Kernschwierigkeit hervorheben: Funke ist noch kein Feuer.
 Topic Anchor: Funke versus fertiges Feuer
 Visual Form: Text-/Zahlenfokus mit unterstützender Illustration
-Prompt: 16:9 starker Textfokus `FUNKE ≠ FEUER` in sauberer deutscher Typografie im Alles-Stickman-Stil. Darunter links ein kleiner Funke, rechts eine stabile Flamme; dazwischen ein deutliches Ungleich-Zeichen. Keine weiteren Informationen.
+Prompt: 16:9 Alles-Stickman Textfokus `FUNKE ≠ FEUER` in sauberer deutscher Typografie. Darunter links ein kleiner Funke, rechts eine stabile Flamme; dazwischen deutliches Ungleich-Zeichen. Handgezeichneter Editorial-Look, gedämpfte Kanalpalette, keine weiteren Informationen.
 
 Bild 14 · 6,5 s
 Audio Anchor: Feuchter Zunder, Wind oder zu grobes Holz
 Visual Purpose: Typische Gründe für das Scheitern zeigen.
 Topic Anchor: Feuchtigkeit, Wind, zu grobes Holz
 Visual Form: 3er-Multi-Panel / Fehlervergleich
-Prompt: 16:9 drei große Fehler-Panels: 1 nasser Zunder mit Tropfen, 2 Wind bläst kleine Glut aus, 3 zu dicke Holzstücke ersticken die kleine Flamme. Je Panel kurzes Label `NASS`, `WIND`, `ZU GROB`. Gleiche Welt, rote kleine X-Symbole.
+Prompt: 16:9 Alles-Stickman 3er-Fehler-Panel: 1 nasser Zunder mit Tropfen, 2 Wind bläst kleine Glut aus, 3 zu dicke Holzstücke ersticken die kleine Flamme. Je Panel kurzes Label `NASS`, `WIND`, `ZU GROB`. Kleine rote X-Symbole, dunkle handgezeichnete Konturen, gedämpfte Naturfarben.
 
 Bild 15 · 6 s
 Audio Anchor: Deshalb schützte man die Glut
 Visual Purpose: Schutz der Glut und sehr feines Brennmaterial erklären.
 Topic Anchor: geschützte Glut, feine trockene Zweige
 Visual Form: Stickman-Handlungsszene
-Prompt: 16:9. Stickman schützt die kleine Glut mit Körper und Händen vor Wind und legt sehr feine trockene Zweige vorsichtig dazu. Ruhige verständliche Komposition, warme Glut als Blickpunkt.
+Prompt: 16:9 Alles-Stickman Szene. Prähistorischer Stickman mit warmem Elfenbein-Kopf, dunklen Konturen und einfacher Fellkleidung schützt die kleine Glut mit Körper und Händen vor Wind und legt sehr feine trockene Zweige vorsichtig dazu. Ruhige verständliche Komposition, warme Glut als Blickpunkt.
 
 Bild 16 · 6 s
 Audio Anchor: Erst danach kamen größere Zweige
 Visual Purpose: Den Aufbau des Feuers von fein zu grob zeigen.
 Topic Anchor: Zunder -> dünne Zweige -> größere Zweige -> Holz
 Visual Form: Prozess / Größenfolge
-Prompt: 16:9 horizontale Größenfolge mit Pfeilen: `ZUNDER` → `DÜNNE ZWEIGE` → `GRÖSSERE ZWEIGE` → `HOLZ`. Jedes Element groß illustriert, zunehmend größer. Gleiche Linien und Naturfarben, keine Person nötig.
+Prompt: 16:9 Alles-Stickman horizontale Größenfolge mit Pfeilen: `ZUNDER` → `DÜNNE ZWEIGE` → `GRÖSSERE ZWEIGE` → `HOLZ`. Jedes Element groß illustriert und zunehmend größer. Handgezeichnete Anthrazit-Konturen, natürliche Sand-/Ocker-/Rostfarben, keine Person nötig.
 
 Bild 17 · 6,5 s
 Audio Anchor: Ein bestehendes Feuer zu erhalten war oft leichter
 Visual Purpose: Zeigen, warum Feuererhaltung praktisch wichtig war.
 Topic Anchor: Glut über Nacht, Feuerstelle
 Visual Form: Umgebungsszene mit Figur
-Prompt: 16:9 nächtliche Alles-Stickman-Szene. Ruhende Feuerstelle mit langlebiger Glut, ein Mensch legt vorsichtig ein Stück Holz nach. Dunkelblauer Himmel, warme orange Glut, reduzierte Umgebung. Stimmung ruhig, nicht dramatisch.
+Prompt: 16:9 nächtliche Alles-Stickman-Szene. Ruhende Feuerstelle mit langlebiger Glut, ein prähistorischer Mensch mit vereinfachter Fellkleidung legt vorsichtig ein Stück Holz nach. Dunkelblauer Himmel, warme orange Glut, reduzierte Umgebung, dunkle handgezeichnete Konturen. Stimmung ruhig, nicht dramatisch.
 
 Bild 18 · 6,5 s
 Audio Anchor: Am Ende brauchte es also keine Streichhölzer
 Visual Purpose: Die Antwort in vier klaren Faktoren zusammenfassen.
 Topic Anchor: Hitze, Zunder, Sauerstoff, Übung
 Visual Form: Infografik / Zusammenfassung
-Prompt: 16:9 Abschlussbild in derselben Welt. Vier große klare Symbole um eine kleine stabile Flamme: `HITZE`, `ZUNDER`, `LUFT`, `ÜBUNG`. Unten klein derselbe Stickman zufrieden neben dem Feuer. Saubere Abschlusskomposition, kein CTA, keine zusätzlichen Texte.
+Prompt: 16:9 Alles-Stickman Abschlussbild. Vier große klare Symbole um eine kleine stabile Flamme: `HITZE`, `ZUNDER`, `LUFT`, `ÜBUNG`. Unten klein ein zufriedener prähistorischer Stickman. Handgezeichnete Anthrazit-Konturen, warme Elfenbein-Gesichtsfarbe, gedämpfte Kanalpalette, saubere Abschlusskomposition, kein CTA.
 
 ABSCHLUSSCHECK
-- genau 3 Cover erzeugt, genau 1 Gewinner behalten
+- genau 3 Cover erzeugt
+- GOOGLE FLOW hat selbstständig genau 1 Gewinner gewählt
 - 2 Cover-Verlierer gelöscht
-- Bild 01 war die EINZIGE visuelle Referenz
+- Bild 01 ist finales Cover und erste Szene
+- für Bild 02–18 wurde KEINE Bildreferenz verwendet
+- Stil-Konsistenz ausschließlich über Visual Policy + vollständige Textprompts
 - Bild 02–18 in 5ER-BLÖCKEN produziert
-- alle 18 finalen Bilder im selben Stil, aber mit wechselnden Visual Forms
+- alle 18 finalen Bilder in derselben Designwelt, aber mit wechselnden Visual Forms
 - keine Zusatzbilder oder Unterordner im finalen images-Ordner
