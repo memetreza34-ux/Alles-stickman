@@ -6,9 +6,12 @@ import test from 'node:test';
 
 import { evaluateTopic } from '../src/cli/check-youtube-topic.js';
 import { buildSrtFromWhisper, buildTimedScriptFromWhisper, buildUploadText, formatSrtTimestamp } from '../src/cli/finalize-youtube-export.js';
+import { validatePhase1 } from '../src/cli/validate-youtube-phase1.js';
 import { normalizeText, similarity } from '../src/lib/pipeline.js';
 
-test('Repo besitzt die aktive Alles-Stickman-Bildwelt und leeren Themenbestand', async () => {
+const TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-feuer-ohne-streichhoelzer';
+
+test('Repo besitzt die aktive Alles-Stickman-Bildwelt und den ersten reservierten Testinhalt', async () => {
   const visual = JSON.parse(await readFile('config/visual-policy.json', 'utf8'));
   const registry = JSON.parse(await readFile('config/topic-registry.json', 'utf8'));
   assert.equal(visual.status, 'READY');
@@ -22,7 +25,7 @@ test('Repo besitzt die aktive Alles-Stickman-Bildwelt und leeren Themenbestand',
   assert.ok(visual.visualForms.includes('Diagramm oder Zahlenvergleich'));
   assert.ok(visual.visualForms.includes('2er- oder 3er-Multi-Panel'));
   assert.ok(visual.visualForms.includes('Text-/Zahlenfokus mit unterstützender Illustration'));
-  assert.deepEqual(registry.entries, []);
+  assert.ok(registry.entries.some((entry) => entry.id === '2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer'));
 });
 
 test('Pipeline behält die verbindlichen Produktions- und Coverregeln', async () => {
@@ -64,6 +67,19 @@ test('Projekt-Template enthält den Alles-Stickman-Flow-Ablauf, flexible Visual 
   assert.match(prompt, /Diagramm/i);
   assert.match(prompt, /Text ist ebenfalls erlaubt/i);
   assert.match(prompt, /GLEICHE WELT/i);
+});
+
+test('Erstes 2-Minuten-Testprojekt besteht Phase 1 und bleibt maximal 2 Minuten geplant', async () => {
+  const meta = JSON.parse(await readFile(path.join(TEST_PROJECT, '99-technik', 'video.json'), 'utf8'));
+  const mapping = JSON.parse(await readFile(path.join(TEST_PROJECT, '99-technik', 'BILD_AUDIO_ZUORDNUNG.json'), 'utf8'));
+  const script = await readFile(path.join(TEST_PROJECT, '01-voice-script', 'voice-script.txt'), 'utf8');
+  assert.equal(meta.plannedImageCount, 18);
+  assert.ok(meta.targetDurationSeconds <= 120);
+  assert.equal(mapping.images.length, 18);
+  assert.ok(script.trim().split(/\s+/).length >= 200);
+  assert.ok(script.trim().split(/\s+/).length <= 260);
+  const result = await validatePhase1(TEST_PROJECT);
+  assert.equal(result.passed, true, result.errors.join('\n'));
 });
 
 test('YouTube-Export baut gültige SRT- und Zeitstempeldateien', () => {
@@ -111,7 +127,6 @@ test('Keine Alt-Themen oder fremde Alt-Bildwelt wurden in die zentrale Konfigura
     'README.md',
     'config/pipeline.json',
     'config/visual-policy.json',
-    'config/topic-registry.json',
     'youtube/WORKFLOW.md',
     'youtube/templates/video-template/00-bildprompts/google-flow-prompt.txt'
   ];
