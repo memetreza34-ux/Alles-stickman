@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pipelineVersion": 2,
+  "pipelineVersion": 3,
   "videoId": "",
   "weekFolder": "",
   "topicSlug": "",
@@ -24,7 +24,7 @@
     "coverImageNumber": 1,
     "coverCandidateCount": 3,
     "autoSelectWinner": true,
-    "winnerBecomesSoleReference": true,
+    "winnerBecomesSoleReference": false,
     "deleteLosingCandidates": true,
     "separateThumbnailForbidden": true
   },
@@ -40,7 +40,8 @@
     "generationBatchSize": 5,
     "maxConcurrentGenerations": 5,
     "nonCoverGenerationCount": 1,
-    "useOnlyCoverWinnerAsReference": true,
+    "useImageReferences": false,
+    "useOnlyCoverWinnerAsReference": false,
     "usePreviousSceneAsReference": false,
     "fillerImagesForbidden": true
   },
