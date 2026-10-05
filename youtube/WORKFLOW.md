@@ -12,9 +12,10 @@ Thema
 → Voice-over-Skript
 → Bildplanung
 → 3 Cover-Kandidaten
-→ 1 Cover-Gewinner
-→ Gewinner = Bild 01 + einzige Bildreferenz
-→ Bild 02–NN in maximal 5er-Blöcken
+→ Google Flow wählt selbst 1 Cover-Gewinner
+→ Gewinner = Bild 01
+→ 2 Cover-Verlierer löschen
+→ Bild 02–NN ohne Bildreferenz in maximal 5er-Blöcken
 → finale Voice-over-Datei
 → Audio-Optimierung
 → Wort-/Anchor-Alignment
@@ -27,13 +28,9 @@ Thema
 
 ## 0. Einmalige Einrichtung
 
-Die aktive Bildwelt steht in:
-
-`config/visual-policy.json`
-
-Aktive Style-ID:
-
-`alles-stickman-editorial-v1`
+Aktive Bildwelt:
+- `config/visual-policy.json`
+- Style-ID: `alles-stickman-editorial-v1`
 
 Lokale Voraussetzungen:
 - Node.js >= 24
@@ -46,8 +43,6 @@ Lokale Voraussetzungen:
 ```bash
 npm run topic:youtube -- --topic "THEMA"
 ```
-
-Der Themeneditor prüft die Repo-eigene Themenhistorie und verhindert starke Doppelungen.
 
 ## 2. Projekt anlegen
 
@@ -83,7 +78,7 @@ youtube/<week>/<slug>/
 
 ## 3. Phase 1 — Recherche, Skript, Bildplan und Upload-Metadaten
 
-Phase 1 muss vollständig festlegen:
+Pflicht:
 - Kernfrage
 - belastbare Faktenbasis
 - Unsicherheiten/Vereinfachungen
@@ -97,23 +92,15 @@ Phase 1 muss vollständig festlegen:
 - Planned Hold
 - vollständige Bildprompts
 - Render-/SFX-Plan
-- finalen YouTube-Titel
+- finaler YouTube-Titel
 - finale YouTube-Beschreibung
-- optionale YouTube-Tags
+- optionale Tags
 
-Die Upload-Daten stehen in `99-technik/video.json`:
-
-```json
-"uploadMetadata": {
-  "title": "...",
-  "description": "...",
-  "tags": ["...", "..."]
-}
-```
+Upload-Daten stehen in `99-technik/video.json` unter `uploadMetadata`.
 
 Bildplan-Regeln:
 - keine starre Bildzahl
-- 1 Bild = 1 klare visuelle Funktion
+- 1 Bild = 1 klare visuelle Funktion oder zusammengehörige Informationseinheit
 - durchschnittlich ca. 4,5–7,5 s pro Bild
 - ab 9 s Split prüfen
 - ab 11 s Split stark bevorzugen
@@ -125,8 +112,6 @@ Vor Asset-Erzeugung:
 ```bash
 npm run validate:youtube-phase1 -- --dir "youtube/<week>/<slug>"
 ```
-
-Der Phase-1-Check blockiert jetzt auch fehlenden Upload-Titel oder fehlende Beschreibung.
 
 ## 4. Google Flow — verbindlicher 5-Phasen-Ablauf
 
@@ -148,23 +133,24 @@ Temporär:
 
 Bild 01 ist Cover und erste Videoszene.
 
-### Phase 3: Gewinner wählen
-Der Agent wählt selbstständig genau einen Gewinner nach:
+### Phase 3: Google Flow wählt selbst den Gewinner
+Google Flow bewertet die drei Kandidaten selbstständig nach:
 - Verständlichkeit
 - Neugier
 - Thumbnail-Lesbarkeit
 - Stiltreue
-- saubere Figuren/Textdarstellung
-- sachliche/historische Plausibilität
+- sauberer Figuren-/Textdarstellung
+- sachlicher/historischer Plausibilität
+
+**Der Nutzer wählt nicht manuell.**
 
 Danach:
 - Gewinner → `Bild 01.png`
 - beide Verlierer löschen
 - keine Kopien der Verlierer behalten
-- `Bild 01.png` als einzige Bildreferenz sperren
 
-### Phase 4: Restbilder in maximal 5er-Blöcken
-Danach ohne Nutzer-Rückfrage:
+### Phase 4: Bild 02–NN ohne Bildreferenz
+Danach ohne Nutzer-Rückfrage in maximalen 5er-Blöcken:
 
 ```text
 Bild 02–06
@@ -174,17 +160,17 @@ Bild 12–16
 bis Bild NN
 ```
 
-Der letzte Block darf kleiner sein.
-
 Regeln:
-- maximal 5 aktive Generierungen
+- maximal 5 aktive Generationen
 - jedes Nicht-Cover-Bild genau einmal
 - keine A/B-Alternativen
-- ausschließlich `Bild 01.png` als Bildreferenz
-- kein vorheriges Szenenbild als Referenz
+- **keine Bildreferenz verwenden**
+- weder Bild 01 noch Cover-Verlierer noch vorherige Szenenbilder als Vorlage benutzen
+- Konsistenz ausschließlich über `config/visual-policy.json` + vollständigen Textprompt des jeweiligen Bildes
 - individuelle Komposition passend zum Inhalt
+- Visual Form frei nach Erklärwert wählen
 
-Nur bei technischem Fehlschlag oder eindeutig unbrauchbarem Output darf exakt dieselbe Bildnummer korrigierend neu erzeugt werden.
+Nur bei technischem Fehlschlag oder eindeutig unbrauchbarem Output darf exakt dieselbe Bildnummer neu erzeugt werden.
 
 ### Phase 5: finaler Ordner
 Nach Abschluss darf `00-bildprompts/images/` ausschließlich enthalten:
@@ -197,62 +183,50 @@ Bild 03.png
 Bild NN.png
 ```
 
-Keine:
-- TEMP-Dateien
-- Cover-Verlierer
-- Varianten
-- Unterordner
-- Zwischenbilder
-- zusätzliche Thumbnails
+Keine TEMP-Dateien, Cover-Verlierer, Varianten, Unterordner, Zwischenbilder oder Zusatz-Thumbnails.
 
-## 5. Referenzbild-Regel
+## 5. Konsistenz ohne Referenzbild
 
-Für jedes Video gilt:
+Für Folgebilder gilt ausdrücklich:
 
-**Nur der ausgewählte Cover-Gewinner `Bild 01.png` ist Bildreferenz für alle weiteren Szenen.**
+**Kein generiertes Bild dient als Referenzvorlage.**
 
-Er stabilisiert:
-- Linienführung
-- Gesichtslogik
-- Figurenwelt
-- Farbgefühl
-- Illustrationssprache
+Die gemeinsame Alles-Stickman-Welt wird gehalten durch:
+- feste Linienlogik
+- feste Grundpalette
+- feste Figuren-/Gesichtslogik
+- feste Text-/Labelbehandlung
+- feste Informationsdesign-Regeln
+- vollständige individuelle Prompts
 
-Er darf nicht dazu führen, dass alle Szenen dieselbe Pose, Kamera oder Komposition kopieren.
+Warum: Ein Cover ist auf Klickstärke optimiert und kann Karten, Diagramme, Multi-Panels oder Objektgrafiken unnötig in eine ähnliche Komposition drücken.
 
 ## 6. Eigene Bildwelt
 
-Verbindlich ist:
+Verbindlich:
+- `config/visual-policy.json`
+- `channel/VISUAL_WORLD.md`
 
-`config/visual-policy.json`
-
-Zusätzliche Dokumentation:
-
-`channel/VISUAL_WORLD.md`
-
-Grundprinzipien:
-- 2D handgezeichnet wirkender Editorial-Stickman-Stil
-- dunkle leicht unregelmäßige Konturen
-- warme Elfenbein-Köpfe
-- starke Mimik
-- reduzierte Anatomie
-- gedämpfte natürliche Farbpalette
-- historisch lesbare Kleidung und Requisiten
-- reduzierte, aber informative Hintergründe
-- Karten, Prozesse, Vergleiche und Diagramme ausdrücklich erlaubt
-- keine direkte Kopie eines Referenzkanals
+Erlaubt sind unter anderem:
+- Handlungsszenen
+- Objektbilder
+- Karten
+- Zeitleisten
+- Prozesse
+- Diagramme
+- Zahlenvergleiche
+- Infografiken
+- Multi-Panels
+- Querschnitte
+- Text-/Zahlenbilder
+- Szenen ohne Menschen
 
 ## 7. Phase 2 — Assets
 
 Finale Bilder:
-
 `00-bildprompts/images/Bild 01.png` bis `Bild NN.png`
 
-Finales Nutzer-Voice-over: genau eine Audiodatei unter:
-
-`02-audio/`
-
-Das Nutzeroriginal wird nie überschrieben.
+Finales Voice-over: genau eine Audiodatei unter `02-audio/`.
 
 Prüfung:
 
@@ -279,19 +253,11 @@ Reihenfolge:
 10. Remotion rendern
 11. Thumbnail aus Bild 01 kopieren
 12. YouTube-Metadaten-Datei erzeugen
-13. SRT-Untertitel aus den echten Whisper-Zeitstempeln erzeugen
+13. SRT-Untertitel aus echten Whisper-Zeitstempeln erzeugen
 14. lesbares Skript mit Zeitbereichen erzeugen
-15. Post-Render-QC für das gesamte Exportpaket
-
-Nur vorbereiten:
-
-```bash
-npm run phase3:youtube -- --dir "youtube/<week>/<slug>" --prepare-only
-```
+15. Post-Render-QC
 
 ## 9. Finaler Exportordner
-
-Nach erfolgreicher Phase 3 enthält `03-export/` genau die Dateien, die für den Upload benötigt werden:
 
 ```text
 03-export/
@@ -302,58 +268,11 @@ Nach erfolgreicher Phase 3 enthält `03-export/` genau die Dateien, die für den
 └── TIMED_SCRIPT.txt
 ```
 
-### `FINAL_VIDEO.mp4`
-Das fertig gerenderte YouTube-Video.
-
-### `THUMBNAIL.png`
-Das finale Cover aus `Bild 01.png`.
-
-### `YOUTUBE_UPLOAD.txt`
-Enthält fertig zum Kopieren:
-- YouTube-Titel
-- YouTube-Beschreibung
-- Tags
-- Hinweise auf Video, Thumbnail und Untertiteldatei
-
-### `SUBTITLES.srt`
-Standard-Untertiteldatei mit exakten Zeitstempeln aus dem tatsächlich gesprochenen und optimierten Audio. Diese Datei kann direkt in YouTube Studio als Untertiteldatei hochgeladen werden.
-
-Beispiel:
-
-```text
-1
-00:00:00,000 --> 00:00:04,250
-Hallo und willkommen.
-
-2
-00:00:04,250 --> 00:00:10,100
-Heute erklären wir das Thema.
-```
-
-### `TIMED_SCRIPT.txt`
-Lesbare Version zum schnellen Kopieren, Prüfen oder manuellen Einfügen:
-
-```text
-[00:00 - 00:04] Hallo und willkommen.
-
-[00:04 - 00:10] Heute erklären wir das Thema.
-```
-
-Die Zeitstempel stammen aus Whisper und damit aus dem final verwendeten Audio, nicht aus bloßen Schätzungen des Skripts.
-
-## Audio-Standard
-
-- 1,10× Playback bei erhaltener Tonhöhe
-- lange Pausen kürzen
-- Endstille entfernen
-- Ziel −16 LUFS
-- True Peak max. −1,5 dBTP
-- 48 kHz
-- Nutzeroriginal unverändert
-
-## Schluss-Hold
-
-Nach dem letzten gesprochenen Wort bleibt das letzte Bild standardmäßig 1,3 s sichtbar. Zulässig: 1,2–1,5 s.
+- `FINAL_VIDEO.mp4`: fertiges Video
+- `THUMBNAIL.png`: finales Bild 01
+- `YOUTUBE_UPLOAD.txt`: Titel, Beschreibung, Tags
+- `SUBTITLES.srt`: YouTube-Untertitel mit echten Zeitstempeln
+- `TIMED_SCRIPT.txt`: lesbares Skript mit Zeitbereichen
 
 ## Definition of Done
 
@@ -363,13 +282,14 @@ Ein Video ist erst fertig, wenn:
 - YouTube-Titel und Beschreibung fertig sind
 - aktive Bildwelt `READY` ist
 - genau 3 Cover-Kandidaten erzeugt wurden
-- genau 1 Cover-Gewinner als `Bild 01.png` übrig bleibt
+- Google Flow selbst genau 1 Gewinner ausgewählt hat
+- Gewinner als `Bild 01.png` übrig bleibt
 - die 2 Cover-Verlierer gelöscht sind
-- Bild 01 als einzige Bildreferenz für Bild 02–NN verwendet wurde
+- für Bild 02–NN keine Bildreferenz verwendet wurde
 - Bild 02–NN in maximal 5er-Blöcken erzeugt wurden
 - finale Bilder lückenlos benannt sind
 - alle finalen Bilder in einem flachen Ordner liegen
-- genau eine Nutzerstimme vorliegt
+- genau eine finale Stimme vorliegt
 - Audio-QC bestanden ist
 - echte Wortzeiten vorliegen
 - Timeline keine Lücken/Überlappungen hat
