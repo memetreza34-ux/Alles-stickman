@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "phase1": "READY",
+  "phase2": "PENDING-ASSETS-AND-VOICE",
+  "phase3": "BLOCKED-WAITING-PHASE2",
+  "imagesReady": false,
+  "audioReady": false,
+  "renderReady": false
+}
