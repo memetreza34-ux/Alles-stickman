@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pipelineVersion": 2,
+  "pipelineVersion": 3,
   "videoId": "2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer",
   "weekFolder": "2026-KW41_05-10_bis_11-10",
   "topicSlug": "wie-machten-menschen-feuer-ohne-streichhoelzer",
@@ -19,7 +19,7 @@
     "coverImageNumber": 1,
     "coverCandidateCount": 3,
     "autoSelectWinner": true,
-    "winnerBecomesSoleReference": true,
+    "winnerBecomesSoleReference": false,
     "deleteLosingCandidates": true,
     "separateThumbnailForbidden": true
   },
@@ -35,7 +35,8 @@
     "generationBatchSize": 5,
     "maxConcurrentGenerations": 5,
     "nonCoverGenerationCount": 1,
-    "useOnlyCoverWinnerAsReference": true,
+    "useImageReferences": false,
+    "useOnlyCoverWinnerAsReference": false,
     "usePreviousSceneAsReference": false,
     "fillerImagesForbidden": true
   },
@@ -65,5 +66,5 @@
   "audioReady": false,
   "renderReady": false,
   "createdAt": "2026-10-05T09:01:00Z",
-  "updatedAt": "2026-10-05T09:01:00Z"
+  "updatedAt": "2026-10-05T16:30:00Z"
 }
