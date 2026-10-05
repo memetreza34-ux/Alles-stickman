@@ -11,12 +11,14 @@ import { normalizeText, similarity } from '../src/lib/pipeline.js';
 
 const TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-feuer-ohne-streichhoelzer';
 
-test('Repo besitzt die aktive Alles-Stickman-Bildwelt und den ersten reservierten Testinhalt', async () => {
+test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', async () => {
   const visual = JSON.parse(await readFile('config/visual-policy.json', 'utf8'));
   const registry = JSON.parse(await readFile('config/topic-registry.json', 'utf8'));
   assert.equal(visual.status, 'READY');
   assert.equal(visual.styleId, 'alles-stickman-editorial-v1');
-  assert.equal(visual.referenceConsistency.coverWinnerIsSoleReference, true);
+  assert.equal(visual.referenceConsistency.useImageReferences, false);
+  assert.equal(visual.referenceConsistency.coverWinnerIsSoleReference, false);
+  assert.equal(visual.referenceConsistency.useOtherCoverCandidatesAsReference, false);
   assert.equal(visual.referenceConsistency.usePreviousGeneratedSceneAsReference, false);
   assert.equal(visual.multiPanelPolicy.allowed, true);
   assert.equal(visual.informationDesign.sameWorldRequired, true);
@@ -28,18 +30,19 @@ test('Repo besitzt die aktive Alles-Stickman-Bildwelt und den ersten reservierte
   assert.ok(registry.entries.some((entry) => entry.id === '2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer'));
 });
 
-test('Pipeline behält die verbindlichen Produktions- und Coverregeln', async () => {
+test('Pipeline behält automatische Coverwahl und referenzfreie Folgebilder', async () => {
   const policy = JSON.parse(await readFile('config/pipeline.json', 'utf8'));
   assert.equal(policy.coverPolicy.firstSceneIsCover, true);
   assert.equal(policy.coverPolicy.coverCandidateCount, 3);
   assert.equal(policy.coverPolicy.autoSelectWinner, true);
-  assert.equal(policy.coverPolicy.winnerBecomesSoleReference, true);
+  assert.equal(policy.coverPolicy.winnerBecomesSoleReference, false);
   assert.equal(policy.coverPolicy.deleteLosingCandidates, true);
   assert.equal(policy.imagePolicy.fixedImageCountForbidden, true);
   assert.equal(policy.imagePolicy.nonCoverGenerationCount, 1);
   assert.equal(policy.imagePolicy.generationBatchSize, 5);
   assert.equal(policy.imagePolicy.maxConcurrentGenerations, 5);
-  assert.equal(policy.imagePolicy.useOnlyCoverWinnerAsReference, true);
+  assert.equal(policy.imagePolicy.useImageReferences, false);
+  assert.equal(policy.imagePolicy.useOnlyCoverWinnerAsReference, false);
   assert.equal(policy.imagePolicy.usePreviousSceneAsReference, false);
   assert.equal(policy.imagePolicy.finalFolderMustBeFlat, true);
   assert.deepEqual(policy.imagePolicy.targetAverageHoldSeconds, [4.5, 7.5]);
@@ -49,35 +52,44 @@ test('Pipeline behält die verbindlichen Produktions- und Coverregeln', async ()
   assert.equal(policy.endHoldPolicy.targetSeconds, 1.3);
 });
 
-test('Projekt-Template enthält den Alles-Stickman-Flow-Ablauf, flexible Visual Forms und Upload-Metadaten', async () => {
+test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Visual Forms und Upload-Metadaten', async () => {
   const meta = JSON.parse(await readFile('youtube/templates/video-template/99-technik/video.json', 'utf8'));
   const prompt = await readFile('youtube/templates/video-template/00-bildprompts/google-flow-prompt.txt', 'utf8');
   assert.equal(meta.visualStyleId, 'UNSET');
   assert.equal(meta.topic, '');
   assert.equal(meta.title, '');
   assert.deepEqual(meta.uploadMetadata, { title: '', description: '', tags: [] });
+  assert.equal(meta.coverPolicy.autoSelectWinner, true);
+  assert.equal(meta.coverPolicy.winnerBecomesSoleReference, false);
+  assert.equal(meta.imageDensityPolicy.useImageReferences, false);
   assert.match(prompt, /ACTIVE_STYLE_ID: UNSET/);
   assert.match(prompt, /ALLES STICKMAN/i);
   assert.match(prompt, /GENAU 3 COVER/i);
-  assert.match(prompt, /EINZIGE visuelle Referenz/i);
+  assert.match(prompt, /GOOGLE FLOW.*selbstständig.*Gewinner/is);
+  assert.match(prompt, /KEINE Bildreferenz/i);
   assert.match(prompt, /5ER-BLÖCKEN/i);
   assert.match(prompt, /Keine feste Zielbildzahl/i);
   assert.match(prompt, /Bild 01\.png.*Bild NN\.png/is);
   assert.match(prompt, /2er- oder 3er-Multi-Panel/i);
   assert.match(prompt, /Diagramm/i);
-  assert.match(prompt, /Text ist ebenfalls erlaubt/i);
   assert.match(prompt, /GLEICHE WELT/i);
 });
 
-test('Erstes 2-Minuten-Testprojekt besteht Phase 1 und bleibt maximal 2 Minuten geplant', async () => {
+test('Erstes 2-Minuten-Testprojekt besteht Phase 1 und nutzt keine Bildreferenz', async () => {
   const meta = JSON.parse(await readFile(path.join(TEST_PROJECT, '99-technik', 'video.json'), 'utf8'));
   const mapping = JSON.parse(await readFile(path.join(TEST_PROJECT, '99-technik', 'BILD_AUDIO_ZUORDNUNG.json'), 'utf8'));
   const script = await readFile(path.join(TEST_PROJECT, '01-voice-script', 'voice-script.txt'), 'utf8');
+  const prompt = await readFile(path.join(TEST_PROJECT, '00-bildprompts', 'google-flow-prompt.txt'), 'utf8');
   assert.equal(meta.plannedImageCount, 18);
   assert.ok(meta.targetDurationSeconds <= 120);
+  assert.equal(meta.coverPolicy.autoSelectWinner, true);
+  assert.equal(meta.coverPolicy.winnerBecomesSoleReference, false);
+  assert.equal(meta.imageDensityPolicy.useImageReferences, false);
   assert.equal(mapping.images.length, 18);
   assert.ok(script.trim().split(/\s+/).length >= 200);
   assert.ok(script.trim().split(/\s+/).length <= 260);
+  assert.match(prompt, /Google Flow.*selbst/i);
+  assert.match(prompt, /KEINE Bildreferenz/i);
   const result = await validatePhase1(TEST_PROJECT);
   assert.equal(result.passed, true, result.errors.join('\n'));
 });
