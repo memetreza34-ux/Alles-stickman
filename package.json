@@ -1,0 +1,33 @@
+{
+  "name": "youtube-production-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bildwelt- und themenneutrale Produktionspipeline für YouTube-Videos.",
+  "scripts": {
+    "create:youtube": "node src/cli/create-youtube-project.js",
+    "topic:youtube": "node src/cli/check-youtube-topic.js",
+    "validate:youtube-phase1": "node src/cli/validate-youtube-phase1.js",
+    "validate:youtube-phase2": "node src/cli/validate-youtube-phase2.js",
+    "preflight:youtube": "node src/cli/preflight-youtube.js",
+    "optimize:youtube-audio": "node src/cli/optimize-youtube-audio.js",
+    "auto-align:youtube": "node src/cli/auto-align-youtube.js",
+    "build:youtube-timeline": "node src/cli/build-youtube-timeline.js",
+    "validate:youtube-pacing": "node src/cli/validate-youtube-pacing.js",
+    "validate:youtube-phase3": "node src/cli/validate-youtube-phase3.js",
+    "phase3:youtube": "node src/cli/phase3-youtube.js",
+    "render:youtube": "node src/cli/render-youtube.js",
+    "finalize:youtube-export": "node src/cli/finalize-youtube-export.js",
+    "studio:youtube": "remotion studio src/youtube-renderer/index.jsx",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.500",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.500"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

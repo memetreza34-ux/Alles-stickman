@@ -1,0 +1,14 @@
+{
+  "visualPolicyVersion": 1,
+  "status": "UNSET",
+  "styleId": "UNSET",
+  "description": "Absichtlich leer. Hier wird die neue Bildwelt dieses Repositories definiert.",
+  "rules": [],
+  "forbidden": [],
+  "visibleTextLanguage": "de",
+  "notes": [
+    "Keine Bildwelt aus einem anderen Repository übernehmen.",
+    "Vor dem ersten echten Video status auf READY setzen, styleId vergeben und die neuen visuellen Regeln eintragen.",
+    "Die Produktionspipeline ist unabhängig von einer konkreten Figuren- oder Illustrationsart."
+  ]
+}

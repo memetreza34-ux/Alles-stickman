@@ -1,0 +1,14 @@
+node_modules/
+.remotion/
+public/__render/
+*.log
+.DS_Store
+.env
+
+# Generierte Projekt-Artefakte
+**/99-technik/YOUTUBE_AUDIO_OPTIMIZED.wav
+**/99-technik/whisper/
+**/99-technik/FINAL_TIMELINE.json
+**/99-technik/RENDER_PLAN.json
+**/03-export/*.mp4
+**/03-export/THUMBNAIL.png
