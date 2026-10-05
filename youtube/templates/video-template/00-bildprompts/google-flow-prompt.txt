@@ -36,6 +36,47 @@ NICHT VERHANDELBAR
 - Nach dem Cover in 5er-Blöcken weiterarbeiten: maximal 5 Bilder gleichzeitig/je Produktionsblock.
 - Dateien sofort korrekt benennen.
 - Nicht auf Nutzerfreigaben zwischen den Blöcken warten.
+- GLEICHE WELT bedeutet gleiche Linienlogik, Gesichtslogik, Farbwelt, Typografie-/Labelbehandlung und Illustrationssprache; es bedeutet NICHT, dass jedes Bild dieselbe Art von Szene haben muss.
+
+VISUELLE FREIHEIT — SEHR WICHTIG
+Wähle für jede gesprochene Aussage die Visual Form, die sie am klarsten erklärt. Es gibt keine Pflicht, in jedem Bild Menschen oder eine klassische Szene zu zeigen.
+
+Erlaubt und ausdrücklich erwünscht sind unter anderem:
+- Stickman-Handlungsszene
+- reine Objekt-/Sachillustration
+- Nahaufnahme eines Gegenstands
+- Vorher/Nachher
+- Ursache/Wirkung
+- Karte mit Route/Ausbreitung
+- Zeitleiste
+- Schritt-für-Schritt-Prozess
+- Balken-, Linien-, Kreis- oder Mengenvergleich
+- Zahlen-/Statistikvisualisierung
+- Infografik mit kurzen Labels
+- Querschnitt
+- Explosionsdarstellung / Bestandteile
+- Split-Screen
+- 2er- oder 3er-Multi-Panel
+- Hauptbild mit kleinen erklärenden Nebenfeldern
+- mehrere kleine Szenen in EINEM 16:9-Bild, wenn sie zusammen einen Ablauf oder Vergleich erklären
+- einfache Tabelle/Matrix
+- großer Text-/Zahlenfokus mit unterstützender Illustration
+- Symbol-/Icon-Erklärung im Alles-Stickman-Stil
+- Umgebung ohne Menschen
+
+Mehrere Teilbilder/Panels in einem Bild sind erlaubt, wenn sie zusammengehören und die Erklärung verbessern. Beispiele: vorher/nachher, drei Prozessschritte, Ursache→Wirkung, drei Epochen, Hauptszene plus zwei Detailfelder. Keine zufällige Collage und keine unlesbar kleinen Panels.
+
+Text ist ebenfalls erlaubt, wenn er Erklärwert hat:
+- kurze deutsche Überschriften
+- Labels
+- Jahreszahlen
+- Namen
+- wichtige Zahlen
+- Pfeile
+- sehr kurze Infozeilen
+- Karten-/Diagrammbeschriftungen
+
+Kein Pseudotext, keine langen Textwände, keine überladene Dashboard-Optik. Alles muss in derselben Alles-Stickman-Welt aussehen.
 
 5-PHASEN-ABLAUF
 
@@ -52,6 +93,7 @@ PHASE 1 — PLAN UND VORBEREITUNG
    - Planned Hold
    - vollständigen Prompt
 6. Erfinde keine zusätzliche Bildnummer und lasse keine geplante Bildnummer aus.
+7. Prüfe ausdrücklich, ob eine Handlungsszene wirklich die beste Form ist oder ob Karte, Diagramm, Multi-Panel, Objektbild, Prozess, Vergleich oder Text-/Zahlenbild die Aussage besser erklärt.
 
 PHASE 2 — GENAU 3 COVER ERZEUGEN
 Erzeuge für Bild 01 genau drei temporäre Kandidaten:
@@ -99,6 +141,8 @@ REFERENZ-REGEL
 - Figurenwelt
 - Farbgefühl
 - allgemeine Illustrationssprache
+- Typografie-/Labelbehandlung
+- Diagramm-/Infografik-Sprache
 
 Nicht mechanisch kopieren:
 - Pose
@@ -106,8 +150,9 @@ Nicht mechanisch kopieren:
 - Hintergrund
 - gleiche Figurenposition
 - gleiche Komposition
+- gleiche Visual Form
 
-Jede neue Szene muss inhaltlich eigenständig bleiben.
+Eine Karte, ein Diagramm, ein Multi-Panel oder eine reine Objektgrafik darf völlig anders aufgebaut sein als Bild 01 und muss trotzdem klar zur gleichen Alles-Stickman-Welt gehören.
 
 PHASE 4 — BILD 02 BIS BILD NN IN 5ER-BLÖCKEN
 Arbeite ohne Rückfrage weiter.
@@ -130,19 +175,11 @@ Für jedes einzelne Bild gilt:
 - keine zweite Referenz
 - kein vorheriges Szenenbild als Referenz
 - keine Füllbilder
-
-Wähle die Visual Form passend zur Aussage. Erlaubt und erwünscht sind unter anderem:
-- Stickman-Handlungsszene
-- Objektaufnahme
-- Vergleich
-- Ursache/Wirkung
-- Karte
-- Zeitleiste
-- Prozess
-- einfaches Diagramm
-- Querschnitt
-- Split-Screen
-- Umgebung ohne Menschen
+- wähle die Visual Form nach Erklärwert, nicht nach Gewohnheit
+- wenn mehrere Panels sinnvoller sind, nutze mehrere Panels
+- wenn Text/Zahlen/Diagramm sinnvoller sind, nutze Text/Zahlen/Diagramm
+- wenn keine Person nötig ist, zeige keine Person
+- halte alle Formen optisch in derselben Alles-Stickman-Welt
 
 Nicht jede Szene soll nach „Figur links, Objekt rechts“ aussehen.
 
@@ -162,12 +199,14 @@ Wenn Bild NN fertig ist:
 6. Lösche keine korrekt finalisierten `Bild XX.png`.
 7. Keine Unterordner im finalen Bilderordner.
 8. Prüfe, dass Bild 01 der ausgewählte Cover-Gewinner ist.
-9. Prüfe, dass Bild 02–NN stilistisch zu Bild 01 passen, ohne dessen Komposition zu kopieren.
-10. Beende erst, wenn der finale Bilderordner sauber ist.
+9. Prüfe, dass Bild 02–NN stilistisch zu Bild 01 passen, ohne dessen Komposition oder Visual Form zu kopieren.
+10. Prüfe, dass Karten, Diagramme, Textbilder und Multi-Panels dieselbe Farb-, Linien- und Designlogik wie die Figurenwelt verwenden.
+11. Beende erst, wenn der finale Bilderordner sauber ist.
 
 BILD-DICHTE
 - Keine feste Zielbildzahl.
-- Ein Bild = eine klare visuelle Funktion.
+- Ein Bild = eine klare visuelle Funktion oder eine zusammengehörige Informationseinheit.
+- Ein Multi-Panel zählt als ein Bild, wenn alle Teilbereiche gemeinsam dieselbe Aussage erklären.
 - Bei neuer Kernidee, Ursache/Wirkung, Epoche, Ort, Route, Beispiel oder unabhängiger Erklärung sinnvoll splitten.
 - Zielwert durchschnittlicher Hold: ungefähr 4,5–7,5 Sekunden.
 - Über 9 Sekunden prüfen.
@@ -178,8 +217,9 @@ BILD-DICHTE
 SICHTBARER TEXT
 - Bei deutschen Videos ausschließlich korrektes Deutsch, sofern Metadaten nichts anderes verlangen.
 - Kein Pseudotext.
-- Keine langen Absätze im Bild.
-- Labels nur, wenn sie die Erklärung verbessern.
+- Kurze Überschriften, Labels, Zahlen, Jahreszahlen, Namen und sehr kompakte Infozeilen sind erlaubt.
+- Keine langen Absätze.
+- Text nur dann einsetzen, wenn er die Erklärung verbessert.
 
 BILDPLAN-FORMAT
 Jeder Bildblock enthält mindestens:
@@ -201,6 +241,9 @@ ABSCHLUSSCHECK
 - Bild 02–NN jeweils nur eine finale Version
 - Produktion nach Cover in maximal 5er-Blöcken
 - keine Nutzer-Rückfrage zwischen den Blöcken
+- verschiedene Visual Forms sind erlaubt und wurden passend zum Inhalt gewählt
+- Multi-Panel, Text, Zahlen, Karten, Diagramme oder reine Objektgrafiken wurden genutzt, wenn sie die Aussage besser erklären
+- trotz wechselnder Bildarten bleibt dieselbe Alles-Stickman-Designwelt erkennbar
 - keine Bildnummer fehlt
 - keine Zusatzbilder übrig
 - keine Unterordner im finalen Bilderordner
