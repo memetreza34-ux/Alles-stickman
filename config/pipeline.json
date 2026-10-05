@@ -1,5 +1,5 @@
 {
-  "pipelineVersion": 1,
+  "pipelineVersion": 2,
   "projectSchemaVersion": 1,
   "languageDefault": "de",
   "aspectRatio": "16:9",
@@ -12,6 +12,14 @@
     "firstSceneIsCover": true,
     "coverImageNumber": 1,
     "coverCandidateCount": 3,
+    "autoSelectWinner": true,
+    "winnerBecomesSoleReference": true,
+    "deleteLosingCandidates": true,
+    "temporaryCandidateNames": [
+      "TEMP_COVER_A.png",
+      "TEMP_COVER_B.png",
+      "TEMP_COVER_C.png"
+    ],
     "separateThumbnailForbidden": true
   },
   "imagePolicy": {
@@ -22,9 +30,15 @@
     "preferSplitAboveSeconds": 11,
     "hardMaximumSeconds": 16,
     "minimumUsefulHoldSeconds": 2.5,
+    "generationBatchSize": 5,
     "maxConcurrentGenerations": 5,
     "nonCoverGenerationCount": 1,
-    "finalImageDirectory": "00-bildprompts/images"
+    "useOnlyCoverWinnerAsReference": true,
+    "usePreviousSceneAsReference": false,
+    "finalImageDirectory": "00-bildprompts/images",
+    "finalFolderMustBeFlat": true,
+    "finalFolderOnlyNumberedImages": true,
+    "nonCoverAlternatesForbidden": true
   },
   "audioPolicy": {
     "playbackRate": 1.1,

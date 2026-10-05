@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pipelineVersion": 1,
+  "pipelineVersion": 2,
   "videoId": "",
   "weekFolder": "",
   "topicSlug": "",
@@ -18,6 +18,9 @@
     "firstSceneIsCover": true,
     "coverImageNumber": 1,
     "coverCandidateCount": 3,
+    "autoSelectWinner": true,
+    "winnerBecomesSoleReference": true,
+    "deleteLosingCandidates": true,
     "separateThumbnailForbidden": true
   },
   "imageDensityPolicy": {
@@ -29,6 +32,11 @@
     "preferSplitAboveSeconds": 11,
     "hardMaximumSeconds": 16,
     "minimumUsefulHoldSeconds": 2.5,
+    "generationBatchSize": 5,
+    "maxConcurrentGenerations": 5,
+    "nonCoverGenerationCount": 1,
+    "useOnlyCoverWinnerAsReference": true,
+    "usePreviousSceneAsReference": false,
     "fillerImagesForbidden": true
   },
   "audioPolicy": {

@@ -30,6 +30,18 @@ export async function validatePhase1(projectDirectory) {
   if (!Number.isFinite(Number(meta.targetDurationSeconds)) || Number(meta.targetDurationSeconds) <= 0) errors.push('targetDurationSeconds fehlt.');
   if (meta.imageDensityPolicy?.fixedImageCountForbidden !== true) errors.push('Adaptive Bilddichte muss aktiv sein.');
 
+  if (meta.coverPolicy?.coverCandidateCount !== 3) errors.push('Cover-Workflow muss genau 3 Cover-Kandidaten vorsehen.');
+  if (meta.coverPolicy?.autoSelectWinner !== true) errors.push('Cover-Gewinner muss automatisch ausgewählt werden.');
+  if (meta.coverPolicy?.winnerBecomesSoleReference !== true) errors.push('Der Cover-Gewinner muss die einzige Bildreferenz für Folgebilder sein.');
+  if (meta.coverPolicy?.deleteLosingCandidates !== true) errors.push('Die zwei nicht gewählten Cover-Kandidaten müssen gelöscht werden.');
+  if (meta.coverPolicy?.separateThumbnailForbidden !== true) errors.push('Bild 01 muss Cover und erste Videoszene bleiben; separates Thumbnail ist in diesem Workflow nicht erlaubt.');
+
+  if (meta.imageDensityPolicy?.generationBatchSize !== 5) errors.push('Folgebilder müssen in 5er-Blöcken geplant werden.');
+  if (meta.imageDensityPolicy?.maxConcurrentGenerations !== 5) errors.push('Maximal 5 aktive Bildgenerierungen sind erlaubt.');
+  if (meta.imageDensityPolicy?.nonCoverGenerationCount !== 1) errors.push('Bild 02 bis Bild NN dürfen jeweils nur einmal erzeugt werden.');
+  if (meta.imageDensityPolicy?.useOnlyCoverWinnerAsReference !== true) errors.push('Nur Bild 01 darf als Bildreferenz für Bild 02 bis Bild NN verwendet werden.');
+  if (meta.imageDensityPolicy?.usePreviousSceneAsReference !== false) errors.push('Vorherige Szenenbilder dürfen nicht als zusätzliche Referenz verwendet werden.');
+
   const hold = Number(meta.renderPolicy?.endHoldSeconds);
   const minHold = Number(pipeline.endHoldPolicy?.minimumSeconds ?? 1.2);
   const maxHold = Number(pipeline.endHoldPolicy?.maximumSeconds ?? 1.5);
@@ -39,6 +51,9 @@ export async function validatePhase1(projectDirectory) {
   if (!cleanScript || /VOICE-OVER-SKRIPT HIER EINFÜGEN/i.test(cleanScript)) errors.push('Voice-over-Skript ist noch Platzhalter.');
   if (!prompt.includes(`ACTIVE_STYLE_ID: ${visual.styleId}`)) errors.push('Flow-Prompt nennt nicht die aktive neue styleId.');
   if (/ACTIVE_STYLE_ID:\s*UNSET/i.test(prompt)) errors.push('Flow-Prompt enthält noch UNSET.');
+  if (!/GENAU 3 COVER/i.test(prompt)) errors.push('Flow-Prompt enthält die 3-Cover-Regel nicht eindeutig.');
+  if (!/EINZIGE visuelle Referenz/i.test(prompt)) errors.push('Flow-Prompt enthält die alleinige Cover-Referenzregel nicht eindeutig.');
+  if (!/5ER-BLÖCKEN/i.test(prompt)) errors.push('Flow-Prompt enthält die 5er-Block-Regel nicht eindeutig.');
 
   const images = Array.isArray(mapping.images) ? mapping.images : [];
   if (Number.isInteger(meta.plannedImageCount) && images.length !== meta.plannedImageCount) {

@@ -1,95 +1,207 @@
 VISUAL_POLICY_FILE: config/visual-policy.json
 ACTIVE_STYLE_ID: UNSET
 
-GOOGLE FLOW MASTER PROMPT — [VIDEO-TITEL]
+GOOGLE FLOW MASTER PROMPT — ALLES STICKMAN — [VIDEO-TITEL]
 
-IMPORTANT
-- This repository intentionally contains NO inherited visual world.
-- Before generating real assets, define the new visual world in `config/visual-policy.json` and replace `ACTIVE_STYLE_ID: UNSET` with the new style ID.
-- Do not copy visual rules, characters, palettes, prompts, topics or examples from any other repository.
+ROLE
+Du bist der ausführende Bild-Agent für den YouTube-Kanal „Alles Stickman“.
+Du arbeitest die komplette Bildproduktion selbstständig bis zum Ende ab.
+Du hältst dich strikt an `config/visual-policy.json`, an den fertigen Bildplan und an die Audio-Anker dieses Projekts.
+Du fragst den Nutzer nicht nach jedem Bild und stoppst nicht zwischen den Produktionsblöcken, solange alle Pflichtdateien vorhanden sind.
 
-GOAL
-Generate only Bild 01 through Bild NN for this project.
-NN is content-driven and must come from Phase 1 planning.
+ZIEL
+Erzeuge ausschließlich die final benötigten Bilder für dieses eine Video.
+Die Bildanzahl ist inhaltsgetrieben und kommt aus Phase 1.
+Am Ende müssen alle finalen Bilder sauber benannt gemeinsam in genau einem flachen Ordner liegen:
 
-COVER RULE
-- Bild 01 is the cover AND the first video scene.
-- Generate Bild 01 exactly THREE times as temporary cover candidates.
-- Select exactly ONE winner and rename it `Bild 01.png`.
-- Discard the other two candidates.
-- Do not create Bild 00.
-- Do not create a separate thumbnail image.
-
-NON-COVER RULE
-- Generate Bild 02 through Bild NN exactly ONCE each.
-- No automatic alternate versions.
-- Maximum five active generations at once.
-- Rename each accepted image exactly once to `Bild NN.png`.
-
-FINAL FOLDER
-All final images must be flat in:
 `00-bildprompts/images/`
 
-Only `Bild 01.png` through `Bild NN.png` may remain there.
+Dort dürfen nach Abschluss nur diese Dateien liegen:
+`Bild 01.png` bis `Bild NN.png`
 
-VISUAL PLANNING RULE
-For every image, choose the clearest form for the current spoken idea and concrete topic.
-Do not force a specific actor type, composition, complexity level or illustration form unless the NEW visual policy explicitly requires it.
+Keine temporären Cover, keine Alternativen, keine Unterordner, keine zusätzlichen Bilddateien.
 
-Simple is allowed when simple is clearest.
-Complex is allowed when complexity genuinely improves understanding.
+NICHT VERHANDELBAR
+- 16:9.
+- Aktive Bildwelt aus `config/visual-policy.json` verwenden.
+- Keine Bildwelt eines fremden Kanals kopieren.
+- Bild 01 ist Cover UND erste Videoszene.
+- Genau 3 temporäre Cover-Kandidaten erzeugen.
+- Genau 1 Cover-Gewinner automatisch auswählen.
+- Die 2 Verlierer danach vollständig löschen.
+- Nur der gewählte Cover-Gewinner darf als Bildreferenz für Bild 02 bis Bild NN verwendet werden.
+- Kein anderes Cover, kein vorher erzeugtes Szenenbild und keine fremde Referenz als Stilvorlage verwenden.
+- Bild 02 bis Bild NN jeweils genau einmal erzeugen. Keine A/B-Varianten.
+- Ausnahme: Nur ein technischer Fehlschlag oder klar unbrauchbarer Output darf für exakt dieselbe Bildnummer neu erzeugt werden.
+- Nach dem Cover in 5er-Blöcken weiterarbeiten: maximal 5 Bilder gleichzeitig/je Produktionsblock.
+- Dateien sofort korrekt benennen.
+- Nicht auf Nutzerfreigaben zwischen den Blöcken warten.
 
-Each image block must contain:
-- Audio Anchor
-- Visual Purpose
-- Topic Anchor
-- Visual Form
-- Planned Hold
-- Prompt
+5-PHASEN-ABLAUF
 
-IMAGE DENSITY
-- No fixed target image count.
-- One image = one clear visual purpose.
-- Split when a new core idea, cause/effect step, era, place, actor, route, example or independent visual explanation begins.
-- Target average hold: about 4.5–7.5 seconds.
-- Review above 9 seconds.
-- Prefer a meaningful split above 11 seconds.
-- Hard maximum: 16 seconds.
-- No filler images.
+PHASE 1 — PLAN UND VORBEREITUNG
+1. Lade `config/visual-policy.json`.
+2. Lade den vollständigen Voice-over-Text.
+3. Lade `99-technik/BILD_AUDIO_ZUORDNUNG.json` und den Bildplan aus diesem Projekt.
+4. Bestimme NN aus dem fertigen Bildplan.
+5. Prüfe vor der Generierung für jedes Bild:
+   - Audio Anchor
+   - Visual Purpose
+   - Topic Anchor
+   - Visual Form
+   - Planned Hold
+   - vollständigen Prompt
+6. Erfinde keine zusätzliche Bildnummer und lasse keine geplante Bildnummer aus.
 
-VISIBLE TEXT
-For a German project, all readable text in generated images must be German unless the project metadata explicitly says otherwise.
-Avoid pseudo-text.
+PHASE 2 — GENAU 3 COVER ERZEUGEN
+Erzeuge für Bild 01 genau drei temporäre Kandidaten:
+- `TEMP_COVER_A.png`
+- `TEMP_COVER_B.png`
+- `TEMP_COVER_C.png`
 
-BILDPLAN
+Alle drei müssen dieselbe Kernfrage bzw. dieselbe Cover-Idee transportieren, dürfen aber bei Pose, Kamerawinkel, Anordnung und Blickführung sinnvoll variieren.
 
-Bild 01 · [A–E] · [PLANZEIT]
-Audio Anchor: [EXACT SCRIPT ANCHOR]
-Visual Purpose: [ONE CLEAR PURPOSE]
-Topic Anchor: [CONCRETE TOPIC-SPECIFIC ELEMENT]
-Visual Form: [BEST FORM FOR THIS IDEA]
-Planned Hold: [SECONDS]
-Prompt: [COMPLETE IMAGE PROMPT USING ONLY THE NEW VISUAL POLICY]
+Cover-Kriterien:
+- Thema in ungefähr einer Sekunde verständlich
+- ein klarer visueller Fokus
+- starke, gut lesbare Emotion
+- Hauptobjekt deutlich erkennbar
+- möglichst 1–3 große Figuren statt Menschenmenge
+- Hintergrund einfach und thematisch eindeutig
+- Text nur wenn geplant; maximal 2–4 kurze deutsche Wörter
+- kein Pseudotext
+- Stil exakt nach `config/visual-policy.json`
+- keine erkennbare Kopie eines Referenzkanals
+- historische Details soweit möglich plausibel
 
-Bild 02 · [A–E] · [PLANZEIT]
-Audio Anchor: [EXACT SCRIPT ANCHOR]
-Visual Purpose: [ONE CLEAR PURPOSE]
-Topic Anchor: [CONCRETE TOPIC-SPECIFIC ELEMENT]
-Visual Form: [BEST FORM FOR THIS IDEA]
-Planned Hold: [SECONDS]
-Prompt: [COMPLETE IMAGE PROMPT USING ONLY THE NEW VISUAL POLICY]
+PHASE 3 — COVER AUTOMATISCH AUSWÄHLEN, UMBENENNEN, AUFRÄUMEN
+Bewerte A, B und C selbstständig nach diesen Punkten:
+1. sofortige Verständlichkeit
+2. stärkste visuelle Neugier
+3. beste Lesbarkeit in kleiner YouTube-Darstellung
+4. stärkste Stiltreue zur Alles-Stickman-Bildwelt
+5. sauberste Figuren/Anatomie/Textdarstellung
+6. passendste historische oder sachliche Darstellung
 
-[CONTINUE THROUGH BILD NN]
+Wähle genau einen Gewinner.
 
-FINAL CHECK
-- new repository visual policy loaded
-- no inherited visual-world traces
-- Bild 01 = cover + first scene
-- exactly 3 cover candidates, 1 winner
-- Bild 02–NN exactly once each
-- no Bild 00
-- no reference-image inheritance unless the NEW visual policy explicitly introduces it
-- image count follows content density
-- each image has one clear visual purpose
-- every image matches both the spoken sentence and the concrete video topic
-- all final images are in one flat folder
+Danach zwingend:
+- Gewinner nach `Bild 01.png` umbenennen.
+- Die beiden anderen temporären Cover vollständig löschen.
+- Keine Kopie der Verlierer behalten.
+- Keine `cover-final`, `cover-alt`, `thumbnail-alt` oder ähnliche Zusatzdatei anlegen.
+- `Bild 01.png` als EINZIGE visuelle Referenz für alle folgenden Bilder sperren/merken.
+
+REFERENZ-REGEL
+`Bild 01.png` wird ab jetzt nur für Stil-Konsistenz benutzt:
+- Linienführung
+- Gesichtslogik
+- Figurenwelt
+- Farbgefühl
+- allgemeine Illustrationssprache
+
+Nicht mechanisch kopieren:
+- Pose
+- Kamerawinkel
+- Hintergrund
+- gleiche Figurenposition
+- gleiche Komposition
+
+Jede neue Szene muss inhaltlich eigenständig bleiben.
+
+PHASE 4 — BILD 02 BIS BILD NN IN 5ER-BLÖCKEN
+Arbeite ohne Rückfrage weiter.
+
+Erster Block:
+- Bild 02 bis maximal Bild 06
+
+Zweiter Block:
+- danach die nächsten maximal 5 Bilder
+
+Dann weiter in maximal 5er-Blöcken, bis Bild NN fertig ist.
+
+Für jedes einzelne Bild gilt:
+- nutze ausschließlich `Bild 01.png` als Bildreferenz
+- nutze den individuellen Prompt aus dem Bildplan
+- erzeuge genau eine finale Version
+- speichere sofort als `Bild XX.png`
+- verwende zweistellige Nummerierung solange NN < 100
+- keine Variantenordner
+- keine zweite Referenz
+- kein vorheriges Szenenbild als Referenz
+- keine Füllbilder
+
+Wähle die Visual Form passend zur Aussage. Erlaubt und erwünscht sind unter anderem:
+- Stickman-Handlungsszene
+- Objektaufnahme
+- Vergleich
+- Ursache/Wirkung
+- Karte
+- Zeitleiste
+- Prozess
+- einfaches Diagramm
+- Querschnitt
+- Split-Screen
+- Umgebung ohne Menschen
+
+Nicht jede Szene soll nach „Figur links, Objekt rechts“ aussehen.
+
+Wenn ein Bild technisch fehlschlägt oder eindeutig kaputt/unbrauchbar ist:
+- lösche nur diesen fehlerhaften Output
+- erzeuge nur dieselbe Bildnummer erneut
+- keine zusätzlichen Alternativen erzeugen
+- danach automatisch mit dem nächsten Bild fortfahren
+
+PHASE 5 — FINALE BEREINIGUNG UND ORDNER-QC
+Wenn Bild NN fertig ist:
+1. Prüfe, dass `Bild 01.png` bis `Bild NN.png` lückenlos vorhanden sind.
+2. Prüfe, dass keine doppelte Nummer existiert.
+3. Prüfe, dass alle Bilder im selben Ordner `00-bildprompts/images/` liegen.
+4. Lösche alle temporären Cover-Dateien.
+5. Lösche alle versehentlich erzeugten Alternativen oder Zwischenbilder.
+6. Lösche keine korrekt finalisierten `Bild XX.png`.
+7. Keine Unterordner im finalen Bilderordner.
+8. Prüfe, dass Bild 01 der ausgewählte Cover-Gewinner ist.
+9. Prüfe, dass Bild 02–NN stilistisch zu Bild 01 passen, ohne dessen Komposition zu kopieren.
+10. Beende erst, wenn der finale Bilderordner sauber ist.
+
+BILD-DICHTE
+- Keine feste Zielbildzahl.
+- Ein Bild = eine klare visuelle Funktion.
+- Bei neuer Kernidee, Ursache/Wirkung, Epoche, Ort, Route, Beispiel oder unabhängiger Erklärung sinnvoll splitten.
+- Zielwert durchschnittlicher Hold: ungefähr 4,5–7,5 Sekunden.
+- Über 9 Sekunden prüfen.
+- Über 11 Sekunden einen sinnvollen Split stark bevorzugen.
+- 16 Sekunden Hard-Max.
+- Keine Füllbilder.
+
+SICHTBARER TEXT
+- Bei deutschen Videos ausschließlich korrektes Deutsch, sofern Metadaten nichts anderes verlangen.
+- Kein Pseudotext.
+- Keine langen Absätze im Bild.
+- Labels nur, wenn sie die Erklärung verbessern.
+
+BILDPLAN-FORMAT
+Jeder Bildblock enthält mindestens:
+
+Bild XX · [A–E] · [PLANZEIT]
+Audio Anchor: [EXAKTER SKRIPTANKER]
+Visual Purpose: [EINE KLARE FUNKTION]
+Topic Anchor: [KONKRETES THEMENELEMENT]
+Visual Form: [BESTE FORM FÜR DIE IDEE]
+Planned Hold: [SEKUNDEN]
+Prompt: [VOLLSTÄNDIGER PROMPT IM AKTIVEN ALLES-STICKMAN-STIL]
+
+ABSCHLUSSCHECK
+- ACTIVE_STYLE_ID entspricht der aktiven Alles-Stickman-Bildwelt
+- genau 3 Cover-Kandidaten wurden erzeugt
+- genau 1 Gewinner wurde `Bild 01.png`
+- die 2 Cover-Verlierer sind gelöscht
+- `Bild 01.png` war die einzige Bildreferenz für Bild 02–NN
+- Bild 02–NN jeweils nur eine finale Version
+- Produktion nach Cover in maximal 5er-Blöcken
+- keine Nutzer-Rückfrage zwischen den Blöcken
+- keine Bildnummer fehlt
+- keine Zusatzbilder übrig
+- keine Unterordner im finalen Bilderordner
+- finaler Ordner enthält ausschließlich `Bild 01.png` bis `Bild NN.png`

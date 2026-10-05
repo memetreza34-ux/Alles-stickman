@@ -1,14 +1,20 @@
-# YouTube Workflow
+# YouTube Workflow — Alles Stickman
 
-Dieses Repository enthält nur die **allgemeine Produktionspipeline**. Thema, Nische und Bildwelt sind bewusst nicht vorgegeben.
+Dieses Repository ist die Produktionsbasis für den deutschsprachigen faceless YouTube-Kanal **Alles Stickman**.
+
+Kanalthemen: Menschheit, Evolution, Überleben, Erfindungen, Ressourcen, historische Gesellschaften und ungewöhnliche Alltagsfragen.
 
 ## Grundprinzip
 
 ```text
 Thema
-→ Recherche / Skript
+→ Recherche / Fakten-QC
+→ Voice-over-Skript
 → Bildplanung
-→ Bildgenerierung
+→ 3 Cover-Kandidaten
+→ 1 Cover-Gewinner
+→ Gewinner = Bild 01 + einzige Bildreferenz
+→ Bild 02–NN in maximal 5er-Blöcken
 → finale Voice-over-Datei
 → Audio-Optimierung
 → Wort-/Anchor-Alignment
@@ -20,14 +26,19 @@ Thema
 
 ## 0. Einmalige Einrichtung
 
-1. `config/visual-policy.json` mit der **neuen** Bildwelt füllen.
-2. `status` auf `READY` setzen.
-3. Eine eindeutige `styleId` vergeben.
-4. `npm install` ausführen.
-5. Lokal verfügbar machen:
-   - Node.js >= 24
-   - FFmpeg / FFprobe
-   - Whisper CLI (`whisper`)
+Die aktive Bildwelt steht in:
+
+`config/visual-policy.json`
+
+Aktive Style-ID:
+
+`alles-stickman-editorial-v1`
+
+Lokale Voraussetzungen:
+- Node.js >= 24
+- FFmpeg / FFprobe
+- Whisper CLI (`whisper`)
+- `npm install`
 
 ## 1. Thema prüfen
 
@@ -35,7 +46,7 @@ Thema
 npm run topic:youtube -- --topic "THEMA"
 ```
 
-Der Check verwendet ausschließlich die **neue leere Registry dieses Repositories** und später hier erzeugte Projekte. Keine Themenhistorie aus anderen Repositories wurde übernommen.
+Der Themeneditor prüft die Repo-eigene Themenhistorie und verhindert starke Doppelungen.
 
 ## 2. Projekt anlegen
 
@@ -47,7 +58,7 @@ npm run create:youtube -- \
   --slug "themen-slug"
 ```
 
-Ergebnis:
+Projektstruktur:
 
 ```text
 youtube/<week>/<slug>/
@@ -61,48 +72,39 @@ youtube/<week>/<slug>/
 └── 99-technik/
     ├── video.json
     ├── BILD_AUDIO_ZUORDNUNG.json
+    ├── RECHERCHE.md
+    ├── PHASE1_QC.md
+    ├── PRODUKTIONSPLAN.md
+    ├── YOUTUBE_CHAPTERS.json
     ├── YOUTUBE_RENDER_PLAN.json
     └── status.json
 ```
 
-## 3. Phase 1
+## 3. Phase 1 — Recherche, Skript und Bildplan
 
-Phase 1 erstellt bzw. füllt:
-
-- Recherche
+Phase 1 muss vollständig festlegen:
+- Kernfrage
+- belastbare Faktenbasis
+- Unsicherheiten/Vereinfachungen
 - Voice-over-Skript
-- Bildplan
+- Ziel-Länge
+- inhaltsgetriebene Bildzahl
+- Audio-Anker
+- Visual Purpose
+- Topic Anchor
+- Visual Form
+- Planned Hold
 - vollständige Bildprompts
-- Audio-Anker pro Bild
 - Render-/SFX-Plan
-- Metadaten
 
-### Allgemeine Bildplan-Regeln
-
+Bildplan-Regeln:
 - keine starre Bildzahl
 - 1 Bild = 1 klare visuelle Funktion
-- dichte Passagen früher splitten
 - durchschnittlich ca. 4,5–7,5 s pro Bild
 - ab 9 s Split prüfen
 - ab 11 s Split stark bevorzugen
 - 16 s Hard-Max
 - keine Füllbilder
-- Bild 01 = Cover + erste Videoszene
-- Bild 01 wird 3× als Cover-Kandidat erzeugt; genau 1 Gewinner bleibt
-- Bild 02–NN jeweils nur 1×
-
-### Bildwelt
-
-Die Pipeline schreibt **keine Figurenart und keinen Zeichenstil vor**. Das wird allein in `config/visual-policy.json` definiert.
-
-Jeder Bildmoment sollte mindestens enthalten:
-
-```text
-Visual Purpose: ...
-Topic Anchor: ...
-Visual Form: ...
-Prompt: ...
-```
 
 Vor Asset-Erzeugung:
 
@@ -110,21 +112,129 @@ Vor Asset-Erzeugung:
 npm run validate:youtube-phase1 -- --dir "youtube/<week>/<slug>"
 ```
 
-## 4. Phase 2 — Assets
+## 4. Google Flow — verbindlicher 5-Phasen-Ablauf
+
+Masterprompt:
+
+`00-bildprompts/google-flow-prompt.txt`
+
+### Phase 1: Plan laden
+- aktive Bildwelt laden
+- Skript laden
+- Bildplan laden
+- NN bestimmen
+
+### Phase 2: exakt 3 Cover erzeugen
+Temporär:
+- `TEMP_COVER_A.png`
+- `TEMP_COVER_B.png`
+- `TEMP_COVER_C.png`
+
+Bild 01 ist Cover und erste Videoszene.
+
+### Phase 3: Gewinner wählen
+Der Agent wählt selbstständig genau einen Gewinner nach:
+- Verständlichkeit
+- Neugier
+- Thumbnail-Lesbarkeit
+- Stiltreue
+- saubere Figuren/Textdarstellung
+- sachliche/historische Plausibilität
+
+Danach:
+- Gewinner → `Bild 01.png`
+- beide Verlierer löschen
+- keine Kopien der Verlierer behalten
+- `Bild 01.png` als einzige Bildreferenz sperren
+
+### Phase 4: Restbilder in maximal 5er-Blöcken
+Danach ohne Nutzer-Rückfrage:
+
+```text
+Bild 02–06
+Bild 07–11
+Bild 12–16
+...
+bis Bild NN
+```
+
+Der letzte Block darf kleiner sein.
+
+Regeln:
+- maximal 5 aktive Generierungen
+- jedes Nicht-Cover-Bild genau einmal
+- keine A/B-Alternativen
+- ausschließlich `Bild 01.png` als Bildreferenz
+- kein vorheriges Szenenbild als Referenz
+- individuelle Komposition passend zum Inhalt
+
+Nur bei technischem Fehlschlag oder eindeutig unbrauchbarem Output darf exakt dieselbe Bildnummer korrigierend neu erzeugt werden.
+
+### Phase 5: finaler Ordner
+Nach Abschluss darf `00-bildprompts/images/` ausschließlich enthalten:
+
+```text
+Bild 01.png
+Bild 02.png
+Bild 03.png
+...
+Bild NN.png
+```
+
+Keine:
+- TEMP-Dateien
+- Cover-Verlierer
+- Varianten
+- Unterordner
+- Zwischenbilder
+- zusätzliche Thumbnails
+
+## 5. Referenzbild-Regel
+
+Für jedes Video gilt:
+
+**Nur der ausgewählte Cover-Gewinner `Bild 01.png` ist Bildreferenz für alle weiteren Szenen.**
+
+Er stabilisiert:
+- Linienführung
+- Gesichtslogik
+- Figurenwelt
+- Farbgefühl
+- Illustrationssprache
+
+Er darf nicht dazu führen, dass alle Szenen dieselbe Pose, Kamera oder Komposition kopieren.
+
+## 6. Eigene Bildwelt
+
+Verbindlich ist:
+
+`config/visual-policy.json`
+
+Zusätzliche Dokumentation:
+
+`channel/VISUAL_WORLD.md`
+
+Grundprinzipien:
+- 2D handgezeichnet wirkender Editorial-Stickman-Stil
+- dunkle leicht unregelmäßige Konturen
+- warme Elfenbein-Köpfe
+- starke Mimik
+- reduzierte Anatomie
+- gedämpfte natürliche Farbpalette
+- historisch lesbare Kleidung und Requisiten
+- reduzierte, aber informative Hintergründe
+- Karten, Prozesse, Vergleiche und Diagramme ausdrücklich erlaubt
+- keine direkte Kopie eines Referenzkanals
+
+## 7. Phase 2 — Assets
 
 Finale Bilder:
 
-```text
-00-bildprompts/images/Bild 01.png
-...
-00-bildprompts/images/Bild NN.png
-```
+`00-bildprompts/images/Bild 01.png` bis `Bild NN.png`
 
-Finales Nutzer-Voice-over: genau **eine** Audiodatei unter:
+Finales Nutzer-Voice-over: genau eine Audiodatei unter:
 
-```text
-02-audio/
-```
+`02-audio/`
 
 Das Nutzeroriginal wird nie überschrieben.
 
@@ -134,19 +244,18 @@ Prüfung:
 npm run validate:youtube-phase2 -- --dir "youtube/<week>/<slug>"
 ```
 
-## 5. Phase 3
+## 8. Phase 3 — Audio, Alignment, Timeline und Render
 
 ```bash
 npm run phase3:youtube -- --dir "youtube/<week>/<slug>"
 ```
 
 Reihenfolge:
-
 1. Preflight
 2. Phase-1-Gate
 3. Phase-2-Gate
 4. Audio intern optimieren
-5. Whisper auf dem optimierten Audio
+5. Whisper auf optimiertem Audio
 6. Bildanker ausrichten
 7. finale Timeline bauen
 8. Pacing prüfen
@@ -155,7 +264,7 @@ Reihenfolge:
 11. Thumbnail aus Bild 01 kopieren
 12. Post-Render-QC
 
-Nur vorbereiten, ohne Render:
+Nur vorbereiten:
 
 ```bash
 npm run phase3:youtube -- --dir "youtube/<week>/<slug>" --prepare-only
@@ -163,9 +272,7 @@ npm run phase3:youtube -- --dir "youtube/<week>/<slug>" --prepare-only
 
 ## Audio-Standard
 
-Standardwerte stehen in `config/pipeline.json`:
-
-- 1,10× bei erhaltener Tonhöhe
+- 1,10× Playback bei erhaltener Tonhöhe
 - lange Pausen kürzen
 - Endstille entfernen
 - Ziel −16 LUFS
@@ -175,23 +282,26 @@ Standardwerte stehen in `config/pipeline.json`:
 
 ## Schluss-Hold
 
-Nach dem letzten gesprochenen Wort bleibt das letzte Bild standardmäßig **1,3 s** sichtbar. Zulässig sind 1,2–1,5 s.
+Nach dem letzten gesprochenen Wort bleibt das letzte Bild standardmäßig 1,3 s sichtbar. Zulässig: 1,2–1,5 s.
 
 ## Definition of Done
 
-Ein Video ist fertig, wenn:
-
-- Thema nicht doppelt ist
-- Bildwelt für dieses Repo definiert ist
-- Phase 1 bestanden ist
-- Bildanzahl inhaltsgetrieben ist
-- Bild 01 Cover + erste Szene ist
-- finale Bilder sauber benannt sind
+Ein Video ist erst fertig, wenn:
+- Thema geprüft ist
+- Recherche/Skript/Bildplan fertig sind
+- aktive Bildwelt `READY` ist
+- genau 3 Cover-Kandidaten erzeugt wurden
+- genau 1 Cover-Gewinner als `Bild 01.png` übrig bleibt
+- die 2 Cover-Verlierer gelöscht sind
+- Bild 01 als einzige Bildreferenz für Bild 02–NN verwendet wurde
+- Bild 02–NN in maximal 5er-Blöcken erzeugt wurden
+- finale Bilder lückenlos benannt sind
+- alle finalen Bilder in einem flachen Ordner liegen
 - genau eine Nutzerstimme vorliegt
 - Audio-QC bestanden ist
-- echte Wortzeiten für die Bildanker vorliegen
-- Timeline keine Lücken oder Überlappungen enthält
-- Pacing-Gate bestanden ist
+- echte Wortzeiten vorliegen
+- Timeline keine Lücken/Überlappungen hat
+- Pacing bestanden ist
 - Render existiert
-- Thumbnail byte-identisch aus Bild 01 stammt
+- Thumbnail aus Bild 01 erzeugt wurde
 - Post-Render-QC bestanden ist

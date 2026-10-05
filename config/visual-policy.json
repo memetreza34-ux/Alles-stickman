@@ -1,14 +1,114 @@
 {
-  "visualPolicyVersion": 1,
-  "status": "UNSET",
-  "styleId": "UNSET",
-  "description": "Absichtlich leer. Hier wird die neue Bildwelt dieses Repositories definiert.",
-  "rules": [],
-  "forbidden": [],
+  "visualPolicyVersion": 2,
+  "status": "READY",
+  "styleId": "alles-stickman-editorial-v1",
+  "description": "Eigenständige 2D-Stickman-Erklärwelt für den deutschsprachigen Kanal Alles Stickman: handgezeichnet wirkend, klar, ausdrucksstark, historisch lesbar und für lange Erklärvideos konsistent.",
   "visibleTextLanguage": "de",
+  "principles": [
+    "Ein Bild erklärt genau eine klare Aussage oder Handlung.",
+    "Die Szene muss auch ohne Voice-over in wenigen Sekunden verständlich sein.",
+    "Figuren sind einfach, aber nicht generisch: klare Silhouette, starke Mimik, passende Haare, Kleidung und Requisiten.",
+    "Historische Umgebung und Gegenstände müssen zur erzählten Epoche passen, soweit es die Quellenlage erlaubt.",
+    "Nicht jede Szene braucht Menschen: Karten, Objekte, Vergleiche, Prozesse, Zeitleisten und einfache Infografiken sind ausdrücklich erwünscht.",
+    "Der Stil bleibt über alle Videos erkennbar gleich, während Komposition, Epoche, Ort und Handlung variieren dürfen."
+  ],
+  "characterStyle": {
+    "body": "Reduzierter Stickman-/Cartoon-Körper mit schlanken Gliedmaßen und einfacher klarer Torsoform; keine realistische Anatomie.",
+    "head": "Leicht ovaler bis runder Kopf in warmem Elfenbein statt reinem Weiß; klare dunkle Außenkontur.",
+    "face": "Zwei einfache gut lesbare Augen, kleine bis mittlere Pupillen, ausdrucksstarke Augenbrauen und klar gezeichneter Mund; Emotion muss auch klein lesbar sein.",
+    "hairAndBeards": "Vereinfachte handgezeichnete Haar- und Bartformen mit leicht unregelmäßigen Kanten; Frisur und Bart dürfen Figur, Alter und Epoche unterscheiden.",
+    "hands": "Vereinfachte Hände; keine detaillierten realistischen Finger, keine deformierten KI-Hände.",
+    "clothing": "Stark vereinfachte, aber epochemäßig plausible Kleidung; Farbe, Schnitt und Accessoires dienen der schnellen zeitlichen Einordnung.",
+    "diversity": "Menschen dürfen glaubwürdig unterschiedliche Hauttöne, Haare, Alter und Körpermerkmale haben, sofern es Thema und historische Einordnung sinnvoll unterstützen."
+  },
+  "lineStyle": {
+    "color": "dunkles Anthrazit statt hartem Digital-Schwarz",
+    "quality": "leicht unregelmäßige handgezeichnete Tintenlinie",
+    "weight": "mittelstark, auch bei kleiner Darstellung lesbar",
+    "shading": "sparsam; flache Farbflächen plus sehr einfache Schatten, keine hochglänzende 3D-Beleuchtung"
+  },
+  "palette": {
+    "charcoal": "#242321",
+    "warmIvory": "#F1E5CF",
+    "sand": "#D5B17A",
+    "ochre": "#C48A35",
+    "rust": "#A75842",
+    "sage": "#7B8A65",
+    "mutedBlue": "#6B8FA3",
+    "nightNavy": "#2B3948",
+    "rule": "Gedämpfte natürliche Grundpalette. Pro Szene wenige dominante Farben. Kräftigere Akzente nur für Blickführung, Gefahr, Feuer, wichtige Objekte oder Cover-Fokus."
+  },
+  "backgroundStyle": {
+    "detailLevel": "reduziert bis mittel",
+    "rule": "Hintergrund muss Ort, Epoche und Situation sofort erkennbar machen, darf aber Hauptfigur oder Hauptobjekt nicht überladen.",
+    "depth": "Vordergrund, Mittelgrund und Hintergrund dürfen klar getrennt sein; keine fotorealistische Tiefenunschärfe nötig.",
+    "historicalAccuracy": "Architektur, Vegetation, Werkzeuge und Alltagsobjekte nach Möglichkeit quellenbasiert und zeitlich plausibel darstellen."
+  },
+  "visualForms": [
+    "Stickman-Handlungsszene",
+    "Objekt-/Fundstück-Erklärung",
+    "Vorher-Nachher-Vergleich",
+    "Ursache-Wirkung-Szene",
+    "Karte mit Route oder Ausbreitung",
+    "Zeitleiste",
+    "Schritt-für-Schritt-Prozess",
+    "einfaches Diagramm oder Zahlenvergleich",
+    "Querschnitt oder Aufbau",
+    "Split-Screen-Vergleich",
+    "Umgebungsszene ohne Menschen"
+  ],
+  "coverStyle": {
+    "imageNumber": 1,
+    "isFirstVideoScene": true,
+    "candidateCount": 3,
+    "goal": "Ein sofort verständliches, neugierig machendes Schlüsselbild mit einem klaren Konflikt, Objekt oder Vorher-Nachher-Moment.",
+    "composition": "1 Hauptidee, typischerweise 1–3 große Figuren oder 1 große Figur plus 1 Hauptobjekt; Hintergrund stark vereinfacht.",
+    "text": "Wenn Text sinnvoll ist: maximal 2–4 kurze deutsche Wörter, groß, sauber geschrieben und mit sehr hohem Kontrast. Kein Pseudotext.",
+    "textStyle": "warme helle Schrift oder gedämpfter Amber-Akzent mit dunkler Kontur; nicht die exakte Typografie oder Farbformel eines Referenzkanals kopieren.",
+    "winnerRule": "Von genau drei Kandidaten wird genau ein Gewinner automatisch ausgewählt. Nur der Gewinner wird Bild 01.png und danach als einzige visuelle Referenz für alle weiteren Bilder verwendet."
+  },
+  "referenceConsistency": {
+    "coverWinnerIsSoleReference": true,
+    "useOtherCoverCandidatesAsReference": false,
+    "usePreviousGeneratedSceneAsReference": false,
+    "referencePurpose": "Der Cover-Gewinner dient nur zur Konsistenz von Linienführung, Gesichtslogik, Farbgefühl und allgemeiner Figurenwelt. Pose, Kamera, Hintergrund und Bildaufbau dürfen nicht mechanisch kopiert werden.",
+    "styleDriftForbidden": true
+  },
+  "textPolicy": {
+    "language": "de",
+    "pseudoTextForbidden": true,
+    "longParagraphsInImageForbidden": true,
+    "labelsAllowed": true,
+    "mapsAndDiagramsMayUseShortLabels": true,
+    "rule": "Text nur einsetzen, wenn er die Erklärung klar verbessert."
+  },
+  "rules": [
+    "16:9-Komposition für 1920x1080.",
+    "Szenen müssen mit der gesprochenen Aussage und dem konkreten Thema übereinstimmen.",
+    "Keine Füllbilder und keine austauschbaren Standardposen ohne Informationswert.",
+    "Gesichter, Kleidung und Requisiten müssen zwischen Szenen konsistent bleiben, wenn dieselbe Figur oder Epoche wiederkehrt.",
+    "Cover-Gewinner ist die einzige Bildreferenz für Bild 02 bis Bild NN.",
+    "Bild 02 bis Bild NN jeweils nur einmal erzeugen; keine A/B-Varianten außer bei technischem Fehlschlag oder klar unbrauchbarem Output.",
+    "Nach Abschluss dürfen im finalen Bilderordner ausschließlich Bild 01.png bis Bild NN.png liegen."
+  ],
+  "forbidden": [
+    "direkte Kopie eines konkreten Referenzkanals oder wiedererkennbarer Figuren daraus",
+    "3D-Pixar-Look",
+    "Fotorealismus",
+    "Anime-/Manga-Look",
+    "glänzende generische KI-3D-Optik",
+    "Pseudo-Schrift oder unlesbare Buchstaben",
+    "deformierte Hände, zusätzliche Gliedmaßen oder anatomische KI-Fehler",
+    "überladene Hintergründe ohne Erklärwert",
+    "identische Pose und identische Bildkomposition über viele Szenen",
+    "unnötige Menschenmengen",
+    "moderne Gegenstände in historischen Szenen ohne inhaltlichen Grund",
+    "historisch unplausible Uniformen, Werkzeuge oder Architektur, wenn sie vermeidbar sind",
+    "Wasserzeichen, Logos fremder Kanäle oder Markenzeichen aus Referenzbildern"
+  ],
   "notes": [
-    "Keine Bildwelt aus einem anderen Repository übernehmen.",
-    "Vor dem ersten echten Video status auf READY setzen, styleId vergeben und die neuen visuellen Regeln eintragen.",
-    "Die Produktionspipeline ist unabhängig von einer konkreten Figuren- oder Illustrationsart."
+    "Die Referenzkanäle dienen nur zur Analyse des Formats. Diese Bildwelt ist eine eigene Kanalidentität.",
+    "Bei Unsicherheit über historische Details lieber vereinfachen als etwas Spezifisches zu erfinden.",
+    "Für ein neues Video wird der in Phase 1 ausgewählte Cover-Gewinner zur einzigen visuellen Referenz des gesamten Bildsatzes."
   ]
 }
