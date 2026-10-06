@@ -1,5 +1,5 @@
 {
-  "visualPolicyVersion": 4,
+  "visualPolicyVersion": 5,
   "status": "READY",
   "styleId": "alles-stickman-editorial-v1",
   "description": "Eigenständige 2D-Stickman-Erklärwelt für Alles Stickman. Die Konsistenz entsteht ausschließlich aus dieser Visual Policy und den vollständigen individuellen Textprompts; für Folgebilder werden bewusst keine Bildreferenzen verwendet.",
@@ -108,15 +108,16 @@
     "composition": "1 Hauptidee, typischerweise 1–3 große Figuren oder 1 große Figur plus 1 Hauptobjekt; Hintergrund stark vereinfacht.",
     "text": "Wenn Text sinnvoll ist: maximal 2–4 kurze deutsche Wörter, groß, sauber geschrieben und mit sehr hohem Kontrast. Kein Pseudotext.",
     "textStyle": "warme helle Schrift oder gedämpfter Amber-Akzent mit dunkler Kontur; nicht die exakte Typografie oder Farbformel eines Referenzkanals kopieren.",
-    "winnerRule": "Google Flow bewertet die genau drei Kandidaten selbstständig und wählt genau einen Gewinner. Der Nutzer wählt nicht manuell. Der Gewinner wird Bild 01.png; die zwei Verlierer werden gelöscht. Der Gewinner wird NICHT als Referenzbild für Folgebilder verwendet."
+    "winnerRule": "Google Flow bewertet genau drei Cover-Kandidaten selbstständig und wählt genau einen Gewinner. Der Nutzer wird nicht nach einer Auswahl gefragt. Der Gewinner wird Bild 01.png und dient als finales Cover/Thumbnail sowie erste Videoszene; die zwei Verlierer werden gelöscht.",
+    "selectionAuthority": "google-flow",
+    "userSelectionRequired": false
   },
   "referenceConsistency": {
+    "referenceMode": "none",
     "useImageReferences": false,
-    "coverWinnerIsSoleReference": false,
-    "useOtherCoverCandidatesAsReference": false,
-    "usePreviousGeneratedSceneAsReference": false,
+    "generatedImageReferenceForbidden": true,
     "consistencySource": "Nur config/visual-policy.json und der vollständige individuelle Textprompt des jeweiligen Bildes.",
-    "reason": "Eine Cover-Komposition ist auf Klickstärke optimiert und kann Karten, Diagramme, Multi-Panels und andere Erklärformen unnötig einengen. Deshalb wird die gemeinsame Bildwelt ohne Referenzbild über feste Stilregeln reproduziert.",
+    "reason": "Cover, Karten, Diagramme, Multi-Panels und Handlungsszenen haben unterschiedliche Aufgaben. Ein generiertes Referenzbild würde Layout und Motive unnötig verengen; deshalb wird die gemeinsame Designwelt ausschließlich über feste Stilregeln reproduziert.",
     "styleDriftForbidden": true
   },
   "textPolicy": {
@@ -164,8 +165,8 @@
   "notes": [
     "Die Referenzkanäle dienen nur zur Analyse des Formats. Diese Bildwelt ist eine eigene Kanalidentität.",
     "Bei Unsicherheit über historische Details lieber vereinfachen als etwas Spezifisches zu erfinden.",
-    "Google Flow wählt den Cover-Gewinner selbstständig; der Nutzer muss keinen Kandidaten auswählen.",
-    "Der Cover-Gewinner dient nur als finales Bild 01 und Thumbnail, nicht als Referenzvorlage.",
-    "Konsistenz bedeutet gleiche Welt und gleiche Designlogik, nicht gleiche Bildart. Ein Video darf zwischen Szene, Karte, Diagramm, Multi-Panel, Objektbild, Prozess und Text-/Zahlenbild wechseln."
+    "Konsistenz bedeutet gleiche Welt und gleiche Designlogik, nicht gleiche Bildart. Ein Video darf zwischen Szene, Karte, Diagramm, Multi-Panel, Objektbild, Prozess und Text-/Zahlenbild wechseln.",
+    "Google Flow ist die alleinige Auswahlinstanz für die drei Cover-Kandidaten; der Nutzer wird nicht nach einem Favoriten gefragt.",
+    "Kein generiertes Bild wird als Referenzvorlage für ein anderes Bild verwendet."
   ]
 }
