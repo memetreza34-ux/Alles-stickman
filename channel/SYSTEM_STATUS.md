@@ -10,12 +10,14 @@ Stand: 2026-10-05
 - `config/visual-policy.json` steht auf `READY`
 - genau drei Cover-Kandidaten pro Video
 - **Google Flow wählt selbstständig genau einen Cover-Gewinner**
-- der Nutzer muss keinen Cover-Kandidaten auswählen
+- Auswahlhoheit: `google-flow`
+- der Nutzer muss keinen Cover-Kandidaten auswählen und wird nicht nach einem Favoriten gefragt
 - Gewinner wird `Bild 01.png`
 - beide Cover-Verlierer werden gelöscht
 - `Bild 01.png` ist Cover und erste Videoszene
 - **Bild 01 wird nicht als Referenzbild für Folgebilder verwendet**
 - auch andere Cover und vorherige Szenenbilder dürfen nicht als Referenz verwendet werden
+- Referenzmodus: `none`
 - für Bild 02 bis Bild NN werden überhaupt keine Bildreferenzen benutzt
 - Konsistenz entsteht ausschließlich über `config/visual-policy.json` und vollständige individuelle Textprompts
 - Bild 02 bis Bild NN jeweils genau eine finale Version
