@@ -8,7 +8,7 @@ Du produzierst selbstständig alle Bilder für dieses Testvideo. Halte dich an d
 
 VERBINDLICHER ABLAUF
 1. Erzeuge für Bild 01 GENAU 3 COVER-Kandidaten.
-2. GOOGLE FLOW wählt selbstständig genau 1 Gewinner. Der Nutzer wählt nicht manuell.
+2. GOOGLE FLOW wählt selbstständig genau 1 Gewinner. Der Nutzer wählt nicht manuell und wird nicht nach einem Favoriten gefragt.
 3. Benenne den Gewinner `Bild 01.png`.
 4. Lösche die 2 Verlierer vollständig.
 5. WICHTIG: Verwende danach KEINE Bildreferenz für Bild 02 bis Bild 18. Weder Bild 01 noch ein anderes Cover noch ein vorheriges Szenenbild darf als Referenz/Vorlage dienen.
@@ -161,7 +161,7 @@ Prompt: 16:9 Alles-Stickman Abschlussbild. Vier große klare Symbole um eine kle
 
 ABSCHLUSSCHECK
 - genau 3 Cover erzeugt
-- GOOGLE FLOW hat selbstständig genau 1 Gewinner gewählt
+- GOOGLE FLOW hat selbstständig genau 1 Gewinner gewählt, ohne Nutzerrückfrage
 - 2 Cover-Verlierer gelöscht
 - Bild 01 ist finales Cover und erste Szene
 - für Bild 02–18 wurde KEINE Bildreferenz verwendet
