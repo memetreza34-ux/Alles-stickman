@@ -1,5 +1,5 @@
 {
-  "pipelineVersion": 3,
+  "pipelineVersion": 4,
   "projectSchemaVersion": 1,
   "languageDefault": "de",
   "aspectRatio": "16:9",
@@ -13,7 +13,9 @@
     "coverImageNumber": 1,
     "coverCandidateCount": 3,
     "autoSelectWinner": true,
-    "winnerBecomesSoleReference": false,
+    "selectionAuthority": "google-flow",
+    "userSelectionRequired": false,
+    "winnerBecomesFirstSceneAndThumbnail": true,
     "deleteLosingCandidates": true,
     "temporaryCandidateNames": [
       "TEMP_COVER_A.png",
@@ -25,7 +27,10 @@
   "imagePolicy": {
     "fixedImageCountForbidden": true,
     "oneImageOneVisualPurpose": true,
-    "targetAverageHoldSeconds": [4.5, 7.5],
+    "targetAverageHoldSeconds": [
+      4.5,
+      7.5
+    ],
     "reviewAboveSeconds": 9,
     "preferSplitAboveSeconds": 11,
     "hardMaximumSeconds": 16,
@@ -34,13 +39,13 @@
     "maxConcurrentGenerations": 5,
     "nonCoverGenerationCount": 1,
     "useImageReferences": false,
-    "useOnlyCoverWinnerAsReference": false,
-    "usePreviousSceneAsReference": false,
     "consistencySource": "config/visual-policy.json + vollständiger individueller Textprompt pro Bild",
     "finalImageDirectory": "00-bildprompts/images",
     "finalFolderMustBeFlat": true,
     "finalFolderOnlyNumberedImages": true,
-    "nonCoverAlternatesForbidden": true
+    "nonCoverAlternatesForbidden": true,
+    "referenceMode": "none",
+    "generatedImageReferenceForbidden": true
   },
   "audioPolicy": {
     "playbackRate": 1.1,
