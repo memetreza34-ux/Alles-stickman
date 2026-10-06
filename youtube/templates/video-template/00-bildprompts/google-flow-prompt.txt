@@ -24,7 +24,7 @@ NICHT VERHANDELBAR
 - Keine Bildwelt eines fremden Kanals kopieren.
 - Bild 01 ist Cover UND erste Videoszene.
 - Genau 3 temporäre Cover-Kandidaten erzeugen.
-- GOOGLE FLOW wählt selbstständig genau 1 Gewinner. Der Nutzer wählt NICHT manuell.
+- GOOGLE FLOW wählt selbstständig genau 1 Gewinner. Der Nutzer wählt NICHT manuell und wird auch NICHT nach einem Favoriten gefragt.
 - Gewinner zu `Bild 01.png` umbenennen.
 - Die 2 Verlierer vollständig löschen.
 - WICHTIG: Danach KEIN Referenzbild verwenden. Weder Bild 01 noch andere Cover noch vorherige Szenenbilder dürfen als Bildvorlage/Referenz für Bild 02 bis Bild NN dienen.
@@ -128,7 +128,7 @@ Cover-Kriterien:
 - keine erkennbare Kopie eines Referenzkanals
 - historische Details soweit möglich plausibel
 
-PHASE 3 — GOOGLE FLOW WÄHLT DEN COVER-GEWINNER
+PHASE 3 — GOOGLE FLOW WÄHLT DEN COVER-GEWINNER OHNE NUTZERRÜCKFRAGE
 Bewerte A, B und C selbstständig nach:
 1. sofortiger Verständlichkeit
 2. visueller Neugier
