@@ -68,6 +68,7 @@ youtube/<week>/<slug>/
 └── 99-technik/
     ├── video.json
     ├── BILD_AUDIO_ZUORDNUNG.json
+    ├── SCRIPT_PLAN.json
     ├── RECHERCHE.md
     ├── PHASE1_QC.md
     ├── PRODUKTIONSPLAN.md
@@ -83,6 +84,8 @@ Pflicht:
 - belastbare Faktenbasis
 - Unsicherheiten/Vereinfachungen
 - Voice-over-Skript
+- `SCRIPT_PLAN.json` mit Hook, Setup, Hauptteil, Auflösung und Schluss
+- kanaltypisches Skript-Gate nach `config/script-policy.json`
 - Ziel-Länge
 - inhaltsgetriebene Bildzahl
 - Audio-Anker
@@ -106,6 +109,20 @@ Bildplan-Regeln:
 - ab 11 s Split stark bevorzugen
 - 16 s Hard-Max
 - keine Füllbilder
+
+Skriptregeln:
+- Hook beginnt direkt, ohne Begrüßung oder „In diesem Video ...“
+- Setup bleibt kurz
+- Hauptteil erzählt eine Entwicklung statt einer bloßen Faktenliste
+- alle ca. 20–40 Sekunden neuer Informationsimpuls
+- Auflösung beantwortet die Hook-Frage
+- Schluss sehr kurz, kein langes Outro
+- natürliches Deutsch, keine KI-Floskeln
+- 32 Wörter pro Satz Hard-Max
+- Wortdichte ungefähr 115–180 Wörter/Minute
+- möglichst jeder Absatz muss visualisierbar sein
+
+Details: `channel/SCRIPT_SYSTEM.md`
 
 Vor Asset-Erzeugung:
 
