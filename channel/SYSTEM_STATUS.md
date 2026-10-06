@@ -1,6 +1,6 @@
 # Aktueller Systemstatus — Alles Stickman
 
-Stand: 2026-10-05
+Stand: 2026-10-06
 
 `SYSTEM_AUDIT.md` ist der frühere Ausgangs-Audit. Dieses Dokument beschreibt den aktuellen verbindlichen Stand.
 
@@ -28,6 +28,10 @@ Stand: 2026-10-05
 - Phase-1-Validator prüft Cover-Autowahl, Referenzfreiheit und 5er-Block-Regeln
 - Phase-2-Validator lehnt zusätzliche Bilddateien und Unterordner im finalen Bilderordner ab
 - Export erzeugt Video, Thumbnail, Upload-Metadaten, SRT-Untertitel und Zeitstempel-Skript
+- verbindliches Skript-System in `config/script-policy.json`
+- feste Struktur: Hook → Setup → Hauptteil → Auflösung → Schluss
+- `SCRIPT_PLAN.json` pro Video mit exakten Abschnittsankern
+- Phase-1-Gate prüft Skriptstruktur, Hook-Start, generische Intros, Wortdichte, Satzlänge und exakte Wiederholungen
 
 ## Warum keine Bildreferenz mehr
 
@@ -37,7 +41,6 @@ Das Cover ist auf Klickstärke optimiert. Als Referenzvorlage kann es spätere K
 
 - automatischer direkter Google-Flow-Aufruf aus Node statt Agentensteuerung
 - stärkeres Research-/Fact-Check-Gate
-- kanaltypisches Skript-Gate
 - festes TTS-/Voice-Erzeugungssystem
 - erweiterte Remotion-Motionformen
 - Analytics-Feedbackloop
