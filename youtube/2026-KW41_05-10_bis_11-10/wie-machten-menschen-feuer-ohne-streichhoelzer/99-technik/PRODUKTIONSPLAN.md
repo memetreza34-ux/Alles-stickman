@@ -20,6 +20,8 @@
 
 - Recherche abgeschlossen: [x]
 - Skript abgeschlossen: [x]
+- SCRIPT_PLAN abgeschlossen: [x]
+- Skript-Gate bestanden: [x]
 - Bildplan abgeschlossen: [x]
 - Audio-Anker abgeschlossen: [x]
 - Renderplan abgeschlossen: [x]
