@@ -19,6 +19,8 @@ Die finalen Upload-Metadaten werden in `99-technik/video.json` unter `uploadMeta
 
 - Recherche abgeschlossen: [ ]
 - Skript abgeschlossen: [ ]
+- SCRIPT_PLAN abgeschlossen: [ ]
+- Skript-Gate bestanden: [ ]
 - Bildplan abgeschlossen: [ ]
 - Audio-Anker abgeschlossen: [ ]
 - Renderplan abgeschlossen: [ ]
