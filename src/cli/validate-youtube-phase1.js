@@ -38,19 +38,22 @@ export async function validatePhase1(projectDirectory) {
 
   if (meta.coverPolicy?.coverCandidateCount !== 3) errors.push('Cover-Workflow muss genau 3 Cover-Kandidaten vorsehen.');
   if (meta.coverPolicy?.autoSelectWinner !== true) errors.push('Google Flow muss den Cover-Gewinner automatisch auswählen.');
-  if (meta.coverPolicy?.winnerBecomesSoleReference !== false) errors.push('Der Cover-Gewinner darf nicht als Referenzbild für Folgebilder verwendet werden.');
+  if (meta.coverPolicy?.selectionAuthority !== 'google-flow') errors.push('coverPolicy.selectionAuthority muss google-flow sein.');
+  if (meta.coverPolicy?.userSelectionRequired !== false) errors.push('Der Nutzer darf nicht zur Cover-Auswahl aufgefordert werden.');
+  if (meta.coverPolicy?.winnerBecomesFirstSceneAndThumbnail !== true) errors.push('Der Flow-Gewinner muss Bild 01 und Thumbnail werden.');
   if (meta.coverPolicy?.deleteLosingCandidates !== true) errors.push('Die zwei nicht gewählten Cover-Kandidaten müssen gelöscht werden.');
   if (meta.coverPolicy?.separateThumbnailForbidden !== true) errors.push('Bild 01 muss Cover und erste Videoszene bleiben.');
 
   if (meta.imageDensityPolicy?.generationBatchSize !== 5) errors.push('Folgebilder müssen in 5er-Blöcken geplant werden.');
   if (meta.imageDensityPolicy?.maxConcurrentGenerations !== 5) errors.push('Maximal 5 aktive Bildgenerierungen sind erlaubt.');
   if (meta.imageDensityPolicy?.nonCoverGenerationCount !== 1) errors.push('Bild 02 bis Bild NN dürfen jeweils nur einmal erzeugt werden.');
+  if (meta.imageDensityPolicy?.referenceMode !== 'none') errors.push('imageDensityPolicy.referenceMode muss none sein.');
   if (meta.imageDensityPolicy?.useImageReferences !== false) errors.push('Für Bild 02 bis Bild NN dürfen keine Bildreferenzen verwendet werden.');
-  if (meta.imageDensityPolicy?.useOnlyCoverWinnerAsReference !== false) errors.push('Bild 01 darf nicht als Referenzbild für Bild 02 bis Bild NN verwendet werden.');
-  if (meta.imageDensityPolicy?.usePreviousSceneAsReference !== false) errors.push('Vorherige Szenenbilder dürfen nicht als Referenz verwendet werden.');
+  if (meta.imageDensityPolicy?.generatedImageReferenceForbidden !== true) errors.push('Generierte Bilder müssen als Referenzvorlagen ausdrücklich verboten sein.');
 
+  if (visual.referenceConsistency?.referenceMode !== 'none') errors.push('visual-policy.referenceConsistency.referenceMode muss none sein.');
   if (visual.referenceConsistency?.useImageReferences !== false) errors.push('visual-policy muss Bildreferenzen ausdrücklich deaktivieren.');
-  if (visual.referenceConsistency?.coverWinnerIsSoleReference !== false) errors.push('visual-policy darf den Cover-Gewinner nicht als Referenz festlegen.');
+  if (visual.referenceConsistency?.generatedImageReferenceForbidden !== true) errors.push('visual-policy muss generierte Bildreferenzen ausdrücklich verbieten.');
 
   const hold = Number(meta.renderPolicy?.endHoldSeconds);
   const minHold = Number(pipeline.endHoldPolicy?.minimumSeconds ?? 1.2);
@@ -63,6 +66,7 @@ export async function validatePhase1(projectDirectory) {
   if (/ACTIVE_STYLE_ID:\s*UNSET/i.test(prompt)) errors.push('Flow-Prompt enthält noch UNSET.');
   if (!/GENAU 3 COVER/i.test(prompt)) errors.push('Flow-Prompt enthält die 3-Cover-Regel nicht eindeutig.');
   if (!/Google Flow.*selbst/i.test(prompt)) errors.push('Flow-Prompt macht nicht eindeutig klar, dass Google Flow den Cover-Gewinner selbst auswählt.');
+  if (!/Nutzer.*nicht.*(auswähl|gefragt)/i.test(prompt)) errors.push('Flow-Prompt muss ausdrücklich verbieten, den Nutzer nach der Cover-Auswahl zu fragen.');
   if (!/KEINE Bildreferenz/i.test(prompt)) errors.push('Flow-Prompt enthält die referenzfreie Bildregel nicht eindeutig.');
   if (!/5ER-BLÖCKEN/i.test(prompt)) errors.push('Flow-Prompt enthält die 5er-Block-Regel nicht eindeutig.');
 
