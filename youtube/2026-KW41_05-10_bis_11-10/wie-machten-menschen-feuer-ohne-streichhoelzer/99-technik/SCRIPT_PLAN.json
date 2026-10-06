@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "structure": [
+    "hook",
+    "setup",
+    "main",
+    "resolution",
+    "closing"
+  ],
+  "sections": [
+    {
+      "id": "hook",
+      "startAnchor": "Kein Feuerzeug, keine Streichhölzer",
+      "purpose": "Konflikt sofort eröffnen: Feuer ohne moderne Hilfsmittel"
+    },
+    {
+      "id": "setup",
+      "startAnchor": "Das Entscheidende war nicht eine geheime Technik",
+      "purpose": "Grundprinzip Hitze, Zunder und Luft setzen"
+    },
+    {
+      "id": "main",
+      "startAnchor": "Eine der ältesten bekannten Methoden nutzte Funken",
+      "purpose": "Methoden, Glutaufbau und typische Fehler erklären"
+    },
+    {
+      "id": "resolution",
+      "startAnchor": "Ein bestehendes Feuer zu erhalten war oft leichter",
+      "purpose": "Praktische Konsequenz und Bedeutung von Feuererhaltung erklären"
+    },
+    {
+      "id": "closing",
+      "startAnchor": "Am Ende brauchte es also keine Streichhölzer",
+      "purpose": "Kernfrage knapp mit Hitze, Zunder, Sauerstoff und Übung beantworten"
+    }
+  ]
+}
