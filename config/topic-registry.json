@@ -4,7 +4,19 @@
     {
       "id": "2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer",
       "title": "Wie machten Menschen Feuer ohne Streichhölzer?",
-      "aliases": ["Wie Menschen ohne Streichhölzer Feuer entzündeten"],
+      "aliases": [
+        "Wie Menschen ohne Streichhölzer Feuer entzündeten"
+      ],
+      "status": "reserved-test"
+    },
+    {
+      "id": "2026-KW41_05-10_bis_11-10_wie-machten-menschen-essen-ohne-kuehlschrank-haltbar",
+      "title": "Wie machten Menschen Essen ohne Kühlschrank haltbar?",
+      "aliases": [
+        "Wie Menschen Lebensmittel ohne Kühlschrank haltbar machten",
+        "Lebensmittel ohne Kühlschrank haltbar machen",
+        "Essen ohne Kühlschrank konservieren"
+      ],
       "status": "reserved-test"
     }
   ]

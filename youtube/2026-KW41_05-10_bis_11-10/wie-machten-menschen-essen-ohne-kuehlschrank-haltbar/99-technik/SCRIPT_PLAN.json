@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "structure": [
+    "hook",
+    "setup",
+    "main",
+    "resolution",
+    "closing"
+  ],
+  "sections": [
+    {
+      "id": "hook",
+      "startAnchor": "Ein Stück Fleisch liegt im Sommer draußen",
+      "purpose": "Sofort das Problem verderblicher Nahrung ohne Kühlung zeigen."
+    },
+    {
+      "id": "setup",
+      "startAnchor": "Das Problem war simpel",
+      "purpose": "Verderb als Grundproblem setzen, ohne langen Exkurs."
+    },
+    {
+      "id": "main",
+      "startAnchor": "Eine der einfachsten Lösungen war, Wasser zu entziehen",
+      "purpose": "Die wichtigsten Konservierungsprinzipien als Entwicklung erklären."
+    },
+    {
+      "id": "resolution",
+      "startAnchor": "Der Trick war also nie eine einzige Erfindung",
+      "purpose": "Kernfrage mit der Kombination mehrerer Methoden beantworten."
+    },
+    {
+      "id": "closing",
+      "startAnchor": "Der Kühlschrank machte vieles bequemer",
+      "purpose": "Kurzer letzter Gedanke: moderne Kühlung ersetzt ein uraltes Ziel."
+    }
+  ]
+}

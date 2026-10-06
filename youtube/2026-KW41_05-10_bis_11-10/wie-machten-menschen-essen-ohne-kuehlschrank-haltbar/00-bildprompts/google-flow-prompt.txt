@@ -1,0 +1,164 @@
+VISUAL_POLICY_FILE: config/visual-policy.json
+ACTIVE_STYLE_ID: alles-stickman-editorial-v1
+
+GOOGLE FLOW MASTER PROMPT — ALLES STICKMAN — Wie machten Menschen Essen ohne Kühlschrank haltbar?
+
+ROLLE
+Du produzierst selbstständig alle Bilder für dieses Testvideo. Halte dich an die aktive Alles-Stickman-Bildwelt, das Voice-over, SCRIPT_PLAN.json und BILD_AUDIO_ZUORDNUNG.json. Nicht jedes Bild muss eine Person zeigen. Nutze je nach Aussage die beste Visual Form.
+
+VERBINDLICHER ABLAUF
+1. Erzeuge für Bild 01 GENAU 3 COVER-Kandidaten.
+2. GOOGLE FLOW wählt selbstständig genau 1 Gewinner. Der Nutzer wählt nicht manuell und wird nicht nach einem Favoriten gefragt.
+3. Benenne den Gewinner `Bild 01.png`.
+4. Lösche die 2 Verlierer vollständig.
+5. Verwende danach KEINE Bildreferenz. Weder Bild 01 noch ein anderes Cover noch ein vorheriges Szenenbild darf als Referenz/Vorlage für Bild 02 bis Bild 17 dienen.
+6. Konsistenz entsteht ausschließlich über `config/visual-policy.json` und den vollständigen individuellen Textprompt jedes Bildes.
+7. Erzeuge Bild 02 bis Bild 17 in maximalen 5ER-BLÖCKEN: 02–06, 07–11, 12–16, 17.
+8. Jedes Nicht-Cover-Bild genau einmal erzeugen. Nur technisch kaputten oder eindeutig unbrauchbaren Output derselben Bildnummer neu erzeugen.
+9. Am Ende darf `00-bildprompts/images/` nur `Bild 01.png` bis `Bild 17.png` enthalten.
+10. Nicht zwischen den Blöcken nachfragen.
+
+GLEICHE WELT
+- 16:9, 1920×1080.
+- handgezeichneter 2D-Editorial-Stickman-Look.
+- dunkle leicht unregelmäßige Anthrazit-Konturen.
+- warme Elfenbein-Gesichter und einfache starke Mimik.
+- gedämpfte Naturfarben: Sand, Ocker, Rost, Salbei, gedecktes Blau.
+- flache Farbflächen, wenig Schattierung.
+- kein 3D/Pixar, kein Fotorealismus, kein Anime.
+- kurze deutsche Labels sind erlaubt, wenn sie echten Erklärwert haben.
+- Karten, Diagramme, Pfeile, Multi-Panels, Objektbilder und reine Sachgrafiken sind ausdrücklich erlaubt.
+- keine Pseudotexte, keine Wasserzeichen, keine moderne Technik in historischen Szenen außer wenn der Inhalt sie ausdrücklich vergleicht.
+- gleiche Welt bedeutet gleiche Designlogik, NICHT gleiche Komposition.
+
+BILDPLAN
+
+Bild 01 · 6 s
+Audio Anchor: Ein Stück Fleisch liegt im Sommer draußen
+Visual Purpose: Hook: Verderb ohne Kühlschrank sofort sichtbar machen.
+Topic Anchor: Fleisch in Sommerhitze, Verderb, keine moderne Kühlung
+Visual Form: Cover / Split-Konflikt
+Prompt: 16:9 Alles-Stickman Editorial-Cover. Links ein großes Stück Fleisch in warmer Sommersonne, erste Fliegen und Warnzeichen; rechts dasselbe Lebensmittel sauber haltbar gemacht mit getrockneten Streifen, Salz und Rauch als klaren Symbolen. Eine große überraschte Stickman-Figur schaut zwischen beide Seiten. Kurze deutsche Headline `OHNE KÜHLSCHRANK?`. Handgezeichnete Anthrazit-Konturen, warme Elfenbein-Gesichter, gedämpfte Sand-/Ocker-/Rostfarben, sehr klare Thumbnail-Komposition, keine moderne Küchentechnik, kein 3D, kein Fotorealismus.
+
+Bild 02 · 6 s
+Audio Anchor: Trotzdem lagerten Menschen schon lange vor dem Kühlschrank
+Visual Purpose: Zeigen, dass viele Lebensmittel langfristig gelagert werden konnten.
+Topic Anchor: Fleisch, Fisch, Obst, Gemüse, Vorräte
+Visual Form: Vorratskammer / Umgebungsszene
+Prompt: 16:9 Alles-Stickman Vorratsszene ohne modernen Kühlschrank. Historisch neutraler Lagerraum mit getrocknetem Fisch, hängendem Fleisch, Körben mit getrocknetem Obst und Gemüse, Tongefäßen und Vorräten. Eine kleine Stickman-Figur prüft die Lagerung. Gleiche handgezeichnete Editorial-Welt, dunkle leicht unregelmäßige Konturen, warme gedämpfte Farben, keine moderne Verpackung, keine Logos.
+
+Bild 03 · 6 s
+Audio Anchor: Das Problem war simpel
+Visual Purpose: Verderb als biologisch-chemisches Grundproblem erklären.
+Topic Anchor: Lebensmittel verderben, Mikroorganismen, Zeit
+Visual Form: Infografik / Ursache-Wirkung
+Prompt: 16:9 Alles-Stickman Ursache-Wirkung-Infografik. Links frisches Lebensmittel, in der Mitte vergrößerte vereinfachte Mikroorganismen und eine Uhr, rechts sichtbar verdorbenes Lebensmittel. Kurze Labels `FRISCH` → `ZEIT + MIKROORGANISMEN` → `VERDORBEN`. Keine ekelhaften Details, klare didaktische Formen, gleiche Palette und Linienlogik.
+
+Bild 04 · 6 s
+Audio Anchor: Eine der einfachsten Lösungen war, Wasser zu entziehen
+Visual Purpose: Das Grundprinzip Trocknen einführen.
+Topic Anchor: Wasserentzug, Trocknen
+Visual Form: Prozessgrafik
+Prompt: 16:9 Alles-Stickman Prozessgrafik. Großes Lebensmittel links mit sichtbaren blauen Wassertropfen, Pfeil nach rechts, getrocknetes kleineres Lebensmittel mit deutlich weniger Tropfen. Große kurze Überschrift `WASSER RAUS`. Sonne und Luft als kleine unterstützende Symbole. Handgezeichnet, klar, kein Dashboard-Look.
+
+Bild 05 · 6.5 s
+Audio Anchor: Fleisch, Fisch, Früchte oder Getreide konnten
+Visual Purpose: Verschiedene Lebensmittel beim Trocknen zeigen.
+Topic Anchor: Sonne, Wind, getrocknetes Fleisch Fisch Früchte Getreide
+Visual Form: 3er-Multi-Panel
+Prompt: 16:9 Alles-Stickman 3er-Multi-Panel. Panel 1: dünne Fleisch- und Fischstreifen trocknen im Luftzug. Panel 2: Früchte liegen auf einfachen Trockengestellen in der Sonne. Panel 3: Getreide wird trocken gelagert. Kurze Labels `LUFT`, `SONNE`, `TROCKEN`. Gleiche visuelle Welt, klare Leserichtung, historisch neutral, keine moderne Maschine.
+
+Bild 06 · 6 s
+Audio Anchor: Weniger verfügbares Wasser macht vielen Mikroorganismen
+Visual Purpose: Warum Trocknen wirkt anschaulich erklären.
+Topic Anchor: weniger verfügbares Wasser, Mikroorganismen wachsen schlechter
+Visual Form: Vergleich / einfache Wissenschaftsgrafik
+Prompt: 16:9 Alles-Stickman Vergleichsgrafik. Links feuchtes Lebensmittel mit vielen blauen Wasserpunkten und mehreren vereinfachten Mikroorganismen; rechts getrocknetes Lebensmittel mit sehr wenigen Wasserpunkten und deutlich weniger aktiven Mikroorganismen. Kurze Labels `FEUCHT` und `TROCKEN`. Einfach, sachlich, nicht medizinisch, gleiche Editorial-Ästhetik.
+
+Bild 07 · 6 s
+Audio Anchor: Salz nutzte denselben Grundgedanken
+Visual Purpose: Salzen als zweite Methode einführen.
+Topic Anchor: Salz entzieht Wasser, Konservierung
+Visual Form: Objekt-/Sachillustration
+Prompt: 16:9 Alles-Stickman Sachillustration. Großes Stück Fleisch oder Fisch wird mit grobem Salz bedeckt; daneben ein vereinfachter Querschnitt mit Wassertröpfchen, die aus dem Lebensmittel nach außen wandern. Kurzes Label `SALZ`. Warmes Sand-/Ocker-Farbschema, klare dunkle Konturen, kein realistisches Fleischfoto.
+
+Bild 08 · 6.5 s
+Audio Anchor: Deshalb wurden besonders Fleisch und Fisch häufig gesalzen
+Visual Purpose: Trockenes Salzen und Salzlake unterscheiden.
+Topic Anchor: gesalzenes Fleisch Fisch, Salzlake
+Visual Form: 2er-Split
+Prompt: 16:9 Alles-Stickman 2er-Split. Links Fisch oder Fleisch in trockenem Salz mit Label `SALZEN`; rechts Stücke in einem Tongefäß mit klar dargestellter Salzlake und Label `SALZLAKE`. Keine moderne Küche, keine Glasmarken, handgezeichnete historische Sachillustration.
+
+Bild 09 · 6 s
+Audio Anchor: Rauch konnte zusätzlich helfen
+Visual Purpose: Räuchern als zusätzliche Konservierungsmethode erklären.
+Topic Anchor: Rauch, Trocknung, Fleisch Fisch
+Visual Form: Handlungsszene / Räucherplatz
+Prompt: 16:9 Alles-Stickman Szene an einer einfachen historischen Räucherstelle. Fleisch und Fisch hängen oberhalb von kontrolliertem Rauch, nicht direkt in großen Flammen. Eine Stickman-Figur achtet auf das Feuer. Rauch als weiche graublaue Formen, warme Rost-/Ocker-Akzente, klare sichere Komposition.
+
+Bild 10 · 6 s
+Audio Anchor: Oft wurde Räuchern mit vorherigem Salzen kombiniert
+Visual Purpose: Kombination von Methoden zeigen.
+Topic Anchor: Salzen plus Räuchern
+Visual Form: 2-Schritt-Prozess
+Prompt: 16:9 Alles-Stickman Zwei-Schritt-Prozess. Schritt 1: Lebensmittel wird gesalzen. Deutlicher Pfeil. Schritt 2: dasselbe Lebensmittel hängt im Rauch. Große Nummern `1` und `2`, kleine Labels `SALZ` und `RAUCH`. Gleiche handgezeichnete Designlogik, wenig Text.
+
+Bild 11 · 6 s
+Audio Anchor: Eine andere Lösung war Fermentation
+Visual Purpose: Fermentation als andere Strategie einführen.
+Topic Anchor: Fermentation, Tongefäß, kontrollierte Veränderung
+Visual Form: Objektbild mit Prozesssymbolen
+Prompt: 16:9 Alles-Stickman Fermentationsillustration. Großes Tongefäß mit Gemüse oder Milchprodukt, daneben vereinfachte freundliche Mikroorganismen-Symbole und ein Pfeil zu einem fertigen fermentierten Lebensmittel. Kurze Headline `FERMENTATION`. Keine wissenschaftlich falschen Monsterkeime, klar und sachlich.
+
+Bild 12 · 6.5 s
+Audio Anchor: Bestimmte Mikroorganismen verändern das Lebensmittel kontrolliert
+Visual Purpose: Fermentation vereinfacht als kontrollierten Prozess erklären.
+Topic Anchor: nützliche Mikroorganismen, Bedingungen ändern
+Visual Form: Ursache-Wirkung-Infografik
+Prompt: 16:9 Alles-Stickman Infografik. Links Lebensmittel mit ausgewählten vereinfachten Mikroorganismen, in der Mitte Prozesspfeile, rechts verändertes Lebensmittel mit einem Schutzschild-Symbol und deutlich weniger unerwünschten Keim-Symbolen. Keine absolute Sterilität darstellen. Kurze Labels `KONTROLLIERT` und `SCHWIERIGER FÜR VIELE KEIME`.
+
+Bild 13 · 6.5 s
+Audio Anchor: So entstanden je nach Region etwa saure Gemüse
+Visual Purpose: Regionale Vielfalt fermentierter Lebensmittel zeigen.
+Topic Anchor: saure Gemüse Milchprodukte fermentierte Getränke
+Visual Form: 3er-Objektpanel
+Prompt: 16:9 Alles-Stickman 3er-Objektpanel: sauer eingelegtes/fermentiertes Gemüse im Tongefäß, vereinfachtes traditionelles Milchprodukt, fermentiertes Getränk in historisch neutralem Gefäß. Labels `GEMÜSE`, `MILCH`, `GETRÄNKE`. Keine Marken, keine moderne Verpackung, gleiche Palette und Konturen.
+
+Bild 14 · 6 s
+Audio Anchor: Und manchmal war die Umgebung selbst der Kühlschrank
+Visual Purpose: Natürliche Kälte als weitere Strategie einführen.
+Topic Anchor: Keller Höhle Bach Schnee Eis
+Visual Form: Umgebungsszene / metaphorischer Vergleich
+Prompt: 16:9 Alles-Stickman Landschaftsillustration mit vier klaren natürlichen Kühlorten in einer zusammenhängenden Szene: kühler Keller, schattige Höhle, kalter Bach und Schnee/Eis. Eine kleine Figur trägt einen Vorrat hinein. Kurze Headline `NATÜRLICHE KÄLTE`. Keine elektrischen Geräte.
+
+Bild 15 · 6.5 s
+Audio Anchor: Keller, Höhlen, kalte Bäche, Schnee oder natürliches Eis
+Visual Purpose: Kühle Lagerung und verlangsamten Verderb gegenüberstellen.
+Topic Anchor: kühle Lagerung verlangsamt Verderb
+Visual Form: Thermometer-/Zeitvergleich
+Prompt: 16:9 Alles-Stickman Vergleichsgrafik. Links warmer Lagerort mit schneller laufender Uhr und sichtbarerem Verderb, rechts kühler Keller/Eisbereich mit langsamerer Uhr und besser erhaltenem Lebensmittel. Einfaches Thermometer-Symbol, keine exakten Temperaturen. Kurze Labels `WARM` und `KÜHLER`.
+
+Bild 16 · 7 s
+Audio Anchor: Der Trick war also nie eine einzige Erfindung
+Visual Purpose: Die Antwort als Kombination verschiedener Methoden zusammenführen.
+Topic Anchor: Trocknen Salz Rauch Fermentation Kälte
+Visual Form: Zusammenfassende Infografik
+Prompt: 16:9 Alles-Stickman Zusammenfassungsbild. In der Mitte ein Vorratskorb; darum fünf große, klar getrennte Symbole mit deutschen Labels: `TROCKNEN`, `SALZ`, `RAUCH`, `FERMENTATION`, `KÄLTE`. Alles in derselben handgezeichneten Welt, großzügige Abstände, kein Dashboard, keine Menschen nötig.
+
+Bild 17 · 7 s
+Audio Anchor: Der Kühlschrank machte vieles bequemer
+Visual Purpose: Schlussgedanke: moderne Technik löst dasselbe alte Problem bequemer.
+Topic Anchor: moderner Kühlschrank versus alte Konservierungsidee
+Visual Form: Vorher/Nachher-Abschluss
+Prompt: 16:9 Alles-Stickman Abschlussbild als Vorher/Nachher. Links historische Methoden als kleine klare Symbole: Trockengestell, Salz, Rauch, Tongefäß, Eis. Rechts ein schlichter moderner Kühlschrank. Dazwischen großer Pfeil und kurze Zeile `DASSELBE ZIEL: VERDERB BREMSEN`. Gleiche Kanalillustration, keine Marke, kein CTA.
+
+ABSCHLUSSCHECK
+- genau 3 Cover erzeugt
+- Google Flow hat selbstständig genau 1 Gewinner gewählt, ohne Nutzerrückfrage
+- 2 Cover-Verlierer gelöscht
+- Bild 01 ist finales Cover und erste Szene
+- für Bild 02–17 wurde KEINE Bildreferenz verwendet
+- Stil-Konsistenz ausschließlich über Visual Policy + vollständige Textprompts
+- Bild 02–17 in 5ER-BLÖCKEN produziert
+- alle 17 finalen Bilder gehören sichtbar zur selben Alles-Stickman-Welt
+- keine Zusatzbilder oder Unterordner im finalen images-Ordner
