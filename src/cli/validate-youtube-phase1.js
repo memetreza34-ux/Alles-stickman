@@ -8,14 +8,16 @@ export async function validatePhase1(projectDirectory) {
   const p = projectPaths(projectDirectory);
   const errors = [];
 
-  for (const required of [p.meta, p.mapping, p.prompt, p.script, p.renderPlan]) {
+  for (const required of [p.meta, p.mapping, p.prompt, p.script, p.scriptPlan, p.renderPlan]) {
     if (!(await exists(required))) errors.push(`Pflichtdatei fehlt: ${path.relative(p.projectDir, required)}`);
   }
   if (errors.length) return { passed: false, errors };
 
-  const [meta, mapping, visual, pipeline, prompt, script] = await Promise.all([
+  const [meta, mapping, scriptPlan, scriptPolicy, visual, pipeline, prompt, script] = await Promise.all([
     readJson(p.meta),
     readJson(p.mapping),
+    readJson(p.scriptPlan),
+    readJson(path.resolve('config/script-policy.json')),
     readJson(path.resolve('config/visual-policy.json')),
     readJson(path.resolve('config/pipeline.json')),
     readFile(p.prompt, 'utf8'),
@@ -62,6 +64,68 @@ export async function validatePhase1(projectDirectory) {
 
   const cleanScript = script.trim();
   if (!cleanScript || /VOICE-OVER-SKRIPT HIER EINFÜGEN/i.test(cleanScript)) errors.push('Voice-over-Skript ist noch Platzhalter.');
+
+  // Kanaltypisches Skript-Gate
+  if (scriptPolicy.status !== 'READY') errors.push('config/script-policy.json ist nicht READY.');
+  if (scriptPlan.status !== 'READY') errors.push('SCRIPT_PLAN.json muss vor Phase 1 auf READY stehen.');
+
+  const expectedSections = Array.isArray(scriptPolicy.structure) ? scriptPolicy.structure : ['hook', 'setup', 'main', 'resolution', 'closing'];
+  const planSections = Array.isArray(scriptPlan.sections) ? scriptPlan.sections : [];
+  const sectionById = new Map(planSections.map((section) => [section.id, section]));
+  let lastSectionIndex = -1;
+
+  for (const sectionId of expectedSections) {
+    const section = sectionById.get(sectionId);
+    if (!section) {
+      errors.push(`SCRIPT_PLAN: Pflichtabschnitt fehlt: ${sectionId}.`);
+      continue;
+    }
+    const anchor = String(section.startAnchor ?? '').trim();
+    if (!anchor || anchor.startsWith('[')) {
+      errors.push(`SCRIPT_PLAN: Startanker für ${sectionId} fehlt/ist Platzhalter.`);
+      continue;
+    }
+    const at = cleanScript.indexOf(anchor);
+    if (at < 0) errors.push(`SCRIPT_PLAN: Startanker für ${sectionId} kommt nicht exakt im Skript vor.`);
+    else {
+      if (at <= lastSectionIndex) errors.push(`SCRIPT_PLAN: Abschnitt ${sectionId} steht nicht in der richtigen Reihenfolge.`);
+      lastSectionIndex = at;
+      if (sectionId === 'hook' && at !== 0) errors.push('SCRIPT_PLAN: Der Hook muss direkt am Skriptanfang beginnen.');
+    }
+  }
+
+  const opening = cleanScript.slice(0, 180).toLowerCase();
+  for (const pattern of scriptPolicy.openingRules?.forbiddenPatterns ?? []) {
+    if (new RegExp(pattern, 'i').test(opening)) {
+      errors.push(`Skript beginnt mit verbotener generischer Einleitung: ${pattern}`);
+      break;
+    }
+  }
+
+  const words = cleanScript.split(/\s+/).filter(Boolean);
+  const durationMinutes = Number(meta.targetDurationSeconds) / 60;
+  const [minWpm, maxWpm] = scriptPolicy.pacingRules?.targetWordsPerMinute ?? [115, 180];
+  if (Number.isFinite(durationMinutes) && durationMinutes > 0) {
+    const wpm = words.length / durationMinutes;
+    if (wpm < minWpm || wpm > maxWpm) {
+      errors.push(`Skript-Wortdichte ${wpm.toFixed(1)} WPM liegt außerhalb ${minWpm}–${maxWpm} WPM.`);
+    }
+  }
+
+  const hardMaxSentenceWords = Number(scriptPolicy.languageRules?.hardMaxWordsPerSentence ?? 32);
+  const sentences = cleanScript.split(/(?<=[.!?])\s+/).map((value) => value.trim()).filter(Boolean);
+  const seenSentences = new Set();
+  for (const sentence of sentences) {
+    const sentenceWords = sentence.split(/\s+/).filter(Boolean);
+    if (sentenceWords.length > hardMaxSentenceWords) {
+      errors.push(`Satz ist mit ${sentenceWords.length} Wörtern zu lang (Hard-Max ${hardMaxSentenceWords}): ${sentence.slice(0, 80)}...`);
+    }
+    const normalizedSentence = sentence.toLowerCase().replace(/[^a-z0-9äöüß]+/gi, ' ').trim();
+    if (sentenceWords.length >= 8 && seenSentences.has(normalizedSentence)) {
+      errors.push(`Exakte Satzwiederholung im Skript: ${sentence.slice(0, 80)}`);
+    }
+    seenSentences.add(normalizedSentence);
+  }
   if (!prompt.includes(`ACTIVE_STYLE_ID: ${visual.styleId}`)) errors.push('Flow-Prompt nennt nicht die aktive styleId.');
   if (/ACTIVE_STYLE_ID:\s*UNSET/i.test(prompt)) errors.push('Flow-Prompt enthält noch UNSET.');
   if (!/GENAU 3 COVER/i.test(prompt)) errors.push('Flow-Prompt enthält die 3-Cover-Regel nicht eindeutig.');
