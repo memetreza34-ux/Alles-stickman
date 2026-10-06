@@ -29,6 +29,19 @@ test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', 
   assert.ok(registry.entries.some((entry) => entry.id === '2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer'));
 });
 
+test('Skript-Policy erzwingt die kanaltypische Grundstruktur', async () => {
+  const policy = JSON.parse(await readFile('config/script-policy.json', 'utf8'));
+  const templatePlan = JSON.parse(await readFile('youtube/templates/video-template/99-technik/SCRIPT_PLAN.json', 'utf8'));
+  assert.equal(policy.status, 'READY');
+  assert.deepEqual(policy.structure, ['hook', 'setup', 'main', 'resolution', 'closing']);
+  assert.equal(policy.openingRules.greetingForbidden, true);
+  assert.equal(policy.openingRules.genericMetaIntroForbidden, true);
+  assert.equal(policy.languageRules.hardMaxWordsPerSentence, 32);
+  assert.deepEqual(policy.pacingRules.targetWordsPerMinute, [115, 180]);
+  assert.equal(templatePlan.status, 'PLANNED');
+  assert.deepEqual(templatePlan.structure, ['hook', 'setup', 'main', 'resolution', 'closing']);
+});
+
 test('Pipeline behält automatische Coverwahl und referenzfreie Folgebilder', async () => {
   const policy = JSON.parse(await readFile('config/pipeline.json', 'utf8'));
   assert.equal(policy.coverPolicy.firstSceneIsCover, true);
@@ -83,6 +96,7 @@ test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Vis
 test('Erstes 2-Minuten-Testprojekt besteht Phase 1 und nutzt keine Bildreferenz', async () => {
   const meta = JSON.parse(await readFile(path.join(TEST_PROJECT, '99-technik', 'video.json'), 'utf8'));
   const mapping = JSON.parse(await readFile(path.join(TEST_PROJECT, '99-technik', 'BILD_AUDIO_ZUORDNUNG.json'), 'utf8'));
+  const scriptPlan = JSON.parse(await readFile(path.join(TEST_PROJECT, '99-technik', 'SCRIPT_PLAN.json'), 'utf8'));
   const script = await readFile(path.join(TEST_PROJECT, '01-voice-script', 'voice-script.txt'), 'utf8');
   const prompt = await readFile(path.join(TEST_PROJECT, '00-bildprompts', 'google-flow-prompt.txt'), 'utf8');
   assert.equal(meta.plannedImageCount, 18);
@@ -95,6 +109,9 @@ test('Erstes 2-Minuten-Testprojekt besteht Phase 1 und nutzt keine Bildreferenz'
   assert.equal(meta.imageDensityPolicy.useImageReferences, false);
   assert.equal(meta.imageDensityPolicy.generatedImageReferenceForbidden, true);
   assert.equal(mapping.images.length, 18);
+  assert.equal(scriptPlan.status, 'READY');
+  assert.deepEqual(scriptPlan.sections.map((section) => section.id), ['hook', 'setup', 'main', 'resolution', 'closing']);
+  assert.equal(script.indexOf(scriptPlan.sections[0].startAnchor), 0);
   assert.ok(script.trim().split(/\s+/).length >= 200);
   assert.ok(script.trim().split(/\s+/).length <= 260);
   assert.match(prompt, /Google Flow.*selbst/i);
