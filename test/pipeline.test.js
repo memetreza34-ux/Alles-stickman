@@ -10,6 +10,7 @@ import { validatePhase1 } from '../src/cli/validate-youtube-phase1.js';
 import { normalizeText, similarity } from '../src/lib/pipeline.js';
 
 const TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-feuer-ohne-streichhoelzer';
+const SECOND_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-essen-ohne-kuehlschrank-haltbar';
 
 test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', async () => {
   const visual = JSON.parse(await readFile('config/visual-policy.json', 'utf8'));
@@ -117,6 +118,23 @@ test('Erstes 2-Minuten-Testprojekt besteht Phase 1 und nutzt keine Bildreferenz'
   assert.match(prompt, /Google Flow.*selbst/i);
   assert.match(prompt, /KEINE Bildreferenz/i);
   const result = await validatePhase1(TEST_PROJECT);
+  assert.equal(result.passed, true, result.errors.join('\n'));
+});
+
+test('Zweites 2-Minuten-Testprojekt besteht das neue Skript- und Phase-1-Gate', async () => {
+  const meta = JSON.parse(await readFile(path.join(SECOND_TEST_PROJECT, '99-technik', 'video.json'), 'utf8'));
+  const mapping = JSON.parse(await readFile(path.join(SECOND_TEST_PROJECT, '99-technik', 'BILD_AUDIO_ZUORDNUNG.json'), 'utf8'));
+  const scriptPlan = JSON.parse(await readFile(path.join(SECOND_TEST_PROJECT, '99-technik', 'SCRIPT_PLAN.json'), 'utf8'));
+  const script = await readFile(path.join(SECOND_TEST_PROJECT, '01-voice-script', 'voice-script.txt'), 'utf8');
+  assert.equal(meta.plannedImageCount, 17);
+  assert.ok(meta.targetDurationSeconds <= 120);
+  assert.equal(mapping.images.length, 17);
+  assert.equal(scriptPlan.status, 'READY');
+  assert.deepEqual(scriptPlan.sections.map((section) => section.id), ['hook', 'setup', 'main', 'resolution', 'closing']);
+  assert.equal(script.indexOf(scriptPlan.sections[0].startAnchor), 0);
+  assert.ok(script.trim().split(/\s+/).length >= 210);
+  assert.ok(script.trim().split(/\s+/).length <= 300);
+  const result = await validatePhase1(SECOND_TEST_PROJECT);
   assert.equal(result.passed, true, result.errors.join('\n'));
 });
 
