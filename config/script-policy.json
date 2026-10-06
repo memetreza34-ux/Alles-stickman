@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "status": "READY",
+  "language": "de",
+  "structure": [
+    "hook",
+    "setup",
+    "main",
+    "resolution",
+    "closing"
+  ],
+  "sectionRules": {
+    "hook": {
+      "required": true,
+      "goal": "Sofort Neugier, Konflikt, überraschenden Fakt oder die Kernfrage eröffnen.",
+      "targetSharePercent": [
+        5,
+        10
+      ]
+    },
+    "setup": {
+      "required": true,
+      "goal": "Nur den Kontext liefern, der zum Verstehen des Hauptteils nötig ist.",
+      "targetSharePercent": [
+        5,
+        15
+      ]
+    },
+    "main": {
+      "required": true,
+      "goal": "Die Erklärung als klare Entwicklung erzählen: Problem → Versuch/Entwicklung → neues Problem → Lösung/Folge.",
+      "targetSharePercent": [
+        60,
+        75
+      ]
+    },
+    "resolution": {
+      "required": true,
+      "goal": "Die Frage aus dem Hook eindeutig beantworten.",
+      "targetSharePercent": [
+        8,
+        18
+      ]
+    },
+    "closing": {
+      "required": true,
+      "goal": "Mit einem kurzen letzten Gedanken, einer Konsequenz oder einer natürlichen Weiterführung enden; kein langes Outro.",
+      "targetSharePercent": [
+        1,
+        8
+      ]
+    }
+  },
+  "languageRules": {
+    "naturalGermanRequired": true,
+    "simpleDirectSentencesPreferred": true,
+    "preferredMaxWordsPerSentence": 22,
+    "hardMaxWordsPerSentence": 32,
+    "exactSentenceRepetitionForbidden": true,
+    "aiFillerForbidden": true
+  },
+  "openingRules": {
+    "greetingForbidden": true,
+    "genericMetaIntroForbidden": true,
+    "forbiddenPatterns": [
+      "^hallo\\b",
+      "^willkommen\\b",
+      "^hey\\b",
+      "^in diesem video\\b",
+      "^heute schauen wir uns\\b",
+      "^heute geht es um\\b",
+      "^in diesem beitrag\\b"
+    ]
+  },
+  "pacingRules": {
+    "targetWordsPerMinute": [
+      115,
+      180
+    ],
+    "newInformationImpulseEverySeconds": [
+      20,
+      40
+    ],
+    "fillerParagraphsForbidden": true,
+    "everyParagraphShouldBeVisualizable": true
+  },
+  "factualRules": {
+    "inventedFactsForbidden": true,
+    "uncertaintyMustBeQualified": true,
+    "datesAndNumbersNeedResearchSupport": true
+  },
+  "planFile": "99-technik/SCRIPT_PLAN.json"
+}
