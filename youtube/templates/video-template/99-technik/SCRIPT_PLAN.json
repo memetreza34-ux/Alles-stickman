@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "status": "PLANNED",
+  "structure": [
+    "hook",
+    "setup",
+    "main",
+    "resolution",
+    "closing"
+  ],
+  "sections": [
+    {
+      "id": "hook",
+      "startAnchor": "[HOOK-START]",
+      "purpose": "Neugier/Kernfrage sofort eröffnen"
+    },
+    {
+      "id": "setup",
+      "startAnchor": "[SETUP-START]",
+      "purpose": "Nur nötigen Kontext liefern"
+    },
+    {
+      "id": "main",
+      "startAnchor": "[MAIN-START]",
+      "purpose": "Erklärung als Entwicklung erzählen"
+    },
+    {
+      "id": "resolution",
+      "startAnchor": "[RESOLUTION-START]",
+      "purpose": "Hook-Frage eindeutig beantworten"
+    },
+    {
+      "id": "closing",
+      "startAnchor": "[CLOSING-START]",
+      "purpose": "Kurzer letzter Gedanke ohne langes Outro"
+    }
+  ]
+}
