@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pipelineVersion": 3,
+  "pipelineVersion": 4,
   "videoId": "2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer",
   "weekFolder": "2026-KW41_05-10_bis_11-10",
   "topicSlug": "wie-machten-menschen-feuer-ohne-streichhoelzer",
@@ -12,14 +12,19 @@
   "visualPolicyFile": "config/visual-policy.json",
   "visualStyleId": "alles-stickman-editorial-v1",
   "targetDurationSeconds": 110,
-  "targetDurationRangeSeconds": [100, 120],
+  "targetDurationRangeSeconds": [
+    100,
+    120
+  ],
   "plannedImageCount": 18,
   "coverPolicy": {
     "firstSceneIsCover": true,
     "coverImageNumber": 1,
     "coverCandidateCount": 3,
     "autoSelectWinner": true,
-    "winnerBecomesSoleReference": false,
+    "selectionAuthority": "google-flow",
+    "userSelectionRequired": false,
+    "winnerBecomesFirstSceneAndThumbnail": true,
     "deleteLosingCandidates": true,
     "separateThumbnailForbidden": true
   },
@@ -27,7 +32,10 @@
     "contentDrivenImageCountRequired": true,
     "fixedImageCountForbidden": true,
     "oneImageOneVisualPurpose": true,
-    "targetAverageHoldSeconds": [4.5, 7.5],
+    "targetAverageHoldSeconds": [
+      4.5,
+      7.5
+    ],
     "reviewAboveSeconds": 9,
     "preferSplitAboveSeconds": 11,
     "hardMaximumSeconds": 16,
@@ -36,9 +44,9 @@
     "maxConcurrentGenerations": 5,
     "nonCoverGenerationCount": 1,
     "useImageReferences": false,
-    "useOnlyCoverWinnerAsReference": false,
-    "usePreviousSceneAsReference": false,
-    "fillerImagesForbidden": true
+    "fillerImagesForbidden": true,
+    "referenceMode": "none",
+    "generatedImageReferenceForbidden": true
   },
   "audioPolicy": {
     "singleFinalVoiceoverRequired": true,
@@ -59,12 +67,18 @@
   "uploadMetadata": {
     "title": "Wie machten Menschen Feuer ohne Streichhölzer?",
     "description": "Wie entzündeten Menschen Feuer, lange bevor es Feuerzeuge und Streichhölzer gab? Dieses kurze Alles-Stickman-Testvideo erklärt Funken mit Feuerstein und Pyrit, Zunder, Holzreibung und den entscheidenden Weg von der kleinen Glut zur stabilen Flamme.",
-    "tags": ["Menschheit", "Geschichte", "Feuer", "Steinzeit", "Alles Stickman"]
+    "tags": [
+      "Menschheit",
+      "Geschichte",
+      "Feuer",
+      "Steinzeit",
+      "Alles Stickman"
+    ]
   },
   "phase1Ready": true,
   "imagesReady": false,
   "audioReady": false,
   "renderReady": false,
   "createdAt": "2026-10-05T09:01:00Z",
-  "updatedAt": "2026-10-05T16:30:00Z"
+  "updatedAt": "2026-10-06T03:40:00Z"
 }
