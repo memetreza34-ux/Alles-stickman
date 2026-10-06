@@ -142,7 +142,7 @@ Google Flow bewertet die drei Kandidaten selbstständig nach:
 - sauberer Figuren-/Textdarstellung
 - sachlicher/historischer Plausibilität
 
-**Der Nutzer wählt nicht manuell.**
+**Der Nutzer wählt nicht manuell und wird nicht nach einem Favoriten gefragt.** Die Auswahlhoheit liegt vollständig bei Google Flow.
 
 Danach:
 - Gewinner → `Bild 01.png`
@@ -189,7 +189,7 @@ Keine TEMP-Dateien, Cover-Verlierer, Varianten, Unterordner, Zwischenbilder oder
 
 Für Folgebilder gilt ausdrücklich:
 
-**Kein generiertes Bild dient als Referenzvorlage.**
+**Kein generiertes Bild dient als Referenzvorlage.** `referenceMode` ist verbindlich `none`.
 
 Die gemeinsame Alles-Stickman-Welt wird gehalten durch:
 - feste Linienlogik
