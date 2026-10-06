@@ -157,6 +157,7 @@ export function projectPaths(projectDirectory) {
     techDir: path.join(projectDir, '99-technik'),
     meta: path.join(projectDir, '99-technik', 'video.json'),
     mapping: path.join(projectDir, '99-technik', 'BILD_AUDIO_ZUORDNUNG.json'),
+    scriptPlan: path.join(projectDir, '99-technik', 'SCRIPT_PLAN.json'),
     renderPlan: path.join(projectDir, '99-technik', 'YOUTUBE_RENDER_PLAN.json'),
     status: path.join(projectDir, '99-technik', 'status.json'),
     optimizedAudio: path.join(projectDir, '99-technik', 'YOUTUBE_AUDIO_OPTIMIZED.wav'),
