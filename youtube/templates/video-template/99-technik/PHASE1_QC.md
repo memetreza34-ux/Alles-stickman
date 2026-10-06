@@ -4,9 +4,16 @@
 - Duplicate-Check bestanden: [ ]
 
 ## Skript
-- Einstieg passt zum Video: [ ]
+- SCRIPT_PLAN.json vollständig und READY: [ ]
+- Hook startet sofort, keine Begrüßung/Meta-Einleitung: [ ]
+- Setup liefert nur nötigen Kontext: [ ]
+- Hauptteil hat erkennbare Entwicklung statt Faktenliste: [ ]
+- Auflösung beantwortet die Hook-Frage: [ ]
+- Schluss ist kurz und ohne langes Outro: [ ]
+- natürliche Sprache / keine KI-Floskeln: [ ]
 - Fakten geprüft: [ ]
-- Ziel-Länge plausibel: [ ]
+- Ziel-Länge und Wortdichte plausibel: [ ]
+- jeder Absatz sinnvoll visualisierbar: [ ]
 
 ## YouTube-Upload
 - finaler Titel eingetragen: [ ]
