@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pipelineVersion": 4,
+  "pipelineVersion": 5,
   "videoId": "",
   "weekFolder": "",
   "topicSlug": "",
@@ -23,9 +23,11 @@
     "firstSceneIsCover": true,
     "coverImageNumber": 1,
     "coverCandidateCount": 3,
-    "autoSelectWinner": true,
-    "selectionAuthority": "google-flow",
-    "userSelectionRequired": false,
+    "autoSelectWinner": false,
+    "selectionAuthority": "user",
+    "userSelectionRequired": true,
+    "hardStopAfterCoverCandidates": true,
+    "continueBeforeUserSelectionForbidden": true,
     "winnerBecomesFirstSceneAndThumbnail": true,
     "deleteLosingCandidates": true,
     "separateThumbnailForbidden": true
@@ -48,7 +50,12 @@
     "useImageReferences": false,
     "fillerImagesForbidden": true,
     "referenceMode": "none",
-    "generatedImageReferenceForbidden": true
+    "generatedImageReferenceForbidden": true,
+    "oneBatchPerAgentTurn": true,
+    "hardStopAfterEachBatch": true,
+    "userContinueRequiredBetweenBatches": true,
+    "batchContinuationAuthority": "user",
+    "explicitContinueRequired": true
   },
   "audioPolicy": {
     "singleFinalVoiceoverRequired": true,
