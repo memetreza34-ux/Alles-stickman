@@ -6,6 +6,10 @@
 ## Skript
 - SCRIPT_PLAN.json vollständig und READY: [ ]
 - Hook startet sofort, keine Begrüßung/Meta-Einleitung: [ ]
+- Hook enthält Problem/Widerspruch/Überraschung/Frage statt nur Atmosphäre: [ ]
+- Hook-Metadaten hookType/curiosityGap/titleConnection/payoffPromise ausgefüllt: [ ]
+- Titelbezug in den ersten zwei Sätzen klar: [ ]
+- Hook bis Setup kompakt (max. ca. 45 Wörter): [ ]
 - Setup liefert nur nötigen Kontext: [ ]
 - Hauptteil hat erkennbare Entwicklung statt Faktenliste: [ ]
 - Auflösung beantwortet die Hook-Frage: [ ]
@@ -37,6 +41,10 @@
 - Illustration/Szene als Standard geprüft: [ ]
 - reine Infografik/Diagramm nur bei echtem Erklärvorteil: [ ]
 - keine lange Folge steriler Info-Karten: [ ]
+- visualContinuityProfile vollständig: [ ]
+- Klima/Jahreszeit/Epoche/Grundstimmung logisch konsistent: [ ]
+- stille Bild-QC nach jedem 5er-Block vorgesehen: [ ]
+- schlechte Bilder werden vor dem nächsten Block gezielt neu erzeugt: [ ]
 
 ## Bildwelt
 - Alles-Stickman-Bildwelt aktiv: [ ]
