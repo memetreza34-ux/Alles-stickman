@@ -31,8 +31,8 @@
 - Bild 01 = Cover + erste Szene: [x]
 - nach 3 Covers HARD STOP und Nutzer wählt A/B/C: [x]
 - referenceMode = none: [x]
-- nach jedem 5er-Block HARD STOP: [x]
-- nächster Block nur nach `WEITER`: [x]
+- nach Coverwahl automatische 5er-Fortsetzung ohne Rückfrage: [x]
+- finaler Soll-Ist-Check + Reparatur fehlender Bildnummern: [x]
 - keine Füllbilder: [x]
 
 ## Upload
