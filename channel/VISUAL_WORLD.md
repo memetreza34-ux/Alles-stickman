@@ -179,7 +179,7 @@ Bild 01 ist:
 
 Pro Video werden exakt drei Cover-Kandidaten erzeugt.
 
-**Google Flow wählt selbstständig den Gewinner. Der Nutzer wählt nicht manuell.**
+**Nach genau drei Cover-Kandidaten gilt HARD STOP. Der Nutzer wählt A, B oder C. Google Flow darf nicht selbst entscheiden.**
 
 Ein starkes Cover hat:
 - eine Hauptidee
@@ -196,10 +196,11 @@ Wenn Text genutzt wird:
 - kein Pseudotext
 - keine exakte Typografie eines Referenzkanals kopieren
 
-Nach der automatischen Auswahl:
-- Gewinner → `Bild 01.png`
+Nach der ausdrücklichen Nutzerwahl:
+- gewählter Kandidat → `Bild 01.png`
 - zwei Verlierer löschen
 - keine Kopien der Verlierer behalten
+- vor der Nutzerwahl darf kein Bild 02 erzeugt werden
 
 ## Keine Bildreferenzen für Folgebilder
 
@@ -258,7 +259,7 @@ Bei historischen Themen:
 
 ## Produktionsregel
 
-Nach dem automatisch gewählten Cover werden alle übrigen Bilder in maximal 5er-Blöcken erzeugt. Jedes Nicht-Cover-Bild wird genau einmal erzeugt, außer bei technischem Fehlschlag oder eindeutig unbrauchbarem Output.
+Nach dem vom Nutzer gewählten Cover werden Folgebilder in echten 5er-Schritten erzeugt. Pro Agenten-Schritt genau ein Block; danach HARD STOP und erst nach ausdrücklichem `WEITER` der nächste Block. Jedes Nicht-Cover-Bild wird genau einmal erzeugt, außer bei technischem Fehlschlag oder eindeutig unbrauchbarem Output.
 
 Am Ende liegen alle finalen Bilder gemeinsam und flach in:
 
