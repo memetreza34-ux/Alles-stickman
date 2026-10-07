@@ -19,6 +19,16 @@ Nicht:
 
 Der Zuschauer soll sofort verstehen, **warum die Frage interessant ist**.
 
+Ab Pipeline v7 gilt zusätzlich:
+- Der erste Satz braucht bereits **Problem, Widerspruch, Überraschung oder offene Frage**.
+- Reine Atmosphäre ist kein Hook. Ein Anfang wie „Der Wind ist kalt, der Boden gefroren …“ reicht allein nicht.
+- Titel/Kernfrage müssen innerhalb der ersten zwei Sätze erkennbar sein.
+- Der Hook soll eine **Curiosity Gap** öffnen: Was ist überraschend oder noch ungeklärt?
+- Der Hook darf die komplette Antwort nicht sofort verraten.
+- Der Hook bleibt kompakt: Ziel sind höchstens etwa 45 Wörter bis zum Setup.
+
+In `SCRIPT_PLAN.json` werden deshalb für den Hook zusätzlich `hookType`, `curiosityGap`, `titleConnection` und `payoffPromise` festgehalten.
+
 ### 2. Setup
 
 Nur den Kontext erklären, der für den Hauptteil wirklich nötig ist. Keine lange Vorgeschichte.
@@ -64,9 +74,9 @@ Sehr kurz. Ein letzter Gedanke, eine interessante Konsequenz oder eine natürlic
 
 ## Längenregel
 
-Die Wortzahl richtet sich nach der geplanten Videodauer. Als technischer Korridor gelten ungefähr **115–180 Wörter pro Minute** vor der finalen Audioanpassung.
+Die Wortzahl richtet sich nach der geplanten Videodauer. Für neue Pipeline-v7+-Videos wird enger geplant: ungefähr **150–170 effektive Wörter pro Minute**, bevorzugt 155–165.
 
-Die Pipeline prüft die Wortzahl gegen `targetDurationSeconds`.
+Die Pipeline prüft die Wortzahl gegen `targetDurationSeconds`. Nach der echten Audioerzeugung wird zusätzlich die **tatsächliche Videodauer** gegen `targetDurationRangeSeconds` geprüft. Ein deutlich zu kurzes oder zu langes Video darf nicht einfach gerendert werden.
 
 ## SCRIPT_PLAN.json
 
