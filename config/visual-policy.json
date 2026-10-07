@@ -1,18 +1,19 @@
 {
-  "visualPolicyVersion": 6,
+  "visualPolicyVersion": 7,
   "status": "READY",
   "styleId": "alles-stickman-editorial-v1",
-  "description": "Eigenständige 2D-Stickman-Erklärwelt für Alles Stickman. Die Konsistenz entsteht ausschließlich aus dieser Visual Policy und den vollständigen individuellen Textprompts; für Folgebilder werden bewusst keine Bildreferenzen verwendet.",
+  "description": "Eigenständige 2D-Stickman-Erklärwelt für Alles Stickman. Standard sind reichhaltige, sofort lesbare Illustrationen mit Figuren, Objekten, Umgebung und kleinen erklärenden Elementen. Diagramme, Karten und Infografiken bleiben erlaubt, sind aber Hilfsmittel und nicht der visuelle Standard.",
   "visibleTextLanguage": "de",
   "principles": [
-    "Ein Bild darf mehrere zusammengehörige Elemente, Figuren, Objekte, Labels oder Teilinformationen enthalten. Entscheidend ist eine klare visuelle Hierarchie und dass die Kernaussage in wenigen Sekunden verständlich bleibt.",
-    "Die Illustration darf reichhaltig wirken und mehrere passende Details zeigen, soll aber nicht unnötig kompliziert oder chaotisch werden.",
+    "Standard ist eine lebendige illustrative Szene oder Sachillustration mit klarer Hierarchie – nicht eine sterile Präsentationsfolie.",
+    "Ein Bild darf mehrere zusammengehörige Elemente, Figuren, Objekte, Labels, Teilinformationen oder kleine Nebenhandlungen enthalten. Entscheidend ist, dass die Kernaussage in wenigen Sekunden verständlich bleibt.",
+    "Illustrationen dürfen reichhaltig wirken: Kleidung, Bärte, Haare, Tiere, Werkzeuge, Gebäude, Landschaft, Requisiten und kleine Details sind willkommen, wenn sie zur Aussage passen.",
     "Figuren sind einfach, aber nicht generisch: klare Silhouette, starke Mimik, passende Haare, Kleidung und Requisiten.",
     "Historische Umgebung und Gegenstände müssen zur erzählten Epoche passen, soweit es die Quellenlage erlaubt.",
-    "Nicht jede Szene braucht Menschen: Karten, Objekte, Vergleiche, Prozesse, Zeitleisten, Diagramme, Text-/Infoelemente und reine Erklärgrafiken sind ausdrücklich erwünscht.",
-    "Ein einzelnes 16:9-Bild darf aus mehreren sinnvoll getrennten Teilbildern/Panels bestehen, wenn Vergleich, Ablauf oder Erklärung dadurch klarer wird.",
-    "Die konkrete Visual Form richtet sich nach dem Inhalt und darf von Bild zu Bild stark wechseln.",
-    "Der Stil bleibt über alle Videos erkennbar gleich, während Komposition, Epoche, Ort, Handlung und Erklärform frei variieren dürfen."
+    "Diagramme, Karten, Zeitleisten, reine Text-/Zahlenbilder und Infografiken sind erlaubt, wenn sie eine Aussage deutlich besser erklären als eine normale Illustration.",
+    "Ein einzelnes 16:9-Bild darf mehrere sinnvoll getrennte Teilbilder/Panels enthalten, wenn Vergleich, Ablauf oder Erklärung dadurch klarer wird.",
+    "Die konkrete Visual Form darf von Bild zu Bild wechseln, aber illustrative Szenen und Objekt-in-Kontext-Bilder haben Vorrang.",
+    "Der Stil bleibt über alle Videos erkennbar gleich, während Komposition, Epoche, Ort, Handlung, Figuren und Erklärform frei variieren dürfen."
   ],
   "characterStyle": {
     "body": "Reduzierter Stickman-/Cartoon-Körper mit schlanken Gliedmaßen und einfacher klarer Torsoform; keine realistische Anatomie.",
@@ -50,7 +51,7 @@
   },
   "informationDesign": {
     "sameWorldRequired": true,
-    "rule": "Alle Erklärgrafiken müssen wie Bestandteile derselben Alles-Stickman-Welt aussehen: gleiche Linienlogik, Farbpalette, Formen, Textbehandlung und Illustrationssprache.",
+    "rule": "Erklärgrafiken sind unterstützende Werkzeuge, nicht der Standard. Wenn dieselbe Aussage als reichhaltige, klare Illustration oder Szene verständlich wird, diese bevorzugen. Wenn Karte, Diagramm, Zeitleiste oder Infografik nachweislich klarer ist, bleibt diese Form ausdrücklich erlaubt und muss dieselbe Alles-Stickman-Welt verwenden.",
     "labels": "Kurze deutsche Labels, Zahlen, Jahreszahlen, Namen, Pfeile und einfache Überschriften sind erlaubt, wenn sie echten Erklärwert haben.",
     "charts": "Balken, Linien, Kreise, Mengenvergleiche oder vereinfachte statistische Diagramme dürfen genutzt werden; klare Hierarchie statt Dashboard-Optik.",
     "maps": "Vereinfachte Karten mit klaren Flächen, Routen, Pfeilen, Regionen und kurzen deutschen Labels; keine fotorealistischen Satellitenkarten.",
@@ -62,7 +63,7 @@
   },
   "multiPanelPolicy": {
     "allowed": true,
-    "purpose": "Mehrere Teilbilder in einem 16:9-Frame sind erlaubt, wenn sie einen Vergleich, Ablauf, Ursache-Wirkung, mehrere Perspektiven oder zusammengehörige Fakten besser erklären.",
+    "purpose": "Mehrere Teilbilder in einem 16:9-Frame sind erlaubt, wenn sie Vergleich, Ablauf, Ursache-Wirkung oder mehrere Perspektiven klarer erklären. Bevorzugt werden illustrierte Mini-Szenen statt leerer Karten-/Dashboard-Felder.",
     "preferredLayouts": [
       "2er-Split links/rechts",
       "2er-Split oben/unten",
@@ -137,12 +138,13 @@
   "rules": [
     "16:9-Komposition für 1920x1080.",
     "Szenen müssen mit der gesprochenen Aussage und dem konkreten Thema übereinstimmen.",
+    "ILLUSTRATION ZUERST: Wenn eine Aussage als Szene, Objekt-in-Kontext oder illustrierter Vergleich funktioniert, diese Form vor reiner Infografik/Diagramm wählen.",
     "Bilder dürfen visuell reichhaltig sein und mehrere zusammengehörige Dinge zeigen; keine künstliche Minimalismus-Pflicht.",
     "Die wichtigsten 1–3 Blickpunkte müssen sofort erkennbar sein, weitere passende Details dürfen das Bild vertiefen.",
     "Figuren dürfen sich in Haaren, Bart, Kleidung, Alter, Körperform, Hauttönen, Rolle und Epoche deutlich unterscheiden.",
-    "Die beste Visual Form wird pro Bild nach Erklärwert gewählt; es gibt keine Pflicht, eine Stickman-Figur zu zeigen.",
-    "Mehrere Teilbilder in einem Frame sind erlaubt, wenn sie gemeinsam eine klare Aussage erklären.",
-    "Text, Zahlen, Diagramme, Karten, Pfeile, Labels und Infografiken sind erlaubt, solange sie korrekt, lesbar und im selben visuellen Schema gestaltet sind.",
+    "Diagramme, Karten, Zeitleisten und Infografiken bleiben erlaubt, wenn sie den Inhalt klarer erklären als eine Illustration.",
+    "Mehrere Teilbilder in einem Frame sind erlaubt, wenn sie gemeinsam eine klare Aussage erklären; illustrierte Mini-Szenen werden bevorzugt.",
+    "Text, Zahlen, Pfeile und Labels dürfen Illustrationen unterstützen, sollen sie aber nicht unnötig ersetzen.",
     "Für Bild 02 bis Bild NN wird kein Bild als Referenzvorlage verwendet, auch nicht Bild 01.",
     "Konsistenz wird ausschließlich über die aktive Visual Policy und den vollständigen Prompt jedes Bildes gesteuert.",
     "Keine Füllbilder und keine austauschbaren Standardposen ohne Informationswert.",
@@ -166,7 +168,8 @@
     "historisch unplausible Uniformen, Werkzeuge oder Architektur, wenn sie vermeidbar sind",
     "Wasserzeichen, Logos fremder Kanäle oder Markenzeichen aus Referenzbildern",
     "Verwendung eines zuvor generierten Bildes als visuelle Referenz für ein neues Szenenbild",
-    "unnötig komplizierte Kompositionen, bei denen die Kernaussage nicht mehr schnell erkennbar ist"
+    "unnötig komplizierte Kompositionen, bei denen die Kernaussage nicht mehr schnell erkennbar ist",
+    "lange Folgen steriler Infografik-/Diagramm-Karten, obwohl eine illustrative Szene möglich wäre"
   ],
   "notes": [
     "Die Referenzkanäle dienen nur zur Analyse des Formats. Diese Bildwelt ist eine eigene Kanalidentität.",
@@ -174,16 +177,48 @@
     "Konsistenz bedeutet gleiche Welt und gleiche Designlogik, nicht gleiche Bildart. Ein Video darf zwischen Szene, Karte, Diagramm, Multi-Panel, Objektbild, Prozess und Text-/Zahlenbild wechseln.",
     "Google Flow ist die alleinige Auswahlinstanz für die drei Cover-Kandidaten; der Nutzer wird nicht nach einem Favoriten gefragt.",
     "Kein generiertes Bild wird als Referenzvorlage für ein anderes Bild verwendet.",
-    "Ziel ist nicht Minimalismus: Bilder dürfen wie reichhaltige handgezeichnete YouTube-Erklärillustrationen mehrere zusammengehörige Elemente zeigen, solange die Blickführung klar bleibt."
+    "Ziel ist nicht Minimalismus: Die besten Bilder wirken wie reichhaltige handgezeichnete YouTube-Illustrationen. Mehrere Figuren, Gegenstände, Landschaft, Kleidung, Tiere, kleine Nebenhandlungen und kurze Labels dürfen gemeinsam vorkommen, solange die Kernaussage schnell lesbar bleibt.",
+    "Reine Diagramme/Infografiken sind kein Standardlayout. Sie werden nur gewählt, wenn sie die konkrete Aussage klarer erklären als eine illustrierte Szene."
   ],
   "compositionDensity": {
-    "target": "mittel bis reichhaltig",
+    "target": "reichhaltige Illustration mit klarer Hierarchie",
     "minimalismRequired": false,
     "multipleRelatedElementsAllowed": true,
     "multipleFiguresAllowed": true,
     "supportingDetailsAllowed": true,
-    "rule": "Nicht künstlich minimalisieren. Mehrere passende Figuren, Gegenstände, kleine Nebenhandlungen, Pfeile, Labels oder Teilbereiche sind erwünscht, wenn sie dieselbe Aussage unterstützen. Lieber ein lebendiges erklärendes Bild als eine leere Symbolgrafik.",
+    "rule": "Nicht künstlich minimalisieren. Mehrere passende Figuren, Gegenstände, kleine Nebenhandlungen, Tiere, Requisiten, Landschaft, Pfeile, Labels oder Teilbereiche sind erwünscht, wenn sie dieselbe Aussage unterstützen. Lieber eine lebendige illustrierte Welt als eine sterile Symbol-/Diagrammkarte.",
     "readabilityGate": "Die wichtigsten 1–3 Blickpunkte müssen sofort erkennbar sein. Zusatzdetails dürfen danach entdeckt werden.",
     "complexityLimit": "Komplexität ist nur dann zu hoch, wenn Blickführung, Textlesbarkeit oder die Kernaussage verloren gehen."
+  },
+  "visualFormPriority": {
+    "default": "illustrative-scene-first",
+    "preferred": [
+      "reichhaltige Stickman-Handlungsszene",
+      "Umgebungsszene mit mehreren passenden Details",
+      "Objekt-in-Kontext-Illustration",
+      "illustrierter Vorher-Nachher-Vergleich",
+      "illustrierter Prozess mit Figuren/Objekten",
+      "2er- oder 3er-Multi-Panel aus kleinen Szenen"
+    ],
+    "secondary": [
+      "Nahaufnahme / Sachillustration",
+      "Querschnitt / Detailfeld innerhalb einer Szene",
+      "Karte mit illustrativen Elementen",
+      "Zeitleiste mit Illustrationen"
+    ],
+    "useOnlyWhenClearer": [
+      "reines Diagramm",
+      "reine Infografik",
+      "reines Text-/Zahlenbild",
+      "sterile Symbol-/Icon-Grafik"
+    ],
+    "rules": [
+      "Nicht automatisch eine Infografik wählen, nur weil eine Aussage abstrakt ist.",
+      "Zuerst prüfen, ob die Aussage als Szene, Objekt-in-Kontext, illustrierter Vergleich oder Mini-Sequenz verständlich wird.",
+      "Diagramme/Infografiken nur einsetzen, wenn sie schneller oder präziser erklären als eine Illustration.",
+      "Mehrere reine Info-Grafiken direkt hintereinander vermeiden.",
+      "Auch bei erklärenden Bildern möglichst echte Szene, Raum, Landschaft, Objekte oder Figuren als visuelle Träger nutzen.",
+      "Ein reichhaltiges Bild darf mehrere passende Details enthalten; Komplexität ist erst dann zu hoch, wenn Blickführung oder Kernaussage verloren gehen."
+    ]
   }
 }
