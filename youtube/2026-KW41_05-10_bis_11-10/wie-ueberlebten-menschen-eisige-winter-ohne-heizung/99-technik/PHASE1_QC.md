@@ -29,8 +29,10 @@
 - Figuren-/Kleidungs-/Umgebungsvielfalt eingeplant: [x]
 - Multi-Panels als illustrierte Mini-Szenen: [x]
 - Bild 01 = Cover + erste Szene: [x]
-- Google Flow wählt Cover selbst: [x]
+- nach 3 Covers HARD STOP und Nutzer wählt A/B/C: [x]
 - referenceMode = none: [x]
+- nach jedem 5er-Block HARD STOP: [x]
+- nächster Block nur nach `WEITER`: [x]
 - keine Füllbilder: [x]
 
 ## Upload
