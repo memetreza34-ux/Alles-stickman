@@ -38,16 +38,34 @@ export async function validatePhase1(projectDirectory) {
   if (!Number.isFinite(Number(meta.targetDurationSeconds)) || Number(meta.targetDurationSeconds) <= 0) errors.push('targetDurationSeconds fehlt.');
   if (meta.imageDensityPolicy?.fixedImageCountForbidden !== true) errors.push('Adaptive Bilddichte muss aktiv sein.');
 
+  const humanGatedImageFlow = Number(meta.pipelineVersion ?? 0) >= 5;
+
   if (meta.coverPolicy?.coverCandidateCount !== 3) errors.push('Cover-Workflow muss genau 3 Cover-Kandidaten vorsehen.');
-  if (meta.coverPolicy?.autoSelectWinner !== true) errors.push('Google Flow muss den Cover-Gewinner automatisch auswählen.');
-  if (meta.coverPolicy?.selectionAuthority !== 'google-flow') errors.push('coverPolicy.selectionAuthority muss google-flow sein.');
-  if (meta.coverPolicy?.userSelectionRequired !== false) errors.push('Der Nutzer darf nicht zur Cover-Auswahl aufgefordert werden.');
-  if (meta.coverPolicy?.winnerBecomesFirstSceneAndThumbnail !== true) errors.push('Der Flow-Gewinner muss Bild 01 und Thumbnail werden.');
+  if (humanGatedImageFlow) {
+    if (meta.coverPolicy?.autoSelectWinner !== false) errors.push('Pipeline v5+: Google Flow darf den Cover-Gewinner nicht automatisch auswählen.');
+    if (meta.coverPolicy?.selectionAuthority !== 'user') errors.push('Pipeline v5+: coverPolicy.selectionAuthority muss user sein.');
+    if (meta.coverPolicy?.userSelectionRequired !== true) errors.push('Pipeline v5+: Der Nutzer muss A, B oder C auswählen.');
+    if (meta.coverPolicy?.hardStopAfterCoverCandidates !== true) errors.push('Pipeline v5+: Nach den drei Cover-Kandidaten ist ein HARD STOP Pflicht.');
+    if (meta.coverPolicy?.continueBeforeUserSelectionForbidden !== true) errors.push('Pipeline v5+: Vor der Nutzerwahl dürfen keine Folgebilder erzeugt werden.');
+  } else {
+    // Legacy-Projekte v4 bleiben reproduzierbar, neue Projekte dürfen diese Logik nicht mehr verwenden.
+    if (meta.coverPolicy?.autoSelectWinner !== true) errors.push('Legacy v4: Google Flow muss den Cover-Gewinner automatisch auswählen.');
+    if (meta.coverPolicy?.selectionAuthority !== 'google-flow') errors.push('Legacy v4: selectionAuthority muss google-flow sein.');
+    if (meta.coverPolicy?.userSelectionRequired !== false) errors.push('Legacy v4: userSelectionRequired muss false sein.');
+  }
+  if (meta.coverPolicy?.winnerBecomesFirstSceneAndThumbnail !== true) errors.push('Der gewählte Cover-Gewinner muss Bild 01 und Thumbnail werden.');
   if (meta.coverPolicy?.deleteLosingCandidates !== true) errors.push('Die zwei nicht gewählten Cover-Kandidaten müssen gelöscht werden.');
   if (meta.coverPolicy?.separateThumbnailForbidden !== true) errors.push('Bild 01 muss Cover und erste Videoszene bleiben.');
 
   if (meta.imageDensityPolicy?.generationBatchSize !== 5) errors.push('Folgebilder müssen in 5er-Blöcken geplant werden.');
   if (meta.imageDensityPolicy?.maxConcurrentGenerations !== 5) errors.push('Maximal 5 aktive Bildgenerierungen sind erlaubt.');
+  if (humanGatedImageFlow) {
+    if (meta.imageDensityPolicy?.oneBatchPerAgentTurn !== true) errors.push('Pipeline v5+: Pro Agenten-Schritt ist genau ein 5er-Block erlaubt.');
+    if (meta.imageDensityPolicy?.hardStopAfterEachBatch !== true) errors.push('Pipeline v5+: Nach jedem 5er-Block ist ein HARD STOP Pflicht.');
+    if (meta.imageDensityPolicy?.userContinueRequiredBetweenBatches !== true) errors.push('Pipeline v5+: Zwischen 5er-Blöcken ist Nutzerfreigabe Pflicht.');
+    if (meta.imageDensityPolicy?.batchContinuationAuthority !== 'user') errors.push('Pipeline v5+: batchContinuationAuthority muss user sein.');
+    if (meta.imageDensityPolicy?.explicitContinueRequired !== true) errors.push('Pipeline v5+: Der nächste Block darf nur nach ausdrücklichem WEITER starten.');
+  }
   if (meta.imageDensityPolicy?.nonCoverGenerationCount !== 1) errors.push('Bild 02 bis Bild NN dürfen jeweils nur einmal erzeugt werden.');
   if (meta.imageDensityPolicy?.referenceMode !== 'none') errors.push('imageDensityPolicy.referenceMode muss none sein.');
   if (meta.imageDensityPolicy?.useImageReferences !== false) errors.push('Für Bild 02 bis Bild NN dürfen keine Bildreferenzen verwendet werden.');
@@ -129,10 +147,17 @@ export async function validatePhase1(projectDirectory) {
   if (!prompt.includes(`ACTIVE_STYLE_ID: ${visual.styleId}`)) errors.push('Flow-Prompt nennt nicht die aktive styleId.');
   if (/ACTIVE_STYLE_ID:\s*UNSET/i.test(prompt)) errors.push('Flow-Prompt enthält noch UNSET.');
   if (!/GENAU 3 COVER/i.test(prompt)) errors.push('Flow-Prompt enthält die 3-Cover-Regel nicht eindeutig.');
-  if (!/Google Flow.*selbst/i.test(prompt)) errors.push('Flow-Prompt macht nicht eindeutig klar, dass Google Flow den Cover-Gewinner selbst auswählt.');
-  if (!/Nutzer.*nicht.*(auswähl|gefragt)/i.test(prompt)) errors.push('Flow-Prompt muss ausdrücklich verbieten, den Nutzer nach der Cover-Auswahl zu fragen.');
+  if (humanGatedImageFlow) {
+    if (!/HARD STOP/i.test(prompt)) errors.push('Pipeline v5+: Flow-Prompt muss HARD STOP eindeutig enthalten.');
+    if (!/Nutzer.*(A, B oder C|A\/B\/C|wähl)/i.test(prompt)) errors.push('Pipeline v5+: Flow-Prompt muss die Nutzer-Coverwahl eindeutig verlangen.');
+    if (!/(kein|NICHT).*Bild 02/i.test(prompt)) errors.push('Pipeline v5+: Vor der Coverwahl muss Bild 02 ausdrücklich verboten sein.');
+    if (!/WEITER/i.test(prompt)) errors.push('Pipeline v5+: Flow-Prompt muss WEITER als Batch-Freigabe verlangen.');
+    if (!/(pro Agenten-Schritt|Niemals zwei).*5er-Block/is.test(prompt)) errors.push('Pipeline v5+: Nur ein 5er-Block pro Agenten-Schritt muss ausdrücklich festgelegt sein.');
+  } else {
+    if (!/Google Flow.*selbst/i.test(prompt)) errors.push('Legacy v4: Flow-Prompt muss automatische Coverwahl enthalten.');
+  }
   if (!/KEINE Bildreferenz/i.test(prompt)) errors.push('Flow-Prompt enthält die referenzfreie Bildregel nicht eindeutig.');
-  if (!/5ER-BLÖCKEN/i.test(prompt)) errors.push('Flow-Prompt enthält die 5er-Block-Regel nicht eindeutig.');
+  if (!/5ER-(BLÖCKEN|SCHRITTEN)/i.test(prompt)) errors.push('Flow-Prompt enthält die 5er-Block-Regel nicht eindeutig.');
 
   const images = Array.isArray(mapping.images) ? mapping.images : [];
   if (Number.isInteger(meta.plannedImageCount) && images.length !== meta.plannedImageCount) {
