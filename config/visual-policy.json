@@ -1,5 +1,5 @@
 {
-  "visualPolicyVersion": 8,
+  "visualPolicyVersion": 9,
   "status": "READY",
   "styleId": "alles-stickman-editorial-v1",
   "description": "Eigenständige 2D-Stickman-Erklärwelt für Alles Stickman. Standard sind reichhaltige, sofort lesbare Illustrationen mit Figuren, Objekten, Umgebung und kleinen erklärenden Elementen. Diagramme, Karten und Infografiken bleiben erlaubt, sind aber Hilfsmittel und nicht der visuelle Standard.",
@@ -112,7 +112,7 @@
     "composition": "1 Hauptidee, typischerweise 1–3 große Figuren oder 1 große Figur plus 1 Hauptobjekt; Hintergrund stark vereinfacht.",
     "text": "Wenn Text sinnvoll ist: maximal 2–4 kurze deutsche Wörter, groß, sauber geschrieben und mit sehr hohem Kontrast. Kein Pseudotext.",
     "textStyle": "warme helle Schrift oder gedämpfter Amber-Akzent mit dunkler Kontur; nicht die exakte Typografie oder Farbformel eines Referenzkanals kopieren.",
-    "winnerRule": "Google Flow erzeugt genau drei Cover-Kandidaten und STOPPT danach vollständig. Der Nutzer wählt A, B oder C. Erst nach dieser ausdrücklichen Nutzerwahl wird der gewählte Kandidat zu Bild 01.png; die zwei Verlierer werden gelöscht. Vor der Nutzerwahl dürfen keine Folgebilder erzeugt werden.",
+    "winnerRule": "Google Flow erzeugt genau drei Cover-Kandidaten und STOPPT danach vollständig. Der Nutzer wählt A, B oder C. Erst nach dieser ausdrücklichen Nutzerwahl wird der gewählte Kandidat zu Bild 01.png; die zwei Verlierer werden gelöscht. Danach läuft die Folgebildproduktion ohne weitere Rückfragen automatisch in 5er-Blöcken bis Bild NN.",
     "selectionAuthority": "user",
     "userSelectionRequired": true,
     "hardStopAfterCandidates": true
@@ -180,7 +180,8 @@
     "Ziel ist nicht Minimalismus: Die besten Bilder wirken wie reichhaltige handgezeichnete YouTube-Illustrationen. Mehrere Figuren, Gegenstände, Landschaft, Kleidung, Tiere, kleine Nebenhandlungen und kurze Labels dürfen gemeinsam vorkommen, solange die Kernaussage schnell lesbar bleibt.",
     "Reine Diagramme/Infografiken sind kein Standardlayout. Sie werden nur gewählt, wenn sie die konkrete Aussage klarer erklären als eine illustrierte Szene.",
     "Cover-Gate: Nach genau drei Cover-Kandidaten muss der Agent stoppen und auf die ausdrückliche Auswahl des Nutzers warten.",
-    "Batch-Gate: Nach der Coverwahl werden Folgebilder in echten 5er-Schritten produziert; nach jedem Block wird gestoppt und erst nach ausdrücklichem 'weiter' fortgesetzt."
+    "Nach der Nutzer-Coverwahl läuft die Folgebildproduktion automatisch weiter: immer maximal 5 Bilder pro Block, danach sofort der nächste Block, ohne weitere Nutzerfreigabe.",
+    "Nach Bild NN folgt zwingend ein Vollständigkeitscheck des gemeinsamen finalen Bilderordners. Fehlende Bildnummern werden gezielt neu erzeugt; erst danach ist die Bildphase fertig."
   ],
   "compositionDensity": {
     "target": "reichhaltige Illustration mit klarer Hierarchie",
