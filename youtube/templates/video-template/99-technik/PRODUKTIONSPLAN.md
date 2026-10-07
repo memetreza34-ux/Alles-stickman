@@ -30,6 +30,14 @@ Die finalen Upload-Metadaten werden in `99-technik/video.json` unter `uploadMeta
 
 ## Phase 2
 
+- 3 Cover erzeugt: [ ]
+- HARD STOP nach Cover-Kandidaten: [ ]
+- Nutzerwahl A/B/C erhalten: [ ]
+- gewählte Variante als Bild 01 gesetzt: [ ]
+- Cover-Verlierer gelöscht: [ ]
+- erster 5er-Block erzeugt: [ ]
+- nach jedem Block HARD STOP eingehalten: [ ]
+- weitere Blöcke nur nach `WEITER`: [ ]
 - Bilder final: [ ]
 - Voice-over final: [ ]
 
