@@ -23,7 +23,7 @@ test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', 
   assert.equal(visual.referenceConsistency.generatedImageReferenceForbidden, true);
   assert.equal(visual.multiPanelPolicy.allowed, true);
   assert.equal(visual.informationDesign.sameWorldRequired, true);
-  assert.equal(visual.visualPolicyVersion, 7);
+  assert.equal(visual.visualPolicyVersion, 8);
   assert.equal(visual.visualFormPriority.default, 'illustrative-scene-first');
   assert.ok(visual.visualFormPriority.preferred.includes('reichhaltige Stickman-Handlungsszene'));
   assert.ok(visual.visualFormPriority.useOnlyWhenClearer.includes('reine Infografik'));
@@ -48,19 +48,27 @@ test('Skript-Policy erzwingt die kanaltypische Grundstruktur', async () => {
   assert.deepEqual(templatePlan.structure, ['hook', 'setup', 'main', 'resolution', 'closing']);
 });
 
-test('Pipeline behält automatische Coverwahl und referenzfreie Folgebilder', async () => {
+test('Pipeline v5 erzwingt Nutzer-Coverwahl und echte 5er-Gates', async () => {
   const policy = JSON.parse(await readFile('config/pipeline.json', 'utf8'));
   assert.equal(policy.coverPolicy.firstSceneIsCover, true);
   assert.equal(policy.coverPolicy.coverCandidateCount, 3);
-  assert.equal(policy.coverPolicy.autoSelectWinner, true);
-  assert.equal(policy.coverPolicy.selectionAuthority, 'google-flow');
-  assert.equal(policy.coverPolicy.userSelectionRequired, false);
+  assert.equal(policy.pipelineVersion, 5);
+  assert.equal(policy.coverPolicy.autoSelectWinner, false);
+  assert.equal(policy.coverPolicy.selectionAuthority, 'user');
+  assert.equal(policy.coverPolicy.userSelectionRequired, true);
+  assert.equal(policy.coverPolicy.hardStopAfterCoverCandidates, true);
+  assert.equal(policy.coverPolicy.continueBeforeUserSelectionForbidden, true);
   assert.equal(policy.coverPolicy.winnerBecomesFirstSceneAndThumbnail, true);
   assert.equal(policy.coverPolicy.deleteLosingCandidates, true);
   assert.equal(policy.imagePolicy.fixedImageCountForbidden, true);
   assert.equal(policy.imagePolicy.nonCoverGenerationCount, 1);
   assert.equal(policy.imagePolicy.generationBatchSize, 5);
   assert.equal(policy.imagePolicy.maxConcurrentGenerations, 5);
+  assert.equal(policy.imagePolicy.oneBatchPerAgentTurn, true);
+  assert.equal(policy.imagePolicy.hardStopAfterEachBatch, true);
+  assert.equal(policy.imagePolicy.userContinueRequiredBetweenBatches, true);
+  assert.equal(policy.imagePolicy.batchContinuationAuthority, 'user');
+  assert.equal(policy.imagePolicy.explicitContinueRequired, true);
   assert.equal(policy.imagePolicy.referenceMode, 'none');
   assert.equal(policy.imagePolicy.useImageReferences, false);
   assert.equal(policy.imagePolicy.generatedImageReferenceForbidden, true);
@@ -79,9 +87,11 @@ test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Vis
   assert.equal(meta.topic, '');
   assert.equal(meta.title, '');
   assert.deepEqual(meta.uploadMetadata, { title: '', description: '', tags: [] });
-  assert.equal(meta.coverPolicy.autoSelectWinner, true);
-  assert.equal(meta.coverPolicy.selectionAuthority, 'google-flow');
-  assert.equal(meta.coverPolicy.userSelectionRequired, false);
+  assert.equal(meta.pipelineVersion, 5);
+  assert.equal(meta.coverPolicy.autoSelectWinner, false);
+  assert.equal(meta.coverPolicy.selectionAuthority, 'user');
+  assert.equal(meta.coverPolicy.userSelectionRequired, true);
+  assert.equal(meta.coverPolicy.hardStopAfterCoverCandidates, true);
   assert.equal(meta.coverPolicy.winnerBecomesFirstSceneAndThumbnail, true);
   assert.equal(meta.imageDensityPolicy.referenceMode, 'none');
   assert.equal(meta.imageDensityPolicy.useImageReferences, false);
@@ -89,9 +99,12 @@ test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Vis
   assert.match(prompt, /ACTIVE_STYLE_ID: UNSET/);
   assert.match(prompt, /ALLES STICKMAN/i);
   assert.match(prompt, /GENAU 3 COVER/i);
-  assert.match(prompt, /GOOGLE FLOW.*selbstständig.*Gewinner/is);
+  assert.match(prompt, /HARD STOP/i);
+  assert.match(prompt, /COVER-WAHL ERFORDERLICH/i);
+  assert.match(prompt, /A, B oder C/i);
+  assert.match(prompt, /WEITER/i);
   assert.match(prompt, /KEINE Bildreferenz/i);
-  assert.match(prompt, /5ER-BLÖCKEN/i);
+  assert.match(prompt, /5ER-(BLÖCKEN|SCHRITTEN)/i);
   assert.match(prompt, /Keine feste Zielbildzahl/i);
   assert.match(prompt, /Bild 01\.png.*Bild NN\.png/is);
   assert.match(prompt, /2er- oder 3er-Multi-Panel/i);
@@ -101,7 +114,7 @@ test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Vis
   assert.match(prompt, /Reine Infografik.*nur.*klarer/is);
 });
 
-test('Erstes 2-Minuten-Testprojekt besteht Phase 1 und nutzt keine Bildreferenz', async () => {
+test('Legacy-Testprojekt v4 bleibt reproduzierbar und nutzt keine Bildreferenz', async () => {
   const meta = JSON.parse(await readFile(path.join(TEST_PROJECT, '99-technik', 'video.json'), 'utf8'));
   const mapping = JSON.parse(await readFile(path.join(TEST_PROJECT, '99-technik', 'BILD_AUDIO_ZUORDNUNG.json'), 'utf8'));
   const scriptPlan = JSON.parse(await readFile(path.join(TEST_PROJECT, '99-technik', 'SCRIPT_PLAN.json'), 'utf8'));
@@ -154,14 +167,25 @@ test('Drittes Testprojekt nutzt Illustration-zuerst und besteht Phase 1', async 
   const scriptPlan = JSON.parse(await readFile(path.join(THIRD_TEST_PROJECT, '99-technik', 'SCRIPT_PLAN.json'), 'utf8'));
   const script = await readFile(path.join(THIRD_TEST_PROJECT, '01-voice-script', 'voice-script.txt'), 'utf8');
   const prompt = await readFile(path.join(THIRD_TEST_PROJECT, '00-bildprompts', 'google-flow-prompt.txt'), 'utf8');
+  assert.equal(meta.pipelineVersion, 5);
   assert.equal(meta.plannedImageCount, 16);
   assert.ok(meta.targetDurationSeconds <= 120);
+  assert.equal(meta.coverPolicy.autoSelectWinner, false);
+  assert.equal(meta.coverPolicy.selectionAuthority, 'user');
+  assert.equal(meta.coverPolicy.userSelectionRequired, true);
+  assert.equal(meta.coverPolicy.hardStopAfterCoverCandidates, true);
+  assert.equal(meta.imageDensityPolicy.oneBatchPerAgentTurn, true);
+  assert.equal(meta.imageDensityPolicy.hardStopAfterEachBatch, true);
+  assert.equal(meta.imageDensityPolicy.userContinueRequiredBetweenBatches, true);
   assert.equal(mapping.images.length, 16);
   assert.equal(scriptPlan.status, 'READY');
   assert.equal(script.indexOf(scriptPlan.sections[0].startAnchor), 0);
   assert.ok(script.trim().split(/\s+/).length >= 220);
   assert.ok(script.trim().split(/\s+/).length <= 280);
   assert.match(prompt, /ILLUSTRATION ZUERST/i);
+  assert.match(prompt, /HARD STOP/i);
+  assert.match(prompt, /Nutzerwahl A, B oder C|A, B oder C/i);
+  assert.match(prompt, /WEITER/i);
   assert.match(prompt, /keine Bildreferenz/i);
   const illustrativeForms = mapping.images.filter((image) => /Szene|illustr|Bauszene|Vergleich|Mini-Sequenz|Nahaufnahme|Zusammenführung/i.test(String(image.visualForm)));
   assert.ok(illustrativeForms.length >= 12, `Zu wenige illustrative Visual Forms: ${illustrativeForms.length}/16`);
