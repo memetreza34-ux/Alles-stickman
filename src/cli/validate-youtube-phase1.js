@@ -152,7 +152,7 @@ export async function validatePhase1(projectDirectory) {
     if (!/Nutzer.*(A, B oder C|A\/B\/C|wähl)/i.test(prompt)) errors.push('Pipeline v5+: Flow-Prompt muss die Nutzer-Coverwahl eindeutig verlangen.');
     if (!/(kein|NICHT).*Bild 02/i.test(prompt)) errors.push('Pipeline v5+: Vor der Coverwahl muss Bild 02 ausdrücklich verboten sein.');
     if (!/WEITER/i.test(prompt)) errors.push('Pipeline v5+: Flow-Prompt muss WEITER als Batch-Freigabe verlangen.');
-    if (!/(pro Agenten-Schritt|Niemals zwei).*5er-Block/is.test(prompt)) errors.push('Pipeline v5+: Nur ein 5er-Block pro Agenten-Schritt muss ausdrücklich festgelegt sein.');
+    if (!/(pro Agenten-Schritt.*5er|Niemals zwei.*5er-Bl[öo]ck)/is.test(prompt)) errors.push('Pipeline v5+: Nur ein 5er-Block pro Agenten-Schritt muss ausdrücklich festgelegt sein.');
   } else {
     if (!/Google Flow.*selbst/i.test(prompt)) errors.push('Legacy v4: Flow-Prompt muss automatische Coverwahl enthalten.');
   }
