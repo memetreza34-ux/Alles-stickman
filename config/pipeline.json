@@ -1,5 +1,5 @@
 {
-  "pipelineVersion": 5,
+  "pipelineVersion": 6,
   "projectSchemaVersion": 1,
   "languageDefault": "de",
   "aspectRatio": "16:9",
@@ -48,11 +48,17 @@
     "nonCoverAlternatesForbidden": true,
     "referenceMode": "none",
     "generatedImageReferenceForbidden": true,
-    "oneBatchPerAgentTurn": true,
-    "hardStopAfterEachBatch": true,
-    "userContinueRequiredBetweenBatches": true,
-    "batchContinuationAuthority": "user",
-    "explicitContinueRequired": true
+    "hardStopAfterEachBatch": false,
+    "userContinueRequiredBetweenBatches": false,
+    "batchContinuationAuthority": "agent",
+    "explicitContinueRequired": false,
+    "batchExecutionMode": "automatic-sequential",
+    "automaticBatchContinuation": true,
+    "continueUntilImageNN": true,
+    "finalIntegrityCheckRequired": true,
+    "finalCountMustMatchPlannedImageCount": true,
+    "missingImageRepairRequired": true,
+    "repairOnlyMissingOrBroken": true
   },
   "audioPolicy": {
     "playbackRate": 1.1,
