@@ -54,6 +54,16 @@ GLEICHE WELT bedeutet NICHT:
 
 VISUELLE FREIHEIT
 
+ILLUSTRATION ZUERST — SEHR WICHTIG
+- Standard ist eine reichhaltige, leicht lesbare Illustration oder Szene.
+- Zuerst prüfen: Kann die Aussage als Handlungsszene, Umgebungsszene, Objekt-in-Kontext, illustrierter Vorher/Nachher-Vergleich oder Mini-Sequenz gezeigt werden?
+- Wenn ja, diese Form bevorzugen.
+- Reine Infografik, Diagramm, Text-/Zahlenkarte oder sterile Symbolgrafik nur wählen, wenn sie die Aussage klarer/schneller erklärt als eine Illustration.
+- Mehrere reine Infografik-/Diagrammbilder direkt hintereinander vermeiden.
+- Auch erklärende Inhalte dürfen Figuren, Kleidung, Bärte, Tiere, Werkzeuge, Häuser, Landschaft, Requisiten und kleine Nebenhandlungen enthalten.
+- Multi-Panels möglichst als 2–3 illustrierte Mini-Szenen statt als leere Karten gestalten.
+- Text, Pfeile, Zahlen und kleine Detailfelder dürfen eine Illustration ergänzen, aber nicht unnötig die ganze Szene ersetzen.
+
 BILDDICHTE — SEHR WICHTIG
 - NICHT künstlich minimalisieren.
 - Ein Bild darf mehrere zusammengehörige Figuren, Objekte, Requisiten, Nebenhandlungen, Labels, Pfeile oder Teilbereiche enthalten.
@@ -115,7 +125,7 @@ PHASE 1 — PLAN UND VORBEREITUNG
    - Planned Hold
    - vollständigen Prompt
 6. Erfinde keine zusätzliche Bildnummer und lasse keine geplante Bildnummer aus.
-7. Wähle pro Aussage die beste Visual Form, nicht automatisch eine Personenszene.
+7. Wähle pro Aussage die beste Visual Form. Standardmäßig zuerst eine reichhaltige Illustration/Szene prüfen; reine Infografik/Diagramm nur bei echtem Erklärvorteil.
 
 PHASE 2 — GENAU 3 COVER ERZEUGEN
 Erzeuge genau:
@@ -178,8 +188,9 @@ Für jedes Bild gilt:
 - kein vorheriges Szenenbild als Vorlage
 - keine Füllbilder
 - Visual Form nach Erklärwert wählen
-- wenn mehrere Panels sinnvoller sind, mehrere Panels nutzen
-- wenn Text/Zahlen/Diagramm sinnvoller sind, diese Form nutzen
+- zuerst Szene / Objekt-in-Kontext / illustrierter Vergleich prüfen
+- wenn mehrere Panels sinnvoller sind, bevorzugt illustrierte Mini-Szenen nutzen
+- wenn Text/Zahlen/Diagramm eindeutig klarer sind, diese Form nutzen
 - wenn keine Person nötig ist, keine Person zeigen
 - trotz wechselnder Bildarten dieselbe Alles-Stickman-Designwelt beibehalten
 
