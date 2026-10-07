@@ -36,11 +36,29 @@ export async function validatePhase1(projectDirectory) {
 
   if (!Number.isInteger(meta.plannedImageCount) || meta.plannedImageCount < 1) errors.push('plannedImageCount muss in Phase 1 auf eine inhaltsgetriebene Bildzahl gesetzt werden.');
   if (!Number.isFinite(Number(meta.targetDurationSeconds)) || Number(meta.targetDurationSeconds) <= 0) errors.push('targetDurationSeconds fehlt.');
+  if (qualityV7) {
+    const range = meta.targetDurationRangeSeconds;
+    if (!Array.isArray(range) || range.length !== 2 || !range.every((x) => Number.isFinite(Number(x))) || Number(range[0]) >= Number(range[1])) {
+      errors.push('Pipeline v7+: targetDurationRangeSeconds muss als gültiger [min,max]-Bereich gesetzt sein.');
+    }
+    const continuity = meta.visualContinuityProfile ?? {};
+    for (const key of ['environmentAnchor','climateSeasonAnchor','eraAnchor','paletteMoodAnchor']) {
+      if (isPlaceholder(continuity[key])) errors.push(`Pipeline v7+: visualContinuityProfile.${key} fehlt/ist Platzhalter.`);
+    }
+    if (!Array.isArray(continuity.allowedIntentionalChanges)) errors.push('Pipeline v7+: visualContinuityProfile.allowedIntentionalChanges muss ein Array sein.');
+    if (!Array.isArray(continuity.forbiddenUnmotivatedChanges)) errors.push('Pipeline v7+: visualContinuityProfile.forbiddenUnmotivatedChanges muss ein Array sein.');
+    if (continuity.adjacentSceneContinuityRequired !== true) errors.push('Pipeline v7+: adjacentSceneContinuityRequired muss true sein.');
+  }
   if (meta.imageDensityPolicy?.fixedImageCountForbidden !== true) errors.push('Adaptive Bilddichte muss aktiv sein.');
 
   const pipelineVersion = Number(meta.pipelineVersion ?? 0);
   const humanGatedCoverFlow = pipelineVersion >= 5;
   const automaticBatchFlow = pipelineVersion >= 6;
+  const qualityV7 = pipelineVersion >= 7;
+  const isPlaceholder = (value) => {
+    const text = String(value ?? '').trim();
+    return !text || /^\[.*\]$/.test(text) || /TODO|PLACEHOLDER/i.test(text);
+  };
 
   if (meta.coverPolicy?.coverCandidateCount !== 3) errors.push('Cover-Workflow muss genau 3 Cover-Kandidaten vorsehen.');
   if (humanGatedCoverFlow) {
@@ -129,6 +147,33 @@ export async function validatePhase1(projectDirectory) {
     }
   }
 
+  if (qualityV7) {
+    const hook = sectionById.get('hook') ?? {};
+    const setup = sectionById.get('setup') ?? {};
+    const allowedHookTypes = scriptPolicy.hookQuality?.allowedTypes ?? [];
+    if (!allowedHookTypes.includes(hook.hookType)) errors.push('Pipeline v7+: SCRIPT_PLAN hook.hookType fehlt oder ist ungültig.');
+    for (const field of ['curiosityGap','titleConnection','payoffPromise']) {
+      if (isPlaceholder(hook[field])) errors.push(`Pipeline v7+: SCRIPT_PLAN Hook-Feld ${field} fehlt/ist Platzhalter.`);
+    }
+    if (hook.sceneSettingOnly !== false) errors.push('Pipeline v7+: Hook darf keine reine Szenen-/Atmosphärenbeschreibung sein (sceneSettingOnly=false erforderlich).');
+
+    const hookStart = cleanScript.indexOf(String(hook.startAnchor ?? ''));
+    const setupStart = cleanScript.indexOf(String(setup.startAnchor ?? ''));
+    if (hookStart >= 0 && setupStart > hookStart) {
+      const hookText = cleanScript.slice(hookStart, setupStart).trim();
+      const hookWords = hookText.split(/\s+/).filter(Boolean);
+      const maxHookWords = Number(scriptPolicy.sectionRules?.hook?.maxWordsBeforeSetup ?? 45);
+      if (hookWords.length > maxHookWords) errors.push(`Pipeline v7+: Hook ist mit ${hookWords.length} Wörtern zu lang (max. ${maxHookWords} bis Setup).`);
+      const hookSentences = hookText.split(/(?<=[.!?])\s+/).map((x) => x.trim()).filter(Boolean);
+      const firstSentenceWords = (hookSentences[0] ?? '').split(/\s+/).filter(Boolean).length;
+      const firstTwoWords = hookSentences.slice(0,2).join(' ').split(/\s+/).filter(Boolean).length;
+      const hardFirst = Number(scriptPolicy.hookQuality?.hardMaxFirstSentenceWords ?? 24);
+      const hardTwo = Number(scriptPolicy.hookQuality?.hardMaxFirstTwoSentencesWords ?? 48);
+      if (firstSentenceWords > hardFirst) errors.push(`Pipeline v7+: Erster Hook-Satz ist mit ${firstSentenceWords} Wörtern zu lang (Hard-Max ${hardFirst}).`);
+      if (firstTwoWords > hardTwo) errors.push(`Pipeline v7+: Erste zwei Hook-Sätze sind mit ${firstTwoWords} Wörtern zu lang (Hard-Max ${hardTwo}).`);
+    }
+  }
+
   const opening = cleanScript.slice(0, 180).toLowerCase();
   for (const pattern of scriptPolicy.openingRules?.forbiddenPatterns ?? []) {
     if (new RegExp(pattern, 'i').test(opening)) {
@@ -139,7 +184,10 @@ export async function validatePhase1(projectDirectory) {
 
   const words = cleanScript.split(/\s+/).filter(Boolean);
   const durationMinutes = Number(meta.targetDurationSeconds) / 60;
-  const [minWpm, maxWpm] = scriptPolicy.pacingRules?.targetWordsPerMinute ?? [115, 180];
+  const [legacyMinWpm, legacyMaxWpm] = scriptPolicy.pacingRules?.targetWordsPerMinute ?? [115, 180];
+  const [v7MinWpm, v7MaxWpm] = scriptPolicy.durationQuality?.allowedEffectiveWordsPerMinute ?? [150, 170];
+  const minWpm = qualityV7 ? v7MinWpm : legacyMinWpm;
+  const maxWpm = qualityV7 ? v7MaxWpm : legacyMaxWpm;
   if (Number.isFinite(durationMinutes) && durationMinutes > 0) {
     const wpm = words.length / durationMinutes;
     if (wpm < minWpm || wpm > maxWpm) {
@@ -180,6 +228,13 @@ export async function validatePhase1(projectDirectory) {
     if (!/gemeinsam.*Ordner|selben Ordner|gemeinsamen finalen Ordner/is.test(prompt)) errors.push('Pipeline v6+: Alle finalen Bilder müssen gemeinsam in einem Ordner liegen.');
   } else if (humanGatedCoverFlow) {
     if (!/WEITER/i.test(prompt)) errors.push('Legacy v5: Flow-Prompt muss WEITER als Batch-Freigabe verlangen.');
+  }
+  if (qualityV7) {
+    if (!/visualContinuityProfile/i.test(prompt)) errors.push('Pipeline v7+: Flow-Prompt muss visualContinuityProfile laden.');
+    if (!/WELT- UND UMGEBUNGSKONTINUITÄT/i.test(prompt)) errors.push('Pipeline v7+: Flow-Prompt enthält keine verbindliche Umweltkontinuitätsregel.');
+    if (!/STILLE BILD-QC NACH JEDEM 5ER-BLOCK/i.test(prompt)) errors.push('Pipeline v7+: Flow-Prompt enthält keine stille Bild-QC nach jedem Batch.');
+    if (!/(Umgebung|Klima).*Epoche/is.test(prompt)) errors.push('Pipeline v7+: Bild-QC muss Umgebung/Klima/Epoche prüfen.');
+    if (!/(durchfällt|schlecht).*neu erzeug/is.test(prompt)) errors.push('Pipeline v7+: Schlechte Bilder müssen vor dem Weiterlaufen gezielt neu erzeugt werden.');
   }
   if (!/KEINE Bildreferenz/i.test(prompt)) errors.push('Flow-Prompt enthält die referenzfreie Bildregel nicht eindeutig.');
   if (!/5ER-(BLÖCKEN|SCHRITTEN)/i.test(prompt)) errors.push('Flow-Prompt enthält die 5er-Block-Regel nicht eindeutig.');
