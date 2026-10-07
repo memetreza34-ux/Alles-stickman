@@ -10,7 +10,7 @@ Produktionsrepository für einen deutschsprachigen faceless YouTube-Erklärkanal
 - Bildwelt-Dokumentation: `channel/VISUAL_WORLD.md`
 - Google-Flow-Ablauf: `channel/GOOGLE_FLOW_ASSET_WORKFLOW.md`
 - aktueller Systemstatus: `channel/SYSTEM_STATUS.md`
-- früherer Ausgangs-Audit: `channel/SYSTEM_AUDIT.md`
+- System-Audit: `channel/SYSTEM_AUDIT.md`
 - komplette Produktionsanleitung: `youtube/WORKFLOW.md`
 
 ## Bildproduktion
@@ -22,23 +22,27 @@ Verbindlicher Ablauf:
 3. **STOPPEN.**
 4. Nutzer wählt A, B oder C.
 5. Gewählten Kandidaten als `Bild 01.png` speichern; die 2 anderen Cover löschen.
-6. **Keine Bildreferenz** für Folgebilder benutzen.
-7. Genau einen 5er-Block erzeugen: zuerst Bild 02–06.
-8. **STOPPEN** und auf `WEITER` warten.
-9. Pro `WEITER` genau einen weiteren 5er-Block erzeugen.
-10. Am Ende alle finalen Bilder flach in `00-bildprompts/images/` halten.
+6. Danach **keine weitere Nutzerfreigabe** mehr verlangen.
+7. Folgebilder automatisch in Blöcken mit maximal 5 Bildern erzeugen: Bild 02–06, direkt danach Bild 07–11, danach der nächste Block usw.
+8. Keine Bildreferenz für Folgebilder benutzen.
+9. Alle finalen Bilder gemeinsam flach in `00-bildprompts/images/` speichern.
+10. Nach Bild NN den gesamten Ordner prüfen. Fehlt eine Bildnummer oder ist eine Datei technisch kaputt, genau dieses Bild neu erzeugen.
+11. Erst fertig melden, wenn `Bild 01.png` bis `Bild NN.png` lückenlos vorhanden sind und keine Zusatzbilder übrig sind.
 
 Kurzform:
 
 ```text
 3 Cover
 → STOP
-→ Nutzer wählt
+→ Nutzer wählt A/B/C
 → Bild 02–06
-→ STOP / WEITER
-→ Bild 07–11
-→ STOP / WEITER
+→ automatisch Bild 07–11
+→ automatisch Bild 12–16
 → ...
+→ Bild NN
+→ Vollständigkeitscheck
+→ fehlende Bilder reparieren
+→ finaler gemeinsamer Bilderordner
 ```
 
-Finaler Bilderordner enthält ausschließlich `Bild 01.png` bis `Bild NN.png`.
+**Es gibt nur einen Human-Gate: die Coverwahl.** Zwischen den 5er-Blöcken wird nicht gefragt und nicht auf `WEITER` gewartet.
