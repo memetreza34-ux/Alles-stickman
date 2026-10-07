@@ -22,17 +22,19 @@ Stand: 2026-10-07
 - für Bild 02 bis Bild NN werden überhaupt keine Bildreferenzen benutzt
 - Konsistenz entsteht ausschließlich über `config/visual-policy.json` und vollständige individuelle Textprompts
 - Bild 02 bis Bild NN jeweils genau eine finale Version
-- Folgebilder werden in **echten 5er-Schritten** erzeugt
-- pro Agenten-Schritt genau ein 5er-Block
-- nach jedem 5er-Block gilt **HARD STOP**
-- nächster Block nur nach ausdrücklichem `WEITER`
+- Folgebilder werden in **automatischen 5er-Blöcken** erzeugt
 - maximal 5 aktive Generationen
+- nach einem fertigen Block startet automatisch der nächste
+- zwischen den Blöcken keine Nutzerfrage, kein HARD STOP und kein `WEITER`
+- die einzige Nutzerfreigabe in der Bildphase ist die Coverwahl
+- nach Bild NN folgt ein vollständiger Soll-Ist-Check des Bilderordners
+- fehlende oder technisch kaputte Bildnummern werden gezielt neu erzeugt und erneut geprüft
 - flexible Visual Forms: Szenen, Objekte, Karten, Diagramme, Multi-Panels, Prozesse, Text-/Zahlenbilder usw.
 - **Illustration-zuerst-Priorität:** reichhaltige Szenen/Objekt-in-Kontext-Bilder sind Standard; reine Infografiken/Diagramme nur bei echtem Erklärvorteil
 - Bilddichte darf mittel bis reichhaltig sein: mehrere Figuren, Kleidung, Bärte, Tiere, Werkzeuge, Gebäude, Landschaft und Nebenhandlungen sind erlaubt, solange die Blickführung klar bleibt
 - mehrere sterile Info-/Diagramm-Karten direkt hintereinander sollen vermieden werden
 - finale Bilder liegen gemeinsam und flach in `00-bildprompts/images/`
-- Phase-1-Validator prüft Nutzer-Coverwahl, Cover-Hard-Stop, Referenzfreiheit und 5er-Hard-Stops
+- Phase-1-Validator prüft Nutzer-Coverwahl, Cover-Hard-Stop, automatische 5er-Fortsetzung, Referenzfreiheit und den finalen Reparaturcheck
 - Phase-2-Validator lehnt zusätzliche Bilddateien und Unterordner im finalen Bilderordner ab
 - Export erzeugt Video, Thumbnail, Upload-Metadaten, SRT-Untertitel und Zeitstempel-Skript
 - verbindliches Skript-System in `config/script-policy.json`
