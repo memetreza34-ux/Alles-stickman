@@ -1,5 +1,5 @@
 {
-  "visualPolicyVersion": 9,
+  "visualPolicyVersion": 10,
   "status": "READY",
   "styleId": "alles-stickman-editorial-v1",
   "description": "Eigenständige 2D-Stickman-Erklärwelt für Alles Stickman. Standard sind reichhaltige, sofort lesbare Illustrationen mit Figuren, Objekten, Umgebung und kleinen erklärenden Elementen. Diagramme, Karten und Infografiken bleiben erlaubt, sind aber Hilfsmittel und nicht der visuelle Standard.",
@@ -150,7 +150,9 @@
     "Konsistenz wird ausschließlich über die aktive Visual Policy und den vollständigen Prompt jedes Bildes gesteuert.",
     "Keine Füllbilder und keine austauschbaren Standardposen ohne Informationswert.",
     "Bild 02 bis Bild NN jeweils nur einmal erzeugen; keine A/B-Varianten außer bei technischem Fehlschlag oder klar unbrauchbarem Output.",
-    "Nach Abschluss dürfen im finalen Bilderordner ausschließlich Bild 01.png bis Bild NN.png liegen."
+    "Nach Abschluss dürfen im finalen Bilderordner ausschließlich Bild 01.png bis Bild NN.png liegen.",
+    "Für neue Pipeline-v7+-Projekte muss video.json ein visualContinuityProfile enthalten; unbegründete Klima-, Jahreszeit-, Orts-, Tageszeit- oder Epochenwechsel sind verboten.",
+    "Nach jedem 5er-Bildblock erfolgt eine stille Qualitätsprüfung. Schlechte Bilder werden vor dem nächsten Block gezielt neu erzeugt; der Nutzer wird dafür nicht gefragt."
   ],
   "forbidden": [
     "direkte Kopie eines konkreten Referenzkanals oder wiedererkennbarer Figuren daraus",
@@ -223,5 +225,37 @@
       "Auch bei erklärenden Bildern möglichst echte Szene, Raum, Landschaft, Objekte oder Figuren als visuelle Träger nutzen.",
       "Ein reichhaltiges Bild darf mehrere passende Details enthalten; Komplexität ist erst dann zu hoch, wenn Blickführung oder Kernaussage verloren gehen."
     ]
+  },
+  "environmentContinuity": {
+    "requiredFromPipelineVersion": 7,
+    "profileSource": "99-technik/video.json.visualContinuityProfile",
+    "rule": "Szenen desselben Videos müssen dieselbe erzählerische Welt logisch fortsetzen. Klima, Jahreszeit, Tagesstimmung, Vegetation, Architektur und historische Epoche dürfen nicht unbegründet springen.",
+    "noUnmotivatedEnvironmentShift": true,
+    "adjacentSceneContinuityRequired": true,
+    "intentionalChangesMustBeDeclared": true,
+    "examplesOfFailures": [
+      "eisiges Wintervideo springt ohne Grund in eine grüne warme Frühlingslandschaft",
+      "historische Szene enthält plötzlich moderne Objekte",
+      "Nacht-/Dämmerungswelt wechselt ohne Erzählgrund mehrfach zu hellem Mittag",
+      "Architektur oder Vegetation widersprechen dem gesetzten Ort/Klima"
+    ]
+  },
+  "visualSelfReview": {
+    "requiredFromPipelineVersion": 7,
+    "runAfterEveryBatch": true,
+    "runAgainAtFinalFolder": true,
+    "silentRepairBeforeContinue": true,
+    "criteria": [
+      "passt exakt zur gesprochenen Aussage und zum Topic Anchor",
+      "Umgebung/Klima/Epoche passen zum visualContinuityProfile",
+      "keine deformierten Hände, zusätzlichen Gliedmaßen oder kaputten Gesichter",
+      "sichtbarer Text korrekt, kurz und lesbar; kein Pseudotext",
+      "Kernaussage in wenigen Sekunden verständlich",
+      "keine sterile Infografik, wenn eine Illustration klarer wäre",
+      "nicht unnötig überladen und nicht künstlich leer",
+      "keine unbegründete Stil- oder Farbweltabweichung",
+      "keine modernen oder sachlich unpassenden Objekte"
+    ],
+    "repairRule": "Fällt ein Bild durch, nur diese Bildnummer mit demselben Inhalt und einem korrigierten Vollprompt neu erzeugen. Danach erneut prüfen; erst bei PASS weiter."
   }
 }
