@@ -323,11 +323,13 @@ Ein Video ist erst fertig, wenn:
 - YouTube-Titel und Beschreibung fertig sind
 - aktive Bildwelt `READY` ist
 - genau 3 Cover-Kandidaten erzeugt wurden
-- Google Flow selbst genau 1 Gewinner ausgewählt hat
-- Gewinner als `Bild 01.png` übrig bleibt
-- die 2 Cover-Verlierer gelöscht sind
+- nach den 3 Cover-Kandidaten wirklich gestoppt wurde
+- der Nutzer A, B oder C ausdrücklich gewählt hat
+- exakt diese Auswahl als `Bild 01.png` übrig bleibt
+- die 2 Cover-Verlierer erst danach gelöscht wurden
 - für Bild 02–NN keine Bildreferenz verwendet wurde
-- Bild 02–NN in maximal 5er-Blöcken erzeugt wurden
+- Bild 02–NN in echten 5er-Schritten erzeugt wurden
+- nach jedem 5er-Block gestoppt und erst nach `WEITER` fortgesetzt wurde
 - finale Bilder lückenlos benannt sind
 - alle finalen Bilder in einem flachen Ordner liegen
 - genau eine finale Stimme vorliegt
