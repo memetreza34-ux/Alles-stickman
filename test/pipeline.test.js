@@ -7,6 +7,7 @@ import test from 'node:test';
 import { evaluateTopic } from '../src/cli/check-youtube-topic.js';
 import { buildSrtFromWhisper, buildTimedScriptFromWhisper, buildUploadText, formatSrtTimestamp } from '../src/cli/finalize-youtube-export.js';
 import { validatePhase1 } from '../src/cli/validate-youtube-phase1.js';
+import { validatePacing } from '../src/cli/validate-youtube-pacing.js';
 import { normalizeText, similarity } from '../src/lib/pipeline.js';
 
 const TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-feuer-ohne-streichhoelzer';
@@ -23,12 +24,15 @@ test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', 
   assert.equal(visual.referenceConsistency.generatedImageReferenceForbidden, true);
   assert.equal(visual.multiPanelPolicy.allowed, true);
   assert.equal(visual.informationDesign.sameWorldRequired, true);
-  assert.equal(visual.visualPolicyVersion, 9);
+  assert.equal(visual.visualPolicyVersion, 10);
   assert.equal(visual.visualFormPriority.default, 'illustrative-scene-first');
   assert.ok(visual.visualFormPriority.preferred.includes('reichhaltige Stickman-Handlungsszene'));
   assert.ok(visual.visualFormPriority.useOnlyWhenClearer.includes('reine Infografik'));
   assert.equal(visual.textPolicy.labelsAllowed, true);
   assert.equal(visual.textPolicy.numbersAllowed, true);
+  assert.equal(visual.environmentContinuity.noUnmotivatedEnvironmentShift, true);
+  assert.equal(visual.visualSelfReview.runAfterEveryBatch, true);
+  assert.equal(visual.visualSelfReview.silentRepairBeforeContinue, true);
   assert.ok(visual.visualForms.includes('Diagramm oder Zahlenvergleich'));
   assert.ok(visual.visualForms.includes('2er- oder 3er-Multi-Panel'));
   assert.ok(visual.visualForms.includes('Text-/Zahlenfokus mit unterstützender Illustration'));
@@ -44,15 +48,25 @@ test('Skript-Policy erzwingt die kanaltypische Grundstruktur', async () => {
   assert.equal(policy.openingRules.genericMetaIntroForbidden, true);
   assert.equal(policy.languageRules.hardMaxWordsPerSentence, 32);
   assert.deepEqual(policy.pacingRules.targetWordsPerMinute, [115, 180]);
+  assert.equal(policy.version, 2);
+  assert.deepEqual(policy.durationQuality.allowedEffectiveWordsPerMinute, [150, 170]);
+  assert.equal(policy.hookQuality.sceneSettingOnlyForbidden ?? true, true);
+  assert.equal(policy.hookQuality.hardMaxFirstSentenceWords, 24);
   assert.equal(templatePlan.status, 'PLANNED');
   assert.deepEqual(templatePlan.structure, ['hook', 'setup', 'main', 'resolution', 'closing']);
+  const hook = templatePlan.sections.find((section) => section.id === 'hook');
+  assert.equal(hook.sceneSettingOnly, false);
+  assert.ok(String(hook.hookType).startsWith('['));
+  assert.ok(String(hook.curiosityGap).startsWith('['));
+  assert.ok(String(hook.titleConnection).startsWith('['));
+  assert.ok(String(hook.payoffPromise).startsWith('['));
 });
 
-test('Pipeline v6 wartet nur beim Cover und setzt 5er-Blöcke automatisch fort', async () => {
+test('Pipeline v7 behält Cover-Gate, automatische 5er-Blöcke und neue Qualitätsgates', async () => {
   const policy = JSON.parse(await readFile('config/pipeline.json', 'utf8'));
   assert.equal(policy.coverPolicy.firstSceneIsCover, true);
   assert.equal(policy.coverPolicy.coverCandidateCount, 3);
-  assert.equal(policy.pipelineVersion, 6);
+  assert.equal(policy.pipelineVersion, 7);
   assert.equal(policy.coverPolicy.autoSelectWinner, false);
   assert.equal(policy.coverPolicy.selectionAuthority, 'user');
   assert.equal(policy.coverPolicy.userSelectionRequired, true);
@@ -87,6 +101,10 @@ test('Pipeline v6 wartet nur beim Cover und setzt 5er-Blöcke automatisch fort',
   assert.equal(policy.audioPolicy.loudnessTargetLufs, -16);
   assert.equal(policy.audioPolicy.truePeakDbtp, -1.5);
   assert.equal(policy.endHoldPolicy.targetSeconds, 1.3);
+  assert.equal(policy.qualityGates.strongHookRequiredFromVersion, 7);
+  assert.equal(policy.qualityGates.visualContinuityProfileRequiredFromVersion, 7);
+  assert.equal(policy.qualityGates.visualSelfReviewRequiredFromVersion, 7);
+  assert.equal(policy.qualityGates.targetDurationHardGate, true);
 });
 
 test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Visual Forms und Upload-Metadaten', async () => {
@@ -96,7 +114,7 @@ test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Vis
   assert.equal(meta.topic, '');
   assert.equal(meta.title, '');
   assert.deepEqual(meta.uploadMetadata, { title: '', description: '', tags: [] });
-  assert.equal(meta.pipelineVersion, 6);
+  assert.equal(meta.pipelineVersion, 7);
   assert.equal(meta.coverPolicy.autoSelectWinner, false);
   assert.equal(meta.coverPolicy.selectionAuthority, 'user');
   assert.equal(meta.coverPolicy.userSelectionRequired, true);
@@ -108,6 +126,8 @@ test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Vis
   assert.equal(meta.imageDensityPolicy.finalImageDirectory, '00-bildprompts/images');
   assert.equal(meta.imageDensityPolicy.finalFolderMustBeFlat, true);
   assert.equal(meta.imageDensityPolicy.finalFolderOnlyNumberedImages, true);
+  assert.equal(meta.visualContinuityProfile.adjacentSceneContinuityRequired, true);
+  assert.ok(String(meta.visualContinuityProfile.environmentAnchor).startsWith('['));
   assert.match(prompt, /ACTIVE_STYLE_ID: UNSET/);
   assert.match(prompt, /ALLES STICKMAN/i);
   assert.match(prompt, /GENAU 3 COVER/i);
@@ -128,6 +148,10 @@ test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Vis
   assert.match(prompt, /GLEICHE WELT/i);
   assert.match(prompt, /ILLUSTRATION ZUERST/i);
   assert.match(prompt, /Reine Infografik.*nur.*klarer/is);
+  assert.match(prompt, /visualContinuityProfile/i);
+  assert.match(prompt, /WELT- UND UMGEBUNGSKONTINUITÄT/i);
+  assert.match(prompt, /STILLE BILD-QC NACH JEDEM 5ER-BLOCK/i);
+  assert.match(prompt, /durchfällt.*neu erzeug/is);
 });
 
 test('Legacy-Testprojekt v4 bleibt reproduzierbar und nutzt keine Bildreferenz', async () => {
@@ -219,6 +243,33 @@ test('Drittes Testprojekt nutzt Illustration-zuerst und besteht Phase 1', async 
   assert.ok(illustrativeForms.length >= 12, `Zu wenige illustrative Visual Forms: ${illustrativeForms.length}/16`);
   const result = await validatePhase1(THIRD_TEST_PROJECT);
   assert.equal(result.passed, true, result.errors.join('\n'));
+});
+
+test('Pacing-QC blockiert echte Videodauer außerhalb des Zielbereichs', async () => {
+  const dir = await mkdtemp(path.join(tmpdir(), 'alles-stickman-duration-'));
+  const tech = path.join(dir, '99-technik');
+  await mkdir(tech, { recursive: true });
+  await writeFile(path.join(tech, 'video.json'), JSON.stringify({
+    targetDurationRangeSeconds: [100, 120]
+  }), 'utf8');
+  const images = Array.from({ length: 6 }, (_, index) => ({
+    imageNumber: index + 1,
+    startSeconds: index * 15,
+    endSeconds: (index + 1) * 15,
+    durationSeconds: 15
+  }));
+  await writeFile(path.join(tech, 'FINAL_TIMELINE.json'), JSON.stringify({
+    durationSeconds: 90,
+    audioDurationSeconds: 88.7,
+    images
+  }), 'utf8');
+  try {
+    const result = await validatePacing(dir);
+    assert.equal(result.passed, false);
+    assert.match(result.errors.join('\n'), /Videodauer 90\.00s.*100–120s/);
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
 });
 
 test('YouTube-Export baut gültige SRT- und Zeitstempeldateien', () => {
