@@ -29,12 +29,13 @@
 - gewählte Variante = Bild 01: [ ]
 - 2 Cover-Verlierer danach gelöscht: [ ]
 - Bild 02–06 erzeugt: [ ]
-- HARD STOP / WEITER bestätigt: [ ]
-- Bild 07–11 erzeugt: [ ]
-- HARD STOP / WEITER bestätigt: [ ]
-- Bild 12–16 erzeugt: [ ]
+- Bild 07–11 automatisch direkt danach erzeugt: [ ]
+- Bild 12–16 automatisch direkt danach erzeugt: [ ]
+- keine Nutzerfreigabe zwischen den Blöcken verlangt: [ ]
 - alle Folgebilder ohne Bildreferenz erzeugt: [ ]
-- finaler Bilderordner sauber: [ ]
+- Soll-Ist-Prüfung Bild 01–16 durchgeführt: [ ]
+- fehlende/kaputte Bilder gezielt neu erzeugt: [ ]
+- finaler gemeinsamer Bilderordner lückenlos und sauber: [ ]
 - Voice-over final: [ ]
 
 ## Phase 3
