@@ -1,20 +1,17 @@
 # Google Flow Asset Workflow — Alles Stickman
 
 Status: **verbindlich**
-Version: **2 — Human-Gated**
+Version: **3 — Cover-Gate + automatische 5er-Produktion**
 
-## Ziel
+## Grundregel
 
-Die Bildproduktion darf **nicht** mehr in einem Durchlauf bis zum Ende laufen.
+Es gibt genau **eine** Stelle, an der Google Flow auf den Nutzer wartet:
 
-Es gibt zwei harte Freigabearten:
+> **nach den drei Cover-Kandidaten.**
 
-1. **Cover-Gate:** Der Nutzer wählt selbst A, B oder C.
-2. **Batch-Gate:** Nach jedem 5er-Block muss der Agent stoppen und auf `WEITER` warten.
+Nach der Coverwahl läuft die restliche Bildproduktion automatisch bis zum Ende.
 
-## Verbindlicher Ablauf
-
-### Phase 1 — Vorbereitung
+## Phase 1 — Vorbereitung
 
 Laden:
 - `config/visual-policy.json`
@@ -24,9 +21,9 @@ Laden:
 
 Vor Start müssen Bild 01 bis Bild NN geplant sein.
 
-### Phase 2 — exakt drei Cover erzeugen
+## Phase 2 — exakt drei Cover erzeugen
 
-Für Bild 01 genau diese drei temporären Kandidaten erzeugen:
+Erzeuge:
 
 ```text
 TEMP_COVER_A.png
@@ -34,127 +31,117 @@ TEMP_COVER_B.png
 TEMP_COVER_C.png
 ```
 
-Danach gilt sofort:
+Danach gilt:
 
 **HARD STOP**
 
-Der Agent darf jetzt:
-- keinen Gewinner selbst bestimmen
-- keinen Kandidaten löschen
-- kein `Bild 01.png` festlegen
-- kein `Bild 02.png` oder weiteres Bild erzeugen
+Vor der Nutzerwahl ist verboten:
+- selbst einen Gewinner wählen
+- einen Kandidaten löschen
+- `Bild 01.png` festlegen
+- `Bild 02.png` oder weitere Bilder erzeugen
 
-Der Agent meldet nur:
+Status:
 
 ```text
 COVER-WAHL ERFORDERLICH — antworte A, B oder C.
 ```
 
-### Phase 3 — Nutzer wählt Cover
+## Phase 3 — Nutzer wählt Cover
 
-Nur eine ausdrückliche Auswahl des Nutzers öffnet das Gate.
-
-Beispiele:
-- `A`
-- `Cover B`
-- `nimm C`
+Der Nutzer wählt A, B oder C.
 
 Erst danach:
 - gewählter Kandidat → `Bild 01.png`
-- die zwei nicht gewählten Kandidaten löschen
-- keine Kopien oder Alternativen behalten
+- die zwei Verlierer löschen
+- keine Cover-Alternativen behalten
 
-Wichtig:
-`Bild 01.png` ist Cover und erste Videoszene, wird aber **nicht** als Referenzbild für Folgebilder verwendet.
+`Bild 01.png` ist Cover und erste Videoszene, aber **keine Referenzvorlage** für weitere Bilder.
 
-### Phase 4 — erster 5er-Block
+## Phase 4 — automatische 5er-Blöcke
 
-Nach der bestätigten Coverwahl darf genau **ein** Block erzeugt werden:
+Direkt nach der Coverwahl:
 
 ```text
 Bild 02–06
+→ automatisch
+Bild 07–11
+→ automatisch
+Bild 12–16
+→ automatisch
+...
+→ Bild NN
 ```
 
-Falls das Video vorher endet, nur bis Bild NN.
-
-Danach:
-
-**HARD STOP**
-
-Status:
-
-```text
-BLOCK FERTIG — antworte WEITER für den nächsten 5er-Block.
-```
-
-### Phase 5 — weitere 5er-Blöcke
-
-Jedes ausdrückliche `WEITER` öffnet genau **einen** weiteren Block.
-
-Beispiel:
-
-```text
-Cover gewählt
-→ Bild 02–06
-→ STOP
-→ WEITER
-→ Bild 07–11
-→ STOP
-→ WEITER
-→ Bild 12–16
-→ STOP
-→ WEITER
-→ Bild 17–NN
-```
-
-Der letzte Block darf kleiner als fünf Bilder sein.
-
-**Verboten:**
-- zwei oder mehr 5er-Blöcke im selben Agenten-Schritt
-- automatisch zum nächsten Block weiterlaufen
-- schon vor `WEITER` Bilder des nächsten Blocks erzeugen
-
-### Phase 6 — Cleanup
-
-Nach Bild NN:
-- Bildnummern lückenlos prüfen
-- TEMP-Cover löschen
-- Alternativen/Zwischenbilder löschen
-- keine Unterordner
-- final nur `Bild 01.png` bis `Bild NN.png`
-
-## Regeln für Folgebilder
-
+Regeln:
 - maximal 5 Bilder pro Block
-- jedes Nicht-Cover-Bild nur einmal
-- keine A/B-Varianten
-- keine Bildreferenz
-- weder Bild 01 noch Cover-Verlierer noch vorherige Szenenbilder als Vorlage
-- Stil ausschließlich über `config/visual-policy.json` + vollständigen individuellen Prompt
-- Illustration zuerst, reine Infografik nur bei echtem Erklärvorteil
+- maximal 5 aktive Generationen
+- sobald ein Block vollständig gespeichert ist, sofort den nächsten starten
+- zwischen Blöcken **nicht fragen**
+- zwischen Blöcken **nicht stoppen**
+- kein `WEITER` verlangen
+- keine weitere Nutzerfreigabe verlangen
+- letzter Block darf kleiner als 5 sein
+- jedes Nicht-Cover-Bild nur einmal, außer bei technischem Fehler oder eindeutig kaputtem Output
 
-## Warum diese Gates existieren
+## Phase 5 — gemeinsamer finaler Ordner
 
-Die frühere Version hatte widersprüchliche Regeln:
-- Flow sollte das Cover selbst auswählen
-- Flow sollte nicht stoppen
-- Flow sollte nach 5er-Blöcken automatisch weitermachen
+Alle finalen Bilder liegen gemeinsam und flach in:
 
-Dadurch konnte der Agent die gesamte Bildproduktion in einem Zug ausführen.
+`00-bildprompts/images/`
 
-Die neue Regel ist deshalb absichtlich hart:
+Erlaubt:
 
-> **Cover erzeugen → STOP → Nutzer wählt → 5 Bilder → STOP → WEITER → 5 Bilder → STOP.**
+```text
+Bild 01.png
+Bild 02.png
+Bild 03.png
+...
+Bild NN.png
+```
 
-## Endzustand
+Nicht erlaubt:
+- TEMP-Cover nach Abschluss
+- Alternativen
+- Backup-Bilder
+- Unterordner
+- zusätzliche Thumbnails
+- Zwischenstände
+
+## Phase 6 — Vollständigkeitscheck und automatische Reparatur
+
+Nach Bild NN endet die Arbeit **noch nicht sofort**.
+
+Flow muss:
+
+1. die Soll-Liste `Bild 01.png` bis `Bild NN.png` bilden,
+2. den tatsächlichen Ordnerinhalt dagegen prüfen,
+3. fehlende Nummern erkennen,
+4. technisch kaputte/unbrauchbare Dateien erkennen,
+5. genau fehlende oder kaputte Bildnummern anhand ihres ursprünglichen Prompts neu erzeugen,
+6. erneut vollständig prüfen,
+7. den Check wiederholen, bis alle Nummern lückenlos vorhanden sind,
+8. Zusatz-/TEMP-/Doppeldateien entfernen.
 
 Fertig bedeutet:
-- genau drei Cover wurden erzeugt
-- Nutzer hat A/B/C gewählt
-- nur diese Auswahl wurde Bild 01
-- Cover-Verlierer danach gelöscht
-- keine Bildreferenz verwendet
-- Folgebilder in echten 5er-Schritten produziert
-- zwischen jedem Block wurde gestoppt
-- keine Bildnummer fehlt
-- finaler Bilderordner enthält nur die nummerierten Endbilder
+
+```text
+Anzahl = NN
+Nummern = 01 bis NN lückenlos
+Ordner = genau ein gemeinsamer images-Ordner
+Zusatzbilder = 0
+fehlende Bilder = 0
+```
+
+## Referenzregel
+
+Für Bild 02 bis Bild NN wird **kein generiertes Bild als Referenz** benutzt.
+
+Konsistenz kommt ausschließlich aus:
+- `config/visual-policy.json`
+- vollständigem individuellen Bildprompt
+- fester Linien-, Farb-, Gesichts- und Informationsdesign-Logik
+
+## Kurzform
+
+> **3 Cover → STOP → Nutzer wählt → 5 Bilder → automatisch nächste 5 → automatisch nächste 5 → bis Ende → Gesamtcheck → fehlende Bilder neu erzeugen → erneut prüfen.**
