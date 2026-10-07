@@ -22,6 +22,10 @@ test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', 
   assert.equal(visual.referenceConsistency.generatedImageReferenceForbidden, true);
   assert.equal(visual.multiPanelPolicy.allowed, true);
   assert.equal(visual.informationDesign.sameWorldRequired, true);
+  assert.equal(visual.visualPolicyVersion, 7);
+  assert.equal(visual.visualFormPriority.default, 'illustrative-scene-first');
+  assert.ok(visual.visualFormPriority.preferred.includes('reichhaltige Stickman-Handlungsszene'));
+  assert.ok(visual.visualFormPriority.useOnlyWhenClearer.includes('reine Infografik'));
   assert.equal(visual.textPolicy.labelsAllowed, true);
   assert.equal(visual.textPolicy.numbersAllowed, true);
   assert.ok(visual.visualForms.includes('Diagramm oder Zahlenvergleich'));
@@ -92,6 +96,8 @@ test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Vis
   assert.match(prompt, /2er- oder 3er-Multi-Panel/i);
   assert.match(prompt, /Diagramm/i);
   assert.match(prompt, /GLEICHE WELT/i);
+  assert.match(prompt, /ILLUSTRATION ZUERST/i);
+  assert.match(prompt, /Reine Infografik.*nur.*klarer/is);
 });
 
 test('Erstes 2-Minuten-Testprojekt besteht Phase 1 und nutzt keine Bildreferenz', async () => {
@@ -129,6 +135,9 @@ test('Zweites 2-Minuten-Testprojekt besteht das neue Skript- und Phase-1-Gate', 
   assert.equal(meta.plannedImageCount, 17);
   assert.ok(meta.targetDurationSeconds <= 120);
   assert.equal(mapping.images.length, 17);
+  const pureInfoForms = mapping.images.filter((image) => /Infografik|Diagramm|Text-\/Zahlenfokus/i.test(String(image.visualForm)));
+  assert.equal(pureInfoForms.length, 0, 'Video 2 soll nach der Überarbeitung von Illustrationen/Szenen getragen werden.');
+  assert.ok(mapping.images.some((image) => /Handlungsszene|Umgebungsszene|illustriert|Zusammenführungsszene/i.test(String(image.visualForm))));
   assert.equal(scriptPlan.status, 'READY');
   assert.deepEqual(scriptPlan.sections.map((section) => section.id), ['hook', 'setup', 'main', 'resolution', 'closing']);
   assert.equal(script.indexOf(scriptPlan.sections[0].startAnchor), 0);
