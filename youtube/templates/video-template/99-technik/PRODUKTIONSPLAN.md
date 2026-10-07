@@ -36,8 +36,10 @@ Die finalen Upload-Metadaten werden in `99-technik/video.json` unter `uploadMeta
 - gewählte Variante als Bild 01 gesetzt: [ ]
 - Cover-Verlierer gelöscht: [ ]
 - erster 5er-Block erzeugt: [ ]
-- nach jedem Block HARD STOP eingehalten: [ ]
-- weitere Blöcke nur nach `WEITER`: [ ]
+- weitere 5er-Blöcke automatisch ohne Rückfrage erzeugt: [ ]
+- finaler Soll-Ist-Bildercheck durchgeführt: [ ]
+- fehlende/kaputte Bilder gezielt repariert: [ ]
+- gemeinsamer Bilderordner lückenlos: [ ]
 - Bilder final: [ ]
 - Voice-over final: [ ]
 
