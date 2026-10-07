@@ -27,6 +27,9 @@
 - Visual Form pro Bild: [ ]
 - Bild 01 = Cover + erste Szene: [ ]
 - keine Füllbilder: [ ]
+- Illustration/Szene als Standard geprüft: [ ]
+- reine Infografik/Diagramm nur bei echtem Erklärvorteil: [ ]
+- keine lange Folge steriler Info-Karten: [ ]
 
 ## Bildwelt
 - Alles-Stickman-Bildwelt aktiv: [ ]
