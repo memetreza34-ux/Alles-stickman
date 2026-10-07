@@ -1,6 +1,6 @@
 # System-Audit — Alles Stickman
 
-Stand: 2026-10-06
+Stand: 2026-10-07
 
 Dieses Dokument ersetzt den veralteten Ausgangs-Audit und beschreibt den aktuellen Stand des Repositories.
 
@@ -109,16 +109,20 @@ Vorhanden:
 
 Verbindlich:
 - genau 3 Cover-Kandidaten
-- Google Flow wählt den Gewinner selbstständig
-- keine Nutzer-Rückfrage
-- Gewinner = `Bild 01.png`
+- danach HARD STOP
+- Nutzer wählt A, B oder C
+- vor der Nutzerwahl kein Bild 02
+- Auswahl = `Bild 01.png`
 - Bild 01 = Thumbnail + erste Videoszene
-- beide Verlierer löschen
+- beide Verlierer erst nach Nutzerwahl löschen
 
 ## 7. Bildgenerierung — READY ALS AGENT-WORKFLOW
 
 Verbindlich:
-- Bild 02–NN in maximalen 5er-Blöcken
+- Bild 02–NN in echten 5er-Schritten
+- pro Agenten-Schritt genau ein 5er-Block
+- nach jedem Block HARD STOP
+- nächster Block nur nach ausdrücklichem `WEITER`
 - jedes Nicht-Cover-Bild nur einmal, außer technischem Fehlschlag
 - `referenceMode: none`
 - keine generierten Bilder als Referenzvorlage
@@ -225,8 +229,8 @@ Thema
 → Recherche
 → Skript-System + SCRIPT_PLAN
 → Bildplanung
-→ 3 Cover → Flow wählt Gewinner
-→ Folgebilder ohne Referenzbild
+→ 3 Cover → STOP → Nutzer wählt A/B/C
+→ 5er-Block → STOP/WEITER → nächster 5er-Block ohne Referenzbild
 → Voice
 → Audio-QC
 → Whisper/Alignment
