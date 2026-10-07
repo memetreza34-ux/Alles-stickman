@@ -34,6 +34,15 @@ export async function validatePhase1(projectDirectory) {
   if (!String(uploadMetadata.description ?? '').trim()) errors.push('YouTube-Beschreibung fehlt in video.json.uploadMetadata.description.');
   if (!Array.isArray(uploadMetadata.tags)) errors.push('video.json.uploadMetadata.tags muss ein Array sein.');
 
+  const pipelineVersion = Number(meta.pipelineVersion ?? 0);
+  const humanGatedCoverFlow = pipelineVersion >= 5;
+  const automaticBatchFlow = pipelineVersion >= 6;
+  const qualityV7 = pipelineVersion >= 7;
+  const isPlaceholder = (value) => {
+    const text = String(value ?? '').trim();
+    return !text || /^\[.*\]$/.test(text) || /TODO|PLACEHOLDER/i.test(text);
+  };
+
   if (!Number.isInteger(meta.plannedImageCount) || meta.plannedImageCount < 1) errors.push('plannedImageCount muss in Phase 1 auf eine inhaltsgetriebene Bildzahl gesetzt werden.');
   if (!Number.isFinite(Number(meta.targetDurationSeconds)) || Number(meta.targetDurationSeconds) <= 0) errors.push('targetDurationSeconds fehlt.');
   if (qualityV7) {
@@ -50,15 +59,6 @@ export async function validatePhase1(projectDirectory) {
     if (continuity.adjacentSceneContinuityRequired !== true) errors.push('Pipeline v7+: adjacentSceneContinuityRequired muss true sein.');
   }
   if (meta.imageDensityPolicy?.fixedImageCountForbidden !== true) errors.push('Adaptive Bilddichte muss aktiv sein.');
-
-  const pipelineVersion = Number(meta.pipelineVersion ?? 0);
-  const humanGatedCoverFlow = pipelineVersion >= 5;
-  const automaticBatchFlow = pipelineVersion >= 6;
-  const qualityV7 = pipelineVersion >= 7;
-  const isPlaceholder = (value) => {
-    const text = String(value ?? '').trim();
-    return !text || /^\[.*\]$/.test(text) || /TODO|PLACEHOLDER/i.test(text);
-  };
 
   if (meta.coverPolicy?.coverCandidateCount !== 3) errors.push('Cover-Workflow muss genau 3 Cover-Kandidaten vorsehen.');
   if (humanGatedCoverFlow) {
