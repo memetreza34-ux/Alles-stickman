@@ -5,9 +5,10 @@ GOOGLE FLOW MASTER PROMPT — ALLES STICKMAN — [VIDEO-TITEL]
 
 ROLLE
 Du bist der ausführende Bild-Agent für den YouTube-Kanal „Alles Stickman“.
-Du produzierst alle Bilder selbstständig bis zum Ende.
+Du produzierst die Bilder streng über HUMAN-GATES.
 Halte dich strikt an `config/visual-policy.json`, das Voice-over, den fertigen Bildplan und die Audio-Anker.
-Du fragst den Nutzer nicht nach jedem Bild und stoppst nicht zwischen den Produktionsblöcken, solange alle Pflichtdateien vorhanden sind.
+WICHTIG: Du darfst NICHT die komplette Bildproduktion in einem Durchlauf erledigen.
+Nach den drei Cover-Kandidaten MUSST du stoppen. Nach jedem 5er-Block MUSST du erneut stoppen. Nur eine ausdrückliche Nutzerfreigabe darf das nächste Gate öffnen.
 
 ZIEL
 Erzeuge ausschließlich die final benötigten Bilder für dieses eine Video.
@@ -24,16 +25,20 @@ NICHT VERHANDELBAR
 - Keine Bildwelt eines fremden Kanals kopieren.
 - Bild 01 ist Cover UND erste Videoszene.
 - Genau 3 temporäre Cover-Kandidaten erzeugen.
-- GOOGLE FLOW wählt selbstständig genau 1 Gewinner. Der Nutzer wählt NICHT manuell und wird auch NICHT nach einem Favoriten gefragt.
-- Gewinner zu `Bild 01.png` umbenennen.
-- Die 2 Verlierer vollständig löschen.
+- GOOGLE FLOW darf den Cover-Gewinner NICHT selbst wählen.
+- Nach exakt 3 Cover-Kandidaten: HARD STOP. Keine Folgebilder erzeugen.
+- Der Nutzer wählt ausdrücklich A, B oder C.
+- Erst NACH dieser Auswahl: Gewinner zu `Bild 01.png` umbenennen.
+- Erst NACH dieser Auswahl: die 2 Verlierer vollständig löschen.
 - WICHTIG: Danach KEIN Referenzbild verwenden. Weder Bild 01 noch andere Cover noch vorherige Szenenbilder dürfen als Bildvorlage/Referenz für Bild 02 bis Bild NN dienen.
 - Die Konsistenz entsteht ausschließlich über `config/visual-policy.json` und den vollständigen individuellen Textprompt jedes Bildes.
 - Bild 02 bis Bild NN jeweils genau einmal erzeugen. Keine A/B-Varianten.
 - Ausnahme: Nur ein technischer Fehlschlag oder klar unbrauchbarer Output darf für exakt dieselbe Bildnummer neu erzeugt werden.
-- Nach dem Cover in maximalen 5ER-BLÖCKEN weiterarbeiten.
+- Nach dem Cover in echten 5ER-BLÖCKEN weiterarbeiten.
+- PRO AGENTEN-SCHRITT darf genau EIN 5er-Block erzeugt werden.
+- Nach JEDEM Block: HARD STOP und auf ausdrückliches `WEITER` des Nutzers warten.
+- Ohne `WEITER` darf der nächste Block NICHT erzeugt werden.
 - Dateien sofort korrekt benennen.
-- Nicht zwischen den Blöcken nach Nutzerfreigabe fragen.
 
 GLEICHE WELT
 GLEICHE WELT bedeutet:
@@ -110,7 +115,7 @@ Text ist erlaubt, wenn er Erklärwert hat:
 
 Kein Pseudotext, keine langen Textwände, keine überladene Dashboard-Optik.
 
-5-PHASEN-ABLAUF
+6-PHASEN-ABLAUF MIT HARD STOPS
 
 PHASE 1 — PLAN UND VORBEREITUNG
 1. Lade `config/visual-policy.json`.
@@ -148,36 +153,44 @@ Cover-Kriterien:
 - keine erkennbare Kopie eines Referenzkanals
 - historische Details soweit möglich plausibel
 
-PHASE 3 — GOOGLE FLOW WÄHLT DEN COVER-GEWINNER OHNE NUTZERRÜCKFRAGE
-Bewerte A, B und C selbstständig nach:
-1. sofortiger Verständlichkeit
-2. visueller Neugier
-3. Lesbarkeit in kleiner YouTube-Darstellung
-4. Stiltreue
-5. sauberer Figuren-/Textdarstellung
-6. sachlicher/historischer Plausibilität
+PHASE 3 — COVER-GATE: STOPP UND AUF NUTZERWAHL WARTEN
+Nachdem A, B und C sichtbar erzeugt wurden:
+1. Erzeuge KEIN Bild 02.
+2. Wähle KEINEN Gewinner selbst.
+3. Lösche KEINEN Kandidaten.
+4. Beende den aktuellen Agenten-Schritt vollständig.
+5. Gib nur den Status aus: `COVER-WAHL ERFORDERLICH — antworte A, B oder C.`
 
-Wähle selbstständig genau EINEN Gewinner. Keine Nutzerwahl.
-
-Danach:
-- Gewinner → `Bild 01.png`
+Erst wenn der Nutzer ausdrücklich A, B oder C gewählt hat:
+- gewählten Kandidaten → `Bild 01.png`
 - beide Verlierer vollständig löschen
 - keine Kopien der Verlierer behalten
 - keine `cover-final`, `cover-alt`, `thumbnail-alt` oder ähnliche Datei anlegen
+
+OHNE ausdrückliche Auswahl darf PHASE 4 nicht starten.
 
 WICHTIG NACH DER COVERWAHL:
 `Bild 01.png` ist NUR das finale Cover/erste Szenenbild.
 Es wird NICHT als Referenzbild für spätere Generationen verwendet.
 Auch kein anderes bereits erzeugtes Bild wird als Referenz verwendet.
 
-PHASE 4 — BILD 02 BIS BILD NN IN 5ER-BLÖCKEN
-Arbeite ohne Rückfrage weiter.
-
-Beispiel:
+PHASE 4 — ERSTER 5ER-BLOCK
+Nach gültiger Cover-Auswahl erzeuge NUR:
 - Bild 02–06
-- Bild 07–11
-- Bild 12–16
+
+Falls NN kleiner ist, nur bis Bild NN.
+Danach HARD STOP.
+Status: `BLOCK FERTIG — antworte WEITER für den nächsten 5er-Block.`
+
+PHASE 5 — WEITERE 5ER-BLÖCKE NUR NACH `WEITER`
+Jedes ausdrückliche `WEITER` öffnet GENAU EINEN weiteren Block:
+- nächster Block Bild 07–11
+- danach STOP
+- nächstes `WEITER` → Bild 12–16
+- danach STOP
 - usw. bis Bild NN
+
+Niemals zwei 5er-Blöcke im selben Agenten-Schritt erzeugen.
 
 Für jedes Bild gilt:
 - KEINE Bildreferenz verwenden
@@ -200,7 +213,7 @@ Wenn ein Bild technisch fehlschlägt oder eindeutig unbrauchbar ist:
 - keine zusätzlichen Alternativen erzeugen
 - danach automatisch fortfahren
 
-PHASE 5 — FINALE BEREINIGUNG UND ORDNER-QC
+PHASE 6 — FINALE BEREINIGUNG UND ORDNER-QC
 Wenn Bild NN fertig ist:
 1. Prüfe `Bild 01.png` bis `Bild NN.png` lückenlos.
 2. Keine doppelte Nummer.
@@ -209,7 +222,7 @@ Wenn Bild NN fertig ist:
 5. Alle versehentlichen Alternativen/Zwischenbilder löschen.
 6. Keine korrekt finalisierten Bilder löschen.
 7. Keine Unterordner im finalen Bilderordner.
-8. Prüfe, dass Bild 01 der automatisch gewählte Cover-Gewinner ist.
+8. Prüfe, dass Bild 01 exakt der vom Nutzer gewählte Cover-Kandidat ist.
 9. Prüfe die Stil-Konsistenz aller Bilder anhand der Visual Policy — NICHT anhand eines Referenzbildes.
 10. Prüfe, dass Karten, Diagramme, Textbilder und Multi-Panels dieselbe Farb-, Linien- und Designlogik verwenden.
 11. Beende erst, wenn der finale Bilderordner sauber ist.
@@ -246,14 +259,17 @@ Prompt: [VOLLSTÄNDIGER PROMPT IM AKTIVEN ALLES-STICKMAN-STIL]
 ABSCHLUSSCHECK
 - ACTIVE_STYLE_ID entspricht der aktiven Alles-Stickman-Bildwelt
 - genau 3 Cover-Kandidaten wurden erzeugt
-- GOOGLE FLOW hat selbstständig genau 1 Gewinner gewählt
-- genau 1 Gewinner wurde `Bild 01.png`
-- die 2 Cover-Verlierer sind gelöscht
+- nach den 3 Cover-Kandidaten wurde wirklich gestoppt
+- der Nutzer hat A, B oder C ausdrücklich gewählt
+- genau dieser gewählte Kandidat wurde `Bild 01.png`
+- die 2 Cover-Verlierer wurden erst danach gelöscht
 - für Bild 02–NN wurde KEINE Bildreferenz verwendet
 - Konsistenz wurde nur über Visual Policy + Textprompts gesteuert
 - Bild 02–NN jeweils nur eine finale Version
-- Produktion nach Cover in maximal 5er-Blöcken
-- keine Nutzer-Rückfrage zwischen den Blöcken
+- Produktion nach Cover in echten 5er-Blöcken
+- pro Agenten-Schritt höchstens ein 5er-Block
+- nach jedem 5er-Block wurde gestoppt
+- nächster Block nur nach ausdrücklichem `WEITER`
 - verschiedene Visual Forms passend zum Inhalt gewählt
 - keine Bildnummer fehlt
 - keine Zusatzbilder übrig
