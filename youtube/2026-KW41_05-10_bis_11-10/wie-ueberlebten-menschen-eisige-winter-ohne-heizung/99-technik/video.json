@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pipelineVersion": 4,
+  "pipelineVersion": 5,
   "videoId": "2026-KW41_05-10_bis_11-10_wie-ueberlebten-menschen-eisige-winter-ohne-heizung",
   "weekFolder": "2026-KW41_05-10_bis_11-10",
   "topicSlug": "wie-ueberlebten-menschen-eisige-winter-ohne-heizung",
@@ -32,9 +32,11 @@
     "firstSceneIsCover": true,
     "coverImageNumber": 1,
     "coverCandidateCount": 3,
-    "autoSelectWinner": true,
-    "selectionAuthority": "google-flow",
-    "userSelectionRequired": false,
+    "autoSelectWinner": false,
+    "selectionAuthority": "user",
+    "userSelectionRequired": true,
+    "hardStopAfterCoverCandidates": true,
+    "continueBeforeUserSelectionForbidden": true,
     "winnerBecomesFirstSceneAndThumbnail": true,
     "deleteLosingCandidates": true,
     "separateThumbnailForbidden": true
@@ -57,7 +59,12 @@
     "referenceMode": "none",
     "useImageReferences": false,
     "generatedImageReferenceForbidden": true,
-    "fillerImagesForbidden": true
+    "fillerImagesForbidden": true,
+    "oneBatchPerAgentTurn": true,
+    "hardStopAfterEachBatch": true,
+    "userContinueRequiredBetweenBatches": true,
+    "batchContinuationAuthority": "user",
+    "explicitContinueRequired": true
   },
   "audioPolicy": {
     "singleFinalVoiceoverRequired": true,
@@ -80,5 +87,5 @@
   "audioReady": false,
   "renderReady": false,
   "createdAt": "2026-10-07T14:22:00Z",
-  "updatedAt": "2026-10-07T14:22:00Z"
+  "updatedAt": "2026-10-07T15:36:00Z"
 }
