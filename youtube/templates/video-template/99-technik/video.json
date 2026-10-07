@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pipelineVersion": 5,
+  "pipelineVersion": 6,
   "videoId": "",
   "weekFolder": "",
   "topicSlug": "",
@@ -51,11 +51,17 @@
     "fillerImagesForbidden": true,
     "referenceMode": "none",
     "generatedImageReferenceForbidden": true,
-    "oneBatchPerAgentTurn": true,
-    "hardStopAfterEachBatch": true,
-    "userContinueRequiredBetweenBatches": true,
-    "batchContinuationAuthority": "user",
-    "explicitContinueRequired": true
+    "hardStopAfterEachBatch": false,
+    "userContinueRequiredBetweenBatches": false,
+    "batchContinuationAuthority": "agent",
+    "explicitContinueRequired": false,
+    "batchExecutionMode": "automatic-sequential",
+    "automaticBatchContinuation": true,
+    "continueUntilImageNN": true,
+    "finalIntegrityCheckRequired": true,
+    "finalCountMustMatchPlannedImageCount": true,
+    "missingImageRepairRequired": true,
+    "repairOnlyMissingOrBroken": true
   },
   "audioPolicy": {
     "singleFinalVoiceoverRequired": true,
