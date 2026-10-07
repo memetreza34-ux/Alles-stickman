@@ -12,7 +12,12 @@
     {
       "id": "hook",
       "startAnchor": "[HOOK-START]",
-      "purpose": "Neugier/Kernfrage sofort eröffnen"
+      "purpose": "Neugier/Kernfrage sofort eröffnen",
+      "hookType": "[problem|contrast|surprise|question|counterintuitive-fact]",
+      "curiosityGap": "[WELCHE OFFENE FRAGE/ÜBERRASCHUNG ZIEHT WEITER?]",
+      "titleConnection": "[WIE IST DER HOOK SOFORT MIT DEM TITEL VERBUNDEN?]",
+      "payoffPromise": "[WAS SOLL DER ZUSCHAUER AM ENDE VERSTEHEN?]",
+      "sceneSettingOnly": false
     },
     {
       "id": "setup",
