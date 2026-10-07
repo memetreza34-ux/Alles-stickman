@@ -24,9 +24,16 @@
 ## Phase 2
 
 - 3 Cover erzeugt: [ ]
-- Google Flow hat Gewinner selbst gewählt: [ ]
-- 2 Cover-Verlierer gelöscht: [ ]
-- Bild 02–16 ohne Bildreferenz erzeugt: [ ]
+- HARD STOP nach den 3 Covers erfolgt: [ ]
+- Nutzer hat A/B/C gewählt: [ ]
+- gewählte Variante = Bild 01: [ ]
+- 2 Cover-Verlierer danach gelöscht: [ ]
+- Bild 02–06 erzeugt: [ ]
+- HARD STOP / WEITER bestätigt: [ ]
+- Bild 07–11 erzeugt: [ ]
+- HARD STOP / WEITER bestätigt: [ ]
+- Bild 12–16 erzeugt: [ ]
+- alle Folgebilder ohne Bildreferenz erzeugt: [ ]
 - finaler Bilderordner sauber: [ ]
 - Voice-over final: [ ]
 
