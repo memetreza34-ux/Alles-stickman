@@ -61,7 +61,10 @@
     "finalIntegrityCheckRequired": true,
     "finalCountMustMatchPlannedImageCount": true,
     "missingImageRepairRequired": true,
-    "repairOnlyMissingOrBroken": true
+    "repairOnlyMissingOrBroken": true,
+    "finalImageDirectory": "00-bildprompts/images",
+    "finalFolderMustBeFlat": true,
+    "finalFolderOnlyNumberedImages": true
   },
   "audioPolicy": {
     "singleFinalVoiceoverRequired": true,
