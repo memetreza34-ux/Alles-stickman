@@ -4,7 +4,7 @@ ACTIVE_STYLE_ID: alles-stickman-editorial-v1
 GOOGLE FLOW MASTER PROMPT — ALLES STICKMAN — Wie überlebten Menschen eisige Winter ohne Heizung?
 
 ROLLE
-Du produzierst selbstständig alle Bilder für dieses Testvideo. Halte dich strikt an config/visual-policy.json, das Voice-over, SCRIPT_PLAN.json und BILD_AUDIO_ZUORDNUNG.json. Die aktuelle Visual Policy Version 7 gilt vollständig.
+Du produzierst selbstständig alle Bilder für dieses Testvideo. Halte dich strikt an config/visual-policy.json, das Voice-over, SCRIPT_PLAN.json und BILD_AUDIO_ZUORDNUNG.json. Die aktuelle Visual Policy Version 9 gilt vollständig.
 
 VERBINDLICHER ABLAUF
 1. Erzeuge für Bild 01 GENAU 3 Cover-Kandidaten: TEMP_COVER_A, TEMP_COVER_B, TEMP_COVER_C.
@@ -13,12 +13,15 @@ VERBINDLICHER ABLAUF
 4. Erst nach der Nutzerwahl: gewählten Kandidaten → Bild 01.png; beide Verlierer löschen.
 5. Danach KEINE Bildreferenz verwenden. Weder Bild 01 noch andere Cover noch vorherige Szenenbilder dürfen Vorlage für Bild 02–16 sein.
 6. Konsistenz ausschließlich über Visual Policy + vollständigen individuellen Textprompt jedes Bildes.
-7. Nach der Coverwahl erzeuge in diesem Agenten-Schritt NUR Bild 02–06. Danach HARD STOP.
-8. Erst wenn der Nutzer ausdrücklich `WEITER` sagt: NUR Bild 07–11 erzeugen. Danach HARD STOP.
-9. Beim nächsten ausdrücklichen `WEITER`: NUR Bild 12–16 erzeugen. Danach fertig.
-10. Niemals zwei 5er-Blöcke im selben Agenten-Schritt erzeugen.
+7. Nach der Coverwahl automatisch Bild 02–06 erzeugen.
+8. Sobald Bild 02–06 vollständig gespeichert sind, OHNE Rückfrage automatisch Bild 07–11 erzeugen.
+9. Danach OHNE Rückfrage automatisch Bild 12–16 erzeugen.
+10. Maximal 5 Bilder pro Block; zwischen den Blöcken NICHT warten, NICHT nachfragen und KEIN `WEITER` verlangen.
 11. Jedes Nicht-Cover-Bild genau einmal erzeugen; nur technisch kaputten/eindeutig unbrauchbaren Output derselben Bildnummer neu erzeugen.
-12. Finaler Ordner enthält nur Bild 01.png bis Bild 16.png.
+12. Alle finalen Bilder gemeinsam in `00-bildprompts/images/` speichern.
+13. Nach Bild 16 den Ordner vollständig prüfen: Es müssen exakt Bild 01.png bis Bild 16.png vorhanden sein.
+14. Falls eine Nummer fehlt oder technisch kaputt ist, genau dieses Bild mit seinem ursprünglichen Prompt neu erzeugen und erneut prüfen.
+15. Erst fertig melden, wenn alle 16 Bilder lückenlos im selben Ordner liegen und keine Zusatzbilder übrig sind.
 
 ILLUSTRATION ZUERST — VERBINDLICH
 - Standard ist eine reichhaltige, sofort lesbare Illustration/Szene.
@@ -160,9 +163,8 @@ GATE-CHECK
 - nach genau 3 Covers: STOP und Nutzerwahl A/B/C abwarten
 - vor Nutzerwahl: kein Bild 02 erzeugen und keinen Gewinner selbst wählen
 - nach Nutzerwahl: Bild 01 setzen, erst dann Verlierer löschen
-- Bild 02–06 erzeugen → STOP
-- nur nach `WEITER`: Bild 07–11 erzeugen → STOP
-- nur nach erneutem `WEITER`: Bild 12–16 erzeugen
+- danach automatisch Bild 02–06 → direkt Bild 07–11 → direkt Bild 12–16
+- zwischen diesen Blöcken keine Rückfrage, kein Stop, kein `WEITER`
 
 ABSCHLUSSCHECK
 - genau 3 Cover erzeugt
@@ -170,7 +172,9 @@ ABSCHLUSSCHECK
 - exakt diese Auswahl wurde Bild 01
 - 2 Cover-Verlierer erst nach der Auswahl gelöscht
 - für Bild 02–16 keine Bildreferenz verwendet
-- Bild 02–16 in echten 5ER-SCHRITTEN mit Stop zwischen den Blöcken produziert
+- Bild 02–16 automatisch in 5ER-BLÖCKEN ohne Stop zwischen den Blöcken produziert
+- nach Bild 16 kompletter Soll-Ist-Check des images-Ordners durchgeführt
+- fehlende/kaputte Bildnummern gezielt neu erzeugt und erneut geprüft
 - Illustrationen/Szenen dominieren
 - keine längere Folge steriler Info-/Diagrammkarten
 - Figuren und Kleidung dürfen sichtbar variieren, Welt/Designlogik bleibt konsistent
