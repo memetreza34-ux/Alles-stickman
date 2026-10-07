@@ -5,8 +5,8 @@ import { arg, projectPaths, readJson } from '../lib/pipeline.js';
 
 export async function validatePacing(projectDirectory) {
   const p = projectPaths(projectDirectory);
-  const [timeline, pipeline] = await Promise.all([
-    readJson(p.timeline), readJson(path.resolve('config/pipeline.json'))
+  const [timeline, pipeline, meta] = await Promise.all([
+    readJson(p.timeline), readJson(path.resolve('config/pipeline.json')), readJson(p.meta)
   ]);
   const policy = pipeline.imagePolicy;
   const errors = [];
@@ -28,12 +28,22 @@ export async function validatePacing(projectDirectory) {
     if (Math.abs(gap) > 0.002) errors.push(`Timeline-Lücke/Überlappung zwischen Bild ${images[i].imageNumber} und ${images[i + 1].imageNumber}: ${gap}s.`);
   }
 
+  const actualDuration = Number(timeline.durationSeconds ?? timeline.audioDurationSeconds ?? 0);
+  const targetRange = meta.targetDurationRangeSeconds;
+  if (Array.isArray(targetRange) && targetRange.length === 2 && targetRange.every((x) => Number.isFinite(Number(x)))) {
+    const minTarget = Number(targetRange[0]);
+    const maxTarget = Number(targetRange[1]);
+    if (actualDuration < minTarget || actualDuration > maxTarget) {
+      errors.push(`Videodauer ${actualDuration.toFixed(2)}s liegt außerhalb des geplanten Bereichs ${minTarget}–${maxTarget}s. Skript/Voice muss vor dem Render angepasst werden.`);
+    }
+  }
+
   const totalHold = images.reduce((sum, image) => sum + Number(image.durationSeconds || 0), 0);
   const avg = images.length ? totalHold / images.length : 0;
   const [targetMin, targetMax] = policy.targetAverageHoldSeconds;
   if (avg < targetMin - 1 || avg > targetMax + 1) warnings.push(`Durchschnittlicher Hold ${avg.toFixed(2)}s liegt außerhalb des bevorzugten Bereichs ${targetMin}–${targetMax}s.`);
 
-  return { passed: errors.length === 0, errors, warnings, averageHoldSeconds: Number(avg.toFixed(3)) };
+  return { passed: errors.length === 0, errors, warnings, averageHoldSeconds: Number(avg.toFixed(3)), actualDurationSeconds: actualDuration };
 }
 
 async function main() {
