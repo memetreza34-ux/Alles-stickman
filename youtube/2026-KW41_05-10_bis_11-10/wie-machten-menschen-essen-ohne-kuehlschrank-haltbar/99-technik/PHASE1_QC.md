@@ -36,6 +36,10 @@
 - Google Flow wählt Cover ohne Nutzer-Rückfrage: [x]
 - referenceMode = none: [x]
 - keine Füllbilder: [x]
+- Illustration/Szene als Standard geprüft: [x]
+- reine Infografik/Diagramm nur bei echtem Erklärvorteil: [x]
+- keine lange Folge steriler Info-Karten: [x]
+- Figuren-/Kleidungs-/Umgebungsvielfalt eingeplant: [x]
 
 ## Bildwelt
 - Alles-Stickman-Bildwelt aktiv: [x]
