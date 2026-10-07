@@ -10,7 +10,18 @@ Alles Stickman bekommt eine eigene, wiedererkennbare 2D-Erklärwelt. Die Referen
 
 Die Bildwelt soll für Evolution, Steinzeit, Antike, Alltag, Erfindungen, Ressourcen, Karten, Diagramme, Infografiken und alle anderen sinnvollen Erklärformen funktionieren.
 
-Wichtig: **Konsistenz bedeutet gleiche Welt und gleiche Designlogik – nicht gleiche Bildart.** Ein Video darf visuell stark wechseln, solange Linien, Farben, Figurenlogik, Textbehandlung und Illustrationssprache zusammengehören.
+Wichtig: **Konsistenz bedeutet gleiche Welt und gleiche Designlogik – nicht gleiche Bildart und nicht dieselbe Standardfigur.** Ein Video darf visuell stark wechseln, solange Linien, Farben, Figurenlogik, Textbehandlung und Illustrationssprache zusammengehören.
+
+## Bilddichte — reichhaltig, aber klar
+
+Die Zielrichtung ist **nicht minimalistisch**. Ein Bild darf mehrere zusammengehörige Dinge zeigen: mehrere Figuren, Gegenstände, kleine Nebenhandlungen, Pfeile, Labels, Teilbereiche oder Hintergrunddetails.
+
+Wichtig ist die Hierarchie:
+- die wichtigsten 1–3 Blickpunkte müssen sofort erkennbar sein
+- weitere Details dürfen danach entdeckt werden
+- mehrere Inhalte sind gut, wenn sie dieselbe Aussage unterstützen
+- ein Bild ist erst zu komplex, wenn die Kernaussage oder Leserichtung verloren geht
+- lieber eine lebendige erklärende Illustration als eine fast leere Symbolgrafik
 
 ## Figuren
 
@@ -26,6 +37,9 @@ Wichtig: **Konsistenz bedeutet gleiche Welt und gleiche Designlogik – nicht gl
 - Haare und Bärte leicht handgezeichnet und unregelmäßig
 - Hände einfach halten, keine realistischen Finger-Details
 - Kleidung reduziert, aber epochemäßig plausibel
+- Figuren dürfen deutlich variieren: andere Kleidung, Haare, Bärte, Alter, Körperformen, Hauttöne, Accessoires und Rollen
+- keine Pflicht, immer dieselbe Figur oder denselben Charaktertyp zu wiederholen
+- die gemeinsame Welt entsteht durch Zeichenstil, Linien, Gesichtslogik und Farbwelt
 
 ## Linien
 
@@ -54,9 +68,10 @@ Regel:
 
 ## Hintergründe
 
-- reduziert bis mittel detailliert
+- mittel bis reichhaltig detailliert, wenn es zum Inhalt passt
 - Ort und Epoche müssen sofort erkennbar sein
-- Hintergrund darf die Hauptidee nicht überladen
+- mehrere passende Requisiten, Personen und Umgebungsdetails sind erlaubt
+- Hintergrund darf lebendig sein, solange die Hauptidee klar bleibt
 - historische Architektur, Werkzeuge, Vegetation und Requisiten soweit möglich plausibel
 - Vordergrund, Mittelgrund und Hintergrund dürfen klar getrennt sein
 
@@ -104,7 +119,8 @@ Gute Beispiele:
 
 Regeln:
 - klare Leserichtung
-- nicht zu viele kleine Panels
+- 2–4 gut lesbare Teilbereiche sind möglich
+- Panels dürfen mehrere passende Details enthalten; sie müssen nicht künstlich leer sein
 - alle Panels bleiben in derselben Alles-Stickman-Welt
 - Panels müssen inhaltlich zusammengehören
 - keine zufällige Collage
