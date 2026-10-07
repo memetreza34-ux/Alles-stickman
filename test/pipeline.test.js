@@ -163,7 +163,8 @@ test('Drittes Testprojekt nutzt Illustration-zuerst und besteht Phase 1', async 
   assert.ok(script.trim().split(/\s+/).length <= 280);
   assert.match(prompt, /ILLUSTRATION ZUERST/i);
   assert.match(prompt, /keine Bildreferenz/i);
-  assert.ok(mapping.images.filter((image) => /Handlungsszene|Umgebungsszene|illustriert|Zusammenführung/i.test(String(image.visualForm))).length >= 10);
+  const illustrativeForms = mapping.images.filter((image) => /Szene|illustr|Bauszene|Vergleich|Mini-Sequenz|Nahaufnahme|Zusammenführung/i.test(String(image.visualForm)));
+  assert.ok(illustrativeForms.length >= 12, `Zu wenige illustrative Visual Forms: ${illustrativeForms.length}/16`);
   const result = await validatePhase1(THIRD_TEST_PROJECT);
   assert.equal(result.passed, true, result.errors.join('\n'));
 });
