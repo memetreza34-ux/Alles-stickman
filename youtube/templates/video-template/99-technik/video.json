@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pipelineVersion": 6,
+  "pipelineVersion": 7,
   "videoId": "",
   "weekFolder": "",
   "topicSlug": "",
@@ -87,5 +87,19 @@
   "audioReady": false,
   "renderReady": false,
   "createdAt": "",
-  "updatedAt": ""
+  "updatedAt": "",
+  "visualContinuityProfile": {
+    "continuityMode": "story-world",
+    "environmentAnchor": "[KONSTANTE UMGEBUNGS-/WELTLOGIK DES VIDEOS]",
+    "climateSeasonAnchor": "[KLIMA/JAHRESZEIT ODER flexible-wenn-inhaltlich-begründet]",
+    "eraAnchor": "[EPOCHE/ZEITRAUM]",
+    "paletteMoodAnchor": "[GRUNDSTIMMUNG/FARBTEMPERATUR]",
+    "allowedIntentionalChanges": [
+      "[NUR BEGRÜNDETE ORTS-/ZEIT-/KLIMAWECHSEL]"
+    ],
+    "forbiddenUnmotivatedChanges": [
+      "[WIDERSPRÜCHLICHE UMGEBUNGSWECHSEL]"
+    ],
+    "adjacentSceneContinuityRequired": true
+  }
 }
