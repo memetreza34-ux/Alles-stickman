@@ -1,5 +1,5 @@
 {
-  "pipelineVersion": 6,
+  "pipelineVersion": 7,
   "projectSchemaVersion": 1,
   "languageDefault": "de",
   "aspectRatio": "16:9",
@@ -81,5 +81,11 @@
     "crf": 18,
     "backgroundMusic": false,
     "subtitles": false
+  },
+  "qualityGates": {
+    "strongHookRequiredFromVersion": 7,
+    "visualContinuityProfileRequiredFromVersion": 7,
+    "visualSelfReviewRequiredFromVersion": 7,
+    "targetDurationHardGate": true
   }
 }
