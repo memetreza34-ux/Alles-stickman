@@ -11,6 +11,7 @@ import { normalizeText, similarity } from '../src/lib/pipeline.js';
 
 const TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-feuer-ohne-streichhoelzer';
 const SECOND_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-essen-ohne-kuehlschrank-haltbar';
+const THIRD_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-ueberlebten-menschen-eisige-winter-ohne-heizung';
 
 test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', async () => {
   const visual = JSON.parse(await readFile('config/visual-policy.json', 'utf8'));
@@ -144,6 +145,26 @@ test('Zweites 2-Minuten-Testprojekt besteht das neue Skript- und Phase-1-Gate', 
   assert.ok(script.trim().split(/\s+/).length >= 210);
   assert.ok(script.trim().split(/\s+/).length <= 300);
   const result = await validatePhase1(SECOND_TEST_PROJECT);
+  assert.equal(result.passed, true, result.errors.join('\n'));
+});
+
+test('Drittes Testprojekt nutzt Illustration-zuerst und besteht Phase 1', async () => {
+  const meta = JSON.parse(await readFile(path.join(THIRD_TEST_PROJECT, '99-technik', 'video.json'), 'utf8'));
+  const mapping = JSON.parse(await readFile(path.join(THIRD_TEST_PROJECT, '99-technik', 'BILD_AUDIO_ZUORDNUNG.json'), 'utf8'));
+  const scriptPlan = JSON.parse(await readFile(path.join(THIRD_TEST_PROJECT, '99-technik', 'SCRIPT_PLAN.json'), 'utf8'));
+  const script = await readFile(path.join(THIRD_TEST_PROJECT, '01-voice-script', 'voice-script.txt'), 'utf8');
+  const prompt = await readFile(path.join(THIRD_TEST_PROJECT, '00-bildprompts', 'google-flow-prompt.txt'), 'utf8');
+  assert.equal(meta.plannedImageCount, 16);
+  assert.ok(meta.targetDurationSeconds <= 120);
+  assert.equal(mapping.images.length, 16);
+  assert.equal(scriptPlan.status, 'READY');
+  assert.equal(script.indexOf(scriptPlan.sections[0].startAnchor), 0);
+  assert.ok(script.trim().split(/\s+/).length >= 220);
+  assert.ok(script.trim().split(/\s+/).length <= 280);
+  assert.match(prompt, /ILLUSTRATION ZUERST/i);
+  assert.match(prompt, /keine Bildreferenz/i);
+  assert.ok(mapping.images.filter((image) => /Handlungsszene|Umgebungsszene|illustriert|Zusammenführung/i.test(String(image.visualForm))).length >= 10);
+  const result = await validatePhase1(THIRD_TEST_PROJECT);
   assert.equal(result.passed, true, result.errors.join('\n'));
 });
 
