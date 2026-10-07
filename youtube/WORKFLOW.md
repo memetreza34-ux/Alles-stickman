@@ -218,6 +218,16 @@ Die gemeinsame Alles-Stickman-Welt wird gehalten durch:
 
 Warum: Ein Cover ist auf Klickstärke optimiert und kann Karten, Diagramme, Multi-Panels oder Objektgrafiken unnötig in eine ähnliche Komposition drücken.
 
+### Illustration-zuerst-Regel
+
+Für die Bildplanung gilt zusätzlich:
+- Standard ist eine reichhaltige, leicht lesbare Illustration oder Szene
+- mehrere passende Figuren, Gegenstände, Kleidung, Tiere, Gebäude, Landschaft und kleine Nebenhandlungen sind erlaubt
+- Multi-Panels bevorzugt als illustrierte Mini-Szenen
+- reine Infografiken, Diagramme oder Textkarten nur verwenden, wenn sie die Aussage klarer erklären
+- mehrere sterile Info-Karten direkt hintereinander vermeiden
+- Ziel: reichhaltig, aber mit klaren 1–3 Hauptblickpunkten
+
 ## 6. Eigene Bildwelt
 
 Verbindlich:
