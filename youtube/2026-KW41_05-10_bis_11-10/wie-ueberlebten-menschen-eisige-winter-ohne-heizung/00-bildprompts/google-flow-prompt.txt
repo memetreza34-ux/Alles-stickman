@@ -7,15 +7,18 @@ ROLLE
 Du produzierst selbstständig alle Bilder für dieses Testvideo. Halte dich strikt an config/visual-policy.json, das Voice-over, SCRIPT_PLAN.json und BILD_AUDIO_ZUORDNUNG.json. Die aktuelle Visual Policy Version 7 gilt vollständig.
 
 VERBINDLICHER ABLAUF
-1. Erzeuge für Bild 01 GENAU 3 Cover-Kandidaten.
-2. GOOGLE FLOW wählt selbstständig genau 1 Gewinner. Der Nutzer wird nicht nach einem Favoriten gefragt.
-3. Gewinner → Bild 01.png; beide Verlierer vollständig löschen.
-4. Danach KEINE Bildreferenz verwenden. Weder Bild 01 noch andere Cover noch vorherige Szenenbilder dürfen Vorlage für Bild 02–16 sein.
-5. Konsistenz ausschließlich über Visual Policy + vollständigen individuellen Textprompt jedes Bildes.
-6. Bild 02–16 in maximalen 5ER-BLÖCKEN erzeugen: 02–06, 07–11, 12–16.
-7. Jedes Nicht-Cover-Bild genau einmal erzeugen; nur technisch kaputten/eindeutig unbrauchbaren Output derselben Bildnummer neu erzeugen.
-8. Nicht zwischen Blöcken nachfragen.
-9. Finaler Ordner enthält nur Bild 01.png bis Bild 16.png.
+1. Erzeuge für Bild 01 GENAU 3 Cover-Kandidaten: TEMP_COVER_A, TEMP_COVER_B, TEMP_COVER_C.
+2. DANACH HARD STOP. Wähle NICHT selbst. Erzeuge KEIN Bild 02.
+3. Zeige die drei Cover und warte auf die ausdrückliche Nutzerwahl A, B oder C.
+4. Erst nach der Nutzerwahl: gewählten Kandidaten → Bild 01.png; beide Verlierer löschen.
+5. Danach KEINE Bildreferenz verwenden. Weder Bild 01 noch andere Cover noch vorherige Szenenbilder dürfen Vorlage für Bild 02–16 sein.
+6. Konsistenz ausschließlich über Visual Policy + vollständigen individuellen Textprompt jedes Bildes.
+7. Nach der Coverwahl erzeuge in diesem Agenten-Schritt NUR Bild 02–06. Danach HARD STOP.
+8. Erst wenn der Nutzer ausdrücklich `WEITER` sagt: NUR Bild 07–11 erzeugen. Danach HARD STOP.
+9. Beim nächsten ausdrücklichen `WEITER`: NUR Bild 12–16 erzeugen. Danach fertig.
+10. Niemals zwei 5er-Blöcke im selben Agenten-Schritt erzeugen.
+11. Jedes Nicht-Cover-Bild genau einmal erzeugen; nur technisch kaputten/eindeutig unbrauchbaren Output derselben Bildnummer neu erzeugen.
+12. Finaler Ordner enthält nur Bild 01.png bis Bild 16.png.
 
 ILLUSTRATION ZUERST — VERBINDLICH
 - Standard ist eine reichhaltige, sofort lesbare Illustration/Szene.
@@ -153,13 +156,21 @@ Topic Anchor: Feuer Schutz Kleidung Zusammenarbeit Anpassung
 Visual Form: Große Zusammenführungsszene / Abschluss
 Prompt: 16:9 Alles-Stickman große zusammenhängende Winterlagerszene. In einem Bild klar erkennbar: kontrolliertes Feuer, geschützter Unterstand, Menschen in variierender Fell-/Hautkleidung, eine Figur repariert Kleidung, andere bringt Holz/Nahrung, kompakter gebaute Neandertaler-Figur als Teil der Gruppe. Kleine dezente Labels `FEUER`, `SCHUTZ`, `KLEIDUNG`, `ZUSAMMENARBEIT` dürfen integriert sein. Im Hintergrund kalter Wind, innerhalb des Lagers Wärme und Ordnung. Reichhaltig, aber 1–3 klare Hauptblickpunkte. Keine sterile Zusammenfassungs-Infografik.
 
+GATE-CHECK
+- nach genau 3 Covers: STOP und Nutzerwahl A/B/C abwarten
+- vor Nutzerwahl: kein Bild 02 erzeugen und keinen Gewinner selbst wählen
+- nach Nutzerwahl: Bild 01 setzen, erst dann Verlierer löschen
+- Bild 02–06 erzeugen → STOP
+- nur nach `WEITER`: Bild 07–11 erzeugen → STOP
+- nur nach erneutem `WEITER`: Bild 12–16 erzeugen
+
 ABSCHLUSSCHECK
 - genau 3 Cover erzeugt
-- Google Flow hat ohne Nutzerrückfrage 1 Gewinner gewählt
-- 2 Cover-Verlierer gelöscht
-- Bild 01 = finales Cover + erste Szene
+- Nutzer hat A, B oder C gewählt
+- exakt diese Auswahl wurde Bild 01
+- 2 Cover-Verlierer erst nach der Auswahl gelöscht
 - für Bild 02–16 keine Bildreferenz verwendet
-- Bild 02–16 in 5ER-BLÖCKEN produziert
+- Bild 02–16 in echten 5ER-SCHRITTEN mit Stop zwischen den Blöcken produziert
 - Illustrationen/Szenen dominieren
 - keine längere Folge steriler Info-/Diagrammkarten
 - Figuren und Kleidung dürfen sichtbar variieren, Welt/Designlogik bleibt konsistent
