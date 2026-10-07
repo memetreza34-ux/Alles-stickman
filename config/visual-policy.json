@@ -1,5 +1,5 @@
 {
-  "visualPolicyVersion": 7,
+  "visualPolicyVersion": 8,
   "status": "READY",
   "styleId": "alles-stickman-editorial-v1",
   "description": "Eigenständige 2D-Stickman-Erklärwelt für Alles Stickman. Standard sind reichhaltige, sofort lesbare Illustrationen mit Figuren, Objekten, Umgebung und kleinen erklärenden Elementen. Diagramme, Karten und Infografiken bleiben erlaubt, sind aber Hilfsmittel und nicht der visuelle Standard.",
@@ -112,9 +112,10 @@
     "composition": "1 Hauptidee, typischerweise 1–3 große Figuren oder 1 große Figur plus 1 Hauptobjekt; Hintergrund stark vereinfacht.",
     "text": "Wenn Text sinnvoll ist: maximal 2–4 kurze deutsche Wörter, groß, sauber geschrieben und mit sehr hohem Kontrast. Kein Pseudotext.",
     "textStyle": "warme helle Schrift oder gedämpfter Amber-Akzent mit dunkler Kontur; nicht die exakte Typografie oder Farbformel eines Referenzkanals kopieren.",
-    "winnerRule": "Google Flow bewertet genau drei Cover-Kandidaten selbstständig und wählt genau einen Gewinner. Der Nutzer wird nicht nach einer Auswahl gefragt. Der Gewinner wird Bild 01.png und dient als finales Cover/Thumbnail sowie erste Videoszene; die zwei Verlierer werden gelöscht.",
-    "selectionAuthority": "google-flow",
-    "userSelectionRequired": false
+    "winnerRule": "Google Flow erzeugt genau drei Cover-Kandidaten und STOPPT danach vollständig. Der Nutzer wählt A, B oder C. Erst nach dieser ausdrücklichen Nutzerwahl wird der gewählte Kandidat zu Bild 01.png; die zwei Verlierer werden gelöscht. Vor der Nutzerwahl dürfen keine Folgebilder erzeugt werden.",
+    "selectionAuthority": "user",
+    "userSelectionRequired": true,
+    "hardStopAfterCandidates": true
   },
   "referenceConsistency": {
     "referenceMode": "none",
@@ -175,10 +176,11 @@
     "Die Referenzkanäle dienen nur zur Analyse des Formats. Diese Bildwelt ist eine eigene Kanalidentität.",
     "Bei Unsicherheit über historische Details lieber vereinfachen als etwas Spezifisches zu erfinden.",
     "Konsistenz bedeutet gleiche Welt und gleiche Designlogik, nicht gleiche Bildart. Ein Video darf zwischen Szene, Karte, Diagramm, Multi-Panel, Objektbild, Prozess und Text-/Zahlenbild wechseln.",
-    "Google Flow ist die alleinige Auswahlinstanz für die drei Cover-Kandidaten; der Nutzer wird nicht nach einem Favoriten gefragt.",
     "Kein generiertes Bild wird als Referenzvorlage für ein anderes Bild verwendet.",
     "Ziel ist nicht Minimalismus: Die besten Bilder wirken wie reichhaltige handgezeichnete YouTube-Illustrationen. Mehrere Figuren, Gegenstände, Landschaft, Kleidung, Tiere, kleine Nebenhandlungen und kurze Labels dürfen gemeinsam vorkommen, solange die Kernaussage schnell lesbar bleibt.",
-    "Reine Diagramme/Infografiken sind kein Standardlayout. Sie werden nur gewählt, wenn sie die konkrete Aussage klarer erklären als eine illustrierte Szene."
+    "Reine Diagramme/Infografiken sind kein Standardlayout. Sie werden nur gewählt, wenn sie die konkrete Aussage klarer erklären als eine illustrierte Szene.",
+    "Cover-Gate: Nach genau drei Cover-Kandidaten muss der Agent stoppen und auf die ausdrückliche Auswahl des Nutzers warten.",
+    "Batch-Gate: Nach der Coverwahl werden Folgebilder in echten 5er-Schritten produziert; nach jedem Block wird gestoppt und erst nach ausdrücklichem 'weiter' fortgesetzt."
   ],
   "compositionDensity": {
     "target": "reichhaltige Illustration mit klarer Hierarchie",
