@@ -31,6 +31,15 @@ GLEICHE WELT
 - keine Pseudotexte, keine Wasserzeichen, keine moderne Technik in historischen Szenen außer wenn der Inhalt sie ausdrücklich vergleicht.
 - gleiche Welt bedeutet gleiche Designlogik, NICHT gleiche Komposition.
 
+ILLUSTRATION ZUERST — VERBINDLICH
+- Standard ist eine reichhaltige, sofort lesbare Illustration/Szene.
+- Mehrere Figuren, Kleidung, Bärte, Haare, Tiere, Werkzeuge, Gebäude, Landschaft, Requisiten und kleine Nebenhandlungen sind erlaubt und erwünscht, wenn sie zur Aussage gehören.
+- Zuerst Szene, Objekt-in-Kontext, Vorher/Nachher oder illustrierte Mini-Sequenz prüfen.
+- Reine Infografik/Diagramm/Textkarte nur verwenden, wenn sie klarer erklärt als eine Illustration.
+- Mehrere sterile Info-Karten direkt hintereinander vermeiden.
+- Multi-Panels möglichst als echte kleine illustrierte Situationen gestalten.
+- Nicht künstlich leer machen: reichhaltig, aber mit klaren 1–3 Hauptblickpunkten.
+
 BILDPLAN
 
 Bild 01 · 6 s
@@ -51,43 +60,43 @@ Bild 03 · 6 s
 Audio Anchor: Das Problem war simpel
 Visual Purpose: Verderb als biologisch-chemisches Grundproblem erklären.
 Topic Anchor: Lebensmittel verderben, Mikroorganismen, Zeit
-Visual Form: Infografik / Ursache-Wirkung
-Prompt: 16:9 Alles-Stickman Ursache-Wirkung-Infografik. Links frisches Lebensmittel, in der Mitte vergrößerte vereinfachte Mikroorganismen und eine Uhr, rechts sichtbar verdorbenes Lebensmittel. Kurze Labels `FRISCH` → `ZEIT + MIKROORGANISMEN` → `VERDORBEN`. Keine ekelhaften Details, klare didaktische Formen, gleiche Palette und Linienlogik.
+Visual Form: Illustrative Ursache-Wirkung-Szene mit kleinem Detailfeld
+Prompt: 16:9 Alles-Stickman Illustration in einer einfachen historischen Vorrats-/Küchenszene. Auf einem großen Holztisch liegen links frische Lebensmittel, rechts sichtbar gealterte/verdorbene Lebensmittel. Eine Stickman-Figur bemerkt den Unterschied. Eine kleine Lupe/Detailblase zeigt stark vereinfachte Mikroorganismen, daneben eine kleine Uhr als Zeithinweis. Kurze Labels `FRISCH` und `VERDORBEN`. Die Szene soll wie eine lebendige Illustration wirken, nicht wie eine sterile Infografik. Mehrere passende Gefäße, Körbe und Requisiten sind erlaubt, Hauptaussage sofort lesbar.
 
 Bild 04 · 6 s
 Audio Anchor: Eine der einfachsten Lösungen war, Wasser zu entziehen
 Visual Purpose: Das Grundprinzip Trocknen einführen.
 Topic Anchor: Wasserentzug, Trocknen
-Visual Form: Prozessgrafik
-Prompt: 16:9 Alles-Stickman Prozessgrafik. Großes Lebensmittel links mit sichtbaren blauen Wassertropfen, Pfeil nach rechts, getrocknetes kleineres Lebensmittel mit deutlich weniger Tropfen. Große kurze Überschrift `WASSER RAUS`. Sonne und Luft als kleine unterstützende Symbole. Handgezeichnet, klar, kein Dashboard-Look.
+Visual Form: Stickman-Handlungsszene / Trocknen mit erklärenden Pfeilen
+Prompt: 16:9 Alles-Stickman Handlungsszene draußen vor einer einfachen historischen Behausung. Zwei unterschiedliche Stickman-Figuren hängen dünne Fleisch-/Fischstreifen und Früchte an ein Trockengestell. Sonne, leichter Wind und trockene Umgebung sind klar sichtbar. Kleine blaue Wassertropfen verlassen einige Lebensmittel als einfacher visueller Hinweis; ein kurzer Pfeil und das Label `WASSER RAUS` dürfen ergänzen. Im Hintergrund Körbe, Holzgestell, Tongefäße und Landschaft. Reichhaltige Illustration, keine sterile Prozesskarte.
 
 Bild 05 · 6.5 s
 Audio Anchor: Fleisch, Fisch, Früchte oder Getreide konnten
 Visual Purpose: Verschiedene Lebensmittel beim Trocknen zeigen.
 Topic Anchor: Sonne, Wind, getrocknetes Fleisch Fisch Früchte Getreide
-Visual Form: 3er-Multi-Panel
-Prompt: 16:9 Alles-Stickman 3er-Multi-Panel. Panel 1: dünne Fleisch- und Fischstreifen trocknen im Luftzug. Panel 2: Früchte liegen auf einfachen Trockengestellen in der Sonne. Panel 3: Getreide wird trocken gelagert. Kurze Labels `LUFT`, `SONNE`, `TROCKEN`. Gleiche visuelle Welt, klare Leserichtung, historisch neutral, keine moderne Maschine.
+Visual Form: 3er-Multi-Panel aus illustrierten Mini-Szenen
+Prompt: 16:9 Alles-Stickman 3er-Multi-Panel aus drei kleinen, aber lebendigen Mini-Szenen. Links eine Figur hängt Fleisch und Fisch in den Luftzug, Mitte eine andere Figur verteilt Früchte auf einem Trockengestell in der Sonne, rechts lagert eine Figur trockenes Getreide in Körben/Gefäßen. Unterschiedliche Kleidung, Haare/Bärte und passende Requisiten. Kurze Labels `LUFT`, `SONNE`, `TROCKEN`. Jede Teilfläche wirkt wie eine echte Illustration, nicht wie ein Icon-Kasten.
 
 Bild 06 · 6 s
 Audio Anchor: Weniger verfügbares Wasser macht vielen Mikroorganismen
 Visual Purpose: Warum Trocknen wirkt anschaulich erklären.
 Topic Anchor: weniger verfügbares Wasser, Mikroorganismen wachsen schlechter
-Visual Form: Vergleich / einfache Wissenschaftsgrafik
-Prompt: 16:9 Alles-Stickman Vergleichsgrafik. Links feuchtes Lebensmittel mit vielen blauen Wasserpunkten und mehreren vereinfachten Mikroorganismen; rechts getrocknetes Lebensmittel mit sehr wenigen Wasserpunkten und deutlich weniger aktiven Mikroorganismen. Kurze Labels `FEUCHT` und `TROCKEN`. Einfach, sachlich, nicht medizinisch, gleiche Editorial-Ästhetik.
+Visual Form: Illustrativer Vergleich in einer Szene
+Prompt: 16:9 Alles-Stickman illustrierte Vergleichsszene auf einem Holztisch. Links ein feuchtes/frisches Lebensmittel mit sichtbaren kleinen Wassertropfen; rechts dasselbe Lebensmittel deutlich getrocknet. Zwei kleine runde Detailblasen zeigen links mehr vereinfachte Mikroorganismen und rechts deutlich weniger aktive Symbole. Eine Stickman-Figur zeigt auf beide Seiten. Kurze Labels `FEUCHT` und `TROCKEN`. Hintergrund mit Vorratsgefäßen und Trockengestell; wissenschaftlich verständlich, aber klar als Illustration.
 
 Bild 07 · 6 s
 Audio Anchor: Salz nutzte denselben Grundgedanken
 Visual Purpose: Salzen als zweite Methode einführen.
 Topic Anchor: Salz entzieht Wasser, Konservierung
-Visual Form: Objekt-/Sachillustration
-Prompt: 16:9 Alles-Stickman Sachillustration. Großes Stück Fleisch oder Fisch wird mit grobem Salz bedeckt; daneben ein vereinfachter Querschnitt mit Wassertröpfchen, die aus dem Lebensmittel nach außen wandern. Kurzes Label `SALZ`. Warmes Sand-/Ocker-Farbschema, klare dunkle Konturen, kein realistisches Fleischfoto.
+Visual Form: Stickman-Handlungsszene / Salzen
+Prompt: 16:9 Alles-Stickman Handlungsszene an einem rustikalen Arbeitstisch. Eine Figur mit passender historischer Kleidung salzt Fisch/Fleisch mit grobem Salz aus einer Schale; daneben stehen Salzgefäß, Messer, Tongefäß und weitere Vorräte. Ein kleines integriertes Detailfeld zeigt vereinfacht, wie Wassertröpfchen aus dem Lebensmittel nach außen wandern. Kurzes Label `SALZ`. Reichhaltige Szene mit klarer Hauptaktion, kein Fotorealismus.
 
 Bild 08 · 6.5 s
 Audio Anchor: Deshalb wurden besonders Fleisch und Fisch häufig gesalzen
 Visual Purpose: Trockenes Salzen und Salzlake unterscheiden.
 Topic Anchor: gesalzenes Fleisch Fisch, Salzlake
-Visual Form: 2er-Split
-Prompt: 16:9 Alles-Stickman 2er-Split. Links Fisch oder Fleisch in trockenem Salz mit Label `SALZEN`; rechts Stücke in einem Tongefäß mit klar dargestellter Salzlake und Label `SALZLAKE`. Keine moderne Küche, keine Glasmarken, handgezeichnete historische Sachillustration.
+Visual Form: 2er-Split aus illustrierten Mini-Szenen
+Prompt: 16:9 Alles-Stickman 2er-Split aus zwei echten Mini-Szenen. Links salzt eine Figur Fisch/Fleisch trocken auf einem Holztisch, mit Schale, Salz und Vorratsgefäßen; rechts legt eine andere Figur Lebensmittel in ein großes Tongefäß mit Salzlake. Unterschiedliche Kleidung/Haare/Bart erlaubt. Labels `SALZEN` und `SALZLAKE`. Historische Umgebung sichtbar, nicht nur freigestellte Objekte.
 
 Bild 09 · 6 s
 Audio Anchor: Rauch konnte zusätzlich helfen
@@ -100,29 +109,29 @@ Bild 10 · 6 s
 Audio Anchor: Oft wurde Räuchern mit vorherigem Salzen kombiniert
 Visual Purpose: Kombination von Methoden zeigen.
 Topic Anchor: Salzen plus Räuchern
-Visual Form: 2-Schritt-Prozess
-Prompt: 16:9 Alles-Stickman Zwei-Schritt-Prozess. Schritt 1: Lebensmittel wird gesalzen. Deutlicher Pfeil. Schritt 2: dasselbe Lebensmittel hängt im Rauch. Große Nummern `1` und `2`, kleine Labels `SALZ` und `RAUCH`. Gleiche handgezeichnete Designlogik, wenig Text.
+Visual Form: 2er-Mini-Szenen-Prozess
+Prompt: 16:9 Alles-Stickman zwei verbundene Mini-Szenen mit klarer Leserichtung. Links salzt eine Figur Lebensmittel an einem Tisch; rechts hängt eine zweite Figur das vorbereitete Lebensmittel in einer einfachen Räucherstelle auf. Dazwischen ein klarer Pfeil. Große Nummern `1` und `2`, kleine Labels `SALZ` und `RAUCH`. Beide Hälften als lebendige kleine Szenen mit Requisiten, Feuerstelle und Umgebung, nicht als sterile Prozesskarte.
 
 Bild 11 · 6 s
 Audio Anchor: Eine andere Lösung war Fermentation
 Visual Purpose: Fermentation als andere Strategie einführen.
 Topic Anchor: Fermentation, Tongefäß, kontrollierte Veränderung
-Visual Form: Objektbild mit Prozesssymbolen
-Prompt: 16:9 Alles-Stickman Fermentationsillustration. Großes Tongefäß mit Gemüse oder Milchprodukt, daneben vereinfachte freundliche Mikroorganismen-Symbole und ein Pfeil zu einem fertigen fermentierten Lebensmittel. Kurze Headline `FERMENTATION`. Keine wissenschaftlich falschen Monsterkeime, klar und sachlich.
+Visual Form: Handlungsszene / Fermentieren im Vorratsraum
+Prompt: 16:9 Alles-Stickman Vorrats-/Küchenszene. Eine Figur füllt Gemüse oder ein anderes geeignetes Lebensmittel in ein großes Tongefäß, eine zweite Figur prüft bereits gelagerte Gefäße. Auf dem Tisch liegen Gemüse, Schalen, Tücher und einfache Werkzeuge. Eine kleine Detailblase zeigt vereinfachte Mikroorganismen als Erklärhinweis. Kurze Headline `FERMENTATION`. Reichhaltige handgezeichnete Szene, keine sterile Symbolgrafik.
 
 Bild 12 · 6.5 s
 Audio Anchor: Bestimmte Mikroorganismen verändern das Lebensmittel kontrolliert
 Visual Purpose: Fermentation vereinfacht als kontrollierten Prozess erklären.
 Topic Anchor: nützliche Mikroorganismen, Bedingungen ändern
-Visual Form: Ursache-Wirkung-Infografik
-Prompt: 16:9 Alles-Stickman Infografik. Links Lebensmittel mit ausgewählten vereinfachten Mikroorganismen, in der Mitte Prozesspfeile, rechts verändertes Lebensmittel mit einem Schutzschild-Symbol und deutlich weniger unerwünschten Keim-Symbolen. Keine absolute Sterilität darstellen. Kurze Labels `KONTROLLIERT` und `SCHWIERIGER FÜR VIELE KEIME`.
+Visual Form: Illustrative Nahaufnahme mit kleinem Detailfeld
+Prompt: 16:9 Alles-Stickman Nahaufnahme eines großen Tongefäßes in einer echten Vorratsszene. Eine Figur öffnet oder prüft das Gefäß. Ein kleines rundes Detailfenster zeigt stark vereinfacht ausgewählte Mikroorganismen im Inneren; daneben wenige unerwünschte Keim-Symbole mit deutlich schwächerer Darstellung. Kurze Labels `KONTROLLIERT` und `SCHWIERIGER FÜR VIELE KEIME`. Keine Sterilität behaupten. Hauptbild bleibt eine Illustration mit Tisch, Gefäßen, Lebensmitteln und Figur.
 
 Bild 13 · 6.5 s
 Audio Anchor: So entstanden je nach Region etwa saure Gemüse
 Visual Purpose: Regionale Vielfalt fermentierter Lebensmittel zeigen.
 Topic Anchor: saure Gemüse Milchprodukte fermentierte Getränke
-Visual Form: 3er-Objektpanel
-Prompt: 16:9 Alles-Stickman 3er-Objektpanel: sauer eingelegtes/fermentiertes Gemüse im Tongefäß, vereinfachtes traditionelles Milchprodukt, fermentiertes Getränk in historisch neutralem Gefäß. Labels `GEMÜSE`, `MILCH`, `GETRÄNKE`. Keine Marken, keine moderne Verpackung, gleiche Palette und Konturen.
+Visual Form: Tisch-/Vorratsszene mit mehreren Lebensmitteln
+Prompt: 16:9 Alles-Stickman reichhaltige Tisch-/Vorratsszene. Zwei unterschiedliche Figuren stehen an einem großen Tisch mit drei klar gruppierten Beispielen: fermentiertes/saures Gemüse in Tongefäßen, ein traditionell wirkendes Milchprodukt und ein fermentiertes Getränk in neutralem Gefäß. Kurze Labels `GEMÜSE`, `MILCH`, `GETRÄNKE` dürfen direkt bei den Gruppen stehen. Im Hintergrund weitere Regale/Gefäße, aber klare 3-Punkt-Hierarchie.
 
 Bild 14 · 6 s
 Audio Anchor: Und manchmal war die Umgebung selbst der Kühlschrank
@@ -135,22 +144,22 @@ Bild 15 · 6.5 s
 Audio Anchor: Keller, Höhlen, kalte Bäche, Schnee oder natürliches Eis
 Visual Purpose: Kühle Lagerung und verlangsamten Verderb gegenüberstellen.
 Topic Anchor: kühle Lagerung verlangsamt Verderb
-Visual Form: Thermometer-/Zeitvergleich
-Prompt: 16:9 Alles-Stickman Vergleichsgrafik. Links warmer Lagerort mit schneller laufender Uhr und sichtbarerem Verderb, rechts kühler Keller/Eisbereich mit langsamerer Uhr und besser erhaltenem Lebensmittel. Einfaches Thermometer-Symbol, keine exakten Temperaturen. Kurze Labels `WARM` und `KÜHLER`.
+Visual Form: Illustrierter Warm/Kühl-Vergleich
+Prompt: 16:9 Alles-Stickman Vorher/Nachher-artiger Vergleich aus zwei illustrierte Umgebungen. Links warme Vorratsecke mit sonniger Wärme, einer Figur und schneller alterndem Lebensmittel; rechts kühler Keller/Höhlenbereich mit Eis/kaltem Stein, einer zweiten Figur und besser erhaltenem Vorrat. Kleine Uhr- und Thermometer-Symbole unterstützen die Aussage, keine exakten Temperaturen. Labels `WARM` und `KÜHLER`. Beide Seiten sollen wie echte Szenen wirken.
 
 Bild 16 · 7 s
 Audio Anchor: Der Trick war also nie eine einzige Erfindung
 Visual Purpose: Die Antwort als Kombination verschiedener Methoden zusammenführen.
 Topic Anchor: Trocknen Salz Rauch Fermentation Kälte
-Visual Form: Zusammenfassende Infografik
-Prompt: 16:9 Alles-Stickman Zusammenfassungsbild. In der Mitte ein Vorratskorb; darum fünf große, klar getrennte Symbole mit deutschen Labels: `TROCKNEN`, `SALZ`, `RAUCH`, `FERMENTATION`, `KÄLTE`. Alles in derselben handgezeichneten Welt, großzügige Abstände, kein Dashboard, keine Menschen nötig.
+Visual Form: Große Zusammenführungsszene mit fünf Methoden
+Prompt: 16:9 Alles-Stickman große, zusammenhängende historische Vorratsszene. In einer glaubwürdigen Hof-/Vorratsumgebung passieren gleichzeitig fünf klar lesbare Dinge: links hängen Lebensmittel zum `TROCKNEN`, eine Figur arbeitet mit `SALZ`, im Hintergrund hängt Nahrung im `RAUCH`, auf einem Tisch stehen Gefäße für `FERMENTATION`, rechts führt ein Zugang zu einem kühlen Keller/Eisbereich für `KÄLTE`. 3–4 unterschiedliche Figuren mit variierender Kleidung, Haaren/Bärten, dazu Körbe, Werkzeuge und Vorräte. Die fünf kurzen Labels dürfen direkt bei den Bereichen stehen. Reichhaltig, aber klare Leserichtung; keine Infografik-Icon-Anordnung.
 
 Bild 17 · 7 s
 Audio Anchor: Der Kühlschrank machte vieles bequemer
 Visual Purpose: Schlussgedanke: moderne Technik löst dasselbe alte Problem bequemer.
 Topic Anchor: moderner Kühlschrank versus alte Konservierungsidee
-Visual Form: Vorher/Nachher-Abschluss
-Prompt: 16:9 Alles-Stickman Abschlussbild als Vorher/Nachher. Links historische Methoden als kleine klare Symbole: Trockengestell, Salz, Rauch, Tongefäß, Eis. Rechts ein schlichter moderner Kühlschrank. Dazwischen großer Pfeil und kurze Zeile `DASSELBE ZIEL: VERDERB BREMSEN`. Gleiche Kanalillustration, keine Marke, kein CTA.
+Visual Form: Vorher/Nachher aus zwei illustrierten Szenen
+Prompt: 16:9 Alles-Stickman Abschlussbild als zwei vollständige illustrierte Szenen. Links eine historische Vorratsumgebung mit Trockengestell, Salz, Rauch, Tongefäßen, Eis/Keller und 2–3 Figuren bei der Arbeit. Rechts eine moderne, schlicht gezeichnete Küche mit einer Figur am markenlosen Kühlschrank und ordentlich gelagerten Lebensmitteln. Dazwischen ein klarer Pfeil und kurze Zeile `DASSELBE ZIEL: VERDERB BREMSEN`. Gleiche Alles-Stickman-Welt, reichhaltig aber sofort lesbar, kein CTA.
 
 ABSCHLUSSCHECK
 - genau 3 Cover erzeugt
@@ -161,4 +170,6 @@ ABSCHLUSSCHECK
 - Stil-Konsistenz ausschließlich über Visual Policy + vollständige Textprompts
 - Bild 02–17 in 5ER-BLÖCKEN produziert
 - alle 17 finalen Bilder gehören sichtbar zur selben Alles-Stickman-Welt
+- Illustrationen/Szenen dominieren; reine Infografiken wurden nur bei echtem Erklärvorteil verwendet
+- keine längere Folge steriler Info-/Diagramm-Karten
 - keine Zusatzbilder oder Unterordner im finalen images-Ordner
