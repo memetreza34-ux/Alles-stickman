@@ -17,10 +17,11 @@ Thema
 → Auswahl = Bild 01
 → 2 Cover-Verlierer löschen
 → Bild 02–06
-→ HARD STOP / WEITER
-→ nächster 5er-Block
-→ HARD STOP / WEITER
+→ automatisch Bild 07–11
+→ automatisch nächster 5er-Block
 → bis Bild NN
+→ Vollständigkeitscheck
+→ fehlende/kaputte Bilder gezielt neu erzeugen
 → finale Voice-over-Datei
 → Audio-Optimierung
 → Wort-/Anchor-Alignment
@@ -135,7 +136,7 @@ Vor Asset-Erzeugung:
 npm run validate:youtube-phase1 -- --dir "youtube/<week>/<slug>"
 ```
 
-## 4. Google Flow — verbindlicher Human-Gated-Ablauf
+## 4. Google Flow — verbindlicher Ablauf mit genau einem Human-Gate
 
 Masterprompt:
 
@@ -171,28 +172,24 @@ Erst danach:
 - beide Verlierer löschen
 - keine Kopien der Verlierer behalten
 
-### Phase 4: echte 5er-Schritte mit HARD STOP
-Nach der Coverwahl erzeugt Flow zunächst nur:
+### Phase 4: automatische 5er-Blöcke bis Bild NN
+Nach der Coverwahl läuft Flow automatisch weiter:
 
 ```text
 Bild 02–06
+→ Bild 07–11
+→ Bild 12–16
+→ ...
+→ Bild NN
 ```
-
-Dann **HARD STOP**.
-
-Nur nach ausdrücklichem `WEITER`:
-```text
-Bild 07–11
-```
-
-Dann wieder **HARD STOP**.
-
-Jedes weitere `WEITER` öffnet genau einen weiteren 5er-Block. Niemals zwei Blöcke im selben Agenten-Schritt.
 
 Regeln:
 - maximal 5 aktive Generationen
-- genau ein 5er-Block pro Agenten-Schritt
-- nach jedem Block auf ausdrückliches `WEITER` warten
+- maximal 5 Bilder pro Block
+- sobald ein Block vollständig gespeichert ist, automatisch den nächsten starten
+- **keine Nutzer-Rückfrage zwischen Blöcken**
+- **kein `WEITER` verlangen**
+- kein HARD STOP zwischen Blöcken
 - jedes Nicht-Cover-Bild genau einmal
 - keine A/B-Alternativen
 - **keine Bildreferenz verwenden**
@@ -203,8 +200,12 @@ Regeln:
 
 Nur bei technischem Fehlschlag oder eindeutig unbrauchbarem Output darf exakt dieselbe Bildnummer neu erzeugt werden.
 
-### Phase 5: finaler Ordner
-Nach Abschluss darf `00-bildprompts/images/` ausschließlich enthalten:
+### Phase 5: finaler Ordner + automatische Vollständigkeitsprüfung
+Nach Bild NN prüft Flow den gesamten Ordner gegen die Soll-Liste `Bild 01.png` bis `Bild NN.png`.
+
+Fehlt eine Bildnummer oder ist eine Datei technisch kaputt, wird **genau diese Bildnummer** mit ihrem ursprünglichen Prompt neu erzeugt. Danach wird erneut geprüft. Erst wenn alle Nummern lückenlos vorhanden sind, ist Phase 5 abgeschlossen.
+
+Danach darf `00-bildprompts/images/` ausschließlich enthalten:
 
 ```text
 Bild 01.png
@@ -329,7 +330,9 @@ Ein Video ist erst fertig, wenn:
 - die 2 Cover-Verlierer erst danach gelöscht wurden
 - für Bild 02–NN keine Bildreferenz verwendet wurde
 - Bild 02–NN in echten 5er-Schritten erzeugt wurden
-- nach jedem 5er-Block gestoppt und erst nach `WEITER` fortgesetzt wurde
+- nach der Coverwahl alle 5er-Blöcke automatisch ohne weitere Nutzerfreigabe erzeugt wurden
+- nach Bild NN ein Soll-Ist-Check durchgeführt wurde
+- fehlende oder technisch kaputte Bildnummern gezielt neu erzeugt und erneut geprüft wurden
 - finale Bilder lückenlos benannt sind
 - alle finalen Bilder in einem flachen Ordner liegen
 - genau eine finale Stimme vorliegt
