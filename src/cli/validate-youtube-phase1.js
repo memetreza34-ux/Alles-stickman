@@ -73,6 +73,9 @@ export async function validatePhase1(projectDirectory) {
     if (meta.imageDensityPolicy?.finalCountMustMatchPlannedImageCount !== true) errors.push('Pipeline v6+: Finale Bildanzahl muss plannedImageCount entsprechen.');
     if (meta.imageDensityPolicy?.missingImageRepairRequired !== true) errors.push('Pipeline v6+: Fehlende Bildnummern müssen automatisch repariert werden.');
     if (meta.imageDensityPolicy?.repairOnlyMissingOrBroken !== true) errors.push('Pipeline v6+: Reparatur darf nur fehlende/kaputte Bildnummern betreffen.');
+    if (meta.imageDensityPolicy?.finalImageDirectory !== '00-bildprompts/images') errors.push('Pipeline v6+: finalImageDirectory muss 00-bildprompts/images sein.');
+    if (meta.imageDensityPolicy?.finalFolderMustBeFlat !== true) errors.push('Pipeline v6+: Der finale Bilderordner muss flach sein.');
+    if (meta.imageDensityPolicy?.finalFolderOnlyNumberedImages !== true) errors.push('Pipeline v6+: Im finalen Bilderordner dürfen nur nummerierte Endbilder liegen.');
   } else if (humanGatedCoverFlow) {
     if (meta.imageDensityPolicy?.oneBatchPerAgentTurn !== true) errors.push('Legacy v5: Pro Agenten-Schritt ist genau ein 5er-Block erlaubt.');
     if (meta.imageDensityPolicy?.hardStopAfterEachBatch !== true) errors.push('Legacy v5: Nach jedem 5er-Block ist ein HARD STOP Pflicht.');
