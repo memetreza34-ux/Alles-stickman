@@ -12,6 +12,26 @@ Die Bildwelt soll für Evolution, Steinzeit, Antike, Alltag, Erfindungen, Ressou
 
 Wichtig: **Konsistenz bedeutet gleiche Welt und gleiche Designlogik – nicht gleiche Bildart und nicht dieselbe Standardfigur.** Ein Video darf visuell stark wechseln, solange Linien, Farben, Figurenlogik, Textbehandlung und Illustrationssprache zusammengehören.
 
+## Illustration zuerst
+
+Der visuelle Standard für Alles Stickman ist **eine reichhaltige, leicht lesbare Illustration**.
+
+Bevorzugt:
+- richtige Handlungsszenen
+- Räume, Landschaften und historische Umgebungen
+- Figuren mit unterschiedlicher Kleidung, Haaren, Bärten, Alter und Rollen
+- mehrere passende Gegenstände und Requisiten
+- Objekt-in-Kontext-Bilder
+- Vorher/Nachher als zwei illustrierte Situationen
+- Prozesse als kleine zusammenhängende Szenen
+- Multi-Panels aus 2–3 echten Mini-Szenen
+
+Diagramme, Karten, Zeitleisten, Text-/Zahlenbilder und Infografiken bleiben erlaubt. Sie sind aber **nicht der Standard**. Sie werden benutzt, wenn sie die konkrete Aussage wirklich schneller oder präziser erklären als eine normale Illustration.
+
+Wichtig: Abstrakter Inhalt bedeutet nicht automatisch Infografik. Zuerst prüfen, ob eine Szene, ein Objekt im Kontext oder ein illustrierter Vergleich funktioniert.
+
+Mehrere sterile Info-/Diagramm-Karten direkt hintereinander sollen vermieden werden.
+
 ## Bilddichte — reichhaltig, aber klar
 
 Die Zielrichtung ist **nicht minimalistisch**. Ein Bild darf mehrere zusammengehörige Dinge zeigen: mehrere Figuren, Gegenstände, kleine Nebenhandlungen, Pfeile, Labels, Teilbereiche oder Hintergrunddetails.
@@ -103,7 +123,7 @@ Erlaubt und erwünscht sind unter anderem:
 - Umgebung ohne Menschen
 - reine Sachillustration ohne Figur
 
-Die Visual Form wird **pro Aussage neu gewählt**. Es gibt keine Pflicht, ständig Stickman-Figuren zu zeigen.
+Die Visual Form wird **pro Aussage neu gewählt**. Es gibt keine Pflicht, ständig Stickman-Figuren zu zeigen. Trotzdem gilt als Priorität: **Illustration/Szene zuerst, reine Infografik nur wenn sie klarer erklärt.**
 
 ## Mehrere Bilder / Panels in einem Frame
 
