@@ -1,14 +1,20 @@
 # Google Flow Asset Workflow — Alles Stickman
 
-Status: verbindlich
+Status: **verbindlich**
+Version: **2 — Human-Gated**
 
 ## Ziel
 
-Google Flow bzw. der ausführende Agent soll die komplette Bildproduktion eines Videos ohne ständige Rückfragen sauber durchziehen.
+Die Bildproduktion darf **nicht** mehr in einem Durchlauf bis zum Ende laufen.
 
-## Die 5 Schritte
+Es gibt zwei harte Freigabearten:
 
-### 1. Vorbereitung
+1. **Cover-Gate:** Der Nutzer wählt selbst A, B oder C.
+2. **Batch-Gate:** Nach jedem 5er-Block muss der Agent stoppen und auf `WEITER` warten.
+
+## Verbindlicher Ablauf
+
+### Phase 1 — Vorbereitung
 
 Laden:
 - `config/visual-policy.json`
@@ -16,124 +22,139 @@ Laden:
 - fertigen Bildplan
 - `99-technik/BILD_AUDIO_ZUORDNUNG.json`
 
-Vor Start müssen alle Bildnummern von Bild 01 bis Bild NN feststehen.
+Vor Start müssen Bild 01 bis Bild NN geplant sein.
 
-### 2. Drei Cover-Kandidaten
+### Phase 2 — exakt drei Cover erzeugen
 
-Für Bild 01 genau drei temporäre Kandidaten erzeugen:
-- `TEMP_COVER_A.png`
-- `TEMP_COVER_B.png`
-- `TEMP_COVER_C.png`
+Für Bild 01 genau diese drei temporären Kandidaten erzeugen:
 
-Keine weiteren Covervarianten.
+```text
+TEMP_COVER_A.png
+TEMP_COVER_B.png
+TEMP_COVER_C.png
+```
 
-### 3. Google Flow wählt den Gewinner
+Danach gilt sofort:
 
-Google Flow entscheidet selbstständig anhand von:
-- Klarheit
-- Neugier
-- Lesbarkeit
-- Stiltreue
-- fehlerfreier Darstellung
-- sachlicher/historischer Plausibilität
+**HARD STOP**
 
-Der Nutzer wählt nicht manuell.
+Der Agent darf jetzt:
+- keinen Gewinner selbst bestimmen
+- keinen Kandidaten löschen
+- kein `Bild 01.png` festlegen
+- kein `Bild 02.png` oder weiteres Bild erzeugen
+
+Der Agent meldet nur:
+
+```text
+COVER-WAHL ERFORDERLICH — antworte A, B oder C.
+```
+
+### Phase 3 — Nutzer wählt Cover
+
+Nur eine ausdrückliche Auswahl des Nutzers öffnet das Gate.
+
+Beispiele:
+- `A`
+- `Cover B`
+- `nimm C`
+
+Erst danach:
+- gewählter Kandidat → `Bild 01.png`
+- die zwei nicht gewählten Kandidaten löschen
+- keine Kopien oder Alternativen behalten
+
+Wichtig:
+`Bild 01.png` ist Cover und erste Videoszene, wird aber **nicht** als Referenzbild für Folgebilder verwendet.
+
+### Phase 4 — erster 5er-Block
+
+Nach der bestätigten Coverwahl darf genau **ein** Block erzeugt werden:
+
+```text
+Bild 02–06
+```
+
+Falls das Video vorher endet, nur bis Bild NN.
 
 Danach:
-- Gewinner → `Bild 01.png`
-- zwei Verlierer löschen
-- keine Kopien der Verlierer behalten
 
-Wichtig: `Bild 01.png` wird danach **nicht** als Referenzbild für weitere Bilder verwendet.
+**HARD STOP**
 
-### 4. Restbilder in 5er-Blöcken — ohne Bildreferenz
+Status:
 
-Ohne Nutzer-Rückfrage weiterarbeiten.
+```text
+BLOCK FERTIG — antworte WEITER für den nächsten 5er-Block.
+```
+
+### Phase 5 — weitere 5er-Blöcke
+
+Jedes ausdrückliche `WEITER` öffnet genau **einen** weiteren Block.
 
 Beispiel:
 
 ```text
-Block 1: Bild 02–06
-Block 2: Bild 07–11
-Block 3: Bild 12–16
-...
+Cover gewählt
+→ Bild 02–06
+→ STOP
+→ WEITER
+→ Bild 07–11
+→ STOP
+→ WEITER
+→ Bild 12–16
+→ STOP
+→ WEITER
+→ Bild 17–NN
 ```
 
-Der letzte Block darf kleiner sein.
+Der letzte Block darf kleiner als fünf Bilder sein.
 
-Regeln:
-- maximal 5 aktive Generationen
-- jedes Bild nur einmal
-- keine A/B-Varianten für Nicht-Cover-Bilder
-- **keine Bildreferenz verwenden**
-- weder Bild 01 noch andere Cover oder vorherige Szenen als Vorlage benutzen
-- Stil ausschließlich über `config/visual-policy.json` und den vollständigen individuellen Textprompt halten
-- sofort korrekt benennen
-- nach jedem Block automatisch weiter
+**Verboten:**
+- zwei oder mehr 5er-Blöcke im selben Agenten-Schritt
+- automatisch zum nächsten Block weiterlaufen
+- schon vor `WEITER` Bilder des nächsten Blocks erzeugen
 
-Technische Ausnahme:
-Wenn Flow technisch fehlschlägt oder ein Output eindeutig unbrauchbar/kaputt ist, darf nur genau diese Bildnummer erneut erzeugt werden.
+### Phase 6 — Cleanup
 
-### 5. Abschluss und Cleanup
+Nach Bild NN:
+- Bildnummern lückenlos prüfen
+- TEMP-Cover löschen
+- Alternativen/Zwischenbilder löschen
+- keine Unterordner
+- final nur `Bild 01.png` bis `Bild NN.png`
 
-Finaler Ordner:
+## Regeln für Folgebilder
 
-`00-bildprompts/images/`
+- maximal 5 Bilder pro Block
+- jedes Nicht-Cover-Bild nur einmal
+- keine A/B-Varianten
+- keine Bildreferenz
+- weder Bild 01 noch Cover-Verlierer noch vorherige Szenenbilder als Vorlage
+- Stil ausschließlich über `config/visual-policy.json` + vollständigen individuellen Prompt
+- Illustration zuerst, reine Infografik nur bei echtem Erklärvorteil
 
-Erlaubt:
+## Warum diese Gates existieren
 
-```text
-Bild 01.png
-Bild 02.png
-Bild 03.png
-...
-Bild NN.png
-```
+Die frühere Version hatte widersprüchliche Regeln:
+- Flow sollte das Cover selbst auswählen
+- Flow sollte nicht stoppen
+- Flow sollte nach 5er-Blöcken automatisch weitermachen
 
-Nicht erlaubt:
-- `TEMP_COVER_A.png`
-- `TEMP_COVER_B.png`
-- `TEMP_COVER_C.png`
-- Cover-Verlierer
-- Alternativen
-- Backup-Bilder
-- Unterordner
-- zusätzliche Thumbnails
-- Zwischenstände
+Dadurch konnte der Agent die gesamte Bildproduktion in einem Zug ausführen.
 
-## Konsistenzregel ohne Referenzbild
+Die neue Regel ist deshalb absichtlich hart:
 
-Die visuelle Konsistenz kommt ausschließlich aus:
-1. `config/visual-policy.json`
-2. dem vollständigen Prompt des jeweiligen Bildes
-3. den festen Kanalregeln für Linien, Farben, Figuren, Text und Informationsdesign
-
-Kein bereits generiertes Bild wird als Stilvorlage verwendet.
-
-Das ist absichtlich so, weil ein Cover auf Klickstärke optimiert ist und Karten, Diagramme, Multi-Panels oder andere Erklärformen sonst unnötig einengen kann.
-
-## Kein Stoppen zwischen Blöcken
-
-Der Agent soll nicht nach jedem Bild oder nach jedem 5er-Block fragen.
-
-Er stoppt nur, wenn eine Pflichtquelle fehlt, zum Beispiel:
-- kein Skript
-- kein fertiger Bildplan
-- keine aktive Bildwelt
-- keine eindeutige Bildnummerierung
-
-Ansonsten läuft die Produktion bis Bild NN und anschließend durch das Cleanup.
+> **Cover erzeugen → STOP → Nutzer wählt → 5 Bilder → STOP → WEITER → 5 Bilder → STOP.**
 
 ## Endzustand
 
 Fertig bedeutet:
-- drei Cover wurden erzeugt
-- Google Flow hat selbst einen Gewinner gewählt
-- zwei Verlierer gelöscht
-- Gewinner heißt `Bild 01.png`
-- Bild 01 wurde nicht als Referenzbild weiterverwendet
-- für Bild 02–NN wurde überhaupt keine Bildreferenz benutzt
-- Bild 02–NN wurden in maximal 5er-Blöcken erzeugt
+- genau drei Cover wurden erzeugt
+- Nutzer hat A/B/C gewählt
+- nur diese Auswahl wurde Bild 01
+- Cover-Verlierer danach gelöscht
+- keine Bildreferenz verwendet
+- Folgebilder in echten 5er-Schritten produziert
+- zwischen jedem Block wurde gestoppt
 - keine Bildnummer fehlt
-- keine temporären Dateien bleiben übrig
-- alle finalen Bilder liegen gemeinsam in einem Ordner
+- finaler Bilderordner enthält nur die nummerierten Endbilder
