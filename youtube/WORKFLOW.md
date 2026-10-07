@@ -12,10 +12,15 @@ Thema
 → Voice-over-Skript
 → Bildplanung
 → 3 Cover-Kandidaten
-→ Google Flow wählt selbst 1 Cover-Gewinner
-→ Gewinner = Bild 01
+→ HARD STOP
+→ Nutzer wählt A/B/C
+→ Auswahl = Bild 01
 → 2 Cover-Verlierer löschen
-→ Bild 02–NN ohne Bildreferenz in maximal 5er-Blöcken
+→ Bild 02–06
+→ HARD STOP / WEITER
+→ nächster 5er-Block
+→ HARD STOP / WEITER
+→ bis Bild NN
 → finale Voice-over-Datei
 → Audio-Optimierung
 → Wort-/Anchor-Alignment
@@ -130,7 +135,7 @@ Vor Asset-Erzeugung:
 npm run validate:youtube-phase1 -- --dir "youtube/<week>/<slug>"
 ```
 
-## 4. Google Flow — verbindlicher 5-Phasen-Ablauf
+## 4. Google Flow — verbindlicher Human-Gated-Ablauf
 
 Masterprompt:
 
@@ -150,35 +155,44 @@ Temporär:
 
 Bild 01 ist Cover und erste Videoszene.
 
-### Phase 3: Google Flow wählt selbst den Gewinner
-Google Flow bewertet die drei Kandidaten selbstständig nach:
-- Verständlichkeit
-- Neugier
-- Thumbnail-Lesbarkeit
-- Stiltreue
-- sauberer Figuren-/Textdarstellung
-- sachlicher/historischer Plausibilität
+### Phase 3: HARD STOP — Nutzer wählt das Cover
+Nach A, B und C darf Flow **nichts weiter erzeugen**.
 
-**Der Nutzer wählt nicht manuell und wird nicht nach einem Favoriten gefragt.** Die Auswahlhoheit liegt vollständig bei Google Flow.
+Verboten vor Nutzerwahl:
+- Gewinner selbst bestimmen
+- Cover löschen
+- Bild 01 festlegen
+- Bild 02 erzeugen
 
-Danach:
-- Gewinner → `Bild 01.png`
+Der Nutzer wählt ausdrücklich A, B oder C.
+
+Erst danach:
+- Auswahl → `Bild 01.png`
 - beide Verlierer löschen
 - keine Kopien der Verlierer behalten
 
-### Phase 4: Bild 02–NN ohne Bildreferenz
-Danach ohne Nutzer-Rückfrage in maximalen 5er-Blöcken:
+### Phase 4: echte 5er-Schritte mit HARD STOP
+Nach der Coverwahl erzeugt Flow zunächst nur:
 
 ```text
 Bild 02–06
-Bild 07–11
-Bild 12–16
-...
-bis Bild NN
 ```
+
+Dann **HARD STOP**.
+
+Nur nach ausdrücklichem `WEITER`:
+```text
+Bild 07–11
+```
+
+Dann wieder **HARD STOP**.
+
+Jedes weitere `WEITER` öffnet genau einen weiteren 5er-Block. Niemals zwei Blöcke im selben Agenten-Schritt.
 
 Regeln:
 - maximal 5 aktive Generationen
+- genau ein 5er-Block pro Agenten-Schritt
+- nach jedem Block auf ausdrückliches `WEITER` warten
 - jedes Nicht-Cover-Bild genau einmal
 - keine A/B-Alternativen
 - **keine Bildreferenz verwenden**
