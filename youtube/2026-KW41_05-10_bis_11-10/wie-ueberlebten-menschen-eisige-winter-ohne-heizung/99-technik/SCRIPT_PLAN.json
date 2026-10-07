@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "structure": [
+    "hook",
+    "setup",
+    "main",
+    "resolution",
+    "closing"
+  ],
+  "sections": [
+    {
+      "id": "hook",
+      "startAnchor": "Der Wind ist eisig",
+      "purpose": "Sofort das Überlebensproblem eines eisigen Winters ohne moderne Heizung eröffnen."
+    },
+    {
+      "id": "setup",
+      "startAnchor": "Kälte war nicht nur unangenehm",
+      "purpose": "Die konkreten Risiken von Kälte knapp setzen."
+    },
+    {
+      "id": "main",
+      "startAnchor": "Eine der wichtigsten Hilfen war Feuer",
+      "purpose": "Feuer, Schutz, Kleidung und körperliche Anpassungen als zusammenhängende Überlebensstrategien erklären."
+    },
+    {
+      "id": "resolution",
+      "startAnchor": "Der entscheidende Trick war also nicht eine einzige Erfindung",
+      "purpose": "Die Kernfrage mit dem Zusammenspiel mehrerer Lösungen beantworten."
+    },
+    {
+      "id": "closing",
+      "startAnchor": "Die Heizung ist modern",
+      "purpose": "Mit dem zeitlosen Prinzip Wärme halten und Umgebung anpassen enden."
+    }
+  ]
+}

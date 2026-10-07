@@ -1,0 +1,167 @@
+VISUAL_POLICY_FILE: config/visual-policy.json
+ACTIVE_STYLE_ID: alles-stickman-editorial-v1
+
+GOOGLE FLOW MASTER PROMPT — ALLES STICKMAN — Wie überlebten Menschen eisige Winter ohne Heizung?
+
+ROLLE
+Du produzierst selbstständig alle Bilder für dieses Testvideo. Halte dich strikt an config/visual-policy.json, das Voice-over, SCRIPT_PLAN.json und BILD_AUDIO_ZUORDNUNG.json. Die aktuelle Visual Policy Version 7 gilt vollständig.
+
+VERBINDLICHER ABLAUF
+1. Erzeuge für Bild 01 GENAU 3 Cover-Kandidaten.
+2. GOOGLE FLOW wählt selbstständig genau 1 Gewinner. Der Nutzer wird nicht nach einem Favoriten gefragt.
+3. Gewinner → Bild 01.png; beide Verlierer vollständig löschen.
+4. Danach KEINE Bildreferenz verwenden. Weder Bild 01 noch andere Cover noch vorherige Szenenbilder dürfen Vorlage für Bild 02–16 sein.
+5. Konsistenz ausschließlich über Visual Policy + vollständigen individuellen Textprompt jedes Bildes.
+6. Bild 02–16 in maximalen 5ER-BLÖCKEN erzeugen: 02–06, 07–11, 12–16.
+7. Jedes Nicht-Cover-Bild genau einmal erzeugen; nur technisch kaputten/eindeutig unbrauchbaren Output derselben Bildnummer neu erzeugen.
+8. Nicht zwischen Blöcken nachfragen.
+9. Finaler Ordner enthält nur Bild 01.png bis Bild 16.png.
+
+ILLUSTRATION ZUERST — VERBINDLICH
+- Standard ist eine reichhaltige, sofort lesbare Illustration/Szene.
+- Mehrere Figuren, unterschiedliche Kleidung, Haare, Bärte, Alter, Körperformen, Tiere, Werkzeuge, Gebäude, Landschaft, Requisiten und kleine Nebenhandlungen sind erlaubt.
+- Zuerst Handlungsszene, Umgebungsszene, Objekt-in-Kontext, illustrierter Vergleich oder Mini-Sequenz prüfen.
+- Reine Infografik/Diagramm/Textkarte nur verwenden, wenn sie klarer erklärt als eine Illustration.
+- Mehrere sterile Info-/Diagrammkarten direkt hintereinander vermeiden.
+- Multi-Panels möglichst als 2–3 echte illustrierte Mini-Szenen gestalten.
+- 1–3 Hauptblickpunkte müssen sofort klar bleiben; Zusatzdetails dürfen danach entdeckt werden.
+- Gleiche Welt bedeutet gleiche Linien, Farbwelt, Gesichtslogik und Editorial-Sprache — nicht dieselben Figuren oder dieselbe Komposition.
+
+STIL
+- 16:9, 1920×1080
+- handgezeichneter 2D-Editorial-Stickman-Look
+- dunkle leicht unregelmäßige Anthrazit-Konturen
+- warme Elfenbein-Gesichter
+- gedämpfte Naturpalette: Sand, Ocker, Rost, Salbei, gedecktes Blau/Navy
+- flache Farbflächen, sparsame Schatten
+- kein 3D/Pixar, kein Fotorealismus, kein Anime
+- historische Details plausibel; bei Unsicherheit vereinfachen
+- kurze deutsche Labels nur bei echtem Erklärwert
+- kein Pseudotext, keine Wasserzeichen, keine Logos
+
+BILDPLAN
+
+Bild 01 · 6 s
+Audio Anchor: Der Wind ist eisig
+Visual Purpose: Hook: eisige Umgebung, keine moderne Heizung, trotzdem überlebende Menschen.
+Topic Anchor: Eiswinter, Feuer, Schutz, keine moderne Heizung
+Visual Form: Cover / reichhaltige Handlungsszene
+Prompt: 16:9 Alles-Stickman Editorial-Cover. Schneesturm in einer eisigen Landschaft. Im Vordergrund eine große ausdrucksstarke Figur in Fell-/Hautkleidung hält sich nahe an ein Feuer, hinter ihr eine einfache windgeschützte Unterkunft mit 1–2 weiteren Figuren. Schnee, Holz, Tierhäute und wenige Requisiten erzeugen eine echte Welt. Kurze Headline `OHNE HEIZUNG?`. Starke Blickführung, 1–3 Hauptfoki, handgezeichnete Anthrazit-Konturen, warme Elfenbein-Gesichter, gedämpfte Blau-/Sand-/Rostfarben, kein 3D, kein Fotorealismus.
+
+Bild 02 · 6 s
+Audio Anchor: Trotzdem lebten Menschen schon vor Zehntausenden Jahren
+Visual Purpose: Menschen in einer realen kalten Landschaft zeigen, ohne sie als hilflos darzustellen.
+Topic Anchor: Menschen in glazialer Landschaft, Winterlager
+Visual Form: Reichhaltige Umgebungsszene
+Prompt: 16:9 Alles-Stickman Winterlandschaft mit kleiner Menschengruppe auf dem Weg zu einem Lager. Unterschiedliche Kleidung, Haare und Bärte; im Hintergrund Felswand, Schnee, kahle Vegetation, einfache Unterkunft und Rauch einer Feuerstelle. Einige tragen Holz oder Vorräte. Lebendige, aber klare Illustration; keine moderne Gegenstände.
+
+Bild 03 · 6 s
+Audio Anchor: Kälte war nicht nur unangenehm
+Visual Purpose: Mehrere Winterprobleme in einer zusammenhängenden Szene verständlich machen.
+Topic Anchor: Wärmeverlust, gefrorenes Wasser, Nahrung, Schlafplatz
+Visual Form: Illustrative Problemszene mit 3 Blickpunkten
+Prompt: 16:9 Alles-Stickman zusammenhängende Lagerszene im Winter. Eine frierende Figur am Rand, ein gefrorenes Wassergefäß/vereister Bach als zweiter Blickpunkt und ein ungeschützter Schlafplatz im Wind als dritter Blickpunkt. Im Hintergrund wenig Nahrung/Vorräte. Kleine Pfeile oder kurze Labels `KÄLTE`, `WASSER`, `SCHLAFPLATZ` dürfen helfen. Keine sterile Infografik.
+
+Bild 04 · 6 s
+Audio Anchor: Eine der wichtigsten Hilfen war Feuer
+Visual Purpose: Feuer als zentralen Wärme- und Lebenspunkt zeigen.
+Topic Anchor: kontrollierte Feuerstelle, Wärme, Licht
+Visual Form: Stickman-Handlungsszene
+Prompt: 16:9 Alles-Stickman Szene an einer kontrollierten Feuerstelle in kalter Umgebung. 3 unterschiedliche Figuren sitzen/arbeiten um das Feuer; eine wärmt Hände, eine bereitet Nahrung vor, eine legt Holz nach. Warmes Feuerlicht als Kontrast zur kalten blauen Landschaft. Werkzeuge, Holzstapel und einfache Gefäße als Details. Klare Hauptaktion, kein moderner Kamin.
+
+Bild 05 · 6 s
+Audio Anchor: Außerdem konnten Menschen an einer Feuerstelle zusammenkommen
+Visual Purpose: Feuerstelle als sozialen und geschützten Mittelpunkt des Lagers illustrieren.
+Topic Anchor: Gruppe um Feuer, gemeinsames Essen, Information
+Visual Form: Reichhaltige Gruppenszene
+Prompt: 16:9 Alles-Stickman Abend-/Nachtszene. Kleine Gruppe mit variierenden Gesichtern, Haaren, Bärten und Fell-/Hautkleidung sitzt eng um eine Feuerstelle in einer geschützten Nische. Eine Figur teilt Nahrung, eine gestikuliert/erzählt, eine kümmert sich um das Feuer. Im Hintergrund Dunkelheit, Wind und Schnee; innerhalb des Lagers warme ruhige Zone. Keine Texttafel.
+
+Bild 06 · 6 s
+Audio Anchor: Aber Feuer allein reichte nicht
+Visual Purpose: Zeigen, warum Schutz vor Wind zusätzlich nötig war.
+Topic Anchor: Feuer plus Windschutz
+Visual Form: Vorher/Nachher aus zwei illustrierten Mini-Szenen
+Prompt: 16:9 Alles-Stickman Vorher/Nachher. Links eine kleine Feuerstelle im offenen starken Wind, Figur kämpft mit Rauch und Kälte. Rechts dieselbe Grundidee hinter einem einfachen Windschutz/Unterstand, Feuer und Menschen deutlich geschützter. Beide Hälften als echte Szenen mit Schnee, Holz und Felsen; kurze Labels `OFFEN` und `GESCHÜTZT`.
+
+Bild 07 · 6 s
+Audio Anchor: Frühe Menschen nutzten natürliche Schutzorte
+Visual Purpose: Natürliche Schutzorte und gebaute Unterkunft gemeinsam zeigen.
+Topic Anchor: Felsüberhang, Höhle, einfache Unterkunft
+Visual Form: Große Landschaftsszene mit zwei Schutzformen
+Prompt: 16:9 Alles-Stickman breite Winterlandschaft. Links nutzt eine kleine Gruppe einen Felsüberhang/Höhleneingang, rechts bauen andere Figuren eine einfache Unterkunft aus Holz/Ästen. Schnee, Windrichtung und Gelände zeigen klar, warum Schutzorte helfen. Unterschiedliche Figuren und Rollen. Keine Fantasiehöhlenstadt, historisch neutral und plausibel.
+
+Bild 08 · 6.5 s
+Audio Anchor: Holz, Äste und andere verfügbare Materialien
+Visual Purpose: Den Bau eines einfachen Windschutzes als Handlung zeigen.
+Topic Anchor: Holz Äste Windschutz Schlafplatz
+Visual Form: Bauszene / 3-Schritt-Mini-Sequenz
+Prompt: 16:9 Alles-Stickman illustrierte 3-Schritt-Mini-Sequenz in einer zusammenhängenden Landschaft: 1) zwei Figuren sammeln Holz und Äste, 2) sie richten Pfosten/Windschutz auf, 3) fertiger geschützter Schlafbereich mit Feuer davor. Nummern `1 2 3` klein und klar. Keine technische Bauzeichnung, sondern echte Mini-Szenen.
+
+Bild 09 · 6 s
+Audio Anchor: Entscheidend war auch Kleidung
+Visual Purpose: Kleidung aus Tierhäuten als Teil des Kälteschutzes einführen.
+Topic Anchor: Tierhäute Kleidung Winter
+Visual Form: Handlungsszene / Kleidung vorbereiten
+Prompt: 16:9 Alles-Stickman Arbeitsszene im Lager. Eine Figur bearbeitet eine Tierhaut mit einfachem Schaber, eine zweite hält bereits zugeschnittene/zusammengefügte Fell- oder Hautkleidung, eine dritte trägt fertige Winterkleidung. Trockengestell, Werkzeuge und Feuer im Hintergrund. Keine Mode-Infografik, sondern lebendige Werkstatt-/Lagerszene.
+
+Bild 10 · 6 s
+Audio Anchor: Ahlen halfen dabei, Löcher in Häute zu stechen
+Visual Purpose: Werkzeuge zum Zusammenfügen von Häuten anschaulich machen.
+Topic Anchor: Ahle, Haut, Löcher, Nähen
+Visual Form: Nahaufnahme in Kontextszene
+Prompt: 16:9 Alles-Stickman Nahaufnahme eines Arbeitstisches mit Händen/vereinfachten Figurenarmen: eine Ahle sticht Löcher in Tierhaut, daneben Riemen/Fasern und ein fertiges kleines Kleidungsstück. Im Hintergrund unscharf-stilisiert eine Person am Feuer. Kurzes Label `AHLE`. Gleiche handgezeichnete Welt, keine deformierten Hände, keine moderne Nähmaschine.
+
+Bild 11 · 6 s
+Audio Anchor: Später ermöglichten Knochen- und Elfenbeinnadeln
+Visual Purpose: Enger sitzende Kleidung durch Nadeln visualisieren.
+Topic Anchor: Knochennadel, engere Kleidung
+Visual Form: 2er illustrierter Vergleich
+Prompt: 16:9 Alles-Stickman illustrierter Vergleich. Links gröber zusammengebundene Hautkleidung, rechts eine Figur mit enger sitzender genähter Fell-/Hautkleidung; dazwischen groß genug eine einfache Knochennadel mit Faden/Riemen als verbindendes Objekt. Labels `AHLE` und `NADEL` optional. Szenisch, nicht museal-steril.
+
+Bild 12 · 6 s
+Audio Anchor: Auch der Körper selbst spielte eine Rolle
+Visual Purpose: Körperform als zusätzliche Anpassung erklären, ohne sie als bewusste Entscheidung darzustellen.
+Topic Anchor: kompakte Körperform, Wärmeverlust
+Visual Form: Illustrativer Figurenvergleich mit kleinem Erklärfeld
+Prompt: 16:9 Alles-Stickman zwei stilisierte Figuren in derselben kalten Landschaft: eine kompaktere kräftige Neandertaler-Silhouette und eine schlankere moderne-menschliche Silhouette als vereinfachter Vergleich. Kleine Wärme-Pfeile zeigen bei kompakter Form relativ weniger Oberfläche, ohne exakte Zahlen. Kurzes Label `KOMPAKTER`. Keine wertende Darstellung, keine Karikatur, gleicher Figurenstil.
+
+Bild 13 · 6 s
+Audio Anchor: Neandertaler waren im Durchschnitt kompakter gebaut
+Visual Purpose: Neandertaler in ihrem kalten Lebensraum als kompetente Menschen zeigen.
+Topic Anchor: Neandertaler, kaltes Klima, kräftiger Körper
+Visual Form: Reichhaltige Neandertaler-Winterszene
+Prompt: 16:9 Alles-Stickman Neandertaler-Winterszene mit 2–3 kräftig gebauten Figuren in plausibler Fell-/Hautkleidung. Eine trägt Holz, eine Werkzeug/Speer, eine arbeitet am Lager. Schneebedeckte Steppe, Feuer und Felsunterstand im Hintergrund. Gesichter individuell, keine primitiven Klischees, reichhaltig aber klar.
+
+Bild 14 · 6.5 s
+Audio Anchor: Und keine dieser Lösungen funktionierte überall gleich
+Visual Purpose: Regionale Unterschiede und flexible Strategien zeigen.
+Topic Anchor: unterschiedliche Regionen Materialien Klima Techniken
+Visual Form: 3er-Multi-Panel aus Mini-Szenen
+Prompt: 16:9 Alles-Stickman 3er-Multi-Panel aus drei lebendigen kalten Lebensräumen: felsige Region mit Felsunterstand, offene Steppe mit gebautem Windschutz, schneereichere Landschaft mit stärkerer Kleidung und Feuer. Unterschiedliche Materialien und Figuren. Kurze Labels `ORT`, `MATERIAL`, `KLIMA` können unten stehen. Keine Karten- oder Dashboard-Optik.
+
+Bild 15 · 6 s
+Audio Anchor: Manche Kältephasen waren sogar so extrem
+Visual Purpose: Zeigen, dass Anpassung Grenzen hatte und Menschen Gebiete verlassen konnten.
+Topic Anchor: extreme Kälte, Verlassen eines Gebietes
+Visual Form: Dramatische Wanderungsszene
+Prompt: 16:9 Alles-Stickman dramatische, aber sachliche Winterwanderung. Kleine Gruppe verlässt ein verlassenes Lager in extremer kalter Landschaft; sie tragen Werkzeuge, Kleidung und wenige Vorräte. Hinter ihnen erloschene Feuerstelle/leer werdender Unterstand, vor ihnen Weg in mildere Richtung. Keine Katastrophen-Übertreibung, klare Aussage: weiterziehen statt sterben.
+
+Bild 16 · 7 s
+Audio Anchor: Der entscheidende Trick war also nicht eine einzige Erfindung
+Visual Purpose: Alle Hauptfaktoren in einer großen, zusammenhängenden Abschlussillustration bündeln.
+Topic Anchor: Feuer Schutz Kleidung Zusammenarbeit Anpassung
+Visual Form: Große Zusammenführungsszene / Abschluss
+Prompt: 16:9 Alles-Stickman große zusammenhängende Winterlagerszene. In einem Bild klar erkennbar: kontrolliertes Feuer, geschützter Unterstand, Menschen in variierender Fell-/Hautkleidung, eine Figur repariert Kleidung, andere bringt Holz/Nahrung, kompakter gebaute Neandertaler-Figur als Teil der Gruppe. Kleine dezente Labels `FEUER`, `SCHUTZ`, `KLEIDUNG`, `ZUSAMMENARBEIT` dürfen integriert sein. Im Hintergrund kalter Wind, innerhalb des Lagers Wärme und Ordnung. Reichhaltig, aber 1–3 klare Hauptblickpunkte. Keine sterile Zusammenfassungs-Infografik.
+
+ABSCHLUSSCHECK
+- genau 3 Cover erzeugt
+- Google Flow hat ohne Nutzerrückfrage 1 Gewinner gewählt
+- 2 Cover-Verlierer gelöscht
+- Bild 01 = finales Cover + erste Szene
+- für Bild 02–16 keine Bildreferenz verwendet
+- Bild 02–16 in 5ER-BLÖCKEN produziert
+- Illustrationen/Szenen dominieren
+- keine längere Folge steriler Info-/Diagrammkarten
+- Figuren und Kleidung dürfen sichtbar variieren, Welt/Designlogik bleibt konsistent
+- alle 16 Bilder lückenlos und final
+- keine Zusatzbilder oder Unterordner im finalen images-Ordner
