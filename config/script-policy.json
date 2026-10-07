@@ -117,7 +117,9 @@
       "Die Verbindung zum Titel/Kernthema muss innerhalb der ersten zwei Sätze klar sein.",
       "Der Hook darf nicht bereits die ganze Antwort vorwegnehmen.",
       "Der Hook verspricht eine konkrete Auflösung, ohne Clickbait zu erfinden."
-    ]
+    ],
+    "hardMaxFirstSentenceWords": 24,
+    "hardMaxFirstTwoSentencesWords": 48
   },
   "durationQuality": {
     "requiredFromPipelineVersion": 7,
