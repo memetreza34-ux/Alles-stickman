@@ -119,11 +119,13 @@ Verbindlich:
 ## 7. Bildgenerierung — READY ALS AGENT-WORKFLOW
 
 Verbindlich:
-- Bild 02–NN in echten 5er-Schritten
-- pro Agenten-Schritt genau ein 5er-Block
-- nach jedem Block HARD STOP
-- nächster Block nur nach ausdrücklichem `WEITER`
-- jedes Nicht-Cover-Bild nur einmal, außer technischem Fehlschlag
+- Bild 02–NN in automatischen 5er-Blöcken
+- maximal 5 aktive Generationen
+- nach jedem fertigen Block automatisch der nächste Block
+- keine Nutzerfreigabe zwischen den Blöcken
+- nach Bild NN vollständiger Soll-Ist-Abgleich des gemeinsamen Bilderordners
+- fehlende/technisch kaputte Bildnummern gezielt neu erzeugen und erneut prüfen
+- jedes Nicht-Cover-Bild nur einmal, außer technischem Fehlschlag/Reparaturfall
 - `referenceMode: none`
 - keine generierten Bilder als Referenzvorlage
 - Konsistenz ausschließlich über Visual Policy + individuellen Vollprompt
@@ -230,7 +232,7 @@ Thema
 → Skript-System + SCRIPT_PLAN
 → Bildplanung
 → 3 Cover → STOP → Nutzer wählt A/B/C
-→ 5er-Block → STOP/WEITER → nächster 5er-Block ohne Referenzbild
+→ 5er-Block → automatisch nächster 5er-Block ohne Referenzbild → Vollständigkeitscheck/Reparatur
 → Voice
 → Audio-QC
 → Whisper/Alignment
