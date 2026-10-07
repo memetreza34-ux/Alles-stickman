@@ -23,7 +23,7 @@ test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', 
   assert.equal(visual.referenceConsistency.generatedImageReferenceForbidden, true);
   assert.equal(visual.multiPanelPolicy.allowed, true);
   assert.equal(visual.informationDesign.sameWorldRequired, true);
-  assert.equal(visual.visualPolicyVersion, 8);
+  assert.equal(visual.visualPolicyVersion, 9);
   assert.equal(visual.visualFormPriority.default, 'illustrative-scene-first');
   assert.ok(visual.visualFormPriority.preferred.includes('reichhaltige Stickman-Handlungsszene'));
   assert.ok(visual.visualFormPriority.useOnlyWhenClearer.includes('reine Infografik'));
@@ -48,11 +48,11 @@ test('Skript-Policy erzwingt die kanaltypische Grundstruktur', async () => {
   assert.deepEqual(templatePlan.structure, ['hook', 'setup', 'main', 'resolution', 'closing']);
 });
 
-test('Pipeline v5 erzwingt Nutzer-Coverwahl und echte 5er-Gates', async () => {
+test('Pipeline v6 wartet nur beim Cover und setzt 5er-Blöcke automatisch fort', async () => {
   const policy = JSON.parse(await readFile('config/pipeline.json', 'utf8'));
   assert.equal(policy.coverPolicy.firstSceneIsCover, true);
   assert.equal(policy.coverPolicy.coverCandidateCount, 3);
-  assert.equal(policy.pipelineVersion, 5);
+  assert.equal(policy.pipelineVersion, 6);
   assert.equal(policy.coverPolicy.autoSelectWinner, false);
   assert.equal(policy.coverPolicy.selectionAuthority, 'user');
   assert.equal(policy.coverPolicy.userSelectionRequired, true);
@@ -64,11 +64,17 @@ test('Pipeline v5 erzwingt Nutzer-Coverwahl und echte 5er-Gates', async () => {
   assert.equal(policy.imagePolicy.nonCoverGenerationCount, 1);
   assert.equal(policy.imagePolicy.generationBatchSize, 5);
   assert.equal(policy.imagePolicy.maxConcurrentGenerations, 5);
-  assert.equal(policy.imagePolicy.oneBatchPerAgentTurn, true);
-  assert.equal(policy.imagePolicy.hardStopAfterEachBatch, true);
-  assert.equal(policy.imagePolicy.userContinueRequiredBetweenBatches, true);
-  assert.equal(policy.imagePolicy.batchContinuationAuthority, 'user');
-  assert.equal(policy.imagePolicy.explicitContinueRequired, true);
+  assert.equal(policy.imagePolicy.batchExecutionMode, 'automatic-sequential');
+  assert.equal(policy.imagePolicy.automaticBatchContinuation, true);
+  assert.equal(policy.imagePolicy.hardStopAfterEachBatch, false);
+  assert.equal(policy.imagePolicy.userContinueRequiredBetweenBatches, false);
+  assert.equal(policy.imagePolicy.batchContinuationAuthority, 'agent');
+  assert.equal(policy.imagePolicy.explicitContinueRequired, false);
+  assert.equal(policy.imagePolicy.continueUntilImageNN, true);
+  assert.equal(policy.imagePolicy.finalIntegrityCheckRequired, true);
+  assert.equal(policy.imagePolicy.finalCountMustMatchPlannedImageCount, true);
+  assert.equal(policy.imagePolicy.missingImageRepairRequired, true);
+  assert.equal(policy.imagePolicy.repairOnlyMissingOrBroken, true);
   assert.equal(policy.imagePolicy.referenceMode, 'none');
   assert.equal(policy.imagePolicy.useImageReferences, false);
   assert.equal(policy.imagePolicy.generatedImageReferenceForbidden, true);
@@ -87,7 +93,7 @@ test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Vis
   assert.equal(meta.topic, '');
   assert.equal(meta.title, '');
   assert.deepEqual(meta.uploadMetadata, { title: '', description: '', tags: [] });
-  assert.equal(meta.pipelineVersion, 5);
+  assert.equal(meta.pipelineVersion, 6);
   assert.equal(meta.coverPolicy.autoSelectWinner, false);
   assert.equal(meta.coverPolicy.selectionAuthority, 'user');
   assert.equal(meta.coverPolicy.userSelectionRequired, true);
@@ -102,7 +108,11 @@ test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Vis
   assert.match(prompt, /HARD STOP/i);
   assert.match(prompt, /COVER-WAHL ERFORDERLICH/i);
   assert.match(prompt, /A, B oder C/i);
-  assert.match(prompt, /WEITER/i);
+  assert.match(prompt, /automatisch/i);
+  assert.match(prompt, /OHNE Rückfrage|KEIN .*WEITER|nicht auf .*WEITER.*warten/is);
+  assert.doesNotMatch(prompt, /antworte WEITER|nur nach .*WEITER/i);
+  assert.match(prompt, /Soll-Ist|Vollständigkeits/i);
+  assert.match(prompt, /fehl.*neu erzeug/is);
   assert.match(prompt, /KEINE Bildreferenz/i);
   assert.match(prompt, /5ER-(BLÖCKEN|SCHRITTEN)/i);
   assert.match(prompt, /Keine feste Zielbildzahl/i);
@@ -174,9 +184,14 @@ test('Drittes Testprojekt nutzt Illustration-zuerst und besteht Phase 1', async 
   assert.equal(meta.coverPolicy.selectionAuthority, 'user');
   assert.equal(meta.coverPolicy.userSelectionRequired, true);
   assert.equal(meta.coverPolicy.hardStopAfterCoverCandidates, true);
-  assert.equal(meta.imageDensityPolicy.oneBatchPerAgentTurn, true);
-  assert.equal(meta.imageDensityPolicy.hardStopAfterEachBatch, true);
-  assert.equal(meta.imageDensityPolicy.userContinueRequiredBetweenBatches, true);
+  assert.equal(meta.imageDensityPolicy.batchExecutionMode, 'automatic-sequential');
+  assert.equal(meta.imageDensityPolicy.automaticBatchContinuation, true);
+  assert.equal(meta.imageDensityPolicy.hardStopAfterEachBatch, false);
+  assert.equal(meta.imageDensityPolicy.userContinueRequiredBetweenBatches, false);
+  assert.equal(meta.imageDensityPolicy.batchContinuationAuthority, 'agent');
+  assert.equal(meta.imageDensityPolicy.continueUntilImageNN, true);
+  assert.equal(meta.imageDensityPolicy.finalIntegrityCheckRequired, true);
+  assert.equal(meta.imageDensityPolicy.missingImageRepairRequired, true);
   assert.equal(mapping.images.length, 16);
   assert.equal(scriptPlan.status, 'READY');
   assert.equal(script.indexOf(scriptPlan.sections[0].startAnchor), 0);
@@ -185,7 +200,11 @@ test('Drittes Testprojekt nutzt Illustration-zuerst und besteht Phase 1', async 
   assert.match(prompt, /ILLUSTRATION ZUERST/i);
   assert.match(prompt, /HARD STOP/i);
   assert.match(prompt, /Nutzerwahl A, B oder C|A, B oder C/i);
-  assert.match(prompt, /WEITER/i);
+  assert.match(prompt, /automatisch/i);
+  assert.match(prompt, /keine Rückfrage|kein `WEITER`|nicht.*WEITER/is);
+  assert.doesNotMatch(prompt, /nur nach .*WEITER|antworte WEITER/i);
+  assert.match(prompt, /Soll-Ist|vollständig.*prüf/is);
+  assert.match(prompt, /fehl.*neu erzeug/is);
   assert.match(prompt, /keine Bildreferenz/i);
   const illustrativeForms = mapping.images.filter((image) => /Szene|illustr|Bauszene|Vergleich|Mini-Sequenz|Nahaufnahme|Zusammenführung/i.test(String(image.visualForm)));
   assert.ok(illustrativeForms.length >= 12, `Zu wenige illustrative Visual Forms: ${illustrativeForms.length}/16`);
