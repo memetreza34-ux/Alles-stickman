@@ -19,11 +19,26 @@ Verbindlicher Ablauf:
 
 1. Bildplan fertigstellen.
 2. Genau 3 Cover-Kandidaten erzeugen.
-3. 1 Gewinner automatisch wählen.
-4. Gewinner als `Bild 01.png` speichern und die 2 anderen Cover löschen.
-5. Nur `Bild 01.png` als visuelle Referenz für alle weiteren Bilder benutzen.
-6. Bild 02–NN in maximal 5er-Blöcken erzeugen.
-7. Nicht-Cover-Bilder jeweils nur einmal erzeugen.
-8. Am Ende alle finalen Bilder flach in `00-bildprompts/images/` halten.
+3. **STOPPEN.**
+4. Nutzer wählt A, B oder C.
+5. Gewählten Kandidaten als `Bild 01.png` speichern; die 2 anderen Cover löschen.
+6. **Keine Bildreferenz** für Folgebilder benutzen.
+7. Genau einen 5er-Block erzeugen: zuerst Bild 02–06.
+8. **STOPPEN** und auf `WEITER` warten.
+9. Pro `WEITER` genau einen weiteren 5er-Block erzeugen.
+10. Am Ende alle finalen Bilder flach in `00-bildprompts/images/` halten.
+
+Kurzform:
+
+```text
+3 Cover
+→ STOP
+→ Nutzer wählt
+→ Bild 02–06
+→ STOP / WEITER
+→ Bild 07–11
+→ STOP / WEITER
+→ ...
+```
 
 Finaler Bilderordner enthält ausschließlich `Bild 01.png` bis `Bild NN.png`.
