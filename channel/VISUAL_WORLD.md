@@ -259,7 +259,7 @@ Bei historischen Themen:
 
 ## Produktionsregel
 
-Nach dem vom Nutzer gewählten Cover werden Folgebilder in echten 5er-Schritten erzeugt. Pro Agenten-Schritt genau ein Block; danach HARD STOP und erst nach ausdrücklichem `WEITER` der nächste Block. Jedes Nicht-Cover-Bild wird genau einmal erzeugt, außer bei technischem Fehlschlag oder eindeutig unbrauchbarem Output.
+Nach dem vom Nutzer gewählten Cover werden Folgebilder automatisch in 5er-Blöcken erzeugt. Sobald ein Block fertig gespeichert ist, startet ohne Rückfrage der nächste Block bis Bild NN. Danach wird der gemeinsame Bilderordner vollständig geprüft; fehlende oder technisch kaputte Bildnummern werden gezielt neu erzeugt. Jedes Nicht-Cover-Bild wird genau einmal erzeugt, außer bei diesem Reparaturfall oder eindeutig unbrauchbarem Output.
 
 Am Ende liegen alle finalen Bilder gemeinsam und flach in:
 
