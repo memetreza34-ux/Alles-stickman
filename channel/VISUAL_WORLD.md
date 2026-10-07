@@ -219,6 +219,37 @@ Die Konsistenz entsteht ausschließlich aus:
 
 Warum: Ein Cover ist auf Klickstärke optimiert. Würde man es als Referenzvorlage für Karten, Diagramme, Multi-Panels oder Objektgrafiken nutzen, kann es die visuelle Freiheit unnötig einschränken oder immer wieder ähnliche Kompositionen erzeugen.
 
+## Story-Welt-Kontinuität
+
+Für neue Pipeline-v7+-Videos wird in `99-technik/video.json` ein `visualContinuityProfile` gepflegt.
+
+Es definiert:
+- Grundumgebung / Landschaft
+- Klima und Jahreszeit
+- Epoche
+- Farb-/Stimmungsanker
+- erlaubte bewusst erzählte Wechsel
+- verbotene unbegründete Wechsel
+
+Wichtig: Konsistenz heißt **nicht**, dass jedes Bild gleich aussehen soll. Perspektive, Figuren, Kleidung, Handlung und Komposition dürfen variieren. Aber die erzählte Welt muss logisch bleiben.
+
+Beispiel: Ein Video über einen eisigen Winter darf nicht ohne Erzählgrund plötzlich eine sattgrüne warme Landschaft zeigen.
+
+## Stille Bild-QC
+
+Nach jedem 5er-Block prüft der Bild-Agent seine erzeugten Bilder selbst, ohne den Nutzer zu unterbrechen.
+
+Geprüft werden:
+- Inhalt passt zu Audio/Topic Anchor
+- Umgebung/Klima/Epoche passen
+- Anatomie und Objekte sind sauber
+- Text ist korrekt und lesbar
+- Bild ist schnell verständlich
+- keine unnötige Überladung
+- kein Style Drift / AI-Slop
+
+Fällt ein Bild durch, wird nur diese Bildnummer neu erzeugt und erneut geprüft. Erst danach läuft der nächste Block automatisch weiter.
+
 ## Historische Plausibilität
 
 Bei historischen Themen:
