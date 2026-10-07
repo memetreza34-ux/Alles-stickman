@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "status": "READY",
   "language": "de",
   "structure": [
@@ -12,11 +12,15 @@
   "sectionRules": {
     "hook": {
       "required": true,
-      "goal": "Sofort Neugier, Konflikt, überraschenden Fakt oder die Kernfrage eröffnen.",
+      "goal": "In den ersten Sekunden Problem, Widerspruch, Überraschung oder Kernfrage öffnen. Keine reine atmosphärische Szenenbeschreibung.",
       "targetSharePercent": [
         5,
         10
-      ]
+      ],
+      "maxWordsBeforeSetup": 45,
+      "mustCreateCuriosityGap": true,
+      "sceneSettingOnlyForbidden": true,
+      "titleConnectionRequired": true
     },
     "setup": {
       "required": true,
@@ -89,5 +93,43 @@
     "uncertaintyMustBeQualified": true,
     "datesAndNumbersNeedResearchSupport": true
   },
-  "planFile": "99-technik/SCRIPT_PLAN.json"
+  "planFile": "99-technik/SCRIPT_PLAN.json",
+  "hookQuality": {
+    "requiredFromPipelineVersion": 7,
+    "allowedTypes": [
+      "problem",
+      "contrast",
+      "surprise",
+      "question",
+      "counterintuitive-fact"
+    ],
+    "metadataRequired": [
+      "hookType",
+      "curiosityGap",
+      "titleConnection",
+      "payoffPromise"
+    ],
+    "firstSentencePreferredMaxWords": 18,
+    "firstTwoSentencesPreferredMaxWords": 36,
+    "rules": [
+      "Der erste Satz muss bereits Konflikt, Problem, Überraschung oder offene Frage tragen.",
+      "Reine Wetter-, Orts- oder Stimmungsbeschreibung ohne Neugiermechanik ist als Hook verboten.",
+      "Die Verbindung zum Titel/Kernthema muss innerhalb der ersten zwei Sätze klar sein.",
+      "Der Hook darf nicht bereits die ganze Antwort vorwegnehmen.",
+      "Der Hook verspricht eine konkrete Auflösung, ohne Clickbait zu erfinden."
+    ]
+  },
+  "durationQuality": {
+    "requiredFromPipelineVersion": 7,
+    "preferredEffectiveWordsPerMinute": [
+      155,
+      165
+    ],
+    "allowedEffectiveWordsPerMinute": [
+      150,
+      170
+    ],
+    "estimatedDurationTolerancePercent": 8,
+    "rule": "Die Wortzahl muss zur geplanten Zieldauer passen. Zu kurze Skripte werden vor der Produktion blockiert; die spätere echte Audiodauer wird zusätzlich als Hard-Gate gegen targetDurationRangeSeconds geprüft."
+  }
 }
