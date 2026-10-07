@@ -41,6 +41,10 @@ Stand: 2026-10-07
 - feste Struktur: Hook → Setup → Hauptteil → Auflösung → Schluss
 - `SCRIPT_PLAN.json` pro Video mit exakten Abschnittsankern
 - Phase-1-Gate prüft Skriptstruktur, Hook-Start, generische Intros, Wortdichte, Satzlänge und exakte Wiederholungen
+- Pipeline v7 verlangt einen echten Neugier-Hook statt reiner Atmosphärenbeschreibung
+- Pipeline v7 verlangt `visualContinuityProfile` für Umgebung, Klima, Epoche und Grundstimmung
+- Flow führt nach jedem 5er-Bildblock stille Qualitätskontrolle durch und repariert schlechte Bilder automatisch
+- Pacing-QC blockiert Render, wenn die echte Videodauer außerhalb `targetDurationRangeSeconds` liegt
 
 ## Warum keine Bildreferenz mehr
 
