@@ -92,6 +92,8 @@ Pflicht:
 - Voice-over-Skript
 - `SCRIPT_PLAN.json` mit Hook, Setup, Hauptteil, Auflösung und Schluss
 - kanaltypisches Skript-Gate nach `config/script-policy.json`
+- Hook-Metadaten: hookType, curiosityGap, titleConnection, payoffPromise
+- visualContinuityProfile für Umgebung/Klima/Epoche/Grundstimmung
 - Ziel-Länge
 - inhaltsgetriebene Bildzahl
 - Audio-Anker
@@ -118,6 +120,10 @@ Bildplan-Regeln:
 
 Skriptregeln:
 - Hook beginnt direkt, ohne Begrüßung oder „In diesem Video ...“
+- erster Satz enthält bereits Problem, Widerspruch, Überraschung oder offene Frage
+- reine Atmosphären-/Wetterbeschreibung ist kein ausreichender Hook
+- Titelbezug innerhalb der ersten zwei Sätze
+- Hook bis Setup kompakt, Ziel max. ca. 45 Wörter
 - Setup bleibt kurz
 - Hauptteil erzählt eine Entwicklung statt einer bloßen Faktenliste
 - alle ca. 20–40 Sekunden neuer Informationsimpuls
@@ -125,7 +131,7 @@ Skriptregeln:
 - Schluss sehr kurz, kein langes Outro
 - natürliches Deutsch, keine KI-Floskeln
 - 32 Wörter pro Satz Hard-Max
-- Wortdichte ungefähr 115–180 Wörter/Minute
+- Pipeline v7+: Wortdichte ungefähr 150–170 effektive Wörter/Minute, bevorzugt 155–165
 - möglichst jeder Absatz muss visualisierbar sein
 
 Details: `channel/SCRIPT_SYSTEM.md`
@@ -173,6 +179,10 @@ Erst danach:
 - keine Kopien der Verlierer behalten
 
 ### Phase 4: automatische 5er-Blöcke bis Bild NN
+
+Vor und während der Generierung gilt zusätzlich das `visualContinuityProfile` aus `video.json`. Klima, Jahreszeit, Epoche, Vegetation und Grundstimmung dürfen nicht unbegründet springen.
+
+Nach jedem 5er-Block führt Flow **intern** eine Bild-QC durch. Schlechte Bilder werden unter derselben Bildnummer neu erzeugt, bevor automatisch der nächste Block startet. Der Nutzer wird dafür nicht gefragt.
 Nach der Coverwahl läuft Flow automatisch weiter:
 
 ```text
@@ -290,7 +300,7 @@ Reihenfolge:
 5. Whisper auf optimiertem Audio
 6. Bildanker ausrichten
 7. finale Timeline bauen
-8. Pacing prüfen
+8. Pacing + echte Gesamtdauer gegen `targetDurationRangeSeconds` prüfen
 9. Pre-Render-QC
 10. Remotion rendern
 11. Thumbnail aus Bild 01 kopieren
@@ -340,6 +350,7 @@ Ein Video ist erst fertig, wenn:
 - echte Wortzeiten vorliegen
 - Timeline keine Lücken/Überlappungen hat
 - Pacing bestanden ist
+- tatsächliche Videodauer innerhalb von `targetDurationRangeSeconds` liegt
 - `FINAL_VIDEO.mp4` existiert
 - `THUMBNAIL.png` existiert
 - `YOUTUBE_UPLOAD.txt` existiert
