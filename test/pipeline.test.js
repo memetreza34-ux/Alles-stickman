@@ -75,6 +75,9 @@ test('Pipeline v6 wartet nur beim Cover und setzt 5er-Blöcke automatisch fort',
   assert.equal(policy.imagePolicy.finalCountMustMatchPlannedImageCount, true);
   assert.equal(policy.imagePolicy.missingImageRepairRequired, true);
   assert.equal(policy.imagePolicy.repairOnlyMissingOrBroken, true);
+  assert.equal(policy.imagePolicy.finalImageDirectory, '00-bildprompts/images');
+  assert.equal(policy.imagePolicy.finalFolderMustBeFlat, true);
+  assert.equal(policy.imagePolicy.finalFolderOnlyNumberedImages, true);
   assert.equal(policy.imagePolicy.referenceMode, 'none');
   assert.equal(policy.imagePolicy.useImageReferences, false);
   assert.equal(policy.imagePolicy.generatedImageReferenceForbidden, true);
@@ -102,6 +105,9 @@ test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Vis
   assert.equal(meta.imageDensityPolicy.referenceMode, 'none');
   assert.equal(meta.imageDensityPolicy.useImageReferences, false);
   assert.equal(meta.imageDensityPolicy.generatedImageReferenceForbidden, true);
+  assert.equal(meta.imageDensityPolicy.finalImageDirectory, '00-bildprompts/images');
+  assert.equal(meta.imageDensityPolicy.finalFolderMustBeFlat, true);
+  assert.equal(meta.imageDensityPolicy.finalFolderOnlyNumberedImages, true);
   assert.match(prompt, /ACTIVE_STYLE_ID: UNSET/);
   assert.match(prompt, /ALLES STICKMAN/i);
   assert.match(prompt, /GENAU 3 COVER/i);
@@ -177,7 +183,7 @@ test('Drittes Testprojekt nutzt Illustration-zuerst und besteht Phase 1', async 
   const scriptPlan = JSON.parse(await readFile(path.join(THIRD_TEST_PROJECT, '99-technik', 'SCRIPT_PLAN.json'), 'utf8'));
   const script = await readFile(path.join(THIRD_TEST_PROJECT, '01-voice-script', 'voice-script.txt'), 'utf8');
   const prompt = await readFile(path.join(THIRD_TEST_PROJECT, '00-bildprompts', 'google-flow-prompt.txt'), 'utf8');
-  assert.equal(meta.pipelineVersion, 5);
+  assert.equal(meta.pipelineVersion, 6);
   assert.equal(meta.plannedImageCount, 16);
   assert.ok(meta.targetDurationSeconds <= 120);
   assert.equal(meta.coverPolicy.autoSelectWinner, false);
@@ -192,6 +198,9 @@ test('Drittes Testprojekt nutzt Illustration-zuerst und besteht Phase 1', async 
   assert.equal(meta.imageDensityPolicy.continueUntilImageNN, true);
   assert.equal(meta.imageDensityPolicy.finalIntegrityCheckRequired, true);
   assert.equal(meta.imageDensityPolicy.missingImageRepairRequired, true);
+  assert.equal(meta.imageDensityPolicy.finalImageDirectory, '00-bildprompts/images');
+  assert.equal(meta.imageDensityPolicy.finalFolderMustBeFlat, true);
+  assert.equal(meta.imageDensityPolicy.finalFolderOnlyNumberedImages, true);
   assert.equal(mapping.images.length, 16);
   assert.equal(scriptPlan.status, 'READY');
   assert.equal(script.indexOf(scriptPlan.sections[0].startAnchor), 0);
