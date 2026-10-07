@@ -24,6 +24,9 @@ Stand: 2026-10-06
 - Folgebilder werden in maximal 5er-Blöcken erzeugt
 - maximal 5 aktive Generationen
 - flexible Visual Forms: Szenen, Objekte, Karten, Diagramme, Multi-Panels, Prozesse, Text-/Zahlenbilder usw.
+- **Illustration-zuerst-Priorität:** reichhaltige Szenen/Objekt-in-Kontext-Bilder sind Standard; reine Infografiken/Diagramme nur bei echtem Erklärvorteil
+- Bilddichte darf mittel bis reichhaltig sein: mehrere Figuren, Kleidung, Bärte, Tiere, Werkzeuge, Gebäude, Landschaft und Nebenhandlungen sind erlaubt, solange die Blickführung klar bleibt
+- mehrere sterile Info-/Diagramm-Karten direkt hintereinander sollen vermieden werden
 - finale Bilder liegen gemeinsam und flach in `00-bildprompts/images/`
 - Phase-1-Validator prüft Cover-Autowahl, Referenzfreiheit und 5er-Block-Regeln
 - Phase-2-Validator lehnt zusätzliche Bilddateien und Unterordner im finalen Bilderordner ab
