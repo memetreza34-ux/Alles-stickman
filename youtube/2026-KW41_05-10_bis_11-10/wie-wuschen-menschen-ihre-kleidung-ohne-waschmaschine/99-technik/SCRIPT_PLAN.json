@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "structure": [
+    "hook",
+    "setup",
+    "main",
+    "resolution",
+    "closing"
+  ],
+  "sections": [
+    {
+      "id": "hook",
+      "startAnchor": "Heute drückst du einen Knopf.",
+      "purpose": "Sofort den Kontrast zwischen modernem Knopfdruck und früherer Handarbeit öffnen.",
+      "hookType": "contrast",
+      "curiosityGap": "Wie wurde Kleidung ohne Strom und Waschmaschine tatsächlich sauber?",
+      "titleConnection": "Die Waschmaschine und ihr Fehlen stehen direkt im ersten Kontrast.",
+      "payoffPromise": "Das Video zeigt die einzelnen Arbeitsschritte, die früher gemeinsam die Maschine ersetzten.",
+      "sceneSettingOnly": false
+    },
+    {
+      "id": "setup",
+      "startAnchor": "Es gab nicht die eine Methode.",
+      "purpose": "Historische Unterschiede kurz einordnen und den 19.-Jahrhundert-Waschtag als konkrete Beispielwelt setzen."
+    },
+    {
+      "id": "main",
+      "startAnchor": "Zuerst musste Wasser her.",
+      "purpose": "Den Waschtag als klare Abfolge von Wasser holen, Einweichen, Waschen, Kochen, Spülen, Wringen, Trocknen und Nacharbeit erzählen."
+    },
+    {
+      "id": "resolution",
+      "startAnchor": "Der entscheidende Punkt:",
+      "purpose": "Die Hook-Frage beantworten: mehrere physische Prozesse und viel Arbeit ersetzten die Maschine."
+    },
+    {
+      "id": "closing",
+      "startAnchor": "Die Waschmaschine hat also nicht das Waschen erfunden.",
+      "purpose": "Mit dem klaren Vorher-Nachher-Gedanken enden: viele schwere Schritte wurden zu einem Knopfdruck."
+    }
+  ]
+}
