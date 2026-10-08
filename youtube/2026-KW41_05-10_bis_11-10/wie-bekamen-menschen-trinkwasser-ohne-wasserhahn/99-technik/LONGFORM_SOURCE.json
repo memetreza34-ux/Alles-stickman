@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "status": "DRAFT",
+  "videoTitle": "Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?",
+  "targetDurationSeconds": 400,
+  "chapters": [
+    {
+      "key": "hook",
+      "name": "Ohne Wasserhahn",
+      "era": "historische Stadt, allgemein",
+      "shots": [
+        [
+          "Eine große Stadt konnte prächtige Häuser haben – und trotzdem an einem ganz einfachen Problem scheitern.",
+          "Weite, reichhaltige Stadtansicht mit dichtem Häusermeer; vorn eine Figur hält einen leeren Krug, weit hinten nur eine kleine Wasserquelle. Sichtbarer Konflikt: viele Häuser, wenig erreichbares Wasser."
+        ],
+        [
+          "Ohne Wasserhahn musste jeder Schluck erst gefunden, transportiert und irgendwie verteilt werden.",
+          "Gleiche historische Stadtstraße; mehrere individuell gekleidete Figuren tragen Krüge auf verschiedenen Wegen, einer zeigt auf ein leeres Gefäß; dynamische, aber klare Leserichtung."
+        ],
+        [
+          "Wie versorgten Menschen früher ganze Städte, wenn Wasser nicht einfach aus der Wand kam?",
+          "Dramatische Übersicht: trockener Stadtbrunnen im Vordergrund, jenseits der Mauern Quelle im Hügel; starke Frage über Distanz und Versorgung."
+        ]
+      ]
+    },
+    {
+      "key": "setup",
+      "name": "Die drei Aufgaben",
+      "era": "neutrale historische Siedlung",
+      "shots": [
+        [
+          "Die Antwort hängt davon ab, wo Menschen lebten und welche Landschaft sie umgab.",
+          "Breiter illustrierter Landschaftsvergleich: Flusstal, felsige Quelle und trockene Ebene, jeweils eine kleine andere Siedlung; keine Textwand."
+        ],
+        [
+          "Aber fast überall mussten sie zuerst dieselben drei Aufgaben lösen: Wasser finden, heranholen und möglichst brauchbar halten.",
+          "In einem zusammenhängenden Dorfhof drei Aktionen: Wasser schöpfen, transportieren, in bedecktes Tongefäß füllen; diskrete Labels FINDEN, BRINGEN, AUFBEWAHREN."
+        ],
+        [
+          "Ein naher Fluss war praktisch, doch er brachte eigene Probleme mit sich.",
+          "Person schöpft am Ufer, daneben oberhalb Vieh und schlammiger Zulauf; nicht als sichere Trinkquelle darstellen."
+        ],
+        [
+          "Eine Quelle konnte vielversprechender sein, aber nicht jedes Dorf hatte eine direkt vor der Haustür.",
+          "Quellenaustritt aus Fels in bewaldetem Hügelland, Dorf unten im Tal mit weitem Fußweg, zwei Figuren mit Krügen."
+        ]
+      ]
+    },
+    {
+      "key": "sources",
+      "name": "Wasser aus Landschaft",
+      "era": "historische Flussdörfer",
+      "shots": [
+        [
+          "Deshalb entstanden viele Siedlungen dort, wo Flüsse, Seen oder natürliche Quellen erreichbar waren.",
+          "Panorama eines historisch neutralen Flusstals mit mehreren kleinen Häusern nahe Wasserlauf, Felder und schmale Wege; Fokus Wasser als Siedlungsanker."
+        ],
+        [
+          "Wer Wasser benötigte, ging zum Ufer, zur Quelle oder zu einer bekannten Wasserstelle.",
+          "Mehrere Menschen mit Tonkrügen am ruhigen Flussabschnitt; eine Figur schöpft vorsichtig, andere wartet; Alltag statt Technikplakat."
+        ],
+        [
+          "Das klang einfach, bis aus einem kleinen Dorf ein dicht bewohnter Ort wurde.",
+          "Vorher/Nachher als zwei lebendige Mini-Szenen: drei Hütten mit kurzer Wasserroute versus größere Siedlung mit Menschenreihe."
+        ],
+        [
+          "Plötzlich brauchten viel mehr Menschen Wasser, und der Weg wurde zur täglichen Arbeit.",
+          "Lange Straße zur Wasserstelle, verschiedene Figuren tragen schwere Krüge, dicht stehende Häuser im Hintergrund."
+        ],
+        [
+          "Auch Tiere, Werkstätten und Gärten beanspruchten Wasser, das nicht unbegrenzt vorhanden war.",
+          "Historische Siedlung mit Brunnen am Zentrum, daneben Schaf, Handwerk, Gartenbeete; klarer gemeinsamer Wasserkonflikt."
+        ]
+      ]
+    },
+    {
+      "key": "springs",
+      "name": "Quellen",
+      "era": "felsiges Quellgebiet und Dorf",
+      "shots": [
+        [
+          "Besonders interessant waren Quellen: Dort tritt Wasser, das sich im Boden bewegt, von selbst an die Oberfläche.",
+          "Illustrierte Gelände-Seitenansicht mit Berg, Poren im Gestein und natürlichem Wasseraustritt, darüber zwei historische Figuren an echter Quelle; keine sterile Lehrtafel."
+        ],
+        [
+          "Regen versickert und füllt unter geeigneten Bedingungen die wasserführenden Schichten im Untergrund wieder auf.",
+          "Grasiger Berghang im Regen, kleine integrierte Untergrund-Schnittblase mit Tropfen durch lockeres Gestein; klare Sonne/Regentrennung."
+        ],
+        [
+          "Wo solche Schichten den Hang schneiden, kann Wasser als Rinnsal oder kräftiger Strom austreten.",
+          "Zwei benachbarte Quellstellen: kleiner feuchter Hang und starke Quelle zwischen Steinen; jeweils Figuren mit Krügen als Größenvergleich."
+        ],
+        [
+          "Menschen konnten den Ausfluss einfassen und Behälter genau dort füllen, wo das Wasser herauskam.",
+          "Einfach gemauerte historische Quellfassung am Hang mit Tongefäßen und zwei Personen, Laub und Stein als Hintergrund."
+        ],
+        [
+          "Doch auch eine Quelle konnte zeitweise weniger Wasser liefern, besonders bei anhaltender Trockenheit.",
+          "Gleiche Quellfassung mit niedrigerem Ausfluss in trockenerem Wetter, nicht kompletter Jahreszeitenwechsel; ein wartender Mensch blickt in halb gefüllten Krug."
+        ]
+      ]
+    },
+    {
+      "key": "wells",
+      "name": "Brunnen",
+      "era": "historisches Dorf und Erdquerschnitt",
+      "shots": [
+        [
+          "Manche Orte hatten keine gute Quelle in Reichweite, aber unter ihren Füßen lag Grundwasser.",
+          "Dorf auf Ebene, in der unteren Bildhälfte sanfter vereinfachter Erdquerschnitt mit wasserführender Schicht; oben Menschen suchen Brunnenstandort."
+        ],
+        [
+          "Statt jeden Tag weit zu laufen, konnten Menschen einen Brunnen bis zu wasserführenden Schichten graben.",
+          "Historische Gruppe gräbt einen Brunnen mit einfachen Werkzeugen und Holzstützen; sachliche, nicht sicherheitsanleitende Szene."
+        ],
+        [
+          "Wasser stand dann im unteren Teil des Schachts und ließ sich mit Eimer und Seil heraufholen.",
+          "Klarer 16:9-Brunnen-Querschnitt, oben Figur kurbelt Eimer, unten Grundwasser zwischen Gesteinsporen sichtbar; lebendige Szene."
+        ],
+        [
+          "Ein Brunnen machte die Versorgung näher, doch Graben, Reinigen und Instandhalten blieben mühsam.",
+          "Historischer Brunnenhof: eine Person schöpft, andere repariert Holzaufbau, dritte reinigt Umgebung; keine moderne Pumpe."
+        ],
+        [
+          "Und wer glaubte, tiefes Wasser sei automatisch sauber, übersah bereits das nächste Problem.",
+          "Naher Brunnen mit dunklem Schatten und kleinem Lupenfenster der unsichtbaren Verschmutzung; Figur blickt skeptisch, kein Panikmotiv."
+        ]
+      ]
+    },
+    {
+      "key": "groundwater",
+      "name": "Unsichtbares Wasser",
+      "era": "historischer Brunnen, Sachillustration",
+      "shots": [
+        [
+          "Grundwasser liegt meistens nicht als riesiger unterirdischer See unter unseren Häusern.",
+          "Lebendige Schnittillustration: unten Sand, Kies und Gestein mit feinen wassergefüllten Zwischenräumen; darüber Dorf, durchgestrichener Fantasie-See nur als winzige Nebenidee."
+        ],
+        [
+          "Es füllt vielmehr winzige Zwischenräume und Risse in Boden und Gestein, fast wie Wasser in einem Schwamm.",
+          "Stark vergrößertes Kies-/Sanddetail neben einem nassen Schwamm als einfacher Objektvergleich; Figuren auf Oberfläche im kleinen Rahmen."
+        ],
+        [
+          "Wie viel davon nutzbar ist, hängt von Boden, Gestein, Regen und der Tiefe ab.",
+          "Drei benachbarte kleine Geländeillustrationen: flacher Brunnen mit Wasser, felsiger Untergrund, tiefes Wasser; wenige Symbole."
+        ],
+        [
+          "In trockenen Jahren konnte der Wasserspiegel sinken, und plötzlich reichte ein alter Brunnen nicht mehr.",
+          "Derselbe Brunnen in sachlichem Vorher/Nachher: Wasserstand früher höher, später niedriger; Eimer kommt nicht mehr tief genug."
+        ],
+        [
+          "Das bedeutete: Wasser finden war nur die erste Hälfte der Lösung.",
+          "Arbeiter am Brunnen und parallel Menschen am Wassertransport zum Dorf, zwei Aufgaben in einem Blick zusammengeführt."
+        ]
+      ]
+    },
+    {
+      "key": "rainwater",
+      "name": "Regen sammeln",
+      "era": "historischer mediterraner Haushalt",
+      "shots": [
+        [
+          "Wo Regen nur gelegentlich fiel, war das Sammeln und Speichern besonders wichtig.",
+          "Hofhaus in gemäßigt-trockenem Mittelmeerklima, erste Regentropfen auf Dach, Krüge bereit; stimmig nicht tropisch."
+        ],
+        [
+          "Von Dächern und befestigten Flächen konnte Wasser in angelegte Sammelbecken geleitet werden.",
+          "Hausdach mit einfacher Regenrinne/Steinrinne führt zu unterirdischem Speicher, integrierter Querschnitt mit Weg der Tropfen."
+        ],
+        [
+          "Solche Speicher nennt man Zisternen; sie konnten Wasser für spätere Trockenzeiten aufbewahren.",
+          "Historische Zisterne unter Hof mit überwölbtem Steinraum, darüber zwei Menschen entnehmen Wasser durch Öffnung, Label ZISTERNE."
+        ],
+        [
+          "Das war keine Zauberei, sondern eine kluge Antwort auf unregelmäßigen Regen.",
+          "Vorher/Nachher gleiche Hauswelt: Regen füllt Zisterne, trockenere Zeit mit gefülltem Speicher; klare Bildmitte Tank."
+        ],
+        [
+          "Allerdings musste man Einträge von Schmutz vermeiden und Behälter pflegen, sonst verschlechterte sich das Wasser.",
+          "Historischer Haushalt reinigt Abdeckung einer Zisterne, Laub neben Zufluss; Detailblase zeigt schwebende Teilchen, keine technische Anleitung."
+        ],
+        [
+          "Vor allem löste ein voller Speicher noch nicht die Frage, ob sein Inhalt gesundheitlich unbedenklich war.",
+          "Mensch hält klares Wasser in Tonbecher, kleine Lupenblase mit unsichtbaren Keimen als didaktisches Symbol; keine Behauptung Wasser sei sicher."
+        ]
+      ]
+    },
+    {
+      "key": "rome",
+      "name": "Wasser für die Großstadt",
+      "era": "antikes Rom, römisches Umland",
+      "shots": [
+        [
+          "Jetzt kommt das größte Problem: Was macht eine Stadt, wenn ihre nächste gute Wasserquelle weit weg liegt?",
+          "Weite antike Stadtmauer im Tal, hoch gelegene Quelle in fernen Hügeln; eine Person zeigt auf die riesige Distanz."
+        ],
+        [
+          "Die Römer bauten dafür Aquädukte, die Wasser aus entfernten Gebieten in Städte führten.",
+          "Römische Bauarbeiter formen steinerne Wasserleitung im Umland, Fluss/Quelle in Ferne, antike Stadt als Ziel; kein moderner Maschinenpark."
+        ],
+        [
+          "Viele Kanäle verliefen unsichtbar unter der Erde oder knapp über dem Boden.",
+          "Breite Landschaft mit dezenter halbtransparenter Schnittdarstellung eines unterirdischen römischen Kanals, oben Feldweg und Arbeitern."
+        ],
+        [
+          "Die berühmten hohen Bögen waren vor allem dort nötig, wo Geländeunterschiede überbrückt werden mussten.",
+          "Römische Wasserleitung nähert sich Tal; imposante Arkaden führen Kanal auf geeigneter Höhe über Senke, Umgebung glaubwürdig."
+        ],
+        [
+          "Damit Wasser floss, brauchte der Kanal über weite Strecken ein sorgfältig geplantes Gefälle.",
+          "Sehr anschaulicher länglicher Querschnitt mit leichten Neigungspfeilen; zwei römische Vermesser messen Höhen mit einfachen Werkzeugen; kein Zahlenmeer."
+        ],
+        [
+          "Nicht ein Motor schob das Wasser an, sondern die Schwerkraft erledigte die Arbeit.",
+          "Querschnitt eines geneigten Stein-Kanals mit fließendem Wasser und schlichter Pfeilrichtung bergab, daneben erstaunte Stickman-Figur, kein Motor."
+        ],
+        [
+          "Doch ein riesiges Bauwerk war nutzlos, wenn Ablagerungen den Wasserweg mit der Zeit verstopften.",
+          "Arbeiter in begehbarer gemauerter Wartungsöffnung entfernen Sedimente aus antikem Kanal, sicherer zeichnerischer Kontext."
+        ],
+        [
+          "Deshalb musste die Versorgung nicht nur gebaut, sondern regelmäßig beaufsichtigt und instand gesetzt werden.",
+          "Römischer Aufseher mit Wachstafel steht am Zugang, Arbeiter prüfen Wasserlauf; antike Stadt in Entfernung."
+        ]
+      ]
+    },
+    {
+      "key": "romecity",
+      "name": "Wasser in Rom",
+      "era": "römische Stadtstraßen, öffentliches Leben",
+      "shots": [
+        [
+          "Am Stadtrand wurde das ankommende Wasser verteilt, statt einfach überall unkontrolliert hinzufließen.",
+          "Römischer Verteilerkasten castellum in Stein, mit mehreren abzweigenden Leitungen als vereinfachtes Sachbild innerhalb echter Stadtrand-Szene."
+        ],
+        [
+          "Es gelangte unter anderem zu öffentlichen Brunnen, Badeanlagen und manchen privaten Anschlüssen.",
+          "Dreieransicht echter römischer Stadtbereiche: öffentlicher Brunnen, Thermen, besser ausgestattetes Haus, über gemeinsame Wasserlinie verbunden."
+        ],
+        [
+          "An öffentlichen Brunnen konnten Menschen Gefäße füllen, ohne einen eigenen Hausanschluss zu besitzen.",
+          "Belebter römischer Straßenbrunnen mit mehreren unterschiedlich gekleideten Bewohnern und Tonkrügen, römische Häuser im Hintergrund."
+        ],
+        [
+          "Für viele war genau das der entscheidende Unterschied zum heutigen Wasserhahn.",
+          "Ein römischer Bewohner trägt zwei Krüge vom Straßenbrunnen durch enge Gasse zur Wohnung; am Rand kleines modernes Hahn-Symbol nur als Vergleich."
+        ],
+        [
+          "Die Wasserversorgung war also auch eine Frage von Wegen, Zeit und Zugang.",
+          "Römische Straßenecke: kurze Route zu Brunnen vs langer Weg für ärmere Wohnlagen; zwei figürliche Alltagsszenen, keine übertriebene Sozialbehauptung."
+        ],
+        [
+          "Ein Aquädukt machte nicht automatisch jeden Haushalt gleich bequem und gleich sicher.",
+          "Römisches Stadthaus mit Privatzuleitung neben dichtem Wohnhaus mit Menschen am öffentlichen Brunnen, klare unterschiedliche Versorgung."
+        ]
+      ]
+    },
+    {
+      "key": "qanat",
+      "name": "Wasser unter der Wüste",
+      "era": "historisches trockenes iranisches Hochland, keine römische Architektur",
+      "shots": [
+        [
+          "Doch was geschah in trockenen Landschaften, wo ein offener Kanal viel Wasser verlieren konnte?",
+          "Weite trockene iranische Hochebene mit gleißender Sonne, kleiner Siedlung und langer offener Rinne, dezente Verdunstungs-Symbole."
+        ],
+        [
+          "In Teilen Irans entstand eine andere bemerkenswerte Idee: der Qanat.",
+          "Historische iranische Siedlung mit Lehmarchitektur und Gärten; großer Schnitt zeigt unterirdischen Kanal vom Gebirge zum Ort, Label QANAT."
+        ],
+        [
+          "Dort sammelte ein sanft geneigter Tunnel Grundwasser und leitete es zur Siedlung.",
+          "Seitenansicht trockenes Gebirge, Schotter-/Grundwasserzone, sanft geneigter Tunnel; überirdisch kleine historische Figuren als Maßstab."
+        ],
+        [
+          "Die Strecke lief überwiegend unter der Erde, geschützt vor direkter Sonneneinstrahlung.",
+          "Einfacher illustrativer Querschnitt mit Sonne oben, Wasser im kühlen unterirdischen Tunnel unten; handgezeichnete Erde und Steine."
+        ],
+        [
+          "Senkrechte Schächte halfen beim Bau und gaben später Zugang für Wartungsarbeiten.",
+          "Qanat mit regelmäßig abstehenden vertikalen Schächten, Arbeiter an einer Öffnung mit Ton-/Holzwerkzeug, keine gefährliche Schritt-für-Schritt-Anleitung."
+        ],
+        [
+          "Auch hier floss Wasser durch Gefälle, ohne elektrische Pumpen.",
+          "Langer Tunnel mit fließendem Wasser zur bewachsenen Oase am Ausgang, kleine Pfeile zeigen Richtung; Sachillustration mit Landschaft."
+        ],
+        [
+          "Solche Anlagen verlangten großes Können und gemeinschaftliche Pflege über viele Generationen.",
+          "Menschen verschiedenem Alters bei Brunnen-/Kanalausgang, jemand dokumentiert, andere pflegen den Zugang; traditionelle Siedlung und Gärten."
+        ]
+      ]
+    },
+    {
+      "key": "everyday",
+      "name": "Der tägliche Weg",
+      "era": "historische Stadt und Dorf, neutral unterschiedliche Regionen als Montage",
+      "shots": [
+        [
+          "Von außen sehen diese Lösungen wie technische Wunderwerke aus, doch für Bewohner blieb Wasser tägliche Arbeit.",
+          "Lebendiger historischer Dorfbrunnen morgens, Menschen stehen an, tragen Krüge, Kinder helfen mit, neutrale Szene."
+        ],
+        [
+          "Jemand musste einen Krug füllen, nach Hause bringen und das Wasser dort aufbewahren.",
+          "Eine Person transportiert gefüllten Tonkrug durch gepflasterte Gasse und stellt ihn zu Hause in schattige Ecke, Mini-Sequenz."
+        ],
+        [
+          "War der Weg lang, bedeutete schon ein einzelner Gang viel Zeit und körperliche Anstrengung.",
+          "Historische Wanderroute von entferntem Brunnen über staubigen Weg, mehrere erschöpfte, aber kompetente Personen mit Krügen."
+        ],
+        [
+          "Und für Kochen, Waschen oder Handwerk reichte ein kleiner Trinkbecher natürlich nicht aus.",
+          "Historischer Hausinnenhof mit Kochtopf, Wäschewanne und Handwerkerbottich, Krüge in der Mitte; Labels optional."
+        ],
+        [
+          "Versorgung war deshalb nicht nur eine Frage genialer Bauwerke, sondern auch der Organisation im Alltag.",
+          "Dorfgemeinschaft verteilt Schöpfzeiten, eine Figur zeigt Liste an Tafel, andere tragen Wasser; keine Fantasie-Bürokratie."
+        ]
+      ]
+    },
+    {
+      "key": "quality",
+      "name": "Klares Wasser – gefährliches Wasser?",
+      "era": "vergleichende historische Wasserstellen",
+      "shots": [
+        [
+          "Bleibt die wichtigste Frage: War das Wasser aus Brunnen, Quellen oder Aquädukten überhaupt sauber genug?",
+          "Geteilte historische Szene: Glas/Tonbecher mit klar wirkendem Wasser, dahinter verborgen verunreinigter Zufluss, große Frage."
+        ],
+        [
+          "Klares Aussehen allein bewies nicht, dass das Wasser frei von Krankheitserregern war.",
+          "Tonbecher mit kristallklarem Wasser, kleine gut lesbare Lupe zeigt Mikroorganismen als vereinfachte Symbole; seriös, keine Monster."
+        ],
+        [
+          "Abfälle und verschmutzte Zuflüsse konnten Gewässer belasten, selbst wenn der Schaden unsichtbar blieb.",
+          "Flussoberlauf mit Siedlungsabfällen oberhalb eines Wasserentnahmepunktes, aus Distanz erkennbarer Zusammenhang; nicht ekelerregend."
+        ],
+        [
+          "Manche Menschen ließen trübes Wasser stehen, damit schwerere Teilchen nach unten sanken.",
+          "Historische Tongefäße mit Wasser: links aufgewirbelt, rechts Sediment unten; ruhige Sachillustration in echtem Hof."
+        ],
+        [
+          "Andere nutzten Siebe oder einfache Filter, um sichtbaren Schmutz zurückzuhalten.",
+          "Historische Person gießt trübes Wasser durch einfaches Tuch/Sieb in Gefäß; kleine Teilchen werden zurückgehalten, keine Sicherheitssiegel."
+        ],
+        [
+          "Aber solche Verfahren machten Wasser nicht automatisch frei von unsichtbaren Erregern.",
+          "Person zeigt auf deutliches Warn-Zeichen neben gefiltertem Becher, kleines Lupenfeld für Keime; keine falsche Sterilitätsbehauptung."
+        ],
+        [
+          "Auch Erhitzen konnte bestimmte Keimrisiken senken, doch es beseitigte nicht jede mögliche Verunreinigung.",
+          "Historisches Kochgefäß über Feuer, kleine separate Symbolhinweise auf Keime und chemische Belastung; keine konkreten Sanitär-Anweisungen."
+        ]
+      ]
+    },
+    {
+      "key": "modern",
+      "name": "Warum moderne Leitungen anders sind",
+      "era": "frühe moderne Trinkwasseranlagen und Gegenwart, zeitlicher Wechsel klar markiert",
+      "shots": [
+        [
+          "Mit wachsenden Städten wurde die alte Aufgabe immer dringender: nicht nur viel Wasser, sondern verlässlich sicheres Wasser.",
+          "Historisches Stadtpanorama geht in städtisches Versorgungsnetz über, Wasserrohr und Menschenmenge, warme Stilwelt."
+        ],
+        [
+          "Moderne Wasserversorgung verbindet deshalb die Auswahl der Quelle mit technischer Aufbereitung und laufender Kontrolle.",
+          "Illustriertes modernes Wasserwerk neben einem Fluss, drei große Stationen: Entnahme, Aufbereitung, Kontrolle, Figuren in schlichter Arbeitskleidung."
+        ],
+        [
+          "Je nach Ausgangswasser kommen Schritte wie Absetzen, Filtern und Desinfizieren zum Einsatz.",
+          "3er-Mini-Szenen moderner Anlage, Becken Sedimentation, Filtersäule, technische Kontrolle der Desinfektion; nicht als Bauanleitung."
+        ],
+        [
+          "In vielen Städten verringerte eine systematische Desinfektion das Risiko schwerer wasserbedingter Krankheiten deutlich.",
+          "Historischer Stadtbrunnen geht per sanfter Zeitleiste zu modernem Wasserwerk über; Ärztin und Familie im Hintergrund, keine genauen Sterberaten."
+        ],
+        [
+          "Ein Hahn in der Küche ist daher nur das sichtbare Ende einer viel größeren Infrastruktur.",
+          "Moderne Küche mit einfachem Wasserhahn, groß im Hintergrund eingeblendete geschichtete Stadtleitungen, Wasserwerk und Quellgebiet; kein Hochglanz."
+        ]
+      ]
+    },
+    {
+      "key": "resolution",
+      "name": "Die eigentliche Antwort",
+      "era": "illustrierte Weltkarte/Montage historischer Lösungen",
+      "shots": [
+        [
+          "Die Lösung war nie einfach: Menschen fanden Wasser in Flüssen und Quellen, gruben Brunnen und sammelten Regen.",
+          "Reichhaltige große Zusammenführungsmontage aus Flussufer, Bergquelle, Dorfbrunnen und Zisterne, in einheitlicher Editorial-Welt."
+        ],
+        [
+          "Für große Entfernungen entstanden Kanäle, Aquädukte und unterirdische Tunnel, die Wasser dorthin brachten, wo Menschen lebten.",
+          "Großes zusammenhängendes Landschaftspanorama: römische Leitung links und iranischer Qanat rechts als bewusst beschrifteter Vergleich zweier Regionen."
+        ],
+        [
+          "Die wichtigste Entdeckung dahinter war oft erstaunlich einfach: Wasser folgt dem Gefälle.",
+          "Klarer illustrativer Berg-zu-Stadt-Querschnitt mit Wasserfluss bergab, römischer Kanal und Qanat als kleine Beispiele, großer Label GEFÄLLE."
+        ],
+        [
+          "Doch selbst die klügste Leitung half wenig, wenn das Wasser verschmutzt war oder niemand es warten konnte.",
+          "Große Szene historischer Wasserverteiler: Mitarbeiter prüft Kanal, anderer reinigt Brunnenfassung, Warn-Lupenfeld für Wasserqualität."
+        ],
+        [
+          "Erst das Zusammenspiel aus Wasserquelle, Transport, Speicherung und Sicherheit machte eine Versorgung wirklich zuverlässig.",
+          "Vier große physische Teile einer durchgängigen Landschaftsszene: Quelle, Leitung, Zisterne, kontrollierter moderner Zapfhahn; unaufdringliche kurze Labels."
+        ]
+      ]
+    },
+    {
+      "key": "closing",
+      "name": "Schluss",
+      "era": "historischer Krug und moderner Hahn, Vergleich",
+      "shots": [
+        [
+          "Wenn du heute den Wasserhahn öffnest, siehst du deshalb nur die letzten Zentimeter einer uralten Idee.",
+          "Vorher/Nachher-Handlung: historische Person hebt schweren Krug, moderne Person dreht Wasserhahn; selbe handgezeichnete Welt."
+        ],
+        [
+          "Früher musste Wasser zu den Menschen getragen werden – heute übernimmt das meist ein verborgenes Netz.",
+          "Großes Abschlussbild: links Krugweg durch historische Straße, rechts Leitungen unter moderner Stadt, verbindender Wasserfluss; kein Abspann."
+        ]
+      ]
+    }
+  ]
+}
