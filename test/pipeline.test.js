@@ -14,6 +14,7 @@ const TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-feu
 const SECOND_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-essen-ohne-kuehlschrank-haltbar';
 const THIRD_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-ueberlebten-menschen-eisige-winter-ohne-heizung';
 const FOURTH_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-wuschen-menschen-ihre-kleidung-ohne-waschmaschine';
+const LONGFORM_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-bekamen-menschen-trinkwasser-ohne-wasserhahn';
 
 test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', async () => {
   const visual = JSON.parse(await readFile('config/visual-policy.json', 'utf8'));
@@ -273,6 +274,32 @@ test('Viertes Testprojekt nutzt Pipeline v7 mit starkem Hook und stabiler Story-
   assert.match(prompt, /Bild 20/i);
   const result = await validatePhase1(FOURTH_TEST_PROJECT);
   assert.equal(result.passed, true, result.errors.join('\n'));
+});
+
+test('Erstes 6–7-Minuten-Longform hat recherchiertes Skript und 78 vollständige Szenen', async () => {
+  const dir = LONGFORM_PROJECT;
+  const meta = JSON.parse(await readFile(path.join(dir, '99-technik', 'video.json'), 'utf8'));
+  const script = await readFile(path.join(dir, '01-voice-script', 'voice-script.txt'), 'utf8');
+  const map = JSON.parse(await readFile(path.join(dir, '99-technik', 'BILD_AUDIO_ZUORDNUNG.json'), 'utf8'));
+  const source = JSON.parse(await readFile(path.join(dir, '99-technik', 'LONGFORM_SOURCE.json'), 'utf8'));
+  const plan = JSON.parse(await readFile(path.join(dir, '99-technik', 'LONGFORM_CHAPTER_PLAN.json'), 'utf8'));
+  assert.equal(meta.contentMode, 'longform');
+  assert.equal(meta.targetDurationSeconds, 400);
+  assert.deepEqual(meta.targetDurationRangeSeconds, [365, 420]);
+  assert.equal(meta.plannedImageCount, 78);
+  assert.equal(map.images.length, 78);
+  assert.equal(script.trim().split(/\\s+/).length, 1048);
+  assert.equal(source.scriptWords, 1048);
+  assert.equal(source.status, 'READY');
+  assert.equal(plan.sections.length, 15);
+  assert.ok(meta.longformProfile.retentionBeatAnchors.length >= 5);
+  assert.equal(meta.coverPolicy.userSelectionRequired, true);
+  assert.equal(meta.imageDensityPolicy.automaticBatchContinuation, true);
+  assert.equal(meta.imageDensityPolicy.referenceMode, 'none');
+  assert.equal(map.images[0].imageFile, 'Bild 01.png');
+  assert.equal(map.images.at(-1).imageFile, 'Bild 78.png');
+  const phase1 = await validatePhase1(dir);
+  assert.equal(phase1.passed, true, phase1.errors.join('\\n'));
 });
 
 test('Pacing-QC blockiert echte Videodauer außerhalb des Zielbereichs', async () => {
