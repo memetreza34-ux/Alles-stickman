@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "motionPolicy": "gentle-default",
+  "backgroundMusic": false,
+  "motionOverrides": [],
+  "soundEffects": []
+}
