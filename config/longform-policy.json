@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "status": "READY",
+  "mode": "longform",
+  "targetDurationSecondsRange": [
+    360,
+    420
+  ],
+  "preferredDurationSecondsRange": [
+    385,
+    405
+  ],
+  "scriptPolicy": "config/script-policy.json",
+  "visualPolicy": "config/visual-policy.json",
+  "narrative": {
+    "strongHookRequired": true,
+    "hookMaxWordsBeforeSetup": 45,
+    "chapterPlanRequired": true,
+    "retentionBeatAnchorsRequired": true,
+    "minimumRetentionBeatAnchors": 5,
+    "openingMustImmediatelyStateConflict": true,
+    "shortClosingRequired": true,
+    "noFiller": true
+  },
+  "visuals": {
+    "contentDrivenImageCount": true,
+    "illustrationFirst": true,
+    "minimumAverageHoldSeconds": 4.5,
+    "maximumAverageHoldSeconds": 7.5,
+    "coverCandidates": 3,
+    "coverSelectionAuthority": "user",
+    "automaticBlocksOf": 5,
+    "batchQualityCheck": true,
+    "referenceMode": "none",
+    "finalFlatImageFolder": true,
+    "finalImageCountMustMatchPlan": true
+  },
+  "production": {
+    "audioSecondsRange": [
+      360,
+      420
+    ],
+    "renderRequiresRealAudio": true,
+    "chaptersUseRealAlignment": true,
+    "allowEmptyYoutubeChaptersUntilTimeline": true,
+    "ttsGenerationIsExternal": true,
+    "googleFlowGenerationIsExternal": true,
+    "finalArtifacts": [
+      "FINAL_VIDEO.mp4",
+      "THUMBNAIL.png",
+      "YOUTUBE_UPLOAD.txt",
+      "SUBTITLES.srt",
+      "TIMED_SCRIPT.txt"
+    ]
+  },
+  "qualityNotes": [
+    "Nicht einfach 2-Minuten-Skript verlängern. Ein Longform-Thema benötigt nachvollziehbare Probleme, Zwischenlösungen und mindestens fünf echte neue Informationsimpulse.",
+    "Weder starre Zahl 70 Bilder noch immer dieselbe Bildart erzwingen; Bildzahl aus dem Skript ableiten.",
+    "Historische Orte und Epochen bei Übergängen explizit in visualContinuityProfile belegen.",
+    "Bei Storywelt-/Anatomiefehlern einzelne Bildnummer reparieren und QC wiederholen.",
+    "Das Erfüllen von Dateitests allein ersetzt keine echte Sichtkontrolle, Quellenprüfung oder Ton-/MP4-QC."
+  ]
+}
