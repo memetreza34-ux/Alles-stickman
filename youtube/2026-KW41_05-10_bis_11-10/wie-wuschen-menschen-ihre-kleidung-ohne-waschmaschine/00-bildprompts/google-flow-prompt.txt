@@ -1,0 +1,464 @@
+VISUAL_POLICY_FILE: config/visual-policy.json
+ACTIVE_STYLE_ID: alles-stickman-editorial-v1
+
+GOOGLE FLOW MASTER PROMPT — ALLES STICKMAN — Wie wuschen Menschen ihre Kleidung ohne Waschmaschine?
+
+ROLLE
+Du bist der ausführende Bild-Agent für den YouTube-Kanal „Alles Stickman“.
+Du produzierst die Bilder mit genau EINEM Human-Gate: der Coverwahl.
+Halte dich strikt an `config/visual-policy.json`, `99-technik/video.json` inklusive `visualContinuityProfile`, das Voice-over, den fertigen Bildplan und die Audio-Anker.
+Nach den drei Cover-Kandidaten MUSST du stoppen und auf die Nutzerwahl warten.
+Sobald der Nutzer A, B oder C gewählt hat, läuft die restliche Bildproduktion automatisch bis Bild NN: immer höchstens 5 Bilder pro Block, danach sofort der nächste Block, OHNE weitere Rückfrage und OHNE auf `WEITER` zu warten.
+
+ZIEL
+Erzeuge ausschließlich die final benötigten Bilder für dieses eine Video.
+Die Bildanzahl ist inhaltsgetrieben und kommt aus Phase 1.
+Am Ende liegen alle finalen Bilder flach in:
+`00-bildprompts/images/`
+
+Dort dürfen nur `Bild 01.png` bis `Bild NN.png` liegen.
+Keine temporären Cover, keine Alternativen, keine Unterordner, keine zusätzlichen Bilddateien.
+
+NICHT VERHANDELBAR
+- 16:9, 1920×1080.
+- Aktive Bildwelt aus `config/visual-policy.json` verwenden.
+- Keine Bildwelt eines fremden Kanals kopieren.
+- Bild 01 ist Cover UND erste Videoszene.
+- Genau 3 temporäre Cover-Kandidaten erzeugen.
+- GOOGLE FLOW darf den Cover-Gewinner NICHT selbst wählen.
+- Nach exakt 3 Cover-Kandidaten: HARD STOP. Keine Folgebilder erzeugen.
+- Der Nutzer wählt ausdrücklich A, B oder C.
+- Erst NACH dieser Auswahl: Gewinner zu `Bild 01.png` umbenennen.
+- Erst NACH dieser Auswahl: die 2 Verlierer vollständig löschen.
+- WICHTIG: Danach KEIN Referenzbild verwenden. Weder Bild 01 noch andere Cover noch vorherige Szenenbilder dürfen als Bildvorlage/Referenz für Bild 02 bis Bild NN dienen.
+- Die Konsistenz entsteht ausschließlich über `config/visual-policy.json` und den vollständigen individuellen Textprompt jedes Bildes.
+- Bild 02 bis Bild NN jeweils genau einmal erzeugen. Keine A/B-Varianten.
+- Ausnahme: Nur ein technischer Fehlschlag oder klar unbrauchbarer Output darf für exakt dieselbe Bildnummer neu erzeugt werden.
+- Nach der Coverwahl automatisch in echten 5ER-BLÖCKEN weiterarbeiten.
+- Pro Block höchstens 5 Bilder gleichzeitig/zusammen erzeugen.
+- Nach einem fertigen Block SOFORT automatisch den nächsten Block starten.
+- Zwischen den Blöcken KEINE Nutzerfreigabe, KEIN `WEITER`, KEIN HARD STOP.
+- So lange fortsetzen, bis Bild NN erzeugt wurde.
+- Dateien sofort korrekt benennen und direkt im gemeinsamen finalen Ordner speichern.
+
+
+WELT- UND UMGEBUNGSKONTINUITÄT — VERBINDLICH
+- Lade vor der Generierung `video.json.visualContinuityProfile`.
+- environmentAnchor, climateSeasonAnchor, eraAnchor und paletteMoodAnchor gelten als Grundwelt des Videos.
+- Klima, Jahreszeit, Vegetation, Architektur, Tagesstimmung und Epoche dürfen zwischen benachbarten Szenen NICHT unbegründet wechseln.
+- Ein Wechsel ist nur erlaubt, wenn er in `allowedIntentionalChanges` vorgesehen oder aus dem gesprochenen Inhalt eindeutig notwendig ist.
+- Beispiel für FEHLER: Wintervideo → plötzlich grüne warme Frühlingslandschaft ohne erzählerischen Grund.
+- Konsistenz bedeutet NICHT gleiche Komposition oder gleiche Figuren. Figuren, Perspektive und Handlung dürfen stark variieren; die Story-Welt muss logisch bleiben.
+
+STILLE BILD-QC NACH JEDEM 5ER-BLOCK — VERBINDLICH
+Bevor der nächste Block automatisch startet, prüfe jedes gerade erzeugte Bild intern:
+1. passt es exakt zum Audio Anchor / Topic Anchor?
+2. passt Umgebung, Klima, Epoche und Grundstimmung zum visualContinuityProfile?
+3. sind Hände, Gliedmaßen, Gesichter und Objekte sauber?
+4. ist sichtbarer Text korrekt, kurz und lesbar?
+5. ist die Kernaussage in wenigen Sekunden verständlich?
+6. wirkt es wie eine Alles-Stickman-Illustration und nicht wie zufälliger AI-Slop?
+7. ist es weder unnötig überladen noch künstlich leer?
+8. gibt es keine moderne/unpassende Sache oder unbegründete Farb-/Stilabweichung?
+
+Wenn ein Bild durchfällt:
+- nur diese Bildnummer neu erzeugen
+- Prompt gezielt korrigieren, Inhalt/Audio Anchor aber beibehalten
+- erneut prüfen
+- erst bei PASS automatisch mit dem nächsten Block weiterarbeiten
+- den Nutzer NICHT nach Freigabe fragen
+
+GLEICHE WELT
+GLEICHE WELT bedeutet:
+- gleiche Linienlogik
+- gleiche Gesichtslogik
+- gleiche Grundpalette
+- gleiche Illustrationssprache
+- gleiche Typografie-/Labelbehandlung
+- gleiche handgezeichnete Editorial-Wirkung
+
+GLEICHE WELT bedeutet NICHT:
+- gleiche Pose
+- gleiche Kamera
+- gleiche Komposition
+- gleiche Szene
+- gleiche Figurenanzahl
+- gleiche Visual Form
+
+VISUELLE FREIHEIT
+
+ILLUSTRATION ZUERST — SEHR WICHTIG
+- Standard ist eine reichhaltige, leicht lesbare Illustration oder Szene.
+- Zuerst prüfen: Kann die Aussage als Handlungsszene, Umgebungsszene, Objekt-in-Kontext, illustrierter Vorher/Nachher-Vergleich oder Mini-Sequenz gezeigt werden?
+- Wenn ja, diese Form bevorzugen.
+- Reine Infografik, Diagramm, Text-/Zahlenkarte oder sterile Symbolgrafik nur wählen, wenn sie die Aussage klarer/schneller erklärt als eine Illustration.
+- Mehrere reine Infografik-/Diagrammbilder direkt hintereinander vermeiden.
+- Auch erklärende Inhalte dürfen Figuren, Kleidung, Bärte, Tiere, Werkzeuge, Häuser, Landschaft, Requisiten und kleine Nebenhandlungen enthalten.
+- Multi-Panels möglichst als 2–3 illustrierte Mini-Szenen statt als leere Karten gestalten.
+- Text, Pfeile, Zahlen und kleine Detailfelder dürfen eine Illustration ergänzen, aber nicht unnötig die ganze Szene ersetzen.
+
+BILDDICHTE — SEHR WICHTIG
+- NICHT künstlich minimalisieren.
+- Ein Bild darf mehrere zusammengehörige Figuren, Objekte, Requisiten, Nebenhandlungen, Labels, Pfeile oder Teilbereiche enthalten.
+- Ziel ist eine reichhaltige handgezeichnete YouTube-Erklärillustration, nicht eine leere Symbolgrafik.
+- Die wichtigsten 1–3 Blickpunkte müssen sofort erkennbar bleiben; weitere passende Details dürfen danach entdeckt werden.
+- Mehrere Informationen sind erlaubt, solange sie zur selben Aussage gehören und eine klare Leserichtung haben.
+- Figuren dürfen von Bild zu Bild deutlich anders aussehen: Kleidung, Haare, Bart, Alter, Körperform, Hauttöne, Accessoires und Rollen frei passend zum Thema variieren.
+- Nicht dieselbe Standardfigur erzwingen. Konsistenz entsteht durch Linien, Farben, Gesichtslogik und Illustrationssprache.
+- Erst wenn die Kernaussage nicht mehr schnell erkennbar ist, ist ein Bild zu kompliziert.
+Wähle pro Aussage die klarste Visual Form. Es gibt keine Pflicht, in jedem Bild Menschen zu zeigen.
+
+Erlaubt und erwünscht:
+- Stickman-Handlungsszene
+- reine Objekt-/Sachillustration
+- Nahaufnahme
+- Vorher/Nachher
+- Ursache/Wirkung
+- Karte mit Route/Ausbreitung
+- Zeitleiste
+- Schritt-für-Schritt-Prozess
+- Balken-, Linien-, Kreis- oder Mengenvergleich
+- Zahlen-/Statistikvisualisierung
+- Infografik mit kurzen Labels
+- Querschnitt
+- Explosionsdarstellung
+- Split-Screen
+- 2er- oder 3er-Multi-Panel
+- Hauptbild plus erklärende Nebenfelder
+- mehrere kleine Szenen in einem 16:9-Bild, wenn sie gemeinsam eine Aussage erklären
+- einfache Tabelle/Matrix
+- Text-/Zahlenfokus mit unterstützender Illustration
+- Symbol-/Icon-Erklärung im Alles-Stickman-Stil
+- Umgebung ohne Menschen
+
+Text ist erlaubt, wenn er Erklärwert hat:
+- kurze deutsche Überschriften
+- Labels
+- Jahreszahlen
+- Namen
+- wichtige Zahlen
+- Pfeile
+- sehr kurze Infozeilen
+- Karten-/Diagrammbeschriftungen
+
+Kein Pseudotext, keine langen Textwände, keine überladene Dashboard-Optik.
+
+6-PHASEN-ABLAUF — NUR COVER MIT HARD STOP
+
+PHASE 1 — PLAN UND VORBEREITUNG
+1. Lade `config/visual-policy.json`.
+2. Lade das vollständige Voice-over.
+3. Lade `99-technik/BILD_AUDIO_ZUORDNUNG.json` und den Bildplan.
+4. Bestimme NN.
+5. Prüfe für jedes Bild:
+   - Audio Anchor
+   - Visual Purpose
+   - Topic Anchor
+   - Visual Form
+   - Planned Hold
+   - vollständigen Prompt
+6. Erfinde keine zusätzliche Bildnummer und lasse keine geplante Bildnummer aus.
+7. Wähle pro Aussage die beste Visual Form. Standardmäßig zuerst eine reichhaltige Illustration/Szene prüfen; reine Infografik/Diagramm nur bei echtem Erklärvorteil.
+
+PHASE 2 — GENAU 3 COVER ERZEUGEN
+Erzeuge genau:
+- `TEMP_COVER_A.png`
+- `TEMP_COVER_B.png`
+- `TEMP_COVER_C.png`
+
+Alle drei transportieren dieselbe Kernidee, dürfen aber Pose, Kamerawinkel, Anordnung und Blickführung sinnvoll variieren.
+
+Cover-Kriterien:
+- Thema in ungefähr einer Sekunde verständlich
+- ein klarer visueller Fokus
+- starke gut lesbare Emotion
+- Hauptobjekt deutlich erkennbar
+- möglichst 1–3 große Figuren statt Menschenmenge
+- einfacher thematisch eindeutiger Hintergrund
+- Text nur wenn geplant; maximal 2–4 kurze deutsche Wörter
+- kein Pseudotext
+- Stil exakt nach `config/visual-policy.json`
+- keine erkennbare Kopie eines Referenzkanals
+- historische Details soweit möglich plausibel
+
+PHASE 3 — COVER-GATE: STOPP UND AUF NUTZERWAHL WARTEN
+Nachdem A, B und C sichtbar erzeugt wurden:
+1. Erzeuge KEIN Bild 02.
+2. Wähle KEINEN Gewinner selbst.
+3. Lösche KEINEN Kandidaten.
+4. Beende den aktuellen Agenten-Schritt vollständig.
+5. Gib nur den Status aus: `COVER-WAHL ERFORDERLICH — antworte A, B oder C.`
+
+Erst wenn der Nutzer ausdrücklich A, B oder C gewählt hat:
+- gewählten Kandidaten → `Bild 01.png`
+- beide Verlierer vollständig löschen
+- keine Kopien der Verlierer behalten
+- keine `cover-final`, `cover-alt`, `thumbnail-alt` oder ähnliche Datei anlegen
+
+OHNE ausdrückliche Auswahl darf PHASE 4 nicht starten.
+
+WICHTIG NACH DER COVERWAHL:
+`Bild 01.png` ist NUR das finale Cover/erste Szenenbild.
+Es wird NICHT als Referenzbild für spätere Generationen verwendet.
+Auch kein anderes bereits erzeugtes Bild wird als Referenz verwendet.
+
+PHASE 4 — AUTOMATISCHE 5ER-BLÖCKE
+Nach gültiger Cover-Auswahl starte sofort mit:
+- Bild 02–06
+
+Sobald dieser Block vollständig gespeichert UND die stille Bild-QC für alle Bilder bestanden ist, OHNE Rückfrage direkt weiter mit:
+- Bild 07–11
+- dann Bild 12–16
+- dann der nächste 5er-Block
+- usw. bis Bild NN
+
+Der letzte Block darf kleiner als 5 sein.
+WICHTIG: Maximal 5 Bilder pro Block, aber KEIN Stop zwischen den Blöcken.
+
+PHASE 5 — AUTOMATISCH BIS BILD NN
+Arbeite Block für Block vollständig durch, bis jede geplante Bildnummer existiert.
+Zwischen den Blöcken:
+- nicht fragen
+- nicht auf `WEITER` warten
+- nicht pausieren
+- keine neue Nutzerfreigabe verlangen
+
+Einzige Nutzerfreigabe der gesamten Bildphase ist die Coverwahl.
+
+Für jedes Bild gilt:
+- KEINE Bildreferenz verwenden
+- nur `config/visual-policy.json` + individuellen vollständigen Textprompt verwenden
+- genau eine finale Version erzeugen
+- sofort als `Bild XX.png` speichern
+- keine Variantenordner
+- kein vorheriges Szenenbild als Vorlage
+- keine Füllbilder
+- Visual Form nach Erklärwert wählen
+- zuerst Szene / Objekt-in-Kontext / illustrierter Vergleich prüfen
+- wenn mehrere Panels sinnvoller sind, bevorzugt illustrierte Mini-Szenen nutzen
+- wenn Text/Zahlen/Diagramm eindeutig klarer sind, diese Form nutzen
+- wenn keine Person nötig ist, keine Person zeigen
+- trotz wechselnder Bildarten dieselbe Alles-Stickman-Designwelt beibehalten
+
+Wenn ein Bild technisch fehlschlägt oder eindeutig unbrauchbar ist:
+- nur diesen fehlerhaften Output löschen
+- nur dieselbe Bildnummer erneut erzeugen
+- keine zusätzlichen Alternativen erzeugen
+- danach automatisch fortfahren
+
+PHASE 6 — FINALE VOLLSTÄNDIGKEITSPRÜFUNG + REPARATUR
+Wenn Bild NN fertig ist:
+1. Erzeuge die Soll-Liste `Bild 01.png` bis `Bild NN.png`.
+2. Vergleiche die Soll-Liste mit dem tatsächlichen Inhalt von `00-bildprompts/images/`.
+3. Prüfe jede Bildnummer auf Vorhandensein und eindeutigen Dateinamen.
+4. FEHLT eine Bildnummer: Erzeuge genau dieses fehlende Bild anhand seines ursprünglichen Prompts neu und speichere es unter dem korrekten Namen.
+5. Ist eine Datei technisch kaputt/unbrauchbar: Erzeuge genau diese Bildnummer neu.
+6. Wiederhole den Soll-Ist-Abgleich so oft, bis wirklich jede Nummer von 01 bis NN vorhanden ist.
+7. Entferne doppelte, temporäre oder zusätzliche Bilddateien.
+8. Alle finalen Bilder müssen gemeinsam flach im selben Ordner `00-bildprompts/images/` liegen.
+9. Keine Unterordner.
+10. Prüfe, dass Bild 01 exakt der vom Nutzer gewählte Cover-Kandidat ist.
+11. Prüfe Stil-Konsistenz anhand der Visual Policy — NICHT anhand eines Referenzbildes.
+12. Führe zusätzlich eine finale Qualitätsrunde über alle Bilder durch: Story-Welt/Umgebung, Anatomie, Text, Verständlichkeit und Stil.
+13. Ersetze jedes Bild, das in dieser Qualitätsrunde klar durchfällt, gezielt unter derselben Bildnummer und prüfe danach erneut.
+14. Beende erst, wenn Anzahl und Nummern exakt stimmen UND alle Bilder den Qualitätscheck bestehen: genau NN finale Bilder, lückenlos von Bild 01 bis Bild NN.
+
+BILD-DICHTE
+- Keine feste Zielbildzahl.
+- Ein Bild = eine klare visuelle Funktion oder zusammengehörige Informationseinheit.
+- Ein Multi-Panel zählt als ein Bild, wenn alle Teilbereiche gemeinsam dieselbe Aussage erklären.
+- Bei neuer Kernidee, Ursache/Wirkung, Epoche, Ort, Route, Beispiel oder unabhängiger Erklärung sinnvoll splitten.
+- Zielwert durchschnittlicher Hold: ca. 4,5–7,5 Sekunden.
+- Über 9 Sekunden prüfen.
+- Über 11 Sekunden sinnvollen Split stark bevorzugen.
+- 16 Sekunden Hard-Max.
+- Keine Füllbilder.
+
+SICHTBARER TEXT
+- Bei deutschen Videos korrektes Deutsch.
+- Kein Pseudotext.
+- Kurze Überschriften, Labels, Zahlen, Jahreszahlen, Namen und kompakte Infozeilen erlaubt.
+- Keine langen Absätze.
+- Text nur einsetzen, wenn er die Erklärung verbessert.
+
+BILDPLAN-FORMAT
+Jeder Bildblock enthält mindestens:
+
+Bild XX · [A–E] · [PLANZEIT]
+Audio Anchor: [EXAKTER SKRIPTANKER]
+Visual Purpose: [EINE KLARE FUNKTION]
+Topic Anchor: [KONKRETES THEMENELEMENT]
+Visual Form: [BESTE FORM FÜR DIE IDEE]
+Planned Hold: [SEKUNDEN]
+Prompt: [VOLLSTÄNDIGER PROMPT IM AKTIVEN ALLES-STICKMAN-STIL]
+
+VIDEO-SPEZIFISCHES VISUAL-CONTINUITY-PROFIL
+Environment: Spätes 19. Jahrhundert: einfacher Haushalts-Waschplatz mit Hof, Holz-/Steinhaus, Handpumpe oder Brunnen, Holzbottichen, Eisenkessel, Wäscheleinen und angrenzender Küche.
+Klima/Jahreszeit: Mildes gemäßigtes Wetter bei natürlichem Tageslicht; neutraler trockener Waschtag, kein Schnee, keine tropische Vegetation und kein plötzlich sattgrüner Frühlingswechsel.
+Epoche: Hauptwelt 1870er bis 1890er Jahre; keine Elektrizität, Plastikgeräte oder moderne Haushaltsobjekte. Moderne Waschmaschine nur als ausdrücklich erlaubter Vergleich in Bild 01 und Bild 20.
+Farb-/Stimmungsanker: Warme Elfenbeinflächen, gedämpftes Blau, Sand, Ocker, Rost und Holzbraun; arbeitsreicher, sachlicher Alltag statt romantischer Postkartenlook.
+
+BILDPLAN — VERBINDLICH
+
+Bild 01 · 5.5 s
+Audio Anchor: Heute drückst du einen Knopf.
+Visual Purpose: Cover-Hook: moderner Knopfdruck gegen historischen Waschtag.
+Topic Anchor: Waschen ohne Waschmaschine
+Visual Form: Cover / illustrierter Kontrast
+Prompt: 16:9 Alles-Stickman Editorial-Cover. Klare Zweiteilung: links eine moderne Hand drückt auf den Startknopf einer Waschmaschine, rechts eine kräftig arbeitende historische Wäscherin des späten 19. Jahrhunderts vor Holzbottich, Waschbrett und Wäscheberg. Große kurze Headline `OHNE WASCHMASCHINE?`. 1–3 Hauptfoki, kein Dashboard, kein 3D, keine Fotorealistik.
+
+Bild 02 · 5.2 s
+Audio Anchor: Früher bedeutete dieselbe Wäsche
+Visual Purpose: Die vielen manuellen Schritte als echte Arbeitsszene zeigen.
+Topic Anchor: Wasser tragen, schrubben, wringen, trocknen
+Visual Form: Reichhaltige Handlungsszene
+Prompt: 16:9 Alles-Stickman, spätes 19. Jahrhundert, temperierter heller Waschtag im Hof eines einfachen Hauses. Eine Figur trägt zwei Eimer, eine schrubbt am Waschbrett, eine wringt ein nasses Tuch, im Hintergrund hängt Wäsche auf der Leine. Keine moderne Technik. Drei klare Blickpunkte.
+
+Bild 03 · 4.8 s
+Audio Anchor: Wie bekam man Kleidung trotzdem sauber?
+Visual Purpose: Die Kernfrage visuell zuspitzen.
+Topic Anchor: schmutzige Kleidung und einfache Waschwerkzeuge
+Visual Form: Objekt-in-Kontext / Frage-Szene
+Prompt: 16:9 Alles-Stickman im selben historischen Hof. Eine Figur hält ein sichtbar verschmutztes helles Hemd hoch und schaut auf Holzbottich, Seifenstück, Waschbrett und Wassereimer. Kurze Headline `WIE WURDE DAS SAUBER?`. Echte Szene, keine Infografik.
+
+Bild 04 · 5 s
+Audio Anchor: Es gab nicht die eine Methode.
+Visual Purpose: Zeigen, dass Werkzeuge und Methoden variierten, ohne die Welt zu zerreißen.
+Topic Anchor: verschiedene historische Waschwerkzeuge
+Visual Form: Sachillustration in Umgebung
+Prompt: 16:9 Alles-Stickman im gleichen Hof. Auf einer Holzbank liegen Seifenstück, Waschbrett, Holzstab, Bürste und Wäscheklammern; daneben bereiten zwei Figuren die Arbeit vor. Kurzes Label `NICHT NUR EINE METHODE`. Keine kleinen Panels.
+
+Bild 05 · 5.5 s
+Audio Anchor: Aber ein typischer Waschtag im 19. Jahrhundert
+Visual Purpose: Die feste Story-Welt des Videos etablieren.
+Topic Anchor: Waschtag im 19. Jahrhundert
+Visual Form: Breite Umgebungsszene
+Prompt: 16:9 Alles-Stickman breite Hofszene im späten 19. Jahrhundert. Einfaches Holz-/Steinhaus, Handpumpe oder Brunnen, Holzwannen, Eisenkessel, Waschbrett, Wäschekorb und Leine. Mildes temperiertes Wetter, natürliche Tageshelligkeit, keine modernen Gegenstände, kein sattgrüner Park-Look.
+
+Bild 06 · 5.2 s
+Audio Anchor: Zuerst musste Wasser her.
+Visual Purpose: Wasserbeschaffung als ersten schweren Schritt zeigen.
+Topic Anchor: Wasser holen
+Visual Form: Stickman-Handlungsszene
+Prompt: 16:9 Alles-Stickman im gleichen Hof. Eine Person pumpt Wasser an einer historischen Handpumpe, eine zweite füllt Holzeimer. Im Hintergrund stehen Waschwannen bereit. Fokus auf körperliche Arbeit und Wasser als Voraussetzung.
+
+Bild 07 · 5.5 s
+Audio Anchor: Ohne Leitungen wurde es
+Visual Purpose: Das Tragen großer Wassermengen sichtbar machen.
+Topic Anchor: Eimer zu Wannen und Kesseln tragen
+Visual Form: Handlungsszene mit Weg
+Prompt: 16:9 Alles-Stickman. Zwei Figuren tragen schwere gefüllte Eimer von Pumpe/Brunnen über denselben Hof zu Waschbottich und Eisenkessel. Kleine Wasserspritzer, angespannte Körperhaltung. Keine moderne Leitung, kein Kunststoff.
+
+Bild 08 · 5.3 s
+Audio Anchor: Manche Wäsche wurde über Stunden oder über Nacht eingeweicht
+Visual Purpose: Einweichen verständlich zeigen.
+Topic Anchor: Wäsche einweichen
+Visual Form: Objekt-/Prozessszene
+Prompt: 16:9 Alles-Stickman, gleiche historische Waschstelle. Großer Holzbottich mit eingeweichten Hemden und Tüchern, eine Figur drückt Stoff mit Holzstab unter Wasser. Kleine einfache Mond-Sonne-Markierung und Label `EINWEICHEN`, ohne kompletten Weltwechsel.
+
+Bild 09 · 5 s
+Audio Anchor: Dann kam das eigentliche Waschen.
+Visual Purpose: Heißes Wasser und Seife als Waschphase zeigen.
+Topic Anchor: Seife und heißes Wasser
+Visual Form: Handlungsszene
+Prompt: 16:9 Alles-Stickman. Historische Wäscherin nutzt ein schlichtes Seifenstück an der Waschwanne; daneben dampft warmes Wasser aus einem Kessel. Keine chemische Rezeptanleitung, keine Laugenherstellung, nur historisches Waschen.
+
+Bild 10 · 5.3 s
+Audio Anchor: Auf einem Waschbrett wurde Stoff kräftig gerieben.
+Visual Purpose: Waschbrett als klaren Reibeschritt zeigen.
+Topic Anchor: Waschbrett und Reibung
+Visual Form: Nahaufnahme in Handlung
+Prompt: 16:9 Alles-Stickman Nahszene. Hände und Oberkörper einer historischen Figur reiben ein nasses Hemd kräftig über ein geriffeltes Waschbrett in einer Wanne. Kleine Seifenblasen und Bewegungslinien. Anatomie sauber, Hintergrund dezent der bekannte Hof.
+
+Bild 11 · 5.4 s
+Audio Anchor: Andere Methoden nutzten Stöcke, Steine oder einfach Hände und Wasser
+Visual Purpose: Alternative historische Reibungsmethoden einfach zeigen.
+Topic Anchor: Stöcke, Stein, Hände
+Visual Form: Illustrierte Mini-Sequenz
+Prompt: 16:9 Alles-Stickman als einfache 3er-Mini-Sequenz mit großen Teilbereichen: Stoff mit Holzstab bewegen, Stoff auf flachem Waschstein bearbeiten, Stoff mit Händen im Wasser kneten. Gleiche gedämpfte Palette. Keine winzigen Panels.
+
+Bild 12 · 5.5 s
+Audio Anchor: Weiße Leinen- und Baumwollwäsche konnte zusätzlich
+Visual Purpose: Auskochen weißer Wäsche historisch plausibel darstellen.
+Topic Anchor: weiße Wäsche auskochen
+Visual Form: Handlungsszene am Kessel
+Prompt: 16:9 Alles-Stickman im gleichen Hof. Großer Eisenkessel über kontrollierter Feuerstelle, helle Leinen-/Baumwollwäsche wird mit langem Holzstab bewegt. Dampf sichtbar, kein riesiges Feuer, keine moderne Ausrüstung.
+
+Bild 13 · 5.1 s
+Audio Anchor: Danach musste alles gründlich gespült werden.
+Visual Purpose: Mehrfaches Spülen mit sauberem Wasser zeigen.
+Topic Anchor: Spülen mit frischem Wasser
+Visual Form: 2-Schritt-Szene
+Prompt: 16:9 Alles-Stickman. Zwei große Waschbottiche im selben Hof: links seifige Wäsche, rechts klares Spülwasser. Eine Figur hebt ein Tuch aus dem ersten und legt es in den zweiten. Labels `WASCHEN` und `SPÜLEN`. Keine sterile Infografik.
+
+Bild 14 · 5.7 s
+Audio Anchor: Bei einer dokumentierten Wäscherin im 19. Jahrhundert
+Visual Purpose: Den überraschenden Wasseraufwand zeigen.
+Topic Anchor: ungefähr 25 Eimer Wasser pro dokumentierter Ladung
+Visual Form: Zahlenfokus mit Illustration
+Prompt: 16:9 Alles-Stickman im historischen Hof. Eine erschöpfte, aber nicht karikierte Wäscherin steht zwischen Waschplatz und vielen gruppierten Holzeimern. Große klare Zahl `≈25 EIMER`. Im Hintergrund Bottich und Pumpe. Nicht exakt 25 kleine Eimer zählen müssen.
+
+Bild 15 · 5 s
+Audio Anchor: Nach dem Spülen wurde die Wäsche ausgewrungen.
+Visual Purpose: Handwringen als körperlichen Schritt zeigen.
+Topic Anchor: Wäsche von Hand auswringen
+Visual Form: Nahaufnahme / Handlungsszene
+Prompt: 16:9 Alles-Stickman. Eine Figur wringt ein großes nasses Tuch kräftig über einer Holzwanne aus, Wasser läuft sichtbar zurück. Historische Kleidung, gleiche Hofwelt, saubere Hände, keine zusätzliche Technik.
+
+Bild 16 · 5.2 s
+Audio Anchor: Später halfen mechanische Wringer
+Visual Purpose: Mechanischen Wringer als Hilfe vor der elektrischen Waschmaschine zeigen.
+Topic Anchor: Wringer mit zwei Walzen
+Visual Form: Objekt-in-Kontext / Handlung
+Prompt: 16:9 Alles-Stickman, spätes 19. Jahrhundert. Handbetriebener mechanischer Wringer mit zwei Walzen an einer Wanne; eine Figur kurbelt, eine führt ein Tuch durch. Kein Motor, keine elektrische Waschmaschine. Label `WRINGER` optional.
+
+Bild 17 · 5.1 s
+Audio Anchor: Danach kamen Hemden, Tücher und Bettwäsche
+Visual Purpose: Trocknen als ruhige Fortsetzung zeigen.
+Topic Anchor: Wäsche auf Leinen trocknen
+Visual Form: Breite Hofszene
+Prompt: 16:9 Alles-Stickman im gleichen Hof und milden Tageslicht. Hemden, Tücher und Bettwäsche hängen an Leinen; zwei Figuren hängen weitere Stücke auf. Bottiche und Haus im Hintergrund verbinden die Szene. Keine plötzlich üppige grüne Landschaft.
+
+Bild 18 · 5.6 s
+Audio Anchor: Und selbst dann war der Waschtag nicht vorbei.
+Visual Purpose: Bügeln und Stärken als Nacharbeit zeigen.
+Topic Anchor: Bügeln und Nacharbeit
+Visual Form: Innen-/Außenszene in derselben Welt
+Prompt: 16:9 Alles-Stickman, direkt angrenzende historische Küche/Wäschekammer desselben Hauses. Eine Figur bügelt mit historischem Eisen an Holztisch, daneben gefaltete Wäsche und kleines Stärkegefäß. Durch offene Tür ist der bekannte Hof sichtbar. Keine Elektrik.
+
+Bild 19 · 5.8 s
+Audio Anchor: Der entscheidende Punkt:
+Visual Purpose: Die gesamte Lösung als zusammenhängende Arbeitskette auflösen.
+Topic Anchor: Wasser, Hitze, Seife, Reibung, Muskelkraft
+Visual Form: Große Zusammenführungsszene
+Prompt: 16:9 Alles-Stickman große zusammenhängende Hofszene. Links Wasserpumpe/Eimer, Mitte Bottich mit Seife und Waschbrett, daneben Eisenkessel, rechts Wringen und Wäscheleine. Kleine dezente Labels `WASSER`, `HITZE`, `SEIFE`, `REIBUNG`, `MUSKELKRAFT`; Szene bleibt dominant.
+
+Bild 20 · 6.2 s
+Audio Anchor: Die Waschmaschine hat also nicht das Waschen erfunden.
+Visual Purpose: Schlussgedanke: viele Handgriffe wurden zu einem Knopfdruck.
+Topic Anchor: historischer Waschtag vs moderne Waschmaschine
+Visual Form: Vorher/Nachher-Vergleich
+Prompt: 16:9 Alles-Stickman klarer Vorher/Nachher-Vergleich. Links der bekannte historische Waschplatz, rechts eine schlichte moderne Waschmaschine mit Hand am Startknopf. Kurzer Text `VIELE SCHRITTE → EIN KNOPF`. Gleiche handgezeichnete Editorial-Welt, keine Produktwerbung.
+
+ABSCHLUSSCHECK
+- ACTIVE_STYLE_ID entspricht der aktiven Alles-Stickman-Bildwelt
+- genau 3 Cover-Kandidaten wurden erzeugt
+- nach den 3 Cover-Kandidaten wurde wirklich gestoppt
+- der Nutzer hat A, B oder C ausdrücklich gewählt
+- genau dieser gewählte Kandidat wurde `Bild 01.png`
+- die 2 Cover-Verlierer wurden erst danach gelöscht
+- für Bild 02–NN wurde KEINE Bildreferenz verwendet
+- Konsistenz wurde nur über Visual Policy + Textprompts gesteuert
+- Bild 02–NN jeweils nur eine finale Version
+- Produktion nach Cover in echten 5er-Blöcken
+- nach jedem fertigen 5er-Block automatisch mit dem nächsten weitergearbeitet
+- zwischen den Blöcken keine Nutzerfrage und kein `WEITER` verlangt
+- verschiedene Visual Forms passend zum Inhalt gewählt
+- nach jedem 5er-Block stille Bild-QC durchgeführt und schlechte Bilder vor dem nächsten Block repariert
+- Story-Welt/Umgebung entspricht durchgehend dem visualContinuityProfile
+- finaler Soll-Ist-Abgleich + finale Qualitätsrunde durchgeführt
+- fehlende, technisch kaputte oder klar schlechte Bildnummern gezielt neu erzeugt
+- keine Bildnummer fehlt
+- keine Zusatzbilder übrig
+- keine Unterordner im finalen Bilderordner
+- finaler Ordner enthält exakt und ausschließlich `Bild 01.png` bis `Bild NN.png`
