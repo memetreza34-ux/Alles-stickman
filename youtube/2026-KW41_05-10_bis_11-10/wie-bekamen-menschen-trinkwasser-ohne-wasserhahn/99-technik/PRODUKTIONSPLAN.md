@@ -21,7 +21,7 @@
 - [x] Google-Flow-Masterprompt
 - [x] 16 konkrete Bild-Batchdateien
 - [x] Uploadtitel/Beschreibung/Tags
-- [ ] Node Phase-1-Validator geprüft
+- [x] Node Phase-1-Validator + GitHub Actions geprüft: SUCCESS
 
 ## Phase 2 — Bilder und Ton
 - [ ] genau 3 Cover-Kandidaten A/B/C
