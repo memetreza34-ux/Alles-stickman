@@ -1,0 +1,63 @@
+ALLES-STICKMAN LONGFORM — Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?
+BATCH 57–61
+Nach Coverwahl automatisch: Genau diese maximal 5 Bilder erzeugen. Vorherige Bilder NICHT als Referenz benutzen; jedes Bild individuell aus seinem vollständigen Prompt. Stille QC gegen Audio, sichtbaren Text, Anatomie, Stil, Umwelt; defekte Bilder nur unter derselben Bildnummer reparieren. Danach Dateien als Bild XX.png direkt in 00-bildprompts/images/ speichern und OHNE NUTZERRÜCKFRAGE den nächsten Batch laden. Finale Ordnerprüfung nach Bild 78.
+
+Bild 57 · 5.33s
+Audio Anchor: War der Weg lang, bedeutete schon
+Visual Purpose: Historische Wanderroute von entferntem Brunnen über staubigen Weg, mehrere erschöpfte, aber kompetente Personen mit Krügen
+Topic Anchor: Der tägliche Weg
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historische Stadt und Dorf, neutral unterschiedliche Regionen als Montage.
+Gesprochener Satz: War der Weg lang, bedeutete schon ein einzelner Gang viel Zeit und körperliche Anstrengung.
+Konkrete Szene: Historische Wanderroute von entferntem Brunnen über staubigen Weg, mehrere erschöpfte, aber kompetente Personen mit Krügen.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 58 · 4.95s
+Audio Anchor: Und für Kochen, Waschen oder Handwerk
+Visual Purpose: Historischer Hausinnenhof mit Kochtopf, Wäschewanne und Handwerkerbottich, Krüge in der Mitte
+Topic Anchor: Der tägliche Weg
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historische Stadt und Dorf, neutral unterschiedliche Regionen als Montage.
+Gesprochener Satz: Und für Kochen, Waschen oder Handwerk reichte ein kleiner Trinkbecher natürlich nicht aus.
+Konkrete Szene: Historischer Hausinnenhof mit Kochtopf, Wäschewanne und Handwerkerbottich, Krüge in der Mitte; Labels optional.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 59 · 5.71s
+Audio Anchor: Versorgung war deshalb nicht nur eine
+Visual Purpose: Dorfgemeinschaft verteilt Schöpfzeiten, eine Figur zeigt Liste an Tafel, andere tragen Wasser
+Topic Anchor: Der tägliche Weg
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historische Stadt und Dorf, neutral unterschiedliche Regionen als Montage.
+Gesprochener Satz: Versorgung war deshalb nicht nur eine Frage genialer Bauwerke, sondern auch der Organisation im Alltag.
+Konkrete Szene: Dorfgemeinschaft verteilt Schöpfzeiten, eine Figur zeigt Liste an Tafel, andere tragen Wasser; keine Fantasie-Bürokratie.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 60 · 5.71s
+Audio Anchor: Bleibt die wichtigste Frage: War das
+Visual Purpose: Geteilte historische Szene: Glas/Tonbecher mit klar wirkendem Wasser, dahinter verborgen verunreinigter Zufluss, große Frage
+Topic Anchor: Klares Wasser – gefährliches Wasser?
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: vergleichende historische Wasserstellen.
+Gesprochener Satz: Bleibt die wichtigste Frage: War das Wasser aus Brunnen, Quellen oder Aquädukten überhaupt sauber genug?
+Konkrete Szene: Geteilte historische Szene: Glas/Tonbecher mit klar wirkendem Wasser, dahinter verborgen verunreinigter Zufluss, große Frage.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 61 · 4.57s
+Audio Anchor: Klares Aussehen allein bewies nicht, dass
+Visual Purpose: Tonbecher mit kristallklarem Wasser, kleine gut lesbare Lupe zeigt Mikroorganismen als vereinfachte Symbole
+Topic Anchor: Klares Wasser – gefährliches Wasser?
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: vergleichende historische Wasserstellen.
+Gesprochener Satz: Klares Aussehen allein bewies nicht, dass das Wasser frei von Krankheitserregern war.
+Konkrete Szene: Tonbecher mit kristallklarem Wasser, kleine gut lesbare Lupe zeigt Mikroorganismen als vereinfachte Symbole; seriös, keine Monster.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.

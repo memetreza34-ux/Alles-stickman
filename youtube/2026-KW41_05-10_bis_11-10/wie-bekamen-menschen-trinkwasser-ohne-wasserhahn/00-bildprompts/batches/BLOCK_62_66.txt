@@ -1,0 +1,63 @@
+ALLES-STICKMAN LONGFORM — Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?
+BATCH 62–66
+Nach Coverwahl automatisch: Genau diese maximal 5 Bilder erzeugen. Vorherige Bilder NICHT als Referenz benutzen; jedes Bild individuell aus seinem vollständigen Prompt. Stille QC gegen Audio, sichtbaren Text, Anatomie, Stil, Umwelt; defekte Bilder nur unter derselben Bildnummer reparieren. Danach Dateien als Bild XX.png direkt in 00-bildprompts/images/ speichern und OHNE NUTZERRÜCKFRAGE den nächsten Batch laden. Finale Ordnerprüfung nach Bild 78.
+
+Bild 62 · 4.95s
+Audio Anchor: Abfälle und verschmutzte Zuflüsse konnten Gewässer
+Visual Purpose: Flussoberlauf mit Siedlungsabfällen oberhalb eines Wasserentnahmepunktes, aus Distanz erkennbarer Zusammenhang
+Topic Anchor: Klares Wasser – gefährliches Wasser?
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: vergleichende historische Wasserstellen.
+Gesprochener Satz: Abfälle und verschmutzte Zuflüsse konnten Gewässer belasten, selbst wenn der Schaden unsichtbar blieb.
+Konkrete Szene: Flussoberlauf mit Siedlungsabfällen oberhalb eines Wasserentnahmepunktes, aus Distanz erkennbarer Zusammenhang; nicht ekelerregend.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 63 · 4.57s
+Audio Anchor: Manche Menschen ließen trübes Wasser stehen,
+Visual Purpose: Historische Tongefäße mit Wasser: links aufgewirbelt, rechts Sediment unten
+Topic Anchor: Klares Wasser – gefährliches Wasser?
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: vergleichende historische Wasserstellen.
+Gesprochener Satz: Manche Menschen ließen trübes Wasser stehen, damit schwerere Teilchen nach unten sanken.
+Konkrete Szene: Historische Tongefäße mit Wasser: links aufgewirbelt, rechts Sediment unten; ruhige Sachillustration in echtem Hof.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 64 · 3.8s
+Audio Anchor: Andere nutzten Siebe oder einfache Filter,
+Visual Purpose: Historische Person gießt trübes Wasser durch einfaches Tuch/Sieb in Gefäß
+Topic Anchor: Klares Wasser – gefährliches Wasser?
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: vergleichende historische Wasserstellen.
+Gesprochener Satz: Andere nutzten Siebe oder einfache Filter, um sichtbaren Schmutz zurückzuhalten.
+Konkrete Szene: Historische Person gießt trübes Wasser durch einfaches Tuch/Sieb in Gefäß; kleine Teilchen werden zurückgehalten, keine Sicherheitssiegel.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 65 · 4.18s
+Audio Anchor: Aber solche Verfahren machten Wasser nicht
+Visual Purpose: Person zeigt auf deutliches Warn-Zeichen neben gefiltertem Becher, kleines Lupenfeld für Keime
+Topic Anchor: Klares Wasser – gefährliches Wasser?
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: vergleichende historische Wasserstellen.
+Gesprochener Satz: Aber solche Verfahren machten Wasser nicht automatisch frei von unsichtbaren Erregern.
+Konkrete Szene: Person zeigt auf deutliches Warn-Zeichen neben gefiltertem Becher, kleines Lupenfeld für Keime; keine falsche Sterilitätsbehauptung.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 66 · 4.95s
+Audio Anchor: Auch Erhitzen konnte bestimmte Keimrisiken senken,
+Visual Purpose: Historisches Kochgefäß über Feuer, kleine separate Symbolhinweise auf Keime und chemische Belastung
+Topic Anchor: Klares Wasser – gefährliches Wasser?
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: vergleichende historische Wasserstellen.
+Gesprochener Satz: Auch Erhitzen konnte bestimmte Keimrisiken senken, doch es beseitigte nicht jede mögliche Verunreinigung.
+Konkrete Szene: Historisches Kochgefäß über Feuer, kleine separate Symbolhinweise auf Keime und chemische Belastung; keine konkreten Sanitär-Anweisungen.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.

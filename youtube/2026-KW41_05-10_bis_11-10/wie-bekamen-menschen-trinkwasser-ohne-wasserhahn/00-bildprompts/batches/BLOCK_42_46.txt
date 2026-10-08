@@ -1,0 +1,63 @@
+ALLES-STICKMAN LONGFORM — Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?
+BATCH 42–46
+Nach Coverwahl automatisch: Genau diese maximal 5 Bilder erzeugen. Vorherige Bilder NICHT als Referenz benutzen; jedes Bild individuell aus seinem vollständigen Prompt. Stille QC gegen Audio, sichtbaren Text, Anatomie, Stil, Umwelt; defekte Bilder nur unter derselben Bildnummer reparieren. Danach Dateien als Bild XX.png direkt in 00-bildprompts/images/ speichern und OHNE NUTZERRÜCKFRAGE den nächsten Batch laden. Finale Ordnerprüfung nach Bild 78.
+
+Bild 42 · 4.57s
+Audio Anchor: Am Stadtrand wurde das ankommende Wasser
+Visual Purpose: Römischer Verteilerkasten castellum in Stein, mit mehreren abzweigenden Leitungen als vereinfachtes Sachbild innerhalb echter Stadtrand-Szene
+Topic Anchor: Wasser in Rom
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: römische Stadtstraßen, öffentliches Leben.
+Gesprochener Satz: Am Stadtrand wurde das ankommende Wasser verteilt, statt einfach überall unkontrolliert hinzufließen.
+Konkrete Szene: Römischer Verteilerkasten castellum in Stein, mit mehreren abzweigenden Leitungen als vereinfachtes Sachbild innerhalb echter Stadtrand-Szene.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 43 · 4.57s
+Audio Anchor: Es gelangte unter anderem zu öffentlichen
+Visual Purpose: Dreieransicht echter römischer Stadtbereiche: öffentlicher Brunnen, Thermen, besser ausgestattetes Haus, über gemeinsame Wasserlinie verbunden
+Topic Anchor: Wasser in Rom
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: römische Stadtstraßen, öffentliches Leben.
+Gesprochener Satz: Es gelangte unter anderem zu öffentlichen Brunnen, Badeanlagen und manchen privaten Anschlüssen.
+Konkrete Szene: Dreieransicht echter römischer Stadtbereiche: öffentlicher Brunnen, Thermen, besser ausgestattetes Haus, über gemeinsame Wasserlinie verbunden.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 44 · 4.95s
+Audio Anchor: An öffentlichen Brunnen konnten Menschen Gefäße
+Visual Purpose: Belebter römischer Straßenbrunnen mit mehreren unterschiedlich gekleideten Bewohnern und Tonkrügen, römische Häuser im Hintergrund
+Topic Anchor: Wasser in Rom
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: römische Stadtstraßen, öffentliches Leben.
+Gesprochener Satz: An öffentlichen Brunnen konnten Menschen Gefäße füllen, ohne einen eigenen Hausanschluss zu besitzen.
+Konkrete Szene: Belebter römischer Straßenbrunnen mit mehreren unterschiedlich gekleideten Bewohnern und Tonkrügen, römische Häuser im Hintergrund.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 45 · 4.18s
+Audio Anchor: Für viele war genau das der
+Visual Purpose: Ein römischer Bewohner trägt zwei Krüge vom Straßenbrunnen durch enge Gasse zur Wohnung
+Topic Anchor: Wasser in Rom
+Visual Form: Illustrierter Vergleich
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: römische Stadtstraßen, öffentliches Leben.
+Gesprochener Satz: Für viele war genau das der entscheidende Unterschied zum heutigen Wasserhahn.
+Konkrete Szene: Ein römischer Bewohner trägt zwei Krüge vom Straßenbrunnen durch enge Gasse zur Wohnung; am Rand kleines modernes Hahn-Symbol nur als Vergleich.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 46 · 4.57s
+Audio Anchor: Die Wasserversorgung war also auch eine
+Visual Purpose: Römische Straßenecke: kurze Route zu Brunnen vs langer Weg für ärmere Wohnlagen
+Topic Anchor: Wasser in Rom
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: römische Stadtstraßen, öffentliches Leben.
+Gesprochener Satz: Die Wasserversorgung war also auch eine Frage von Wegen, Zeit und Zugang.
+Konkrete Szene: Römische Straßenecke: kurze Route zu Brunnen vs langer Weg für ärmere Wohnlagen; zwei figürliche Alltagsszenen, keine übertriebene Sozialbehauptung.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.

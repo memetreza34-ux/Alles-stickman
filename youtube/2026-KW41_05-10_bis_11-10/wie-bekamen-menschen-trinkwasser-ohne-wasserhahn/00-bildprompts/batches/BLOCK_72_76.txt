@@ -1,0 +1,63 @@
+ALLES-STICKMAN LONGFORM — Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?
+BATCH 72–76
+Nach Coverwahl automatisch: Genau diese maximal 5 Bilder erzeugen. Vorherige Bilder NICHT als Referenz benutzen; jedes Bild individuell aus seinem vollständigen Prompt. Stille QC gegen Audio, sichtbaren Text, Anatomie, Stil, Umwelt; defekte Bilder nur unter derselben Bildnummer reparieren. Danach Dateien als Bild XX.png direkt in 00-bildprompts/images/ speichern und OHNE NUTZERRÜCKFRAGE den nächsten Batch laden. Finale Ordnerprüfung nach Bild 78.
+
+Bild 72 · 6.47s
+Audio Anchor: Die Lösung war nie einfach: Menschen
+Visual Purpose: Reichhaltige große Zusammenführungsmontage aus Flussufer, Bergquelle, Dorfbrunnen und Zisterne, in einheitlicher Editorial-Welt
+Topic Anchor: Die eigentliche Antwort
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: illustrierte Weltkarte/Montage historischer Lösungen.
+Gesprochener Satz: Die Lösung war nie einfach: Menschen fanden Wasser in Flüssen und Quellen, gruben Brunnen und sammelten Regen.
+Konkrete Szene: Reichhaltige große Zusammenführungsmontage aus Flussufer, Bergquelle, Dorfbrunnen und Zisterne, in einheitlicher Editorial-Welt.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 73 · 6.09s
+Audio Anchor: Für große Entfernungen entstanden Kanäle, Aquädukte
+Visual Purpose: Großes zusammenhängendes Landschaftspanorama: römische Leitung links und iranischer Qanat rechts als bewusst beschrifteter Vergleich zweier Regionen
+Topic Anchor: Die eigentliche Antwort
+Visual Form: Illustrierter Vergleich
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: illustrierte Weltkarte/Montage historischer Lösungen.
+Gesprochener Satz: Für große Entfernungen entstanden Kanäle, Aquädukte und unterirdische Tunnel, die Wasser dorthin brachten, wo Menschen lebten.
+Konkrete Szene: Großes zusammenhängendes Landschaftspanorama: römische Leitung links und iranischer Qanat rechts als bewusst beschrifteter Vergleich zweier Regionen.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 74 · 4.57s
+Audio Anchor: Die wichtigste Entdeckung dahinter war oft
+Visual Purpose: Klarer illustrativer Berg-zu-Stadt-Querschnitt mit Wasserfluss bergab, römischer Kanal und Qanat als kleine Beispiele, großer Label GEFÄLLE
+Topic Anchor: Die eigentliche Antwort
+Visual Form: Illustrierter Querschnitt
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: illustrierte Weltkarte/Montage historischer Lösungen.
+Gesprochener Satz: Die wichtigste Entdeckung dahinter war oft erstaunlich einfach: Wasser folgt dem Gefälle.
+Konkrete Szene: Klarer illustrativer Berg-zu-Stadt-Querschnitt mit Wasserfluss bergab, römischer Kanal und Qanat als kleine Beispiele, großer Label GEFÄLLE.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 75 · 6.47s
+Audio Anchor: Doch selbst die klügste Leitung half
+Visual Purpose: Große Szene historischer Wasserverteiler: Mitarbeiter prüft Kanal, anderer reinigt Brunnenfassung, Warn-Lupenfeld für Wasserqualität
+Topic Anchor: Die eigentliche Antwort
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: illustrierte Weltkarte/Montage historischer Lösungen.
+Gesprochener Satz: Doch selbst die klügste Leitung half wenig, wenn das Wasser verschmutzt war oder niemand es warten konnte.
+Konkrete Szene: Große Szene historischer Wasserverteiler: Mitarbeiter prüft Kanal, anderer reinigt Brunnenfassung, Warn-Lupenfeld für Wasserqualität.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 76 · 5.33s
+Audio Anchor: Erst das Zusammenspiel aus Wasserquelle, Transport,
+Visual Purpose: Vier große physische Teile einer durchgängigen Landschaftsszene: Quelle, Leitung, Zisterne, kontrollierter moderner Zapfhahn
+Topic Anchor: Die eigentliche Antwort
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: illustrierte Weltkarte/Montage historischer Lösungen.
+Gesprochener Satz: Erst das Zusammenspiel aus Wasserquelle, Transport, Speicherung und Sicherheit machte eine Versorgung wirklich zuverlässig.
+Konkrete Szene: Vier große physische Teile einer durchgängigen Landschaftsszene: Quelle, Leitung, Zisterne, kontrollierter moderner Zapfhahn; unaufdringliche kurze Labels.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.

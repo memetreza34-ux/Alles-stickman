@@ -1,0 +1,63 @@
+ALLES-STICKMAN LONGFORM — Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?
+BATCH 67–71
+Nach Coverwahl automatisch: Genau diese maximal 5 Bilder erzeugen. Vorherige Bilder NICHT als Referenz benutzen; jedes Bild individuell aus seinem vollständigen Prompt. Stille QC gegen Audio, sichtbaren Text, Anatomie, Stil, Umwelt; defekte Bilder nur unter derselben Bildnummer reparieren. Danach Dateien als Bild XX.png direkt in 00-bildprompts/images/ speichern und OHNE NUTZERRÜCKFRAGE den nächsten Batch laden. Finale Ordnerprüfung nach Bild 78.
+
+Bild 67 · 6.47s
+Audio Anchor: Mit wachsenden Städten wurde die alte
+Visual Purpose: Historisches Stadtpanorama geht in städtisches Versorgungsnetz über, Wasserrohr und Menschenmenge, warme Stilwelt
+Topic Anchor: Warum moderne Leitungen anders sind
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: frühe moderne Trinkwasseranlagen und Gegenwart, zeitlicher Wechsel klar markiert.
+Gesprochener Satz: Mit wachsenden Städten wurde die alte Aufgabe immer dringender: nicht nur viel Wasser, sondern verlässlich sicheres Wasser.
+Konkrete Szene: Historisches Stadtpanorama geht in städtisches Versorgungsnetz über, Wasserrohr und Menschenmenge, warme Stilwelt.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 68 · 5.33s
+Audio Anchor: Moderne Wasserversorgung verbindet deshalb die Auswahl
+Visual Purpose: Illustriertes modernes Wasserwerk neben einem Fluss, drei große Stationen: Entnahme, Aufbereitung, Kontrolle, Figuren in schlichter Arbeitskleidung
+Topic Anchor: Warum moderne Leitungen anders sind
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: frühe moderne Trinkwasseranlagen und Gegenwart, zeitlicher Wechsel klar markiert.
+Gesprochener Satz: Moderne Wasserversorgung verbindet deshalb die Auswahl der Quelle mit technischer Aufbereitung und laufender Kontrolle.
+Konkrete Szene: Illustriertes modernes Wasserwerk neben einem Fluss, drei große Stationen: Entnahme, Aufbereitung, Kontrolle, Figuren in schlichter Arbeitskleidung.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 69 · 4.57s
+Audio Anchor: Je nach Ausgangswasser kommen Schritte wie
+Visual Purpose: 3er-Mini-Szenen moderner Anlage, Becken Sedimentation, Filtersäule, technische Kontrolle der Desinfektion
+Topic Anchor: Warum moderne Leitungen anders sind
+Visual Form: Illustrierter Vergleich
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: frühe moderne Trinkwasseranlagen und Gegenwart, zeitlicher Wechsel klar markiert.
+Gesprochener Satz: Je nach Ausgangswasser kommen Schritte wie Absetzen, Filtern und Desinfizieren zum Einsatz.
+Konkrete Szene: 3er-Mini-Szenen moderner Anlage, Becken Sedimentation, Filtersäule, technische Kontrolle der Desinfektion; nicht als Bauanleitung.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 70 · 4.95s
+Audio Anchor: In vielen Städten verringerte eine systematische
+Visual Purpose: Historischer Stadtbrunnen geht per sanfter Zeitleiste zu modernem Wasserwerk über
+Topic Anchor: Warum moderne Leitungen anders sind
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: frühe moderne Trinkwasseranlagen und Gegenwart, zeitlicher Wechsel klar markiert.
+Gesprochener Satz: In vielen Städten verringerte eine systematische Desinfektion das Risiko schwerer wasserbedingter Krankheiten deutlich.
+Konkrete Szene: Historischer Stadtbrunnen geht per sanfter Zeitleiste zu modernem Wasserwerk über; Ärztin und Familie im Hintergrund, keine genauen Sterberaten.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 71 · 5.71s
+Audio Anchor: Ein Hahn in der Küche ist
+Visual Purpose: Moderne Küche mit einfachem Wasserhahn, groß im Hintergrund eingeblendete geschichtete Stadtleitungen, Wasserwerk und Quellgebiet
+Topic Anchor: Warum moderne Leitungen anders sind
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: frühe moderne Trinkwasseranlagen und Gegenwart, zeitlicher Wechsel klar markiert.
+Gesprochener Satz: Ein Hahn in der Küche ist daher nur das sichtbare Ende einer viel größeren Infrastruktur.
+Konkrete Szene: Moderne Küche mit einfachem Wasserhahn, groß im Hintergrund eingeblendete geschichtete Stadtleitungen, Wasserwerk und Quellgebiet; kein Hochglanz.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.

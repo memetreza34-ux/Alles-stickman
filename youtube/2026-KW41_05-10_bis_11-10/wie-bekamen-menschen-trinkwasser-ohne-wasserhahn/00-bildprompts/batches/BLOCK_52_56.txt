@@ -1,0 +1,63 @@
+ALLES-STICKMAN LONGFORM — Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?
+BATCH 52–56
+Nach Coverwahl automatisch: Genau diese maximal 5 Bilder erzeugen. Vorherige Bilder NICHT als Referenz benutzen; jedes Bild individuell aus seinem vollständigen Prompt. Stille QC gegen Audio, sichtbaren Text, Anatomie, Stil, Umwelt; defekte Bilder nur unter derselben Bildnummer reparieren. Danach Dateien als Bild XX.png direkt in 00-bildprompts/images/ speichern und OHNE NUTZERRÜCKFRAGE den nächsten Batch laden. Finale Ordnerprüfung nach Bild 78.
+
+Bild 52 · 4.18s
+Audio Anchor: Senkrechte Schächte halfen beim Bau und
+Visual Purpose: Qanat mit regelmäßig abstehenden vertikalen Schächten, Arbeiter an einer Öffnung mit Ton-/Holzwerkzeug, keine gefährliche Schritt-für-Schritt-Anleitung
+Topic Anchor: Wasser unter der Wüste
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historisches trockenes iranisches Hochland, keine römische Architektur.
+Gesprochener Satz: Senkrechte Schächte halfen beim Bau und gaben später Zugang für Wartungsarbeiten.
+Konkrete Szene: Qanat mit regelmäßig abstehenden vertikalen Schächten, Arbeiter an einer Öffnung mit Ton-/Holzwerkzeug, keine gefährliche Schritt-für-Schritt-Anleitung.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 53 · 3.42s
+Audio Anchor: Auch hier floss Wasser durch Gefälle,
+Visual Purpose: Langer Tunnel mit fließendem Wasser zur bewachsenen Oase am Ausgang, kleine Pfeile zeigen Richtung
+Topic Anchor: Wasser unter der Wüste
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historisches trockenes iranisches Hochland, keine römische Architektur.
+Gesprochener Satz: Auch hier floss Wasser durch Gefälle, ohne elektrische Pumpen.
+Konkrete Szene: Langer Tunnel mit fließendem Wasser zur bewachsenen Oase am Ausgang, kleine Pfeile zeigen Richtung; Sachillustration mit Landschaft.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 54 · 4.18s
+Audio Anchor: Solche Anlagen verlangten großes Können und
+Visual Purpose: Menschen verschiedenem Alters bei Brunnen-/Kanalausgang, jemand dokumentiert, andere pflegen den Zugang
+Topic Anchor: Wasser unter der Wüste
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historisches trockenes iranisches Hochland, keine römische Architektur.
+Gesprochener Satz: Solche Anlagen verlangten großes Können und gemeinschaftliche Pflege über viele Generationen.
+Konkrete Szene: Menschen verschiedenem Alters bei Brunnen-/Kanalausgang, jemand dokumentiert, andere pflegen den Zugang; traditionelle Siedlung und Gärten.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 55 · 6.09s
+Audio Anchor: Von außen sehen diese Lösungen wie
+Visual Purpose: Lebendiger historischer Dorfbrunnen morgens, Menschen stehen an, tragen Krüge, Kinder helfen mit, neutrale Szene
+Topic Anchor: Der tägliche Weg
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historische Stadt und Dorf, neutral unterschiedliche Regionen als Montage.
+Gesprochener Satz: Von außen sehen diese Lösungen wie technische Wunderwerke aus, doch für Bewohner blieb Wasser tägliche Arbeit.
+Konkrete Szene: Lebendiger historischer Dorfbrunnen morgens, Menschen stehen an, tragen Krüge, Kinder helfen mit, neutrale Szene.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 56 · 4.95s
+Audio Anchor: Jemand musste einen Krug füllen, nach
+Visual Purpose: Eine Person transportiert gefüllten Tonkrug durch gepflasterte Gasse und stellt ihn zu Hause in schattige Ecke, Mini-Sequenz
+Topic Anchor: Der tägliche Weg
+Visual Form: Illustrierter Vergleich
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historische Stadt und Dorf, neutral unterschiedliche Regionen als Montage.
+Gesprochener Satz: Jemand musste einen Krug füllen, nach Hause bringen und das Wasser dort aufbewahren.
+Konkrete Szene: Eine Person transportiert gefüllten Tonkrug durch gepflasterte Gasse und stellt ihn zu Hause in schattige Ecke, Mini-Sequenz.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
