@@ -288,7 +288,7 @@ test('Erstes 6–7-Minuten-Longform hat recherchiertes Skript und 78 vollständi
   assert.deepEqual(meta.targetDurationRangeSeconds, [365, 420]);
   assert.equal(meta.plannedImageCount, 78);
   assert.equal(map.images.length, 78);
-  assert.equal(script.trim().split(/\\s+/).length, 1048);
+  assert.equal(script.trim().split(/\s+/).length, 1048);
   assert.equal(source.scriptWords, 1048);
   assert.equal(source.status, 'READY');
   assert.equal(plan.sections.length, 15);
@@ -299,7 +299,7 @@ test('Erstes 6–7-Minuten-Longform hat recherchiertes Skript und 78 vollständi
   assert.equal(map.images[0].imageFile, 'Bild 01.png');
   assert.equal(map.images.at(-1).imageFile, 'Bild 78.png');
   const phase1 = await validatePhase1(dir);
-  assert.equal(phase1.passed, true, phase1.errors.join('\\n'));
+  assert.equal(phase1.passed, true, phase1.errors.join('\n'));
 });
 
 test('Pacing-QC blockiert echte Videodauer außerhalb des Zielbereichs', async () => {
