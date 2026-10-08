@@ -1,0 +1,63 @@
+ALLES-STICKMAN LONGFORM — Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?
+BATCH 7–11
+Nach Coverwahl automatisch: Genau diese maximal 5 Bilder erzeugen. Vorherige Bilder NICHT als Referenz benutzen; jedes Bild individuell aus seinem vollständigen Prompt. Stille QC gegen Audio, sichtbaren Text, Anatomie, Stil, Umwelt; defekte Bilder nur unter derselben Bildnummer reparieren. Danach Dateien als Bild XX.png direkt in 00-bildprompts/images/ speichern und OHNE NUTZERRÜCKFRAGE den nächsten Batch laden. Finale Ordnerprüfung nach Bild 78.
+
+Bild 07 · 5.71s
+Audio Anchor: Eine Quelle konnte vielversprechender sein, aber
+Visual Purpose: Quellenaustritt aus Fels in bewaldetem Hügelland, Dorf unten im Tal mit weitem Fußweg, zwei Figuren mit Krügen
+Topic Anchor: Die drei Aufgaben
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: neutrale historische Siedlung.
+Gesprochener Satz: Eine Quelle konnte vielversprechender sein, aber nicht jedes Dorf hatte eine direkt vor der Haustür.
+Konkrete Szene: Quellenaustritt aus Fels in bewaldetem Hügelland, Dorf unten im Tal mit weitem Fußweg, zwei Figuren mit Krügen.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 08 · 4.95s
+Audio Anchor: Deshalb entstanden viele Siedlungen dort, wo
+Visual Purpose: Panorama eines historisch neutralen Flusstals mit mehreren kleinen Häusern nahe Wasserlauf, Felder und schmale Wege
+Topic Anchor: Wasser aus Landschaft
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historische Flussdörfer.
+Gesprochener Satz: Deshalb entstanden viele Siedlungen dort, wo Flüsse, Seen oder natürliche Quellen erreichbar waren.
+Konkrete Szene: Panorama eines historisch neutralen Flusstals mit mehreren kleinen Häusern nahe Wasserlauf, Felder und schmale Wege; Fokus Wasser als Siedlungsanker.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 09 · 4.95s
+Audio Anchor: Wer Wasser benötigte, ging zum Ufer,
+Visual Purpose: Mehrere Menschen mit Tonkrügen am ruhigen Flussabschnitt
+Topic Anchor: Wasser aus Landschaft
+Visual Form: Illustrierter Querschnitt
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historische Flussdörfer.
+Gesprochener Satz: Wer Wasser benötigte, ging zum Ufer, zur Quelle oder zu einer bekannten Wasserstelle.
+Konkrete Szene: Mehrere Menschen mit Tonkrügen am ruhigen Flussabschnitt; eine Figur schöpft vorsichtig, andere wartet; Alltag statt Technikplakat.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 10 · 4.95s
+Audio Anchor: Das klang einfach, bis aus einem
+Visual Purpose: Vorher/Nachher als zwei lebendige Mini-Szenen: drei Hütten mit kurzer Wasserroute versus größere Siedlung mit Menschenreihe
+Topic Anchor: Wasser aus Landschaft
+Visual Form: Illustrierter Vergleich
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historische Flussdörfer.
+Gesprochener Satz: Das klang einfach, bis aus einem kleinen Dorf ein dicht bewohnter Ort wurde.
+Konkrete Szene: Vorher/Nachher als zwei lebendige Mini-Szenen: drei Hütten mit kurzer Wasserroute versus größere Siedlung mit Menschenreihe.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 11 · 4.95s
+Audio Anchor: Plötzlich brauchten viel mehr Menschen Wasser,
+Visual Purpose: Lange Straße zur Wasserstelle, verschiedene Figuren tragen schwere Krüge, dicht stehende Häuser im Hintergrund
+Topic Anchor: Wasser aus Landschaft
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historische Flussdörfer.
+Gesprochener Satz: Plötzlich brauchten viel mehr Menschen Wasser, und der Weg wurde zur täglichen Arbeit.
+Konkrete Szene: Lange Straße zur Wasserstelle, verschiedene Figuren tragen schwere Krüge, dicht stehende Häuser im Hintergrund.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.

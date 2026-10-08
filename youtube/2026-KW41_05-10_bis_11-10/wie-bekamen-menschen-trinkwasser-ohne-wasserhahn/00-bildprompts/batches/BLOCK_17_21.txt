@@ -1,0 +1,63 @@
+ALLES-STICKMAN LONGFORM — Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?
+BATCH 17–21
+Nach Coverwahl automatisch: Genau diese maximal 5 Bilder erzeugen. Vorherige Bilder NICHT als Referenz benutzen; jedes Bild individuell aus seinem vollständigen Prompt. Stille QC gegen Audio, sichtbaren Text, Anatomie, Stil, Umwelt; defekte Bilder nur unter derselben Bildnummer reparieren. Danach Dateien als Bild XX.png direkt in 00-bildprompts/images/ speichern und OHNE NUTZERRÜCKFRAGE den nächsten Batch laden. Finale Ordnerprüfung nach Bild 78.
+
+Bild 17 · 4.95s
+Audio Anchor: Doch auch eine Quelle konnte zeitweise
+Visual Purpose: Gleiche Quellfassung mit niedrigerem Ausfluss in trockenerem Wetter, nicht kompletter Jahreszeitenwechsel
+Topic Anchor: Quellen
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: felsiges Quellgebiet und Dorf.
+Gesprochener Satz: Doch auch eine Quelle konnte zeitweise weniger Wasser liefern, besonders bei anhaltender Trockenheit.
+Konkrete Szene: Gleiche Quellfassung mit niedrigerem Ausfluss in trockenerem Wetter, nicht kompletter Jahreszeitenwechsel; ein wartender Mensch blickt in halb gefüllten Krug.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 18 · 5.33s
+Audio Anchor: Manche Orte hatten keine gute Quelle
+Visual Purpose: Dorf auf Ebene, in der unteren Bildhälfte sanfter vereinfachter Erdquerschnitt mit wasserführender Schicht
+Topic Anchor: Brunnen
+Visual Form: Illustrierter Querschnitt
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historisches Dorf und Erdquerschnitt.
+Gesprochener Satz: Manche Orte hatten keine gute Quelle in Reichweite, aber unter ihren Füßen lag Grundwasser.
+Konkrete Szene: Dorf auf Ebene, in der unteren Bildhälfte sanfter vereinfachter Erdquerschnitt mit wasserführender Schicht; oben Menschen suchen Brunnenstandort.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 19 · 5.71s
+Audio Anchor: Statt jeden Tag weit zu laufen,
+Visual Purpose: Historische Gruppe gräbt einen Brunnen mit einfachen Werkzeugen und Holzstützen
+Topic Anchor: Brunnen
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historisches Dorf und Erdquerschnitt.
+Gesprochener Satz: Statt jeden Tag weit zu laufen, konnten Menschen einen Brunnen bis zu wasserführenden Schichten graben.
+Konkrete Szene: Historische Gruppe gräbt einen Brunnen mit einfachen Werkzeugen und Holzstützen; sachliche, nicht sicherheitsanleitende Szene.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 20 · 6.09s
+Audio Anchor: Wasser stand dann im unteren Teil
+Visual Purpose: Klarer 16:9-Brunnen-Querschnitt, oben Figur kurbelt Eimer, unten Grundwasser zwischen Gesteinsporen sichtbar
+Topic Anchor: Brunnen
+Visual Form: Illustrierter Querschnitt
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historisches Dorf und Erdquerschnitt.
+Gesprochener Satz: Wasser stand dann im unteren Teil des Schachts und ließ sich mit Eimer und Seil heraufholen.
+Konkrete Szene: Klarer 16:9-Brunnen-Querschnitt, oben Figur kurbelt Eimer, unten Grundwasser zwischen Gesteinsporen sichtbar; lebendige Szene.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 21 · 4.95s
+Audio Anchor: Ein Brunnen machte die Versorgung näher,
+Visual Purpose: Historischer Brunnenhof: eine Person schöpft, andere repariert Holzaufbau, dritte reinigt Umgebung
+Topic Anchor: Brunnen
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historisches Dorf und Erdquerschnitt.
+Gesprochener Satz: Ein Brunnen machte die Versorgung näher, doch Graben, Reinigen und Instandhalten blieben mühsam.
+Konkrete Szene: Historischer Brunnenhof: eine Person schöpft, andere repariert Holzaufbau, dritte reinigt Umgebung; keine moderne Pumpe.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.

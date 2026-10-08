@@ -1,0 +1,63 @@
+ALLES-STICKMAN LONGFORM — Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?
+BATCH 27–31
+Nach Coverwahl automatisch: Genau diese maximal 5 Bilder erzeugen. Vorherige Bilder NICHT als Referenz benutzen; jedes Bild individuell aus seinem vollständigen Prompt. Stille QC gegen Audio, sichtbaren Text, Anatomie, Stil, Umwelt; defekte Bilder nur unter derselben Bildnummer reparieren. Danach Dateien als Bild XX.png direkt in 00-bildprompts/images/ speichern und OHNE NUTZERRÜCKFRAGE den nächsten Batch laden. Finale Ordnerprüfung nach Bild 78.
+
+Bild 27 · 4.18s
+Audio Anchor: Das bedeutete: Wasser finden war nur
+Visual Purpose: Arbeiter am Brunnen und parallel Menschen am Wassertransport zum Dorf, zwei Aufgaben in einem Blick zusammengeführt
+Topic Anchor: Unsichtbares Wasser
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historischer Brunnen, Sachillustration.
+Gesprochener Satz: Das bedeutete: Wasser finden war nur die erste Hälfte der Lösung.
+Konkrete Szene: Arbeiter am Brunnen und parallel Menschen am Wassertransport zum Dorf, zwei Aufgaben in einem Blick zusammengeführt.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 28 · 4.57s
+Audio Anchor: Wo Regen nur gelegentlich fiel, war
+Visual Purpose: Hofhaus in gemäßigt-trockenem Mittelmeerklima, erste Regentropfen auf Dach, Krüge bereit
+Topic Anchor: Regen sammeln
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historischer mediterraner Haushalt.
+Gesprochener Satz: Wo Regen nur gelegentlich fiel, war das Sammeln und Speichern besonders wichtig.
+Konkrete Szene: Hofhaus in gemäßigt-trockenem Mittelmeerklima, erste Regentropfen auf Dach, Krüge bereit; stimmig nicht tropisch.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 29 · 4.57s
+Audio Anchor: Von Dächern und befestigten Flächen konnte
+Visual Purpose: Hausdach mit einfacher Regenrinne/Steinrinne führt zu unterirdischem Speicher, integrierter Querschnitt mit Weg der Tropfen
+Topic Anchor: Regen sammeln
+Visual Form: Illustrierter Querschnitt
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historischer mediterraner Haushalt.
+Gesprochener Satz: Von Dächern und befestigten Flächen konnte Wasser in angelegte Sammelbecken geleitet werden.
+Konkrete Szene: Hausdach mit einfacher Regenrinne/Steinrinne führt zu unterirdischem Speicher, integrierter Querschnitt mit Weg der Tropfen.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 30 · 4.57s
+Audio Anchor: Solche Speicher nennt man Zisternen; sie
+Visual Purpose: Historische Zisterne unter Hof mit überwölbtem Steinraum, darüber zwei Menschen entnehmen Wasser durch Öffnung, Label ZISTERNE
+Topic Anchor: Regen sammeln
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historischer mediterraner Haushalt.
+Gesprochener Satz: Solche Speicher nennt man Zisternen; sie konnten Wasser für spätere Trockenzeiten aufbewahren.
+Konkrete Szene: Historische Zisterne unter Hof mit überwölbtem Steinraum, darüber zwei Menschen entnehmen Wasser durch Öffnung, Label ZISTERNE.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 31 · 4.18s
+Audio Anchor: Das war keine Zauberei, sondern eine
+Visual Purpose: Vorher/Nachher gleiche Hauswelt: Regen füllt Zisterne, trockenere Zeit mit gefülltem Speicher
+Topic Anchor: Regen sammeln
+Visual Form: Illustrierter Vergleich
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historischer mediterraner Haushalt.
+Gesprochener Satz: Das war keine Zauberei, sondern eine kluge Antwort auf unregelmäßigen Regen.
+Konkrete Szene: Vorher/Nachher gleiche Hauswelt: Regen füllt Zisterne, trockenere Zeit mit gefülltem Speicher; klare Bildmitte Tank.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.

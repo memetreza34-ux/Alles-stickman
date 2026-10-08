@@ -1,0 +1,63 @@
+ALLES-STICKMAN LONGFORM — Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?
+BATCH 37–41
+Nach Coverwahl automatisch: Genau diese maximal 5 Bilder erzeugen. Vorherige Bilder NICHT als Referenz benutzen; jedes Bild individuell aus seinem vollständigen Prompt. Stille QC gegen Audio, sichtbaren Text, Anatomie, Stil, Umwelt; defekte Bilder nur unter derselben Bildnummer reparieren. Danach Dateien als Bild XX.png direkt in 00-bildprompts/images/ speichern und OHNE NUTZERRÜCKFRAGE den nächsten Batch laden. Finale Ordnerprüfung nach Bild 78.
+
+Bild 37 · 5.33s
+Audio Anchor: Die berühmten hohen Bögen waren vor
+Visual Purpose: Römische Wasserleitung nähert sich Tal
+Topic Anchor: Wasser für die Großstadt
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: antikes Rom, römisches Umland.
+Gesprochener Satz: Die berühmten hohen Bögen waren vor allem dort nötig, wo Geländeunterschiede überbrückt werden mussten.
+Konkrete Szene: Römische Wasserleitung nähert sich Tal; imposante Arkaden führen Kanal auf geeigneter Höhe über Senke, Umgebung glaubwürdig.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 38 · 4.95s
+Audio Anchor: Damit Wasser floss, brauchte der Kanal
+Visual Purpose: Sehr anschaulicher länglicher Querschnitt mit leichten Neigungspfeilen
+Topic Anchor: Wasser für die Großstadt
+Visual Form: Illustrierter Querschnitt
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: antikes Rom, römisches Umland.
+Gesprochener Satz: Damit Wasser floss, brauchte der Kanal über weite Strecken ein sorgfältig geplantes Gefälle.
+Konkrete Szene: Sehr anschaulicher länglicher Querschnitt mit leichten Neigungspfeilen; zwei römische Vermesser messen Höhen mit einfachen Werkzeugen; kein Zahlenmeer.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 39 · 4.95s
+Audio Anchor: Nicht ein Motor schob das Wasser
+Visual Purpose: Querschnitt eines geneigten Stein-Kanals mit fließendem Wasser und schlichter Pfeilrichtung bergab, daneben erstaunte Stickman-Figur, kein Motor
+Topic Anchor: Wasser für die Großstadt
+Visual Form: Illustrierter Querschnitt
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: antikes Rom, römisches Umland.
+Gesprochener Satz: Nicht ein Motor schob das Wasser an, sondern die Schwerkraft erledigte die Arbeit.
+Konkrete Szene: Querschnitt eines geneigten Stein-Kanals mit fließendem Wasser und schlichter Pfeilrichtung bergab, daneben erstaunte Stickman-Figur, kein Motor.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 40 · 5.33s
+Audio Anchor: Doch ein riesiges Bauwerk war nutzlos,
+Visual Purpose: Arbeiter in begehbarer gemauerter Wartungsöffnung entfernen Sedimente aus antikem Kanal, sicherer zeichnerischer Kontext
+Topic Anchor: Wasser für die Großstadt
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: antikes Rom, römisches Umland.
+Gesprochener Satz: Doch ein riesiges Bauwerk war nutzlos, wenn Ablagerungen den Wasserweg mit der Zeit verstopften.
+Konkrete Szene: Arbeiter in begehbarer gemauerter Wartungsöffnung entfernen Sedimente aus antikem Kanal, sicherer zeichnerischer Kontext.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 41 · 5.33s
+Audio Anchor: Deshalb musste die Versorgung nicht nur
+Visual Purpose: Römischer Aufseher mit Wachstafel steht am Zugang, Arbeiter prüfen Wasserlauf
+Topic Anchor: Wasser für die Großstadt
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: antikes Rom, römisches Umland.
+Gesprochener Satz: Deshalb musste die Versorgung nicht nur gebaut, sondern regelmäßig beaufsichtigt und instand gesetzt werden.
+Konkrete Szene: Römischer Aufseher mit Wachstafel steht am Zugang, Arbeiter prüfen Wasserlauf; antike Stadt in Entfernung.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.

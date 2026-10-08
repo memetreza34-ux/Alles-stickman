@@ -1,0 +1,63 @@
+ALLES-STICKMAN LONGFORM — Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?
+BATCH 22–26
+Nach Coverwahl automatisch: Genau diese maximal 5 Bilder erzeugen. Vorherige Bilder NICHT als Referenz benutzen; jedes Bild individuell aus seinem vollständigen Prompt. Stille QC gegen Audio, sichtbaren Text, Anatomie, Stil, Umwelt; defekte Bilder nur unter derselben Bildnummer reparieren. Danach Dateien als Bild XX.png direkt in 00-bildprompts/images/ speichern und OHNE NUTZERRÜCKFRAGE den nächsten Batch laden. Finale Ordnerprüfung nach Bild 78.
+
+Bild 22 · 4.95s
+Audio Anchor: Und wer glaubte, tiefes Wasser sei
+Visual Purpose: Naher Brunnen mit dunklem Schatten und kleinem Lupenfenster der unsichtbaren Verschmutzung
+Topic Anchor: Brunnen
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historisches Dorf und Erdquerschnitt.
+Gesprochener Satz: Und wer glaubte, tiefes Wasser sei automatisch sauber, übersah bereits das nächste Problem.
+Konkrete Szene: Naher Brunnen mit dunklem Schatten und kleinem Lupenfenster der unsichtbaren Verschmutzung; Figur blickt skeptisch, kein Panikmotiv.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 23 · 4.18s
+Audio Anchor: Grundwasser liegt meistens nicht als riesiger
+Visual Purpose: Lebendige Schnittillustration: unten Sand, Kies und Gestein mit feinen wassergefüllten Zwischenräumen
+Topic Anchor: Unsichtbares Wasser
+Visual Form: Illustrierter Querschnitt
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historischer Brunnen, Sachillustration.
+Gesprochener Satz: Grundwasser liegt meistens nicht als riesiger unterirdischer See unter unseren Häusern.
+Konkrete Szene: Lebendige Schnittillustration: unten Sand, Kies und Gestein mit feinen wassergefüllten Zwischenräumen; darüber Dorf, durchgestrichener Fantasie-See nur als winzige Nebenidee.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 24 · 6.47s
+Audio Anchor: Es füllt vielmehr winzige Zwischenräume und
+Visual Purpose: Stark vergrößertes Kies-/Sanddetail neben einem nassen Schwamm als einfacher Objektvergleich
+Topic Anchor: Unsichtbares Wasser
+Visual Form: Illustrierter Vergleich
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historischer Brunnen, Sachillustration.
+Gesprochener Satz: Es füllt vielmehr winzige Zwischenräume und Risse in Boden und Gestein, fast wie Wasser in einem Schwamm.
+Konkrete Szene: Stark vergrößertes Kies-/Sanddetail neben einem nassen Schwamm als einfacher Objektvergleich; Figuren auf Oberfläche im kleinen Rahmen.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 25 · 5.33s
+Audio Anchor: Wie viel davon nutzbar ist, hängt
+Visual Purpose: Drei benachbarte kleine Geländeillustrationen: flacher Brunnen mit Wasser, felsiger Untergrund, tiefes Wasser
+Topic Anchor: Unsichtbares Wasser
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historischer Brunnen, Sachillustration.
+Gesprochener Satz: Wie viel davon nutzbar ist, hängt von Boden, Gestein, Regen und der Tiefe ab.
+Konkrete Szene: Drei benachbarte kleine Geländeillustrationen: flacher Brunnen mit Wasser, felsiger Untergrund, tiefes Wasser; wenige Symbole.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 26 · 5.71s
+Audio Anchor: In trockenen Jahren konnte der Wasserspiegel
+Visual Purpose: Derselbe Brunnen in sachlichem Vorher/Nachher: Wasserstand früher höher, später niedriger
+Topic Anchor: Unsichtbares Wasser
+Visual Form: Illustrierter Vergleich
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historischer Brunnen, Sachillustration.
+Gesprochener Satz: In trockenen Jahren konnte der Wasserspiegel sinken, und plötzlich reichte ein alter Brunnen nicht mehr.
+Konkrete Szene: Derselbe Brunnen in sachlichem Vorher/Nachher: Wasserstand früher höher, später niedriger; Eimer kommt nicht mehr tief genug.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.

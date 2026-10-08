@@ -1,0 +1,63 @@
+ALLES-STICKMAN LONGFORM — Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?
+BATCH 12–16
+Nach Coverwahl automatisch: Genau diese maximal 5 Bilder erzeugen. Vorherige Bilder NICHT als Referenz benutzen; jedes Bild individuell aus seinem vollständigen Prompt. Stille QC gegen Audio, sichtbaren Text, Anatomie, Stil, Umwelt; defekte Bilder nur unter derselben Bildnummer reparieren. Danach Dateien als Bild XX.png direkt in 00-bildprompts/images/ speichern und OHNE NUTZERRÜCKFRAGE den nächsten Batch laden. Finale Ordnerprüfung nach Bild 78.
+
+Bild 12 · 4.57s
+Audio Anchor: Auch Tiere, Werkstätten und Gärten beanspruchten
+Visual Purpose: Historische Siedlung mit Brunnen am Zentrum, daneben Schaf, Handwerk, Gartenbeete
+Topic Anchor: Wasser aus Landschaft
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: historische Flussdörfer.
+Gesprochener Satz: Auch Tiere, Werkstätten und Gärten beanspruchten Wasser, das nicht unbegrenzt vorhanden war.
+Konkrete Szene: Historische Siedlung mit Brunnen am Zentrum, daneben Schaf, Handwerk, Gartenbeete; klarer gemeinsamer Wasserkonflikt.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 13 · 6.47s
+Audio Anchor: Besonders interessant waren Quellen: Dort tritt
+Visual Purpose: Illustrierte Gelände-Seitenansicht mit Berg, Poren im Gestein und natürlichem Wasseraustritt, darüber zwei historische Figuren an echter Quelle
+Topic Anchor: Quellen
+Visual Form: Illustrierter Querschnitt
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: felsiges Quellgebiet und Dorf.
+Gesprochener Satz: Besonders interessant waren Quellen: Dort tritt Wasser, das sich im Boden bewegt, von selbst an die Oberfläche.
+Konkrete Szene: Illustrierte Gelände-Seitenansicht mit Berg, Poren im Gestein und natürlichem Wasseraustritt, darüber zwei historische Figuren an echter Quelle; keine sterile Lehrtafel.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 14 · 5.33s
+Audio Anchor: Regen versickert und füllt unter geeigneten
+Visual Purpose: Grasiger Berghang im Regen, kleine integrierte Untergrund-Schnittblase mit Tropfen durch lockeres Gestein
+Topic Anchor: Quellen
+Visual Form: Illustrierter Querschnitt
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: felsiges Quellgebiet und Dorf.
+Gesprochener Satz: Regen versickert und füllt unter geeigneten Bedingungen die wasserführenden Schichten im Untergrund wieder auf.
+Konkrete Szene: Grasiger Berghang im Regen, kleine integrierte Untergrund-Schnittblase mit Tropfen durch lockeres Gestein; klare Sonne/Regentrennung.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 15 · 5.33s
+Audio Anchor: Wo solche Schichten den Hang schneiden,
+Visual Purpose: Zwei benachbarte Quellstellen: kleiner feuchter Hang und starke Quelle zwischen Steinen
+Topic Anchor: Quellen
+Visual Form: Illustrierter Vergleich
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: felsiges Quellgebiet und Dorf.
+Gesprochener Satz: Wo solche Schichten den Hang schneiden, kann Wasser als Rinnsal oder kräftiger Strom austreten.
+Konkrete Szene: Zwei benachbarte Quellstellen: kleiner feuchter Hang und starke Quelle zwischen Steinen; jeweils Figuren mit Krügen als Größenvergleich.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
+
+Bild 16 · 5.33s
+Audio Anchor: Menschen konnten den Ausfluss einfassen und
+Visual Purpose: Einfach gemauerte historische Quellfassung am Hang mit Tongefäßen und zwei Personen, Laub und Stein als Hintergrund
+Topic Anchor: Quellen
+Visual Form: Reichhaltige Editorial-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080. Eigenständiger handgezeichneter 2D-Stickman-Editorial-Stil des Kanals Alles Stickman. Dunkle leicht unregelmäßige Anthrazitkonturen, warm elfenbeinfarbene stilisierte Gesichter, klar erkennbare Mimik, unterschiedliche historisch passende Haare, Bärte, Kleidungsstücke und Requisiten, vereinfachte Körper, flächige dezente Schatten. Gedämpfte Sand-, Ocker-, Rost-, Salbei- und Blaugrautöne. Reichhaltige lebendige Illustration mit 1–3 Hauptblickpunkten. Keine 3D- oder Fotorealistik, keine kopierten Fremdfiguren, keine falschen Buchstaben oder Wasserzeichen.
+Dargestellte Welt/Ort: felsiges Quellgebiet und Dorf.
+Gesprochener Satz: Menschen konnten den Ausfluss einfassen und Behälter genau dort füllen, wo das Wasser herauskam.
+Konkrete Szene: Einfach gemauerte historische Quellfassung am Hang mit Tongefäßen und zwei Personen, Laub und Stein als Hintergrund.
+Story-Kontinuität: gleiche Zeichenwelt wie alle anderen Bilder, aber diese Epoche und dieser Landschaftstyp bleiben in diesem Kapitel erhalten. Keine Bildreferenzen einsetzen. Erklärende kurze deutsche Labels nur wenn wirklich hilfreich. Keine unnötige Texttafel; vollständige, gut komponierte Illustration mit sichtbarer Handlung oder korrekt vereinfachtem Sachkontext.
