@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "DRAFT",
+  "status": "READY",
   "videoTitle": "Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?",
   "targetDurationSeconds": 400,
   "chapters": [
@@ -421,5 +421,7 @@
         ]
       ]
     }
-  ]
+  ],
+  "imageCount": 78,
+  "scriptWords": 1048
 }
