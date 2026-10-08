@@ -1,6 +1,6 @@
 # Kanalrichtung — Alles Stickman
 
-Status: DRAFT
+Status: ACTIVE — Testphase abgeschlossen; Longform 6–7 Minuten
 
 ## Kernidee
 
@@ -68,7 +68,9 @@ Empfohlener Start:
 
 - Sprache: Deutsch
 - Format: 16:9 Longform
-- erste Tests: ungefähr 8–12 Minuten
+- Testphase: kurze Videos von ungefähr 2 Minuten abgeschlossen
+- Hauptformat ab Oktober 2026: **6–7 Minuten Longform**
+- je Video recherchierter Spannungsbogen, eigener Story-/Kapitelplan und starke Anfangsfrage
 - eine konkrete Kernfrage pro Video
 - Voice-over als Hauptträger
 - Stickman-Szenen + Karten + vereinfachte Diagramme + Objekterklärungen
@@ -102,17 +104,11 @@ Gesucht wird eine eigene Mischung aus:
 - wenig unnötigen Figuren
 - hoher Szenenvielfalt
 
-## Noch offen
+## Festgelegter Produktionsstandard
 
-Vor `config/visual-policy.json = READY` müssen wir festlegen:
-
-1. genaue Figurenform
-2. Augen-/Mund-/Haarstil
-3. Linienbreite und Textur
-4. Farbpalette
-5. Hintergrunddetail
-6. Thumbnail-Schrift und Aufbau
-7. Umgang mit sichtbarem Text im Video
-8. Karten-/Diagramm-Stil
-9. Bewegungs-/Schnittregeln
-10. Beispielbilder für die Style-QC
+- Bildwelt: `config/visual-policy.json` = READY, Illustration zuerst; 2D handgezeichnet, reichhaltig, aber verständlich.
+- Skriptsystem: `config/script-policy.json` = READY, prägnante Hooks und Pflicht-Fakten-QC.
+- Longform-Regeln: `config/longform-policy.json`, 6–7 Minuten, inhaltsgetriebene Bilder statt starre Bildzahl.
+- Cover: genau drei Varianten, danach einmalige Nutzerwahl.
+- Restliche Bilder: nach Coverwahl automatisch in maximal 5er-Batches, stille QC, keine Bildreferenzen.
+- Export: MP4, Thumbnail, Uploadtext, SRT, getaktetes Skript.
