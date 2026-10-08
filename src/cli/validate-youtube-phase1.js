@@ -301,7 +301,7 @@ export async function validatePhase1(projectDirectory) {
       if (source.status !== 'READY') errors.push('LONGFORM_SOURCE.json ist nicht READY.');
       if (sourceShots.length !== images.length) errors.push('Longform-Storyboard stimmt nicht mit der Bildzahl überein.');
       if (source.scriptWords !== words.length) errors.push('Longform-Storyboard hat eine andere Wortzahl als das Voice-Skript.');
-      const reconstructed = (source.chapters ?? []).map((c) => (c.shots ?? []).map((x) => x[0]).join(' ')).join('\\n\\n').trim();
+      const reconstructed = (source.chapters ?? []).map((c) => (c.shots ?? []).map((x) => x[0]).join(' ')).join('\n\n').trim();
       if (reconstructed !== cleanScript) errors.push('Longform: Voice-Skript stimmt nicht mit der Szenenquelle überein.');
     }
     if (await exists(longformChapters)) {
