@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "status": "PLANNED-ANCHORS",
+  "timingNote": "Schätzwerte, nach Whisper und finaler Timeline neu berechnen",
+  "sections": [
+    {
+      "id": "hook",
+      "title": "Ohne Wasserhahn",
+      "startImage": 1,
+      "endImage": 3,
+      "startAnchor": "Eine große Stadt konnte prächtige Häuser",
+      "estimatedStartSeconds": 0,
+      "sceneWorld": "historische Stadt, allgemein"
+    },
+    {
+      "id": "setup",
+      "title": "Die drei Aufgaben",
+      "startImage": 4,
+      "endImage": 7,
+      "startAnchor": "Die Antwort hängt davon ab, wo",
+      "estimatedStartSeconds": 16,
+      "sceneWorld": "neutrale historische Siedlung"
+    },
+    {
+      "id": "sources",
+      "title": "Wasser aus Landschaft",
+      "startImage": 8,
+      "endImage": 12,
+      "startAnchor": "Deshalb entstanden viele Siedlungen dort, wo",
+      "estimatedStartSeconds": 37.7,
+      "sceneWorld": "historische Flussdörfer"
+    },
+    {
+      "id": "springs",
+      "title": "Quellen",
+      "startImage": 13,
+      "endImage": 17,
+      "startAnchor": "Besonders interessant waren Quellen: Dort tritt",
+      "estimatedStartSeconds": 62.1,
+      "sceneWorld": "felsiges Quellgebiet und Dorf"
+    },
+    {
+      "id": "wells",
+      "title": "Brunnen",
+      "startImage": 18,
+      "endImage": 22,
+      "startAnchor": "Manche Orte hatten keine gute Quelle",
+      "estimatedStartSeconds": 89.5,
+      "sceneWorld": "historisches Dorf und Erdquerschnitt"
+    },
+    {
+      "id": "groundwater",
+      "title": "Unsichtbares Wasser",
+      "startImage": 23,
+      "endImage": 27,
+      "startAnchor": "Grundwasser liegt meistens nicht als riesiger",
+      "estimatedStartSeconds": 116.5,
+      "sceneWorld": "historischer Brunnen, Sachillustration"
+    },
+    {
+      "id": "rainwater",
+      "title": "Regen sammeln",
+      "startImage": 28,
+      "endImage": 33,
+      "startAnchor": "Wo Regen nur gelegentlich fiel, war",
+      "estimatedStartSeconds": 142.4,
+      "sceneWorld": "historischer mediterraner Haushalt"
+    },
+    {
+      "id": "rome",
+      "title": "Wasser für die Großstadt",
+      "startImage": 34,
+      "endImage": 41,
+      "startAnchor": "Jetzt kommt das größte Problem: Was",
+      "estimatedStartSeconds": 172.1,
+      "sceneWorld": "antikes Rom, römisches Umland"
+    },
+    {
+      "id": "romecity",
+      "title": "Wasser in Rom",
+      "startImage": 42,
+      "endImage": 47,
+      "startAnchor": "Am Stadtrand wurde das ankommende Wasser",
+      "estimatedStartSeconds": 213.9,
+      "sceneWorld": "römische Stadtstraßen, öffentliches Leben"
+    },
+    {
+      "id": "qanat",
+      "title": "Wasser unter der Wüste",
+      "startImage": 48,
+      "endImage": 54,
+      "startAnchor": "Doch was geschah in trockenen Landschaften,",
+      "estimatedStartSeconds": 241.3,
+      "sceneWorld": "historisches trockenes iranisches Hochland, keine römische Architektur"
+    },
+    {
+      "id": "everyday",
+      "title": "Der tägliche Weg",
+      "startImage": 55,
+      "endImage": 59,
+      "startAnchor": "Von außen sehen diese Lösungen wie",
+      "estimatedStartSeconds": 271,
+      "sceneWorld": "historische Stadt und Dorf, neutral unterschiedliche Regionen als Montage"
+    },
+    {
+      "id": "quality",
+      "title": "Klares Wasser – gefährliches Wasser?",
+      "startImage": 60,
+      "endImage": 66,
+      "startAnchor": "Bleibt die wichtigste Frage: War das",
+      "estimatedStartSeconds": 298,
+      "sceneWorld": "vergleichende historische Wasserstellen"
+    },
+    {
+      "id": "modern",
+      "title": "Warum moderne Leitungen anders sind",
+      "startImage": 67,
+      "endImage": 71,
+      "startAnchor": "Mit wachsenden Städten wurde die alte",
+      "estimatedStartSeconds": 330.8,
+      "sceneWorld": "frühe moderne Trinkwasseranlagen und Gegenwart, zeitlicher Wechsel klar markiert"
+    },
+    {
+      "id": "resolution",
+      "title": "Die eigentliche Antwort",
+      "startImage": 72,
+      "endImage": 76,
+      "startAnchor": "Die Lösung war nie einfach: Menschen",
+      "estimatedStartSeconds": 357.8,
+      "sceneWorld": "illustrierte Weltkarte/Montage historischer Lösungen"
+    },
+    {
+      "id": "closing",
+      "title": "Schluss",
+      "startImage": 77,
+      "endImage": 78,
+      "startAnchor": "Wenn du heute den Wasserhahn öffnest,",
+      "estimatedStartSeconds": 386.7,
+      "sceneWorld": "historischer Krug und moderner Hahn, Vergleich"
+    }
+  ]
+}

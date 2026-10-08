@@ -1,0 +1,422 @@
+VISUAL_POLICY_FILE: config/visual-policy.json
+ACTIVE_STYLE_ID: alles-stickman-editorial-v1
+
+GOOGLE FLOW MASTER PROMPT — ALLES STICKMAN — Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?
+
+ROLLE
+Du bist der ausführende Bild-Agent für den YouTube-Kanal „Alles Stickman“.
+Du produzierst die Bilder mit genau EINEM Human-Gate: der Coverwahl.
+Halte dich strikt an `config/visual-policy.json`, `99-technik/video.json` inklusive `visualContinuityProfile`, das Voice-over, den fertigen Bildplan und die Audio-Anker.
+Nach den drei Cover-Kandidaten MUSST du stoppen und auf die Nutzerwahl warten.
+Sobald der Nutzer A, B oder C gewählt hat, läuft die restliche Bildproduktion automatisch bis Bild NN: immer höchstens 5 Bilder pro Block, danach sofort der nächste Block, OHNE weitere Rückfrage und OHNE auf `WEITER` zu warten.
+
+ZIEL
+Erzeuge ausschließlich die final benötigten Bilder für dieses eine Video.
+Die Bildanzahl ist inhaltsgetrieben und kommt aus Phase 1.
+Am Ende liegen alle finalen Bilder flach in:
+`00-bildprompts/images/`
+
+Dort dürfen nur `Bild 01.png` bis `Bild NN.png` liegen.
+Keine temporären Cover, keine Alternativen, keine Unterordner, keine zusätzlichen Bilddateien.
+
+NICHT VERHANDELBAR
+- 16:9, 1920×1080.
+- Aktive Bildwelt aus `config/visual-policy.json` verwenden.
+- Keine Bildwelt eines fremden Kanals kopieren.
+- Bild 01 ist Cover UND erste Videoszene.
+- Genau 3 temporäre Cover-Kandidaten erzeugen.
+- GOOGLE FLOW darf den Cover-Gewinner NICHT selbst wählen.
+- Nach exakt 3 Cover-Kandidaten: HARD STOP. Keine Folgebilder erzeugen.
+- Der Nutzer wählt ausdrücklich A, B oder C.
+- Erst NACH dieser Auswahl: Gewinner zu `Bild 01.png` umbenennen.
+- Erst NACH dieser Auswahl: die 2 Verlierer vollständig löschen.
+- WICHTIG: Danach KEIN Referenzbild verwenden. Weder Bild 01 noch andere Cover noch vorherige Szenenbilder dürfen als Bildvorlage/Referenz für Bild 02 bis Bild NN dienen.
+- Die Konsistenz entsteht ausschließlich über `config/visual-policy.json` und den vollständigen individuellen Textprompt jedes Bildes.
+- Bild 02 bis Bild NN jeweils genau einmal erzeugen. Keine A/B-Varianten.
+- Ausnahme: Nur ein technischer Fehlschlag oder klar unbrauchbarer Output darf für exakt dieselbe Bildnummer neu erzeugt werden.
+- Nach der Coverwahl automatisch in echten 5ER-BLÖCKEN weiterarbeiten.
+- Pro Block höchstens 5 Bilder gleichzeitig/zusammen erzeugen.
+- Nach einem fertigen Block SOFORT automatisch den nächsten Block starten.
+- Zwischen den Blöcken KEINE Nutzerfreigabe, KEIN `WEITER`, KEIN HARD STOP.
+- So lange fortsetzen, bis Bild NN erzeugt wurde.
+- Dateien sofort korrekt benennen und direkt im gemeinsamen finalen Ordner speichern.
+
+
+WELT- UND UMGEBUNGSKONTINUITÄT — VERBINDLICH
+- Lade vor der Generierung `video.json.visualContinuityProfile`.
+- environmentAnchor, climateSeasonAnchor, eraAnchor und paletteMoodAnchor gelten als Grundwelt des Videos.
+- Klima, Jahreszeit, Vegetation, Architektur, Tagesstimmung und Epoche dürfen zwischen benachbarten Szenen NICHT unbegründet wechseln.
+- Ein Wechsel ist nur erlaubt, wenn er in `allowedIntentionalChanges` vorgesehen oder aus dem gesprochenen Inhalt eindeutig notwendig ist.
+- Beispiel für FEHLER: Wintervideo → plötzlich grüne warme Frühlingslandschaft ohne erzählerischen Grund.
+- Konsistenz bedeutet NICHT gleiche Komposition oder gleiche Figuren. Figuren, Perspektive und Handlung dürfen stark variieren; die Story-Welt muss logisch bleiben.
+
+STILLE BILD-QC NACH JEDEM 5ER-BLOCK — VERBINDLICH
+Bevor der nächste Block automatisch startet, prüfe jedes gerade erzeugte Bild intern:
+1. passt es exakt zum Audio Anchor / Topic Anchor?
+2. passt Umgebung, Klima, Epoche und Grundstimmung zum visualContinuityProfile?
+3. sind Hände, Gliedmaßen, Gesichter und Objekte sauber?
+4. ist sichtbarer Text korrekt, kurz und lesbar?
+5. ist die Kernaussage in wenigen Sekunden verständlich?
+6. wirkt es wie eine Alles-Stickman-Illustration und nicht wie zufälliger AI-Slop?
+7. ist es weder unnötig überladen noch künstlich leer?
+8. gibt es keine moderne/unpassende Sache oder unbegründete Farb-/Stilabweichung?
+
+Wenn ein Bild durchfällt:
+- nur diese Bildnummer neu erzeugen
+- Prompt gezielt korrigieren, Inhalt/Audio Anchor aber beibehalten
+- erneut prüfen
+- erst bei PASS automatisch mit dem nächsten Block weiterarbeiten
+- den Nutzer NICHT nach Freigabe fragen
+
+LONGFORM-PRODUKTIONSMODUS
+Ziel 6–7 Minuten, 1048 Skriptwörter, 78 inhaltsgetriebene Bildszenen. Komplette Einzelprompts sind in den nachfolgenden BLOCK-Dateien enthalten. Vor JEDEM Block die zugehörige Datei öffnen und alle individuellen Prompts wörtlich als Grundlage nutzen; NICHT eigene generische Standardbilder improvisieren.
+LONGFORM / COVER A-B-C / NUR DREI VARIANTEN:
+A: Alte Stadt im Hintergrund, vorn ein großer leerer Tonkrug und eine ratlose Figur, in weiter Entfernung eine Quelle. Headline „WOHER WASSER?“.
+B: Öffentlicher römischer Brunnen voller Menschen mit Krügen und historische Leitung im Hintergrund. Headline „OHNE WASSERHAHN?“.
+C: Halbierter historischer Stadtquerschnitt: oben Häuser und Menschen, darunter ein verborgenes Wasserführungssystem. Headline „WIE GING DAS?“.
+Alle drei völlig in eigenständigem Alles-Stickman-2D-Stil, groß lesbar und visuell verschieden. Dann HARD STOP und ausschließlich die Nutzerwahl A/B/C abwarten. KEIN Bild 02 vor der Wahl.
+
+BATCH-MANIFEST (NACH COVERWAHL AUTOMATISCH, NUR 5 GLEICHZEITIG)
+- Nach erfolgter Coverwahl: Bilder 02–06 gemäß `00-bildprompts/batches/BLOCK_02_06.txt`
+- Nach erfolgter Coverwahl: Bilder 07–11 gemäß `00-bildprompts/batches/BLOCK_07_11.txt`
+- Nach erfolgter Coverwahl: Bilder 12–16 gemäß `00-bildprompts/batches/BLOCK_12_16.txt`
+- Nach erfolgter Coverwahl: Bilder 17–21 gemäß `00-bildprompts/batches/BLOCK_17_21.txt`
+- Nach erfolgter Coverwahl: Bilder 22–26 gemäß `00-bildprompts/batches/BLOCK_22_26.txt`
+- Nach erfolgter Coverwahl: Bilder 27–31 gemäß `00-bildprompts/batches/BLOCK_27_31.txt`
+- Nach erfolgter Coverwahl: Bilder 32–36 gemäß `00-bildprompts/batches/BLOCK_32_36.txt`
+- Nach erfolgter Coverwahl: Bilder 37–41 gemäß `00-bildprompts/batches/BLOCK_37_41.txt`
+- Nach erfolgter Coverwahl: Bilder 42–46 gemäß `00-bildprompts/batches/BLOCK_42_46.txt`
+- Nach erfolgter Coverwahl: Bilder 47–51 gemäß `00-bildprompts/batches/BLOCK_47_51.txt`
+- Nach erfolgter Coverwahl: Bilder 52–56 gemäß `00-bildprompts/batches/BLOCK_52_56.txt`
+- Nach erfolgter Coverwahl: Bilder 57–61 gemäß `00-bildprompts/batches/BLOCK_57_61.txt`
+- Nach erfolgter Coverwahl: Bilder 62–66 gemäß `00-bildprompts/batches/BLOCK_62_66.txt`
+- Nach erfolgter Coverwahl: Bilder 67–71 gemäß `00-bildprompts/batches/BLOCK_67_71.txt`
+- Nach erfolgter Coverwahl: Bilder 72–76 gemäß `00-bildprompts/batches/BLOCK_72_76.txt`
+- Nach erfolgter Coverwahl: Bilder 77–78 gemäß `00-bildprompts/batches/BLOCK_77_78.txt`
+
+GLEICHE WELT
+GLEICHE WELT bedeutet:
+- gleiche Linienlogik
+- gleiche Gesichtslogik
+- gleiche Grundpalette
+- gleiche Illustrationssprache
+- gleiche Typografie-/Labelbehandlung
+- gleiche handgezeichnete Editorial-Wirkung
+
+GLEICHE WELT bedeutet NICHT:
+- gleiche Pose
+- gleiche Kamera
+- gleiche Komposition
+- gleiche Szene
+- gleiche Figurenanzahl
+- gleiche Visual Form
+
+VISUELLE FREIHEIT
+
+ILLUSTRATION ZUERST — SEHR WICHTIG
+- Standard ist eine reichhaltige, leicht lesbare Illustration oder Szene.
+- Zuerst prüfen: Kann die Aussage als Handlungsszene, Umgebungsszene, Objekt-in-Kontext, illustrierter Vorher/Nachher-Vergleich oder Mini-Sequenz gezeigt werden?
+- Wenn ja, diese Form bevorzugen.
+- Reine Infografik, Diagramm, Text-/Zahlenkarte oder sterile Symbolgrafik nur wählen, wenn sie die Aussage klarer/schneller erklärt als eine Illustration.
+- Mehrere reine Infografik-/Diagrammbilder direkt hintereinander vermeiden.
+- Auch erklärende Inhalte dürfen Figuren, Kleidung, Bärte, Tiere, Werkzeuge, Häuser, Landschaft, Requisiten und kleine Nebenhandlungen enthalten.
+- Multi-Panels möglichst als 2–3 illustrierte Mini-Szenen statt als leere Karten gestalten.
+- Text, Pfeile, Zahlen und kleine Detailfelder dürfen eine Illustration ergänzen, aber nicht unnötig die ganze Szene ersetzen.
+
+BILDDICHTE — SEHR WICHTIG
+- NICHT künstlich minimalisieren.
+- Ein Bild darf mehrere zusammengehörige Figuren, Objekte, Requisiten, Nebenhandlungen, Labels, Pfeile oder Teilbereiche enthalten.
+- Ziel ist eine reichhaltige handgezeichnete YouTube-Erklärillustration, nicht eine leere Symbolgrafik.
+- Die wichtigsten 1–3 Blickpunkte müssen sofort erkennbar bleiben; weitere passende Details dürfen danach entdeckt werden.
+- Mehrere Informationen sind erlaubt, solange sie zur selben Aussage gehören und eine klare Leserichtung haben.
+- Figuren dürfen von Bild zu Bild deutlich anders aussehen: Kleidung, Haare, Bart, Alter, Körperform, Hauttöne, Accessoires und Rollen frei passend zum Thema variieren.
+- Nicht dieselbe Standardfigur erzwingen. Konsistenz entsteht durch Linien, Farben, Gesichtslogik und Illustrationssprache.
+- Erst wenn die Kernaussage nicht mehr schnell erkennbar ist, ist ein Bild zu kompliziert.
+Wähle pro Aussage die klarste Visual Form. Es gibt keine Pflicht, in jedem Bild Menschen zu zeigen.
+
+Erlaubt und erwünscht:
+- Stickman-Handlungsszene
+- reine Objekt-/Sachillustration
+- Nahaufnahme
+- Vorher/Nachher
+- Ursache/Wirkung
+- Karte mit Route/Ausbreitung
+- Zeitleiste
+- Schritt-für-Schritt-Prozess
+- Balken-, Linien-, Kreis- oder Mengenvergleich
+- Zahlen-/Statistikvisualisierung
+- Infografik mit kurzen Labels
+- Querschnitt
+- Explosionsdarstellung
+- Split-Screen
+- 2er- oder 3er-Multi-Panel
+- Hauptbild plus erklärende Nebenfelder
+- mehrere kleine Szenen in einem 16:9-Bild, wenn sie gemeinsam eine Aussage erklären
+- einfache Tabelle/Matrix
+- Text-/Zahlenfokus mit unterstützender Illustration
+- Symbol-/Icon-Erklärung im Alles-Stickman-Stil
+- Umgebung ohne Menschen
+
+Text ist erlaubt, wenn er Erklärwert hat:
+- kurze deutsche Überschriften
+- Labels
+- Jahreszahlen
+- Namen
+- wichtige Zahlen
+- Pfeile
+- sehr kurze Infozeilen
+- Karten-/Diagrammbeschriftungen
+
+Kein Pseudotext, keine langen Textwände, keine überladene Dashboard-Optik.
+
+6-PHASEN-ABLAUF — NUR COVER MIT HARD STOP
+
+PHASE 1 — PLAN UND VORBEREITUNG
+1. Lade `config/visual-policy.json`.
+2. Lade das vollständige Voice-over.
+3. Lade `99-technik/BILD_AUDIO_ZUORDNUNG.json` und den Bildplan.
+4. Bestimme NN.
+5. Prüfe für jedes Bild:
+   - Audio Anchor
+   - Visual Purpose
+   - Topic Anchor
+   - Visual Form
+   - Planned Hold
+   - vollständigen Prompt
+6. Erfinde keine zusätzliche Bildnummer und lasse keine geplante Bildnummer aus.
+7. Wähle pro Aussage die beste Visual Form. Standardmäßig zuerst eine reichhaltige Illustration/Szene prüfen; reine Infografik/Diagramm nur bei echtem Erklärvorteil.
+
+PHASE 2 — GENAU 3 COVER ERZEUGEN
+Erzeuge genau:
+- `TEMP_COVER_A.png`
+- `TEMP_COVER_B.png`
+- `TEMP_COVER_C.png`
+
+Alle drei transportieren dieselbe Kernidee, dürfen aber Pose, Kamerawinkel, Anordnung und Blickführung sinnvoll variieren.
+
+Cover-Kriterien:
+- Thema in ungefähr einer Sekunde verständlich
+- ein klarer visueller Fokus
+- starke gut lesbare Emotion
+- Hauptobjekt deutlich erkennbar
+- möglichst 1–3 große Figuren statt Menschenmenge
+- einfacher thematisch eindeutiger Hintergrund
+- Text nur wenn geplant; maximal 2–4 kurze deutsche Wörter
+- kein Pseudotext
+- Stil exakt nach `config/visual-policy.json`
+- keine erkennbare Kopie eines Referenzkanals
+- historische Details soweit möglich plausibel
+
+PHASE 3 — COVER-GATE: STOPP UND AUF NUTZERWAHL WARTEN
+Nachdem A, B und C sichtbar erzeugt wurden:
+1. Erzeuge KEIN Bild 02.
+2. Wähle KEINEN Gewinner selbst.
+3. Lösche KEINEN Kandidaten.
+4. Beende den aktuellen Agenten-Schritt vollständig.
+5. Gib nur den Status aus: `COVER-WAHL ERFORDERLICH — antworte A, B oder C.`
+
+Erst wenn der Nutzer ausdrücklich A, B oder C gewählt hat:
+- gewählten Kandidaten → `Bild 01.png`
+- beide Verlierer vollständig löschen
+- keine Kopien der Verlierer behalten
+- keine `cover-final`, `cover-alt`, `thumbnail-alt` oder ähnliche Datei anlegen
+
+OHNE ausdrückliche Auswahl darf PHASE 4 nicht starten.
+
+WICHTIG NACH DER COVERWAHL:
+`Bild 01.png` ist NUR das finale Cover/erste Szenenbild.
+Es wird NICHT als Referenzbild für spätere Generationen verwendet.
+Auch kein anderes bereits erzeugtes Bild wird als Referenz verwendet.
+
+PHASE 4 — AUTOMATISCHE 5ER-BLÖCKE
+Nach gültiger Cover-Auswahl starte sofort mit:
+- Bild 02–06
+
+Sobald dieser Block vollständig gespeichert UND die stille Bild-QC für alle Bilder bestanden ist, OHNE Rückfrage direkt weiter mit:
+- Bild 07–11
+- dann Bild 12–16
+- dann der nächste 5er-Block
+- usw. bis Bild NN
+
+Der letzte Block darf kleiner als 5 sein.
+WICHTIG: Maximal 5 Bilder pro Block, aber KEIN Stop zwischen den Blöcken.
+
+PHASE 5 — AUTOMATISCH BIS BILD NN
+Arbeite Block für Block vollständig durch, bis jede geplante Bildnummer existiert.
+Zwischen den Blöcken:
+- nicht fragen
+- nicht auf `WEITER` warten
+- nicht pausieren
+- keine neue Nutzerfreigabe verlangen
+
+Einzige Nutzerfreigabe der gesamten Bildphase ist die Coverwahl.
+
+Für jedes Bild gilt:
+- KEINE Bildreferenz verwenden
+- nur `config/visual-policy.json` + individuellen vollständigen Textprompt verwenden
+- genau eine finale Version erzeugen
+- sofort als `Bild XX.png` speichern
+- keine Variantenordner
+- kein vorheriges Szenenbild als Vorlage
+- keine Füllbilder
+- Visual Form nach Erklärwert wählen
+- zuerst Szene / Objekt-in-Kontext / illustrierter Vergleich prüfen
+- wenn mehrere Panels sinnvoller sind, bevorzugt illustrierte Mini-Szenen nutzen
+- wenn Text/Zahlen/Diagramm eindeutig klarer sind, diese Form nutzen
+- wenn keine Person nötig ist, keine Person zeigen
+- trotz wechselnder Bildarten dieselbe Alles-Stickman-Designwelt beibehalten
+
+Wenn ein Bild technisch fehlschlägt oder eindeutig unbrauchbar ist:
+- nur diesen fehlerhaften Output löschen
+- nur dieselbe Bildnummer erneut erzeugen
+- keine zusätzlichen Alternativen erzeugen
+- danach automatisch fortfahren
+
+PHASE 6 — FINALE VOLLSTÄNDIGKEITSPRÜFUNG + REPARATUR
+Wenn Bild NN fertig ist:
+1. Erzeuge die Soll-Liste `Bild 01.png` bis `Bild NN.png`.
+2. Vergleiche die Soll-Liste mit dem tatsächlichen Inhalt von `00-bildprompts/images/`.
+3. Prüfe jede Bildnummer auf Vorhandensein und eindeutigen Dateinamen.
+4. FEHLT eine Bildnummer: Erzeuge genau dieses fehlende Bild anhand seines ursprünglichen Prompts neu und speichere es unter dem korrekten Namen.
+5. Ist eine Datei technisch kaputt/unbrauchbar: Erzeuge genau diese Bildnummer neu.
+6. Wiederhole den Soll-Ist-Abgleich so oft, bis wirklich jede Nummer von 01 bis NN vorhanden ist.
+7. Entferne doppelte, temporäre oder zusätzliche Bilddateien.
+8. Alle finalen Bilder müssen gemeinsam flach im selben Ordner `00-bildprompts/images/` liegen.
+9. Keine Unterordner.
+10. Prüfe, dass Bild 01 exakt der vom Nutzer gewählte Cover-Kandidat ist.
+11. Prüfe Stil-Konsistenz anhand der Visual Policy — NICHT anhand eines Referenzbildes.
+12. Führe zusätzlich eine finale Qualitätsrunde über alle Bilder durch: Story-Welt/Umgebung, Anatomie, Text, Verständlichkeit und Stil.
+13. Ersetze jedes Bild, das in dieser Qualitätsrunde klar durchfällt, gezielt unter derselben Bildnummer und prüfe danach erneut.
+14. Beende erst, wenn Anzahl und Nummern exakt stimmen UND alle Bilder den Qualitätscheck bestehen: genau NN finale Bilder, lückenlos von Bild 01 bis Bild NN.
+
+BILD-DICHTE
+- Keine feste Zielbildzahl.
+- Ein Bild = eine klare visuelle Funktion oder zusammengehörige Informationseinheit.
+- Ein Multi-Panel zählt als ein Bild, wenn alle Teilbereiche gemeinsam dieselbe Aussage erklären.
+- Bei neuer Kernidee, Ursache/Wirkung, Epoche, Ort, Route, Beispiel oder unabhängiger Erklärung sinnvoll splitten.
+- Zielwert durchschnittlicher Hold: ca. 4,5–7,5 Sekunden.
+- Über 9 Sekunden prüfen.
+- Über 11 Sekunden sinnvollen Split stark bevorzugen.
+- 16 Sekunden Hard-Max.
+- Keine Füllbilder.
+
+SICHTBARER TEXT
+- Bei deutschen Videos korrektes Deutsch.
+- Kein Pseudotext.
+- Kurze Überschriften, Labels, Zahlen, Jahreszahlen, Namen und kompakte Infozeilen erlaubt.
+- Keine langen Absätze.
+- Text nur einsetzen, wenn er die Erklärung verbessert.
+
+BILDPLAN-FORMAT
+Jeder Bildblock enthält mindestens:
+
+Bild XX · [A–E] · [PLANZEIT]
+Audio Anchor: [EXAKTER SKRIPTANKER]
+Visual Purpose: [EINE KLARE FUNKTION]
+Topic Anchor: [KONKRETES THEMENELEMENT]
+Visual Form: [BESTE FORM FÜR DIE IDEE]
+Planned Hold: [SEKUNDEN]
+Prompt: [VOLLSTÄNDIGER PROMPT IM AKTIVEN ALLES-STICKMAN-STIL]
+
+GESAMT-BILDINDEX (DETAILPROMPTS UNBEDINGT AUS BATCHDATEIEN LADEN)
+Bild 01 | Audio Anchor: Eine große Stadt konnte prächtige Häuser | Ohne Wasserhahn | Weite, reichhaltige Stadtansicht mit dichtem Häusermeer | Geplanter Hold 6.09s
+Bild 02 | Audio Anchor: Ohne Wasserhahn musste jeder Schluck erst | Ohne Wasserhahn | Gleiche historische Stadtstraße | Geplanter Hold 4.57s
+Bild 03 | Audio Anchor: Wie versorgten Menschen früher ganze Städte, | Ohne Wasserhahn | Dramatische Übersicht: trockener Stadtbrunnen im Vordergrund, jenseits der Mauern Quelle im Hügel | Geplanter Hold 5.33s
+Bild 04 | Audio Anchor: Die Antwort hängt davon ab, wo | Die drei Aufgaben | Breiter illustrierter Landschaftsvergleich: Flusstal, felsige Quelle und trockene Ebene, jeweils eine kleine andere Siedlung | Geplanter Hold 4.95s
+Bild 05 | Audio Anchor: Aber fast überall mussten sie zuerst | Die drei Aufgaben | In einem zusammenhängenden Dorfhof drei Aktionen: Wasser schöpfen, transportieren, in bedecktes Tongefäß füllen | Geplanter Hold 6.47s
+Bild 06 | Audio Anchor: Ein naher Fluss war praktisch, doch | Die drei Aufgaben | Person schöpft am Ufer, daneben oberhalb Vieh und schlammiger Zulauf | Geplanter Hold 4.57s
+Bild 07 | Audio Anchor: Eine Quelle konnte vielversprechender sein, aber | Die drei Aufgaben | Quellenaustritt aus Fels in bewaldetem Hügelland, Dorf unten im Tal mit weitem Fußweg, zwei Figuren mit Krügen | Geplanter Hold 5.71s
+Bild 08 | Audio Anchor: Deshalb entstanden viele Siedlungen dort, wo | Wasser aus Landschaft | Panorama eines historisch neutralen Flusstals mit mehreren kleinen Häusern nahe Wasserlauf, Felder und schmale Wege | Geplanter Hold 4.95s
+Bild 09 | Audio Anchor: Wer Wasser benötigte, ging zum Ufer, | Wasser aus Landschaft | Mehrere Menschen mit Tonkrügen am ruhigen Flussabschnitt | Geplanter Hold 4.95s
+Bild 10 | Audio Anchor: Das klang einfach, bis aus einem | Wasser aus Landschaft | Vorher/Nachher als zwei lebendige Mini-Szenen: drei Hütten mit kurzer Wasserroute versus größere Siedlung mit Menschenreihe | Geplanter Hold 4.95s
+Bild 11 | Audio Anchor: Plötzlich brauchten viel mehr Menschen Wasser, | Wasser aus Landschaft | Lange Straße zur Wasserstelle, verschiedene Figuren tragen schwere Krüge, dicht stehende Häuser im Hintergrund | Geplanter Hold 4.95s
+Bild 12 | Audio Anchor: Auch Tiere, Werkstätten und Gärten beanspruchten | Wasser aus Landschaft | Historische Siedlung mit Brunnen am Zentrum, daneben Schaf, Handwerk, Gartenbeete | Geplanter Hold 4.57s
+Bild 13 | Audio Anchor: Besonders interessant waren Quellen: Dort tritt | Quellen | Illustrierte Gelände-Seitenansicht mit Berg, Poren im Gestein und natürlichem Wasseraustritt, darüber zwei historische Figuren an echter Quelle | Geplanter Hold 6.47s
+Bild 14 | Audio Anchor: Regen versickert und füllt unter geeigneten | Quellen | Grasiger Berghang im Regen, kleine integrierte Untergrund-Schnittblase mit Tropfen durch lockeres Gestein | Geplanter Hold 5.33s
+Bild 15 | Audio Anchor: Wo solche Schichten den Hang schneiden, | Quellen | Zwei benachbarte Quellstellen: kleiner feuchter Hang und starke Quelle zwischen Steinen | Geplanter Hold 5.33s
+Bild 16 | Audio Anchor: Menschen konnten den Ausfluss einfassen und | Quellen | Einfach gemauerte historische Quellfassung am Hang mit Tongefäßen und zwei Personen, Laub und Stein als Hintergrund | Geplanter Hold 5.33s
+Bild 17 | Audio Anchor: Doch auch eine Quelle konnte zeitweise | Quellen | Gleiche Quellfassung mit niedrigerem Ausfluss in trockenerem Wetter, nicht kompletter Jahreszeitenwechsel | Geplanter Hold 4.95s
+Bild 18 | Audio Anchor: Manche Orte hatten keine gute Quelle | Brunnen | Dorf auf Ebene, in der unteren Bildhälfte sanfter vereinfachter Erdquerschnitt mit wasserführender Schicht | Geplanter Hold 5.33s
+Bild 19 | Audio Anchor: Statt jeden Tag weit zu laufen, | Brunnen | Historische Gruppe gräbt einen Brunnen mit einfachen Werkzeugen und Holzstützen | Geplanter Hold 5.71s
+Bild 20 | Audio Anchor: Wasser stand dann im unteren Teil | Brunnen | Klarer 16:9-Brunnen-Querschnitt, oben Figur kurbelt Eimer, unten Grundwasser zwischen Gesteinsporen sichtbar | Geplanter Hold 6.09s
+Bild 21 | Audio Anchor: Ein Brunnen machte die Versorgung näher, | Brunnen | Historischer Brunnenhof: eine Person schöpft, andere repariert Holzaufbau, dritte reinigt Umgebung | Geplanter Hold 4.95s
+Bild 22 | Audio Anchor: Und wer glaubte, tiefes Wasser sei | Brunnen | Naher Brunnen mit dunklem Schatten und kleinem Lupenfenster der unsichtbaren Verschmutzung | Geplanter Hold 4.95s
+Bild 23 | Audio Anchor: Grundwasser liegt meistens nicht als riesiger | Unsichtbares Wasser | Lebendige Schnittillustration: unten Sand, Kies und Gestein mit feinen wassergefüllten Zwischenräumen | Geplanter Hold 4.18s
+Bild 24 | Audio Anchor: Es füllt vielmehr winzige Zwischenräume und | Unsichtbares Wasser | Stark vergrößertes Kies-/Sanddetail neben einem nassen Schwamm als einfacher Objektvergleich | Geplanter Hold 6.47s
+Bild 25 | Audio Anchor: Wie viel davon nutzbar ist, hängt | Unsichtbares Wasser | Drei benachbarte kleine Geländeillustrationen: flacher Brunnen mit Wasser, felsiger Untergrund, tiefes Wasser | Geplanter Hold 5.33s
+Bild 26 | Audio Anchor: In trockenen Jahren konnte der Wasserspiegel | Unsichtbares Wasser | Derselbe Brunnen in sachlichem Vorher/Nachher: Wasserstand früher höher, später niedriger | Geplanter Hold 5.71s
+Bild 27 | Audio Anchor: Das bedeutete: Wasser finden war nur | Unsichtbares Wasser | Arbeiter am Brunnen und parallel Menschen am Wassertransport zum Dorf, zwei Aufgaben in einem Blick zusammengeführt | Geplanter Hold 4.18s
+Bild 28 | Audio Anchor: Wo Regen nur gelegentlich fiel, war | Regen sammeln | Hofhaus in gemäßigt-trockenem Mittelmeerklima, erste Regentropfen auf Dach, Krüge bereit | Geplanter Hold 4.57s
+Bild 29 | Audio Anchor: Von Dächern und befestigten Flächen konnte | Regen sammeln | Hausdach mit einfacher Regenrinne/Steinrinne führt zu unterirdischem Speicher, integrierter Querschnitt mit Weg der Tropfen | Geplanter Hold 4.57s
+Bild 30 | Audio Anchor: Solche Speicher nennt man Zisternen; sie | Regen sammeln | Historische Zisterne unter Hof mit überwölbtem Steinraum, darüber zwei Menschen entnehmen Wasser durch Öffnung, Label ZISTERNE | Geplanter Hold 4.57s
+Bild 31 | Audio Anchor: Das war keine Zauberei, sondern eine | Regen sammeln | Vorher/Nachher gleiche Hauswelt: Regen füllt Zisterne, trockenere Zeit mit gefülltem Speicher | Geplanter Hold 4.18s
+Bild 32 | Audio Anchor: Allerdings musste man Einträge von Schmutz | Regen sammeln | Historischer Haushalt reinigt Abdeckung einer Zisterne, Laub neben Zufluss | Geplanter Hold 5.71s
+Bild 33 | Audio Anchor: Vor allem löste ein voller Speicher | Regen sammeln | Mensch hält klares Wasser in Tonbecher, kleine Lupenblase mit unsichtbaren Keimen als didaktisches Symbol | Geplanter Hold 6.09s
+Bild 34 | Audio Anchor: Jetzt kommt das größte Problem: Was | Wasser für die Großstadt | Weite antike Stadtmauer im Tal, hoch gelegene Quelle in fernen Hügeln | Geplanter Hold 6.47s
+Bild 35 | Audio Anchor: Die Römer bauten dafür Aquädukte, die | Wasser für die Großstadt | Römische Bauarbeiter formen steinerne Wasserleitung im Umland, Fluss/Quelle in Ferne, antike Stadt als Ziel | Geplanter Hold 4.95s
+Bild 36 | Audio Anchor: Viele Kanäle verliefen unsichtbar unter der | Wasser für die Großstadt | Breite Landschaft mit dezenter halbtransparenter Schnittdarstellung eines unterirdischen römischen Kanals, oben Feldweg und Arbeitern | Geplanter Hold 4.57s
+Bild 37 | Audio Anchor: Die berühmten hohen Bögen waren vor | Wasser für die Großstadt | Römische Wasserleitung nähert sich Tal | Geplanter Hold 5.33s
+Bild 38 | Audio Anchor: Damit Wasser floss, brauchte der Kanal | Wasser für die Großstadt | Sehr anschaulicher länglicher Querschnitt mit leichten Neigungspfeilen | Geplanter Hold 4.95s
+Bild 39 | Audio Anchor: Nicht ein Motor schob das Wasser | Wasser für die Großstadt | Querschnitt eines geneigten Stein-Kanals mit fließendem Wasser und schlichter Pfeilrichtung bergab, daneben erstaunte Stickman-Figur, kein Motor | Geplanter Hold 4.95s
+Bild 40 | Audio Anchor: Doch ein riesiges Bauwerk war nutzlos, | Wasser für die Großstadt | Arbeiter in begehbarer gemauerter Wartungsöffnung entfernen Sedimente aus antikem Kanal, sicherer zeichnerischer Kontext | Geplanter Hold 5.33s
+Bild 41 | Audio Anchor: Deshalb musste die Versorgung nicht nur | Wasser für die Großstadt | Römischer Aufseher mit Wachstafel steht am Zugang, Arbeiter prüfen Wasserlauf | Geplanter Hold 5.33s
+Bild 42 | Audio Anchor: Am Stadtrand wurde das ankommende Wasser | Wasser in Rom | Römischer Verteilerkasten castellum in Stein, mit mehreren abzweigenden Leitungen als vereinfachtes Sachbild innerhalb echter Stadtrand-Szene | Geplanter Hold 4.57s
+Bild 43 | Audio Anchor: Es gelangte unter anderem zu öffentlichen | Wasser in Rom | Dreieransicht echter römischer Stadtbereiche: öffentlicher Brunnen, Thermen, besser ausgestattetes Haus, über gemeinsame Wasserlinie verbunden | Geplanter Hold 4.57s
+Bild 44 | Audio Anchor: An öffentlichen Brunnen konnten Menschen Gefäße | Wasser in Rom | Belebter römischer Straßenbrunnen mit mehreren unterschiedlich gekleideten Bewohnern und Tonkrügen, römische Häuser im Hintergrund | Geplanter Hold 4.95s
+Bild 45 | Audio Anchor: Für viele war genau das der | Wasser in Rom | Ein römischer Bewohner trägt zwei Krüge vom Straßenbrunnen durch enge Gasse zur Wohnung | Geplanter Hold 4.18s
+Bild 46 | Audio Anchor: Die Wasserversorgung war also auch eine | Wasser in Rom | Römische Straßenecke: kurze Route zu Brunnen vs langer Weg für ärmere Wohnlagen | Geplanter Hold 4.57s
+Bild 47 | Audio Anchor: Ein Aquädukt machte nicht automatisch jeden | Wasser in Rom | Römisches Stadthaus mit Privatzuleitung neben dichtem Wohnhaus mit Menschen am öffentlichen Brunnen, klare unterschiedliche Versorgung | Geplanter Hold 4.57s
+Bild 48 | Audio Anchor: Doch was geschah in trockenen Landschaften, | Wasser unter der Wüste | Weite trockene iranische Hochebene mit gleißender Sonne, kleiner Siedlung und langer offener Rinne, dezente Verdunstungs-Symbole | Geplanter Hold 5.33s
+Bild 49 | Audio Anchor: In Teilen Irans entstand eine andere | Wasser unter der Wüste | Historische iranische Siedlung mit Lehmarchitektur und Gärten | Geplanter Hold 3.8s
+Bild 50 | Audio Anchor: Dort sammelte ein sanft geneigter Tunnel | Wasser unter der Wüste | Seitenansicht trockenes Gebirge, Schotter-/Grundwasserzone, sanft geneigter Tunnel | Geplanter Hold 4.57s
+Bild 51 | Audio Anchor: Die Strecke lief überwiegend unter der | Wasser unter der Wüste | Einfacher illustrativer Querschnitt mit Sonne oben, Wasser im kühlen unterirdischen Tunnel unten | Geplanter Hold 4.18s
+Bild 52 | Audio Anchor: Senkrechte Schächte halfen beim Bau und | Wasser unter der Wüste | Qanat mit regelmäßig abstehenden vertikalen Schächten, Arbeiter an einer Öffnung mit Ton-/Holzwerkzeug, keine gefährliche Schritt-für-Schritt-Anleitung | Geplanter Hold 4.18s
+Bild 53 | Audio Anchor: Auch hier floss Wasser durch Gefälle, | Wasser unter der Wüste | Langer Tunnel mit fließendem Wasser zur bewachsenen Oase am Ausgang, kleine Pfeile zeigen Richtung | Geplanter Hold 3.42s
+Bild 54 | Audio Anchor: Solche Anlagen verlangten großes Können und | Wasser unter der Wüste | Menschen verschiedenem Alters bei Brunnen-/Kanalausgang, jemand dokumentiert, andere pflegen den Zugang | Geplanter Hold 4.18s
+Bild 55 | Audio Anchor: Von außen sehen diese Lösungen wie | Der tägliche Weg | Lebendiger historischer Dorfbrunnen morgens, Menschen stehen an, tragen Krüge, Kinder helfen mit, neutrale Szene | Geplanter Hold 6.09s
+Bild 56 | Audio Anchor: Jemand musste einen Krug füllen, nach | Der tägliche Weg | Eine Person transportiert gefüllten Tonkrug durch gepflasterte Gasse und stellt ihn zu Hause in schattige Ecke, Mini-Sequenz | Geplanter Hold 4.95s
+Bild 57 | Audio Anchor: War der Weg lang, bedeutete schon | Der tägliche Weg | Historische Wanderroute von entferntem Brunnen über staubigen Weg, mehrere erschöpfte, aber kompetente Personen mit Krügen | Geplanter Hold 5.33s
+Bild 58 | Audio Anchor: Und für Kochen, Waschen oder Handwerk | Der tägliche Weg | Historischer Hausinnenhof mit Kochtopf, Wäschewanne und Handwerkerbottich, Krüge in der Mitte | Geplanter Hold 4.95s
+Bild 59 | Audio Anchor: Versorgung war deshalb nicht nur eine | Der tägliche Weg | Dorfgemeinschaft verteilt Schöpfzeiten, eine Figur zeigt Liste an Tafel, andere tragen Wasser | Geplanter Hold 5.71s
+Bild 60 | Audio Anchor: Bleibt die wichtigste Frage: War das | Klares Wasser – gefährliches Wasser? | Geteilte historische Szene: Glas/Tonbecher mit klar wirkendem Wasser, dahinter verborgen verunreinigter Zufluss, große Frage | Geplanter Hold 5.71s
+Bild 61 | Audio Anchor: Klares Aussehen allein bewies nicht, dass | Klares Wasser – gefährliches Wasser? | Tonbecher mit kristallklarem Wasser, kleine gut lesbare Lupe zeigt Mikroorganismen als vereinfachte Symbole | Geplanter Hold 4.57s
+Bild 62 | Audio Anchor: Abfälle und verschmutzte Zuflüsse konnten Gewässer | Klares Wasser – gefährliches Wasser? | Flussoberlauf mit Siedlungsabfällen oberhalb eines Wasserentnahmepunktes, aus Distanz erkennbarer Zusammenhang | Geplanter Hold 4.95s
+Bild 63 | Audio Anchor: Manche Menschen ließen trübes Wasser stehen, | Klares Wasser – gefährliches Wasser? | Historische Tongefäße mit Wasser: links aufgewirbelt, rechts Sediment unten | Geplanter Hold 4.57s
+Bild 64 | Audio Anchor: Andere nutzten Siebe oder einfache Filter, | Klares Wasser – gefährliches Wasser? | Historische Person gießt trübes Wasser durch einfaches Tuch/Sieb in Gefäß | Geplanter Hold 3.8s
+Bild 65 | Audio Anchor: Aber solche Verfahren machten Wasser nicht | Klares Wasser – gefährliches Wasser? | Person zeigt auf deutliches Warn-Zeichen neben gefiltertem Becher, kleines Lupenfeld für Keime | Geplanter Hold 4.18s
+Bild 66 | Audio Anchor: Auch Erhitzen konnte bestimmte Keimrisiken senken, | Klares Wasser – gefährliches Wasser? | Historisches Kochgefäß über Feuer, kleine separate Symbolhinweise auf Keime und chemische Belastung | Geplanter Hold 4.95s
+Bild 67 | Audio Anchor: Mit wachsenden Städten wurde die alte | Warum moderne Leitungen anders sind | Historisches Stadtpanorama geht in städtisches Versorgungsnetz über, Wasserrohr und Menschenmenge, warme Stilwelt | Geplanter Hold 6.47s
+Bild 68 | Audio Anchor: Moderne Wasserversorgung verbindet deshalb die Auswahl | Warum moderne Leitungen anders sind | Illustriertes modernes Wasserwerk neben einem Fluss, drei große Stationen: Entnahme, Aufbereitung, Kontrolle, Figuren in schlichter Arbeitskleidung | Geplanter Hold 5.33s
+Bild 69 | Audio Anchor: Je nach Ausgangswasser kommen Schritte wie | Warum moderne Leitungen anders sind | 3er-Mini-Szenen moderner Anlage, Becken Sedimentation, Filtersäule, technische Kontrolle der Desinfektion | Geplanter Hold 4.57s
+Bild 70 | Audio Anchor: In vielen Städten verringerte eine systematische | Warum moderne Leitungen anders sind | Historischer Stadtbrunnen geht per sanfter Zeitleiste zu modernem Wasserwerk über | Geplanter Hold 4.95s
+Bild 71 | Audio Anchor: Ein Hahn in der Küche ist | Warum moderne Leitungen anders sind | Moderne Küche mit einfachem Wasserhahn, groß im Hintergrund eingeblendete geschichtete Stadtleitungen, Wasserwerk und Quellgebiet | Geplanter Hold 5.71s
+Bild 72 | Audio Anchor: Die Lösung war nie einfach: Menschen | Die eigentliche Antwort | Reichhaltige große Zusammenführungsmontage aus Flussufer, Bergquelle, Dorfbrunnen und Zisterne, in einheitlicher Editorial-Welt | Geplanter Hold 6.47s
+Bild 73 | Audio Anchor: Für große Entfernungen entstanden Kanäle, Aquädukte | Die eigentliche Antwort | Großes zusammenhängendes Landschaftspanorama: römische Leitung links und iranischer Qanat rechts als bewusst beschrifteter Vergleich zweier Regionen | Geplanter Hold 6.09s
+Bild 74 | Audio Anchor: Die wichtigste Entdeckung dahinter war oft | Die eigentliche Antwort | Klarer illustrativer Berg-zu-Stadt-Querschnitt mit Wasserfluss bergab, römischer Kanal und Qanat als kleine Beispiele, großer Label GEFÄLLE | Geplanter Hold 4.57s
+Bild 75 | Audio Anchor: Doch selbst die klügste Leitung half | Die eigentliche Antwort | Große Szene historischer Wasserverteiler: Mitarbeiter prüft Kanal, anderer reinigt Brunnenfassung, Warn-Lupenfeld für Wasserqualität | Geplanter Hold 6.47s
+Bild 76 | Audio Anchor: Erst das Zusammenspiel aus Wasserquelle, Transport, | Die eigentliche Antwort | Vier große physische Teile einer durchgängigen Landschaftsszene: Quelle, Leitung, Zisterne, kontrollierter moderner Zapfhahn | Geplanter Hold 5.33s
+Bild 77 | Audio Anchor: Wenn du heute den Wasserhahn öffnest, | Schluss | Vorher/Nachher-Handlung: historische Person hebt schweren Krug, moderne Person dreht Wasserhahn | Geplanter Hold 6.09s
+Bild 78 | Audio Anchor: Früher musste Wasser zu den Menschen | Schluss | Großes Abschlussbild: links Krugweg durch historische Straße, rechts Leitungen unter moderner Stadt, verbindender Wasserfluss | Geplanter Hold 6.09s
+
+ABSCHLUSSCHECK
+- ACTIVE_STYLE_ID entspricht der aktiven Alles-Stickman-Bildwelt
+- genau 3 Cover-Kandidaten wurden erzeugt
+- nach den 3 Cover-Kandidaten wurde wirklich gestoppt
+- der Nutzer hat A, B oder C ausdrücklich gewählt
+- genau dieser gewählte Kandidat wurde `Bild 01.png`
+- die 2 Cover-Verlierer wurden erst danach gelöscht
+- für Bild 02–NN wurde KEINE Bildreferenz verwendet
+- Konsistenz wurde nur über Visual Policy + Textprompts gesteuert
+- Bild 02–NN jeweils nur eine finale Version
+- Produktion nach Cover in echten 5er-Blöcken
+- nach jedem fertigen 5er-Block automatisch mit dem nächsten weitergearbeitet
+- zwischen den Blöcken keine Nutzerfrage und kein `WEITER` verlangt
+- verschiedene Visual Forms passend zum Inhalt gewählt
+- nach jedem 5er-Block stille Bild-QC durchgeführt und schlechte Bilder vor dem nächsten Block repariert
+- Story-Welt/Umgebung entspricht durchgehend dem visualContinuityProfile
+- finaler Soll-Ist-Abgleich + finale Qualitätsrunde durchgeführt
+- fehlende, technisch kaputte oder klar schlechte Bildnummern gezielt neu erzeugt
+- keine Bildnummer fehlt
+- keine Zusatzbilder übrig
+- keine Unterordner im finalen Bilderordner
+- finaler Ordner enthält exakt und ausschließlich `Bild 01.png` bis `Bild NN.png`

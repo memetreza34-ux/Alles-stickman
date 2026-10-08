@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "structure": [
+    "hook",
+    "setup",
+    "main",
+    "resolution",
+    "closing"
+  ],
+  "sections": [
+    {
+      "id": "hook",
+      "startAnchor": "Eine große Stadt konnte prächtige Häuser",
+      "purpose": "Konflikt historischer Stadt ohne Wasserhahn sofort sichtbar machen",
+      "hookType": "problem",
+      "curiosityGap": "Wie findet und verteilt eine große Stadt Wasser ohne Wasserhahn?",
+      "titleConnection": "Wasserhahn und schwieriger Transport stehen direkt in den ersten Sätzen.",
+      "payoffPromise": "Erklärung der historischen Versorgungswege und der unsichtbaren Grenzen der Wasserqualität.",
+      "sceneSettingOnly": false
+    },
+    {
+      "id": "setup",
+      "startAnchor": "Die Antwort hängt davon ab, wo",
+      "purpose": "Drei Aufgaben: finden, heranholen und brauchbar halten."
+    },
+    {
+      "id": "main",
+      "startAnchor": "Deshalb entstanden viele Siedlungen dort, wo",
+      "purpose": "Natürliches Wasser, Brunnen, Speicher, Aquädukte, Qanats, Alltag und Wasserqualität als zusammenhängende Problemlösung."
+    },
+    {
+      "id": "resolution",
+      "startAnchor": "Die Lösung war nie einfach: Menschen",
+      "purpose": "Quellen, Gefälle, Infrastruktur, Wartung und Wasserqualität verbinden."
+    },
+    {
+      "id": "closing",
+      "startAnchor": "Wenn du heute den Wasserhahn öffnest,",
+      "purpose": "Wasserhahn als modernes Ende einer jahrtausendealten Idee."
+    }
+  ]
+}
