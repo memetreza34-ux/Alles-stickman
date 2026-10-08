@@ -357,3 +357,16 @@ Ein Video ist erst fertig, wenn:
 - `SUBTITLES.srt` existiert
 - `TIMED_SCRIPT.txt` existiert
 - Post-Render-QC bestanden ist
+
+## Longform-Modus: 6–7 Minuten
+
+- Neue Longform-Projekte setzen in `video.json` **`contentMode: "longform"`** und ein `longformProfile`.
+- Ziel: 360–420 Sekunden, bevorzugt ungefähr 6:30–6:45, keine generische künstliche Verlängerung.
+- Skript weiterhin gegen 150–170 effektive Wörter/Minute validieren; echte VO-Dauer entscheidet später über das Rendering.
+- Ein `LONGFORM_CHAPTER_PLAN.json` mit Startankern und echten Informations-/Spannungsimpulsen wird vor Assets gepflegt.
+- Individuelle ausführbare 5er-Prompts in `00-bildprompts/batches/BLOCK_XX_YY.txt`; Masterprompt enthält die gesamte Reihenfolge und den Bildindex.
+- Google Flow darf nur auf die **Cover-Auswahl** warten, danach automatisch alle 5er-Blöcke abarbeiten und fehlende/schlechte Bilder reparieren.
+- Verschiedene historische Regionen dürfen wechseln, wenn der Sprecher sie an dieser Stelle einführt. Die Alles-Stickman-Bildsprache bleibt gleich.
+- Kein automatischer Clip-/Sprach-Upload behaupten: Flow/TTS benötigen die externen Produktionsschritte, bevor Remotion laufen kann.
+
+Verbindlich: `config/longform-policy.json`.
