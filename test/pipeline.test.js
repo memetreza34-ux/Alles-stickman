@@ -13,6 +13,7 @@ import { normalizeText, similarity } from '../src/lib/pipeline.js';
 const TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-feuer-ohne-streichhoelzer';
 const SECOND_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-essen-ohne-kuehlschrank-haltbar';
 const THIRD_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-ueberlebten-menschen-eisige-winter-ohne-heizung';
+const FOURTH_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-wuschen-menschen-ihre-kleidung-ohne-waschmaschine';
 
 test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', async () => {
   const visual = JSON.parse(await readFile('config/visual-policy.json', 'utf8'));
@@ -242,6 +243,35 @@ test('Drittes Testprojekt nutzt Illustration-zuerst und besteht Phase 1', async 
   const illustrativeForms = mapping.images.filter((image) => /Szene|illustr|Bauszene|Vergleich|Mini-Sequenz|Nahaufnahme|Zusammenführung/i.test(String(image.visualForm)));
   assert.ok(illustrativeForms.length >= 12, `Zu wenige illustrative Visual Forms: ${illustrativeForms.length}/16`);
   const result = await validatePhase1(THIRD_TEST_PROJECT);
+  assert.equal(result.passed, true, result.errors.join('\n'));
+});
+
+test('Viertes Testprojekt nutzt Pipeline v7 mit starkem Hook und stabiler Story-Welt', async () => {
+  const meta = JSON.parse(await readFile(path.join(FOURTH_TEST_PROJECT, '99-technik', 'video.json'), 'utf8'));
+  const mapping = JSON.parse(await readFile(path.join(FOURTH_TEST_PROJECT, '99-technik', 'BILD_AUDIO_ZUORDNUNG.json'), 'utf8'));
+  const scriptPlan = JSON.parse(await readFile(path.join(FOURTH_TEST_PROJECT, '99-technik', 'SCRIPT_PLAN.json'), 'utf8'));
+  const script = await readFile(path.join(FOURTH_TEST_PROJECT, '01-voice-script', 'voice-script.txt'), 'utf8');
+  const prompt = await readFile(path.join(FOURTH_TEST_PROJECT, '00-bildprompts', 'google-flow-prompt.txt'), 'utf8');
+  assert.equal(meta.pipelineVersion, 7);
+  assert.equal(meta.plannedImageCount, 20);
+  assert.deepEqual(meta.targetDurationRangeSeconds, [100, 120]);
+  assert.equal(meta.visualContinuityProfile.adjacentSceneContinuityRequired, true);
+  assert.match(meta.visualContinuityProfile.environmentAnchor, /19\. Jahrhundert/i);
+  assert.equal(mapping.images.length, 20);
+  assert.equal(scriptPlan.status, 'READY');
+  const hook = scriptPlan.sections.find((section) => section.id === 'hook');
+  assert.equal(hook.hookType, 'contrast');
+  assert.equal(hook.sceneSettingOnly, false);
+  assert.ok(hook.curiosityGap.length > 20);
+  assert.ok(hook.titleConnection.length > 20);
+  assert.ok(hook.payoffPromise.length > 20);
+  assert.equal(script.indexOf(hook.startAnchor), 0);
+  const wordCount = script.trim().split(/\s+/).length;
+  assert.ok(wordCount >= 275 && wordCount <= 312, `Unerwartete Wortzahl: ${wordCount}`);
+  assert.match(prompt, /STILLE BILD-QC NACH JEDEM 5ER-BLOCK/i);
+  assert.match(prompt, /WELT- UND UMGEBUNGSKONTINUITÄT/i);
+  assert.match(prompt, /Bild 20/i);
+  const result = await validatePhase1(FOURTH_TEST_PROJECT);
   assert.equal(result.passed, true, result.errors.join('\n'));
 });
 
