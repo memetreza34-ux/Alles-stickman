@@ -268,6 +268,76 @@ export async function validatePhase1(projectDirectory) {
     if (!prompt.includes(marker)) errors.push(`${marker} fehlt im Flow-Prompt.`);
   }
 
+
+  // Erweiterter Longform-Gate: kurze Tests bleiben bewusst kompatibel.
+  if (meta.contentMode === 'longform') {
+    const longformPolicy = await readJson(path.resolve('config/longform-policy.json'));
+    if (longformPolicy.status !== 'READY') errors.push('Longform-Policy ist nicht READY.');
+    const [minSeconds, maxSeconds] = longformPolicy.targetDurationSecondsRange ?? [360, 420];
+    const duration = Number(meta.targetDurationSeconds);
+    if (duration < minSeconds || duration > maxSeconds) errors.push('Longform-Zieldauer muss 360–420 Sekunden betragen.');
+    const range = meta.targetDurationRangeSeconds ?? [];
+    if (range.length !== 2 || Number(range[0]) < minSeconds || Number(range[1]) > maxSeconds) {
+      errors.push('Longform: erlaubter tatsächlicher Dauerbereich muss innerhalb 360–420 Sekunden liegen.');
+    }
+    if (!meta.longformProfile || meta.longformProfile.chapterCount < 5) errors.push('Longform: ausformulierter Kapitel-/Storybogen fehlt.');
+    if (!Array.isArray(meta.longformProfile?.retentionBeatAnchors) || meta.longformProfile.retentionBeatAnchors.length < 5) {
+      errors.push('Longform: mindestens fünf echte Retention-/Informationsimpuls-Anker benötigt.');
+    } else {
+      let prior = -1;
+      for (const beat of meta.longformProfile.retentionBeatAnchors) {
+        const at = cleanScript.indexOf(beat);
+        if (at < 0 || at <= prior) errors.push('Longform: Retention-Anker fehlt oder Reihenfolge falsch.');
+        prior = at;
+      }
+    }
+    const longformSource = path.join(p.projectDir, '99-technik', 'LONGFORM_SOURCE.json');
+    const longformChapters = path.join(p.projectDir, '99-technik', 'LONGFORM_CHAPTER_PLAN.json');
+    if (!(await exists(longformSource))) errors.push('Longform-Storyboard fehlt.');
+    if (!(await exists(longformChapters))) errors.push('Longform-Chapter-Plan fehlt.');
+    if (await exists(longformSource)) {
+      const source = await readJson(longformSource);
+      const sourceShots = (source.chapters ?? []).flatMap((c) => c.shots ?? []);
+      if (source.status !== 'READY') errors.push('LONGFORM_SOURCE.json ist nicht READY.');
+      if (sourceShots.length !== images.length) errors.push('Longform-Storyboard stimmt nicht mit der Bildzahl überein.');
+      if (source.scriptWords !== words.length) errors.push('Longform-Storyboard hat eine andere Wortzahl als das Voice-Skript.');
+      const reconstructed = (source.chapters ?? []).map((c) => (c.shots ?? []).map((x) => x[0]).join(' ')).join('\\n\\n').trim();
+      if (reconstructed !== cleanScript) errors.push('Longform: Voice-Skript stimmt nicht mit der Szenenquelle überein.');
+    }
+    if (await exists(longformChapters)) {
+      const chapterPlan = await readJson(longformChapters);
+      if (!Array.isArray(chapterPlan.sections) || chapterPlan.sections.length !== meta.longformProfile?.chapterCount) {
+        errors.push('Longform: Kapitelanzahl im Kapitelplan stimmt nicht überein.');
+      } else {
+        let previousImage = 0;
+        for (const chapter of chapterPlan.sections) {
+          if (chapter.startImage <= previousImage || chapter.endImage < chapter.startImage) errors.push('Longform: Kapitelbildnummern in falscher Reihenfolge.');
+          if (!cleanScript.includes(chapter.startAnchor)) errors.push('Longform: Kapitel-Startanker fehlt im Skript.');
+          previousImage = chapter.endImage;
+        }
+        if (previousImage !== images.length) errors.push('Longform: Kapitelplan deckt nicht alle Bilder bis zum letzten Bild ab.');
+      }
+    }
+
+    // Die 5er-Prompts sind ein eigenständiger Produktionsbestandteil. Prüfen, dass
+    // ein Agent wirklich alle benötigten Einzelprompts statt nur den Masterindex bekommt.
+    for (let first = 2; first <= images.length; first += 5) {
+      const last = Math.min(images.length, first + 4);
+      const label = (n) => String(n).padStart(2, '0');
+      const batchPath = path.join(p.projectDir, '00-bildprompts', 'batches', `BLOCK_${label(first)}_${label(last)}.txt`);
+      if (!(await exists(batchPath))) {
+        errors.push(`Longform-Bildblock fehlt: BLOCK_${label(first)}_${label(last)}.txt`);
+        continue;
+      }
+      const batch = await readFile(batchPath, 'utf8');
+      if (!/VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT/i.test(batch)) errors.push(`Longform-Bildblock ${first}–${last}: individuelle Prompts fehlen.`);
+      for (let n = first; n <= last; n += 1) {
+        if (!batch.includes(`Bild ${label(n)}`)) errors.push(`Longform-Bildblock ${first}–${last}: Bild ${label(n)} fehlt.`);
+        if (!batch.includes(images[n - 1].startAnchor)) errors.push(`Longform-Bildblock ${first}–${last}: Audioanker für Bild ${label(n)} fehlt.`);
+      }
+    }
+  }
+
   return { passed: errors.length === 0, errors };
 }
 
