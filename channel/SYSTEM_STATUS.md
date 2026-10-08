@@ -59,3 +59,15 @@ Das Cover ist auf Klickstärke optimiert. Als Referenzvorlage kann es spätere K
 - Analytics-Feedbackloop
 
 Diese offenen Punkte ändern nichts an der jetzt festgelegten Bildproduktionslogik.
+
+## Erstes 6–7-Minuten-Longform (Oktober 2026)
+
+- Testphase abgeschlossen; Hauptformat jetzt 6–7 Minuten.
+- Projekt: `youtube/2026-KW41_05-10_bis_11-10/wie-bekamen-menschen-trinkwasser-ohne-wasserhahn`.
+- Titel: **Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?**
+- Phase 1: **READY**, CI-Phase-1-Validierung bestanden.
+- Skript: 1.048 Wörter, Zieldauer 6:40 Minuten.
+- 78 Bildszenen mit Audioankern, 16 ausführbare 5er-/Restblöcke.
+- Longform-Qualitätsregeln: `config/longform-policy.json` und Validator.
+- Phase 2/3: noch keine echten Bild- oder Voice-Assets. Google Flow startet mit genau 3 Covers, wartet ausschließlich auf Nutzerwahl; danach automatische 5er-Batches.
+- **Kein fertiges MP4 behaupten, bevor echte Assets, Alignment und Render vorliegen.**
