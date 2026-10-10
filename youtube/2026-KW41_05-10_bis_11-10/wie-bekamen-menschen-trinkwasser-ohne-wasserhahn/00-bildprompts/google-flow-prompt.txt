@@ -42,6 +42,15 @@ NICHT VERHANDELBAR
 - Dateien sofort korrekt benennen und direkt im gemeinsamen finalen Ordner speichern.
 
 
+LEBENDIGERE SZENEN — COVER-ENERGIE, KEINE COVER-KOPIE
+- Das Cover ist ein Qualitätsmaßstab für klare Handlung, lesbare Emotion und starken Fokus, aber KEIN Bildreferenz-Template. Keine generierte Bildvorlage verwenden.
+- Wenn Menschen zur Sprecherstelle passen: Bewegung, Anstrengung, Reaktion oder Arbeit am Objekt; Augenbrauen, Körperhaltung und Requisiten erzählen mit. Keine immer gleichen steifen Strichmännchen.
+- In Querschnitten oder Karten lieber ein großer sichtbarer Sachzusammenhang und optional eine kleine Handlung als winzige dicht beschriftete Kästen.
+- In normalen Szenen keine automatisch hinzugefügte Überschrift. Sichtbarer Text ist optional; meist 0–2 große deutsche Labels, normalerweise maximal 3. Keine englischen Kleinstlegenden, Fantasieschrift, doppelte Panel-Captions oder missverständlichen Text.
+- NIEMALS Promptnotizen wie GEPLANTER HOLD, BILD 32, AUDIO ANCHOR, Sekunden oder Regieanweisungen als sichtbare Schrift in ein Bild rendern.
+- Gute Perspektiven und Tiefenstaffelung nutzen; ruhige erklärende Bilder bleiben erlaubt, wenn sie informativer sind. Lebendig heißt NICHT überladen.
+- In der stillen 5er-Block-QC solche Fehler prüfen und nur betroffene Bildnummern neu erzeugen. Danach automatisch weiter, keine neue Nutzerfrage.
+
 WELT- UND UMGEBUNGSKONTINUITÄT — VERBINDLICH
 - Lade vor der Generierung `video.json.visualContinuityProfile`.
 - environmentAnchor, climateSeasonAnchor, eraAnchor und paletteMoodAnchor gelten als Grundwelt des Videos.
@@ -55,10 +64,10 @@ Bevor der nächste Block automatisch startet, prüfe jedes gerade erzeugte Bild 
 1. passt es exakt zum Audio Anchor / Topic Anchor?
 2. passt Umgebung, Klima, Epoche und Grundstimmung zum visualContinuityProfile?
 3. sind Hände, Gliedmaßen, Gesichter und Objekte sauber?
-4. ist sichtbarer Text korrekt, kurz und lesbar?
+4. Ist sichtbarer Text nötig, groß, korrekt und deutsch? Keine Planungsnotizen, falsche englische Mini-Texte oder doppelte Panel-Captions.
 5. ist die Kernaussage in wenigen Sekunden verständlich?
 6. wirkt es wie eine Alles-Stickman-Illustration und nicht wie zufälliger AI-Slop?
-7. ist es weder unnötig überladen noch künstlich leer?
+7. Ist es weder unnötig überladen noch künstlich leer? Wenn Figuren vorkommen: sind sie in sinnvoller Handlung und expressiv statt steif?
 8. gibt es keine moderne/unpassende Sache oder unbegründete Farb-/Stilabweichung?
 
 Wenn ein Bild durchfällt:
