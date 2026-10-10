@@ -34,3 +34,9 @@ Das direkte Linkformat wird zentral erzeugt von `src/lib/phase1-handoff.js`. Fü
 - Danach automatische 5er-Bildblöcke ohne weitere Nutzerrückfragen.
 - Finale Bilder vollständig im gemeinsamen Ordner prüfen.
 - Keine generierten Referenzbilder; visueller Stil nur über Policy und individuelle Prompts.
+
+## YouTube-Upload mit Hashtags
+
+Bei jeder Video-Phase 1 zusätzlich zur Titel-/Beschreibung-/Tag-Planung **2–3 relevante Hashtags** in `video.json.uploadMetadata.hashtags` eintragen, zum Beispiel `#AllesStickman`, `#Geschichte` und ein konkreter Themen-Hashtag. Der Export `YOUTUBE_UPLOAD.txt` setzt sie automatisch ans Ende der Beschreibung und dedupliziert sie. Die SRT-Untertitel bleiben unverändert. Keine irrelevanten `#Shorts`, `#viral` oder Hashtag-Wände.
+
+Für jedes künftige Google-Flow-Bild gelten `config/visual-policy.json.sceneEnergy` und die aktuellen Masterprompts: lebendige Figuren und Szenen, keine unnötigen englischen winzigen Beschriftungen oder mitgerenderten Produktionsnotizen. Nicht alle Bilder als Cover gestalten; nur dessen klaren Fokus und Ausdruck als Qualitätsmaßstab übernehmen.
