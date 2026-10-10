@@ -136,7 +136,7 @@ test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Vis
   assert.equal(meta.visualStyleId, 'UNSET');
   assert.equal(meta.topic, '');
   assert.equal(meta.title, '');
-  assert.deepEqual(meta.uploadMetadata, { title: '', description: '', tags: [] });
+  assert.deepEqual(meta.uploadMetadata, { title: '', description: '', tags: [], hashtags: [] });
   assert.equal(meta.pipelineVersion, 7);
   assert.equal(meta.coverPolicy.autoSelectWinner, false);
   assert.equal(meta.coverPolicy.selectionAuthority, 'user');
