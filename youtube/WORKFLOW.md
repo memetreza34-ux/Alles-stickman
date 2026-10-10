@@ -106,7 +106,7 @@ Pflicht:
 - Render-/SFX-Plan
 - finaler YouTube-Titel
 - finale YouTube-Beschreibung
-- optionale Tags
+- normale Upload-Tags und zusätzlich **2–3 thematisch passende Hashtags** für die Beschreibung/Caption (nicht für SRT-Untertitel)
 
 Upload-Daten stehen in `99-technik/video.json` unter `uploadMetadata`.
 
@@ -263,6 +263,15 @@ Die gemeinsame Alles-Stickman-Welt wird gehalten durch:
 
 Warum: Ein Cover ist auf Klickstärke optimiert und kann Karten, Diagramme, Multi-Panels oder Objektgrafiken unnötig in eine ähnliche Komposition drücken.
 
+### Lebendigere Szenen ohne Text-Chaos
+
+- Szenen dürfen erzählerisch so spannend und ausdrucksstark wie ein gutes Cover wirken, **aber ohne es als generiertes Referenzbild zu verwenden**.
+- Bevorzuge, wenn passend, aktive Körperhaltungen, sichtbare Interaktionen, klare Mimik und interessante Perspektiven statt starrer Standbilder.
+- Karten und Querschnitte bleiben erlaubt, sollen aber anschaulich statt voller englischer Mini-Legenden oder Textkästen sein.
+- Sichtbarer Text meistens 0–2 große deutsche Labels, normalerweise maximal 3. Kein automatisch eingeblendeter englischer Bildtitel, kein Pseudotext, kein `GEPLANTER HOLD`, keine Zeit-/Szenen- oder Audioankernotizen.
+- Falsche Beschriftungen und überladene Mini-Panels sind ein Bild-QC-Fehler: nur die betroffene Bildnummer nachbessern.
+- Hashtags sind **Beschreibungstext**, normale `uploadMetadata.tags` bleiben separate Upload-Tags; die SRT-Datei enthält keine Hashtags.
+
 ### Illustration-zuerst-Regel
 
 Für die Bildplanung gilt zusätzlich:
@@ -342,7 +351,7 @@ Reihenfolge:
 
 - `FINAL_VIDEO.mp4`: fertiges Video
 - `THUMBNAIL.png`: finales Bild 01
-- `YOUTUBE_UPLOAD.txt`: Titel, Beschreibung, Tags
+- `YOUTUBE_UPLOAD.txt`: Titel, Beschreibung **mit passenden Hashtags am Ende**, normale Tags getrennt
 - `SUBTITLES.srt`: YouTube-Untertitel mit echten Zeitstempeln
 - `TIMED_SCRIPT.txt`: lesbares Skript mit Zeitbereichen
 
