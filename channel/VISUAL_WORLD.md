@@ -299,3 +299,9 @@ Am Ende liegen alle finalen Bilder gemeinsam und flach in:
 Nur:
 
 `Bild 01.png` bis `Bild NN.png`
+
+## Mehr Ausdruck, weniger Beschriftungschaos
+
+Das Cover ist Qualitätsmaßstab für emotionale Bildwirkung: Auch normale Bilder dürfen eine sichtbare Handlung, ausdrucksstarke Augenbrauen, variierende Körperhaltung, aktive Hände und klare Tiefenstaffelung haben. **Nicht** das Coverbild als Referenz oder Layout-Vorlage verwenden.
+
+Besonders bei Querschnitten und Karten keine unnötigen winzigen Legenden, doppelte Panel-Untertitel, englischen Kleinsttext oder Planungsnotizen wie `GEPLANTER HOLD` rendern. Standard sind 0–2 große deutsche Labels, normalerweise maximal 3. Ruhige Sachbilder bleiben dann sinnvoll, wenn sie eine Tatsache klarer erklären als eine Handlungsszene.
