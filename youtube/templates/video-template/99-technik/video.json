@@ -17,7 +17,8 @@
   "uploadMetadata": {
     "title": "",
     "description": "",
-    "tags": []
+    "tags": [],
+    "hashtags": []
   },
   "coverPolicy": {
     "firstSceneIsCover": true,
