@@ -51,8 +51,34 @@ export function buildTimedScriptFromWhisper(whisperJson) {
     .join('\n\n')}\n`;
 }
 
-export function buildUploadText({ title, description, tags = [] }) {
+// Hashtags appear in the YouTube description/caption, never in spoken SRT subtitles.
+const HASHTAG_LIMIT = 3;
+
+function toHashtag(value) {
+  const raw = String(value ?? '').replace(/^\s*#/, '').trim().normalize('NFC');
+  const compact = raw.replace(/[\s._-]+/g, '').replace(/[^\p{L}\p{N}_]/gu, '');
+  return compact ? `#${compact}` : '';
+}
+
+export function buildDescriptionWithHashtags(description, { hashtags = [], tags = [] } = {}) {
+  const body = String(description ?? '').trim();
+  const existing = [...body.matchAll(/#[\p{L}\p{N}_]+/gu)].map((m) => m[0]);
+  const seen = new Set(existing.map((tag) => tag.toLocaleLowerCase('de')));
+  const suggested = ['#AllesStickman', ...(Array.isArray(hashtags) && hashtags.length ? hashtags : tags)];
+  const added = [];
+  for (const value of suggested) {
+    const tag = toHashtag(value);
+    if (!tag || seen.has(tag.toLocaleLowerCase('de'))) continue;
+    added.push(tag);
+    seen.add(tag.toLocaleLowerCase('de'));
+    if (existing.length + added.length >= HASHTAG_LIMIT) break;
+  }
+  return added.length ? [body, added.join(' ')].filter(Boolean).join('\n\n') : body;
+}
+
+export function buildUploadText({ title, description, tags = [], hashtags = [] }) {
   const cleanTags = tags.map((tag) => String(tag).trim()).filter(Boolean);
+  const completeDescription = buildDescriptionWithHashtags(description, { hashtags, tags });
   return [
     'YOUTUBE-UPLOADPAKET',
     '',
@@ -66,7 +92,7 @@ export function buildUploadText({ title, description, tags = [] }) {
     title,
     '',
     'BESCHREIBUNG',
-    description,
+    completeDescription,
     '',
     'TAGS',
     cleanTags.join(', '),
@@ -99,6 +125,7 @@ export async function finalizeExport(projectDirectory) {
   const title = String(uploadMetadata.title ?? meta.title ?? '').trim();
   const description = String(uploadMetadata.description ?? '').trim();
   const tags = Array.isArray(uploadMetadata.tags) ? uploadMetadata.tags : [];
+  const hashtags = Array.isArray(uploadMetadata.hashtags) ? uploadMetadata.hashtags : [];
   if (!title) throw new Error('YouTube-Titel fehlt in video.json.uploadMetadata.title.');
   if (!description) throw new Error('YouTube-Beschreibung fehlt in video.json.uploadMetadata.description.');
 
@@ -108,7 +135,7 @@ export async function finalizeExport(projectDirectory) {
 
   await mkdir(p.exportDir, { recursive: true });
   await copyFile(cover, thumbnail);
-  await writeFile(uploadFile, buildUploadText({ title, description, tags }), 'utf8');
+  await writeFile(uploadFile, buildUploadText({ title, description, tags, hashtags }), 'utf8');
   await writeFile(subtitlesFile, buildSrtFromWhisper(whisperJson), 'utf8');
   await writeFile(timedScriptFile, buildTimedScriptFromWhisper(whisperJson), 'utf8');
 
@@ -125,6 +152,7 @@ export async function finalizeExport(projectDirectory) {
     youtubeTitle: title,
     youtubeDescriptionPresent: Boolean(description),
     youtubeTagCount: tags.length,
+    youtubeHashtags: [...buildDescriptionWithHashtags(description, { hashtags, tags }).matchAll(/#[\p{L}\p{N}_]+/gu)].map((match) => match[0]),
     thumbnailSource: '00-bildprompts/images/Bild 01.png',
     coverSha256: await sha256(cover),
     thumbnailSha256: await sha256(thumbnail)
