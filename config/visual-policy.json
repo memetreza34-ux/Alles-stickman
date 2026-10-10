@@ -1,5 +1,5 @@
 {
-  "visualPolicyVersion": 10,
+  "visualPolicyVersion": 11,
   "status": "READY",
   "styleId": "alles-stickman-editorial-v1",
   "description": "Eigenständige 2D-Stickman-Erklärwelt für Alles Stickman. Standard sind reichhaltige, sofort lesbare Illustrationen mit Figuren, Objekten, Umgebung und kleinen erklärenden Elementen. Diagramme, Karten und Infografiken bleiben erlaubt, sind aber Hilfsmittel und nicht der visuelle Standard.",
@@ -152,7 +152,9 @@
     "Bild 02 bis Bild NN jeweils nur einmal erzeugen; keine A/B-Varianten außer bei technischem Fehlschlag oder klar unbrauchbarem Output.",
     "Nach Abschluss dürfen im finalen Bilderordner ausschließlich Bild 01.png bis Bild NN.png liegen.",
     "Für neue Pipeline-v7+-Projekte muss video.json ein visualContinuityProfile enthalten; unbegründete Klima-, Jahreszeit-, Orts-, Tageszeit- oder Epochenwechsel sind verboten.",
-    "Nach jedem 5er-Bildblock erfolgt eine stille Qualitätsprüfung. Schlechte Bilder werden vor dem nächsten Block gezielt neu erzeugt; der Nutzer wird dafür nicht gefragt."
+    "Nach jedem 5er-Bildblock erfolgt eine stille Qualitätsprüfung. Schlechte Bilder werden vor dem nächsten Block gezielt neu erzeugt; der Nutzer wird dafür nicht gefragt.",
+    "Mehr lebendige Handlungen, expressive Figuren, Tiefenstaffelung und wechselnde Kameranähe, wenn es zum Sprechertext passt; keine starre Standardpose.",
+    "Sichtbarer Text nur bei wirklichem Erklärnutzen, überwiegend 0–2 große deutsche Labels, normalerweise maximal 3; keine englischen Mini-Legenden oder Prompt-/Hold-Artefakte."
   ],
   "forbidden": [
     "direkte Kopie eines konkreten Referenzkanals oder wiedererkennbarer Figuren daraus",
@@ -172,7 +174,8 @@
     "Wasserzeichen, Logos fremder Kanäle oder Markenzeichen aus Referenzbildern",
     "Verwendung eines zuvor generierten Bildes als visuelle Referenz für ein neues Szenenbild",
     "unnötig komplizierte Kompositionen, bei denen die Kernaussage nicht mehr schnell erkennbar ist",
-    "lange Folgen steriler Infografik-/Diagramm-Karten, obwohl eine illustrative Szene möglich wäre"
+    "lange Folgen steriler Infografik-/Diagramm-Karten, obwohl eine illustrative Szene möglich wäre",
+    "mitgerenderte Produktionsnotizen, geplante Hold-Dauer, Szenen-IDs oder Audioanker"
   ],
   "notes": [
     "Die Referenzkanäle dienen nur zur Analyse des Formats. Diese Bildwelt ist eine eigene Kanalidentität.",
@@ -257,5 +260,37 @@
       "keine modernen oder sachlich unpassenden Objekte"
     ],
     "repairRule": "Fällt ein Bild durch, nur diese Bildnummer mit demselben Inhalt und einem korrigierten Vollprompt neu erzeugen. Danach erneut prüfen; erst bei PASS weiter."
+  },
+  "sceneEnergy": {
+    "goal": "Normale Szenen dürfen so lebendig und ausdrucksstark wie ein gutes Cover wirken; Energie/Handlung übertragen, niemals das Coverbild als Vorlage oder Referenz verwenden.",
+    "acting": [
+      "Wenn Menschen in der Szene sinnvoll sind, etwas Konkretes tun, reagieren und mit Objekten interagieren lassen statt steif herumzustehen.",
+      "Klare Mimik und Gestik, aktive Körperhaltung, Gegenstände in Gebrauch, historisch stimmige Kleider/Haare/Bärte.",
+      "Wechsel zwischen dynamischer Nahaufnahme, mittlerer Handlungsszene und räumlichem Überblick; keine identischen Stillstandsbilder.",
+      "Eine dominante Handlung und optional 1–2 passende Nebenhandlungen. Bild reichhaltig, aber in 2–3 Sekunden verständlich.",
+      "Ruhige sachliche Objekt-/Querschnittbilder bleiben erlaubt, wenn sie dem Erklärwert dienen."
+    ],
+    "explainers": [
+      "Querschnitte und Sachbilder möglichst anschaulich in die Welt integrieren, mit klar erkennbaren großen Objekten.",
+      "Kleine aktive Figuren oder ein verständlicher Objektschritt können abstrakte Technik anschaulich machen, wenn sie nützen.",
+      "Keine Reihen komplizierter Lehrtafeln, winziger Legendenspalten oder unmotivierter Bildüberschriften.",
+      "Prompt-Metadaten sind nie Bildinhalt. GEPLANTER HOLD, Bildnummer, Szenen-ID, Audio Anchor und Sekundenangaben dürfen nicht ins Bild."
+    ],
+    "textReadability": {
+      "visibleLanguage": "de",
+      "onlyWhenUseful": true,
+      "preferredLabelsPerImage": [
+        0,
+        2
+      ],
+      "normalMaximumLabelsPerImage": 3,
+      "noEnglishMiniCaptions": true,
+      "noDuplicatePanelCaptions": true,
+      "noAutomaticHeadlines": true,
+      "noProductionMetadata": true,
+      "chartException": "Bei wirklich fachlich nötigen Grafiken nur so viele Labels wie auf Smartphonegröße tatsächlich lesbar bleiben.",
+      "failureRule": "Pseudotext, unnötige englische/zu kleine Labels, doppelte Beschriftungen, eingeblendete Hold-Zeiten oder Produktionsnotizen gelten als Qualitätsfehler."
+    },
+    "visualVariety": "Lebendige Szenen, expressive Figuren und nachvollziehbare Mini-Handlungen öfter bevorzugen; Infografiken nur wo erkennbar klarer. Stilkonstanz bedeutet nicht immer gleiche Bildart."
   }
 }
