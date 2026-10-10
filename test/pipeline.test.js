@@ -5,7 +5,7 @@ import path from 'node:path';
 import test from 'node:test';
 
 import { evaluateTopic } from '../src/cli/check-youtube-topic.js';
-import { buildSrtFromWhisper, buildTimedScriptFromWhisper, buildUploadText, formatSrtTimestamp } from '../src/cli/finalize-youtube-export.js';
+import { buildSrtFromWhisper, buildTimedScriptFromWhisper, buildUploadText, buildDescriptionWithHashtags, formatSrtTimestamp } from '../src/cli/finalize-youtube-export.js';
 import { validatePhase1 } from '../src/cli/validate-youtube-phase1.js';
 import { phase1Links, phase1ChatLinks, renderPhase1Handoff } from '../src/lib/phase1-handoff.js';
 import { validatePacing } from '../src/cli/validate-youtube-pacing.js';
@@ -46,7 +46,7 @@ test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', 
   assert.equal(visual.referenceConsistency.generatedImageReferenceForbidden, true);
   assert.equal(visual.multiPanelPolicy.allowed, true);
   assert.equal(visual.informationDesign.sameWorldRequired, true);
-  assert.equal(visual.visualPolicyVersion, 10);
+  assert.equal(visual.visualPolicyVersion, 11);
   assert.equal(visual.visualFormPriority.default, 'illustrative-scene-first');
   assert.ok(visual.visualFormPriority.preferred.includes('reichhaltige Stickman-Handlungsszene'));
   assert.ok(visual.visualFormPriority.useOnlyWhenClearer.includes('reine Infografik'));
@@ -55,6 +55,7 @@ test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', 
   assert.equal(visual.environmentContinuity.noUnmotivatedEnvironmentShift, true);
   assert.equal(visual.visualSelfReview.runAfterEveryBatch, true);
   assert.equal(visual.visualSelfReview.silentRepairBeforeContinue, true);
+  assert.equal(visual.sceneEnergy.textReadability.normalMaximumLabelsPerImage, 3);
   assert.ok(visual.visualForms.includes('Diagramm oder Zahlenvergleich'));
   assert.ok(visual.visualForms.includes('2er- oder 3er-Multi-Panel'));
   assert.ok(visual.visualForms.includes('Text-/Zahlenfokus mit unterstützender Illustration'));
@@ -307,6 +308,7 @@ test('Erstes 6–7-Minuten-Longform hat recherchiertes Skript und 78 vollständi
   assert.equal(meta.targetDurationSeconds, 400);
   assert.deepEqual(meta.targetDurationRangeSeconds, [365, 420]);
   assert.equal(meta.plannedImageCount, 78);
+  assert.deepEqual(meta.uploadMetadata.hashtags, ['#AllesStickman', '#Trinkwasser', '#Geschichte']);
   assert.equal(map.images.length, 78);
   assert.equal(script.trim().split(/\s+/).length, 1048);
   assert.equal(source.scriptWords, 1048);
@@ -369,6 +371,18 @@ test('YouTube-Export baut gültige SRT- und Zeitstempeldateien', () => {
   assert.match(upload, /TAGS\nMenschheit, Geschichte/);
   assert.match(upload, /SUBTITLES\.srt/);
   assert.match(upload, /TIMED_SCRIPT\.txt/);
+  assert.match(upload, /BESCHREIBUNG\nTestbeschreibung\n\n#AllesStickman #Menschheit #Geschichte/);
+  const custom = buildUploadText({
+    title: 'Wasser', description: 'Quellen und Brunnen',
+    tags: ['Menschheit', 'Aquädukt'],
+    hashtags: ['#AllesStickman', '#Trinkwasser', '#Geschichte']
+  });
+  assert.match(custom, /BESCHREIBUNG\nQuellen und Brunnen\n\n#AllesStickman #Trinkwasser #Geschichte/);
+  assert.equal((custom.match(/#Trinkwasser/g) ?? []).length, 1);
+  assert.match(buildDescriptionWithHashtags('Text #Trinkwasser', {
+    hashtags: ['#Trinkwasser', '#Geschichte']
+  }), /Text #Trinkwasser\n\n#AllesStickman #Geschichte/);
+
 });
 
 test('Textnormalisierung und Ähnlichkeit funktionieren', () => {
