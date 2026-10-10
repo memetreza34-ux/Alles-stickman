@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
-import { readFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { arg, exists, projectPaths, readJson } from '../lib/pipeline.js';
+import { phase1ChatLinks, renderPhase1Handoff } from '../lib/phase1-handoff.js';
 
 export async function validatePhase1(projectDirectory) {
   const p = projectPaths(projectDirectory);
@@ -349,7 +350,12 @@ async function main() {
     for (const error of result.errors) console.error(`- ${error}`);
     throw new Error(`${result.errors.length} Phase-1-Regel(n) verletzt.`);
   }
+  const project = projectPaths(dir);
+  const meta = await readJson(project.meta);
+  await writeFile(path.join(project.techDir, 'PHASE1_START_HERE.md'),
+    renderPhase1Handoff(meta, { phase1Validated: true }), 'utf8');
   console.log('YouTube Phase 1: BESTANDEN');
+  console.log('\n' + phase1ChatLinks(meta));
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

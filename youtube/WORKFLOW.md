@@ -77,6 +77,7 @@ youtube/<week>/<slug>/
     ├── SCRIPT_PLAN.json
     ├── RECHERCHE.md
     ├── PHASE1_QC.md
+    ├── PHASE1_START_HERE.md
     ├── PRODUKTIONSPLAN.md
     ├── YOUTUBE_CHAPTERS.json
     ├── YOUTUBE_RENDER_PLAN.json
@@ -141,6 +142,25 @@ Vor Asset-Erzeugung:
 ```bash
 npm run validate:youtube-phase1 -- --dir "youtube/<week>/<slug>"
 ```
+
+### Verpflichtende Phase-1-Übergabe — zwei Direktlinks
+
+**Nach einer bestandenen Phase-1-Prüfung muss die Antwort im Chat sofort beide klickbaren Links anzeigen**, auch wenn das Video noch keine Bilder oder Stimme besitzt:
+
+- **Google-Flow-Prompt öffnen:** direkter GitHub-Dateilink auf `00-bildprompts/google-flow-prompt.txt`
+- **Voice-over-Skript öffnen:** direkter GitHub-Dateilink auf `01-voice-script/voice-script.txt`
+
+Nicht nur Dateinamen oder den GitHub-Projektordner angeben. Die zwei Links sollen in ChatGPT als klickbare Links oder, sofern verfügbar, als zwei echte Öffnen-Buttons erscheinen und mobil benutzbar sein.
+
+Jedes Videoprojekt erhält dazu `99-technik/PHASE1_START_HERE.md`. Die lokale Projekterstellung bereitet diese Startseite automatisch vor; die erfolgreiche Phase-1-CLI-Prüfung aktualisiert den Status und gibt beide Links aus.
+
+Für nachträgliches Erstellen/Aktualisieren:
+```bash
+npm run handoff:youtube -- --dir "youtube/<week>/<slug>"
+```
+
+**Wichtig:** Die Links öffnen die Textdateien in GitHub. Sie starten Google Flow/TTS nicht selbst. Die bisherige Coverwahl A/B/C und automatische 5er-Bildproduktion ändern sich nicht.
+
 
 ## 4. Google Flow — verbindlicher Ablauf mit genau einem Human-Gate
 

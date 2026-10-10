@@ -13,6 +13,15 @@ Produktionsrepository für einen deutschsprachigen faceless YouTube-Erklärkanal
 - System-Audit: `channel/SYSTEM_AUDIT.md`
 - komplette Produktionsanleitung: `youtube/WORKFLOW.md`
 
+## Phase 1: Prompt und Skript direkt öffnen
+
+Nach Phase 1 erscheinen **immer zwei anklickbare Links** im Chat:
+
+- Google-Flow-Prompt direkt im jeweiligen Projekt öffnen
+- Voice-over-Skript direkt im jeweiligen Projekt öffnen
+
+Die Projektdatei `99-technik/PHASE1_START_HERE.md` enthält beide Direktlinks für Smartphone und Desktop. Erzeugung: `npm run handoff:youtube -- --dir "youtube/<week>/<slug>"`; die erfolgreiche Phase-1-Prüfung erzeugt/aktualisiert sie ebenfalls. Agentenpflicht siehe `AGENTS.md`.
+
 ## Bildproduktion
 
 Verbindlicher Ablauf:

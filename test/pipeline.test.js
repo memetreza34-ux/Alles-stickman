@@ -7,6 +7,7 @@ import test from 'node:test';
 import { evaluateTopic } from '../src/cli/check-youtube-topic.js';
 import { buildSrtFromWhisper, buildTimedScriptFromWhisper, buildUploadText, formatSrtTimestamp } from '../src/cli/finalize-youtube-export.js';
 import { validatePhase1 } from '../src/cli/validate-youtube-phase1.js';
+import { phase1Links, phase1ChatLinks, renderPhase1Handoff } from '../src/lib/phase1-handoff.js';
 import { validatePacing } from '../src/cli/validate-youtube-pacing.js';
 import { normalizeText, similarity } from '../src/lib/pipeline.js';
 
@@ -15,6 +16,25 @@ const SECOND_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-mensc
 const THIRD_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-ueberlebten-menschen-eisige-winter-ohne-heizung';
 const FOURTH_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-wuschen-menschen-ihre-kleidung-ohne-waschmaschine';
 const LONGFORM_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-bekamen-menschen-trinkwasser-ohne-wasserhahn';
+
+test('Phase-1-Handoff stellt beide direkten, mobil erreichbaren Videodateilinks bereit', async () => {
+  const dir = 'youtube/2026-KW41_05-10_bis_11-10/wie-bekamen-menschen-trinkwasser-ohne-wasserhahn';
+  const meta = JSON.parse(await readFile(path.join(dir, '99-technik', 'video.json'), 'utf8'));
+  const links = phase1Links(meta);
+  const base = 'https://github.com/memetreza34-ux/Alles-stickman/blob/main/youtube/';
+  assert.ok(links.flowPrompt.startsWith(base));
+  assert.ok(links.voiceScript.startsWith(base));
+  assert.ok(links.flowPrompt.endsWith('/00-bildprompts/google-flow-prompt.txt'));
+  assert.ok(links.voiceScript.endsWith('/01-voice-script/voice-script.txt'));
+  assert.notEqual(links.flowPrompt, links.voiceScript);
+  assert.match(phase1ChatLinks(meta), /Google-Flow-Prompt öffnen/);
+  assert.match(phase1ChatLinks(meta), /Voice-over-Skript öffnen/);
+  const handoff = renderPhase1Handoff(meta, { phase1Validated: true });
+  assert.match(handoff, /Phase 1 validiert/);
+  assert.ok(handoff.includes(links.flowPrompt));
+  assert.ok(handoff.includes(links.voiceScript));
+  assert.throws(() => phase1Links({ weekFolder: '..', topicSlug: 'video' }), /Ungültiges/);
+});
 
 test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', async () => {
   const visual = JSON.parse(await readFile('config/visual-policy.json', 'utf8'));

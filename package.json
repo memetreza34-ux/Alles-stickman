@@ -8,6 +8,7 @@
     "create:youtube": "node src/cli/create-youtube-project.js",
     "topic:youtube": "node src/cli/check-youtube-topic.js",
     "validate:youtube-phase1": "node src/cli/validate-youtube-phase1.js",
+    "handoff:youtube": "node src/cli/print-youtube-handoff.js",
     "validate:youtube-phase2": "node src/cli/validate-youtube-phase2.js",
     "preflight:youtube": "node src/cli/preflight-youtube.js",
     "optimize:youtube-audio": "node src/cli/optimize-youtube-audio.js",
