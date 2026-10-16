@@ -437,7 +437,7 @@ test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und 
   assert.equal(map.images.length, 76);
   assert.equal(map.images.at(-1).imageFile, 'Bild 76.png');
   assert.equal(source.scriptWords, 1014);
-  assert.equal(script.trim().split(/\\s+/).length, 1014);
+  assert.equal(script.trim().split(/\s+/).length, 1014);
   assert.equal(source.status, 'READY');
   assert.equal(chapters.sections.length, 15);
   assert.ok(meta.longformProfile.retentionBeatAnchors.length >= 5);
@@ -458,7 +458,7 @@ test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und 
   assert.ok(links.flowPrompt.includes('/wie-fanden-menschen-ohne-gps-ihren-weg/'));
   assert.ok(links.voiceScript.includes('/wie-fanden-menschen-ohne-gps-ihren-weg/'));
   const phase1 = await validatePhase1(dir);
-  assert.equal(phase1.passed, true, phase1.errors.join('\\n'));
+  assert.equal(phase1.passed, true, phase1.errors.join('\n'));
 });
 
 test('Pacing-QC blockiert echte Videodauer außerhalb des Zielbereichs', async () => {
