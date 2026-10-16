@@ -9,7 +9,7 @@
     "videoPath": "03-export/FINAL_VIDEO.mp4",
     "fullVideoWatched": false,
     "checkedAt": null,
-    "reviewNotes": "",
+    "reviewNotes": "PRE-PRODUCTION SCREENSHOT FEEDBACK ONLY: user disliked simplistic green flat-vector stickman scene, overcrowded rain worksheet and an old-map aesthetic with English words. The new design policy v12 forbids these patterns. This is NOT a completed review of a final exported video.",
     "strengths": []
   },
   "scores": {
@@ -35,7 +35,7 @@
     "notableDips": [],
     "notableSpikes": []
   },
-  "summary": "",
+  "summary": "Image prompt redesign v12 is applied centrally and to the new GPS video. Full rendered output and final MP4 are still pending, so aesthetic improvement is not yet verified.",
   "noIssuesReason": "",
   "reviewer": ""
 }

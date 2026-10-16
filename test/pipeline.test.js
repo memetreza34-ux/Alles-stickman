@@ -245,29 +245,22 @@ test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Vis
   assert.equal(meta.visualContinuityProfile.adjacentSceneContinuityRequired, true);
   assert.ok(String(meta.visualContinuityProfile.environmentAnchor).startsWith('['));
   assert.match(prompt, /ACTIVE_STYLE_ID: UNSET/);
-  assert.match(prompt, /ALLES STICKMAN/i);
-  assert.match(prompt, /GENAU 3 COVER/i);
-  assert.match(prompt, /HARD STOP/i);
-  assert.match(prompt, /COVER-WAHL ERFORDERLICH/i);
-  assert.match(prompt, /A, B oder C/i);
-  assert.match(prompt, /automatisch/i);
-  assert.match(prompt, /OHNE Rückfrage|KEIN .*WEITER|nicht auf .*WEITER.*warten/is);
-  assert.doesNotMatch(prompt, /antworte WEITER|nur nach .*WEITER/i);
-  assert.match(prompt, /Soll-Ist|Vollständigkeits/i);
-  assert.match(prompt, /fehl.*neu erzeug/is);
-  assert.match(prompt, /KEINE Bildreferenz/i);
-  assert.match(prompt, /5ER-(BLÖCKEN|SCHRITTEN)/i);
-  assert.match(prompt, /Keine feste Zielbildzahl/i);
-  assert.match(prompt, /Bild 01\.png.*Bild NN\.png/is);
-  assert.match(prompt, /2er- oder 3er-Multi-Panel/i);
-  assert.match(prompt, /Diagramm/i);
-  assert.match(prompt, /GLEICHE WELT/i);
-  assert.match(prompt, /ILLUSTRATION ZUERST/i);
-  assert.match(prompt, /Reine Infografik.*nur.*klarer/is);
-  assert.match(prompt, /visualContinuityProfile/i);
-  assert.match(prompt, /WELT- UND UMGEBUNGSKONTINUITÄT/i);
-  assert.match(prompt, /STILLE BILD-QC NACH JEDEM 5ER-BLOCK/i);
-  assert.match(prompt, /durchfällt.*neu erzeug/is);
+  assert.match(prompt, /GOOGLE FLOW MASTER PROMPT/i);
+  assert.match(prompt, /PROMPT_LANGUAGE: ENGLISH/i);
+  assert.match(prompt, /ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/i);
+  assert.match(prompt, /EXACTLY THREE COVER CANDIDATES/i);
+  assert.match(prompt, /USER CHOOSES A, B OR C/i);
+  assert.match(prompt, /NEVER GENERATE Bild 02 BEFORE THE USER CHOOSES/i);
+  assert.match(prompt, /AUTOMATIC FIVE-IMAGE BATCHES/i);
+  assert.match(prompt, /NO MORE USER PROMPTS AFTER COVER SELECTION/i);
+  assert.match(prompt, /WORLD AND ERA CONTINUITY/i);
+  assert.match(prompt, /SILENT QUALITY CONTROL AFTER EVERY FIVE-IMAGE BATCH/i);
+  assert.match(prompt, /REGENERATE ONLY FAILED IMAGE NUMBERS/i);
+  assert.match(prompt, /FINAL IMAGE INTEGRITY CHECK/i);
+  assert.match(prompt, /REGENERATE MISSING OR BROKEN IMAGE NUMBERS/i);
+  assert.match(prompt, /SINGLE SHARED FINAL FOLDER/i);
+  assert.match(prompt, /NO GENERATED IMAGE REFERENCES/i);
+
 });
 
 test('Legacy-Testprojekt v4 bleibt reproduzierbar und nutzt keine Bildreferenz', async () => {
@@ -443,7 +436,9 @@ test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und 
   assert.equal(source.status, 'READY');
   assert.equal(chapters.sections.length, 15);
   assert.ok(meta.longformProfile.retentionBeatAnchors.length >= 5);
-  assert.match(prompt, /GENAU 3 COVER/i);
+  assert.match(prompt, /EXACTLY THREE COVER CANDIDATES/i);
+  assert.match(prompt, /PROMPT_LANGUAGE: ENGLISH/);
+  assert.ok(prompt.length < 65000, 'Google Flow master prompt must be compact enough to copy.');
   assert.match(prompt, /HARD STOP/i);
   assert.match(prompt, /polynes/i);
   for (let first = 2; first <= 76; first += 5) {
@@ -451,9 +446,23 @@ test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und 
     const file = path.join(dir, '00-bildprompts/batches',
       `BLOCK_${String(first).padStart(2, '0')}_${String(last).padStart(2, '0')}.txt`);
     const txt = await readFile(file, 'utf8');
-    assert.match(txt, /VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT/i);
-    assert.match(txt, /(keine realistischen|halb-realistische Menschen)/i);
+    assert.match(txt, /COMPLETE INDIVIDUAL IMAGE PROMPT/i);
+    assert.match(txt, /NO semi-real humans|NO realistically proportioned full humans/i);
   }
+  for (let n = 1; n <= 76; n++) {
+    const name = `Bild_${String(n).padStart(2, '0')}_COPY.txt`;
+    const standalone = await readFile(path.join(dir, '00-bildprompts/prompts', name), 'utf8');
+    assert.match(standalone, /PROMPT_LANGUAGE: ENGLISH/i);
+    if (n > 1) {
+      assert.match(standalone, new RegExp('SCENE_KEY: ' + String(n).padStart(2, '0')));
+      assert.match(standalone, /ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/i);
+      assert.ok(standalone.length > 1800);
+    }
+  }
+  const copyStarter = await readFile(path.join(dir, '00-bildprompts/GOOGLE_FLOW_START_COPY.txt'), 'utf8');
+  assert.match(copyStarter, /COVER A:/);
+  assert.match(copyStarter, /COVER B:/);
+  assert.match(copyStarter, /COVER C:/);
   const reviewException = await readFile(path.join(dir, '99-technik/REVIEW_EXCEPTION.md'), 'utf8');
   assert.match(reviewException, /PENDING/);
   const links = phase1Links(meta);

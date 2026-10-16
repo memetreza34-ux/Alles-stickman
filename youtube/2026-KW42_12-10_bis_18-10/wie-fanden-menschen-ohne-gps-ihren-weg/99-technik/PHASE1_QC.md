@@ -28,3 +28,9 @@
 - [ ] Remotion-MP4, Thumbnail, SRT, Uploadpaket und echte Sicht-/Hör-Review.
 
 Die letzte Wasser-Video-Review bleibt offen. Expliziter Nutzerwunsch zur Ausnahme ist im aktuellen Projekt dokumentiert.
+
+## Bildwelt-Korrektur v12 (16.10.2026)
+
+Aus Nutzerscreenshots beobachtet: zu flache hellgrüne Clipart, lehrbuchartige Vierviertel-Grafiken mit viel zu kleiner Schrift und alte Kartenästhetik mit englischen Beschriftungen. Dies entspricht nicht der gewünschten kreativen Stickman-Erklärbildsprache.
+
+Im Repo korrigiert: Anweisungen auf Englisch, Bildlabels ausschließlich Deutsch; 76 neue eigenständige Einzelprompts, 15 englische 5er-Blöcke, drei Coverprompts und ein kürzerer Master. Die tatsächlichen Google-Flow-Bilder wurden nach Änderung noch nicht neu erzeugt oder visuell geprüft.
