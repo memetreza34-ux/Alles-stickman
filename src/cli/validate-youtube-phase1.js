@@ -212,6 +212,32 @@ export async function validatePhase1(projectDirectory) {
   }
   if (!prompt.includes(`ACTIVE_STYLE_ID: ${visual.styleId}`)) errors.push('Flow-Prompt nennt nicht die aktive styleId.');
   if (/ACTIVE_STYLE_ID:\s*UNSET/i.test(prompt)) errors.push('Flow-Prompt enthält noch UNSET.');
+  const englishPrompt = /PROMPT_LANGUAGE:\s*ENGLISH/i.test(prompt);
+  if (englishPrompt) {
+    const required = [
+      [/EXACTLY THREE COVER CANDIDATES/i, "exactly three cover candidates"],
+      [/USER CHOOSES A, B OR C/i, "explicit user cover selection"],
+      [/HARD STOP/i, "cover hard stop"],
+      [/NEVER GENERATE Bild 02 BEFORE THE USER CHOOSES/i, "no image 02 before cover selection"],
+      [/AUTOMATIC FIVE-IMAGE BATCHES/i, "automatic batches of five"],
+      [/NO MORE USER PROMPTS AFTER COVER SELECTION/i, "no further questions"],
+      [/FINAL IMAGE INTEGRITY CHECK/i, "final image audit"],
+      [/REGENERATE MISSING OR BROKEN IMAGE NUMBERS/i, "targeted missing image repair"],
+      [/SINGLE SHARED FINAL FOLDER/i, "flat output folder"],
+      [/NO GENERATED IMAGE REFERENCES/i, "reference-free generation"],
+      [/ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/i, "German-only visible labels"],
+      [/IMAGE PROMPTS ARE WRITTEN IN ENGLISH/i, "English generation prompts"]
+    ];
+    if (qualityV7) required.push(
+      [/visualContinuityProfile/i, "location and era context"],
+      [/WORLD AND ERA CONTINUITY/i, "historical continuity"],
+      [/SILENT QUALITY CONTROL AFTER EVERY FIVE-IMAGE BATCH/i, "batch QC"],
+      [/REGENERATE ONLY FAILED IMAGE NUMBERS/i, "targeted QC repair"]
+    );
+    for (const [pattern, label] of required) {
+      if (!pattern.test(prompt)) errors.push('English Flow prompt missing: ' + label);
+    }
+  } else {
   if (!/GENAU 3 COVER/i.test(prompt)) errors.push('Flow-Prompt enthält die 3-Cover-Regel nicht eindeutig.');
   if (humanGatedCoverFlow) {
     if (!/HARD STOP/i.test(prompt)) errors.push('Pipeline v5+: Flow-Prompt muss den HARD STOP nach den Covers eindeutig enthalten.');
@@ -239,6 +265,8 @@ export async function validatePhase1(projectDirectory) {
   }
   if (!/KEINE Bildreferenz/i.test(prompt)) errors.push('Flow-Prompt enthält die referenzfreie Bildregel nicht eindeutig.');
   if (!/5ER-(BLÖCKEN|SCHRITTEN)/i.test(prompt)) errors.push('Flow-Prompt enthält die 5er-Block-Regel nicht eindeutig.');
+
+  }
 
   const images = Array.isArray(mapping.images) ? mapping.images : [];
   if (Number.isInteger(meta.plannedImageCount) && images.length !== meta.plannedImageCount) {

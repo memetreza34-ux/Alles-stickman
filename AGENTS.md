@@ -1,3 +1,8 @@
+## Image-generation visual policy v12 — top-level agent instruction
+English must be used for EVERY future Google Flow master prompt, batch prompt and individually copyable scene prompt. The spoken voice-over stays German. Visible text INSIDE images must be German ONLY, and should be omitted unless really useful (usually 0-2 short readable words). Do not write English annotations or irrelevant English scene titles on images.
+Choose explanation-first visual formats: expressive but simple 2D Stickman action where people help; clean diagrams, cutaways, large object close-ups and comparisons elsewhere. NO photorealistic/semirealistic people, no generic green vector clipart, no repeated beige historic parchment map world, no four crowded small-text panels. Same drawing language, flexible scene backgrounds and color.
+Every future video needs English `google-flow-prompt.txt`, ready-to-copy start prompt, and individually copyable `00-bildprompts/prompts/Bild_XX_COPY.txt`; current GPS video is being upgraded. Do not claim external Google Flow can access a Github file unless the agent actually can read it. Give clickable links plus short copy text.
+
 ## HÖCHSTE PRIORITÄT: Aus JEDEM Video systematisch lernen
 
 **Gilt für ChatGPT, Codex, Claude, Google Flow und alle anderen Produktionsagenten.** Ein technisch erfolgreicher Render ist nicht das Ende der Arbeit: Jede echte MP4 muss vollständig angesehen/angehört und mit Zeitstempeln ausgewertet werden. Danach werden **konkrete Ursachen** ermittelt, zentrale Prompts/Skriptregeln/Visual-Policy/Renderer angepasst und Verbesserungen geprüft, sodass das NÄCHSTE Video daraus profitiert.

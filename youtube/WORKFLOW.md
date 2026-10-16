@@ -422,3 +422,6 @@ npm run quality:status
 - Später ergänzt YouTube Studio nur echte verfügbare Werte (Intro-Zuschauerbindung nach 30 s, CTR/Impressionen, Wiedergabedauer, zeitmarkierte Dips/Spikes).
 
 Verbindliche Detailregel: `channel/CONTINUOUS_IMPROVEMENT.md`.
+
+## English Flow prompt standard v12
+All generated-image instruction language is English (master, batches, individual copy files); on-image text is exclusively German, large and accurate when necessary. Voice-over remains German. A shared 2D stickman line identity is required, but not a fixed palette or old parchment landscape. Avoid generic green vector clipart and crowded lesson-sheet typography. Use a ready-to-paste short start prompt and scene-wise copy files. QC every batch and update future rules based on actual rendered evidence.

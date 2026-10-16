@@ -305,3 +305,6 @@ Nur:
 Das Cover ist Qualitätsmaßstab für emotionale Bildwirkung: Auch normale Bilder dürfen eine sichtbare Handlung, ausdrucksstarke Augenbrauen, variierende Körperhaltung, aktive Hände und klare Tiefenstaffelung haben. **Nicht** das Coverbild als Referenz oder Layout-Vorlage verwenden.
 
 Besonders bei Querschnitten und Karten keine unnötigen winzigen Legenden, doppelte Panel-Untertitel, englischen Kleinsttext oder Planungsnotizen wie `GEPLANTER HOLD` rendern. Standard sind 0–2 große deutsche Labels, normalerweise maximal 3. Ruhige Sachbilder bleiben dann sinnvoll, wenn sie eine Tatsache klarer erklären als eine Handlungsszene.
+
+## v12: Consistent stickman drawing, creative explainer imagery
+English image-generation prompts; German text only in finished images. Varied attractive 2D layouts, not the same historic beige map every time. Humans must always look like expressive stickmen and appear only where they help. Include object cutaways, clean comparisons, creative scene storytelling, minimal readable text. Reject simple green flat vector clipart, maps with English annotations, decorative parchment, tiny four-step textbook sheets. More contrast, deliberate staging and flexible thematic color, without copying other channels.

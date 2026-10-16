@@ -1,8 +1,8 @@
 {
-  "visualPolicyVersion": 11,
+  "visualPolicyVersion": 12,
   "status": "READY",
   "styleId": "alles-stickman-editorial-v1",
-  "description": "Eigenständige 2D-Stickman-Erklärwelt für Alles Stickman. Standard sind reichhaltige, sofort lesbare Illustrationen mit Figuren, Objekten, Umgebung und kleinen erklärenden Elementen. Diagramme, Karten und Infografiken bleiben erlaubt, sind aber Hilfsmittel und nicht der visuelle Standard.",
+  "description": "StrichKosmos explanation-first 2D stickman visuals. Consistent drawing system, not one single beige illustrated history world. English prompts, German-only visible labels.",
   "visibleTextLanguage": "de",
   "principles": [
     "Standard ist eine lebendige illustrative Szene oder Sachillustration mit klarer Hierarchie – nicht eine sterile Präsentationsfolie.",
@@ -199,7 +199,7 @@
     "complexityLimit": "Komplexität ist nur dann zu hoch, wenn Blickführung, Textlesbarkeit oder die Kernaussage verloren gehen."
   },
   "visualFormPriority": {
-    "default": "illustrative-scene-first",
+    "default": "explanation-first",
     "preferred": [
       "reichhaltige Stickman-Handlungsszene",
       "Umgebungsszene mit mehreren passenden Details",
@@ -227,7 +227,8 @@
       "Mehrere reine Info-Grafiken direkt hintereinander vermeiden.",
       "Auch bei erklärenden Bildern möglichst echte Szene, Raum, Landschaft, Objekte oder Figuren als visuelle Träger nutzen.",
       "Ein reichhaltiges Bild darf mehrere passende Details enthalten; Komplexität ist erst dann zu hoch, wenn Blickführung oder Kernaussage verloren gehen."
-    ]
+    ],
+    "qualityRule": "Choose best explainer composition per sentence even when it means changing visual format."
   },
   "environmentContinuity": {
     "requiredFromPipelineVersion": 7,
@@ -291,6 +292,31 @@
       "chartException": "Bei wirklich fachlich nötigen Grafiken nur so viele Labels wie auf Smartphonegröße tatsächlich lesbar bleiben.",
       "failureRule": "Pseudotext, unnötige englische/zu kleine Labels, doppelte Beschriftungen, eingeblendete Hold-Zeiten oder Produktionsnotizen gelten als Qualitätsfehler."
     },
-    "visualVariety": "Lebendige Szenen, expressive Figuren und nachvollziehbare Mini-Handlungen öfter bevorzugen; Infografiken nur wo erkennbar klarer. Stilkonstanz bedeutet nicht immer gleiche Bildart."
+    "visualVariety": "Purposeful variety, not a recurring old parchment map. Use expressive stickmen only when helpful, and uncluttered object/process/cutaway/comparison layouts whenever clearer."
+  },
+  "promptLanguage": "en",
+  "visualDesignV12": {
+    "priority": "Narrative clarity plus appealing visual diversity, not one fixed historical watercolor or map template",
+    "promptLanguage": "English, for master, batch and every individual image generation prompt",
+    "onImageTextLanguage": "German only; include at most 0-2 big short exact German labels when essential",
+    "consistentIdentity": "expressive simple 2D stick figures where appropriate; irregular charcoal line art, clear faces, strong silhouettes, deliberate layered composition",
+    "flexibleChoices": "scene, object-only close-up, process, clean 2-way comparison, geographic map only if needed, conceptual visual metaphor, cutaway, purposeful infographic",
+    "characterPolicy": "All humans must remain visibly hand-drawn stickmen. Include none where not helpful; never realistic or semirealistic people.",
+    "artDirection": "Polished modern 2D creator-grade illustrated explainer, not cheap flat primary-school vector, not antique sepia explorer chart. Controlled contrasting color and rich-yet-readable details.",
+    "colors": "Keep charcoal linework consistent; let light warm gray, cool blue, slate, teal, sage, amber, rust, night navy and selected bright accents vary with story; avoid beige-only and overly bright green.",
+    "text": "Exact German only, near-zero by default, mobile legibility. Prefer editing software for labels if generation is unreliable. Never render a paragraph, English annotations, gibberish, image IDs or timings.",
+    "layout": "One clear focal point, enough contextual detail to look intentional, no tiny figure in empty field, no four-panel worksheet packed with microscopic writing. Max 3 panels, mostly one or two.",
+    "avoid": [
+      "generic green clipart hills",
+      "old map/parchment aesthetic repeated",
+      "aged scroll/map edges",
+      "drab antique-book wash",
+      "multiline microscopic caption cards",
+      "unwanted English written into generated images",
+      "lifeless single-stickman-on-flat-background",
+      "repeating the same beige composition for every scene",
+      "photorealistic or semi-realistic humans"
+    ],
+    "review": "Reject an image that doesn't directly teach the spoken line, repeats the same scenery, lacks appeal, contains unreadable/non-German text, or breaks history/style."
   }
 }

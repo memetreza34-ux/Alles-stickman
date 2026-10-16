@@ -137,8 +137,10 @@ test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', 
   assert.equal(visual.referenceConsistency.generatedImageReferenceForbidden, true);
   assert.equal(visual.multiPanelPolicy.allowed, true);
   assert.equal(visual.informationDesign.sameWorldRequired, true);
-  assert.equal(visual.visualPolicyVersion, 11);
-  assert.equal(visual.visualFormPriority.default, 'illustrative-scene-first');
+  assert.equal(visual.visualPolicyVersion, 12);
+  assert.equal(visual.promptLanguage, 'en');
+  assert.equal(visual.visibleTextLanguage, 'de');
+  assert.equal(visual.visualFormPriority.default, 'explanation-first');
   assert.ok(visual.visualFormPriority.preferred.includes('reichhaltige Stickman-Handlungsszene'));
   assert.ok(visual.visualFormPriority.useOnlyWhenClearer.includes('reine Infografik'));
   assert.equal(visual.textPolicy.labelsAllowed, true);
