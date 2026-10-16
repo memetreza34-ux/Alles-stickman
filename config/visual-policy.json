@@ -121,7 +121,7 @@
     "referenceMode": "none",
     "useImageReferences": false,
     "generatedImageReferenceForbidden": true,
-    "consistencySource": "config/visual-policy.json.visualDesignV13 + channel/VISUAL_WORLD.md + the five full English reference prompts; each generated individual prompt is still self-contained and requires no image reference.",
+    "consistencySource": "channel/MASTER_VISUAL_STYLE_EN.txt (entire embedded master v14) + one self-contained per-scene explanation. Five channel/style-reference-prompts exemplify ONE shared quality standard only; no image references.",
     "reason": "Cover, Karten, Diagramme, Multi-Panels und Handlungsszenen haben unterschiedliche Aufgaben. Ein generiertes Referenzbild würde Layout und Motive unnötig verengen; deshalb wird die gemeinsame Designwelt ausschließlich über feste Stilregeln reproduziert.",
     "styleDriftForbidden": true
   },
@@ -186,7 +186,7 @@
     "Cover-Gate: Nach genau drei Cover-Kandidaten muss der Agent stoppen und auf die ausdrückliche Auswahl des Nutzers warten.",
     "Nach der Nutzer-Coverwahl läuft die Folgebildproduktion automatisch weiter: immer maximal 5 Bilder pro Block, danach sofort der nächste Block, ohne weitere Nutzerfreigabe.",
     "Nach Bild NN folgt zwingend ein Vollständigkeitscheck des gemeinsamen finalen Bilderordners. Fehlende Bildnummern werden gezielt neu erzeugt; erst danach ist die Bildphase fertig.",
-    "Ab v14: Die fünf Nutzer-freigegebenen, vollständigen englischen Prompts in channel/style-reference-prompts/ sind das maßgebliche Qualitätsbeispiel für Szene, Elektrotechnik, Psychologie, Geschichte und Naturwissenschaft. Nicht deren konkrete Gegenstände in andere Videos übernehmen, sondern deren visuelle Produktionsqualität."
+    "Ab v14: Die eine kanonische Master-Bildwelt in channel/MASTER_VISUAL_STYLE_EN.txt ist verbindlich; die fünf Nutzer-freigegebenen Prompts in channel/style-reference-prompts/ sind zusätzliche Qualitätsbeispiele für Szene, Elektrotechnik, Psychologie, Geschichte und Naturwissenschaft. Nicht deren konkrete Gegenstände in andere Videos übernehmen, sondern deren visuelle Produktionsqualität."
   ],
   "compositionDensity": {
     "target": "reichhaltige Illustration mit klarer Hierarchie",

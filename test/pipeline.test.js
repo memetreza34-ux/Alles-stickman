@@ -12,6 +12,7 @@ import { validatePacing } from '../src/cli/validate-youtube-pacing.js';
 import { normalizeText, similarity } from '../src/lib/pipeline.js';
 import { makeReview, validatePostVideoReview, assertReviewGateOpen, reviewPath } from '../src/lib/quality-loop.js';
 import { closeVideoReview } from '../src/cli/quality-review-youtube.js';
+import { loadCanonicalVisualStyle, embedCanonicalVisualStyle, CANONICAL_STYLE_TOKEN } from '../src/lib/visual-master.js';
 
 const TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-feuer-ohne-streichhoelzer';
 const SECOND_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-essen-ohne-kuehlschrank-haltbar';
@@ -137,17 +138,18 @@ test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', 
   assert.equal(visual.referenceConsistency.generatedImageReferenceForbidden, true);
   assert.equal(visual.multiPanelPolicy.allowed, true);
   assert.equal(visual.informationDesign.sameWorldRequired, true);
-  assert.equal(visual.visualPolicyVersion, 13);
-  assert.equal(visual.visualStyleEdition, 'premium-illustrated-explainer-v13');
-  assert.equal(visual.visualDesignV13.figuresOptional, true);
-  assert.equal(visual.visualDesignV13.allFormatsEqualWhenBest, true);
+  assert.equal(visual.visualPolicyVersion, 14);
+  assert.equal(visual.visualStyleEdition, 'premium-illustrated-explainer-v14');
+  assert.equal(visual.visualDesignV14.figuresOptional, true);
+  assert.equal(visual.visualDesignV14.allFormatsEqualWhenBest, true);
   assert.equal(visual.promptLanguage, 'en');
   assert.equal(visual.visibleTextLanguage, 'de');
   assert.equal(visual.visualFormPriority.default, 'best-format-for-spoken-statement');
   assert.ok(visual.visualFormPriority.preferred.includes('reichhaltige Stickman-Handlungsszene'));
   assert.ok(visual.visualFormPriority.preferred.includes('leicht lesbare Infografik mit konkreter Sachillustration'));
   assert.ok(visual.visualFormPriority.preferred.includes('präzise 2D-Objekt-Erklärung ohne Figur'));
-  assert.equal(visual.visualDesignV13.referenceForms.length, 5);
+  assert.equal(visual.visualDesignV14.referenceForms.length, 5);
+  assert.equal(visual.canonicalVisualMaster.embeddedVerbatim, true);
   assert.equal(visual.textPolicy.labelsAllowed, true);
   assert.equal(visual.textPolicy.numbersAllowed, true);
   assert.equal(visual.environmentContinuity.noUnmotivatedEnvironmentShift, true);
@@ -443,7 +445,9 @@ test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und 
   assert.ok(meta.longformProfile.retentionBeatAnchors.length >= 5);
   assert.match(prompt, /EXACTLY THREE COVER CANDIDATES/i);
   assert.match(prompt, /PROMPT_LANGUAGE: ENGLISH/);
-  assert.match(prompt, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13/);
+  assert.match(prompt, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14/);
+  const canonical = await loadCanonicalVisualStyle();
+  assert.ok(prompt.includes(canonical), 'Full v14 canonical master must be embedded in Flow master.');
   assert.ok(prompt.length < 65000, 'Google Flow master prompt must be compact enough to copy.');
   assert.match(prompt, /HARD STOP/i);
   assert.match(prompt, /polynes/i);
@@ -453,14 +457,16 @@ test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und 
       `BLOCK_${String(first).padStart(2, '0')}_${String(last).padStart(2, '0')}.txt`);
     const txt = await readFile(file, 'utf8');
     assert.match(txt, /SCENE_KEY: [0-9]{2}/i);
-    assert.match(txt, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13/);
-    assert.match(txt, /never photo-like human body shapes|NO semi-real humans|NO realistically proportioned full humans/i);
+    assert.match(txt, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14/);
+    assert.equal(txt.split(canonical).length - 1, 5, 'All five scenes must contain complete master style.');
+    assert.match(txt, /Never show realistic, semi-realistic|semi-realistic, anatomically proportioned/i);
   }
   for (let n = 1; n <= 76; n++) {
     const name = `Bild_${String(n).padStart(2, '0')}_COPY.txt`;
     const standalone = await readFile(path.join(dir, '00-bildprompts/prompts', name), 'utf8');
     assert.match(standalone, /PROMPT_LANGUAGE: ENGLISH/i);
-    assert.match(standalone, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13/);
+    assert.match(standalone, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14/);
+    assert.ok(standalone.includes(canonical), 'Individual prompt must contain full v14 canonical master: Bild ' + n);
     if (n > 1) {
       assert.match(standalone, new RegExp('SCENE_KEY: ' + String(n).padStart(2, '0')));
       assert.match(standalone, /ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/i);
@@ -474,6 +480,14 @@ test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und 
   assert.match(copyStarter, /COVER A:/);
   assert.match(copyStarter, /COVER B:/);
   assert.match(copyStarter, /COVER C:/);
+  assert.ok(copyStarter.includes(canonical));
+  for (const letter of ['A','B','C']) {
+    const cover = await readFile(path.join(dir, '00-bildprompts/prompts', `COVER_${letter}_COPY.txt`), 'utf8');
+    assert.ok(cover.includes(canonical), 'Cover must include the complete unified master: '+letter);
+  }
+  const source = JSON.parse(await readFile(path.join(dir, '99-technik/SCENE_VISUALS_EN.json'), 'utf8'));
+  assert.equal(source.policyVersion, 14);
+  assert.equal(source.visualStyleEdition, 'premium-illustrated-explainer-v14');
   const reviewException = await readFile(path.join(dir, '99-technik/REVIEW_EXCEPTION.md'), 'utf8');
   assert.match(reviewException, /PENDING/);
   const links = phase1Links(meta);
@@ -584,7 +598,7 @@ test('Keine Alt-Themen oder fremde Alt-Bildwelt wurden in die zentrale Konfigura
   for (const value of forbidden) assert.equal(text.includes(value), false, `Altspur gefunden: ${value}`);
 });
 
-test('Nutzerfreigegebene Bildwelt v13 enthält fünf auf Englisch kopierbare Stilreferenzen', async () => {
+test('Bildwelt v14 bindet einen Master ein und bewahrt fünf freigegebene englische Qualitätsbeispiele', async () => {
   const names = ['01_story_without_gps.txt','02_technical_circuit.txt','03_psychology_doorway.txt','04_roman_aqueduct.txt','05_water_cycle.txt'];
   for (const name of names) {
     const prompt = await readFile(path.join('channel/style-reference-prompts', name), 'utf8');
@@ -594,7 +608,15 @@ test('Nutzerfreigegebene Bildwelt v13 enthält fünf auf Englisch kopierbare Sti
     assert.ok(prompt.length > 1100, name + ' needs to be self-contained');
   }
   const style = await readFile('channel/VISUAL_WORLD.md', 'utf8');
-  assert.match(style, /Fünf gleichwertige bewährte Bildtypen/);
+  assert.match(style, /Fünf zusätzlich erhaltene Qualitätsbeispiele/);
   const tpl = await readFile('youtube/templates/video-template/00-bildprompts/google-flow-prompt.txt', 'utf8');
-  assert.match(tpl, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13/);
+  assert.ok(tpl.includes(CANONICAL_STYLE_TOKEN));
+  const canonical = await loadCanonicalVisualStyle();
+  assert.match(canonical, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14/);
+  assert.match(canonical, /ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/);
+  assert.match(canonical, /EQUAL VISUAL FORMATS/);
+  const expanded = embedCanonicalVisualStyle(tpl, canonical);
+  assert.ok(expanded.includes(canonical));
+  assert.equal(expanded.includes(CANONICAL_STYLE_TOKEN), false);
+  assert.throws(() => embedCanonicalVisualStyle('No placeholder', canonical), /Expected canonical/);
 });

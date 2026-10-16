@@ -34,3 +34,7 @@ Die letzte Wasser-Video-Review bleibt offen. Expliziter Nutzerwunsch zur Ausnahm
 Aus Nutzerscreenshots beobachtet: zu flache hellgrüne Clipart, lehrbuchartige Vierviertel-Grafiken mit viel zu kleiner Schrift und alte Kartenästhetik mit englischen Beschriftungen. Dies entspricht nicht der gewünschten kreativen Stickman-Erklärbildsprache.
 
 Im Repo korrigiert: Anweisungen auf Englisch, Bildlabels ausschließlich Deutsch; 76 neue eigenständige Einzelprompts, 15 englische 5er-Blöcke, drei Coverprompts und ein kürzerer Master. Die tatsächlichen Google-Flow-Bilder wurden nach Änderung noch nicht neu erzeugt oder visuell geprüft.
+
+## Master-Bildwelt v14 — 16.10.2026
+
+Fünf vom Nutzer bestätigte Beispielprompts wurden zu **einer einzigen verbindlichen vollständigen englischen Stilbeschreibung** in `channel/MASTER_VISUAL_STYLE_EN.txt` vereinheitlicht. Vollständiger Originaltext ist in den neuen GPS-Master, Coverstart, alle drei Cover, 76 Szenen und 15 Batches eingebettet, kein bloßer Repo-Verweis. Szene und Qualitätsbeispiele bleiben inhaltlich getrennt. Neu erzeugte Google-Flow-Bilder stehen weiterhin zur tatsächlichen Prüfung aus.
