@@ -1,6 +1,6 @@
-# StrichKosmos – Alle Google-Flow-Prompts direkt kopieren — Visual Edition v13
+# StrichKosmos – Alle Google-Flow-Prompts direkt kopieren — Visual Edition v14
 
-**Die neue verbindliche Bildwelt basiert auf fünf vom Nutzer bestätigten Premium-2D-Referenzprompts.** [Stilrichtlinien](../../../../channel/VISUAL_WORLD.md) · [Fünf Stilvorlagen](../../../../channel/style-reference-prompts/01_story_without_gps.txt).
+**Unsere eine verbindliche Master-Bildwelt v14 wird vollständig in jeden Einzel-, Batch- und Coverprompt eingebettet.** Die fünf Nutzerbeispiele bleiben Qualitätsreferenzen. [Stilrichtlinien](../../../../channel/VISUAL_WORLD.md) · [Fünf Stilvorlagen](../../../../channel/style-reference-prompts/01_story_without_gps.txt).
 
 **Alle Bildanweisungen sind auf Englisch geschrieben. Text, der im fertigen Bild sichtbar ist, darf ausschließlich Deutsch sein.**
 

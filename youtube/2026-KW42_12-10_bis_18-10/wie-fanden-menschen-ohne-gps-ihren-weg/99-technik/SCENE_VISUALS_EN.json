@@ -4,7 +4,7 @@
   "promptLanguage": "en",
   "visibleTextLanguage": "de",
   "styleId": "alles-stickman-editorial-v1",
-  "policyVersion": 13,
+  "policyVersion": 14,
   "scenes": [
     {
       "sceneNumber": 1,
@@ -564,5 +564,5 @@
       "visibleGermanLabels": []
     }
   ],
-  "visualStyleEdition": "premium-illustrated-explainer-v13"
+  "visualStyleEdition": "premium-illustrated-explainer-v14"
 }
