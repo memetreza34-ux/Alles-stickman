@@ -5,6 +5,7 @@ import path from 'node:path';
 import { arg, copyDirectory, exists, readJson, slugify, writeJson } from '../lib/pipeline.js';
 import { evaluateTopic } from './check-youtube-topic.js';
 import { renderPhase1Handoff } from '../lib/phase1-handoff.js';
+import { assertReviewGateOpen } from '../lib/quality-loop.js';
 
 async function main() {
   const topic = arg('--topic');
@@ -20,6 +21,9 @@ async function main() {
   if (topicCheck.decision !== 'APPROVED_NEW') {
     throw new Error(`Thema nicht freigegeben: ${topicCheck.decision}${topicCheck.best ? ` (${topicCheck.best.matched})` : ''}`);
   }
+
+  // Keine neuen Videos starten, wenn die fertigen Vorgänger noch nicht reviewt wurden.
+  await assertReviewGateOpen();
 
   const templateDir = path.resolve('youtube/templates/video-template');
   const destination = path.resolve('youtube', week, slug);
