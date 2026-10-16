@@ -399,3 +399,23 @@ Ein Video ist erst fertig, wenn:
 - Kein automatischer Clip-/Sprach-Upload behaupten: Flow/TTS benötigen die externen Produktionsschritte, bevor Remotion laufen kann.
 
 Verbindlich: `config/longform-policy.json`.
+
+## 9. Pflicht nach JEDEM Video — kontinuierliche Verbesserung
+
+**Oberste Priorität vor der Planung des nächsten Videos:** Aus der gerade gerenderten MP4 lernen. `phase3:youtube` legt die ausstehende Datei `99-technik/POST_VIDEO_REVIEW.json` an, führt aber keine visuelle Vollprüfung durch.
+
+```bash
+npm run quality:init -- --dir "youtube/<week>/<slug>"
+# Echte MP4 mit Bild und Ton vollständig ansehen und konkrete Szenen bewerten.
+# Fehler mit Zeitstempeln, Ursachen, Fixes, Lessons und Testbelegen eintragen.
+npm run quality:close -- --dir "youtube/<week>/<slug>"
+npm run quality:status
+```
+
+- Kritische/größere Probleme müssen vor Reviewabschluss **systematisch behoben und getestet** sein; minor findings dürfen nur begründet in den Backlog.
+- Jede relevante Erkenntnis verändert wenn möglich gemeinsame Regeln/Prompts/Software statt lediglich ein Einzelvideo zu reparieren.
+- Das globale Register `channel/IMPROVEMENT_LEDGER.json` enthält übertragbare Lessons und noch laufende Experimente. Theorien nicht als gesichert darstellen.
+- Die Projekterstellung blockiert, wenn **lokal** ein fertiger Export mit offener Review vorliegt. Von anderen Rechnern nicht synchronisierte MP4s sind nicht automatisch sichtbar — die beteiligten Agenten müssen ihre Review daher auch manuell einfordern.
+- Später ergänzt YouTube Studio nur echte verfügbare Werte (Intro-Zuschauerbindung nach 30 s, CTR/Impressionen, Wiedergabedauer, zeitmarkierte Dips/Spikes).
+
+Verbindliche Detailregel: `channel/CONTINUOUS_IMPROVEMENT.md`.
