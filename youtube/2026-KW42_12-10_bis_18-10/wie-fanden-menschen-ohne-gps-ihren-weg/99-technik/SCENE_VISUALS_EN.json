@@ -4,7 +4,7 @@
   "promptLanguage": "en",
   "visibleTextLanguage": "de",
   "styleId": "alles-stickman-editorial-v1",
-  "policyVersion": 12,
+  "policyVersion": 13,
   "scenes": [
     {
       "sceneNumber": 1,
@@ -563,5 +563,6 @@
       "brief": "Memorable thoughtful final frame: historical hand-drawn stickman navigator looks over distant ocean from a cliff, with a small subtle present-day GPS position icon at the opposite side. Strong human-scale silhouette; no text.",
       "visibleGermanLabels": []
     }
-  ]
+  ],
+  "visualStyleEdition": "premium-illustrated-explainer-v13"
 }

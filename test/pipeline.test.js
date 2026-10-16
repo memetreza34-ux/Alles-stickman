@@ -443,6 +443,7 @@ test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und 
   assert.ok(meta.longformProfile.retentionBeatAnchors.length >= 5);
   assert.match(prompt, /EXACTLY THREE COVER CANDIDATES/i);
   assert.match(prompt, /PROMPT_LANGUAGE: ENGLISH/);
+  assert.match(prompt, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13/);
   assert.ok(prompt.length < 65000, 'Google Flow master prompt must be compact enough to copy.');
   assert.match(prompt, /HARD STOP/i);
   assert.match(prompt, /polynes/i);
@@ -452,12 +453,14 @@ test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und 
       `BLOCK_${String(first).padStart(2, '0')}_${String(last).padStart(2, '0')}.txt`);
     const txt = await readFile(file, 'utf8');
     assert.match(txt, /SCENE_KEY: [0-9]{2}/i);
+    assert.match(txt, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13/);
     assert.match(txt, /NO semi-real humans|NO realistically proportioned full humans/i);
   }
   for (let n = 1; n <= 76; n++) {
     const name = `Bild_${String(n).padStart(2, '0')}_COPY.txt`;
     const standalone = await readFile(path.join(dir, '00-bildprompts/prompts', name), 'utf8');
     assert.match(standalone, /PROMPT_LANGUAGE: ENGLISH/i);
+    assert.match(standalone, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13/);
     if (n > 1) {
       assert.match(standalone, new RegExp('SCENE_KEY: ' + String(n).padStart(2, '0')));
       assert.match(standalone, /ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/i);

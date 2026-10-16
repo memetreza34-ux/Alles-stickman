@@ -214,6 +214,7 @@ export async function validatePhase1(projectDirectory) {
   if (/ACTIVE_STYLE_ID:\s*UNSET/i.test(prompt)) errors.push('Flow-Prompt enthält noch UNSET.');
   const englishPrompt = /PROMPT_LANGUAGE:\s*ENGLISH/i.test(prompt);
   if (englishPrompt) {
+    if (Number(visual.visualPolicyVersion) >= 13 && !prompt.includes('VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13')) errors.push('Flow master prompt does not use approved premium visual style v13.');
     const required = [
       [/EXACTLY THREE COVER CANDIDATES/i, "exactly three cover candidates"],
       [/USER CHOOSES A, B OR C/i, "explicit user cover selection"],
@@ -290,6 +291,7 @@ export async function validatePhase1(projectDirectory) {
       }
       const standalone = await readFile(file, 'utf8');
       if (!/PROMPT_LANGUAGE: ENGLISH/i.test(standalone)) errors.push('Image copy prompt must be English: Bild ' + num);
+      if (Number(visual.visualPolicyVersion) >= 13 && !standalone.includes('VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13')) errors.push('Standalone image prompt missing approved v13 visual style: Bild ' + num);
       if (n > 1) {
         if (!standalone.includes(`SCENE_KEY: ${num}`)) errors.push('Standalone prompt scene ID mismatch: Bild ' + num);
         if (!/ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/i.test(standalone)) errors.push('German-only label instruction missing: Bild ' + num);
