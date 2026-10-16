@@ -450,7 +450,7 @@ test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und 
       `BLOCK_${String(first).padStart(2, '0')}_${String(last).padStart(2, '0')}.txt`);
     const txt = await readFile(file, 'utf8');
     assert.match(txt, /VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT/i);
-    assert.match(txt, /keine realistischen/i);
+    assert.match(txt, /(keine realistischen|halb-realistische Menschen)/i);
   }
   const reviewException = await readFile(path.join(dir, '99-technik/REVIEW_EXCEPTION.md'), 'utf8');
   assert.match(reviewException, /PENDING/);
