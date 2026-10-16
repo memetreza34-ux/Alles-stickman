@@ -446,7 +446,7 @@ test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und 
     const file = path.join(dir, '00-bildprompts/batches',
       `BLOCK_${String(first).padStart(2, '0')}_${String(last).padStart(2, '0')}.txt`);
     const txt = await readFile(file, 'utf8');
-    assert.match(txt, /COMPLETE INDIVIDUAL IMAGE PROMPT/i);
+    assert.match(txt, /SCENE_KEY: [0-9]{2}/i);
     assert.match(txt, /NO semi-real humans|NO realistically proportioned full humans/i);
   }
   for (let n = 1; n <= 76; n++) {

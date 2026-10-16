@@ -359,7 +359,7 @@ export async function validatePhase1(projectDirectory) {
         continue;
       }
       const batch = await readFile(batchPath, 'utf8');
-      if (!/(VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT|COMPLETE INDIVIDUAL IMAGE PROMPT)/i.test(batch)) errors.push(`Longform-Bildblock ${first}–${last}: individuelle Prompts fehlen.`);
+      if (!/(VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT|COMPLETE INDIVIDUAL IMAGE PROMPT|SCENE_KEY: \d{2})/i.test(batch)) errors.push(`Longform-Bildblock ${first}–${last}: individuelle Prompts fehlen.`);
       for (let n = first; n <= last; n += 1) {
         if (!batch.includes(`Bild ${label(n)}`)) errors.push(`Longform-Bildblock ${first}–${last}: Bild ${label(n)} fehlt.`);
         if (englishPrompt ? !batch.includes(`SCENE_KEY: ${label(n)}`) : !batch.includes(images[n - 1].startAnchor)) errors.push(`Longform-Bildblock ${first}–${last}: Szenenkennung/Audioanker für Bild ${label(n)} fehlt.`);
