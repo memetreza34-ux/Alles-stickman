@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "status": "PENDING",
+  "videoId": "2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn",
+  "title": "Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?",
+  "createdAt": "2026-10-16",
+  "closedAt": null,
+  "evidence": {
+    "videoPath": "03-export/FINAL_VIDEO.mp4",
+    "fullVideoWatched": false,
+    "checkedAt": null,
+    "reviewNotes": "VORLÄUFIGE SICHTHINWEISE aus den bereitgestellten Google-Flow-Screenshots: Einige wassertechnische Diagramme enthalten unnötige englische Kleinstbeschriftungen; bei einer Grafik wurde eine Produktionsangabe wie 'GEPLANTER HOLD' mitgerendert. Andere Dorf- und Alltagsszenen wirken lebendiger. Dies ist ausdrücklich KEINE Sichtung der vollständigen finalen MP4. Die entsprechenden systemischen Vorgaben wurden bereits in Visual Policy v11 angepasst; für einen abgeschlossenen Review fehlen Zeitstempel, ganze Video-/Ton-Sichtung und konkrete Ergebnisprüfung.",
+    "strengths": [
+      "Die sichtbaren Dorfbrunnen-Illustrationen zeigen eine zusammenhängende belebte Szene; tatsächliche Video-Wirkung noch nicht abschließend beurteilt."
+    ]
+  },
+  "scores": {
+    "hook": null,
+    "script": null,
+    "facts": null,
+    "visuals": null,
+    "voice": null,
+    "editing": null,
+    "titleThumbnail": null,
+    "export": null
+  },
+  "findings": [],
+  "lessons": [],
+  "analytics": {
+    "status": "NOT_AVAILABLE",
+    "capturedAt": null,
+    "views": null,
+    "impressions": null,
+    "ctrPercent": null,
+    "averageViewDurationSeconds": null,
+    "retentionAt30SecondsPercent": null,
+    "notableDips": [],
+    "notableSpikes": []
+  },
+  "summary": "VORLÄUFIG: Die bildbezogenen Probleme sind aus Screenshots erkennbar; vollständige MP4-Analyse mit Zeitstempeln, Fakten-/Skript-/Audio-/Schnittprüfung und Wirksamkeitskontrolle steht noch aus.",
+  "noIssuesReason": "",
+  "reviewer": ""
+}
