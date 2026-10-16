@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "phase1": "READY",
+  "phase2": "PENDING-COVER-AND-VOICE",
+  "phase3": "BLOCKED-WAITING-PHASE2",
+  "imagesReady": false,
+  "audioReady": false,
+  "renderReady": false,
+  "contentMode": "longform"
+}
