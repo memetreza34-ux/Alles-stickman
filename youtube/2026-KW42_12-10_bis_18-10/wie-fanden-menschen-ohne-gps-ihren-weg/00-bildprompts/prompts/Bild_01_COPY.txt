@@ -1,0 +1,2 @@
+PROMPT_LANGUAGE: ENGLISH
+COVER IMAGE Bild 01.png = THE COVER CANDIDATE ACTUALLY CHOSEN BY THE USER. Do not generate a replacement. Select A/B/C only via user confirmation.\n

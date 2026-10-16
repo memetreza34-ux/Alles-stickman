@@ -1,63 +1,90 @@
-STRICHKOSMOS — VERBINDLICHER GOOGLE-FLOW-BLOCK 62–66
-VORBEDINGUNG: Der Nutzer hat A/B/C für die 3 Cover gewählt. Kein Zwischenstopp oder neues WEITER. Höchstens 5 Bilder gleichzeitig, nach jeder fertigen 5er-Gruppe stille QC der echten Bilder (Aussage, Stickman statt Mensch, Welt/Epoche, korrekter lesbarer deutscher Text, Anatomie), nur defekte Nummern korrigieren und ohne Rückfrage nächste Gruppe laden. Alles flach als Bild XX.png in 00-bildprompts/images/ speichern. Keine Bildreferenzen.
+PROMPT_LANGUAGE: ENGLISH
+STRICHKOSMOS — AUTOMATIC FIVE-IMAGE BATCH: Bild 62–66.
+This file is ready to copy into Google Flow. Cover selection A/B/C must already be complete. Produce exactly the five images whose complete self-contained prompts follow; never add a sixth or substitute a variant. Work from these textual prompts only; never reuse any image as reference. If continuation is supported, do not pause for user confirmation between subsequent five-image batches. After generation perform visual QC silently; only regenerate a failed image number. All visible text must be GERMAN, never English. Save as individual Bild XX.png files in the same flat directory.
 
-Bild 62 (4.98s geplant, NIE INS BILD SCHREIBEN)
-Audio Anchor: Wellen waren dabei nicht bloß Hindernisse,
-Visual Purpose: Große Wellenstruktur um Kanu, Navigator fühlt Bewegung mit Händen an Bootskörper
-Topic Anchor: Navigation im Pazifik
-Visual Form: Lebendige Editorial-Stickman-Szene
-VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
-16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
-KAPITELWELT: Traditionelle polynesische Hochseefahrt, tropischer Ozean
-VOICE-INHALT: Wellen waren dabei nicht bloß Hindernisse, sondern trugen ebenfalls Informationen über das Meer.
-KONKRETE SZENE: Große Wellenstruktur um Kanu, Navigator fühlt Bewegung mit Händen an Bootskörper.
-Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+SCENE_KEY: 62
+OUTPUT FILE: Bild 62.png
+PROMPT_LANGUAGE: ENGLISH
+OUTPUT: ONE image only, 16:9.
+VISUAL FORMAT: sea-diagram.
+VISUAL GOAL: A traditional voyaging canoe across distinctly regular rolling ocean swell patterns, navigator senses boat motion. Two giant legible swell directions, no tiny charts.
+SCENE-WORLD AND ACCURACY: Traditional Polynesian seafaring environment; show culturally credible voyaging canoe and natural observation, not Western navigational machinery.
+VISIBLE TEXT: Render no visible words, characters, headline, labels, numbers or captions.
+ART DIRECTION: Create a polished, creator-grade 2D stick-figure explanatory illustration for the German YouTube knowledge channel StrichKosmos. 16:9 landscape, high-definition 1920 × 1080. All human figures, when needed, MUST be unmistakable hand-drawn stickmen: compact ivory-toned round faces, expressive simple brows and eyes, clean dark charcoal outlines, simple slim line limbs, readable natural poses and restrained historically appropriate clothing. NO realistically proportioned full humans, NO semi-real humans, NO photo, NO 3D.
+VISUAL APPEAL: Purposeful strong focal point, confident irregular ink-like line work, polished editorial cartoon illustration, smart layering, well-defined foreground/midground/background when relevant, selectively filled expressive shapes, elegant shadow accents, intentional visually interesting framing. Use context-dependent natural contrast: soft light neutral, ocean blue/teal, dusk navy, amber, rust or sage. NOT cheap bright-green flat-vector clipart, NOT generic children's classroom pictograms, NOT universally beige parchment, NOT an antique fantasy map, NOT a four-panel worksheet packed with words.
+VISUAL THINKING: Explain one specific fact clearly. Choose an actual scene, an object close-up, a cause-effect layout, split comparison, concise diagram or cutaway according to the described action. People are OPTIONAL and absent whenever they add no explanatory value. Avoid needless floating icons, unnecessary labels, decorative clutter and repetitive template compositions.
+TEXT CONTROL: ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN. Do not generate automatic headings, captions, location names, scene IDs, instructions or paragraphs. When the current prompt permits exact German words, render only those words large, correctly spelled and readable on a phone; otherwise render absolutely no text, numbers or pseudo-writing. Never render timing notes, audio anchors, 'GEPLANTER HOLD' or any prompt metadata.
+ACCURACY: Materials, navigation devices, landscapes, ship types, clothing, seasons and star positions must make sense for the historic period and narrated claim.
+NEGATIVE CONSTRAINT: Do not automatically insert a stick figure when this prompt is primarily about a diagram, star pattern, wave pattern, compass or object. Do not hallucinate English labels. Do not copy compositions from previous generated images. Keep all useful content within wide video-safe margins.
 
-Bild 63 (4.98s geplant, NIE INS BILD SCHREIBEN)
-Audio Anchor: Lange regelmäßige Dünungswellen konnten auch dann
-Visual Purpose: Tropischer Himmel teilweise bewölkt, Kanu mit deutlich regelmäßiger Dünung, Navigator prüft Wellenwinkel
-Topic Anchor: Navigation im Pazifik
-Visual Form: Lebendige Editorial-Stickman-Szene
-VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
-16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
-KAPITELWELT: Traditionelle polynesische Hochseefahrt, tropischer Ozean
-VOICE-INHALT: Lange regelmäßige Dünungswellen konnten auch dann eine Richtung verraten, wenn Sterne verdeckt waren.
-KONKRETE SZENE: Tropischer Himmel teilweise bewölkt, Kanu mit deutlich regelmäßiger Dünung, Navigator prüft Wellenwinkel.
-Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
 
-Bild 64 (5.75s geplant, NIE INS BILD SCHREIBEN)
-Audio Anchor: Auch Wolken und bestimmte Seevögel konnten
-Visual Purpose: Segelkanu, Seeschwalben fliegen auf eine ferne Insel zu, Wolken über Land angedeutet
-Topic Anchor: Navigation im Pazifik
-Visual Form: Lebendige Editorial-Stickman-Szene
-VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
-16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
-KAPITELWELT: Traditionelle polynesische Hochseefahrt, tropischer Ozean
-VOICE-INHALT: Auch Wolken und bestimmte Seevögel konnten Hinweise geben, ob irgendwo Land in der Nähe lag.
-KONKRETE SZENE: Segelkanu, Seeschwalben fliegen auf eine ferne Insel zu, Wolken über Land angedeutet.
-Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+======= NEXT INDIVIDUAL PROMPT =======
 
-Bild 65 (5.37s geplant, NIE INS BILD SCHREIBEN)
-Audio Anchor: Dieses Wissen wurde erlernt, erinnert und
-Visual Purpose: Älterer Navigator erklärt Sternrichtungen am Strand mit Steinen im Sand, mehrere Stickman-Schüler
-Topic Anchor: Navigation im Pazifik
-Visual Form: Lebendige Editorial-Stickman-Szene
-VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
-16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
-KAPITELWELT: Traditionelle polynesische Hochseefahrt, tropischer Ozean
-VOICE-INHALT: Dieses Wissen wurde erlernt, erinnert und über Generationen weitergegeben, nicht von einer App berechnet.
-KONKRETE SZENE: Älterer Navigator erklärt Sternrichtungen am Strand mit Steinen im Sand, mehrere Stickman-Schüler; respektvoll, nicht kindlich.
-Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+SCENE_KEY: 63
+OUTPUT FILE: Bild 63.png
+PROMPT_LANGUAGE: ENGLISH
+OUTPUT: ONE image only, 16:9.
+VISUAL FORMAT: weather-story.
+VISUAL GOAL: Clouds hide the stars while long regular ocean swell is still visible near traditional Polynesian canoe, navigator reads motion; strongly focused non-magical observational act.
+SCENE-WORLD AND ACCURACY: Traditional Polynesian seafaring environment; show culturally credible voyaging canoe and natural observation, not Western navigational machinery.
+VISIBLE TEXT: Render no visible words, characters, headline, labels, numbers or captions.
+ART DIRECTION: Create a polished, creator-grade 2D stick-figure explanatory illustration for the German YouTube knowledge channel StrichKosmos. 16:9 landscape, high-definition 1920 × 1080. All human figures, when needed, MUST be unmistakable hand-drawn stickmen: compact ivory-toned round faces, expressive simple brows and eyes, clean dark charcoal outlines, simple slim line limbs, readable natural poses and restrained historically appropriate clothing. NO realistically proportioned full humans, NO semi-real humans, NO photo, NO 3D.
+VISUAL APPEAL: Purposeful strong focal point, confident irregular ink-like line work, polished editorial cartoon illustration, smart layering, well-defined foreground/midground/background when relevant, selectively filled expressive shapes, elegant shadow accents, intentional visually interesting framing. Use context-dependent natural contrast: soft light neutral, ocean blue/teal, dusk navy, amber, rust or sage. NOT cheap bright-green flat-vector clipart, NOT generic children's classroom pictograms, NOT universally beige parchment, NOT an antique fantasy map, NOT a four-panel worksheet packed with words.
+VISUAL THINKING: Explain one specific fact clearly. Choose an actual scene, an object close-up, a cause-effect layout, split comparison, concise diagram or cutaway according to the described action. People are OPTIONAL and absent whenever they add no explanatory value. Avoid needless floating icons, unnecessary labels, decorative clutter and repetitive template compositions.
+TEXT CONTROL: ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN. Do not generate automatic headings, captions, location names, scene IDs, instructions or paragraphs. When the current prompt permits exact German words, render only those words large, correctly spelled and readable on a phone; otherwise render absolutely no text, numbers or pseudo-writing. Never render timing notes, audio anchors, 'GEPLANTER HOLD' or any prompt metadata.
+ACCURACY: Materials, navigation devices, landscapes, ship types, clothing, seasons and star positions must make sense for the historic period and narrated claim.
+NEGATIVE CONSTRAINT: Do not automatically insert a stick figure when this prompt is primarily about a diagram, star pattern, wave pattern, compass or object. Do not hallucinate English labels. Do not copy compositions from previous generated images. Keep all useful content within wide video-safe margins.
 
-Bild 66 (5.75s geplant, NIE INS BILD SCHREIBEN)
-Audio Anchor: Keine dieser Methoden war unfehlbar, und
-Visual Purpose: Schiff unter Regenwolken, kein Stern sichtbar, Kompass allein auf Deck
-Topic Anchor: Wenn alle Hinweise versagen
-Visual Form: Lebendige Editorial-Stickman-Szene
-VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
-16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
-KAPITELWELT: Verschiedene historische Reisekontexte als deutliche Vergleichsbilder
-VOICE-INHALT: Keine dieser Methoden war unfehlbar, und schlechte Sicht machte gleich mehrere Hinweise auf einmal unsicher.
-KONKRETE SZENE: Schiff unter Regenwolken, kein Stern sichtbar, Kompass allein auf Deck.
-Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
 
+======= NEXT INDIVIDUAL PROMPT =======
+
+SCENE_KEY: 64
+OUTPUT FILE: Bild 64.png
+PROMPT_LANGUAGE: ENGLISH
+OUTPUT: ONE image only, 16:9.
+VISUAL FORMAT: island-signs.
+VISUAL GOAL: Traditional ocean canoe notices seabirds flying toward faint green island under slightly different cloud formations on far horizon. Indications are suggestive not guaranteed.
+SCENE-WORLD AND ACCURACY: Traditional Polynesian seafaring environment; show culturally credible voyaging canoe and natural observation, not Western navigational machinery.
+VISIBLE TEXT: Render no visible words, characters, headline, labels, numbers or captions.
+ART DIRECTION: Create a polished, creator-grade 2D stick-figure explanatory illustration for the German YouTube knowledge channel StrichKosmos. 16:9 landscape, high-definition 1920 × 1080. All human figures, when needed, MUST be unmistakable hand-drawn stickmen: compact ivory-toned round faces, expressive simple brows and eyes, clean dark charcoal outlines, simple slim line limbs, readable natural poses and restrained historically appropriate clothing. NO realistically proportioned full humans, NO semi-real humans, NO photo, NO 3D.
+VISUAL APPEAL: Purposeful strong focal point, confident irregular ink-like line work, polished editorial cartoon illustration, smart layering, well-defined foreground/midground/background when relevant, selectively filled expressive shapes, elegant shadow accents, intentional visually interesting framing. Use context-dependent natural contrast: soft light neutral, ocean blue/teal, dusk navy, amber, rust or sage. NOT cheap bright-green flat-vector clipart, NOT generic children's classroom pictograms, NOT universally beige parchment, NOT an antique fantasy map, NOT a four-panel worksheet packed with words.
+VISUAL THINKING: Explain one specific fact clearly. Choose an actual scene, an object close-up, a cause-effect layout, split comparison, concise diagram or cutaway according to the described action. People are OPTIONAL and absent whenever they add no explanatory value. Avoid needless floating icons, unnecessary labels, decorative clutter and repetitive template compositions.
+TEXT CONTROL: ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN. Do not generate automatic headings, captions, location names, scene IDs, instructions or paragraphs. When the current prompt permits exact German words, render only those words large, correctly spelled and readable on a phone; otherwise render absolutely no text, numbers or pseudo-writing. Never render timing notes, audio anchors, 'GEPLANTER HOLD' or any prompt metadata.
+ACCURACY: Materials, navigation devices, landscapes, ship types, clothing, seasons and star positions must make sense for the historic period and narrated claim.
+NEGATIVE CONSTRAINT: Do not automatically insert a stick figure when this prompt is primarily about a diagram, star pattern, wave pattern, compass or object. Do not hallucinate English labels. Do not copy compositions from previous generated images. Keep all useful content within wide video-safe margins.
+
+
+======= NEXT INDIVIDUAL PROMPT =======
+
+SCENE_KEY: 65
+OUTPUT FILE: Bild 65.png
+PROMPT_LANGUAGE: ENGLISH
+OUTPUT: ONE image only, 16:9.
+VISUAL FORMAT: teaching-beach.
+VISUAL GOAL: Respectful multigenerational teaching scene on tropical shore: older wayfinder uses stones and finger-traced star bearings in wet sand with younger stickman learners. Not a school diagram.
+SCENE-WORLD AND ACCURACY: Traditional Polynesian seafaring environment; show culturally credible voyaging canoe and natural observation, not Western navigational machinery.
+VISIBLE TEXT: Render no visible words, characters, headline, labels, numbers or captions.
+ART DIRECTION: Create a polished, creator-grade 2D stick-figure explanatory illustration for the German YouTube knowledge channel StrichKosmos. 16:9 landscape, high-definition 1920 × 1080. All human figures, when needed, MUST be unmistakable hand-drawn stickmen: compact ivory-toned round faces, expressive simple brows and eyes, clean dark charcoal outlines, simple slim line limbs, readable natural poses and restrained historically appropriate clothing. NO realistically proportioned full humans, NO semi-real humans, NO photo, NO 3D.
+VISUAL APPEAL: Purposeful strong focal point, confident irregular ink-like line work, polished editorial cartoon illustration, smart layering, well-defined foreground/midground/background when relevant, selectively filled expressive shapes, elegant shadow accents, intentional visually interesting framing. Use context-dependent natural contrast: soft light neutral, ocean blue/teal, dusk navy, amber, rust or sage. NOT cheap bright-green flat-vector clipart, NOT generic children's classroom pictograms, NOT universally beige parchment, NOT an antique fantasy map, NOT a four-panel worksheet packed with words.
+VISUAL THINKING: Explain one specific fact clearly. Choose an actual scene, an object close-up, a cause-effect layout, split comparison, concise diagram or cutaway according to the described action. People are OPTIONAL and absent whenever they add no explanatory value. Avoid needless floating icons, unnecessary labels, decorative clutter and repetitive template compositions.
+TEXT CONTROL: ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN. Do not generate automatic headings, captions, location names, scene IDs, instructions or paragraphs. When the current prompt permits exact German words, render only those words large, correctly spelled and readable on a phone; otherwise render absolutely no text, numbers or pseudo-writing. Never render timing notes, audio anchors, 'GEPLANTER HOLD' or any prompt metadata.
+ACCURACY: Materials, navigation devices, landscapes, ship types, clothing, seasons and star positions must make sense for the historic period and narrated claim.
+NEGATIVE CONSTRAINT: Do not automatically insert a stick figure when this prompt is primarily about a diagram, star pattern, wave pattern, compass or object. Do not hallucinate English labels. Do not copy compositions from previous generated images. Keep all useful content within wide video-safe margins.
+
+
+======= NEXT INDIVIDUAL PROMPT =======
+
+SCENE_KEY: 66
+OUTPUT FILE: Bild 66.png
+PROMPT_LANGUAGE: ENGLISH
+OUTPUT: ONE image only, 16:9.
+VISUAL FORMAT: weather.
+VISUAL GOAL: Open ship at night beneath complete clouds and wind-blown rain; a compass alone cannot solve the missing position. Strong contrast of bright compass and obscured sky.
+SCENE-WORLD AND ACCURACY: Respect the distinct historical settings; do not mix European ships and Polynesian canoes into one uniform culture.
+VISIBLE TEXT: Render no visible words, characters, headline, labels, numbers or captions.
+ART DIRECTION: Create a polished, creator-grade 2D stick-figure explanatory illustration for the German YouTube knowledge channel StrichKosmos. 16:9 landscape, high-definition 1920 × 1080. All human figures, when needed, MUST be unmistakable hand-drawn stickmen: compact ivory-toned round faces, expressive simple brows and eyes, clean dark charcoal outlines, simple slim line limbs, readable natural poses and restrained historically appropriate clothing. NO realistically proportioned full humans, NO semi-real humans, NO photo, NO 3D.
+VISUAL APPEAL: Purposeful strong focal point, confident irregular ink-like line work, polished editorial cartoon illustration, smart layering, well-defined foreground/midground/background when relevant, selectively filled expressive shapes, elegant shadow accents, intentional visually interesting framing. Use context-dependent natural contrast: soft light neutral, ocean blue/teal, dusk navy, amber, rust or sage. NOT cheap bright-green flat-vector clipart, NOT generic children's classroom pictograms, NOT universally beige parchment, NOT an antique fantasy map, NOT a four-panel worksheet packed with words.
+VISUAL THINKING: Explain one specific fact clearly. Choose an actual scene, an object close-up, a cause-effect layout, split comparison, concise diagram or cutaway according to the described action. People are OPTIONAL and absent whenever they add no explanatory value. Avoid needless floating icons, unnecessary labels, decorative clutter and repetitive template compositions.
+TEXT CONTROL: ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN. Do not generate automatic headings, captions, location names, scene IDs, instructions or paragraphs. When the current prompt permits exact German words, render only those words large, correctly spelled and readable on a phone; otherwise render absolutely no text, numbers or pseudo-writing. Never render timing notes, audio anchors, 'GEPLANTER HOLD' or any prompt metadata.
+ACCURACY: Materials, navigation devices, landscapes, ship types, clothing, seasons and star positions must make sense for the historic period and narrated claim.
+NEGATIVE CONSTRAINT: Do not automatically insert a stick figure when this prompt is primarily about a diagram, star pattern, wave pattern, compass or object. Do not hallucinate English labels. Do not copy compositions from previous generated images. Keep all useful content within wide video-safe margins.

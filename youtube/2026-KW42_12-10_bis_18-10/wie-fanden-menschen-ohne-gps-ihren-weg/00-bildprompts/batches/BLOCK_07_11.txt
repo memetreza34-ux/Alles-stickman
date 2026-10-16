@@ -1,68 +1,90 @@
-STRICHKOSMOS 6:30, BILDER 7–11.
-Voraussetzung: COVERWAHL A/B/C abgeschlossen, Bild 01 bereits gespeichert. Maximal 5 Bilder gleichzeitig. Jedes Bild mit individuellem Prompt, NICHT anhand voriger Bilder generieren. Danach interne stille Bild-QC für Stickman-Stil, Epoche, Handlung, Text, Anatomie; beschädigtes/fehlerhaftes Bild nur unter derselben Nummer reparieren; anschließend OHNE NACHFRAGE zum nächsten Batch. Finale PNGs nur Bild XX.png im gemeinsamen Ordner.
+PROMPT_LANGUAGE: ENGLISH
+STRICHKOSMOS — AUTOMATIC FIVE-IMAGE BATCH: Bild 07–11.
+This file is ready to copy into Google Flow. Cover selection A/B/C must already be complete. Produce exactly the five images whose complete self-contained prompts follow; never add a sixth or substitute a variant. Work from these textual prompts only; never reuse any image as reference. If continuation is supported, do not pause for user confirmation between subsequent five-image batches. After generation perform visual QC silently; only regenerate a failed image number. All visible text must be GERMAN, never English. Save as individual Bild XX.png files in the same flat directory.
 
-Bild 07 (ca. 4.98s nur zur Produktionsplanung, nicht rendern)
-Gesprochene Aussage: Denn eine feste Richtung kann man halten und trotzdem am falschen Ort landen.
-Audio Anchor: Denn eine feste Richtung kann man
-Visual Purpose: Illustrierte Route biegt durch Wind/Umweg neben das Ziel, Person läuft überzeugt, Stadt liegt deutlich seitlich
-Topic Anchor: Wissen statt Satelliten
-Visual Form: Lebendige Editorial-Stickman-Szene
-VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
-2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
-Feste Kapitelwelt: Historische Reisewelt, 16.–18. Jahrhundert neutral
-Erzählter Sachverhalt: Denn eine feste Richtung kann man halten und trotzdem am falschen Ort landen.
-Konkrete Bildregie: Illustrierte Route biegt durch Wind/Umweg neben das Ziel, Person läuft überzeugt, Stadt liegt deutlich seitlich.
-Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
+SCENE_KEY: 07
+OUTPUT FILE: Bild 07.png
+PROMPT_LANGUAGE: ENGLISH
+OUTPUT: ONE image only, 16:9.
+VISUAL FORMAT: cause-effect.
+VISUAL GOAL: A single simple visual explanation of a hiker staying headed north but avoiding a ridge, ending off target. Contrasting colored intended and actual paths; one prominent destination house icon. No extra labels.
+SCENE-WORLD AND ACCURACY: Historical land travel / northern European landscape where relevant; avoid contemporary accessories.
+VISIBLE TEXT: Render no visible words, characters, headline, labels, numbers or captions.
+ART DIRECTION: Create a polished, creator-grade 2D stick-figure explanatory illustration for the German YouTube knowledge channel StrichKosmos. 16:9 landscape, high-definition 1920 × 1080. All human figures, when needed, MUST be unmistakable hand-drawn stickmen: compact ivory-toned round faces, expressive simple brows and eyes, clean dark charcoal outlines, simple slim line limbs, readable natural poses and restrained historically appropriate clothing. NO realistically proportioned full humans, NO semi-real humans, NO photo, NO 3D.
+VISUAL APPEAL: Purposeful strong focal point, confident irregular ink-like line work, polished editorial cartoon illustration, smart layering, well-defined foreground/midground/background when relevant, selectively filled expressive shapes, elegant shadow accents, intentional visually interesting framing. Use context-dependent natural contrast: soft light neutral, ocean blue/teal, dusk navy, amber, rust or sage. NOT cheap bright-green flat-vector clipart, NOT generic children's classroom pictograms, NOT universally beige parchment, NOT an antique fantasy map, NOT a four-panel worksheet packed with words.
+VISUAL THINKING: Explain one specific fact clearly. Choose an actual scene, an object close-up, a cause-effect layout, split comparison, concise diagram or cutaway according to the described action. People are OPTIONAL and absent whenever they add no explanatory value. Avoid needless floating icons, unnecessary labels, decorative clutter and repetitive template compositions.
+TEXT CONTROL: ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN. Do not generate automatic headings, captions, location names, scene IDs, instructions or paragraphs. When the current prompt permits exact German words, render only those words large, correctly spelled and readable on a phone; otherwise render absolutely no text, numbers or pseudo-writing. Never render timing notes, audio anchors, 'GEPLANTER HOLD' or any prompt metadata.
+ACCURACY: Materials, navigation devices, landscapes, ship types, clothing, seasons and star positions must make sense for the historic period and narrated claim.
+NEGATIVE CONSTRAINT: Do not automatically insert a stick figure when this prompt is primarily about a diagram, star pattern, wave pattern, compass or object. Do not hallucinate English labels. Do not copy compositions from previous generated images. Keep all useful content within wide video-safe margins.
 
-Bild 08 (ca. 4.22s nur zur Produktionsplanung, nicht rendern)
-Gesprochene Aussage: An Land waren Flüsse, Berge, Täler und auffällige Felsen natürliche Wegweiser.
-Audio Anchor: An Land waren Flüsse, Berge, Täler
-Visual Purpose: Stickman-Handelsreisende vor markantem Flussknick, fernem Berg und Felsformation
-Topic Anchor: Die Landschaft als Karte
-Visual Form: Lebendige Editorial-Stickman-Szene
-VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
-2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
-Feste Kapitelwelt: Historischer Handelsweg und Dorfwege, gemäßigtes Klima
-Erzählter Sachverhalt: An Land waren Flüsse, Berge, Täler und auffällige Felsen natürliche Wegweiser.
-Konkrete Bildregie: Stickman-Handelsreisende vor markantem Flussknick, fernem Berg und Felsformation; Leserichtung klar.
-Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
 
-Bild 09 (ca. 4.98s nur zur Produktionsplanung, nicht rendern)
-Gesprochene Aussage: Wer eine Gegend kannte, merkte sich, welche Brücke hinter dem Hügel auftauchen musste.
-Audio Anchor: Wer eine Gegend kannte, merkte sich,
-Visual Purpose: Reisende mit Merkpunkten im Kopf
-Topic Anchor: Die Landschaft als Karte
-Visual Form: Lebendige Editorial-Stickman-Szene
-VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
-2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
-Feste Kapitelwelt: Historischer Handelsweg und Dorfwege, gemäßigtes Klima
-Erzählter Sachverhalt: Wer eine Gegend kannte, merkte sich, welche Brücke hinter dem Hügel auftauchen musste.
-Konkrete Bildregie: Reisende mit Merkpunkten im Kopf; reale Steinbrücke hinter bekanntem Hügel, kleines Gedächtnisdetail.
-Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
+======= NEXT INDIVIDUAL PROMPT =======
 
-Bild 10 (ca. 5.37s nur zur Produktionsplanung, nicht rendern)
-Gesprochene Aussage: Wege waren außerdem soziale Informationen: Händler, Hirten und Bewohner kannten Übergänge und sichere Rastplätze.
-Audio Anchor: Wege waren außerdem soziale Informationen: Händler,
-Visual Purpose: Historische Kreuzung mit wanderndem Händler, lokalem Hirten und Dorfperson
-Topic Anchor: Die Landschaft als Karte
-Visual Form: Lebendige Editorial-Stickman-Szene
-VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
-2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
-Feste Kapitelwelt: Historischer Handelsweg und Dorfwege, gemäßigtes Klima
-Erzählter Sachverhalt: Wege waren außerdem soziale Informationen: Händler, Hirten und Bewohner kannten Übergänge und sichere Rastplätze.
-Konkrete Bildregie: Historische Kreuzung mit wanderndem Händler, lokalem Hirten und Dorfperson; eine weist freundlich den Weg.
-Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
+SCENE_KEY: 08
+OUTPUT FILE: Bild 08.png
+PROMPT_LANGUAGE: ENGLISH
+OUTPUT: ONE image only, 16:9.
+VISUAL FORMAT: environment.
+VISUAL GOAL: A historic trading trail bends around a recognizable river, distinctive sharp mountain and rugged boulder. One small stickman traveler actively points to the matching features. Layered background with clean readable silhouette.
+SCENE-WORLD AND ACCURACY: Historical land travel / northern European landscape where relevant; avoid contemporary accessories.
+VISIBLE TEXT: Render no visible words, characters, headline, labels, numbers or captions.
+ART DIRECTION: Create a polished, creator-grade 2D stick-figure explanatory illustration for the German YouTube knowledge channel StrichKosmos. 16:9 landscape, high-definition 1920 × 1080. All human figures, when needed, MUST be unmistakable hand-drawn stickmen: compact ivory-toned round faces, expressive simple brows and eyes, clean dark charcoal outlines, simple slim line limbs, readable natural poses and restrained historically appropriate clothing. NO realistically proportioned full humans, NO semi-real humans, NO photo, NO 3D.
+VISUAL APPEAL: Purposeful strong focal point, confident irregular ink-like line work, polished editorial cartoon illustration, smart layering, well-defined foreground/midground/background when relevant, selectively filled expressive shapes, elegant shadow accents, intentional visually interesting framing. Use context-dependent natural contrast: soft light neutral, ocean blue/teal, dusk navy, amber, rust or sage. NOT cheap bright-green flat-vector clipart, NOT generic children's classroom pictograms, NOT universally beige parchment, NOT an antique fantasy map, NOT a four-panel worksheet packed with words.
+VISUAL THINKING: Explain one specific fact clearly. Choose an actual scene, an object close-up, a cause-effect layout, split comparison, concise diagram or cutaway according to the described action. People are OPTIONAL and absent whenever they add no explanatory value. Avoid needless floating icons, unnecessary labels, decorative clutter and repetitive template compositions.
+TEXT CONTROL: ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN. Do not generate automatic headings, captions, location names, scene IDs, instructions or paragraphs. When the current prompt permits exact German words, render only those words large, correctly spelled and readable on a phone; otherwise render absolutely no text, numbers or pseudo-writing. Never render timing notes, audio anchors, 'GEPLANTER HOLD' or any prompt metadata.
+ACCURACY: Materials, navigation devices, landscapes, ship types, clothing, seasons and star positions must make sense for the historic period and narrated claim.
+NEGATIVE CONSTRAINT: Do not automatically insert a stick figure when this prompt is primarily about a diagram, star pattern, wave pattern, compass or object. Do not hallucinate English labels. Do not copy compositions from previous generated images. Keep all useful content within wide video-safe margins.
 
-Bild 11 (ca. 5.37s nur zur Produktionsplanung, nicht rendern)
-Gesprochene Aussage: Eine Erklärung konnte lauten: Folge dem Fluss, bis du die zwei großen Bäume siehst.
-Audio Anchor: Eine Erklärung konnte lauten: Folge dem
-Visual Purpose: Breite Flusslandschaft mit zwei auffälligen Bäumen als gut erkennbare Wegmarke
-Topic Anchor: Die Landschaft als Karte
-Visual Form: Lebendige Editorial-Stickman-Szene
-VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
-2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
-Feste Kapitelwelt: Historischer Handelsweg und Dorfwege, gemäßigtes Klima
-Erzählter Sachverhalt: Eine Erklärung konnte lauten: Folge dem Fluss, bis du die zwei großen Bäume siehst.
-Konkrete Bildregie: Breite Flusslandschaft mit zwei auffälligen Bäumen als gut erkennbare Wegmarke; Reisende folgen Ufer.
-Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
 
+======= NEXT INDIVIDUAL PROMPT =======
+
+SCENE_KEY: 09
+OUTPUT FILE: Bild 09.png
+PROMPT_LANGUAGE: ENGLISH
+OUTPUT: ONE image only, 16:9.
+VISUAL FORMAT: story.
+VISUAL GOAL: A traveler points toward a stone bridge hidden behind one identifiable hill, with a companion recognizing the landmark. Strong foreground interaction, actual believable bridge, no floating stickers.
+SCENE-WORLD AND ACCURACY: Historical land travel / northern European landscape where relevant; avoid contemporary accessories.
+VISIBLE TEXT: Render no visible words, characters, headline, labels, numbers or captions.
+ART DIRECTION: Create a polished, creator-grade 2D stick-figure explanatory illustration for the German YouTube knowledge channel StrichKosmos. 16:9 landscape, high-definition 1920 × 1080. All human figures, when needed, MUST be unmistakable hand-drawn stickmen: compact ivory-toned round faces, expressive simple brows and eyes, clean dark charcoal outlines, simple slim line limbs, readable natural poses and restrained historically appropriate clothing. NO realistically proportioned full humans, NO semi-real humans, NO photo, NO 3D.
+VISUAL APPEAL: Purposeful strong focal point, confident irregular ink-like line work, polished editorial cartoon illustration, smart layering, well-defined foreground/midground/background when relevant, selectively filled expressive shapes, elegant shadow accents, intentional visually interesting framing. Use context-dependent natural contrast: soft light neutral, ocean blue/teal, dusk navy, amber, rust or sage. NOT cheap bright-green flat-vector clipart, NOT generic children's classroom pictograms, NOT universally beige parchment, NOT an antique fantasy map, NOT a four-panel worksheet packed with words.
+VISUAL THINKING: Explain one specific fact clearly. Choose an actual scene, an object close-up, a cause-effect layout, split comparison, concise diagram or cutaway according to the described action. People are OPTIONAL and absent whenever they add no explanatory value. Avoid needless floating icons, unnecessary labels, decorative clutter and repetitive template compositions.
+TEXT CONTROL: ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN. Do not generate automatic headings, captions, location names, scene IDs, instructions or paragraphs. When the current prompt permits exact German words, render only those words large, correctly spelled and readable on a phone; otherwise render absolutely no text, numbers or pseudo-writing. Never render timing notes, audio anchors, 'GEPLANTER HOLD' or any prompt metadata.
+ACCURACY: Materials, navigation devices, landscapes, ship types, clothing, seasons and star positions must make sense for the historic period and narrated claim.
+NEGATIVE CONSTRAINT: Do not automatically insert a stick figure when this prompt is primarily about a diagram, star pattern, wave pattern, compass or object. Do not hallucinate English labels. Do not copy compositions from previous generated images. Keep all useful content within wide video-safe margins.
+
+
+======= NEXT INDIVIDUAL PROMPT =======
+
+SCENE_KEY: 10
+OUTPUT FILE: Bild 10.png
+PROMPT_LANGUAGE: ENGLISH
+OUTPUT: ONE image only, 16:9.
+VISUAL FORMAT: character-interaction.
+VISUAL GOAL: A rural junction with three differentiated stickman travelers: merchant leads pack animal, local herder points toward safe crossing, visitor listens. Dynamic conversational staging, period-appropriate clothes, warm earth accent colors.
+SCENE-WORLD AND ACCURACY: Historical land travel / northern European landscape where relevant; avoid contemporary accessories.
+VISIBLE TEXT: Render no visible words, characters, headline, labels, numbers or captions.
+ART DIRECTION: Create a polished, creator-grade 2D stick-figure explanatory illustration for the German YouTube knowledge channel StrichKosmos. 16:9 landscape, high-definition 1920 × 1080. All human figures, when needed, MUST be unmistakable hand-drawn stickmen: compact ivory-toned round faces, expressive simple brows and eyes, clean dark charcoal outlines, simple slim line limbs, readable natural poses and restrained historically appropriate clothing. NO realistically proportioned full humans, NO semi-real humans, NO photo, NO 3D.
+VISUAL APPEAL: Purposeful strong focal point, confident irregular ink-like line work, polished editorial cartoon illustration, smart layering, well-defined foreground/midground/background when relevant, selectively filled expressive shapes, elegant shadow accents, intentional visually interesting framing. Use context-dependent natural contrast: soft light neutral, ocean blue/teal, dusk navy, amber, rust or sage. NOT cheap bright-green flat-vector clipart, NOT generic children's classroom pictograms, NOT universally beige parchment, NOT an antique fantasy map, NOT a four-panel worksheet packed with words.
+VISUAL THINKING: Explain one specific fact clearly. Choose an actual scene, an object close-up, a cause-effect layout, split comparison, concise diagram or cutaway according to the described action. People are OPTIONAL and absent whenever they add no explanatory value. Avoid needless floating icons, unnecessary labels, decorative clutter and repetitive template compositions.
+TEXT CONTROL: ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN. Do not generate automatic headings, captions, location names, scene IDs, instructions or paragraphs. When the current prompt permits exact German words, render only those words large, correctly spelled and readable on a phone; otherwise render absolutely no text, numbers or pseudo-writing. Never render timing notes, audio anchors, 'GEPLANTER HOLD' or any prompt metadata.
+ACCURACY: Materials, navigation devices, landscapes, ship types, clothing, seasons and star positions must make sense for the historic period and narrated claim.
+NEGATIVE CONSTRAINT: Do not automatically insert a stick figure when this prompt is primarily about a diagram, star pattern, wave pattern, compass or object. Do not hallucinate English labels. Do not copy compositions from previous generated images. Keep all useful content within wide video-safe margins.
+
+
+======= NEXT INDIVIDUAL PROMPT =======
+
+SCENE_KEY: 11
+OUTPUT FILE: Bild 11.png
+PROMPT_LANGUAGE: ENGLISH
+OUTPUT: ONE image only, 16:9.
+VISUAL FORMAT: route-map.
+VISUAL GOAL: Highly simplified overhead landscape, not aged paper: a blue winding river leads to two distinctive trees and a village. Draw one clear route with a single thick arrow and a small traveler token.
+SCENE-WORLD AND ACCURACY: Historical land travel / northern European landscape where relevant; avoid contemporary accessories.
+VISIBLE TEXT: Only these exact German labels may be visible: "FLUSS FOLGEN". Do not add any other text.
+ART DIRECTION: Create a polished, creator-grade 2D stick-figure explanatory illustration for the German YouTube knowledge channel StrichKosmos. 16:9 landscape, high-definition 1920 × 1080. All human figures, when needed, MUST be unmistakable hand-drawn stickmen: compact ivory-toned round faces, expressive simple brows and eyes, clean dark charcoal outlines, simple slim line limbs, readable natural poses and restrained historically appropriate clothing. NO realistically proportioned full humans, NO semi-real humans, NO photo, NO 3D.
+VISUAL APPEAL: Purposeful strong focal point, confident irregular ink-like line work, polished editorial cartoon illustration, smart layering, well-defined foreground/midground/background when relevant, selectively filled expressive shapes, elegant shadow accents, intentional visually interesting framing. Use context-dependent natural contrast: soft light neutral, ocean blue/teal, dusk navy, amber, rust or sage. NOT cheap bright-green flat-vector clipart, NOT generic children's classroom pictograms, NOT universally beige parchment, NOT an antique fantasy map, NOT a four-panel worksheet packed with words.
+VISUAL THINKING: Explain one specific fact clearly. Choose an actual scene, an object close-up, a cause-effect layout, split comparison, concise diagram or cutaway according to the described action. People are OPTIONAL and absent whenever they add no explanatory value. Avoid needless floating icons, unnecessary labels, decorative clutter and repetitive template compositions.
+TEXT CONTROL: ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN. Do not generate automatic headings, captions, location names, scene IDs, instructions or paragraphs. When the current prompt permits exact German words, render only those words large, correctly spelled and readable on a phone; otherwise render absolutely no text, numbers or pseudo-writing. Never render timing notes, audio anchors, 'GEPLANTER HOLD' or any prompt metadata.
+ACCURACY: Materials, navigation devices, landscapes, ship types, clothing, seasons and star positions must make sense for the historic period and narrated claim.
+NEGATIVE CONSTRAINT: Do not automatically insert a stick figure when this prompt is primarily about a diagram, star pattern, wave pattern, compass or object. Do not hallucinate English labels. Do not copy compositions from previous generated images. Keep all useful content within wide video-safe margins.
