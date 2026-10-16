@@ -1,0 +1,63 @@
+STRICHKOSMOS — VERBINDLICHER GOOGLE-FLOW-BLOCK 52–56
+VORBEDINGUNG: Der Nutzer hat A/B/C für die 3 Cover gewählt. Kein Zwischenstopp oder neues WEITER. Höchstens 5 Bilder gleichzeitig, nach jeder fertigen 5er-Gruppe stille QC der echten Bilder (Aussage, Stickman statt Mensch, Welt/Epoche, korrekter lesbarer deutscher Text, Anatomie), nur defekte Nummern korrigieren und ohne Rückfrage nächste Gruppe laden. Alles flach als Bild XX.png in 00-bildprompts/images/ speichern. Keine Bildreferenzen.
+
+Bild 52 (6.13s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Vor allem Sonne und Sterne halfen
+Visual Purpose: Illustrierte Erdkugel mit Breitenkreisen, Schiff im Nordatlantik und große Sonne/Sterne darüber
+Topic Anchor: Gerechneter Kurs
+Visual Form: Anschauliche Sachillustration
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Europäische Seefahrt 16.–18. Jahrhundert
+VOICE-INHALT: Vor allem Sonne und Sterne halfen bei der Frage, wie weit nördlich oder südlich man war.
+KONKRETE SZENE: Illustrierte Erdkugel mit Breitenkreisen, Schiff im Nordatlantik und große Sonne/Sterne darüber.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 53 (4.98s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Der Breitengrad beschreibt, wie weit ein
+Visual Purpose: Handgezeichnete Erdkugel mit nur Äquator und zwei Breitenkreisen, großes deutendes Stickman-Miniobjekt
+Topic Anchor: Breite, aber noch keine Länge
+Visual Form: Anschauliche Sachillustration
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Historische Hochseefahrt und Himmelsmessung
+VOICE-INHALT: Der Breitengrad beschreibt, wie weit ein Ort nördlich oder südlich des Äquators liegt.
+KONKRETE SZENE: Handgezeichnete Erdkugel mit nur Äquator und zwei Breitenkreisen, großes deutendes Stickman-Miniobjekt.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 54 (5.75s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Auf der Nordhalbkugel liefert die Höhe
+Visual Purpose: Sternwinkelskizze über Meereshorizont, Navigator auf Schiff, klarer einzelner Winkel
+Topic Anchor: Breite, aber noch keine Länge
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Historische Hochseefahrt und Himmelsmessung
+VOICE-INHALT: Auf der Nordhalbkugel liefert die Höhe des Polarsterns über dem Horizont einen ungefähren Hinweis darauf.
+KONKRETE SZENE: Sternwinkelskizze über Meereshorizont, Navigator auf Schiff, klarer einzelner Winkel.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 55 (5.75s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Später nutzten Seeleute Instrumente, mit denen
+Visual Purpose: Historische Instrumentensammlung mit Astrolabium, Quadrant und Sextant, alle groß und nicht wie moderne Spielzeuge
+Topic Anchor: Breite, aber noch keine Länge
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Historische Hochseefahrt und Himmelsmessung
+VOICE-INHALT: Später nutzten Seeleute Instrumente, mit denen sie Winkel von Sonne oder Sternen genauer messen konnten.
+KONKRETE SZENE: Historische Instrumentensammlung mit Astrolabium, Quadrant und Sextant, alle groß und nicht wie moderne Spielzeuge.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 56 (5.37s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Aber die zweite Koordinate, der Längengrad,
+Visual Purpose: Erdkugel mit unklarer Ost-West-Position, zwei Schiffe am selben Breitengrad weit auseinander
+Topic Anchor: Breite, aber noch keine Länge
+Visual Form: Anschauliche Sachillustration
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Historische Hochseefahrt und Himmelsmessung
+VOICE-INHALT: Aber die zweite Koordinate, der Längengrad, blieb auf dem offenen Ozean lange besonders schwierig.
+KONKRETE SZENE: Erdkugel mit unklarer Ost-West-Position, zwei Schiffe am selben Breitengrad weit auseinander.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+

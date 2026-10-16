@@ -1,0 +1,63 @@
+STRICHKOSMOS — VERBINDLICHER GOOGLE-FLOW-BLOCK 67–71
+VORBEDINGUNG: Der Nutzer hat A/B/C für die 3 Cover gewählt. Kein Zwischenstopp oder neues WEITER. Höchstens 5 Bilder gleichzeitig, nach jeder fertigen 5er-Gruppe stille QC der echten Bilder (Aussage, Stickman statt Mensch, Welt/Epoche, korrekter lesbarer deutscher Text, Anatomie), nur defekte Nummern korrigieren und ohne Rückfrage nächste Gruppe laden. Alles flach als Bild XX.png in 00-bildprompts/images/ speichern. Keine Bildreferenzen.
+
+Bild 67 (5.37s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Ein Kompass half nicht gegen unbekannte
+Visual Purpose: Zwei große illustrierte Mini-Szenen Schiffdrift und fehlerhafte Küstenkarte, klare Abgrenzung
+Topic Anchor: Wenn alle Hinweise versagen
+Visual Form: Anschauliche Sachillustration
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Verschiedene historische Reisekontexte als deutliche Vergleichsbilder
+VOICE-INHALT: Ein Kompass half nicht gegen unbekannte Strömungen, eine Karte nicht gegen falsch eingezeichnete Küsten.
+KONKRETE SZENE: Zwei große illustrierte Mini-Szenen Schiffdrift und fehlerhafte Küstenkarte, klare Abgrenzung.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 68 (4.6s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Wer einen Orientierungspunkt falsch erkannte, konnte
+Visual Purpose: Wanderer verwechselt ähnlich geformte Berge, eingezeichneter Umweg in Landschaft
+Topic Anchor: Wenn alle Hinweise versagen
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Verschiedene historische Reisekontexte als deutliche Vergleichsbilder
+VOICE-INHALT: Wer einen Orientierungspunkt falsch erkannte, konnte einen Irrtum kilometerweit mit sich tragen.
+KONKRETE SZENE: Wanderer verwechselt ähnlich geformte Berge, eingezeichneter Umweg in Landschaft.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 69 (4.98s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Erfahrene Navigatoren prüften deshalb verschiedene Hinweise
+Visual Purpose: Polynesisches Kanu prüft Wellen und Sterne
+Topic Anchor: Wenn alle Hinweise versagen
+Visual Form: Anschauliche Sachillustration
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Verschiedene historische Reisekontexte als deutliche Vergleichsbilder
+VOICE-INHALT: Erfahrene Navigatoren prüften deshalb verschiedene Hinweise gegeneinander, sobald sie die Gelegenheit dazu hatten.
+KONKRETE SZENE: Polynesisches Kanu prüft Wellen und Sterne; daneben kleiner europäischer Seefahrer mit Karte und Kompass, respektvoller Vergleich.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 70 (4.98s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Orientierung war weniger ein Zaubertrick als
+Visual Purpose: Mehrere zunächst unscharfe mögliche Wege verschmelzen zu einem plausiblen Weg, Figuren beobachten Hinweise
+Topic Anchor: Wenn alle Hinweise versagen
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Verschiedene historische Reisekontexte als deutliche Vergleichsbilder
+VOICE-INHALT: Orientierung war weniger ein Zaubertrick als die Kunst, Unsicherheit immer wieder zu verkleinern.
+KONKRETE SZENE: Mehrere zunächst unscharfe mögliche Wege verschmelzen zu einem plausiblen Weg, Figuren beobachten Hinweise.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 71 (3.83s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: An Land halfen auffällige Orte, erfahrene
+Visual Purpose: Reichhaltige Landschaftsszene mit Reisenden, markantem Berg, Fluss und Sternhimmel als vereinfachter Zeitvergleich
+Topic Anchor: Die eigentliche Antwort
+Visual Form: Anschauliche Sachillustration
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Zusammenfassende Zeit- und Landschaftsmontage
+VOICE-INHALT: An Land halfen auffällige Orte, erfahrene Wegkundige, Sonne und Sterne.
+KONKRETE SZENE: Reichhaltige Landschaftsszene mit Reisenden, markantem Berg, Fluss und Sternhimmel als vereinfachter Zeitvergleich.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+

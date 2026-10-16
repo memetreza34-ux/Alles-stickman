@@ -1,0 +1,63 @@
+STRICHKOSMOS — VERBINDLICHER GOOGLE-FLOW-BLOCK 72–76
+VORBEDINGUNG: Der Nutzer hat A/B/C für die 3 Cover gewählt. Kein Zwischenstopp oder neues WEITER. Höchstens 5 Bilder gleichzeitig, nach jeder fertigen 5er-Gruppe stille QC der echten Bilder (Aussage, Stickman statt Mensch, Welt/Epoche, korrekter lesbarer deutscher Text, Anatomie), nur defekte Nummern korrigieren und ohne Rückfrage nächste Gruppe laden. Alles flach als Bild XX.png in 00-bildprompts/images/ speichern. Keine Bildreferenzen.
+
+Bild 72 (4.22s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Auf dem Meer kamen Kompass, Karten,
+Visual Purpose: Historisches Schiff, Tisch mit Seekarte/Kompass und Navigator blickt zu Sternen
+Topic Anchor: Die eigentliche Antwort
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Zusammenfassende Zeit- und Landschaftsmontage
+VOICE-INHALT: Auf dem Meer kamen Kompass, Karten, Kursrechnung und genaue Himmelsbeobachtungen hinzu.
+KONKRETE SZENE: Historisches Schiff, Tisch mit Seekarte/Kompass und Navigator blickt zu Sternen.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 73 (5.37s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Andere Seefahrtstraditionen nutzten Sterne, Wellen, Wind
+Visual Purpose: Traditionelles pazifisches Kanu in respektvoller Szene mit klaren Wellen, Horizontsternen und Seevogel
+Topic Anchor: Die eigentliche Antwort
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Zusammenfassende Zeit- und Landschaftsmontage
+VOICE-INHALT: Andere Seefahrtstraditionen nutzten Sterne, Wellen, Wind und Zeichen für nahes Land auf eigene Weise.
+KONKRETE SZENE: Traditionelles pazifisches Kanu in respektvoller Szene mit klaren Wellen, Horizontsternen und Seevogel.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 74 (5.75s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Entscheidend war, aus vielen unvollkommenen Beobachtungen
+Visual Purpose: Große anschauliche Kombiszene verschiedener natürlicher Wegzeichen und eine klar hervorgehobene Route
+Topic Anchor: Die eigentliche Antwort
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Zusammenfassende Zeit- und Landschaftsmontage
+VOICE-INHALT: Entscheidend war, aus vielen unvollkommenen Beobachtungen gemeinsam eine brauchbare Vorstellung vom eigenen Weg zu gewinnen.
+KONKRETE SZENE: Große anschauliche Kombiszene verschiedener natürlicher Wegzeichen und eine klar hervorgehobene Route.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 75 (6.13s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Heute schätzt ein Smartphone unsere Position
+Visual Purpose: Modernes Handgerät zeigt grobe Kartennadel, Satelliten im Hintergrund als einfacher Querschnitt
+Topic Anchor: Was GPS verändert hat
+Visual Form: Anschauliche Sachillustration
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Moderner Vergleich nur in den letzten Bildern
+VOICE-INHALT: Heute schätzt ein Smartphone unsere Position mithilfe von Satellitensignalen, statt dass wir sie ständig selbst herleiten.
+KONKRETE SZENE: Modernes Handgerät zeigt grobe Kartennadel, Satelliten im Hintergrund als einfacher Querschnitt; kein technologischer Pseudotext.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 76 (6.9s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Der erstaunliche Teil ist nicht, dass
+Visual Purpose: Schlussbild: historischer Reisender blickt von Klippe aufs Meer, moderne Kartenansicht als kleines transparentes Gegenstück
+Topic Anchor: Was GPS verändert hat
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Moderner Vergleich nur in den letzten Bildern
+VOICE-INHALT: Der erstaunliche Teil ist nicht, dass Menschen früher kein GPS hatten, sondern wie viel Orientierung sie trotzdem beherrschten.
+KONKRETE SZENE: Schlussbild: historischer Reisender blickt von Klippe aufs Meer, moderne Kartenansicht als kleines transparentes Gegenstück.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
