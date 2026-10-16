@@ -395,7 +395,7 @@ export async function validatePhase1(projectDirectory) {
         continue;
       }
       const batch = await readFile(batchPath, 'utf8');
-      if (canonicalStyle && !batch.includes(canonicalStyle)) errors.push(`Longform-Bildblock ${first}–${last}: full canonical master v14 missing.`);
+      if (englishPrompt && canonicalStyle && !batch.includes(canonicalStyle)) errors.push(`Longform-Bildblock ${first}–${last}: full canonical master v14 missing.`);
       if (!/(VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT|COMPLETE INDIVIDUAL IMAGE PROMPT|SCENE_KEY: \d{2})/i.test(batch)) errors.push(`Longform-Bildblock ${first}–${last}: individuelle Prompts fehlen.`);
       for (let n = first; n <= last; n += 1) {
         if (!batch.includes(`Bild ${label(n)}`)) errors.push(`Longform-Bildblock ${first}–${last}: Bild ${label(n)} fehlt.`);
