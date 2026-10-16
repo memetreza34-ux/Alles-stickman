@@ -2,9 +2,10 @@ PROMPT_LANGUAGE: ENGLISH
 IMAGE PROMPTS ARE WRITTEN IN ENGLISH.
 ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN.
 VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14
-GOOGLE FLOW READY-TO-PASTE FIVE-IMAGE BATCH 22–26
+STRICHKOSMOS VISUAL REBUILD — READY-TO-COPY FIVE-IMAGE BATCH 22–26
 
-Only proceed after the user has selected cover A/B/C and its winner has been saved as Bild 01.png. Create exactly the FIVE numbered images defined below. Each complete standalone prompt repeats the SAME canonical master visual style in full so Google Flow requires no repository lookup or earlier-image reference. If supported, automatically continue through subsequent 5-image batches without user interruption, checking every actual result and repairing only failed image numbers. Never make false claims about saving files or autonomous capabilities. Final images must be individually named PNGs inside one flat folder. On-image text German only.
+This five-image batch is a complete stand-alone Google Flow input. The three original strong COVER candidates A/B/C are UNCHANGED. The user must have selected the cover winner as Bild 01.png before creating Bild 02. After cover selection, if the tool genuinely supports it, advance to the next five-image batch automatically with no new approvals; never claim it can read a separate GitHub file unless verified. For these five scene numbers use the COMPLETE INDIVIDUAL IMAGE PROMPT blocks below without replacing the scene-specific art direction with a generic style instruction. Never generate more than five images concurrently.
+SILENT REAL-IMAGE QC: check whether each output actually explains its specific narration, has an engaging composition comparable in care (NOT in appearance) to the approved covers, uses German-only visible words, avoids the beige empty-landscape / tiny-globe / school-diagram failure modes, and keeps all people unmistakably Stickmen. Re-create ONLY failed numbers. Keep all final numbered images in one shared folder. Use no generated image as reference.
 
 SCENE_KEY: 22
 OUTPUT FILE: Bild 22.png
@@ -33,15 +34,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: object-diagram
-EXACT NARRATIVE VISUAL: Close-up of a simplified accurate Big Dipper seven-star pattern with two pointer stars traced toward Polaris. No clutter, just clear connected stars, one exact short label.
-HISTORICAL / TECHNICAL ACCURACY: Northern hemisphere whenever Polaris is shown; use believable sky geometry.
-EXACT IMAGE TEXT (GERMAN ONLY): "POLARSTERN". Display ONLY these exact words, large, spelled correctly, never any additional text.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: big-dipper finding polaris.
+SCRIPT MEANING IN ENGLISH: Make a generous uncluttered star chart based on the recognizable SEVEN-star Big Dipper pattern with the pair of outer bowl pointer stars prominently emphasized. Draw one crisp long guide line continuing approximately five pointer-star separations to Polaris; Polaris is a separate clear dot. The stars are precise visual information, not decorative. Only exact large German label 'POLARSTERN'.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: Make a generous uncluttered star chart based on the recognizable SEVEN-star Big Dipper pattern with the pair of outer bowl pointer stars prominently emphasized. Draw one crisp long guide line continuing approximately five pointer-star separations to Polaris; Polaris is a separate clear dot. The stars are precise visual information, not decorative. Only exact large German label 'POLARSTERN'.
+SHOT SCALE / COLOR / CAMERA: accurate northern star-finding 2D explanatory diagram, almost black navy field, gold guide line.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about stars through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Polaris is northern-hemisphere only; Big Dipper relation should be accurate; apparent stellar motion centered near north celestial pole.
+IMAGE TEXT LIMIT: ONLY render these exact German words, if text can be written accurately: "POLARSTERN". No extra lettering.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not invent additional named constellations or show a southern sky.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 23
 OUTPUT FILE: Bild 23.png
@@ -70,15 +75,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: split-comparison
-EXACT NARRATIVE VISUAL: Left: cloudy northern night obscures stars. Right: simple globe silhouette indicates a location in the southern hemisphere where Polaris cannot be seen. Emphasize limitation visually, not text-heavy.
-HISTORICAL / TECHNICAL ACCURACY: Northern hemisphere whenever Polaris is shown; use believable sky geometry.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: night-observation limits.
+SCRIPT MEANING IN ENGLISH: Two large atmospheric situations linked by the same observational problem: on the LEFT a northern traveler under completely clouded sky cannot see the bright north star; on RIGHT a clean lower southern-hemisphere globe fragment and empty southern sky communicate its geographic invisibility. Make the two causes visually different, with a simple subdued divider and minimal shapes. No text.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: Two large atmospheric situations linked by the same observational problem: on the LEFT a northern traveler under completely clouded sky cannot see the bright north star; on RIGHT a clean lower southern-hemisphere globe fragment and empty southern sky communicate its geographic invisibility. Make the two causes visually different, with a simple subdued divider and minimal shapes. No text.
+SHOT SCALE / COLOR / CAMERA: clear cause-comparison, cool storm slate vs deep southern ocean-blue.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about stars through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Polaris is northern-hemisphere only; Big Dipper relation should be accurate; apparent stellar motion centered near north celestial pole.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not accidentally draw Polaris in the southern panel.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 24
 OUTPUT FILE: Bild 24.png
@@ -107,15 +116,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: concept-diagram
-EXACT NARRATIVE VISUAL: One large highlighted north-pointing star over a wide land horizon, with multiple possible geographic starting spots below. Show that direction alone does not determine exact location.
-HISTORICAL / TECHNICAL ACCURACY: Northern hemisphere whenever Polaris is shown; use believable sky geometry.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: one-heading-many-positions.
+SCRIPT MEANING IN ENGLISH: On a simple clean large circular compass-free landscape map, show a prominent north arrow and THREE widely separated starting points on the same east-west band, each capable of following that northward direction. Their forward routes are parallel but originate from different places. One strong destination ambiguity should be visually obvious; no people needed and no labels.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: On a simple clean large circular compass-free landscape map, show a prominent north arrow and THREE widely separated starting points on the same east-west band, each capable of following that northward direction. Their forward routes are parallel but originate from different places. One strong destination ambiguity should be visually obvious; no people needed and no labels.
+SHOT SCALE / COLOR / CAMERA: bold diagram with soft neutral background and three clean parallel arrows.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about stars through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Polaris is northern-hemisphere only; Big Dipper relation should be accurate; apparent stellar motion centered near north celestial pole.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not position the traveler at a single uniquely known coordinate.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 25
 OUTPUT FILE: Bild 25.png
@@ -144,15 +157,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: route-illustration
-EXACT NARRATIVE VISUAL: A stickman trekker detours around a large marsh while a straight ideal course remains lightly ghosted. Two contrasting route curves, reeds and stepping path clearly drawn.
-HISTORICAL / TECHNICAL ACCURACY: Historical wayfinding route errors and then open-sea limits.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: detour around marsh.
+SCRIPT MEANING IN ENGLISH: Bird's-eye landscape with an enormous irregular teal marsh dominating center frame. A straight pale intended path cuts across the marsh and is clearly impossible, while one strong rust-colored real foot trail loops widely around dry rocky shore; a stickman traveler is seen partway along the detour with walking staff. Detail reeds and pools with purposeful shape, no text.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: Bird's-eye landscape with an enormous irregular teal marsh dominating center frame. A straight pale intended path cuts across the marsh and is clearly impossible, while one strong rust-colored real foot trail loops widely around dry rocky shore; a stickman traveler is seen partway along the detour with walking staff. Detail reeds and pools with purposeful shape, no text.
+SHOT SCALE / COLOR / CAMERA: wide dynamic isometric route explanation, rich marsh colors and readable route contrast.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about uncertainty through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Detours alter traveled distance and bearing estimates; show cumulative errors that develop gradually.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not present direct crossing of impassable swamp as safe.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 26
 OUTPUT FILE: Bild 26.png
@@ -181,11 +198,15 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: story
-EXACT NARRATIVE VISUAL: After a detour, a traveler confidently marches in a slightly incorrect direction. The desired mountain village is visibly farther to the right. Emotive but restrained, no joke text.
-HISTORICAL / TECHNICAL ACCURACY: Historical wayfinding route errors and then open-sea limits.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: false confidence after detour.
+SCRIPT MEANING IN ENGLISH: A strong character moment looking along a high grassy ridge: stickman traveler proudly points toward a distant pointed mountain while their actual destination village appears behind a different hill off to the side. Show the previous winding detour as a subtle dust trail behind the feet, communicating how the traveler's assumed direction slipped. Comic realization, not ridicule.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: A strong character moment looking along a high grassy ridge: stickman traveler proudly points toward a distant pointed mountain while their actual destination village appears behind a different hill off to the side. Show the previous winding detour as a subtle dust trail behind the feet, communicating how the traveler's assumed direction slipped. Comic realization, not ridicule.
+SHOT SCALE / COLOR / CAMERA: expressive medium-wide perspective from slightly above, sunrise highlights on incorrect mountain.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about uncertainty through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Detours alter traveled distance and bearing estimates; show cumulative errors that develop gradually.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Not a generic empty valley with one tiny character.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 

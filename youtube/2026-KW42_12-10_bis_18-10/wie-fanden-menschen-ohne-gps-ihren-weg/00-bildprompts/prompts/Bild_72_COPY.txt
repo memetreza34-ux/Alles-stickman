@@ -25,10 +25,14 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: ship-summary
-EXACT NARRATIVE VISUAL: Old sailing deck showing a well-drawn chart, compass and a stickman navigator observing the sky; all three relevant methods visible, one dominant sailor gesture.
-HISTORICAL / TECHNICAL ACCURACY: Summarize navigation methods coherently without mixing eras or technologies.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: sea navigation recap.
+SCRIPT MEANING IN ENGLISH: An early-modern ship navigation station with the working navigator as the focus: their simple stickman hand holds a compass above a beautiful coast chart, with a visible course line and a sextant resting nearby while a bright star appears beyond the ship window. Make each tool large and its role readable at a glance. Warm cabin and dark sea frame a thoughtful summary, not a repeat of earlier deck wide shots.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: An early-modern ship navigation station with the working navigator as the focus: their simple stickman hand holds a compass above a beautiful coast chart, with a visible course line and a sextant resting nearby while a bright star appears beyond the ship window. Make each tool large and its role readable at a glance. Warm cabin and dark sea frame a thoughtful summary, not a repeat of earlier deck wide shots.
+SHOT SCALE / COLOR / CAMERA: tight richly illustrated cabin closeup, bronze vs deep ocean blue.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about resolution through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Summary must integrate real mechanisms with clear focal hierarchy, do not resort to generic symbol collages.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not place tools from incompatible eras in a medieval ship; make it 18th-century compatible.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.

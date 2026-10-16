@@ -2,9 +2,10 @@ PROMPT_LANGUAGE: ENGLISH
 IMAGE PROMPTS ARE WRITTEN IN ENGLISH.
 ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN.
 VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14
-GOOGLE FLOW READY-TO-PASTE FIVE-IMAGE BATCH 32–36
+STRICHKOSMOS VISUAL REBUILD — READY-TO-COPY FIVE-IMAGE BATCH 32–36
 
-Only proceed after the user has selected cover A/B/C and its winner has been saved as Bild 01.png. Create exactly the FIVE numbered images defined below. Each complete standalone prompt repeats the SAME canonical master visual style in full so Google Flow requires no repository lookup or earlier-image reference. If supported, automatically continue through subsequent 5-image batches without user interruption, checking every actual result and repairing only failed image numbers. Never make false claims about saving files or autonomous capabilities. Final images must be individually named PNGs inside one flat folder. On-image text German only.
+This five-image batch is a complete stand-alone Google Flow input. The three original strong COVER candidates A/B/C are UNCHANGED. The user must have selected the cover winner as Bild 01.png before creating Bild 02. After cover selection, if the tool genuinely supports it, advance to the next five-image batch automatically with no new approvals; never claim it can read a separate GitHub file unless verified. For these five scene numbers use the COMPLETE INDIVIDUAL IMAGE PROMPT blocks below without replacing the scene-specific art direction with a generic style instruction. Never generate more than five images concurrently.
+SILENT REAL-IMAGE QC: check whether each output actually explains its specific narration, has an engaging composition comparable in care (NOT in appearance) to the approved covers, uses German-only visible words, avoids the beige empty-landscape / tiny-globe / school-diagram failure modes, and keeps all people unmistakably Stickmen. Re-create ONLY failed numbers. Keep all final numbered images in one shared folder. Use no generated image as reference.
 
 SCENE_KEY: 32
 OUTPUT FILE: Bild 32.png
@@ -33,15 +34,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: historical-progression
-EXACT NARRATIVE VISUAL: Two broad illustrated historical vignettes, early Chinese magnetic pointing device and later maritime compass, with a subtle directional progression. Avoid asserting the same shape/design in every era. No dated labels.
-HISTORICAL / TECHNICAL ACCURACY: Use historically plausible Chinese magnetism or medieval/early-modern European seamanship as appropriate. A compass gives bearing, NOT an exact geographical fix.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: compass historical evolution.
+SCRIPT MEANING IN ENGLISH: Create an editorial two-stage illustrated timeline with two BIG well-drawn objects, not tiny icons: at left an early Chinese magnetic pointer / lodestone-based direction device on a simple table in a plausible historical setting; at right a later European ship's compass mounted in wood. Let one elegant arrow between them show technological development WITHOUT implying an exact instantaneous handoff or the same historical date. People unnecessary.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: Create an editorial two-stage illustrated timeline with two BIG well-drawn objects, not tiny icons: at left an early Chinese magnetic pointer / lodestone-based direction device on a simple table in a plausible historical setting; at right a later European ship's compass mounted in wood. Let one elegant arrow between them show technological development WITHOUT implying an exact instantaneous handoff or the same historical date. People unnecessary.
+SHOT SCALE / COLOR / CAMERA: two primary artifacts separated by visual time progression, ink detail and amber-blue accents.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about compass through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Magnetic compass indicates magnetic heading, not precise geolocation or necessarily true north; historic Chinese/European instruments belong in fitting contexts.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not label with invented dynasties, dates or incorrect calligraphy.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 33
 OUTPUT FILE: Bild 33.png
@@ -70,15 +75,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: ship-detail
-EXACT NARRATIVE VISUAL: Late medieval sailor looks down at simple ship compass while guiding a wooden sailboat. Framing prioritizes instrument and hands, with credible sail and rigging details.
-HISTORICAL / TECHNICAL ACCURACY: Use historically plausible Chinese magnetism or medieval/early-modern European seamanship as appropriate. A compass gives bearing, NOT an exact geographical fix.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: medieval compass in use.
+SCRIPT MEANING IN ENGLISH: An intimate eye-level late-medieval wooden sailing ship deck. Stickman helmsman looks from the ship's compass to the horizon while keeping one hand on the tiller; another crew member tends the sail. The compass is large and truly used as a steering aid, not a detached floating object. Natural sea haze behind, reliable medieval rope/wood atmosphere.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: An intimate eye-level late-medieval wooden sailing ship deck. Stickman helmsman looks from the ship's compass to the horizon while keeping one hand on the tiller; another crew member tends the sail. The compass is large and truly used as a steering aid, not a detached floating object. Natural sea haze behind, reliable medieval rope/wood atmosphere.
+SHOT SCALE / COLOR / CAMERA: three-quarter view with helm/compass foreground, sea mist midground.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about compass through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Magnetic compass indicates magnetic heading, not precise geolocation or necessarily true north; historic Chinese/European instruments belong in fitting contexts.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: No steel motorboat, electric lights, GPS or modern clothing.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 34
 OUTPUT FILE: Bild 34.png
@@ -107,15 +116,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: comparison
-EXACT NARRATIVE VISUAL: One visually accurate simple chart with two distinct large compass headings that diverge slightly, geographic north and magnetic north. Make distinction visually obvious, no big text blocks.
-HISTORICAL / TECHNICAL ACCURACY: Use historically plausible Chinese magnetism or medieval/early-modern European seamanship as appropriate. A compass gives bearing, NOT an exact geographical fix.
-EXACT IMAGE TEXT (GERMAN ONLY): "GEOGRAFISCH", "MAGNETISCH". Display ONLY these exact words, large, spelled correctly, never any additional text.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: true versus magnetic north.
+SCRIPT MEANING IN ENGLISH: A big simple high-contrast two-direction diagram on a plain circular earth-surface compass disk. A dark arrow labeled exactly 'GEOGRAFISCH' and an amber offset arrow labeled exactly 'MAGNETISCH' start from THE SAME POINT but differ by a visibly small angle; use different arrowheads and short curved separation arc. No humans or extra legends.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: A big simple high-contrast two-direction diagram on a plain circular earth-surface compass disk. A dark arrow labeled exactly 'GEOGRAFISCH' and an amber offset arrow labeled exactly 'MAGNETISCH' start from THE SAME POINT but differ by a visibly small angle; use different arrowheads and short curved separation arc. No humans or extra legends.
+SHOT SCALE / COLOR / CAMERA: precision 2D geographic concept diagram on light neutral ground.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about compass through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Magnetic compass indicates magnetic heading, not precise geolocation or necessarily true north; historic Chinese/European instruments belong in fitting contexts.
+IMAGE TEXT LIMIT: ONLY render these exact German words, if text can be written accurately: "GEOGRAFISCH", "MAGNETISCH". No extra lettering.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not make angles huge or imply the separation is universal everywhere.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 35
 OUTPUT FILE: Bild 35.png
@@ -144,15 +157,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: concept
-EXACT NARRATIVE VISUAL: A giant compass in foreground points steadily while a featureless seascape behind offers no positional fix. Strong storytelling about knowing heading but not location.
-HISTORICAL / TECHNICAL ACCURACY: Use historically plausible Chinese magnetism or medieval/early-modern European seamanship as appropriate. A compass gives bearing, NOT an exact geographical fix.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: compass without location.
+SCRIPT MEANING IN ENGLISH: A striking split between large wooden compass in the near foreground pointing consistently along a chosen heading and an enormous featureless open-sea horizon in the background. Put three faint different possible ship silhouettes spread far apart along the same heading to communicate why direction alone cannot determine location. Avoid writing labels. Focus is on the limitation of the tool.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: A striking split between large wooden compass in the near foreground pointing consistently along a chosen heading and an enormous featureless open-sea horizon in the background. Put three faint different possible ship silhouettes spread far apart along the same heading to communicate why direction alone cannot determine location. Avoid writing labels. Focus is on the limitation of the tool.
+SHOT SCALE / COLOR / CAMERA: foreground macro object + distant illustrated spatial ambiguity, blue/amber accents.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about compass through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Magnetic compass indicates magnetic heading, not precise geolocation or necessarily true north; historic Chinese/European instruments belong in fitting contexts.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: No incorrect magical position dot inside the historical compass.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 36
 OUTPUT FILE: Bild 36.png
@@ -181,11 +198,15 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: human-story
-EXACT NARRATIVE VISUAL: Historic mapmaking table with a couple of clearly simple stickman explorers marking mountain passes and coastlines with ink, parchment only as a believable object on the table, not as full-frame style.
-HISTORICAL / TECHNICAL ACCURACY: Historic survey and navigation maps drawn as real objects, not a forced full-picture antique aesthetic.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: collective geographic memory.
+SCRIPT MEANING IN ENGLISH: An energetic historically plausible mapmaking workshop seen three-quarter from above: a stickman guide points to a coast-shaped region on a partially drawn chart, another draws the coastline while a traveler puts down a small reference sketch of a mountain. A real shoreline view through a window reinforces observation. Keep the large map blank except broad coastline shapes, avoiding fake unreadable place names.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: An energetic historically plausible mapmaking workshop seen three-quarter from above: a stickman guide points to a coast-shaped region on a partially drawn chart, another draws the coastline while a traveler puts down a small reference sketch of a mountain. A real shoreline view through a window reinforces observation. Keep the large map blank except broad coastline shapes, avoiding fake unreadable place names.
+SHOT SCALE / COLOR / CAMERA: human activity around dominant large map object, warm lamp and cool view contrast.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about maps through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Charts are historical tools; drawing them as objects, not a fixed decorative full-scene parchment style. Inaccuracies must be legible.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Not an aged parchment full-screen background or four tiny symbolic people.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 

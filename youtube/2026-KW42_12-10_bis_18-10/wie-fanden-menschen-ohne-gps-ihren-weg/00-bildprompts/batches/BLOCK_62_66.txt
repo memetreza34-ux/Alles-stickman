@@ -2,9 +2,10 @@ PROMPT_LANGUAGE: ENGLISH
 IMAGE PROMPTS ARE WRITTEN IN ENGLISH.
 ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN.
 VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14
-GOOGLE FLOW READY-TO-PASTE FIVE-IMAGE BATCH 62–66
+STRICHKOSMOS VISUAL REBUILD — READY-TO-COPY FIVE-IMAGE BATCH 62–66
 
-Only proceed after the user has selected cover A/B/C and its winner has been saved as Bild 01.png. Create exactly the FIVE numbered images defined below. Each complete standalone prompt repeats the SAME canonical master visual style in full so Google Flow requires no repository lookup or earlier-image reference. If supported, automatically continue through subsequent 5-image batches without user interruption, checking every actual result and repairing only failed image numbers. Never make false claims about saving files or autonomous capabilities. Final images must be individually named PNGs inside one flat folder. On-image text German only.
+This five-image batch is a complete stand-alone Google Flow input. The three original strong COVER candidates A/B/C are UNCHANGED. The user must have selected the cover winner as Bild 01.png before creating Bild 02. After cover selection, if the tool genuinely supports it, advance to the next five-image batch automatically with no new approvals; never claim it can read a separate GitHub file unless verified. For these five scene numbers use the COMPLETE INDIVIDUAL IMAGE PROMPT blocks below without replacing the scene-specific art direction with a generic style instruction. Never generate more than five images concurrently.
+SILENT REAL-IMAGE QC: check whether each output actually explains its specific narration, has an engaging composition comparable in care (NOT in appearance) to the approved covers, uses German-only visible words, avoids the beige empty-landscape / tiny-globe / school-diagram failure modes, and keeps all people unmistakably Stickmen. Re-create ONLY failed numbers. Keep all final numbered images in one shared folder. Use no generated image as reference.
 
 SCENE_KEY: 62
 OUTPUT FILE: Bild 62.png
@@ -33,15 +34,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: sea-diagram
-EXACT NARRATIVE VISUAL: A traditional voyaging canoe across distinctly regular rolling ocean swell patterns, navigator senses boat motion. Two giant legible swell directions, no tiny charts.
-HISTORICAL / TECHNICAL ACCURACY: Traditional Polynesian wayfinding is a sophisticated distinct cultural navigational practice; use plausible voyaging canoe and star/swell/bird cues, not European instruments.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: swell information explanation.
+SCRIPT MEANING IN ENGLISH: A gorgeous object-only wave-direction cutaway: ocean surface built from several long PARALLEL swell crests moving under a simplified accurate Polynesian double-hulled canoe, the canoe tilting visibly with wave direction. Use a single broad warm-white arrow along dominant swell axis and subtle teal shade bands to show regularity. This is about physical swell geometry, not a ship against generic random chop.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: A gorgeous object-only wave-direction cutaway: ocean surface built from several long PARALLEL swell crests moving under a simplified accurate Polynesian double-hulled canoe, the canoe tilting visibly with wave direction. Use a single broad warm-white arrow along dominant swell axis and subtle teal shade bands to show regularity. This is about physical swell geometry, not a ship against generic random chop.
+SHOT SCALE / COLOR / CAMERA: clear dramatic oblique overhead scientific illustration, deep cyan and indigo fluid texture.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about pacific through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Traditional Polynesian ocean wayfinding uses star rise/set, swells, cloud and seabird evidence; traditional double-hulled canoe, no Western instruments.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: No unrelated stickman mascot or floating rainbow icons.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 63
 OUTPUT FILE: Bild 63.png
@@ -70,15 +75,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: weather-story
-EXACT NARRATIVE VISUAL: Clouds hide the stars while long regular ocean swell is still visible near traditional Polynesian canoe, navigator reads motion; strongly focused non-magical observational act.
-HISTORICAL / TECHNICAL ACCURACY: Traditional Polynesian wayfinding is a sophisticated distinct cultural navigational practice; use plausible voyaging canoe and star/swell/bird cues, not European instruments.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: swell even under clouds.
+SCRIPT MEANING IN ENGLISH: The starless night is obscured by low rain clouds, but a traditional Polynesian navigator stands steady inside a canoe, one hand sensing the rail while distinct LONG EVEN wave trains pass beneath the hull. Make wave direction and boat motion clear through crests and leaning posture; deep navy contrasts with silver reflections, no mystical glowing sea. Weather feels consequential.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: The starless night is obscured by low rain clouds, but a traditional Polynesian navigator stands steady inside a canoe, one hand sensing the rail while distinct LONG EVEN wave trains pass beneath the hull. Make wave direction and boat motion clear through crests and leaning posture; deep navy contrasts with silver reflections, no mystical glowing sea. Weather feels consequential.
+SHOT SCALE / COLOR / CAMERA: low three-quarter human-action shot with emphasized regular swell lines, cloudy night.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about pacific through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Traditional Polynesian ocean wayfinding uses star rise/set, swells, cloud and seabird evidence; traditional double-hulled canoe, no Western instruments.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: No invisible stars shown through solid cloud; no modern instrument.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 64
 OUTPUT FILE: Bild 64.png
@@ -107,15 +116,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: island-signs
-EXACT NARRATIVE VISUAL: Traditional ocean canoe notices seabirds flying toward faint green island under slightly different cloud formations on far horizon. Indications are suggestive not guaranteed.
-HISTORICAL / TECHNICAL ACCURACY: Traditional Polynesian wayfinding is a sophisticated distinct cultural navigational practice; use plausible voyaging canoe and star/swell/bird cues, not European instruments.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: birds clouds land clues.
+SCRIPT MEANING IN ENGLISH: An elegant ocean distance reveal: in the foreground the traditional voyaging canoe observes several purposeful seabirds heading to the same distant side of frame; above a barely visible island there is a localized cloud gathering. The island remains suggestive rather than guaranteed. The navigator points in the birds' direction and watches carefully. Tropical sea is richly drawn without clutter.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: An elegant ocean distance reveal: in the foreground the traditional voyaging canoe observes several purposeful seabirds heading to the same distant side of frame; above a barely visible island there is a localized cloud gathering. The island remains suggestive rather than guaranteed. The navigator points in the birds' direction and watches carefully. Tropical sea is richly drawn without clutter.
+SHOT SCALE / COLOR / CAMERA: long lens scenic directional composition, sea-blue/white/cloud-green accented horizon.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about pacific through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Traditional Polynesian ocean wayfinding uses star rise/set, swells, cloud and seabird evidence; traditional double-hulled canoe, no Western instruments.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not draw exact magical straight-arrow promise to land or excessive birds.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 65
 OUTPUT FILE: Bild 65.png
@@ -144,15 +157,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: teaching-beach
-EXACT NARRATIVE VISUAL: Respectful multigenerational teaching scene on tropical shore: older wayfinder uses stones and finger-traced star bearings in wet sand with younger stickman learners. Not a school diagram.
-HISTORICAL / TECHNICAL ACCURACY: Traditional Polynesian wayfinding is a sophisticated distinct cultural navigational practice; use plausible voyaging canoe and star/swell/bird cues, not European instruments.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: passed-on navigation knowledge.
+SCRIPT MEANING IN ENGLISH: On a warm Polynesian shore at dusk, an older wayfinder draws a careful star-bearing path in wet beach sand using a shell or stick; two younger learners actively imitate the gesture with pebbles while a real ocean canoe rests nearby. The picture is about precise teaching and inheritance rather than a primitive stereotype. Faces expressive but stickman-only, locally coherent dress and canoe craft.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: On a warm Polynesian shore at dusk, an older wayfinder draws a careful star-bearing path in wet beach sand using a shell or stick; two younger learners actively imitate the gesture with pebbles while a real ocean canoe rests nearby. The picture is about precise teaching and inheritance rather than a primitive stereotype. Faces expressive but stickman-only, locally coherent dress and canoe craft.
+SHOT SCALE / COLOR / CAMERA: intimate three-person overhead close narrative, copper sunset and teal shore, sand diagrams clear.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about pacific through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Traditional Polynesian ocean wayfinding uses star rise/set, swells, cloud and seabird evidence; traditional double-hulled canoe, no Western instruments.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: No computers, modern maps, big schoolbook text or inaccurate exotic costumes.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 66
 OUTPUT FILE: Bild 66.png
@@ -181,11 +198,15 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: weather
-EXACT NARRATIVE VISUAL: Open ship at night beneath complete clouds and wind-blown rain; a compass alone cannot solve the missing position. Strong contrast of bright compass and obscured sky.
-HISTORICAL / TECHNICAL ACCURACY: Separate cultural methods, depict uncertainty honestly.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: clouds shut down bearings.
+SCRIPT MEANING IN ENGLISH: Ship caught under a dense gray storm deck on open water. Foreground navigator grips a magnetic compass that still indicates heading, while the visible sky is uniformly starless and heavy rain erases the coast. A second stickman lookout shields their eyes in frustration. Position the compass as one visible tool and the blank sky as the missing evidence.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: Ship caught under a dense gray storm deck on open water. Foreground navigator grips a magnetic compass that still indicates heading, while the visible sky is uniformly starless and heavy rain erases the coast. A second stickman lookout shields their eyes in frustration. Position the compass as one visible tool and the blank sky as the missing evidence.
+SHOT SCALE / COLOR / CAMERA: strong cinematic warm compass vs cool slate heavy cloud negative space.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about uncertainties through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Each method has limitations; cultural methods remain distinct and should not be caricatured.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not suggest the compass suddenly stops functioning in fog.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 

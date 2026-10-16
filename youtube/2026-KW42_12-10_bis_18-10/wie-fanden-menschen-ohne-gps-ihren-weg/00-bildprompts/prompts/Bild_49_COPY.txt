@@ -25,10 +25,14 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: science-story
-EXACT NARRATIVE VISUAL: Top-down 2D old ship pushed sideways by visible wave current relative to compass direction. Strong graphic comparison, only three moving elements.
-HISTORICAL / TECHNICAL ACCURACY: Approximate historical position estimates; visibly account for drift and errors.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: drift versus estimated position.
+SCRIPT MEANING IN ENGLISH: A bright top-down cutaway of old sailing vessel over patterned water: a directional ship-course arrow continues northeast while a thick lateral current from left pushes the boat to a SECOND REAL position. Draw a faint ghost ship at expected position and a solid ship displaced sideways, with clear arrow contrast. Background ocean is richly illustrated but quiet enough to explain.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: A bright top-down cutaway of old sailing vessel over patterned water: a directional ship-course arrow continues northeast while a thick lateral current from left pushes the boat to a SECOND REAL position. Draw a faint ghost ship at expected position and a solid ship displaced sideways, with clear arrow contrast. Background ocean is richly illustrated but quiet enough to explain.
+SHOT SCALE / COLOR / CAMERA: dominant ship silhouettes and arrows, teal currents with warm-gold plotted course.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about deadreckoning through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Dead reckoning estimates changing position from known starting point, direction, elapsed time and speed; errors accumulate.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not suggest the compass itself points off because of current.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.

@@ -18,551 +18,852 @@
     {
       "sceneNumber": 2,
       "chapter": "hook",
-      "form": "visual-montage",
-      "brief": "Show a credible historical travel montage in one sweeping but clean wide shot: foreground walking trader with loaded mule on a dusty road, middle-distance small desert caravan, distant ship crossing open water. Use atmospheric depth and directional visual storytelling; no parchment map graphic.",
-      "visibleGermanLabels": []
+      "form": "cinematic cross-journey",
+      "brief": "A dramatic illustrated journey sweeps from a dusty city gate in the near left foreground, across a sunlit amber desert pass with a small camel caravan, into a deep blue sea with a tiny sailing vessel approaching a far harbor. Connect the three places with a winding road and natural horizon, NOT an old map or three disconnected panels. Let the scene communicate astonishing scale and achievement without relying on text.",
+      "visibleGermanLabels": [],
+      "artDirection": "wide diagonal panorama; terracotta city / ocher dunes / teal sea",
+      "avoid": "Make a continuous believable travel journey, not a collection of floating stickers.",
+      "spokenLineGerman": "Trotzdem erreichten Reisende ferne Städte, überquerten Wüsten und steuerten Schiffe über riesige Ozeane.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 3,
       "chapter": "hook",
-      "form": "contrast",
-      "brief": "Foreground: a confused stickman traveler with no reliable route marker. Behind, two possible routes diverge toward different landscapes. Integrate a simple understated route overlay, but do not draw a smartphone in this historic frame. No headline.",
-      "visibleGermanLabels": []
+      "form": "uncertainty visual metaphor",
+      "brief": "Put a hand-drawn traveler large in the lower-left of an unfamiliar rocky canyon, studying three equally convincing paths that curl around stone outcrops and vanish into mist. Above the routes, show a translucent empty circle where a precise location marker would have been, clearly absent, rather than placing a modern phone in the ancient scene. Make the problem emotional: their eyes scan the landscape but nothing confirms where they are.",
+      "visibleGermanLabels": [],
+      "artDirection": "tight traveler silhouette against monumental branching terrain; slate blue and warm rust",
+      "avoid": "Avoid another cheerful green fork and avoid drawing a GPS smartphone.",
+      "spokenLineGerman": "Wie fanden sie die richtige Richtung, obwohl kein Bildschirm ihren Standort als blauen Punkt anzeigte?",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 4,
       "chapter": "setup",
-      "form": "story-diagram",
-      "brief": "Place three large readable actions along a coherent horizontal flow: traveler reads a landmark, sailor checks a rough hand-drawn map, navigator checks a compass. Clearly different time contexts separated subtly; no packed school worksheet.",
-      "visibleGermanLabels": []
+      "form": "visual synthesis",
+      "brief": "Arrange three substantial connected illustrated observations across one landscape-to-deck ribbon: a traveler matches a uniquely shaped mountain, an experienced guide studies the sky, a later sailor carefully adjusts a compass beside a coast chart. Let one broad gracefully curving ink path visually connect these distinct discoveries. Each method is a recognizable physical action, not just three icons or a school worksheet.",
+      "visibleGermanLabels": [],
+      "artDirection": "visual left-to-right editorial sequence with foreground focus and changing atmospheric light",
+      "avoid": "Do not imply every tool existed in the same era or show texts on the chart.",
+      "spokenLineGerman": "Der Trick war nicht ein einziges Gerät, sondern eine Mischung aus Beobachtung, Erfahrung und später präziseren Instrumenten.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 5,
       "chapter": "setup",
-      "form": "split-comparison",
-      "brief": "Large balanced 2-way comparison: left person faces a giant directional arrow on open terrain, right boat marked by a distinct dot on a clean coast map. Big exact German captions only.",
+      "form": "two-part concept comparison",
+      "brief": "Create a striking clean two-column educational comparison. LEFT: large confident arrow over terrain indicates a heading, with a tiny expressive stickman looking in the arrow's direction. RIGHT: an overhead simplified shoreline with one conspicuous marked location pin and the same figure identified at that precise spot. A central gap separates heading from location. Include ONLY large exact German labels 'RICHTUNG' and 'POSITION' with enough white space.",
       "visibleGermanLabels": [
         "RICHTUNG",
         "POSITION"
-      ]
+      ],
+      "artDirection": "balanced graphic, navy/amber versus coral/teal, two large distinct subjects",
+      "avoid": "Do not turn this into two ordinary landscape photos; geographic meaning must be obvious.",
+      "spokenLineGerman": "Menschen mussten zwei verschiedene Fragen beantworten: In welche Richtung gehen wir, und wo sind wir gerade?",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 6,
       "chapter": "setup",
-      "form": "environment",
-      "brief": "A known road disappears into a vast featureless plain, with a tiny but emotionally clear traveling pair in foreground and no landmarks ahead. Rich shading and depth, avoid empty flat background.",
-      "visibleGermanLabels": []
+      "form": "loss-of-landmarks reveal",
+      "brief": "Use a panoramic eye-level view from directly behind two early travelers crossing from a recognizable stone road with a familiar village in the foreground into a wide uniform grass-and-stone plateau in the distance. Their body language changes: one turns backward seeking the last visible tower, the other hesitates at the road's disappearing edge. Strong transition from detailed known terrain to featureless unfamiliar distance.",
+      "visibleGermanLabels": [],
+      "artDirection": "over-shoulder camera, dusty ocher road fading into cool blue haze",
+      "avoid": "Not a blank canvas with a tiny traveler; the visual transition is the point.",
+      "spokenLineGerman": "Das klingt ähnlich, ist aber ein gewaltiger Unterschied, sobald bekannte Wege oder Küsten verschwinden.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 7,
       "chapter": "setup",
-      "form": "cause-effect",
-      "brief": "A single simple visual explanation of a hiker staying headed north but avoiding a ridge, ending off target. Contrasting colored intended and actual paths; one prominent destination house icon. No extra labels.",
-      "visibleGermanLabels": []
+      "form": "course-versus-destination diagram",
+      "brief": "On a clean illustrated aerial patch of rugged country, show an intended straight dark-blue heading pointing toward a walled town, while the actual amber curved course goes around a steep ravine and misses the town. A charming tiny stick figure is placed at the wrong endpoint and looks back in disbelief. The town and both endpoints should be large enough to read. No compass roses, legend or paragraphs.",
+      "visibleGermanLabels": [],
+      "artDirection": "object-led simplified bird's-eye route illustration; two contrasting thick lines",
+      "avoid": "Never suggest that pointing north provides exact coordinates.",
+      "spokenLineGerman": "Denn eine feste Richtung kann man halten und trotzdem am falschen Ort landen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 8,
       "chapter": "landmarks",
-      "form": "environment",
-      "brief": "A historic trading trail bends around a recognizable river, distinctive sharp mountain and rugged boulder. One small stickman traveler actively points to the matching features. Layered background with clean readable silhouette.",
-      "visibleGermanLabels": []
+      "form": "recognizable natural landmarks",
+      "brief": "Depict one carefully composed valley landscape containing a zig-zag blue river, a sharply triangular distant mountain, and an unusually split rock pillar. A guide walking with a pack animal points toward the split rock while a companion looks from river to mountain. Make the three landmarks unmistakably DIFFERENT silhouettes, anchored naturally in the land, and visually useful as references.",
+      "visibleGermanLabels": [],
+      "artDirection": "medium-wide eye level with river foreground as natural leading line, layered lush greens + slate cliffs",
+      "avoid": "Do not label every object or flatten into an antique atlas.",
+      "spokenLineGerman": "An Land waren Flüsse, Berge, Täler und auffällige Felsen natürliche Wegweiser.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 9,
       "chapter": "landmarks",
-      "form": "story",
-      "brief": "A traveler points toward a stone bridge hidden behind one identifiable hill, with a companion recognizing the landmark. Strong foreground interaction, actual believable bridge, no floating stickers.",
-      "visibleGermanLabels": []
+      "form": "memory versus reality reveal",
+      "brief": "An experienced simple stickman guide holds up a finger, remembering a distinct hump-shaped hill and the old stone bridge just behind it. In the real landscape, their companion has reached the hilltop and the exact bridge is now appearing over the crest. Frame the bridge as the satisfying visual payoff of remembered knowledge. A discreet pale thought-outline mirroring the bridge is acceptable, but no text.",
+      "visibleGermanLabels": [],
+      "artDirection": "medium storytelling shot with a clear reveal; honey light on bridge, cool valley shadow",
+      "avoid": "Do not depict an imaginary impossible floating landmark collage.",
+      "spokenLineGerman": "Wer eine Gegend kannte, merkte sich, welche Brücke hinter dem Hügel auftauchen musste.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 10,
       "chapter": "landmarks",
-      "form": "character-interaction",
-      "brief": "A rural junction with three differentiated stickman travelers: merchant leads pack animal, local herder points toward safe crossing, visitor listens. Dynamic conversational staging, period-appropriate clothes, warm earth accent colors.",
-      "visibleGermanLabels": []
+      "form": "social wayfinding action",
+      "brief": "At a historically plausible rural crossing, show a dusty merchant with a pack animal asking a local shepherd who points emphatically toward a shallow ford in the distance; a third traveler checks the indicated direction. The most important detail is the exchanged useful information: pointing gesture aligned visibly to the crossing. Friendly expressions, interesting distinct poses, foreground faces sizable.",
+      "visibleGermanLabels": [],
+      "artDirection": "cinematic waist-height group composition, bright clear sky and natural rustic tones",
+      "avoid": "People must remain recognizable simple stick figures; not six identical standing avatars.",
+      "spokenLineGerman": "Wege waren außerdem soziale Informationen: Händler, Hirten und Bewohner kannten Übergänge und sichere Rastplätze.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 11,
       "chapter": "landmarks",
-      "form": "route-map",
-      "brief": "Highly simplified overhead landscape, not aged paper: a blue winding river leads to two distinctive trees and a village. Draw one clear route with a single thick arrow and a small traveler token.",
+      "form": "instruction-following illustrated route",
+      "brief": "Make a beautiful simplified river valley as a purposeful 2D explanatory landscape: a strong winding blue river guides the viewer's eye from lower left to two tall distinctive trees near a small settlement at upper right. One bold route line stays alongside the river and ends precisely at the paired trees. A very small traveler may follow the path, but the landmark relationship remains dominant. Only exact large German label 'FLUSS FOLGEN'.",
       "visibleGermanLabels": [
         "FLUSS FOLGEN"
-      ]
+      ],
+      "artDirection": "diagonal aerial-isometric landscape in teal, sand and sage with a single legible route",
+      "avoid": "No crowded signposts, map legend, or extra German words.",
+      "spokenLineGerman": "Eine Erklärung konnte lauten: Folge dem Fluss, bis du die zwei großen Bäume siehst.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 12,
       "chapter": "landmarks",
-      "form": "before-after",
-      "brief": "Two side-by-side landscape moments: ordinary shallow river crossing versus the same crossing flooded after rain. Large visual change, visibly blocked route, no explanatory paragraph.",
-      "visibleGermanLabels": []
+      "form": "season-change cause-effect",
+      "brief": "Present the SAME recognizable stone stepping crossing in two large adjoining seasonal moments: left shallow summer flow with exposed stones and easy passage, right after heavy rains brown floodwater covers those SAME stones and removes the route. The river and bank geometry must visibly correspond across halves. A tiny traveler stopped on the flooded bank adds a scale cue. No captions.",
+      "visibleGermanLabels": [],
+      "artDirection": "simple two-moment side-by-side with warm versus storm-cool lighting",
+      "avoid": "Show water physics plausibly, not two unrelated random rivers.",
+      "spokenLineGerman": "Solche Hinweise waren anschaulich, aber sie funktionierten nicht überall und nicht zu jeder Jahreszeit.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 13,
       "chapter": "landmarks",
-      "form": "atmospheric",
-      "brief": "Fog swallows a familiar mountain and trail sign; a traveler holding a lantern is unsure, face expressive. Cool charcoal gray mist and orange lamp accent, not monotonous beige.",
-      "visibleGermanLabels": []
+      "form": "fog erases the clue",
+      "brief": "Choose a moody close-wide woodland overlook: foreground a traveler squints toward a once-familiar tall mountain, now barely a ghostly silhouette behind heavy rolling fog. A wet weathered milestone stands sharp nearby while everything farther away disappears. Lantern amber contrasts with misty blue gray; the traveler's uncertainty is clear. No snow unless needed, no tiny text.",
+      "visibleGermanLabels": [],
+      "artDirection": "foreground focus, dramatic atmospheric depth, quiet visual suspense",
+      "avoid": "Do not reduce this to one tiny stickman between two generic beige hills.",
+      "spokenLineGerman": "Nebel, Schneefall oder Dunkelheit konnten sogar bekannte Orientierungspunkte plötzlich unsichtbar machen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 14,
       "chapter": "sun",
-      "form": "scene",
-      "brief": "Open landscape with large low sun, clear long shadows, and a simple historical traveler using both sky and distant hills to orient. The sun and traveler occupy major frame areas, not a tiny person lost in scenery.",
-      "visibleGermanLabels": []
+      "form": "sun-as-bearing visual",
+      "brief": "An expressive early traveler on a broad stony plain stands beside a low hill and holds one arm toward the bright low sun, checking the shadow of a walking staff before deciding which side of the ridge to follow. The prominent sun, long clear staff shadow and real landmark together communicate a ROUGH clue rather than a magical exact compass. Use clean shapes and warm sunrise gold.",
+      "visibleGermanLabels": [],
+      "artDirection": "medium low-angle composition, vivid sky gradient and crisp long shadows",
+      "avoid": "Avoid fake E/W accuracy claims or a decorative abstract sun icon.",
+      "spokenLineGerman": "Bei klarem Himmel half die Sonne, die grobe Himmelsrichtung zu erkennen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 15,
       "chapter": "sun",
-      "form": "process",
-      "brief": "One clean land-horizon image with a restrained arc of three sun positions across the sky, illustrating a daily path. Use clear spacing and gentle arrow, no extra textbook paragraphs.",
-      "visibleGermanLabels": []
+      "form": "sun-arc time diagram",
+      "brief": "Illustrate a single attractive uninterrupted landscape at three moments in one day: one large curved sun arc high across blue sky with sunrise, noon and late-day sunlight positions, and one stationary prominent hill silhouette as stable reference below. A modest understated continuous arrow follows the solar arc. Keep all solar disks separated; no written labels and no misleading map compass.",
+      "visibleGermanLabels": [],
+      "artDirection": "single large elegant scientific editorial diagram with air and strong visual hierarchy",
+      "avoid": "No textbook four-panel layout or scattered sun stickers.",
+      "spokenLineGerman": "Ihr täglicher Weg über den Himmel bot Hinweise darauf, wie die Landschaft ausgerichtet war.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 16,
       "chapter": "sun",
-      "form": "comparison",
-      "brief": "A single stylized horizon in two seasons showing different solar rise points. Avoid falsely claiming exact east in both. Two large separated sun disks and simple seasonal markers.",
+      "form": "seasonal horizon comparison",
+      "brief": "Show a large shared east-facing horizon silhouette with the sun rising at TWO different positions, one summer and one winter, using carefully contrasting gold and pale-blue sky treatments within a smooth split. Preserve the same unmistakable central hill silhouette as a fixed anchor, making the angle difference impossible to miss. Place only large exact German labels 'SOMMER' and 'WINTER' and avoid compass-direction claims.",
       "visibleGermanLabels": [
         "SOMMER",
         "WINTER"
-      ]
+      ],
+      "artDirection": "clean dominant horizon graphic with two genuinely distinct rise points",
+      "avoid": "Never depict both sunrises in the exact same place; no mini paragraphs.",
+      "spokenLineGerman": "Aber die Sonne geht nicht an jedem Tag exakt im Osten auf oder genau im Westen unter.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 17,
       "chapter": "sun",
-      "form": "time-sequence",
-      "brief": "Three clear elongated shadow positions from the same wooden pole at different times of day, within one wide uncluttered diagram. Keep the pole large and the shadows visually distinct.",
-      "visibleGermanLabels": []
+      "form": "shadow change demonstration",
+      "brief": "An overhead three-time study of a single upright wooden post in an open courtyard. The post's foot remains fixed exactly once; three clearly distinct ink-blue shadows radiate in different directions with different lengths, paired with three subtle sun-position symbols along a restrained arc. No people needed. The post and geometry fill most of the image, with warm light stone ground.",
+      "visibleGermanLabels": [],
+      "artDirection": "crisp technical top-down illustration, high contrast blue shadows versus amber ground",
+      "avoid": "Do not draw three unrelated poles or a scientifically impossible static sun with changing shadow.",
+      "spokenLineGerman": "Außerdem verändert sich die Richtung eines Schattens im Laufe des Tages.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 18,
       "chapter": "sun",
-      "form": "story",
-      "brief": "Traveler checks rising sun then compares with mountain ridge, using two clues together. Close-up gesture and clear distant ridge, visually implying imperfect but useful sun orientation.",
-      "visibleGermanLabels": []
+      "form": "multiple-clue judgment",
+      "brief": "An experienced traveler pauses above a wide valley, comparing a sunlit ridge on one side to a recognizable hooked river bend on the other before pointing down the correct pass. Make the TWO real clues obvious through selective slightly stronger color or focus while the face communicates thinking. A meaningful fork is not necessary; this is about cross-checking evidence.",
+      "visibleGermanLabels": [],
+      "artDirection": "over-shoulder storytelling with detailed river in midground and sunlight rim on ridge",
+      "avoid": "Avoid another isolated stickman staring at a giant sun icon.",
+      "spokenLineGerman": "Die Sonne war deshalb ein hilfreicher Hinweis, aber kein eingebauter Pfeil nach Hause.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 19,
       "chapter": "stars",
-      "form": "night-story",
-      "brief": "Solitary travel stickman silhouette on a gentle ridge beneath richly illustrated but uncluttered northern starry night. A single star is emphasized, never turn entire sky into tiny text.",
-      "visibleGermanLabels": []
+      "form": "star-navigation first wonder",
+      "brief": "On an ancient northern campsite at blue hour, an adult stickman wayfinder moves away from the fading campfire and looks upward as a small cluster of recognizable stars becomes visible. The sky takes two-thirds of the frame; the horizon remains richly illustrated enough to orient the audience. The body language conveys careful observation rather than religious awe or magic.",
+      "visibleGermanLabels": [],
+      "artDirection": "wide cinematic night landscape, deep indigo sky with warm ember foreground",
+      "avoid": "No random glowing diagrams or English sky writing.",
+      "spokenLineGerman": "Nachts übernahm der Himmel eine andere Rolle: Bestimmte Sterne konnten als feste Bezugspunkte dienen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 20,
       "chapter": "stars",
-      "form": "sky-diagram",
-      "brief": "A carefully composed northern night sky with a brighter Polaris near the center, a subtle large northward arrow reaching the horizon, and a tiny 2D traveler for scale.",
+      "form": "polaris-to-north relationship",
+      "brief": "Create a bold, accurate minimalist scientific star-and-horizon explanation: a recognizable dark northern sky with one brighter Polaris almost above a marked horizon north point, linked by one gentle vertical guiding line and a simple large arrow facing that direction. A tiny stick figure at the bottom is optional for scale, not the main topic. One exact German word 'NORDEN' only.",
       "visibleGermanLabels": [
         "NORDEN"
-      ]
+      ],
+      "artDirection": "large star geometry with navy-black high contrast and cream linework",
+      "avoid": "Do not suggest Polaris gives a precise geographic coordinate or depict it on a southern view.",
+      "spokenLineGerman": "Auf der Nordhalbkugel liegt der Polarstern ungefähr in Richtung geografisch Nord.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 21,
       "chapter": "stars",
-      "form": "long-exposure-diagram",
-      "brief": "Stylized sparse arcs of star trails centered on one relatively still northern star. Clear navy and cream contrast, legible motion not a technical star catalogue.",
-      "visibleGermanLabels": []
+      "form": "rotation-around-pole time passage",
+      "brief": "Show one believable dark northern celestial dome above a quiet tree ridge; faint long circular star trails revolve around a near-stationary Polaris at the visual center, while a separate bright small dot for Polaris remains stable. The curved trails must be concentric, sparse, striking and physically legible, not random spirals. No extra labels or human figures.",
+      "visibleGermanLabels": [],
+      "artDirection": "object-only illustrated long-exposure astronomy visual in dark navy and soft cream",
+      "avoid": "Avoid cartoon stars pasted in arbitrary symmetric rings.",
+      "spokenLineGerman": "Er steht scheinbar vergleichsweise ruhig, während andere Sterne im Laufe der Nacht um ihn kreisen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 22,
       "chapter": "stars",
-      "form": "object-diagram",
-      "brief": "Close-up of a simplified accurate Big Dipper seven-star pattern with two pointer stars traced toward Polaris. No clutter, just clear connected stars, one exact short label.",
+      "form": "big-dipper finding polaris",
+      "brief": "Make a generous uncluttered star chart based on the recognizable SEVEN-star Big Dipper pattern with the pair of outer bowl pointer stars prominently emphasized. Draw one crisp long guide line continuing approximately five pointer-star separations to Polaris; Polaris is a separate clear dot. The stars are precise visual information, not decorative. Only exact large German label 'POLARSTERN'.",
       "visibleGermanLabels": [
         "POLARSTERN"
-      ]
+      ],
+      "artDirection": "accurate northern star-finding 2D explanatory diagram, almost black navy field, gold guide line",
+      "avoid": "Do not invent additional named constellations or show a southern sky.",
+      "spokenLineGerman": "Wer gelernt hatte, das Sternbild des Großen Wagens zu erkennen, konnte damit den Polarstern finden.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 23,
       "chapter": "stars",
-      "form": "split-comparison",
-      "brief": "Left: cloudy northern night obscures stars. Right: simple globe silhouette indicates a location in the southern hemisphere where Polaris cannot be seen. Emphasize limitation visually, not text-heavy.",
-      "visibleGermanLabels": []
+      "form": "night-observation limits",
+      "brief": "Two large atmospheric situations linked by the same observational problem: on the LEFT a northern traveler under completely clouded sky cannot see the bright north star; on RIGHT a clean lower southern-hemisphere globe fragment and empty southern sky communicate its geographic invisibility. Make the two causes visually different, with a simple subdued divider and minimal shapes. No text.",
+      "visibleGermanLabels": [],
+      "artDirection": "clear cause-comparison, cool storm slate vs deep southern ocean-blue",
+      "avoid": "Do not accidentally draw Polaris in the southern panel.",
+      "spokenLineGerman": "Doch dichte Wolken machten auch diese Hilfe wertlos, und südlich des Äquators sieht man ihn nicht.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 24,
       "chapter": "stars",
-      "form": "concept-diagram",
-      "brief": "One large highlighted north-pointing star over a wide land horizon, with multiple possible geographic starting spots below. Show that direction alone does not determine exact location.",
-      "visibleGermanLabels": []
+      "form": "one-heading-many-positions",
+      "brief": "On a simple clean large circular compass-free landscape map, show a prominent north arrow and THREE widely separated starting points on the same east-west band, each capable of following that northward direction. Their forward routes are parallel but originate from different places. One strong destination ambiguity should be visually obvious; no people needed and no labels.",
+      "visibleGermanLabels": [],
+      "artDirection": "bold diagram with soft neutral background and three clean parallel arrows",
+      "avoid": "Do not position the traveler at a single uniquely known coordinate.",
+      "spokenLineGerman": "Aus einem einzelnen Stern ergab sich außerdem noch keine genaue Position auf einer riesigen Landkarte.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 25,
       "chapter": "uncertainty",
-      "form": "route-illustration",
-      "brief": "A stickman trekker detours around a large marsh while a straight ideal course remains lightly ghosted. Two contrasting route curves, reeds and stepping path clearly drawn.",
-      "visibleGermanLabels": []
+      "form": "detour around marsh",
+      "brief": "Bird's-eye landscape with an enormous irregular teal marsh dominating center frame. A straight pale intended path cuts across the marsh and is clearly impossible, while one strong rust-colored real foot trail loops widely around dry rocky shore; a stickman traveler is seen partway along the detour with walking staff. Detail reeds and pools with purposeful shape, no text.",
+      "visibleGermanLabels": [],
+      "artDirection": "wide dynamic isometric route explanation, rich marsh colors and readable route contrast",
+      "avoid": "Do not present direct crossing of impassable swamp as safe.",
+      "spokenLineGerman": "Stell dir vor, du gehst eine Stunde nach Norden und weichst dabei einem sumpfigen Tal aus.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 26,
       "chapter": "uncertainty",
-      "form": "story",
-      "brief": "After a detour, a traveler confidently marches in a slightly incorrect direction. The desired mountain village is visibly farther to the right. Emotive but restrained, no joke text.",
-      "visibleGermanLabels": []
+      "form": "false confidence after detour",
+      "brief": "A strong character moment looking along a high grassy ridge: stickman traveler proudly points toward a distant pointed mountain while their actual destination village appears behind a different hill off to the side. Show the previous winding detour as a subtle dust trail behind the feet, communicating how the traveler's assumed direction slipped. Comic realization, not ridicule.",
+      "visibleGermanLabels": [],
+      "artDirection": "expressive medium-wide perspective from slightly above, sunrise highlights on incorrect mountain",
+      "avoid": "Not a generic empty valley with one tiny character.",
+      "spokenLineGerman": "Anschließend glaubst du, wieder geradeaus zu gehen, obwohl der Umweg deine Strecke verändert hat.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 27,
       "chapter": "uncertainty",
-      "form": "diagram",
-      "brief": "Large thick clean path diagram: many little directional errors gradually separate a planned route and a real traveled route. Show two clearly differentiated colored lines with distinct endpoint symbols.",
-      "visibleGermanLabels": []
+      "form": "small errors accumulate",
+      "brief": "Create a large simplified editorial route graph with one navy planned line and one terracotta actual path. Both begin together at a single clear campsite, then diverge by multiple SMALL incremental angle errors into visibly separated endpoints. Add a tiny directional marker only at start and an unambiguous illustrated distant village destination at ideal endpoint. No people necessary.",
+      "visibleGermanLabels": [],
+      "artDirection": "one bold clean cause-effect diagram, strong negative space and purposeful spacing",
+      "avoid": "Avoid five identical mountains, illegible numbers or unrelated doodles.",
+      "spokenLineGerman": "Ohne Messung und bekannte Marken sammeln sich solche kleinen Fehler.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 28,
       "chapter": "uncertainty",
-      "form": "cinematic",
-      "brief": "Historically plausible sailboat on empty rolling open ocean beneath overcast sky; no coastline, no floating symbols or notebook border. Strong simple composition with wave texture and small human-scale crew.",
-      "visibleGermanLabels": []
+      "form": "lost at sea transition",
+      "brief": "A low wave-level view across a huge deep-teal sea where a historically plausible small wooden sailing vessel pitches across the near horizon. No coast, mountain, or harbor anywhere; the crew looks past the edge of the frame for an absent landmark. Gray-blue clouds close in and a distant lighter sky opens the route forward. The loneliness of zero references is the educational point.",
+      "visibleGermanLabels": [],
+      "artDirection": "cinematic sea-level composition, dramatic wave foreground, muted storm light",
+      "avoid": "Not an old map, still stickman crew if individually visible.",
+      "spokenLineGerman": "Noch schwieriger wurde das auf dem Meer, wo es oft weder Straßen noch erkennbare Felsen gab.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 29,
       "chapter": "uncertainty",
-      "form": "object-focus",
-      "brief": "Close hands of a simple 2D-stickman sailor holding a magnetic compass on ship deck; horizon softly in the background. Realistic-looking objects drawn in simple 2D, no realistic fingers.",
-      "visibleGermanLabels": []
+      "form": "compass dramatic reveal",
+      "brief": "A close sharp 2D image of an early-modern sailor's simple wooden-cased magnetic compass, held in one clearly simplified stickman hand, illuminated by warm lantern light as gray sea and mist blur behind. The needle and cardinal axis are the bright meaningful center, enough authentic nautical texture to feel real within editorial line art. The instrument is a HERO prop, not a tiny icon.",
+      "visibleGermanLabels": [],
+      "artDirection": "instrument macro shot with charcoal/amber highlights, shallow illustrated depth",
+      "avoid": "No modern electronic screen or impossible floating needle.",
+      "spokenLineGerman": "Genau hier wurde ein anderes Werkzeug besonders wertvoll: der Kompass.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 30,
       "chapter": "compass",
-      "form": "science-cutaway",
-      "brief": "Clear large close-up of a magnetized needle freely turning along a north-south alignment; one clean restrained magnetic-field diagram surrounds it. A subtle compass circle, no busy labels.",
+      "form": "magnet needle mechanism",
+      "brief": "Use a large scientifically clear close-up of a freely pivoting dark magnetic needle inside a simple circular compass, with a gentle illustrative field indicating its approximate north-south alignment. One distinctly oriented arrow is marked only with the exact German word 'NORDEN'. A subtle pale blue Earth-field curvature in the background may help, but keep the needle huge and readable.",
       "visibleGermanLabels": [
         "NORDEN"
-      ]
+      ],
+      "artDirection": "large object-only mechanism visual, cream background, teal magnetic strokes and amber needle",
+      "avoid": "Do not confuse compass magnetic north with exact true north.",
+      "spokenLineGerman": "Eine magnetisierte Nadel richtet sich im Erdmagnetfeld ungefähr entlang einer Nord-Süd-Achse aus.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 31,
       "chapter": "compass",
-      "form": "story",
-      "brief": "Cloud-covered ship deck: navigator checks a wooden-cased historical magnetic compass by a shaded lantern. A sailor grips the rail; rain visible. Subject big, strong action and readable faces.",
-      "visibleGermanLabels": []
+      "form": "heading through heavy clouds",
+      "brief": "Midnight storm on a historic ship: foreground navigator studies a glowing oil-lit compass under the shelter of a hooded wooden stand while rain blurs the sea and mast beyond. The face shows concentration, the compass needle remains legible, and no stars or landmarks are visible. Rich saturated blue-gray and golden lantern light make this a strong story frame.",
+      "visibleGermanLabels": [],
+      "artDirection": "medium-close deck action, diagonal rain and warm-cool chiaroscuro",
+      "avoid": "Do not show modern binoculars, radar, or neon interface.",
+      "spokenLineGerman": "So ließ sich eine Richtung verfolgen, selbst wenn Himmel und Landschaft kaum Orientierung boten.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 32,
       "chapter": "compass",
-      "form": "historical-progression",
-      "brief": "Two broad illustrated historical vignettes, early Chinese magnetic pointing device and later maritime compass, with a subtle directional progression. Avoid asserting the same shape/design in every era. No dated labels.",
-      "visibleGermanLabels": []
+      "form": "compass historical evolution",
+      "brief": "Create an editorial two-stage illustrated timeline with two BIG well-drawn objects, not tiny icons: at left an early Chinese magnetic pointer / lodestone-based direction device on a simple table in a plausible historical setting; at right a later European ship's compass mounted in wood. Let one elegant arrow between them show technological development WITHOUT implying an exact instantaneous handoff or the same historical date. People unnecessary.",
+      "visibleGermanLabels": [],
+      "artDirection": "two primary artifacts separated by visual time progression, ink detail and amber-blue accents",
+      "avoid": "Do not label with invented dynasties, dates or incorrect calligraphy.",
+      "spokenLineGerman": "Der Kompass wurde über Jahrhunderte weiterentwickelt; frühe Formen kamen aus China und verbreiteten sich später weiter.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 33,
       "chapter": "compass",
-      "form": "ship-detail",
-      "brief": "Late medieval sailor looks down at simple ship compass while guiding a wooden sailboat. Framing prioritizes instrument and hands, with credible sail and rigging details.",
-      "visibleGermanLabels": []
+      "form": "medieval compass in use",
+      "brief": "An intimate eye-level late-medieval wooden sailing ship deck. Stickman helmsman looks from the ship's compass to the horizon while keeping one hand on the tiller; another crew member tends the sail. The compass is large and truly used as a steering aid, not a detached floating object. Natural sea haze behind, reliable medieval rope/wood atmosphere.",
+      "visibleGermanLabels": [],
+      "artDirection": "three-quarter view with helm/compass foreground, sea mist midground",
+      "avoid": "No steel motorboat, electric lights, GPS or modern clothing.",
+      "spokenLineGerman": "In Europa war der magnetische Schiffskompass spätestens im späten Mittelalter ein wichtiges Navigationsmittel.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 34,
       "chapter": "compass",
-      "form": "comparison",
-      "brief": "One visually accurate simple chart with two distinct large compass headings that diverge slightly, geographic north and magnetic north. Make distinction visually obvious, no big text blocks.",
+      "form": "true versus magnetic north",
+      "brief": "A big simple high-contrast two-direction diagram on a plain circular earth-surface compass disk. A dark arrow labeled exactly 'GEOGRAFISCH' and an amber offset arrow labeled exactly 'MAGNETISCH' start from THE SAME POINT but differ by a visibly small angle; use different arrowheads and short curved separation arc. No humans or extra legends.",
       "visibleGermanLabels": [
         "GEOGRAFISCH",
         "MAGNETISCH"
-      ]
+      ],
+      "artDirection": "precision 2D geographic concept diagram on light neutral ground",
+      "avoid": "Do not make angles huge or imply the separation is universal everywhere.",
+      "spokenLineGerman": "Doch seine Nadel zeigt nicht überall exakt zum geografischen Nordpol.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 35,
       "chapter": "compass",
-      "form": "concept",
-      "brief": "A giant compass in foreground points steadily while a featureless seascape behind offers no positional fix. Strong storytelling about knowing heading but not location.",
-      "visibleGermanLabels": []
+      "form": "compass without location",
+      "brief": "A striking split between large wooden compass in the near foreground pointing consistently along a chosen heading and an enormous featureless open-sea horizon in the background. Put three faint different possible ship silhouettes spread far apart along the same heading to communicate why direction alone cannot determine location. Avoid writing labels. Focus is on the limitation of the tool.",
+      "visibleGermanLabels": [],
+      "artDirection": "foreground macro object + distant illustrated spatial ambiguity, blue/amber accents",
+      "avoid": "No incorrect magical position dot inside the historical compass.",
+      "spokenLineGerman": "Und ohne zu wissen, wo du begonnen hast, sagt die Nadel noch lange nicht, wo du dich befindest.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 36,
       "chapter": "maps",
-      "form": "human-story",
-      "brief": "Historic mapmaking table with a couple of clearly simple stickman explorers marking mountain passes and coastlines with ink, parchment only as a believable object on the table, not as full-frame style.",
-      "visibleGermanLabels": []
+      "form": "collective geographic memory",
+      "brief": "An energetic historically plausible mapmaking workshop seen three-quarter from above: a stickman guide points to a coast-shaped region on a partially drawn chart, another draws the coastline while a traveler puts down a small reference sketch of a mountain. A real shoreline view through a window reinforces observation. Keep the large map blank except broad coastline shapes, avoiding fake unreadable place names.",
+      "visibleGermanLabels": [],
+      "artDirection": "human activity around dominant large map object, warm lamp and cool view contrast",
+      "avoid": "Not an aged parchment full-screen background or four tiny symbolic people.",
+      "spokenLineGerman": "Karten machten aus einzelnen Beobachtungen ein gemeinsames Gedächtnis von Wegen, Küsten und Orten.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 37,
       "chapter": "maps",
-      "form": "object-context",
-      "brief": "Old coastal chart in close-up with one large cape and two harbor markers; navigator visually compares drawn coastline with a matching real cape beyond the cabin window. Readable, zero tiny place names.",
-      "visibleGermanLabels": []
+      "form": "chart matches coast",
+      "brief": "A beautifully illustrated large chart covers the foreground table with one unmistakable jutting cape and safe bay shape; through a wide ship cabin window the matching cape and bay appear in the world at the same orientation. A navigator's ink-line finger aligns the chart feature with the actual coastline. Give clear visual correspondence, detailed but clean silhouettes.",
+      "visibleGermanLabels": [],
+      "artDirection": "match-cut style object-to-world composition, neutral cabin wood / mist-blue coast",
+      "avoid": "No random place-name labels or contradictory coastline geometries.",
+      "spokenLineGerman": "Ein Navigator konnte bekannte Häfen, vorspringende Landzungen und Entfernungen miteinander vergleichen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 38,
       "chapter": "maps",
-      "form": "comparison",
-      "brief": "Split visual: flawed rough shoreline sketch versus careful accurately surveyed outline of the same coast; clean shapes, not weathered antique map framing.",
-      "visibleGermanLabels": []
+      "form": "measurement determines quality",
+      "brief": "Two large maps of the SAME coastline placed on a desk side by side, one jagged hand-sketched outline with poor scale and one careful measured outline accurately tracing a visible model coastline behind them. A thick clear visual correspondence between the precise right-hand map and the real bay makes the evidence stronger. Do not add people or words; emphasize geometry.",
+      "visibleGermanLabels": [],
+      "artDirection": "comparison of precision as a meaningful object-only illustration, vivid teal coast and dark lines",
+      "avoid": "Do not make both maps identical, or depict vague abstract rectangles.",
+      "spokenLineGerman": "Doch Karten waren nur so brauchbar wie die Vermessung und Berichte, aus denen sie entstanden.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 39,
       "chapter": "maps",
-      "form": "story",
-      "brief": "A navigator discovers that the sketched bay does not match the rugged cliffs outside and holds the map with uncertainty. Distinct illustrative dramatic contrast.",
-      "visibleGermanLabels": []
+      "form": "map mismatch danger",
+      "brief": "Dramatic ship-deck point of view: a sailor holds a chart depicting a wide peaceful bay, but beyond the gunwale actual jagged rocks crowd the mouth of the bay where the chart promised safety. The sailor's eyebrows and stiff raised shoulders sell sudden danger. The chart is an object in hand, not a decorative border. Wind and sharp waves add visual stakes.",
+      "visibleGermanLabels": [],
+      "artDirection": "tight foreground chart vs threatening background rocks, deep sea navy and white foam",
+      "avoid": "No impossible invented map text or extra English labels.",
+      "spokenLineGerman": "Unbekannte Küsten, falsche Entfernungen oder veränderte Ufer konnten gefährliche Fehler verursachen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 40,
       "chapter": "maps",
-      "form": "group-story",
-      "brief": "Three simple stickman sailors work as a coordinated team: one tracks shoreline through spyglass, another checks compass, another studies chart, all on believable ship deck.",
-      "visibleGermanLabels": []
+      "form": "triangulated teamwork",
+      "brief": "A living shipboard study with three distinct working activities that make sense together: at front one stickman checks a detailed magnetic compass, another compares one simple coast chart on a low table, third points toward a real lighthouse-shaped natural headland through the rigging. The three sightlines converge on one route decision. Keep each figure simple but expressive, large enough to see.",
+      "visibleGermanLabels": [],
+      "artDirection": "diagonal team choreography on deck, strong depth and bright coast",
+      "avoid": "Avoid generic three people all pointing randomly.",
+      "spokenLineGerman": "Darum mussten erfahrene Reisende Karte, Instrumente und die wirkliche Umgebung ständig vergleichen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 41,
       "chapter": "ocean",
-      "form": "cinematic",
-      "brief": "Wide ocean scale shot: tiny old sailing ship in deep blue open water with huge soft layered clouds, crew clearly human-sized but stick-figure silhouettes. Cinematic but still 2D cartoon line art.",
-      "visibleGermanLabels": []
+      "form": "ocean isolation emotional image",
+      "brief": "Ship from an elevated near-stern angle with a tiny but visible weary stickman lookout standing beside the mast; a vast horizon of deep blue water extends in ALL directions and fills most of the frame. Layered waves, fine rigging and dramatic cloud shadow suggest several days out of sight of land. Do not add an absurd caption or geographic overlay.",
+      "visibleGermanLabels": [],
+      "artDirection": "wide cinematic pause, loneliness and scale without blankness, stormy navy with silver light",
+      "avoid": "No coastline or mountain anywhere.",
+      "spokenLineGerman": "Stell dir ein Segelschiff vor, das seit Tagen nur Wasser und Himmel sieht.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 42,
       "chapter": "ocean",
-      "form": "current-diagram",
-      "brief": "Overhead coastal-water comparison: planned forward ship path versus sideways current-caused drift. Big boat silhouette, two strong different-color arrows, water lines, no clutter.",
-      "visibleGermanLabels": []
+      "form": "wind-current drift physics",
+      "brief": "Build a clean readable ABOVE-SEA bird's-eye mechanism: a single ship starts at left, a straight bold gold arrow shows intended forward course, a large blue angled flow pattern sweeps beneath its keel, and a slightly offset final ship position demonstrates sideways drift. One ghosted planned silhouette is enough; differentiate planned versus actual spatially, not with tiny words.",
+      "visibleGermanLabels": [],
+      "artDirection": "large ship object and two thick contrasting paths on textured teal sea, no figures needed",
+      "avoid": "Do not imply winds/currents stop the compass working; they alter displacement.",
+      "spokenLineGerman": "Eine grobe Himmelsrichtung ist jetzt nicht genug: Strömungen und Wind können das Schiff seitlich versetzen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 43,
       "chapter": "ocean",
-      "form": "object-story",
-      "brief": "Ship captain and mate measure and note elapsed time and rough speed with rope and sandglass; editorial medium shot, tools crisp and large, no illegible writing.",
-      "visibleGermanLabels": []
+      "form": "three measurements one task",
+      "brief": "Beautiful close tabletop on a wood sailing ship deck: a substantial hand-drawn compass, a glass sand timer, and a carefully illustrated knotted log line frame a clear open ship-route sketch. Two expressive but simple stickman sailors reach in from sides to work the tools, with hand placement telling a coherent story. Use warm focused sunlight and slate sea beyond.",
+      "visibleGermanLabels": [],
+      "artDirection": "large object-led working desk closeup, tactile ropes and wood grain kept editorial",
+      "avoid": "Not six disconnected icons; no illegible measurements.",
+      "spokenLineGerman": "Seefahrer beobachteten daher neben dem Kompass auch Geschwindigkeit und vergangene Zeit.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 44,
       "chapter": "ocean",
-      "form": "technical-closeup",
-      "brief": "On a ship's stern, a log-line with knots unreels into the water behind a small wooden drag board. Make the mechanism physically plausible and intuitively recognizable.",
-      "visibleGermanLabels": []
+      "form": "log line mechanism cutaway",
+      "brief": "A highly legible near-side perspective of an early sailing ship's stern in motion. A wooden log board trails behind in the sea, attached to a long rope clearly marked by evenly spaced visible knots; a stickman sailor controls the line from a reel aboard. Use a subtle orange highlight along the line to show exactly which object is being measured. No numerical text.",
+      "visibleGermanLabels": [],
+      "artDirection": "technical action close-up with aft deck / rope / trailing board in one continuous physical chain",
+      "avoid": "Never depict knots as modern digital speed readouts.",
+      "spokenLineGerman": "Für Geschwindigkeit nutzten manche Seeleute eine Logge mit Leine und zählten die durchlaufenden Knoten.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 45,
       "chapter": "ocean",
-      "form": "object-closeup",
-      "brief": "Large sandglass held at angle next to taut knotted log-line over ship rail; two stickman hands simplified but correctly gripping. Background deck faint.",
-      "visibleGermanLabels": []
+      "form": "timed knot counting closeup",
+      "brief": "Macro composition with a simple glass sandglass in the foreground, a gloved stickman sailor's hand counting passing rope knots beside it, and the foamy trailing log-line running off the stern in the distance. Make the sand level and clear hourglass frame visible; emphasize simultaneous duration and rope motion through positions, not labels.",
+      "visibleGermanLabels": [],
+      "artDirection": "large object relationship with cinematic teal water vs amber glass",
+      "avoid": "Do not render random clock faces or claim exact historical seconds.",
+      "spokenLineGerman": "Eine Sanduhr half, das dafür benötigte Zeitintervall abzuschätzen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 46,
       "chapter": "ocean",
-      "form": "process-graphic",
-      "brief": "Clean ship's course estimate diagram with discrete waypoints on neutral blue sea grid, compass heading and elapsed-time symbols. No geographic parchment texture; purpose: estimated position.",
-      "visibleGermanLabels": []
+      "form": "course estimation visual synthesis",
+      "brief": "A large attractive object-only illustrated sea navigation board with one origin harbor dot and THREE successive bold direction legs across an uncluttered slate-blue surface. Above it float ONLY three integrated physical tools: a compass bearing aligned to first leg, a small glass sandglass and a knotted speed line, as actual instruments resting at the board edge. Course progression must be visually followable.",
+      "visibleGermanLabels": [],
+      "artDirection": "functional integrated route illustration; navy/amber/warm neutral accent hierarchy",
+      "avoid": "Not a cluttered collection of miniature disconnected icons or a faux antique atlas.",
+      "spokenLineGerman": "Aus Richtung, geschätzter Geschwindigkeit und Zeit entstand eine fortlaufende Routenrechnung.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 47,
       "chapter": "deadreckoning",
-      "form": "route-diagram",
-      "brief": "Modern-clean illustrated chart area in period-appropriate context: a hand-drawn starting point and repeated course legs from one previous point to the next, with a simple ship icon. One big title.",
+      "form": "dead reckoning sequential diagram",
+      "brief": "Give the illustration a single strong central route strip: a large starting harbor at lower left, then four estimated sailing legs with distinct ship silhouettes along the same line, finishing with a question-mark position uncertainty cloud. A clean simple compass drawn at the corner reinforces method. One large German label exactly 'KOPPELNAVIGATION', no other writing.",
       "visibleGermanLabels": [
         "KOPPELNAVIGATION"
-      ]
+      ],
+      "artDirection": "bold left-to-right sequential route visual in slate blue and rust, no people needed",
+      "avoid": "Do not make the estimated final spot an established accurate fact.",
+      "spokenLineGerman": "Diese Methode nennt man Koppelnavigation: Man rechnet von einer bekannten Ausgangsposition immer weiter.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 48,
       "chapter": "deadreckoning",
-      "form": "cause-effect",
-      "brief": "Two thick plotted routes diverge gradually on open-sea diagram, planned and actually traveled, surrounded by small current and wind indications. Ensure immediate mobile readability.",
-      "visibleGermanLabels": []
+      "form": "error compounds over time",
+      "brief": "Let two thick course paths begin at the same ship. One ideal ink-blue route continues steadily; the actual warm-rust route drifts by tiny amounts at each of four successive sailing legs until the gap at the far right is VERY clear. Show progressively larger gap bands and only a few waves, otherwise nothing. This image has one explanatory task: accumulated error.",
+      "visibleGermanLabels": [],
+      "artDirection": "elegant mathematically readable two-line infographic, close-to-wide visual contrast",
+      "avoid": "Avoid a single exaggerated immediate right-angle error; accumulation must be progressive.",
+      "spokenLineGerman": "Das klingt clever, hat aber eine unangenehme Schwäche: Jeder Schätzfehler wandert mit.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 49,
       "chapter": "deadreckoning",
-      "form": "science-story",
-      "brief": "Top-down 2D old ship pushed sideways by visible wave current relative to compass direction. Strong graphic comparison, only three moving elements.",
-      "visibleGermanLabels": []
+      "form": "drift versus estimated position",
+      "brief": "A bright top-down cutaway of old sailing vessel over patterned water: a directional ship-course arrow continues northeast while a thick lateral current from left pushes the boat to a SECOND REAL position. Draw a faint ghost ship at expected position and a solid ship displaced sideways, with clear arrow contrast. Background ocean is richly illustrated but quiet enough to explain.",
+      "visibleGermanLabels": [],
+      "artDirection": "dominant ship silhouettes and arrows, teal currents with warm-gold plotted course",
+      "avoid": "Do not suggest the compass itself points off because of current.",
+      "spokenLineGerman": "Wenn eine Meeresströmung das Schiff abdriften lässt, kann der errechnete Ort völlig danebenliegen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 50,
       "chapter": "deadreckoning",
-      "form": "story",
-      "brief": "Historic navigator erases or revises an estimated plotted position on a ship's navigation board after taking a fresh observation. Human expression conveys discovery.",
-      "visibleGermanLabels": []
+      "form": "observational correction story",
+      "brief": "Inside a lantern-lit ship cabin, a focused stickman navigator observes a newly measured star bearing through an open hatch, then places a bold NEW corrected point on a simple nautical chart with a stylus. A faint older estimated point lies a noticeable distance away. Faces, hands and the two points are large enough to grasp without printed explanations.",
+      "visibleGermanLabels": [],
+      "artDirection": "close editorial narrative of human correction and evidence, amber cabin / blue sky",
+      "avoid": "Do not draw a modern GPS position readout.",
+      "spokenLineGerman": "Deshalb waren unabhängige Beobachtungen so wichtig, um den vermuteten Standort immer wieder zu überprüfen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 51,
       "chapter": "deadreckoning",
-      "form": "night-illustration",
-      "brief": "Night sky above old ship, sailor measures bright star with a historically appropriate instrument; no modern electronic hardware. Navy sky, warm light on deck.",
-      "visibleGermanLabels": []
+      "form": "stable sky reference",
+      "brief": "A richly ink-drawn night ocean shot seen from deck-level: navigator raises an appropriate simple historical sighting instrument toward one bright star through rigging while low clouds and moving waves frame the scene. The bright astronomical reference stands still visually while the water and ship feel dynamic. A small warm lantern near the deck anchors the mood.",
+      "visibleGermanLabels": [],
+      "artDirection": "cinematic low angle, luminous cobalt night and star gold, simple stickman sailor large enough",
+      "avoid": "No modern telescope unless historically accurate to era.",
+      "spokenLineGerman": "Am Himmel fanden Seefahrer Hinweise, die sich nicht mit dem Wind verschieben.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 52,
       "chapter": "deadreckoning",
-      "form": "globe-diagram",
-      "brief": "Friendly precise globe cutaway with equator and just three latitude lines, a tiny sailing ship near a northern latitude, sun and stars. Large simple shapes and negative space.",
-      "visibleGermanLabels": []
+      "form": "latitude across globe",
+      "brief": "A HUGE elegantly drawn Earth sphere with exactly a few thick horizontal latitude rings, equator easy to recognize and a ship at a mid-northern latitude. Sun and stars are subtle framing clues, not floating stickers. Choose a strong diagonal viewpoint with the globe filling 75 percent of image, so viewers see what north-versus-south means.",
+      "visibleGermanLabels": [],
+      "artDirection": "object-only dimensional hand-drawn Earth infographic, indigo ocean and clean warm lines",
+      "avoid": "No tiny illegible star charts or vague washed-out globe.",
+      "spokenLineGerman": "Vor allem Sonne und Sterne halfen bei der Frage, wie weit nördlich oder südlich man war.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 53,
       "chapter": "latitude",
-      "form": "globe-diagram",
-      "brief": "Large globe seen at an angle, clear equator and selected horizontal latitude circles; one point north of equator. No busy country boundaries or unnecessary figures.",
+      "form": "latitude physical meaning",
+      "brief": "Oversized beautiful globe occupies center frame, tilted modestly; a broad equator band divides north and south, and a single emphasized horizontal latitude circle crosses a ship position clearly ABOVE the equator. One large German label 'BREITENGRAD' aligns near that circle. Use an angular shadow along Earth's rim for depth and restrained clear geometry.",
       "visibleGermanLabels": [
         "BREITENGRAD"
-      ]
+      ],
+      "artDirection": "large informative Earth close-up, deep blue oceans and golden ring contrast",
+      "avoid": "Do not confuse latitude with vertical longitude meridians.",
+      "spokenLineGerman": "Der Breitengrad beschreibt, wie weit ein Ort nördlich oder südlich des Äquators liegt.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 54,
       "chapter": "latitude",
-      "form": "angle-diagram",
-      "brief": "A sailor observes Polaris above horizon. One large simple measured angle from flat sea horizon to star; understandable geometry, no astronomical wall of text.",
-      "visibleGermanLabels": []
+      "form": "polaris altitude angle",
+      "brief": "An extremely legible SEASIDE GEOMETRY illustration: at lower left a deck-height northern-hemisphere navigator looks from a clear horizontal sea line up toward a large Polaris dot. One clean diagonal sightline and one single amber angular wedge show the altitude measured upward from horizon, WITHOUT fake exact degree values. Keep most of the frame for sky and geometrical clarity.",
+      "visibleGermanLabels": [],
+      "artDirection": "object-and-diagram hybrid with three giant elements and twilight palette",
+      "avoid": "No cluttered globe inset or extra compass symbols; Polaris is not available in southern hemisphere.",
+      "spokenLineGerman": "Auf der Nordhalbkugel liefert die Höhe des Polarsterns über dem Horizont einen ungefähren Hinweis darauf.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 55,
       "chapter": "latitude",
-      "form": "object-collage",
-      "brief": "Three period-diverse navigational measuring instruments (mariner's astrolabe, quadrant, sextant) laid out as large carefully drawn 2D objects without text. Different eras implied by composition, not same-time confusion.",
-      "visibleGermanLabels": []
+      "form": "tools through eras",
+      "brief": "An attractive museum-grade editorial progression across a SINGLE solid tabletop: LARGE mariner's astrolabe of brass at left, LARGE historic quadrant centered, recognizable early-modern sextant at right, each illustrated with mechanically distinct shapes and eye-catching metal/wood textures. A soft journey of light across objects indicates development over time; no sailor needed and no year stamps.",
+      "visibleGermanLabels": [],
+      "artDirection": "three-object focal still-life, warm light neutral background with gold and slate accents",
+      "avoid": "Do not suggest every instrument had exactly the same design or was invented together.",
+      "spokenLineGerman": "Später nutzten Seeleute Instrumente, mit denen sie Winkel von Sonne oder Sternen genauer messen konnten.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 56,
       "chapter": "latitude",
-      "form": "globe-comparison",
-      "brief": "Two ships at widely separated east-west points on the very same latitude line. Clear globe and horizontal line; position uncertainty visually obvious.",
-      "visibleGermanLabels": []
+      "form": "longitude two points same latitude",
+      "brief": "Replace the previously weak tiny sepia-globe illustration with a bold clean HIGH-CONTRAST global longitude problem diagram. A large saturated blue globe fills at least two-thirds of the frame, viewed obliquely so a single gold latitude band wraps across it. Two conspicuous ships are positioned FAR APART east–west on that SAME horizontal band, with separated bright location dots and a wide curved gap between them. Their shared latitude MUST be visually obvious while their missing east-west coordinate remains ambiguous. Zero stickmen, zero text, no antique map/paper, no microscopic globe or floating mini-panels.",
+      "visibleGermanLabels": [],
+      "artDirection": "bold giant globe, electric ocean teal and navy with large warm-gold ring and two ship silhouettes",
+      "avoid": "Absolutely no beige handwritten textbook globe with tiny stickmen and floating question marks.",
+      "spokenLineGerman": "Aber die zweite Koordinate, der Längengrad, blieb auf dem offenen Ozean lange besonders schwierig.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 57,
       "chapter": "latitude",
-      "form": "object-interaction",
-      "brief": "Historic navigator on deck aligns measured solar angle with open chart and accurate ship timepiece. Keep three objects readable and historically contextualized.",
-      "visibleGermanLabels": []
+      "form": "longitude celestial time relation",
+      "brief": "An 18th-century ship's navigation table shown close enough to read three major pieces: a large brass sextant with solar observation implied by open cabin window, a precision marine clock in a protected box, and a sea chart where the navigator's hand compares them. Use one thin elegant line connecting the observational sightline and clock to one marked chart point, with no formulas or labels. Technical credibility first.",
+      "visibleGermanLabels": [],
+      "artDirection": "intentional triangle composition, polished warm timber, indigo water and gleaming brass accents",
+      "avoid": "Do not imply time alone yields longitude without appropriate observations.",
+      "spokenLineGerman": "Für eine verlässliche astronomische Längenbestimmung brauchte man passende Himmelsbeobachtungen und genaue Zeitinformationen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 58,
       "chapter": "latitude",
-      "form": "closeup",
-      "brief": "Prominent protective wooden marine chronometer and attentive 18th-century navigator, large clock face without legibility mistakes, ship interior consistent with early modern history.",
-      "visibleGermanLabels": []
+      "form": "chronometer accuracy closeup",
+      "brief": "An intimate sophisticated 2D close-up of an eighteenth-century protected marine chronometer in its wooden gimbal housing, lid raised, a sailor's simple ink-line finger checking the dial while another hand steadies an open chart. The instrument occupies over half the frame and appears an authentic mechanical precision object, not a kitchen alarm clock. Morning light catches brass and glass.",
+      "visibleGermanLabels": [],
+      "artDirection": "macro illustrated object storytelling, dark wood / warm brass / sea-blue background",
+      "avoid": "No invented digital clock text or GPS readings.",
+      "spokenLineGerman": "Seetaugliche Chronometer verbesserten diese Aufgabe erheblich, aber auch sie mussten sorgfältig verwendet werden.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 59,
       "chapter": "pacific",
-      "form": "cinematic",
-      "brief": "Respectful historical traditional Polynesian double-hulled ocean voyaging canoe with triangular/specific oceanic sail, crew represented as simple expressive stick figures only; expansive tropical sea and purposeful navigation.",
-      "visibleGermanLabels": []
+      "form": "polynesian ocean wayfinding panorama",
+      "brief": "A magnificent but educational high-angle view of a traditional Polynesian double-hulled sailing canoe slicing diagonally across intensely blue tropical ocean. Simple distinctive stickman navigator calmly scans the horizon, other crew handle sail, a line of islands barely suggested far away. The culturally credible canoe shape and open-sea scale are hero subjects, with organic teal wave highlights and sunlit tan sail.",
+      "visibleGermanLabels": [],
+      "artDirection": "cinematic historical cultural establishing shot, motion from lower left to upper right",
+      "avoid": "No European galleon, Viking longship, motorboat or Western instrument.",
+      "spokenLineGerman": "Währenddessen entwickelten polynesische Seefahrer eigene, hoch entwickelte Orientierungsmethoden über gewaltige Meeresräume.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 60,
       "chapter": "pacific",
-      "form": "star-route",
-      "brief": "Traditional Polynesian navigator in canoe watches a few bright stars rising and setting at clearly different horizon points, calm night and moonlight. No Western telescope or chart.",
-      "visibleGermanLabels": []
+      "form": "star rise and set waypoints",
+      "brief": "An illustrated tropical star horizon from onboard a Polynesian voyaging canoe: one navigator's face and raised arm large in foreground, three separate bright stars at distinct positions close to the horizon with two thin gracefully curved trails indicating rising/setting points over time. Dark calm sea offers one long clear baseline. The stars are observed directional clues, not a random dense sky pattern.",
+      "visibleGermanLabels": [],
+      "artDirection": "horizon-level view, navy velvet sky and warm canoe wood accents",
+      "avoid": "No Polaris-as-universal-wayfinding star and no fancy European astro tools.",
+      "spokenLineGerman": "Sie merkten sich, wo bestimmte Sterne am Horizont aufgehen und wieder verschwinden.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 61,
       "chapter": "pacific",
-      "form": "teaching-scene",
-      "brief": "An older Polynesian stickman navigator teaches a young learner how to trace a succession of stars across night sky, pointing physically to the horizon; warm culturally respectful details.",
-      "visibleGermanLabels": []
+      "form": "memorized star sequence",
+      "brief": "A moving intergenerational learning image aboard a traditional Polynesian canoe at night. Experienced stickman navigator traces a succession of bright stars along a wide curved path in the sky while young learner follows the gesture and holds a cord or rail for balance. Make the dialogue visible in their eyes and hands, sky and horizon stars dominant. The sequence must communicate learned observation, not magic.",
+      "visibleGermanLabels": [],
+      "artDirection": "strong two-character close-midground with elegant star chain arch overhead, dark teal/gold",
+      "avoid": "Do not draw speech bubbles filled with unreadable words or a classroom blackboard.",
+      "spokenLineGerman": "Anstatt sich auf einen einzigen Stern zu verlassen, beobachteten sie ganze Sternfolgen und Richtungen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 62,
       "chapter": "pacific",
-      "form": "sea-diagram",
-      "brief": "A traditional voyaging canoe across distinctly regular rolling ocean swell patterns, navigator senses boat motion. Two giant legible swell directions, no tiny charts.",
-      "visibleGermanLabels": []
+      "form": "swell information explanation",
+      "brief": "A gorgeous object-only wave-direction cutaway: ocean surface built from several long PARALLEL swell crests moving under a simplified accurate Polynesian double-hulled canoe, the canoe tilting visibly with wave direction. Use a single broad warm-white arrow along dominant swell axis and subtle teal shade bands to show regularity. This is about physical swell geometry, not a ship against generic random chop.",
+      "visibleGermanLabels": [],
+      "artDirection": "clear dramatic oblique overhead scientific illustration, deep cyan and indigo fluid texture",
+      "avoid": "No unrelated stickman mascot or floating rainbow icons.",
+      "spokenLineGerman": "Wellen waren dabei nicht bloß Hindernisse, sondern trugen ebenfalls Informationen über das Meer.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 63,
       "chapter": "pacific",
-      "form": "weather-story",
-      "brief": "Clouds hide the stars while long regular ocean swell is still visible near traditional Polynesian canoe, navigator reads motion; strongly focused non-magical observational act.",
-      "visibleGermanLabels": []
+      "form": "swell even under clouds",
+      "brief": "The starless night is obscured by low rain clouds, but a traditional Polynesian navigator stands steady inside a canoe, one hand sensing the rail while distinct LONG EVEN wave trains pass beneath the hull. Make wave direction and boat motion clear through crests and leaning posture; deep navy contrasts with silver reflections, no mystical glowing sea. Weather feels consequential.",
+      "visibleGermanLabels": [],
+      "artDirection": "low three-quarter human-action shot with emphasized regular swell lines, cloudy night",
+      "avoid": "No invisible stars shown through solid cloud; no modern instrument.",
+      "spokenLineGerman": "Lange regelmäßige Dünungswellen konnten auch dann eine Richtung verraten, wenn Sterne verdeckt waren.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 64,
       "chapter": "pacific",
-      "form": "island-signs",
-      "brief": "Traditional ocean canoe notices seabirds flying toward faint green island under slightly different cloud formations on far horizon. Indications are suggestive not guaranteed.",
-      "visibleGermanLabels": []
+      "form": "birds clouds land clues",
+      "brief": "An elegant ocean distance reveal: in the foreground the traditional voyaging canoe observes several purposeful seabirds heading to the same distant side of frame; above a barely visible island there is a localized cloud gathering. The island remains suggestive rather than guaranteed. The navigator points in the birds' direction and watches carefully. Tropical sea is richly drawn without clutter.",
+      "visibleGermanLabels": [],
+      "artDirection": "long lens scenic directional composition, sea-blue/white/cloud-green accented horizon",
+      "avoid": "Do not draw exact magical straight-arrow promise to land or excessive birds.",
+      "spokenLineGerman": "Auch Wolken und bestimmte Seevögel konnten Hinweise geben, ob irgendwo Land in der Nähe lag.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 65,
       "chapter": "pacific",
-      "form": "teaching-beach",
-      "brief": "Respectful multigenerational teaching scene on tropical shore: older wayfinder uses stones and finger-traced star bearings in wet sand with younger stickman learners. Not a school diagram.",
-      "visibleGermanLabels": []
+      "form": "passed-on navigation knowledge",
+      "brief": "On a warm Polynesian shore at dusk, an older wayfinder draws a careful star-bearing path in wet beach sand using a shell or stick; two younger learners actively imitate the gesture with pebbles while a real ocean canoe rests nearby. The picture is about precise teaching and inheritance rather than a primitive stereotype. Faces expressive but stickman-only, locally coherent dress and canoe craft.",
+      "visibleGermanLabels": [],
+      "artDirection": "intimate three-person overhead close narrative, copper sunset and teal shore, sand diagrams clear",
+      "avoid": "No computers, modern maps, big schoolbook text or inaccurate exotic costumes.",
+      "spokenLineGerman": "Dieses Wissen wurde erlernt, erinnert und über Generationen weitergegeben, nicht von einer App berechnet.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 66,
       "chapter": "uncertainties",
-      "form": "weather",
-      "brief": "Open ship at night beneath complete clouds and wind-blown rain; a compass alone cannot solve the missing position. Strong contrast of bright compass and obscured sky.",
-      "visibleGermanLabels": []
+      "form": "clouds shut down bearings",
+      "brief": "Ship caught under a dense gray storm deck on open water. Foreground navigator grips a magnetic compass that still indicates heading, while the visible sky is uniformly starless and heavy rain erases the coast. A second stickman lookout shields their eyes in frustration. Position the compass as one visible tool and the blank sky as the missing evidence.",
+      "visibleGermanLabels": [],
+      "artDirection": "strong cinematic warm compass vs cool slate heavy cloud negative space",
+      "avoid": "Do not suggest the compass suddenly stops functioning in fog.",
+      "spokenLineGerman": "Keine dieser Methoden war unfehlbar, und schlechte Sicht machte gleich mehrere Hinweise auf einmal unsicher.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 67,
       "chapter": "uncertainties",
-      "form": "split-contrast",
-      "brief": "Clean two-panel visual: ocean current silently pushes ship off expected path versus faulty shoreline map misrepresents rocks. No little paragraphs or artificial badges.",
-      "visibleGermanLabels": []
+      "form": "tool limits two-panel contrast",
+      "brief": "Make a rigorous two-panel comparison with boldly different problems. LEFT overhead view: ship heading straight ahead yet lateral currents push it off the intended route; RIGHT ship near coast: a misleading chart portrays a smooth bay while actual shoreline bristles with rocks. Each half has one large principal object, simple overlay and enough white space. Absolutely no text.",
+      "visibleGermanLabels": [],
+      "artDirection": "two connected scenarios with consistent 2D ink aesthetic, teal current vs rust rock hazards",
+      "avoid": "No crowded tiny icons or inaccurate implication that the compass corrects drift.",
+      "spokenLineGerman": "Ein Kompass half nicht gegen unbekannte Strömungen, eine Karte nicht gegen falsch eingezeichnete Küsten.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 68,
       "chapter": "uncertainties",
-      "form": "visual-joke",
-      "brief": "A traveler mistakes two similarly shaped distant hills, turning toward the wrong one while actual destination remains just out of sight. Simple sympathetic visual humor.",
-      "visibleGermanLabels": []
+      "form": "lookalike landmark visual surprise",
+      "brief": "Use a visual joke with TWO visually similar yet not identical large peaked hills dominating the horizon. A confident stickman guide gestures dramatically toward the nearer WRONG hill while their small companion notices the true hill partially visible beyond a valley bend. Draw a lightly ghosted intended path toward the correct hill and a bold actual path toward the wrong one; both lines clearly start together. Faces convey realization.",
+      "visibleGermanLabels": [],
+      "artDirection": "mid-close playful storytelling with clear landmark similarity and contrasting path branches, muted greens and amber",
+      "avoid": "Not one lonely character in empty beige valley without explaining what was mistaken.",
+      "spokenLineGerman": "Wer einen Orientierungspunkt falsch erkannte, konnte einen Irrtum kilometerweit mit sich tragen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 69,
       "chapter": "uncertainties",
-      "form": "comparison",
-      "brief": "Clean respectful split: traditional Polynesian canoe reads swell and horizon sky, historic European sailing ship uses chart and compass. Two distinct practices, same stickman drawing language.",
-      "visibleGermanLabels": []
+      "form": "cross-check different navigators",
+      "brief": "A cinematic but controlled meaningful comparison of two different historical observation practices in wide split halves: left a traditional Polynesian double-hulled canoe reads long swell crests and bright horizon stars; right an early modern European sailing ship compares compass and coastline chart. Give each distinct accurate ship silhouette and differing environment while the same hand-inked line art binds them. No text or stereotypes.",
+      "visibleGermanLabels": [],
+      "artDirection": "two wide substantial narrative environments, tropical turquoise vs cooler navy/ochre sailing deck",
+      "avoid": "No shared Western compass in Polynesian canoe or direct cultural equivalence claim.",
+      "spokenLineGerman": "Erfahrene Navigatoren prüften deshalb verschiedene Hinweise gegeneinander, sobald sie die Gelegenheit dazu hatten.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 70,
       "chapter": "uncertainties",
-      "form": "conceptual",
-      "brief": "A cloud of several possible path lines gradually narrows into one plausible route as distinct observed evidence is added. Use the most effective educational visualization, no figures required.",
-      "visibleGermanLabels": []
+      "form": "uncertainty shrinks elegantly",
+      "brief": "A powerful clean modern-style editorial infographic without people: broad translucent uncertainty area on open-sea chart is initially enormous and contains three plausible possible ship locations; as evidence from independent compass course and coastline observation comes together, the shaded uncertainty area becomes significantly narrower and ends in one small plausible REGION, not exact magical point. Depict this as two stages separated by a subtle arrow and large clean geometries.",
+      "visibleGermanLabels": [],
+      "artDirection": "big concept diagram, pale neutral chart ground and deep teal/rust regions, no symbols cloud",
+      "avoid": "No text, no fake perfect certainty and no unexplained infographic clutter.",
+      "spokenLineGerman": "Orientierung war weniger ein Zaubertrick als die Kunst, Unsicherheit immer wieder zu verkleinern.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 71,
       "chapter": "resolution",
-      "form": "summary-scene",
-      "brief": "One coherent broad land-travel illustration showing a mountain, river crossing and evening bright star as separate landmarks, with a few small historic stickmen walking toward a town. Not a cluttered parchment atlas.",
-      "visibleGermanLabels": []
+      "form": "land orientation recap",
+      "brief": "Build a rich but clearly organized illustrative landscape WITH a purpose: a river bends near a uniquely shaped ridge, a guide shows two walking companions an old stone bridge, and an evening sky reveals a northern star. One clear continuous route winds gently toward a distant village. Each natural cue belongs organically to the scene and is not a floating symbol.",
+      "visibleGermanLabels": [],
+      "artDirection": "large horizontal travel panorama; amber dusk and blue water with small expressive figures",
+      "avoid": "Not an old parchment diagram and no random four-item icon ring.",
+      "spokenLineGerman": "An Land halfen auffällige Orte, erfahrene Wegkundige, Sonne und Sterne.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 72,
       "chapter": "resolution",
-      "form": "ship-summary",
-      "brief": "Old sailing deck showing a well-drawn chart, compass and a stickman navigator observing the sky; all three relevant methods visible, one dominant sailor gesture.",
-      "visibleGermanLabels": []
+      "form": "sea navigation recap",
+      "brief": "An early-modern ship navigation station with the working navigator as the focus: their simple stickman hand holds a compass above a beautiful coast chart, with a visible course line and a sextant resting nearby while a bright star appears beyond the ship window. Make each tool large and its role readable at a glance. Warm cabin and dark sea frame a thoughtful summary, not a repeat of earlier deck wide shots.",
+      "visibleGermanLabels": [],
+      "artDirection": "tight richly illustrated cabin closeup, bronze vs deep ocean blue",
+      "avoid": "Do not place tools from incompatible eras in a medieval ship; make it 18th-century compatible.",
+      "spokenLineGerman": "Auf dem Meer kamen Kompass, Karten, Kursrechnung und genaue Himmelsbeobachtungen hinzu.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 73,
       "chapter": "resolution",
-      "form": "ocean-summary",
-      "brief": "Traditional Polynesian double-hulled canoe amidst regular swell; a small star arc and seabirds appear as natural observation clues, without fake scientific precision or Western devices.",
-      "visibleGermanLabels": []
+      "form": "pacific recap observational harmony",
+      "brief": "A traditional Polynesian canoe in calm nighttime swell; the foreground navigator studies the direction of regular waves with one palm along the rail while overhead a modest recognizable line of rising stars and a few seabirds hint at other clues. The canoe remains credible; include a softly visible distant cloud above a possible island but keep ambiguity. Deep violet-blue night and bright teal wave edges.",
+      "visibleGermanLabels": [],
+      "artDirection": "serene wide three-quarter canoe view with three naturally integrated phenomena",
+      "avoid": "No modern electronics, compass, or magical glowing routes.",
+      "spokenLineGerman": "Andere Seefahrtstraditionen nutzten Sterne, Wellen, Wind und Zeichen für nahes Land auf eigene Weise.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 74,
       "chapter": "resolution",
-      "form": "visual-metaphor",
-      "brief": "Three independently weak clues (landmark, compass, star) converge into a clear well-founded path. Elegant educational analogy with large, simple differentiated elements.",
-      "visibleGermanLabels": []
+      "form": "evidence builds route confidence",
+      "brief": "Create an elegant, visually striking integrated educational metaphor: three independent observations—a clear distinctive mountain silhouette, a compass bearing indicated by a simple arrow, and a single north star—appear as separate LARGE illustrated clues at the edges and send thin neat guidance lines into a central stylized route across a miniature landscape. The tentative pale route becomes one stronger dark course where clues agree. No human figures or text needed.",
+      "visibleGermanLabels": [],
+      "artDirection": "clean sophisticated radial-to-route explainer, cream/teal/amber with dark ink, big accessible visual",
+      "avoid": "Avoid floating meaningless icon wreaths; all three inputs must visibly determine the same route.",
+      "spokenLineGerman": "Entscheidend war, aus vielen unvollkommenen Beobachtungen gemeinsam eine brauchbare Vorstellung vom eigenen Weg zu gewinnen.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 75,
       "chapter": "closing",
-      "form": "modern-comparison",
-      "brief": "Clear modern GPS concept diagram: small phone map dot receives signals from orbiting satellites. Simple readable picture; do not draw literal satellite beams through impossible objects. One short label.",
+      "form": "GPS modern explanation",
+      "brief": "A contemporary object-only technical composition: enormous simple smartphone displaying a clean generic map with one obvious colored location dot, above a believable curved Earth horizon with THREE distinct orbiting GPS satellite symbols and thin clear signal paths directed toward the receiver. The phone dominates, satellites show geometry rather than a magic beam. Only exact large German label 'HEUTE', no other words or location names.",
       "visibleGermanLabels": [
         "HEUTE"
-      ]
+      ],
+      "artDirection": "bold richly rendered object-and-science infographic, cool blue Earth and coral location dot",
+      "avoid": "No text clutter or claim that a single satellite determines a precise position.",
+      "spokenLineGerman": "Heute schätzt ein Smartphone unsere Position mithilfe von Satellitensignalen, statt dass wir sie ständig selbst herleiten.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     },
     {
       "sceneNumber": 76,
       "chapter": "closing",
-      "form": "emotional-ending",
-      "brief": "Memorable thoughtful final frame: historical hand-drawn stickman navigator looks over distant ocean from a cliff, with a small subtle present-day GPS position icon at the opposite side. Strong human-scale silhouette; no text.",
-      "visibleGermanLabels": []
+      "form": "hero closing gratitude to skills",
+      "brief": "A poetic but intellectually grounded concluding image: large expressive ancient stickman wayfinder in side profile on a sunlit stone ridge, their eyes toward a majestic coast and far sailing craft; a small subtle inset of a modern map location dot in the opposite corner contrasts then and now without stealing focus. Golden horizon, navy sea and confident ink line art match the premium cover level, but NO typography. End on admiration for skill rather than a final boring globe diagram.",
+      "visibleGermanLabels": [],
+      "artDirection": "emotional medium-wide finale with high contrast luminous horizon and rich landscape scale",
+      "avoid": "Do not depict historical traveler holding a modern smartphone; no old parchment map borders.",
+      "spokenLineGerman": "Der erstaunliche Teil ist nicht, dass Menschen früher kein GPS hatten, sondern wie viel Orientierung sie trotzdem beherrschten.",
+      "creativeRevision": "Visual storytelling rebuild 2026-10-16: scene-specific art direction; script unchanged."
     }
   ],
-  "visualStyleEdition": "premium-illustrated-explainer-v14"
+  "visualStyleEdition": "premium-illustrated-explainer-v14",
+  "artDirectionRevision": "storyboard-rebuild-r1"
 }

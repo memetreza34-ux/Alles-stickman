@@ -2,9 +2,10 @@ PROMPT_LANGUAGE: ENGLISH
 IMAGE PROMPTS ARE WRITTEN IN ENGLISH.
 ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN.
 VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14
-GOOGLE FLOW READY-TO-PASTE FIVE-IMAGE BATCH 52–56
+STRICHKOSMOS VISUAL REBUILD — READY-TO-COPY FIVE-IMAGE BATCH 52–56
 
-Only proceed after the user has selected cover A/B/C and its winner has been saved as Bild 01.png. Create exactly the FIVE numbered images defined below. Each complete standalone prompt repeats the SAME canonical master visual style in full so Google Flow requires no repository lookup or earlier-image reference. If supported, automatically continue through subsequent 5-image batches without user interruption, checking every actual result and repairing only failed image numbers. Never make false claims about saving files or autonomous capabilities. Final images must be individually named PNGs inside one flat folder. On-image text German only.
+This five-image batch is a complete stand-alone Google Flow input. The three original strong COVER candidates A/B/C are UNCHANGED. The user must have selected the cover winner as Bild 01.png before creating Bild 02. After cover selection, if the tool genuinely supports it, advance to the next five-image batch automatically with no new approvals; never claim it can read a separate GitHub file unless verified. For these five scene numbers use the COMPLETE INDIVIDUAL IMAGE PROMPT blocks below without replacing the scene-specific art direction with a generic style instruction. Never generate more than five images concurrently.
+SILENT REAL-IMAGE QC: check whether each output actually explains its specific narration, has an engaging composition comparable in care (NOT in appearance) to the approved covers, uses German-only visible words, avoids the beige empty-landscape / tiny-globe / school-diagram failure modes, and keeps all people unmistakably Stickmen. Re-create ONLY failed numbers. Keep all final numbered images in one shared folder. Use no generated image as reference.
 
 SCENE_KEY: 52
 OUTPUT FILE: Bild 52.png
@@ -33,15 +34,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: globe-diagram
-EXACT NARRATIVE VISUAL: Friendly precise globe cutaway with equator and just three latitude lines, a tiny sailing ship near a northern latitude, sun and stars. Large simple shapes and negative space.
-HISTORICAL / TECHNICAL ACCURACY: Approximate historical position estimates; visibly account for drift and errors.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: latitude across globe.
+SCRIPT MEANING IN ENGLISH: A HUGE elegantly drawn Earth sphere with exactly a few thick horizontal latitude rings, equator easy to recognize and a ship at a mid-northern latitude. Sun and stars are subtle framing clues, not floating stickers. Choose a strong diagonal viewpoint with the globe filling 75 percent of image, so viewers see what north-versus-south means.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: A HUGE elegantly drawn Earth sphere with exactly a few thick horizontal latitude rings, equator easy to recognize and a ship at a mid-northern latitude. Sun and stars are subtle framing clues, not floating stickers. Choose a strong diagonal viewpoint with the globe filling 75 percent of image, so viewers see what north-versus-south means.
+SHOT SCALE / COLOR / CAMERA: object-only dimensional hand-drawn Earth infographic, indigo ocean and clean warm lines.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about deadreckoning through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Dead reckoning estimates changing position from known starting point, direction, elapsed time and speed; errors accumulate.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: No tiny illegible star charts or vague washed-out globe.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 53
 OUTPUT FILE: Bild 53.png
@@ -70,15 +75,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: globe-diagram
-EXACT NARRATIVE VISUAL: Large globe seen at an angle, clear equator and selected horizontal latitude circles; one point north of equator. No busy country boundaries or unnecessary figures.
-HISTORICAL / TECHNICAL ACCURACY: Navigation tools from their appropriate eras; Polaris only north of equator, chronometer only later in history.
-EXACT IMAGE TEXT (GERMAN ONLY): "BREITENGRAD". Display ONLY these exact words, large, spelled correctly, never any additional text.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: latitude physical meaning.
+SCRIPT MEANING IN ENGLISH: Oversized beautiful globe occupies center frame, tilted modestly; a broad equator band divides north and south, and a single emphasized horizontal latitude circle crosses a ship position clearly ABOVE the equator. One large German label 'BREITENGRAD' aligns near that circle. Use an angular shadow along Earth's rim for depth and restrained clear geometry.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: Oversized beautiful globe occupies center frame, tilted modestly; a broad equator band divides north and south, and a single emphasized horizontal latitude circle crosses a ship position clearly ABOVE the equator. One large German label 'BREITENGRAD' aligns near that circle. Use an angular shadow along Earth's rim for depth and restrained clear geometry.
+SHOT SCALE / COLOR / CAMERA: large informative Earth close-up, deep blue oceans and golden ring contrast.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about latitude through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Latitude lines are east-west rings; north/south position is distinct from east-west longitude; historic sextant/chronometer eras must be credible.
+IMAGE TEXT LIMIT: ONLY render these exact German words, if text can be written accurately: "BREITENGRAD". No extra lettering.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not confuse latitude with vertical longitude meridians.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 54
 OUTPUT FILE: Bild 54.png
@@ -107,15 +116,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: angle-diagram
-EXACT NARRATIVE VISUAL: A sailor observes Polaris above horizon. One large simple measured angle from flat sea horizon to star; understandable geometry, no astronomical wall of text.
-HISTORICAL / TECHNICAL ACCURACY: Navigation tools from their appropriate eras; Polaris only north of equator, chronometer only later in history.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: polaris altitude angle.
+SCRIPT MEANING IN ENGLISH: An extremely legible SEASIDE GEOMETRY illustration: at lower left a deck-height northern-hemisphere navigator looks from a clear horizontal sea line up toward a large Polaris dot. One clean diagonal sightline and one single amber angular wedge show the altitude measured upward from horizon, WITHOUT fake exact degree values. Keep most of the frame for sky and geometrical clarity.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: An extremely legible SEASIDE GEOMETRY illustration: at lower left a deck-height northern-hemisphere navigator looks from a clear horizontal sea line up toward a large Polaris dot. One clean diagonal sightline and one single amber angular wedge show the altitude measured upward from horizon, WITHOUT fake exact degree values. Keep most of the frame for sky and geometrical clarity.
+SHOT SCALE / COLOR / CAMERA: object-and-diagram hybrid with three giant elements and twilight palette.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about latitude through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Latitude lines are east-west rings; north/south position is distinct from east-west longitude; historic sextant/chronometer eras must be credible.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: No cluttered globe inset or extra compass symbols; Polaris is not available in southern hemisphere.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 55
 OUTPUT FILE: Bild 55.png
@@ -144,15 +157,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: object-collage
-EXACT NARRATIVE VISUAL: Three period-diverse navigational measuring instruments (mariner's astrolabe, quadrant, sextant) laid out as large carefully drawn 2D objects without text. Different eras implied by composition, not same-time confusion.
-HISTORICAL / TECHNICAL ACCURACY: Navigation tools from their appropriate eras; Polaris only north of equator, chronometer only later in history.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: tools through eras.
+SCRIPT MEANING IN ENGLISH: An attractive museum-grade editorial progression across a SINGLE solid tabletop: LARGE mariner's astrolabe of brass at left, LARGE historic quadrant centered, recognizable early-modern sextant at right, each illustrated with mechanically distinct shapes and eye-catching metal/wood textures. A soft journey of light across objects indicates development over time; no sailor needed and no year stamps.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: An attractive museum-grade editorial progression across a SINGLE solid tabletop: LARGE mariner's astrolabe of brass at left, LARGE historic quadrant centered, recognizable early-modern sextant at right, each illustrated with mechanically distinct shapes and eye-catching metal/wood textures. A soft journey of light across objects indicates development over time; no sailor needed and no year stamps.
+SHOT SCALE / COLOR / CAMERA: three-object focal still-life, warm light neutral background with gold and slate accents.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about latitude through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Latitude lines are east-west rings; north/south position is distinct from east-west longitude; historic sextant/chronometer eras must be credible.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not suggest every instrument had exactly the same design or was invented together.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 56
 OUTPUT FILE: Bild 56.png
@@ -181,11 +198,15 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: globe-comparison
-EXACT NARRATIVE VISUAL: Two ships at widely separated east-west points on the very same latitude line. Clear globe and horizontal line; position uncertainty visually obvious.
-HISTORICAL / TECHNICAL ACCURACY: Navigation tools from their appropriate eras; Polaris only north of equator, chronometer only later in history.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: longitude two points same latitude.
+SCRIPT MEANING IN ENGLISH: Replace the previously weak tiny sepia-globe illustration with a bold clean HIGH-CONTRAST global longitude problem diagram. A large saturated blue globe fills at least two-thirds of the frame, viewed obliquely so a single gold latitude band wraps across it. Two conspicuous ships are positioned FAR APART east–west on that SAME horizontal band, with separated bright location dots and a wide curved gap between them. Their shared latitude MUST be visually obvious while their missing east-west coordinate remains ambiguous. Zero stickmen, zero text, no antique map/paper, no microscopic globe or floating mini-panels.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: Replace the previously weak tiny sepia-globe illustration with a bold clean HIGH-CONTRAST global longitude problem diagram. A large saturated blue globe fills at least two-thirds of the frame, viewed obliquely so a single gold latitude band wraps across it. Two conspicuous ships are positioned FAR APART east–west on that SAME horizontal band, with separated bright location dots and a wide curved gap between them. Their shared latitude MUST be visually obvious while their missing east-west coordinate remains ambiguous. Zero stickmen, zero text, no antique map/paper, no microscopic globe or floating mini-panels.
+SHOT SCALE / COLOR / CAMERA: bold giant globe, electric ocean teal and navy with large warm-gold ring and two ship silhouettes.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about latitude through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Latitude lines are east-west rings; north/south position is distinct from east-west longitude; historic sextant/chronometer eras must be credible.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Absolutely no beige handwritten textbook globe with tiny stickmen and floating question marks.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 

@@ -2,9 +2,10 @@ PROMPT_LANGUAGE: ENGLISH
 IMAGE PROMPTS ARE WRITTEN IN ENGLISH.
 ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN.
 VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14
-GOOGLE FLOW READY-TO-PASTE FIVE-IMAGE BATCH 37–41
+STRICHKOSMOS VISUAL REBUILD — READY-TO-COPY FIVE-IMAGE BATCH 37–41
 
-Only proceed after the user has selected cover A/B/C and its winner has been saved as Bild 01.png. Create exactly the FIVE numbered images defined below. Each complete standalone prompt repeats the SAME canonical master visual style in full so Google Flow requires no repository lookup or earlier-image reference. If supported, automatically continue through subsequent 5-image batches without user interruption, checking every actual result and repairing only failed image numbers. Never make false claims about saving files or autonomous capabilities. Final images must be individually named PNGs inside one flat folder. On-image text German only.
+This five-image batch is a complete stand-alone Google Flow input. The three original strong COVER candidates A/B/C are UNCHANGED. The user must have selected the cover winner as Bild 01.png before creating Bild 02. After cover selection, if the tool genuinely supports it, advance to the next five-image batch automatically with no new approvals; never claim it can read a separate GitHub file unless verified. For these five scene numbers use the COMPLETE INDIVIDUAL IMAGE PROMPT blocks below without replacing the scene-specific art direction with a generic style instruction. Never generate more than five images concurrently.
+SILENT REAL-IMAGE QC: check whether each output actually explains its specific narration, has an engaging composition comparable in care (NOT in appearance) to the approved covers, uses German-only visible words, avoids the beige empty-landscape / tiny-globe / school-diagram failure modes, and keeps all people unmistakably Stickmen. Re-create ONLY failed numbers. Keep all final numbered images in one shared folder. Use no generated image as reference.
 
 SCENE_KEY: 37
 OUTPUT FILE: Bild 37.png
@@ -33,15 +34,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: object-context
-EXACT NARRATIVE VISUAL: Old coastal chart in close-up with one large cape and two harbor markers; navigator visually compares drawn coastline with a matching real cape beyond the cabin window. Readable, zero tiny place names.
-HISTORICAL / TECHNICAL ACCURACY: Historic survey and navigation maps drawn as real objects, not a forced full-picture antique aesthetic.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: chart matches coast.
+SCRIPT MEANING IN ENGLISH: A beautifully illustrated large chart covers the foreground table with one unmistakable jutting cape and safe bay shape; through a wide ship cabin window the matching cape and bay appear in the world at the same orientation. A navigator's ink-line finger aligns the chart feature with the actual coastline. Give clear visual correspondence, detailed but clean silhouettes.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: A beautifully illustrated large chart covers the foreground table with one unmistakable jutting cape and safe bay shape; through a wide ship cabin window the matching cape and bay appear in the world at the same orientation. A navigator's ink-line finger aligns the chart feature with the actual coastline. Give clear visual correspondence, detailed but clean silhouettes.
+SHOT SCALE / COLOR / CAMERA: match-cut style object-to-world composition, neutral cabin wood / mist-blue coast.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about maps through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Charts are historical tools; drawing them as objects, not a fixed decorative full-scene parchment style. Inaccuracies must be legible.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: No random place-name labels or contradictory coastline geometries.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 38
 OUTPUT FILE: Bild 38.png
@@ -70,15 +75,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: comparison
-EXACT NARRATIVE VISUAL: Split visual: flawed rough shoreline sketch versus careful accurately surveyed outline of the same coast; clean shapes, not weathered antique map framing.
-HISTORICAL / TECHNICAL ACCURACY: Historic survey and navigation maps drawn as real objects, not a forced full-picture antique aesthetic.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: measurement determines quality.
+SCRIPT MEANING IN ENGLISH: Two large maps of the SAME coastline placed on a desk side by side, one jagged hand-sketched outline with poor scale and one careful measured outline accurately tracing a visible model coastline behind them. A thick clear visual correspondence between the precise right-hand map and the real bay makes the evidence stronger. Do not add people or words; emphasize geometry.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: Two large maps of the SAME coastline placed on a desk side by side, one jagged hand-sketched outline with poor scale and one careful measured outline accurately tracing a visible model coastline behind them. A thick clear visual correspondence between the precise right-hand map and the real bay makes the evidence stronger. Do not add people or words; emphasize geometry.
+SHOT SCALE / COLOR / CAMERA: comparison of precision as a meaningful object-only illustration, vivid teal coast and dark lines.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about maps through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Charts are historical tools; drawing them as objects, not a fixed decorative full-scene parchment style. Inaccuracies must be legible.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not make both maps identical, or depict vague abstract rectangles.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 39
 OUTPUT FILE: Bild 39.png
@@ -107,15 +116,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: story
-EXACT NARRATIVE VISUAL: A navigator discovers that the sketched bay does not match the rugged cliffs outside and holds the map with uncertainty. Distinct illustrative dramatic contrast.
-HISTORICAL / TECHNICAL ACCURACY: Historic survey and navigation maps drawn as real objects, not a forced full-picture antique aesthetic.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: map mismatch danger.
+SCRIPT MEANING IN ENGLISH: Dramatic ship-deck point of view: a sailor holds a chart depicting a wide peaceful bay, but beyond the gunwale actual jagged rocks crowd the mouth of the bay where the chart promised safety. The sailor's eyebrows and stiff raised shoulders sell sudden danger. The chart is an object in hand, not a decorative border. Wind and sharp waves add visual stakes.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: Dramatic ship-deck point of view: a sailor holds a chart depicting a wide peaceful bay, but beyond the gunwale actual jagged rocks crowd the mouth of the bay where the chart promised safety. The sailor's eyebrows and stiff raised shoulders sell sudden danger. The chart is an object in hand, not a decorative border. Wind and sharp waves add visual stakes.
+SHOT SCALE / COLOR / CAMERA: tight foreground chart vs threatening background rocks, deep sea navy and white foam.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about maps through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Charts are historical tools; drawing them as objects, not a fixed decorative full-scene parchment style. Inaccuracies must be legible.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: No impossible invented map text or extra English labels.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 40
 OUTPUT FILE: Bild 40.png
@@ -144,15 +157,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: group-story
-EXACT NARRATIVE VISUAL: Three simple stickman sailors work as a coordinated team: one tracks shoreline through spyglass, another checks compass, another studies chart, all on believable ship deck.
-HISTORICAL / TECHNICAL ACCURACY: Historic survey and navigation maps drawn as real objects, not a forced full-picture antique aesthetic.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: triangulated teamwork.
+SCRIPT MEANING IN ENGLISH: A living shipboard study with three distinct working activities that make sense together: at front one stickman checks a detailed magnetic compass, another compares one simple coast chart on a low table, third points toward a real lighthouse-shaped natural headland through the rigging. The three sightlines converge on one route decision. Keep each figure simple but expressive, large enough to see.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: A living shipboard study with three distinct working activities that make sense together: at front one stickman checks a detailed magnetic compass, another compares one simple coast chart on a low table, third points toward a real lighthouse-shaped natural headland through the rigging. The three sightlines converge on one route decision. Keep each figure simple but expressive, large enough to see.
+SHOT SCALE / COLOR / CAMERA: diagonal team choreography on deck, strong depth and bright coast.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about maps through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Charts are historical tools; drawing them as objects, not a fixed decorative full-scene parchment style. Inaccuracies must be legible.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Avoid generic three people all pointing randomly.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 41
 OUTPUT FILE: Bild 41.png
@@ -181,11 +198,15 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: cinematic
-EXACT NARRATIVE VISUAL: Wide ocean scale shot: tiny old sailing ship in deep blue open water with huge soft layered clouds, crew clearly human-sized but stick-figure silhouettes. Cinematic but still 2D cartoon line art.
-HISTORICAL / TECHNICAL ACCURACY: Early European sailing voyages; plausible compass, sandglass and knotted log-line designs.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: ocean isolation emotional image.
+SCRIPT MEANING IN ENGLISH: Ship from an elevated near-stern angle with a tiny but visible weary stickman lookout standing beside the mast; a vast horizon of deep blue water extends in ALL directions and fills most of the frame. Layered waves, fine rigging and dramatic cloud shadow suggest several days out of sight of land. Do not add an absurd caption or geographic overlay.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: Ship from an elevated near-stern angle with a tiny but visible weary stickman lookout standing beside the mast; a vast horizon of deep blue water extends in ALL directions and fills most of the frame. Layered waves, fine rigging and dramatic cloud shadow suggest several days out of sight of land. Do not add an absurd caption or geographic overlay.
+SHOT SCALE / COLOR / CAMERA: wide cinematic pause, loneliness and scale without blankness, stormy navy with silver light.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about ocean through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Sea currents cause sideways drift; log-line, knotted rope and sandglass belong to historic sailing vessels.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: No coastline or mountain anywhere.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 

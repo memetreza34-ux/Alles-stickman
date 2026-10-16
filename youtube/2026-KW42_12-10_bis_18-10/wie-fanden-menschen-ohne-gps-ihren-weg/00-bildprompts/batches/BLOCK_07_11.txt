@@ -2,9 +2,10 @@ PROMPT_LANGUAGE: ENGLISH
 IMAGE PROMPTS ARE WRITTEN IN ENGLISH.
 ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN.
 VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14
-GOOGLE FLOW READY-TO-PASTE FIVE-IMAGE BATCH 07–11
+STRICHKOSMOS VISUAL REBUILD — READY-TO-COPY FIVE-IMAGE BATCH 07–11
 
-Only proceed after the user has selected cover A/B/C and its winner has been saved as Bild 01.png. Create exactly the FIVE numbered images defined below. Each complete standalone prompt repeats the SAME canonical master visual style in full so Google Flow requires no repository lookup or earlier-image reference. If supported, automatically continue through subsequent 5-image batches without user interruption, checking every actual result and repairing only failed image numbers. Never make false claims about saving files or autonomous capabilities. Final images must be individually named PNGs inside one flat folder. On-image text German only.
+This five-image batch is a complete stand-alone Google Flow input. The three original strong COVER candidates A/B/C are UNCHANGED. The user must have selected the cover winner as Bild 01.png before creating Bild 02. After cover selection, if the tool genuinely supports it, advance to the next five-image batch automatically with no new approvals; never claim it can read a separate GitHub file unless verified. For these five scene numbers use the COMPLETE INDIVIDUAL IMAGE PROMPT blocks below without replacing the scene-specific art direction with a generic style instruction. Never generate more than five images concurrently.
+SILENT REAL-IMAGE QC: check whether each output actually explains its specific narration, has an engaging composition comparable in care (NOT in appearance) to the approved covers, uses German-only visible words, avoids the beige empty-landscape / tiny-globe / school-diagram failure modes, and keeps all people unmistakably Stickmen. Re-create ONLY failed numbers. Keep all final numbered images in one shared folder. Use no generated image as reference.
 
 SCENE_KEY: 07
 OUTPUT FILE: Bild 07.png
@@ -33,15 +34,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: cause-effect
-EXACT NARRATIVE VISUAL: A single simple visual explanation of a hiker staying headed north but avoiding a ridge, ending off target. Contrasting colored intended and actual paths; one prominent destination house icon. No extra labels.
-HISTORICAL / TECHNICAL ACCURACY: Show historical travel/ship facts in appropriate distinct eras and settings.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: course-versus-destination diagram.
+SCRIPT MEANING IN ENGLISH: On a clean illustrated aerial patch of rugged country, show an intended straight dark-blue heading pointing toward a walled town, while the actual amber curved course goes around a steep ravine and misses the town. A charming tiny stick figure is placed at the wrong endpoint and looks back in disbelief. The town and both endpoints should be large enough to read. No compass roses, legend or paragraphs.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: On a clean illustrated aerial patch of rugged country, show an intended straight dark-blue heading pointing toward a walled town, while the actual amber curved course goes around a steep ravine and misses the town. A charming tiny stick figure is placed at the wrong endpoint and looks back in disbelief. The town and both endpoints should be large enough to read. No compass roses, legend or paragraphs.
+SHOT SCALE / COLOR / CAMERA: object-led simplified bird's-eye route illustration; two contrasting thick lines.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about setup through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Make direction and geographic position clearly different; use historically plausible examples and avoid anachronisms.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Never suggest that pointing north provides exact coordinates.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 08
 OUTPUT FILE: Bild 08.png
@@ -70,15 +75,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: environment
-EXACT NARRATIVE VISUAL: A historic trading trail bends around a recognizable river, distinctive sharp mountain and rugged boulder. One small stickman traveler actively points to the matching features. Layered background with clean readable silhouette.
-HISTORICAL / TECHNICAL ACCURACY: Historic countryside and recognizable geographical landmarks; keep route shapes intelligible.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: recognizable natural landmarks.
+SCRIPT MEANING IN ENGLISH: Depict one carefully composed valley landscape containing a zig-zag blue river, a sharply triangular distant mountain, and an unusually split rock pillar. A guide walking with a pack animal points toward the split rock while a companion looks from river to mountain. Make the three landmarks unmistakably DIFFERENT silhouettes, anchored naturally in the land, and visually useful as references.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: Depict one carefully composed valley landscape containing a zig-zag blue river, a sharply triangular distant mountain, and an unusually split rock pillar. A guide walking with a pack animal points toward the split rock while a companion looks from river to mountain. Make the three landmarks unmistakably DIFFERENT silhouettes, anchored naturally in the land, and visually useful as references.
+SHOT SCALE / COLOR / CAMERA: medium-wide eye level with river foreground as natural leading line, layered lush greens + slate cliffs.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about landmarks through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Landscape clues must be geographically coherent; point to actual visible destinations, not empty gestures.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not label every object or flatten into an antique atlas.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 09
 OUTPUT FILE: Bild 09.png
@@ -107,15 +116,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: story
-EXACT NARRATIVE VISUAL: A traveler points toward a stone bridge hidden behind one identifiable hill, with a companion recognizing the landmark. Strong foreground interaction, actual believable bridge, no floating stickers.
-HISTORICAL / TECHNICAL ACCURACY: Historic countryside and recognizable geographical landmarks; keep route shapes intelligible.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: memory versus reality reveal.
+SCRIPT MEANING IN ENGLISH: An experienced simple stickman guide holds up a finger, remembering a distinct hump-shaped hill and the old stone bridge just behind it. In the real landscape, their companion has reached the hilltop and the exact bridge is now appearing over the crest. Frame the bridge as the satisfying visual payoff of remembered knowledge. A discreet pale thought-outline mirroring the bridge is acceptable, but no text.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: An experienced simple stickman guide holds up a finger, remembering a distinct hump-shaped hill and the old stone bridge just behind it. In the real landscape, their companion has reached the hilltop and the exact bridge is now appearing over the crest. Frame the bridge as the satisfying visual payoff of remembered knowledge. A discreet pale thought-outline mirroring the bridge is acceptable, but no text.
+SHOT SCALE / COLOR / CAMERA: medium storytelling shot with a clear reveal; honey light on bridge, cool valley shadow.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about landmarks through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Landscape clues must be geographically coherent; point to actual visible destinations, not empty gestures.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: Do not depict an imaginary impossible floating landmark collage.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 10
 OUTPUT FILE: Bild 10.png
@@ -144,15 +157,19 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: character-interaction
-EXACT NARRATIVE VISUAL: A rural junction with three differentiated stickman travelers: merchant leads pack animal, local herder points toward safe crossing, visitor listens. Dynamic conversational staging, period-appropriate clothes, warm earth accent colors.
-HISTORICAL / TECHNICAL ACCURACY: Historic countryside and recognizable geographical landmarks; keep route shapes intelligible.
-EXACT IMAGE TEXT (GERMAN ONLY): NONE. The finished illustration must contain NO visible words, letters, numerals, text blocks or invented labels.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: social wayfinding action.
+SCRIPT MEANING IN ENGLISH: At a historically plausible rural crossing, show a dusty merchant with a pack animal asking a local shepherd who points emphatically toward a shallow ford in the distance; a third traveler checks the indicated direction. The most important detail is the exchanged useful information: pointing gesture aligned visibly to the crossing. Friendly expressions, interesting distinct poses, foreground faces sizable.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: At a historically plausible rural crossing, show a dusty merchant with a pack animal asking a local shepherd who points emphatically toward a shallow ford in the distance; a third traveler checks the indicated direction. The most important detail is the exchanged useful information: pointing gesture aligned visibly to the crossing. Friendly expressions, interesting distinct poses, foreground faces sizable.
+SHOT SCALE / COLOR / CAMERA: cinematic waist-height group composition, bright clear sky and natural rustic tones.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about landmarks through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Landscape clues must be geographically coherent; point to actual visible destinations, not empty gestures.
+IMAGE TEXT LIMIT: No visible words, numbers, pseudo-text, labels, title or annotations anywhere.
+STRICT SCENE-SPECIFIC AVOIDANCE: People must remain recognizable simple stick figures; not six identical standing avatars.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
-======== NEXT COMPLETE INDIVIDUAL ENGLISH PROMPT ========
+======= NEXT COMPLETE INDIVIDUAL IMAGE PROMPT =======
 
 SCENE_KEY: 11
 OUTPUT FILE: Bild 11.png
@@ -181,11 +198,15 @@ NEGATIVE QUALITY RULES: NO generic neon-green vector school clipart, photo/3D/Pi
 
 FINAL VISUAL CHECK: At mobile size, can the viewer understand the exact spoken idea within two to three seconds? Is the drawing appealing, relevant, well-composed, historically/technically accurate and clearly from the same hand-drawn 2D editorial family? Are all characters genuine stickmen when present, and any text exact readable German? If not, refine and regenerate only that failed image. Checking a written prompt does NOT count as viewing the actual generated image.
 
-SCENE-SPECIFIC DIRECTION
-VISUAL FORMAT: route-map
-EXACT NARRATIVE VISUAL: Highly simplified overhead landscape, not aged paper: a blue winding river leads to two distinctive trees and a village. Draw one clear route with a single thick arrow and a small traveler token.
-HISTORICAL / TECHNICAL ACCURACY: Historic countryside and recognizable geographical landmarks; keep route shapes intelligible.
-EXACT IMAGE TEXT (GERMAN ONLY): "FLUSS FOLGEN". Display ONLY these exact words, large, spelled correctly, never any additional text.
-CAMERA AND COMPOSITION: Make the narrated fact the largest readable visual point. Favor clear shapes, meaningful body language (only if people help), well-observed objects, selective light and layered environment where relevant. The illustration must feel individually art-directed rather than one generic reused template. For diagrams favor cause-and-effect with correct arrows and spatial relationships; for a comparison show two large related moments; for a historical view avoid culturally misplaced technology and show meaningful period cues. Avoid pointless decorative writing. Do not render scene numbers or instructions.
-IMAGE QUALITY ACCEPTANCE: The result should match the premium ink-drawn illustration finish of StrichKosmos, communicate the spoken fact almost immediately on mobile, avoid English or pseudo writing, and remain wholly within this one shared 2D editorial drawing world. If any of these fail, regenerate this scene number only. Never use a generated image as an image reference.
+EPISODE: "Wie fanden Menschen ohne GPS ihren Weg?"
+THIS IS AN INDIVIDUAL SCENE PROMPT. Create ONE 16:9 1920x1080 image for the specified number only.
+ART-DIRECTED VISUAL FORMAT: instruction-following illustrated route.
+SCRIPT MEANING IN ENGLISH: Make a beautiful simplified river valley as a purposeful 2D explanatory landscape: a strong winding blue river guides the viewer's eye from lower left to two tall distinctive trees near a small settlement at upper right. One bold route line stays alongside the river and ends precisely at the paired trees. A very small traveler may follow the path, but the landmark relationship remains dominant. Only exact large German label 'FLUSS FOLGEN'.
+FULL VISUAL DIRECTION — DRAW THIS SPECIFIC IMAGE: Make a beautiful simplified river valley as a purposeful 2D explanatory landscape: a strong winding blue river guides the viewer's eye from lower left to two tall distinctive trees near a small settlement at upper right. One bold route line stays alongside the river and ends precisely at the paired trees. A very small traveler may follow the path, but the landmark relationship remains dominant. Only exact large German label 'FLUSS FOLGEN'.
+SHOT SCALE / COLOR / CAMERA: diagonal aerial-isometric landscape in teal, sand and sage with a single legible route.
+EXPLANATORY PAYOFF: The picture must explain the specific German narration about landmarks through one concrete, legible visual relationship, not merely depict a random historical backdrop.
+SUBJECT ACCURACY: Landscape clues must be geographically coherent; point to actual visible destinations, not empty gestures.
+IMAGE TEXT LIMIT: ONLY render these exact German words, if text can be written accurately: "FLUSS FOLGEN". No extra lettering.
+STRICT SCENE-SPECIFIC AVOIDANCE: No crowded signposts, map legend, or extra German words.
+COMPOSITION REVIEW: Subject clear within 2–3 seconds on a phone; important objects not tiny; meaningful distinction from neighboring scenes; all humans, if present, unmistakable hand-inked stick figures; never an old-map template, flat beige filler, tiny school poster or pointless text. Preserve our high-quality shared illustration finish, not identical visual layouts. If text renders incorrectly, use no text rather than English or gibberish. Output is image only, no explanation and no production notes in the image.
 
