@@ -268,6 +268,35 @@ export async function validatePhase1(projectDirectory) {
 
   }
 
+
+  if (englishPrompt && meta.contentMode === 'longform') {
+    const copyRoot = path.join(p.projectDir, '00-bildprompts');
+    const short = path.join(copyRoot, 'GOOGLE_FLOW_START_COPY.txt');
+    if (!(await exists(short))) errors.push('English prompt project: short ready-to-copy Google Flow starter missing.');
+    else {
+      const starter = await readFile(short, 'utf8');
+      if (!/PROMPT_LANGUAGE: ENGLISH/i.test(starter)) errors.push('English copy starter must be in English.');
+    }
+    for (const letter of ['A', 'B', 'C']) {
+      const file = path.join(copyRoot, 'prompts', `COVER_${letter}_COPY.txt`);
+      if (!(await exists(file))) errors.push('English standalone cover prompt missing: ' + letter);
+    }
+    for (let n = 1; n <= Number(meta.plannedImageCount); n++) {
+      const num = String(n).padStart(2, '0');
+      const file = path.join(copyRoot, 'prompts', `Bild_${num}_COPY.txt`);
+      if (!(await exists(file))) {
+        errors.push('English standalone copy-ready image prompt missing for Bild ' + num);
+        continue;
+      }
+      const standalone = await readFile(file, 'utf8');
+      if (!/PROMPT_LANGUAGE: ENGLISH/i.test(standalone)) errors.push('Image copy prompt must be English: Bild ' + num);
+      if (n > 1) {
+        if (!standalone.includes(`SCENE_KEY: ${num}`)) errors.push('Standalone prompt scene ID mismatch: Bild ' + num);
+        if (!/ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/i.test(standalone)) errors.push('German-only label instruction missing: Bild ' + num);
+      }
+    }
+  }
+
   const images = Array.isArray(mapping.images) ? mapping.images : [];
   if (Number.isInteger(meta.plannedImageCount) && images.length !== meta.plannedImageCount) {
     errors.push(`Mapping enthält ${images.length} Bilder, erwartet ${meta.plannedImageCount}.`);

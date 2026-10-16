@@ -459,6 +459,9 @@ test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und 
       assert.ok(standalone.length > 1800);
     }
   }
+  const index = await readFile(path.join(dir, '00-bildprompts/COPY_INDEX.md'), 'utf8');
+  assert.ok(index.includes('Bild_76_COPY.txt'));
+  assert.ok(index.includes('BLOCK_72_76.txt'));
   const copyStarter = await readFile(path.join(dir, '00-bildprompts/GOOGLE_FLOW_START_COPY.txt'), 'utf8');
   assert.match(copyStarter, /COVER A:/);
   assert.match(copyStarter, /COVER B:/);
