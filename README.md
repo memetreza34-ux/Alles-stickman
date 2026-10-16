@@ -13,6 +13,20 @@ Produktionsrepository für einen deutschsprachigen faceless YouTube-Erklärkanal
 - System-Audit: `channel/SYSTEM_AUDIT.md`
 - komplette Produktionsanleitung: `youtube/WORKFLOW.md`
 
+## Höchste Priorität — lernen nach jedem Video
+
+Nach jeder fertig gerenderten MP4 folgt eine **verbindliche Analyse von Anfang bis Ende**. Mit Zeitstempeln werden Skript-, Hook-, Bild-, Fakten-, Audio-, Schnitt- und Verpackungsprobleme dokumentiert. Die tatsächlichen Ursachen gehen als **getestete, übertragbare Änderungen** in die gemeinsamen Policies, Flow-Prompts, Skriptsysteme und Renderer ein. Neue Projekte werden blockiert, wenn ein lokaler fertiger Export noch keine vollständige Review hat.
+
+```bash
+npm run quality:init -- --dir "youtube/<week>/<slug>"
+# POST_VIDEO_REVIEW.json anhand der realen Datei ausfüllen
+npm run quality:close -- --dir "youtube/<week>/<slug>"
+npm run quality:status
+```
+
+[Verbindlicher Qualitätskreislauf](channel/CONTINUOUS_IMPROVEMENT.md) · [Erkenntnisregister](channel/IMPROVEMENT_LEDGER.json).
+
+
 ## Phase 1: Prompt und Skript direkt öffnen
 
 Nach Phase 1 erscheinen **immer zwei anklickbare Links** im Chat:
