@@ -19,7 +19,7 @@
 - [x] Nach Wahl automatische 5er-Batches, stille Qualitätskontrolle, fehlerhafte Bildnummer gezielt nachbearbeiten.
 - [x] Sichtbarer Text nur wenn notwendig, groß, korrekt und deutsch; keine Produktionsnotizen im Bild.
 - [x] Hashtags in Beschreibung geplant und separate normale YouTube-Tags.
-- [ ] GitHub-CI-Phase-1-Validator (nach Commit überprüfen).
+- [x] GitHub-CI-Phase-1-Validator — Tests erfolgreich (Run 38887029625).
 
 ## Noch nicht vorhanden
 - [ ] Drei tatsächliche Cover-Dateien und Nutzerentscheidung.
