@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "priority": "HIGHEST",
+  "reviewRequiredAfterEveryVideo": true,
+  "reviewGateBeforeNextVideo": true,
+  "policy": "Learn from observed video evidence, identify root cause, make small testable improvements to common policy/templates/code, verify, then reuse next time. Never assert perfect quality or invent user feedback, analytics, or tests.",
+  "stages": [
+    "RENDERED_REVIEW_PENDING",
+    "EVIDENCE_COLLECTED",
+    "ROOT_CAUSE_IDENTIFIED",
+    "FIXED_OR_EXPLICIT_BACKLOG",
+    "VALIDATED",
+    "REVIEW_COMPLETE",
+    "NEXT_VIDEO"
+  ],
+  "requiredReviewAreas": [
+    "hook",
+    "script",
+    "facts",
+    "visuals",
+    "voice",
+    "editing",
+    "titleThumbnail",
+    "export"
+  ],
+  "issueSeverities": [
+    "CRITICAL",
+    "MAJOR",
+    "MINOR"
+  ],
+  "requiredFindingFields": [
+    "area",
+    "severity",
+    "timecodeSeconds",
+    "observation",
+    "rootCause",
+    "action",
+    "status"
+  ],
+  "highSeverityRule": "CRITICAL and MAJOR require FIXED with checked changed files and verification before review closes. MINOR can be BACKLOG with a reason and owner.",
+  "strongRules": [
+    "Watch/listen to the whole final MP4 and note timestamped strengths and defects.",
+    "Separate observable symptom from hypothesized cause; do not confidently diagnose from screenshots alone.",
+    "When an error reveals a systematic failure, improve shared template/policy/validator, not only a single video's prompt.",
+    "Retest the specific error and run repo tests. No unverified improvement claims.",
+    "Do not overfit to one video's taste; hold experiments separately until replicated.",
+    "Preserve simple 2D stickman world, without real human appearance; figures only when helpful.",
+    "Quality means clarity and accuracy, not maximum movement, character count or label count.",
+    "Learn from both mistakes and successful sections.",
+    "No new project while a locally rendered prior video has an unfinished review.",
+    "Analytics must be explicitly provided or available from a connected source; no invented numbers."
+  ],
+  "analyticsFields": [
+    "views",
+    "impressions",
+    "ctrPercent",
+    "averageViewDurationSeconds",
+    "retentionAt30SecondsPercent",
+    "notableDips",
+    "notableSpikes"
+  ],
+  "analyticsPolicy": "Optional post-publication update after YouTube Studio data exists (typically 1–2 days for retention); compare context and video length, do not treat CTR or a spike as proof of one cause.",
+  "references": [
+    {
+      "label": "YouTube Help: audience retention (intro, dips, spikes)",
+      "url": "https://support.google.com/youtube/answer/9314415?hl=de"
+    },
+    {
+      "label": "YouTube Help: interpreting CTR and impressions",
+      "url": "https://support.google.com/youtube/answer/16767369"
+    }
+  ]
+}
