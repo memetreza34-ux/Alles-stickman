@@ -1,0 +1,13 @@
+PROMPT_LANGUAGE: ENGLISH
+VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13
+TYPE: two-moment psychological comparison
+
+Create a clever and expressive 2D editorial stickman explanation graphic about the doorway effect in psychology, 16:9 widescreen.
+
+COMPOSITION: Show two large connected moments in a single clean scene. On the LEFT, a simple expressive stick figure confidently walks toward an open doorway while carrying a clear thought bubble containing a red book. On the RIGHT, the same stickman has just entered the next room and looks genuinely puzzled; the thought bubble now contains only a large question mark. Make the doorway the strong visual transition between both moments.
+
+ART STYLE: Premium hand-drawn animated-explainer aesthetic. Round cream-colored stickman head, simple ink-line limbs, expressive brows and eyes, beautifully drawn simplified interiors, strong charcoal outlines, subtle warm coral and muted teal accents, interesting character acting and balanced negative space. Both rooms should look attractive but not cluttered.
+
+TEXT: No headline and no explanatory paragraphs. One short German label may appear near the doorway if helpful: "TÜRSCHWELLEN-EFFEKT". Otherwise leave the image text-free.
+
+Do not make the character a realistic human. Avoid stiff generic icons, flat classroom clipart, beige historical map styling, English words, complicated charts and small text.

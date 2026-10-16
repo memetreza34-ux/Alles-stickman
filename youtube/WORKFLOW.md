@@ -423,5 +423,9 @@ npm run quality:status
 
 Verbindliche Detailregel: `channel/CONTINUOUS_IMPROVEMENT.md`.
 
-## English Flow prompt standard v12
+## English Flow prompt standard v13
 All generated-image instruction language is English (master, batches, individual copy files); on-image text is exclusively German, large and accurate when necessary. Voice-over remains German. A shared 2D stickman line identity is required, but not a fixed palette or old parchment landscape. Avoid generic green vector clipart and crowded lesson-sheet typography. Use a ready-to-paste short start prompt and scene-wise copy files. QC every batch and update future rules based on actual rendered evidence.
+
+## Endgültige vom Nutzer bestätigte Bildwelt v13
+
+Die fünf ausführlichen englischen Referenzprompts (Stickman-Szene, korrektes Stromkreis-Schema ohne Menschen, Psychologie-Vergleich, geschichtliches Aquädukt und Wasserkreislauf-Infografik) sind unsere verbindlichen Qualitätsbeispiele: `channel/style-reference-prompts/`. Die zentrale Richtlinie heißt `channel/VISUAL_WORLD.md` und ist v13. **Keine Bildart priorisieren**: pro Satz immer die beste visuelle Erklärung wählen; charakterstarke Stickmen nur bei Bedarf. Premium-2D-Zeichnung, klare anthrazitfarbene Tintenlinie, harmonische wechselnde Szenenfarben. Alle KI-Anweisungen Englisch, Bildlabels ausschließlich Deutsch. Keine automatisch generierten Bilder auf eine reine Prompt-Anfrage. Nach jedem fertigen Bildblock echte Resultate auf Lesbarkeit, fachliche Korrektheit und Einhaltung der Bildwelt prüfen.

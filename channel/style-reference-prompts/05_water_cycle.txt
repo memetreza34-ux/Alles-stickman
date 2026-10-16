@@ -1,0 +1,13 @@
+PROMPT_LANGUAGE: ENGLISH
+VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13
+TYPE: coherent scientific process illustration
+
+Create a beautiful and exceptionally clear 2D educational infographic explaining the water cycle for a German YouTube knowledge channel, 16:9 widescreen.
+
+VISUAL: One cohesive illustrated landscape with a deep-blue lake at the bottom, a large warm sun to the upper left, a few well-drawn clouds overhead, rain falling over green hills, and a river flowing back into the lake. Connect these elements with three or four broad elegant directional arrows to make the water cycle intuitive. The visual should feel like one beautifully composed illustration rather than four separate textbook panels.
+
+ART STYLE: Sophisticated creator-grade hand-drawn cartoon editorial illustration, slightly irregular dark ink outlines, pleasing simplified organic shapes, vibrant but balanced sky blue, teal water, soft natural green, warm sunny amber and coral accents. Professional color harmony, clear focal elements, polished details, high readability at mobile size. The same drawing and outline identity as the StrichKosmos stickman educational series.
+
+TEXT: Include only three exact readable German labels: "VERDUNSTUNG", "WOLKEN", "NIEDERSCHLAG". Use large clean lettering. Do not add explanatory sentences.
+
+No stickman characters are needed in this diagram. Avoid cluttered panels, tiny writing, English terms, faded parchment, generic clipart, 3D objects or overly childish schoolbook design.

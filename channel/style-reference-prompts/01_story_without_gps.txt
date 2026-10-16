@@ -1,0 +1,13 @@
+PROMPT_LANGUAGE: ENGLISH
+VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13
+TYPE: expressive Stickman narrative scene
+
+Create a premium 2D editorial cartoon illustration for a German YouTube educational channel, 16:9 widescreen.
+
+SCENE: A historical traveler, drawn as a simple expressive stick figure with a clean round head, thin black limbs, a small brown backpack and a worried facial expression, stands at a dramatic fork in a forest trail. One path leads toward distant mountains; the other disappears into thick trees. The traveler hesitates, scratching his head. The scene feels like a meaningful moment in an animated educational documentary.
+
+ART STYLE: Beautiful hand-drawn cartoon linework with confident slightly irregular dark ink outlines, simple but expressive stickman character design, polished color fills, natural light, layered foreground and background, cinematic framing and professional YouTube explainer quality. Use rich natural greens, cool blue shadows, warm earthy details and strong visual contrast. Characters must remain obvious STICK FIGURES, never anatomically realistic people.
+
+TEXT: Display only the exact large German headline "OHNE GPS?" above the scene. No other text.
+
+Avoid cheap flat vector clipart, bright-green geometric hills, antique parchment maps, 3D, photorealism, excessive texture, tiny labels or unnecessary symbols. The result should be visually captivating and immediately understandable.

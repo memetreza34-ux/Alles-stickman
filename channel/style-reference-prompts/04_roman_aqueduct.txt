@@ -1,0 +1,13 @@
+PROMPT_LANGUAGE: ENGLISH
+VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13
+TYPE: historical illustration with purposeful cutaway
+
+Create a high-quality historical educational illustration showing how an ancient Roman aqueduct brought water toward a city, 16:9 widescreen.
+
+SCENE: A broad but clearly composed view of an impressive Roman aqueduct crossing a shallow valley, leading toward a lively ancient city. A subtle clean technical cutaway along one section reveals the water channel at the top and the gently descending flow toward the city. Draw a few tiny but recognizable simple stickman figures working or walking nearby only to give scale and life. The aqueduct and water transport must remain the main subjects.
+
+ART STYLE: A distinctive premium 2D hand-drawn educational cartoon, confident irregular charcoal outlines, attractive stone textures simplified into readable shapes, soft Mediterranean sky-blue, warm terracotta architecture, muted olive trees, gentle natural shadows. Rich but not crowded. Same simple ink illustration language as a high-end stickman explainer, with historic details suited to Roman antiquity.
+
+VISIBLE TEXT: If needed, use exactly two large German labels: "AQUÄDUKT" and "WASSERKANAL". No other words.
+
+IMPORTANT: Do not make this look like an antique map, old manuscript, medieval fantasy artwork or photorealistic painting. No realistically rendered humans, no 3D, no tiny English notes. Prioritize a striking scene that teaches how the system worked.

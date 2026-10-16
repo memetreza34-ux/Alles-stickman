@@ -1,310 +1,43 @@
-# Eigene Bildwelt — Alles Stickman
+# StrichKosmos — verbindliche Premium-Bildwelt v13
 
-Status: READY
+**Status:** APPROVED BY USER · **Style-ID:** `alles-stickman-editorial-v1` (Kompatibilität bleibt) · **Style edition:** `premium-illustrated-explainer-v13`
 
-Style-ID: `alles-stickman-editorial-v1`
+## Endgültige Identität
 
-## Ziel
+Die fünf zuletzt freigegebenen **englischen Bildprompts** sind unsere maßgebliche kreative Qualitätsreferenz für **alle Themen**. Wir übernehmen die _Zeichenqualität_ – nicht jedes Motiv, dieselbe Landschaft oder die exakte Farbmischung.
 
-Alles Stickman bekommt eine eigene, wiedererkennbare 2D-Erklärwelt. Die Referenzkanäle zeigen nur das Formatprinzip. Figuren, Linien, Farben, Cover und Kompositionen werden nicht kopiert.
+**Gleichbleibend:** hochwertige von Hand gezeichnet wirkende 2D-Editorial-Illustration; kräftige, leicht unregelmäßige anthrazitfarbene Konturen; schlüssige vereinfachte Gegenstände; selektive Flächenfarben und dezente Schatten; starke klar lesbare Komposition; erzählerische Details; hohe Qualität auch bei kleiner YouTube-/Mobilansicht. Menschen sind, wenn nötig, klar erkennbare Stickman-Figuren mit einfachen schmalen Strichgliedmaßen, runden warmen Köpfen, lebendiger Mimik und passend vereinfachter Kleidung.
 
-Die Bildwelt soll für Evolution, Steinzeit, Antike, Alltag, Erfindungen, Ressourcen, Karten, Diagramme, Infografiken und alle anderen sinnvollen Erklärformen funktionieren.
+**Bewusst wechselnd:** Farbe, Licht, Hintergrund, Epoche, Objektanzahl, Perspektive, Grad der Raumtiefe und das **Bildformat der Erklärung**. Ein Waldweg kann grün/blau, ein Stromkreis neutral/ocker, ein Psychologie-Vergleich korall/teal, eine römische Stadt terrakotta/himmelblau und ein Wasserkreislauf blau/grün sein – alle durch denselben Linien- und Illustrationslook verbunden.
 
-Wichtig: **Konsistenz bedeutet gleiche Welt und gleiche Designlogik – nicht gleiche Bildart und nicht dieselbe Standardfigur.** Ein Video darf visuell stark wechseln, solange Linien, Farben, Figurenlogik, Textbehandlung und Illustrationssprache zusammengehören.
+## Fünf gleichwertige bewährte Bildtypen
 
-## Illustration zuerst
+| Typ | Visuelles Prinzip | Verbindlicher englischer Referenzprompt |
+|---|---|---|
+| Story / Hook | Handlung, Ausdruck, klare Entscheidung, kontextreiche Umgebung | [01 Stickman-Reiseszene](style-reference-prompts/01_story_without_gps.txt) |
+| Technik | Großes korrekt verbundenes Objekt-/Funktionsschema, **keine Figuren erforderlich** | [02 Elektrischer Stromkreis](style-reference-prompts/02_technical_circuit.txt) |
+| Psychologie | Zwei klar verbundene Momente, expressive einfache Stickmen, minimaler Text | [03 Türschwellen-Effekt](style-reference-prompts/03_psychology_doorway.txt) |
+| Geschichte | Historisch passende lebendige Darstellung mit optionalem erklärendem Querschnitt | [04 Römisches Aquädukt](style-reference-prompts/04_roman_aqueduct.txt) |
+| Naturwissenschaft | Schöne einheitliche Prozessillustration mit großen verständlichen Pfeilen und wenigen deutschen Labels | [05 Wasserkreislauf](style-reference-prompts/05_water_cycle.txt) |
 
-Der visuelle Standard für Alles Stickman ist **eine reichhaltige, leicht lesbare Illustration**.
+**Keine Hierarchie:** Die jeweils sinnvollste Visualisierung des gesprochenen Satzes gewinnt. Eine gute Sachgrafik muss keine Figur enthalten. Nicht jede Szene braucht Text, nicht jede zweite Szene eine Infografik und nicht jedes historische Thema eine alte Karte.
 
-Bevorzugt:
-- richtige Handlungsszenen
-- Räume, Landschaften und historische Umgebungen
-- Figuren mit unterschiedlicher Kleidung, Haaren, Bärten, Alter und Rollen
-- mehrere passende Gegenstände und Requisiten
-- Objekt-in-Kontext-Bilder
-- Vorher/Nachher als zwei illustrierte Situationen
-- Prozesse als kleine zusammenhängende Szenen
-- Multi-Panels aus 2–3 echten Mini-Szenen
+## Sprache und Copy-Workflow
 
-Diagramme, Karten, Zeitleisten, Text-/Zahlenbilder und Infografiken bleiben erlaubt. Sie sind aber **nicht der Standard**. Sie werden benutzt, wenn sie die konkrete Aussage wirklich schneller oder präziser erklären als eine normale Illustration.
+- **Alle Google-Flow-Prompts, Cover-, Szenen- und Batch-Anweisungen werden komplett auf Englisch geschrieben.**
+- **Alle im fertigen Bild sichtbaren Wörter müssen auf Deutsch sein.** Labels nur bei echtem Nutzen, üblicherweise 0–2, bei technischen/naturwissenschaftlichen Diagrammen maximal 3. Genau vorgeben; wenn Google Flow Schreibfehler erzeugt, Bildtext wegnehmen und ggf. im Schnitt als Overlay hinzufügen.
+- Sprechertext bleibt auf Deutsch. Die vollständigen englischen Prompts werden als direkt kopierbare Dateien in den Video-Ordnern abgelegt.
+- Wenn Menschen gezeigt werden, bleiben sie Stickmen. **Gegenstände, Landschaften, Querschnitte und Abläufe dürfen ganz ohne Menschen sein.**
+- Stets 16:9 (1920×1080), gut lesbar bei kleinem Bild.
 
-Wichtig: Abstrakter Inhalt bedeutet nicht automatisch Infografik. Zuerst prüfen, ob eine Szene, ein Objekt im Kontext oder ein illustrierter Vergleich funktioniert.
+## Harte No-Gos
 
-Mehrere sterile Info-/Diagramm-Karten direkt hintereinander sollen vermieden werden.
+Keine fotorealistischen oder halb-realistischen Menschen; kein 3D/Pixar/Anime; keine ständig gleiche beige historische Buch-/Pergamentkarte; keine grellgrüne Vektor-Schulclipart; keine vier winzigen Arbeitsblatt-Kästen; keine langen oder englischen Bildbeschriftungen; keine automatisch eingefügten Überschriften; keine generierten Bildreferenzen oder mitgerenderten Prompt-Metadaten.
 
-## Bilddichte — reichhaltig, aber klar
+## Gilt ab sofort
 
-Die Zielrichtung ist **nicht minimalistisch**. Ein Bild darf mehrere zusammengehörige Dinge zeigen: mehrere Figuren, Gegenstände, kleine Nebenhandlungen, Pfeile, Labels, Teilbereiche oder Hintergrunddetails.
-
-Wichtig ist die Hierarchie:
-- die wichtigsten 1–3 Blickpunkte müssen sofort erkennbar sein
-- weitere Details dürfen danach entdeckt werden
-- mehrere Inhalte sind gut, wenn sie dieselbe Aussage unterstützen
-- ein Bild ist erst zu komplex, wenn die Kernaussage oder Leserichtung verloren geht
-- lieber eine lebendige erklärende Illustration als eine fast leere Symbolgrafik
-
-## Figuren
-
-- vereinfachter Stickman-/Cartoon-Körper
-- schlanke Gliedmaßen
-- leicht ovaler bis runder Kopf
-- warme Elfenbein-Kopffarbe statt reinem Digital-Weiß
-- klare dunkle Außenlinie
-- einfache große Augen und gut lesbare Pupillen
-- ausdrucksstarke Augenbrauen
-- klarer Mund
-- Emotionen müssen auch als kleines YouTube-Bild lesbar sein
-- Haare und Bärte leicht handgezeichnet und unregelmäßig
-- Hände einfach halten, keine realistischen Finger-Details
-- Kleidung reduziert, aber epochemäßig plausibel
-- Figuren dürfen deutlich variieren: andere Kleidung, Haare, Bärte, Alter, Körperformen, Hauttöne, Accessoires und Rollen
-- keine Pflicht, immer dieselbe Figur oder denselben Charaktertyp zu wiederholen
-- die gemeinsame Welt entsteht durch Zeichenstil, Linien, Gesichtslogik und Farbwelt
-
-## Linien
-
-- dunkles Anthrazit
-- mittelstarke Kontur
-- leicht unregelmäßige Tintenwirkung
-- keine sterile Vektorperfektion
-- keine stark glänzende 3D-Schattierung
-
-## Farben
-
-Grundpalette:
-- Charcoal `#242321`
-- Warm Ivory `#F1E5CF`
-- Sand `#D5B17A`
-- Ochre `#C48A35`
-- Rust `#A75842`
-- Sage `#7B8A65`
-- Muted Blue `#6B8FA3`
-- Night Navy `#2B3948`
-
-Regel:
-- wenige dominante Farben je Szene
-- natürliche, eher gedämpfte Grundpalette
-- kräftige Akzente nur für Blickführung, Gefahr, Feuer, wichtige Objekte oder wichtige Datenpunkte
-
-## Hintergründe
-
-- mittel bis reichhaltig detailliert, wenn es zum Inhalt passt
-- Ort und Epoche müssen sofort erkennbar sein
-- mehrere passende Requisiten, Personen und Umgebungsdetails sind erlaubt
-- Hintergrund darf lebendig sein, solange die Hauptidee klar bleibt
-- historische Architektur, Werkzeuge, Vegetation und Requisiten soweit möglich plausibel
-- Vordergrund, Mittelgrund und Hintergrund dürfen klar getrennt sein
-
-## Visual Forms — ausdrücklich frei wählbar
-
-Nicht jede Szene braucht Menschen. Nicht jedes Bild muss eine klassische Szene sein.
-
-Erlaubt und erwünscht sind unter anderem:
-- Stickman-Handlungsszene
-- reine Objekt-/Fundstück-Erklärung
-- Nahaufnahme eines wichtigen Gegenstands
-- Vorher-Nachher-Vergleich
-- Ursache-Wirkung
-- Karte mit Route oder Ausbreitung
-- Zeitleiste
-- Schritt-für-Schritt-Prozess
-- Balken-, Linien- oder Mengenvergleich
-- einfache Statistik-/Zahlenvisualisierung
-- Infografik mit kurzen Labels
-- Querschnitt
-- Explosionsdarstellung / Bestandteile
-- Split-Screen
-- 2er- oder 3er-Multi-Panel
-- Hauptbild mit kleinen erklärenden Nebenfeldern
-- mehrere kleine Szenen in einem Bild, wenn sie gemeinsam einen Ablauf erklären
-- einfache Tabelle oder Matrix
-- großer Text-/Zahlenfokus mit unterstützender Illustration
-- Symbol-/Icon-Erklärung im Alles-Stickman-Stil
-- Umgebung ohne Menschen
-- reine Sachillustration ohne Figur
-
-Die Visual Form wird **pro Aussage neu gewählt**. Es gibt keine Pflicht, ständig Stickman-Figuren zu zeigen. Trotzdem gilt als Priorität: **Illustration/Szene zuerst, reine Infografik nur wenn sie klarer erklärt.**
-
-## Mehrere Bilder / Panels in einem Frame
-
-Ein einzelnes 16:9-Bild darf mehrere Teilbilder enthalten, wenn dadurch die Erklärung besser wird.
-
-Gute Beispiele:
-- links „vorher“, rechts „nachher“
-- links Ursache, rechts Wirkung
-- drei Schritte eines Prozesses
-- drei verschiedene Epochen
-- Hauptszene plus zwei kleine Detailfelder
-- Karte plus kleines Objekt-/Figurenfeld
-
-Regeln:
-- klare Leserichtung
-- 2–4 gut lesbare Teilbereiche sind möglich
-- Panels dürfen mehrere passende Details enthalten; sie müssen nicht künstlich leer sein
-- alle Panels bleiben in derselben Alles-Stickman-Welt
-- Panels müssen inhaltlich zusammengehören
-- keine zufällige Collage
-- Text, Pfeile oder Nummern dürfen die Leserichtung unterstützen
-
-## Text, Informationen und Diagramme
-
-Text ist erlaubt und kann bewusst Teil eines Bildes sein.
-
-Erlaubt:
-- kurze deutsche Überschriften
-- kurze Labels
-- Jahreszahlen
-- Namen
-- wichtige Zahlen
-- Pfeile
-- 1–3 sehr kurze Infozeilen, wenn nötig
-- Kartenbeschriftungen
-- Diagrammachsen/-werte, wenn sie gut lesbar bleiben
-
-Nicht erwünscht:
-- lange Absätze
-- Textwände
-- Pseudotext
-- kleine unlesbare Beschriftungen
-- überladene Dashboard-Optik
-
-Diagramme, Karten, Zeitleisten und Infografiken müssen **nicht wie Fremdkörper** aussehen. Sie verwenden dieselbe Palette, dieselbe Linienlogik, ähnliche Formen und denselben handgezeichneten Editorial-Charakter wie die übrigen Szenen.
-
-## Cover / Bild 01
-
-Bild 01 ist:
-- Cover
-- erste Videoszene
-- **keine Referenzvorlage für spätere Bilder**
-
-Pro Video werden exakt drei Cover-Kandidaten erzeugt.
-
-**Nach genau drei Cover-Kandidaten gilt HARD STOP. Der Nutzer wählt A, B oder C. Google Flow darf nicht selbst entscheiden.**
-
-Ein starkes Cover hat:
-- eine Hauptidee
-- typischerweise 1–3 große Figuren oder 1 Figur plus 1 Hauptobjekt
-- starke Emotion
-- sehr einfache Blickführung
-- reduzierten Hintergrund
-- das Thema muss in ungefähr einer Sekunde verständlich sein
-
-Wenn Text genutzt wird:
-- maximal 2–4 kurze deutsche Wörter
-- sehr groß
-- sehr hoher Kontrast
-- kein Pseudotext
-- keine exakte Typografie eines Referenzkanals kopieren
-
-Nach der ausdrücklichen Nutzerwahl:
-- gewählter Kandidat → `Bild 01.png`
-- zwei Verlierer löschen
-- keine Kopien der Verlierer behalten
-- vor der Nutzerwahl darf kein Bild 02 erzeugt werden
-
-## Keine Bildreferenzen für Folgebilder
-
-Für `Bild 02.png` bis `Bild NN.png` wird **kein bereits erzeugtes Bild als Referenzvorlage** verwendet.
-
-Also ausdrücklich nicht:
-- `Bild 01.png`
-- andere Cover-Kandidaten
-- vorherige Szenenbilder
-- fremde Referenzbilder
-
-Die Konsistenz entsteht ausschließlich aus:
-1. `config/visual-policy.json`
-2. dem vollständigen individuellen Textprompt jedes Bildes
-3. den festen Regeln für Linien, Farben, Figuren, Text und Informationsdesign
-
-Warum: Ein Cover ist auf Klickstärke optimiert. Würde man es als Referenzvorlage für Karten, Diagramme, Multi-Panels oder Objektgrafiken nutzen, kann es die visuelle Freiheit unnötig einschränken oder immer wieder ähnliche Kompositionen erzeugen.
-
-## Story-Welt-Kontinuität
-
-Für neue Pipeline-v7+-Videos wird in `99-technik/video.json` ein `visualContinuityProfile` gepflegt.
-
-Es definiert:
-- Grundumgebung / Landschaft
-- Klima und Jahreszeit
-- Epoche
-- Farb-/Stimmungsanker
-- erlaubte bewusst erzählte Wechsel
-- verbotene unbegründete Wechsel
-
-Wichtig: Konsistenz heißt **nicht**, dass jedes Bild gleich aussehen soll. Perspektive, Figuren, Kleidung, Handlung und Komposition dürfen variieren. Aber die erzählte Welt muss logisch bleiben.
-
-Beispiel: Ein Video über einen eisigen Winter darf nicht ohne Erzählgrund plötzlich eine sattgrüne warme Landschaft zeigen.
-
-## Stille Bild-QC
-
-Nach jedem 5er-Block prüft der Bild-Agent seine erzeugten Bilder selbst, ohne den Nutzer zu unterbrechen.
-
-Geprüft werden:
-- Inhalt passt zu Audio/Topic Anchor
-- Umgebung/Klima/Epoche passen
-- Anatomie und Objekte sind sauber
-- Text ist korrekt und lesbar
-- Bild ist schnell verständlich
-- keine unnötige Überladung
-- kein Style Drift / AI-Slop
-
-Fällt ein Bild durch, wird nur diese Bildnummer neu erzeugt und erneut geprüft. Erst danach läuft der nächste Block automatisch weiter.
-
-## Historische Plausibilität
-
-Bei historischen Themen:
-- Epoche beachten
-- moderne Gegenstände vermeiden
-- Kleidung und Werkzeuge plausibel halten
-- bei Unsicherheit lieber vereinfachen als spezifische falsche Details erfinden
-
-## Sichtbarer Text
-
-- Deutsch
-- keine Fantasieschrift
-- keine langen Absätze
-- kurze Labels erlaubt
-- Zahlen und Jahreszahlen erlaubt
-- kurze Überschriften erlaubt
-- Karten und Diagramme dürfen kurze Beschriftungen enthalten
-
-## Verboten
-
-- direkte Stilkopie eines bestehenden Referenzkanals
-- 3D-Pixar-Look
-- Fotorealismus
-- Anime/Manga-Look
-- generische glänzende KI-3D-Optik
-- Pseudotext
-- lange Textwände statt visueller Erklärung
-- überladene Dashboard-Infografiken
-- zufällige Collagen ohne klare Leserichtung
-- deformierte Hände
-- zusätzliche Gliedmaßen
-- überladene Hintergründe ohne Erklärwert
-- dieselbe Pose über viele Szenen
-- unnötige Menschenmengen
-- unplausible moderne Gegenstände in historischen Szenen
-- fremde Logos oder Wasserzeichen
-- Verwendung eines bereits generierten Bildes als Referenzvorlage für ein neues Szenenbild
-
-## Produktionsregel
-
-Nach dem vom Nutzer gewählten Cover werden Folgebilder automatisch in 5er-Blöcken erzeugt. Sobald ein Block fertig gespeichert ist, startet ohne Rückfrage der nächste Block bis Bild NN. Danach wird der gemeinsame Bilderordner vollständig geprüft; fehlende oder technisch kaputte Bildnummern werden gezielt neu erzeugt. Jedes Nicht-Cover-Bild wird genau einmal erzeugt, außer bei diesem Reparaturfall oder eindeutig unbrauchbarem Output.
-
-Am Ende liegen alle finalen Bilder gemeinsam und flach in:
-
-`00-bildprompts/images/`
-
-Nur:
-
-`Bild 01.png` bis `Bild NN.png`
-
-## Mehr Ausdruck, weniger Beschriftungschaos
-
-Das Cover ist Qualitätsmaßstab für emotionale Bildwirkung: Auch normale Bilder dürfen eine sichtbare Handlung, ausdrucksstarke Augenbrauen, variierende Körperhaltung, aktive Hände und klare Tiefenstaffelung haben. **Nicht** das Coverbild als Referenz oder Layout-Vorlage verwenden.
-
-Besonders bei Querschnitten und Karten keine unnötigen winzigen Legenden, doppelte Panel-Untertitel, englischen Kleinsttext oder Planungsnotizen wie `GEPLANTER HOLD` rendern. Standard sind 0–2 große deutsche Labels, normalerweise maximal 3. Ruhige Sachbilder bleiben dann sinnvoll, wenn sie eine Tatsache klarer erklären als eine Handlungsszene.
-
-## v12: Consistent stickman drawing, creative explainer imagery
-English image-generation prompts; German text only in finished images. Varied attractive 2D layouts, not the same historic beige map every time. Humans must always look like expressive stickmen and appear only where they help. Include object cutaways, clean comparisons, creative scene storytelling, minimal readable text. Reject simple green flat vector clipart, maps with English annotations, decorative parchment, tiny four-step textbook sheets. More contrast, deliberate staging and flexible thematic color, without copying other channels.
+- Zentral: `config/visual-policy.json` ab v13.
+- Vorlagen: `youtube/templates/video-template/00-bildprompts/`.
+- Bestehendes GPS-Video: alle individuellen englischen Prompts / Batch-Dateien und der Master verwenden die gleiche Stilidentität.
+- Neue Videos: Promptautor muss pro Skriptsatz **Bildtyp begründen**, im passenden Editorial-Look formulieren und im 5er-Block still anhand echter Resultate prüfen; gesprochene Szene und realer Bildinhalt müssen übereinstimmen.
+- Die fünf Prompts sind **Stilreferenzen**, keine automatische Bildgenerierung. Nie ohne ausdrücklichen Wunsch selbst Bilder erstellen.

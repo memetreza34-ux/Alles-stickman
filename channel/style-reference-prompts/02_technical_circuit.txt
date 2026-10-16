@@ -1,0 +1,13 @@
+PROMPT_LANGUAGE: ENGLISH
+VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13
+TYPE: accurate object-only technical explainer
+
+Create a premium educational 2D illustration explaining how a simple electrical circuit lights a bulb, in 16:9 widescreen.
+
+MAIN VISUAL: A large clearly drawn battery on the left, a simple CLOSED switch in the middle and a glowing incandescent light bulb on the right. All three elements are connected by a physically continuous closed wire loop. Make the electrical connections understandable at first glance. Use a restrained orange highlight to emphasize the active closed circuit. Add only the following exact German labels: "Batterie", "Schalter", "Lampe".
+
+ART STYLE: Same visual identity as a sophisticated hand-drawn stickman YouTube explainer: confident dark charcoal outlines, charming illustrative objects, clear simplified geometry, subtle imperfections in the linework, beautiful restrained shading, a clean warm-white background, blue-gray structure and amber highlights. Professional illustrated infographic, not a textbook screenshot.
+
+This is an OBJECT-ONLY illustration. Do not insert a stickman character; people would distract from the explanation. The objects must be large, polished and visually balanced.
+
+Avoid tiny paragraphs, wrong circuit connections, 3D rendering, stock icons, generic green backgrounds, antiqued parchment, English words or random decorative text.

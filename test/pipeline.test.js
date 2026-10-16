@@ -137,12 +137,17 @@ test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', 
   assert.equal(visual.referenceConsistency.generatedImageReferenceForbidden, true);
   assert.equal(visual.multiPanelPolicy.allowed, true);
   assert.equal(visual.informationDesign.sameWorldRequired, true);
-  assert.equal(visual.visualPolicyVersion, 12);
+  assert.equal(visual.visualPolicyVersion, 13);
+  assert.equal(visual.visualStyleEdition, 'premium-illustrated-explainer-v13');
+  assert.equal(visual.visualDesignV13.figuresOptional, true);
+  assert.equal(visual.visualDesignV13.allFormatsEqualWhenBest, true);
   assert.equal(visual.promptLanguage, 'en');
   assert.equal(visual.visibleTextLanguage, 'de');
-  assert.equal(visual.visualFormPriority.default, 'explanation-first');
+  assert.equal(visual.visualFormPriority.default, 'best-format-for-spoken-statement');
   assert.ok(visual.visualFormPriority.preferred.includes('reichhaltige Stickman-Handlungsszene'));
-  assert.ok(visual.visualFormPriority.useOnlyWhenClearer.includes('reine Infografik'));
+  assert.ok(visual.visualFormPriority.preferred.includes('leicht lesbare Infografik mit konkreter Sachillustration'));
+  assert.ok(visual.visualFormPriority.preferred.includes('präzise 2D-Objekt-Erklärung ohne Figur'));
+  assert.equal(visual.visualDesignV13.referenceForms.length, 5);
   assert.equal(visual.textPolicy.labelsAllowed, true);
   assert.equal(visual.textPolicy.numbersAllowed, true);
   assert.equal(visual.environmentContinuity.noUnmotivatedEnvironmentShift, true);
@@ -574,4 +579,19 @@ test('Keine Alt-Themen oder fremde Alt-Bildwelt wurden in die zentrale Konfigura
     'römische reich'
   ];
   for (const value of forbidden) assert.equal(text.includes(value), false, `Altspur gefunden: ${value}`);
+});
+
+test('Nutzerfreigegebene Bildwelt v13 enthält fünf auf Englisch kopierbare Stilreferenzen', async () => {
+  const names = ['01_story_without_gps.txt','02_technical_circuit.txt','03_psychology_doorway.txt','04_roman_aqueduct.txt','05_water_cycle.txt'];
+  for (const name of names) {
+    const prompt = await readFile(path.join('channel/style-reference-prompts', name), 'utf8');
+    assert.match(prompt, /PROMPT_LANGUAGE: ENGLISH/);
+    assert.match(prompt, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13/);
+    assert.match(prompt, /ART STYLE:/);
+    assert.ok(prompt.length > 1100, name + ' needs to be self-contained');
+  }
+  const style = await readFile('channel/VISUAL_WORLD.md', 'utf8');
+  assert.match(style, /Fünf gleichwertige bewährte Bildtypen/);
+  const tpl = await readFile('youtube/templates/video-template/00-bildprompts/google-flow-prompt.txt', 'utf8');
+  assert.match(tpl, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13/);
 });
