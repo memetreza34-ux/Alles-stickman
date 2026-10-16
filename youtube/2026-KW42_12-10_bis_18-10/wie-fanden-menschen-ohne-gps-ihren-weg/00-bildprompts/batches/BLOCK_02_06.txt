@@ -1,0 +1,68 @@
+STRICHKOSMOS 6:30, BILDER 2–6.
+Voraussetzung: COVERWAHL A/B/C abgeschlossen, Bild 01 bereits gespeichert. Maximal 5 Bilder gleichzeitig. Jedes Bild mit individuellem Prompt, NICHT anhand voriger Bilder generieren. Danach interne stille Bild-QC für Stickman-Stil, Epoche, Handlung, Text, Anatomie; beschädigtes/fehlerhaftes Bild nur unter derselben Nummer reparieren; anschließend OHNE NACHFRAGE zum nächsten Batch. Finale PNGs nur Bild XX.png im gemeinsamen Ordner.
+
+Bild 02 (ca. 4.98s nur zur Produktionsplanung, nicht rendern)
+Gesprochene Aussage: Trotzdem erreichten Reisende ferne Städte, überquerten Wüsten und steuerten Schiffe über riesige Ozeane.
+Audio Anchor: Trotzdem erreichten Reisende ferne Städte, überquerten
+Visual Purpose: Lebendiger verbindender Blick von historischer Handelsstraße zur Wüste und fernem Segelschiff, keine moderne Technik
+Topic Anchor: Verirrt ohne GPS
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
+Feste Kapitelwelt: Historischer Waldweg, neutrale frühe Neuzeit
+Erzählter Sachverhalt: Trotzdem erreichten Reisende ferne Städte, überquerten Wüsten und steuerten Schiffe über riesige Ozeane.
+Konkrete Bildregie: Lebendiger verbindender Blick von historischer Handelsstraße zur Wüste und fernem Segelschiff, keine moderne Technik.
+Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
+
+Bild 03 (ca. 5.75s nur zur Produktionsplanung, nicht rendern)
+Gesprochene Aussage: Wie fanden sie die richtige Richtung, obwohl kein Bildschirm ihren Standort als blauen Punkt anzeigte?
+Audio Anchor: Wie fanden sie die richtige Richtung,
+Visual Purpose: Großer historischer Landschaftsausschnitt mit mehreren denkbaren Routen
+Topic Anchor: Verirrt ohne GPS
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
+Feste Kapitelwelt: Historischer Waldweg, neutrale frühe Neuzeit
+Erzählter Sachverhalt: Wie fanden sie die richtige Richtung, obwohl kein Bildschirm ihren Standort als blauen Punkt anzeigte?
+Konkrete Bildregie: Großer historischer Landschaftsausschnitt mit mehreren denkbaren Routen; Figur fragt sich, wohin, ohne Smartphone im historischen Bild.
+Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
+
+Bild 04 (ca. 6.52s nur zur Produktionsplanung, nicht rendern)
+Gesprochene Aussage: Der Trick war nicht ein einziges Gerät, sondern eine Mischung aus Beobachtung, Erfahrung und später präziseren Instrumenten.
+Audio Anchor: Der Trick war nicht ein einziges
+Visual Purpose: Gute Gesamtillustration mit drei historischen Reisenden: Landschaft beobachten, Sonnenstand deuten, einfache Seekarte lesen
+Topic Anchor: Wissen statt Satelliten
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
+Feste Kapitelwelt: Historische Reisewelt, 16.–18. Jahrhundert neutral
+Erzählter Sachverhalt: Der Trick war nicht ein einziges Gerät, sondern eine Mischung aus Beobachtung, Erfahrung und später präziseren Instrumenten.
+Konkrete Bildregie: Gute Gesamtillustration mit drei historischen Reisenden: Landschaft beobachten, Sonnenstand deuten, einfache Seekarte lesen.
+Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
+
+Bild 05 (ca. 6.13s nur zur Produktionsplanung, nicht rendern)
+Gesprochene Aussage: Menschen mussten zwei verschiedene Fragen beantworten: In welche Richtung gehen wir, und wo sind wir gerade?
+Audio Anchor: Menschen mussten zwei verschiedene Fragen beantworten:
+Visual Purpose: Zwei einfache große Vergleichsszenen: Weggabelung mit Richtungsfrage und Schiff vor leerem Horizont mit Ortsfrage
+Topic Anchor: Wissen statt Satelliten
+Visual Form: Anschauliche Sachillustration
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
+Feste Kapitelwelt: Historische Reisewelt, 16.–18. Jahrhundert neutral
+Erzählter Sachverhalt: Menschen mussten zwei verschiedene Fragen beantworten: In welche Richtung gehen wir, und wo sind wir gerade?
+Konkrete Bildregie: Zwei einfache große Vergleichsszenen: Weggabelung mit Richtungsfrage und Schiff vor leerem Horizont mit Ortsfrage.
+Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
+
+Bild 06 (ca. 5.37s nur zur Produktionsplanung, nicht rendern)
+Gesprochene Aussage: Das klingt ähnlich, ist aber ein gewaltiger Unterschied, sobald bekannte Wege oder Küsten verschwinden.
+Audio Anchor: Das klingt ähnlich, ist aber ein
+Visual Purpose: Reisende verlassen markierten Pfad in offenes hügeliges Land
+Topic Anchor: Wissen statt Satelliten
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
+Feste Kapitelwelt: Historische Reisewelt, 16.–18. Jahrhundert neutral
+Erzählter Sachverhalt: Das klingt ähnlich, ist aber ein gewaltiger Unterschied, sobald bekannte Wege oder Küsten verschwinden.
+Konkrete Bildregie: Reisende verlassen markierten Pfad in offenes hügeliges Land; Ferne wirkt weniger eindeutig.
+Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
+

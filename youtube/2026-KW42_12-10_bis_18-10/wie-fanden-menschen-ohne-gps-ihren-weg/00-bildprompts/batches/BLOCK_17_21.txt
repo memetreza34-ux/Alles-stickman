@@ -1,0 +1,68 @@
+STRICHKOSMOS 6:30, BILDER 17–21.
+Voraussetzung: COVERWAHL A/B/C abgeschlossen, Bild 01 bereits gespeichert. Maximal 5 Bilder gleichzeitig. Jedes Bild mit individuellem Prompt, NICHT anhand voriger Bilder generieren. Danach interne stille Bild-QC für Stickman-Stil, Epoche, Handlung, Text, Anatomie; beschädigtes/fehlerhaftes Bild nur unter derselben Nummer reparieren; anschließend OHNE NACHFRAGE zum nächsten Batch. Finale PNGs nur Bild XX.png im gemeinsamen Ordner.
+
+Bild 17 (ca. 4.22s nur zur Produktionsplanung, nicht rendern)
+Gesprochene Aussage: Außerdem verändert sich die Richtung eines Schattens im Laufe des Tages.
+Audio Anchor: Außerdem verändert sich die Richtung eines
+Visual Purpose: Stickman-Figur neben Pfosten, sichtbare kurze und längere Schatten als zeitliche Minisequenz
+Topic Anchor: Mit der Sonne orientieren
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
+Feste Kapitelwelt: Offene historische Landschaft, gemäßigte nördliche Breiten
+Erzählter Sachverhalt: Außerdem verändert sich die Richtung eines Schattens im Laufe des Tages.
+Konkrete Bildregie: Stickman-Figur neben Pfosten, sichtbare kurze und längere Schatten als zeitliche Minisequenz.
+Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
+
+Bild 18 (ca. 4.98s nur zur Produktionsplanung, nicht rendern)
+Gesprochene Aussage: Die Sonne war deshalb ein hilfreicher Hinweis, aber kein eingebauter Pfeil nach Hause.
+Audio Anchor: Die Sonne war deshalb ein hilfreicher
+Visual Purpose: Reisende nutzt Sonnenstand und zugleich Bergmarke, kombiniert Informationen statt magischer Navigation
+Topic Anchor: Mit der Sonne orientieren
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
+Feste Kapitelwelt: Offene historische Landschaft, gemäßigte nördliche Breiten
+Erzählter Sachverhalt: Die Sonne war deshalb ein hilfreicher Hinweis, aber kein eingebauter Pfeil nach Hause.
+Konkrete Bildregie: Reisende nutzt Sonnenstand und zugleich Bergmarke, kombiniert Informationen statt magischer Navigation.
+Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
+
+Bild 19 (ca. 5.37s nur zur Produktionsplanung, nicht rendern)
+Gesprochene Aussage: Nachts übernahm der Himmel eine andere Rolle: Bestimmte Sterne konnten als feste Bezugspunkte dienen.
+Audio Anchor: Nachts übernahm der Himmel eine andere
+Visual Purpose: Historischer Reisender schaut zum klaren Sternenhimmel, unaufgeregte große Komposition
+Topic Anchor: Die Sterne als Orientierung
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
+Feste Kapitelwelt: Historischer nächtlicher Landweg auf nördlicher Halbkugel
+Erzählter Sachverhalt: Nachts übernahm der Himmel eine andere Rolle: Bestimmte Sterne konnten als feste Bezugspunkte dienen.
+Konkrete Bildregie: Historischer Reisender schaut zum klaren Sternenhimmel, unaufgeregte große Komposition.
+Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
+
+Bild 20 (ca. 4.22s nur zur Produktionsplanung, nicht rendern)
+Gesprochene Aussage: Auf der Nordhalbkugel liegt der Polarstern ungefähr in Richtung geografisch Nord.
+Audio Anchor: Auf der Nordhalbkugel liegt der Polarstern
+Visual Purpose: Nordhimmel mit hervorgehobenem Polarstern, darunter ein kleiner reisender Stickman und ein einfacher NORD-Pfeil
+Topic Anchor: Die Sterne als Orientierung
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
+Feste Kapitelwelt: Historischer nächtlicher Landweg auf nördlicher Halbkugel
+Erzählter Sachverhalt: Auf der Nordhalbkugel liegt der Polarstern ungefähr in Richtung geografisch Nord.
+Konkrete Bildregie: Nordhimmel mit hervorgehobenem Polarstern, darunter ein kleiner reisender Stickman und ein einfacher NORD-Pfeil.
+Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
+
+Bild 21 (ca. 5.75s nur zur Produktionsplanung, nicht rendern)
+Gesprochene Aussage: Er steht scheinbar vergleichsweise ruhig, während andere Sterne im Laufe der Nacht um ihn kreisen.
+Audio Anchor: Er steht scheinbar vergleichsweise ruhig, während
+Visual Purpose: Zwei großzügige Sternbahnen um Polarstern als stilisierte Zeitrafferillustration, klare Nachtwelt
+Topic Anchor: Die Sterne als Orientierung
+Visual Form: Anschauliche Sachillustration
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+2D-Handzeichnung der StrichKosmos/Alles-Stickman-Bildwelt, 16:9, 1920x1080, warme elfenbeinfarbene einfache Stickman-Köpfe, schlanke Cartoon-Strichkörper, dunkle leicht unregelmäßige Tintenlinien, Sand/Ocker/Rost/Salbei/Blaugrau, lebendige Handlung und Tiefe bei klarer Verständlichkeit. NUR Strichfiguren, niemals echte oder halb-realistische Menschen, niemals 3D/Pixar/Foto/Anime. Figuren mit passenden Haaren, Bärten, Kleidern dürfen variieren und erscheinen NUR, wenn inhaltlich sinnvoll; Landschaften, Karten, Sterne, Werkzeuge oder Querschnitte dürfen völlig ohne Menschen sein. Maximal zwei kurze große korrekte deutsche Labels wenn nötig, sonst keine Schrift, keine englischen Kleinstlegenden, nie Zeitstempel/Bildnummer/GEPLANTER HOLD/AUDIO ANCHOR auf dem Bild.
+Feste Kapitelwelt: Historischer nächtlicher Landweg auf nördlicher Halbkugel
+Erzählter Sachverhalt: Er steht scheinbar vergleichsweise ruhig, während andere Sterne im Laufe der Nacht um ihn kreisen.
+Konkrete Bildregie: Zwei großzügige Sternbahnen um Polarstern als stilisierte Zeitrafferillustration, klare Nachtwelt.
+Bildwirkung: eine klar lesbare Aussage in 2–3 Sekunden, passende geschichtlich glaubwürdige Gegenstände, keine überfrachtete Lehrtafel, keine unmotivierten Figuren, interessante wechselnde Kameraperspektive, gleiche Designwelt ohne Bildreferenz.
+
