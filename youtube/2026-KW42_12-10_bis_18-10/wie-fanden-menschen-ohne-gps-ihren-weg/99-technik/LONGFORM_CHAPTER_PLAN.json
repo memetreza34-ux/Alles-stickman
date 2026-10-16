@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "status": "PLANNED-ANCHORS",
+  "timingNote": "Nur geschätzte Zeiten; nach echter Tonspur mit Whisper ersetzen.",
+  "sections": [
+    {
+      "id": "hook",
+      "title": "Verirrt ohne GPS",
+      "startImage": 1,
+      "endImage": 3,
+      "startAnchor": "Ein falscher Weg konnte früher bedeuten,",
+      "estimatedStartSeconds": 0,
+      "sceneWorld": "Historischer Waldweg, neutrale frühe Neuzeit"
+    },
+    {
+      "id": "setup",
+      "title": "Wissen statt Satelliten",
+      "startImage": 4,
+      "endImage": 7,
+      "startAnchor": "Der Trick war nicht ein einziges",
+      "estimatedStartSeconds": 14.6,
+      "sceneWorld": "Historische Reisewelt, 16.–18. Jahrhundert neutral"
+    },
+    {
+      "id": "landmarks",
+      "title": "Die Landschaft als Karte",
+      "startImage": 8,
+      "endImage": 13,
+      "startAnchor": "An Land waren Flüsse, Berge, Täler",
+      "estimatedStartSeconds": 37.6,
+      "sceneWorld": "Historischer Handelsweg und Dorfwege, gemäßigtes Klima"
+    },
+    {
+      "id": "sun",
+      "title": "Mit der Sonne orientieren",
+      "startImage": 14,
+      "endImage": 18,
+      "startAnchor": "Bei klarem Himmel half die Sonne,",
+      "estimatedStartSeconds": 67.1,
+      "sceneWorld": "Offene historische Landschaft, gemäßigte nördliche Breiten"
+    },
+    {
+      "id": "stars",
+      "title": "Die Sterne als Orientierung",
+      "startImage": 19,
+      "endImage": 24,
+      "startAnchor": "Nachts übernahm der Himmel eine andere",
+      "estimatedStartSeconds": 92.4,
+      "sceneWorld": "Historischer nächtlicher Landweg auf nördlicher Halbkugel"
+    },
+    {
+      "id": "uncertainty",
+      "title": "Warum Richtung nicht reicht",
+      "startImage": 25,
+      "endImage": 29,
+      "startAnchor": "Stell dir vor, du gehst eine",
+      "estimatedStartSeconds": 125.4,
+      "sceneWorld": "Historische Wanderroute durch Gelände"
+    },
+    {
+      "id": "compass",
+      "title": "Der Kompass",
+      "startImage": 30,
+      "endImage": 35,
+      "startAnchor": "Eine magnetisierte Nadel richtet sich im",
+      "estimatedStartSeconds": 150.7,
+      "sceneWorld": "Historische Schifffahrt 14.–17. Jahrhundert"
+    },
+    {
+      "id": "maps",
+      "title": "Wie Karten helfen",
+      "startImage": 36,
+      "endImage": 40,
+      "startAnchor": "Karten machten aus einzelnen Beobachtungen ein",
+      "estimatedStartSeconds": 182.5,
+      "sceneWorld": "Historische Küsten- und Handelsnavigation"
+    },
+    {
+      "id": "ocean",
+      "title": "Das Rätsel des offenen Meeres",
+      "startImage": 41,
+      "endImage": 46,
+      "startAnchor": "Stell dir ein Segelschiff vor, das",
+      "estimatedStartSeconds": 206.2,
+      "sceneWorld": "Segelschiff der frühen Neuzeit, Nordatlantik, gemäßigtes Klima"
+    },
+    {
+      "id": "deadreckoning",
+      "title": "Gerechneter Kurs",
+      "startImage": 47,
+      "endImage": 52,
+      "startAnchor": "Diese Methode nennt man Koppelnavigation: Man",
+      "estimatedStartSeconds": 233.5,
+      "sceneWorld": "Europäische Seefahrt 16.–18. Jahrhundert"
+    },
+    {
+      "id": "latitude",
+      "title": "Breite, aber noch keine Länge",
+      "startImage": 53,
+      "endImage": 58,
+      "startAnchor": "Der Breitengrad beschreibt, wie weit ein",
+      "estimatedStartSeconds": 264.1,
+      "sceneWorld": "Historische Hochseefahrt und Himmelsmessung"
+    },
+    {
+      "id": "pacific",
+      "title": "Navigation im Pazifik",
+      "startImage": 59,
+      "endImage": 65,
+      "startAnchor": "Währenddessen entwickelten polynesische Seefahrer eigene, hoch",
+      "estimatedStartSeconds": 295.6,
+      "sceneWorld": "Traditionelle polynesische Hochseefahrt, tropischer Ozean"
+    },
+    {
+      "id": "uncertainties",
+      "title": "Wenn alle Hinweise versagen",
+      "startImage": 66,
+      "endImage": 70,
+      "startAnchor": "Keine dieser Methoden war unfehlbar, und",
+      "estimatedStartSeconds": 330.8,
+      "sceneWorld": "Verschiedene historische Reisekontexte als deutliche Vergleichsbilder"
+    },
+    {
+      "id": "resolution",
+      "title": "Die eigentliche Antwort",
+      "startImage": 71,
+      "endImage": 74,
+      "startAnchor": "An Land halfen auffällige Orte, erfahrene",
+      "estimatedStartSeconds": 356.5,
+      "sceneWorld": "Zusammenfassende Zeit- und Landschaftsmontage"
+    },
+    {
+      "id": "closing",
+      "title": "Was GPS verändert hat",
+      "startImage": 75,
+      "endImage": 76,
+      "startAnchor": "Heute schätzt ein Smartphone unsere Position",
+      "estimatedStartSeconds": 375.7,
+      "sceneWorld": "Moderner Vergleich nur in den letzten Bildern"
+    }
+  ]
+}

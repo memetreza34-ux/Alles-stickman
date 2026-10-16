@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "status": "DRAFT",
+  "status": "READY",
   "videoTitle": "Wie fanden Menschen ohne GPS ihren Weg?",
-  "targetDurationSeconds": 400,
+  "targetDurationSeconds": 390,
   "chapters": [
     {
       "key": "hook",
@@ -413,5 +413,7 @@
         ]
       ]
     }
-  ]
+  ],
+  "scriptWords": 1014,
+  "imageCount": 76
 }

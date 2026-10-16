@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "pipelineVersion": 7,
+  "videoId": "2026-KW42_12-10_bis_18-10_wie-fanden-menschen-ohne-gps-ihren-weg",
+  "weekFolder": "2026-KW42_12-10_bis_18-10",
+  "topicSlug": "wie-fanden-menschen-ohne-gps-ihren-weg",
+  "title": "Wie fanden Menschen ohne GPS ihren Weg?",
+  "topic": "Historische Orientierung an Wegmarken, Sonne, Sternen, Kompass, Karten, Koppelnavigation sowie polynesischem Wayfinding",
+  "language": "de",
+  "aspectRatio": "16:9",
+  "status": "phase1-ready-longform",
+  "visualPolicyFile": "config/visual-policy.json",
+  "visualStyleId": "alles-stickman-editorial-v1",
+  "targetDurationSeconds": 390,
+  "targetDurationRangeSeconds": [
+    360,
+    420
+  ],
+  "plannedImageCount": 76,
+  "uploadMetadata": {
+    "title": "Wie fanden Menschen ohne GPS ihren Weg?",
+    "description": "Wie fanden Menschen ohne GPS und Smartphone ihren Weg? Wir entdecken, wie Reisende Landschaften, Sonne und Sterne nutzten, warum Kompass und Karten nicht alles lösten und wie Menschen auf dem offenen Meer navigierten – einschließlich der hoch entwickelten Orientierung polynesischer Seefahrer.\n\nQuellen: Smithsonian Time and Navigation, NOAA, Royal Museums Greenwich.",
+    "tags": [
+      "StrichKosmos",
+      "GPS",
+      "Navigation",
+      "Geschichte",
+      "Sterne",
+      "Kompass",
+      "Koppelnavigation",
+      "Seefahrt",
+      "Polynesien"
+    ],
+    "hashtags": [
+      "#StrichKosmos",
+      "#Navigation",
+      "#Geschichte"
+    ]
+  },
+  "coverPolicy": {
+    "firstSceneIsCover": true,
+    "coverImageNumber": 1,
+    "coverCandidateCount": 3,
+    "autoSelectWinner": false,
+    "selectionAuthority": "user",
+    "userSelectionRequired": true,
+    "hardStopAfterCoverCandidates": true,
+    "continueBeforeUserSelectionForbidden": true,
+    "winnerBecomesFirstSceneAndThumbnail": true,
+    "deleteLosingCandidates": true,
+    "separateThumbnailForbidden": true
+  },
+  "imageDensityPolicy": {
+    "contentDrivenImageCountRequired": true,
+    "fixedImageCountForbidden": true,
+    "oneImageOneVisualPurpose": true,
+    "targetAverageHoldSeconds": [
+      4.5,
+      7.5
+    ],
+    "reviewAboveSeconds": 9,
+    "preferSplitAboveSeconds": 11,
+    "hardMaximumSeconds": 16,
+    "minimumUsefulHoldSeconds": 2.5,
+    "generationBatchSize": 5,
+    "maxConcurrentGenerations": 5,
+    "nonCoverGenerationCount": 1,
+    "useImageReferences": false,
+    "fillerImagesForbidden": true,
+    "referenceMode": "none",
+    "generatedImageReferenceForbidden": true,
+    "hardStopAfterEachBatch": false,
+    "userContinueRequiredBetweenBatches": false,
+    "batchContinuationAuthority": "agent",
+    "explicitContinueRequired": false,
+    "batchExecutionMode": "automatic-sequential",
+    "automaticBatchContinuation": true,
+    "continueUntilImageNN": true,
+    "finalIntegrityCheckRequired": true,
+    "finalCountMustMatchPlannedImageCount": true,
+    "missingImageRepairRequired": true,
+    "repairOnlyMissingOrBroken": true,
+    "finalImageDirectory": "00-bildprompts/images",
+    "finalFolderMustBeFlat": true,
+    "finalFolderOnlyNumberedImages": true
+  },
+  "audioPolicy": {
+    "singleFinalVoiceoverRequired": true,
+    "userOriginalMustRemainUntouched": true,
+    "playbackRate": 1.1,
+    "loudnessTargetLufs": -16,
+    "truePeakDbtp": -1.5,
+    "sampleRateHz": 48000
+  },
+  "renderPolicy": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "endHoldSeconds": 1.3,
+    "backgroundMusic": false,
+    "subtitles": false
+  },
+  "phase1Ready": true,
+  "imagesReady": false,
+  "audioReady": false,
+  "renderReady": false,
+  "createdAt": "2026-10-16",
+  "updatedAt": "2026-10-16",
+  "visualContinuityProfile": {
+    "continuityMode": "historical-chapter-transitions",
+    "environmentAnchor": "Historische Landwege, Wald, offene See europäischer Seefahrt und traditionelle polynesische Navigation. Pro Kapitel kohärente Welt; Wechsel nur mit dem Sprechertext.",
+    "climateSeasonAnchor": "Gemäßigte Landwege, nördlicher Nachthimmel und Nordatlantik, im Polynesien-Kapitel tropischer Pazifik; Wolken/Nacht/Wetter nur bei erzählerischer Begründung.",
+    "eraAnchor": "Neutraler historischer Reiseweg; mittelalterliche/frühneuzeitliche europäische Segelschiffe und Instrumente der passenden Zeit; traditionelle polynesische Seefahrt ohne europäische Navigationsgeräte; moderne GPS-Technik nur im letzten Kapitel.",
+    "paletteMoodAnchor": "Handgezeichneter 2D-Editorial-Stickman-Stil mit elfenbeinfarbenen Köpfen, dunklen unregelmäßigen Linien und Sand/Ocker/Rost/Salbei/Blaugrau. Keine echten oder halb-realistischen Personen.",
+    "allowedIntentionalChanges": [
+      "Verirrt ohne GPS: Historischer Waldweg, neutrale frühe Neuzeit",
+      "Wissen statt Satelliten: Historische Reisewelt, 16.–18. Jahrhundert neutral",
+      "Die Landschaft als Karte: Historischer Handelsweg und Dorfwege, gemäßigtes Klima",
+      "Mit der Sonne orientieren: Offene historische Landschaft, gemäßigte nördliche Breiten",
+      "Die Sterne als Orientierung: Historischer nächtlicher Landweg auf nördlicher Halbkugel",
+      "Warum Richtung nicht reicht: Historische Wanderroute durch Gelände",
+      "Der Kompass: Historische Schifffahrt 14.–17. Jahrhundert",
+      "Wie Karten helfen: Historische Küsten- und Handelsnavigation",
+      "Das Rätsel des offenen Meeres: Segelschiff der frühen Neuzeit, Nordatlantik, gemäßigtes Klima",
+      "Gerechneter Kurs: Europäische Seefahrt 16.–18. Jahrhundert",
+      "Breite, aber noch keine Länge: Historische Hochseefahrt und Himmelsmessung",
+      "Navigation im Pazifik: Traditionelle polynesische Hochseefahrt, tropischer Ozean",
+      "Wenn alle Hinweise versagen: Verschiedene historische Reisekontexte als deutliche Vergleichsbilder",
+      "Die eigentliche Antwort: Zusammenfassende Zeit- und Landschaftsmontage",
+      "Was GPS verändert hat: Moderner Vergleich nur in den letzten Bildern"
+    ],
+    "forbiddenUnmotivatedChanges": [
+      "Polarstern auf der Südhalbkugel sichtbar machen",
+      "Historische Kulturen, Kleidung, Kartographie und Werkzeuge vermischen",
+      "GPS oder Smartphone vor dem Schluss als historischen Gegenstand darstellen",
+      "Alle Bilder mit identischer Standardfigur oder unlesbaren englischen Mini-Labels füllen",
+      "Fotorealistische oder halbrealistische Menschen zeichnen"
+    ],
+    "adjacentSceneContinuityRequired": true
+  },
+  "contentMode": "longform",
+  "longformProfile": {
+    "version": 1,
+    "targetMinutes": [
+      6,
+      7
+    ],
+    "scriptWords": 1014,
+    "chapterCount": 15,
+    "sceneCount": 76,
+    "averagePlannedImageHoldSeconds": 5.11,
+    "retentionBeatAnchors": [
+      "An Land waren Flüsse, Berge, Täler",
+      "Bei klarem Himmel half die Sonne,",
+      "Nachts übernahm der Himmel eine andere",
+      "Eine magnetisierte Nadel richtet sich im",
+      "Stell dir ein Segelschiff vor, das",
+      "Diese Methode nennt man Koppelnavigation: Man",
+      "Der Breitengrad beschreibt, wie weit ein",
+      "Währenddessen entwickelten polynesische Seefahrer eigene, hoch",
+      "Keine dieser Methoden war unfehlbar, und"
+    ],
+    "coverHumanGate": true,
+    "automaticFiveImageBatchesAfterCover": true
+  }
+}

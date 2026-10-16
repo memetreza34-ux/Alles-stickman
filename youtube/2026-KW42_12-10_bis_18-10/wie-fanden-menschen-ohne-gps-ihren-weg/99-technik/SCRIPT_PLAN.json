@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "structure": [
+    "hook",
+    "setup",
+    "main",
+    "resolution",
+    "closing"
+  ],
+  "sections": [
+    {
+      "id": "hook",
+      "startAnchor": "Ein falscher Weg konnte früher bedeuten,",
+      "hookType": "contrast",
+      "curiosityGap": "Wie fand man ohne GPS den Weg sogar über Ozeane?",
+      "titleConnection": "Navigation ohne GPS wird bereits in den ersten zwei Sätzen genannt.",
+      "payoffPromise": "Wegzeichen, Sterne, Kompass, Karten, Koppelnavigation und polynesische Orientierung werden nachvollziehbar erklärt.",
+      "sceneSettingOnly": false,
+      "purpose": "Verirrungsrisiko und erfolgreiche Fernreisen kontrastieren."
+    },
+    {
+      "id": "setup",
+      "startAnchor": "Der Trick war nicht ein einziges",
+      "purpose": "Unterschied zwischen Richtung und Position sichtbar machen."
+    },
+    {
+      "id": "main",
+      "startAnchor": "An Land waren Flüsse, Berge, Täler",
+      "purpose": "Historische Navigationslösungen und Grenzen als fortlaufende Entdeckung erklären."
+    },
+    {
+      "id": "resolution",
+      "startAnchor": "An Land halfen auffällige Orte, erfahrene",
+      "purpose": "Kombination mehrerer Beobachtungen beantwortet die Ausgangsfrage."
+    },
+    {
+      "id": "closing",
+      "startAnchor": "Heute schätzt ein Smartphone unsere Position",
+      "purpose": "Moderne GPS-Technik respektvoll mit historischem Know-how kontrastieren."
+    }
+  ]
+}
