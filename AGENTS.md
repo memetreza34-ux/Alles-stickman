@@ -1,3 +1,13 @@
+## HÖCHSTE PRIORITÄT: Aus JEDEM Video systematisch lernen
+
+**Gilt für ChatGPT, Codex, Claude, Google Flow und alle anderen Produktionsagenten.** Ein technisch erfolgreicher Render ist nicht das Ende der Arbeit: Jede echte MP4 muss vollständig angesehen/angehört und mit Zeitstempeln ausgewertet werden. Danach werden **konkrete Ursachen** ermittelt, zentrale Prompts/Skriptregeln/Visual-Policy/Renderer angepasst und Verbesserungen geprüft, sodass das NÄCHSTE Video daraus profitiert.
+
+Verbindliches Regelwerk: `channel/CONTINUOUS_IMPROVEMENT.md`, `config/quality-loop.json`. Per Video `99-technik/POST_VIDEO_REVIEW.json`; globale Lessons `channel/IMPROVEMENT_LEDGER.json`.
+
+Nach Export automatisch `quality:init`, nach realer Qualitätskontrolle `quality:close` ausführen. **Nie behaupten, das MP4 geprüft zu haben, wenn nur ein Dateiname, Screenshot oder CI-Test vorliegt.** Keine erfundenen Analytics. Ohne abgeschlossene Review eines lokal fertigen Videos darf `create:youtube` kein nächstes Projekt erzeugen. Relevante fremde YouTube-Praktiken nur anhand belastbarer Quellen übernehmen; bei Hypothesen experimentell statt dogmatisch vorgehen.
+
+Eine Korrektur darf nicht nur auf ein einziges Bild beschränkt bleiben, wenn die Ursache in einer zentralen Anweisung liegt. Unveränderliche Kanalwelt: einfache 2D-Stickmen, keine echten Menschen, Figuren nur falls nützlich; Coverwahl A/B/C bleibt der einzige Produktions-Human-Gate vor den 5er-Blöcken. Der Qualitätsreview findet nach dem fertigen Video statt und verlangt konkrete Belege.
+
 # Alles Stickman — Anweisungen für alle Coding- und Produktionsagenten
 
 Diese Regeln gelten **für das gesamte Repository** und insbesondere für jedes neue YouTube-Video. Ergänzend gelten `youtube/WORKFLOW.md` und die `config/*-policy.json`-Dateien.
