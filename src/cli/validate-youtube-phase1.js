@@ -4,6 +4,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { arg, exists, projectPaths, readJson } from '../lib/pipeline.js';
 import { phase1ChatLinks, renderPhase1Handoff } from '../lib/phase1-handoff.js';
+import { loadCanonicalVisualStyle } from '../lib/visual-master.js';
 
 export async function validatePhase1(projectDirectory) {
   const p = projectPaths(projectDirectory);
@@ -213,8 +214,10 @@ export async function validatePhase1(projectDirectory) {
   if (!prompt.includes(`ACTIVE_STYLE_ID: ${visual.styleId}`)) errors.push('Flow-Prompt nennt nicht die aktive styleId.');
   if (/ACTIVE_STYLE_ID:\s*UNSET/i.test(prompt)) errors.push('Flow-Prompt enthält noch UNSET.');
   const englishPrompt = /PROMPT_LANGUAGE:\s*ENGLISH/i.test(prompt);
+  const canonicalStyle = Number(visual.visualPolicyVersion) >= 14 ? await loadCanonicalVisualStyle() : null;
+  if (englishPrompt && canonicalStyle && !prompt.includes(canonicalStyle)) errors.push('Flow master missing full canonical visual style v14.');
   if (englishPrompt) {
-    if (Number(visual.visualPolicyVersion) >= 13 && !prompt.includes('VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13')) errors.push('Flow master prompt does not use approved premium visual style v13.');
+    if (canonicalStyle && !prompt.includes('VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14')) errors.push('Flow master prompt does not use canonical visual style v14.');
     const required = [
       [/EXACTLY THREE COVER CANDIDATES/i, "exactly three cover candidates"],
       [/USER CHOOSES A, B OR C/i, "explicit user cover selection"],
@@ -277,10 +280,12 @@ export async function validatePhase1(projectDirectory) {
     else {
       const starter = await readFile(short, 'utf8');
       if (!/PROMPT_LANGUAGE: ENGLISH/i.test(starter)) errors.push('English copy starter must be in English.');
+      if (canonicalStyle && !starter.includes(canonicalStyle)) errors.push('English copy starter missing full canonical visual style v14.');
     }
     for (const letter of ['A', 'B', 'C']) {
       const file = path.join(copyRoot, 'prompts', `COVER_${letter}_COPY.txt`);
       if (!(await exists(file))) errors.push('English standalone cover prompt missing: ' + letter);
+      else if (canonicalStyle && !(await readFile(file, 'utf8')).includes(canonicalStyle)) errors.push('Cover '+letter+' missing full canonical visual style v14.');
     }
     for (let n = 1; n <= Number(meta.plannedImageCount); n++) {
       const num = String(n).padStart(2, '0');
@@ -291,7 +296,7 @@ export async function validatePhase1(projectDirectory) {
       }
       const standalone = await readFile(file, 'utf8');
       if (!/PROMPT_LANGUAGE: ENGLISH/i.test(standalone)) errors.push('Image copy prompt must be English: Bild ' + num);
-      if (Number(visual.visualPolicyVersion) >= 13 && !standalone.includes('VISUAL_STYLE_EDITION: premium-illustrated-explainer-v13')) errors.push('Standalone image prompt missing approved v13 visual style: Bild ' + num);
+      if (canonicalStyle && !standalone.includes(canonicalStyle)) errors.push('Standalone image prompt missing complete v14 master: Bild ' + num);
       if (n > 1) {
         if (!standalone.includes(`SCENE_KEY: ${num}`)) errors.push('Standalone prompt scene ID mismatch: Bild ' + num);
         if (!/ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/i.test(standalone)) errors.push('German-only label instruction missing: Bild ' + num);
@@ -390,6 +395,7 @@ export async function validatePhase1(projectDirectory) {
         continue;
       }
       const batch = await readFile(batchPath, 'utf8');
+      if (canonicalStyle && !batch.includes(canonicalStyle)) errors.push(`Longform-Bildblock ${first}–${last}: full canonical master v14 missing.`);
       if (!/(VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT|COMPLETE INDIVIDUAL IMAGE PROMPT|SCENE_KEY: \d{2})/i.test(batch)) errors.push(`Longform-Bildblock ${first}–${last}: individuelle Prompts fehlen.`);
       for (let n = first; n <= last; n += 1) {
         if (!batch.includes(`Bild ${label(n)}`)) errors.push(`Longform-Bildblock ${first}–${last}: Bild ${label(n)} fehlt.`);

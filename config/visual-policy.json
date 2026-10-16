@@ -1,12 +1,12 @@
 {
-  "visualPolicyVersion": 13,
+  "visualPolicyVersion": 14,
   "status": "READY",
   "styleId": "alles-stickman-editorial-v1",
-  "description": "StrichKosmos canonical approved visual identity: premium hand-drawn 2D editorial stickman explainers for ALL topics, with equally valid narrative scenes, technical objects, illustrated comparisons, history and clear infographics. English prompts, German-only visible labels.",
+  "description": "One canonical, comprehensive, approved English premium 2D editorial master style for all StrichKosmos topics and formats. Embedded verbatim into every generated Flow master, cover, batch and individual prompt; German-only visible labels, humans always stickmen when needed.",
   "visibleTextLanguage": "de",
   "principles": [
     "Jeder Sprecher-Satz erhält den BESTEN VISUELLEN ERKLÄRTYP: Handlung, Objekt-Sachgrafik, Vergleich, Geschichtsszene, Prozess/Infografik, Diagramm, Karte oder Querschnitt. Keine Bildart wird pauschal bevorzugt.",
-    "Die fünf genehmigten detaillierten englischen Beispielprompts in channel/style-reference-prompts/ definieren Qualität, Vielfalt und gemeinsame Zeichensprache. Stilmerkmale abstrahieren, Bildinhalte nur beim passenden Thema übernehmen.",
+    "Die EINE verbindliche v14 Master-Bildwelt in channel/MASTER_VISUAL_STYLE_EN.txt wird wörtlich in jeden Flow-Prompt eingebettet; fünf Referenzprompts bleiben Beispiele, nicht eigenständige Bildwelten.",
     "Gemeinsame Welt bedeutet konsistente 2D-Konturen, schlüssige leicht handgezeichnete Objekte, Figurenlogik, klare Komposition und glaubwürdige Farbgestaltung – NICHT gleiche Szenerie, Papierfläche oder stets Figuren.",
     "Menschen nur falls erzählerisch nötig, ausschließlich klar erkennbare einfache handgezeichnete Stickman-Körper; keine echten, realistischen oder halbrealistischen Personen.",
     "Objekt-/Technikbilder ohne Menschen sind genauso vollwertig wie lebendige Handlungsszenen. Schalter, Kompass, Lampen, Aquädukte und Pflanzen dürfen präzise als 2D-Illustration ausgeführt sein.",
@@ -186,7 +186,7 @@
     "Cover-Gate: Nach genau drei Cover-Kandidaten muss der Agent stoppen und auf die ausdrückliche Auswahl des Nutzers warten.",
     "Nach der Nutzer-Coverwahl läuft die Folgebildproduktion automatisch weiter: immer maximal 5 Bilder pro Block, danach sofort der nächste Block, ohne weitere Nutzerfreigabe.",
     "Nach Bild NN folgt zwingend ein Vollständigkeitscheck des gemeinsamen finalen Bilderordners. Fehlende Bildnummern werden gezielt neu erzeugt; erst danach ist die Bildphase fertig.",
-    "Ab v13: Die fünf Nutzer-freigegebenen, vollständigen englischen Prompts in channel/style-reference-prompts/ sind das maßgebliche Qualitätsbeispiel für Szene, Elektrotechnik, Psychologie, Geschichte und Naturwissenschaft. Nicht deren konkrete Gegenstände in andere Videos übernehmen, sondern deren visuelle Produktionsqualität."
+    "Ab v14: Die fünf Nutzer-freigegebenen, vollständigen englischen Prompts in channel/style-reference-prompts/ sind das maßgebliche Qualitätsbeispiel für Szene, Elektrotechnik, Psychologie, Geschichte und Naturwissenschaft. Nicht deren konkrete Gegenstände in andere Videos übernehmen, sondern deren visuelle Produktionsqualität."
   ],
   "compositionDensity": {
     "target": "reichhaltige Illustration mit klarer Hierarchie",
@@ -294,10 +294,24 @@
     "visualVariety": "Strong 2D editorial consistency with free storytelling, technical objects, psychology comparisons, history, science process graphics. Never force a historical background, figure or identical layout. All examples serve as approved quality benchmarks."
   },
   "promptLanguage": "en",
-  "visualStyleEdition": "premium-illustrated-explainer-v13",
-  "visualDesignV13": {
-    "priority": "APPROVED GOLD STANDARD: use premium hand-drawn 2D editorial explainer craft across all subjects, not one recurring physical world.",
-    "edition": "premium-illustrated-explainer-v13",
+  "visualStyleEdition": "premium-illustrated-explainer-v14",
+  "canonicalVisualMaster": {
+    "path": "channel/MASTER_VISUAL_STYLE_EN.txt",
+    "edition": "premium-illustrated-explainer-v14",
+    "embeddedVerbatim": true,
+    "allPromptsStandalone": true,
+    "sourceOfTruth": "single full English art-direction block; apply without removing detail",
+    "referenceExamples": "channel/style-reference-prompts/ (five approved samples, quality calibration only; never copy their subjects into unrelated scenes)",
+    "promptLanguage": "en",
+    "visibleTextLanguage": "de",
+    "heroFiguresOptional": true,
+    "formsEquallyEligible": true,
+    "technicalFidelityRequired": true,
+    "qualityEvidence": "must inspect actual generated images; CI validates written instructions only"
+  },
+  "visualDesignV14": {
+    "priority": "Every image generation prompt embeds the SAME complete canonical master text; scene-specific details follow it",
+    "edition": "premium-illustrated-explainer-v14",
     "canonicalReferencesPath": "channel/style-reference-prompts/",
     "referenceForms": [
       "character-led historic situation",
@@ -338,6 +352,7 @@
       "injected production metadata"
     ],
     "positiveReasoning": "Choose shot medium, color scheme, level of detail and need for people from the spoken statement, preserving illustration identity across topics.",
-    "approvalScope": "approved style directions and five detailed example prompts; actual Google Flow generations still require user visual approval"
+    "approvalScope": "The user approved five detailed English prompts as style direction; v14 unifies their common craft. Generated results still require inspection.",
+    "canonicalMasterPath": "channel/MASTER_VISUAL_STYLE_EN.txt"
   }
 }

@@ -6,6 +6,7 @@ import { arg, copyDirectory, exists, readJson, slugify, writeJson } from '../lib
 import { evaluateTopic } from './check-youtube-topic.js';
 import { renderPhase1Handoff } from '../lib/phase1-handoff.js';
 import { assertReviewGateOpen } from '../lib/quality-loop.js';
+import { loadCanonicalVisualStyle, embedCanonicalVisualStyle } from '../lib/visual-master.js';
 
 async function main() {
   const topic = arg('--topic');
@@ -52,10 +53,13 @@ async function main() {
   await writeJson(metaPath, meta);
 
   const promptPath = path.join(destination, '00-bildprompts', 'google-flow-prompt.txt');
-  const prompt = (await readFile(promptPath, 'utf8'))
+  const masterStyle = await loadCanonicalVisualStyle();
+  const prompt = embedCanonicalVisualStyle((await readFile(promptPath, 'utf8'))
     .replace('[VIDEO-TITEL]', title)
-    .replace('ACTIVE_STYLE_ID: UNSET', `ACTIVE_STYLE_ID: ${visual.styleId ?? 'UNSET'}`);
+    .replace('ACTIVE_STYLE_ID: UNSET', `ACTIVE_STYLE_ID: ${visual.styleId ?? 'UNSET'}`), masterStyle);
   await writeFile(promptPath, prompt, 'utf8');
+  const starterPath = path.join(destination, '00-bildprompts', 'GOOGLE_FLOW_START_COPY.txt');
+  await writeFile(starterPath, embedCanonicalVisualStyle(await readFile(starterPath, 'utf8'), masterStyle), 'utf8');
 
   // Das Projekt erhält sofort seine zwei direkten GitHub-Zugänge.
   // Erst nach erfolgreicher Phase-1-Validierung werden sie als READY ausgegeben.
