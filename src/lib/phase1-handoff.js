@@ -25,7 +25,13 @@ export function phase1Links(meta, { repositoryUrl = REPOSITORY_URL, branch = DEF
 
 export function phase1ChatLinks(meta) {
   const links = phase1Links(meta);
-  return `**Phase 1 abgeschlossen — ${meta.title}**\n\n[Google-Flow-Prompt öffnen](${links.flowPrompt}) · [Voice-over-Skript öffnen](${links.voiceScript})\n\nDie Links öffnen die Dateien direkt in GitHub, auch mobil. Google Flow und TTS starten dadurch nicht automatisch; Prompt bzw. Skript im jeweiligen Dienst verwenden.`;
+  // Wichtig: Beide mobilen Direktlinks stehen ZUERST. Nicht erst ein Repo-Ordner
+  // oder eine Erklärung, damit der Nutzer unterwegs sofort beginnen kann.
+  return `[Google-Flow-Prompt öffnen](${links.flowPrompt}) · [Voice-over-Skript öffnen](${links.voiceScript})
+
+**Phase 1 abgeschlossen — ${meta.title}**
+
+Beide direkten GitHub-Dateilinks auch im Chat ausgeben (Tablet/Smartphone/Desktop). Der Google-Flow-Prompt und das Skript sind dort lesbar und kopierbar. Die Links starten Google Flow oder TTS nicht automatisch.`;
 }
 
 export function renderPhase1Handoff(meta, { phase1Validated = false } = {}) {

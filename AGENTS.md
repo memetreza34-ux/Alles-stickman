@@ -12,6 +12,17 @@ Eine Korrektur darf nicht nur auf ein einziges Bild beschränkt bleiben, wenn di
 
 Diese Regeln gelten **für das gesamte Repository** und insbesondere für jedes neue YouTube-Video. Ergänzend gelten `youtube/WORKFLOW.md` und die `config/*-policy.json`-Dateien.
 
+## Phase-1-Abschluss: SOFORT ZWEI LINKS IM CHAT (Smartphone / Tablet / Desktop)
+
+**Harte Ausgaberegel für jede Phase-1-Fertigmeldung:** Die erste sichtbare Nutzantwort nach erfolgreicher Phase 1 muss **zwei direkt anklickbare Links zu den tatsächlich existierenden Dateien im aktuellen Video** enthalten, bevor größere Erklärungen oder Statusberichte kommen:
+
+1. **Google-Flow-Prompt öffnen** → `youtube/<week>/<slug>/00-bildprompts/google-flow-prompt.txt` (Bildproduktion, gegebenenfalls mit zugehörigen 5er-Prompts).
+2. **Voice-over-Skript öffnen** → `youtube/<week>/<slug>/01-voice-script/voice-script.txt`.
+
+**Diese Links IM CHAT anzeigen** (Buttons mit URL-Öffnen-Aktion, falls möglich, sonst Markdown-Links). Nicht nur ins Repo schreiben. Der Nutzer arbeitet auch unterwegs am Tablet. Nie verlangen, zunächst GitHub manuell zu durchsuchen; nie ausschließlich den Projektordner oder `PHASE1_START_HERE.md` anbieten. Die Links direkt nach der Fertigmeldung automatisch ausgeben, ohne Nachfrage oder `WEITER`.
+
+Gilt **für jedes zukünftige Video** und für alle Agenten, auch nach Änderungen am Workflow. Die nach Phase 1 generierte Übergabedatei ist eine zusätzliche Absicherung, **kein Ersatz** für den Chat. Vor dem Antworten aktuelle URLs/Dateiexistenz prüfen, keine Platzhalter und keine Links zum falschen Video verwenden. Zum Erzeugen der Chatlinks `src/lib/phase1-handoff.js` nutzen.
+
 ## Unverzichtbar: Zwei klickbare Links nach Phase 1
 
 Sobald Recherche, Skript, Google-Flow-Prompt, Bildplan und Phase-1-Validierung für ein Videoprojekt fertig sind:

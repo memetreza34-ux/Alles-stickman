@@ -145,6 +145,9 @@ npm run validate:youtube-phase1 -- --dir "youtube/<week>/<slug>"
 
 ### Verpflichtende Phase-1-Übergabe — zwei Direktlinks
 
+**NEU: Pflicht zur SOFORTIGEN Chat-Antwort, auch unterwegs am Tablet.** Der Abschluss einer Phase 1 besteht aus **beidem**: (a) Dateien + Startseite im Repo committen, (b) dem Nutzer direkt im selben Chat zuerst zwei funktionierende Dateilinks präsentieren. Die Startseite im Repo oder ein allgemeiner Projekt-Link **ersetzen nie** die zwei sichtbaren Chatlinks. Kein „schau in GitHub“, keine erneute Nachfrage. Vor dem Versand beide Dateien/URLs auf das aktuelle Video prüfen. Verwende die zentral erzeugten Links aus `phase1ChatLinks(meta)`.
+
+
 **Nach einer bestandenen Phase-1-Prüfung muss die Antwort im Chat sofort beide klickbaren Links anzeigen**, auch wenn das Video noch keine Bilder oder Stimme besitzt:
 
 - **Google-Flow-Prompt öffnen:** direkter GitHub-Dateilink auf `00-bildprompts/google-flow-prompt.txt`

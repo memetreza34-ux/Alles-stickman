@@ -109,6 +109,16 @@ test('Phase-1-Handoff stellt beide direkten, mobil erreichbaren Videodateilinks 
   assert.notEqual(links.flowPrompt, links.voiceScript);
   assert.match(phase1ChatLinks(meta), /Google-Flow-Prompt öffnen/);
   assert.match(phase1ChatLinks(meta), /Voice-over-Skript öffnen/);
+  const directChatReply = phase1ChatLinks(meta);
+  assert.ok(directChatReply.startsWith('[Google-Flow-Prompt öffnen]('), 'Phase-1-Antwort muss mit den direkten Links beginnen');
+  assert.ok(directChatReply.includes(links.flowPrompt));
+  assert.ok(directChatReply.includes(links.voiceScript));
+  assert.ok(directChatReply.indexOf(links.flowPrompt) < directChatReply.indexOf('Phase 1 abgeschlossen'));
+  assert.ok(directChatReply.indexOf(links.voiceScript) < directChatReply.indexOf('Phase 1 abgeschlossen'));
+  const instructions = await readFile('AGENTS.md', 'utf8');
+  assert.match(instructions, /Diese Links IM CHAT anzeigen/);
+  assert.match(instructions, /Tablet/);
+
   const handoff = renderPhase1Handoff(meta, { phase1Validated: true });
   assert.match(handoff, /Phase 1 validiert/);
   assert.ok(handoff.includes(links.flowPrompt));
