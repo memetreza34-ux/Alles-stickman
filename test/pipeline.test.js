@@ -485,9 +485,9 @@ test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und 
     const cover = await readFile(path.join(dir, '00-bildprompts/prompts', `COVER_${letter}_COPY.txt`), 'utf8');
     assert.ok(cover.includes(canonical), 'Cover must include the complete unified master: '+letter);
   }
-  const source = JSON.parse(await readFile(path.join(dir, '99-technik/SCENE_VISUALS_EN.json'), 'utf8'));
-  assert.equal(source.policyVersion, 14);
-  assert.equal(source.visualStyleEdition, 'premium-illustrated-explainer-v14');
+  const sceneVisualSource = JSON.parse(await readFile(path.join(dir, '99-technik/SCENE_VISUALS_EN.json'), 'utf8'));
+  assert.equal(sceneVisualSource.policyVersion, 14);
+  assert.equal(sceneVisualSource.visualStyleEdition, 'premium-illustrated-explainer-v14');
   const reviewException = await readFile(path.join(dir, '99-technik/REVIEW_EXCEPTION.md'), 'utf8');
   assert.match(reviewException, /PENDING/);
   const links = phase1Links(meta);
