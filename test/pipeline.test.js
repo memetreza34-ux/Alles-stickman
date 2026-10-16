@@ -18,6 +18,7 @@ const SECOND_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-mensc
 const THIRD_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-ueberlebten-menschen-eisige-winter-ohne-heizung';
 const FOURTH_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-wuschen-menschen-ihre-kleidung-ohne-waschmaschine';
 const LONGFORM_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-bekamen-menschen-trinkwasser-ohne-wasserhahn';
+const NAVIGATION_LONGFORM_PROJECT = 'youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg';
 
 test('Qualitätskreislauf ist oberste Priorität und muss jedes Video überprüfbar verbessern', async () => {
   const policy = JSON.parse(await readFile('config/quality-loop.json', 'utf8'));
@@ -412,6 +413,52 @@ test('Erstes 6–7-Minuten-Longform hat recherchiertes Skript und 78 vollständi
   assert.equal(map.images.at(-1).imageFile, 'Bild 78.png');
   const phase1 = await validatePhase1(dir);
   assert.equal(phase1.passed, true, phase1.errors.join('\n'));
+});
+
+test('StrichKosmos 6:30 Video Navigation ohne GPS: 76 Bilder, echte Prompts und direkte Links', async () => {
+  const dir = NAVIGATION_LONGFORM_PROJECT;
+  const [meta, map, source, chapters] = await Promise.all([
+    readFile(path.join(dir, '99-technik/video.json'), 'utf8').then(JSON.parse),
+    readFile(path.join(dir, '99-technik/BILD_AUDIO_ZUORDNUNG.json'), 'utf8').then(JSON.parse),
+    readFile(path.join(dir, '99-technik/LONGFORM_SOURCE.json'), 'utf8').then(JSON.parse),
+    readFile(path.join(dir, '99-technik/LONGFORM_CHAPTER_PLAN.json'), 'utf8').then(JSON.parse)
+  ]);
+  const script = await readFile(path.join(dir, '01-voice-script/voice-script.txt'), 'utf8');
+  const prompt = await readFile(path.join(dir, '00-bildprompts/google-flow-prompt.txt'), 'utf8');
+  assert.equal(meta.contentMode, 'longform');
+  assert.equal(meta.targetDurationSeconds, 390);
+  assert.deepEqual(meta.targetDurationRangeSeconds, [360, 420]);
+  assert.equal(meta.plannedImageCount, 76);
+  assert.deepEqual(meta.uploadMetadata.hashtags, ['#StrichKosmos','#Navigation','#Geschichte']);
+  assert.equal(meta.coverPolicy.userSelectionRequired, true);
+  assert.equal(meta.imageDensityPolicy.automaticBatchContinuation, true);
+  assert.equal(meta.imageDensityPolicy.referenceMode, 'none');
+  assert.equal(meta.renderPolicy.backgroundMusic, false);
+  assert.equal(map.images.length, 76);
+  assert.equal(map.images.at(-1).imageFile, 'Bild 76.png');
+  assert.equal(source.scriptWords, 1014);
+  assert.equal(script.trim().split(/\\s+/).length, 1014);
+  assert.equal(source.status, 'READY');
+  assert.equal(chapters.sections.length, 15);
+  assert.ok(meta.longformProfile.retentionBeatAnchors.length >= 5);
+  assert.match(prompt, /GENAU 3 COVER/i);
+  assert.match(prompt, /HARD STOP/i);
+  assert.match(prompt, /polynes/i);
+  for (let first = 2; first <= 76; first += 5) {
+    const last = Math.min(76, first + 4);
+    const file = path.join(dir, '00-bildprompts/batches',
+      `BLOCK_${String(first).padStart(2, '0')}_${String(last).padStart(2, '0')}.txt`);
+    const txt = await readFile(file, 'utf8');
+    assert.match(txt, /VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT/i);
+    assert.match(txt, /keine realistischen/i);
+  }
+  const reviewException = await readFile(path.join(dir, '99-technik/REVIEW_EXCEPTION.md'), 'utf8');
+  assert.match(reviewException, /PENDING/);
+  const links = phase1Links(meta);
+  assert.ok(links.flowPrompt.includes('/wie-fanden-menschen-ohne-gps-ihren-weg/'));
+  assert.ok(links.voiceScript.includes('/wie-fanden-menschen-ohne-gps-ihren-weg/'));
+  const phase1 = await validatePhase1(dir);
+  assert.equal(phase1.passed, true, phase1.errors.join('\\n'));
 });
 
 test('Pacing-QC blockiert echte Videodauer außerhalb des Zielbereichs', async () => {
