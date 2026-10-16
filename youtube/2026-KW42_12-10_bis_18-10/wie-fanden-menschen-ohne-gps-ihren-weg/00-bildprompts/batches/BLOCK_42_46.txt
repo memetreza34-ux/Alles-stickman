@@ -1,0 +1,63 @@
+STRICHKOSMOS — VERBINDLICHER GOOGLE-FLOW-BLOCK 42–46
+VORBEDINGUNG: Der Nutzer hat A/B/C für die 3 Cover gewählt. Kein Zwischenstopp oder neues WEITER. Höchstens 5 Bilder gleichzeitig, nach jeder fertigen 5er-Gruppe stille QC der echten Bilder (Aussage, Stickman statt Mensch, Welt/Epoche, korrekter lesbarer deutscher Text, Anatomie), nur defekte Nummern korrigieren und ohne Rückfrage nächste Gruppe laden. Alles flach als Bild XX.png in 00-bildprompts/images/ speichern. Keine Bildreferenzen.
+
+Bild 42 (5.75s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Eine grobe Himmelsrichtung ist jetzt nicht
+Visual Purpose: Blick auf Schiff von oben, Wellen-/Windpfeile verschieben Kurs vom geraden Plan, nur wenige Pfeile
+Topic Anchor: Das Rätsel des offenen Meeres
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Segelschiff der frühen Neuzeit, Nordatlantik, gemäßigtes Klima
+VOICE-INHALT: Eine grobe Himmelsrichtung ist jetzt nicht genug: Strömungen und Wind können das Schiff seitlich versetzen.
+KONKRETE SZENE: Blick auf Schiff von oben, Wellen-/Windpfeile verschieben Kurs vom geraden Plan, nur wenige Pfeile.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 43 (4.22s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Seefahrer beobachteten daher neben dem Kompass
+Visual Purpose: Kapitän und Matrose mit Sanduhr, Kompass und Knotentau als historische Sachszene
+Topic Anchor: Das Rätsel des offenen Meeres
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Segelschiff der frühen Neuzeit, Nordatlantik, gemäßigtes Klima
+VOICE-INHALT: Seefahrer beobachteten daher neben dem Kompass auch Geschwindigkeit und vergangene Zeit.
+KONKRETE SZENE: Kapitän und Matrose mit Sanduhr, Kompass und Knotentau als historische Sachszene.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 44 (5.37s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Für Geschwindigkeit nutzten manche Seeleute eine
+Visual Purpose: Holzbrett-Logge hinter Schiff, Leine mit Knoten, Matrose hält Rolle
+Topic Anchor: Das Rätsel des offenen Meeres
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Segelschiff der frühen Neuzeit, Nordatlantik, gemäßigtes Klima
+VOICE-INHALT: Für Geschwindigkeit nutzten manche Seeleute eine Logge mit Leine und zählten die durchlaufenden Knoten.
+KONKRETE SZENE: Holzbrett-Logge hinter Schiff, Leine mit Knoten, Matrose hält Rolle; gut lesbares Prinzip, keine Schritt-für-Schritt-Anleitung.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 45 (3.07s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Eine Sanduhr half, das dafür benötigte
+Visual Purpose: Nahbild eines Seemanns mit Sanduhr und Loggleine auf Deck
+Topic Anchor: Das Rätsel des offenen Meeres
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Segelschiff der frühen Neuzeit, Nordatlantik, gemäßigtes Klima
+VOICE-INHALT: Eine Sanduhr half, das dafür benötigte Zeitintervall abzuschätzen.
+KONKRETE SZENE: Nahbild eines Seemanns mit Sanduhr und Loggleine auf Deck; klare Objekthandlung.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 46 (3.83s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Aus Richtung, geschätzter Geschwindigkeit und Zeit
+Visual Purpose: Seekarte mit mehreren Tagesrouten und laufenden Kursmarkierungen, handgezeichnete Pfeile, Navigationswerkzeuge daneben
+Topic Anchor: Das Rätsel des offenen Meeres
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Segelschiff der frühen Neuzeit, Nordatlantik, gemäßigtes Klima
+VOICE-INHALT: Aus Richtung, geschätzter Geschwindigkeit und Zeit entstand eine fortlaufende Routenrechnung.
+KONKRETE SZENE: Seekarte mit mehreren Tagesrouten und laufenden Kursmarkierungen, handgezeichnete Pfeile, Navigationswerkzeuge daneben.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+

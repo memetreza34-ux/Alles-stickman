@@ -1,0 +1,63 @@
+STRICHKOSMOS — VERBINDLICHER GOOGLE-FLOW-BLOCK 47–51
+VORBEDINGUNG: Der Nutzer hat A/B/C für die 3 Cover gewählt. Kein Zwischenstopp oder neues WEITER. Höchstens 5 Bilder gleichzeitig, nach jeder fertigen 5er-Gruppe stille QC der echten Bilder (Aussage, Stickman statt Mensch, Welt/Epoche, korrekter lesbarer deutscher Text, Anatomie), nur defekte Nummern korrigieren und ohne Rückfrage nächste Gruppe laden. Alles flach als Bild XX.png in 00-bildprompts/images/ speichern. Keine Bildreferenzen.
+
+Bild 47 (4.98s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Diese Methode nennt man Koppelnavigation: Man
+Visual Purpose: Große Seekarte mit Startpunkt und mehreren aufeinanderfolgenden Kursstrichen, handgezeichnet, Label KOPPELNAVIGATION
+Topic Anchor: Gerechneter Kurs
+Visual Form: Anschauliche Sachillustration
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Europäische Seefahrt 16.–18. Jahrhundert
+VOICE-INHALT: Diese Methode nennt man Koppelnavigation: Man rechnet von einer bekannten Ausgangsposition immer weiter.
+KONKRETE SZENE: Große Seekarte mit Startpunkt und mehreren aufeinanderfolgenden Kursstrichen, handgezeichnet, Label KOPPELNAVIGATION.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 48 (4.6s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Das klingt clever, hat aber eine
+Visual Purpose: Zwei farblich getrennte Linien auf Seekarte, geschätzt versus tatsächlich, Abweichung wächst
+Topic Anchor: Gerechneter Kurs
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Europäische Seefahrt 16.–18. Jahrhundert
+VOICE-INHALT: Das klingt clever, hat aber eine unangenehme Schwäche: Jeder Schätzfehler wandert mit.
+KONKRETE SZENE: Zwei farblich getrennte Linien auf Seekarte, geschätzt versus tatsächlich, Abweichung wächst.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 49 (4.98s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Wenn eine Meeresströmung das Schiff abdriften
+Visual Purpose: Schiff von oben wird von deutlicher Strömung seitlich geschoben, Kartenspur daneben
+Topic Anchor: Gerechneter Kurs
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Europäische Seefahrt 16.–18. Jahrhundert
+VOICE-INHALT: Wenn eine Meeresströmung das Schiff abdriften lässt, kann der errechnete Ort völlig danebenliegen.
+KONKRETE SZENE: Schiff von oben wird von deutlicher Strömung seitlich geschoben, Kartenspur daneben.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 50 (5.37s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Deshalb waren unabhängige Beobachtungen so wichtig,
+Visual Purpose: Navigator zeichnet neue Positionsmarke nach Himmelsbeobachtung und korrigiert vorherige gestrichelte Route
+Topic Anchor: Gerechneter Kurs
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Europäische Seefahrt 16.–18. Jahrhundert
+VOICE-INHALT: Deshalb waren unabhängige Beobachtungen so wichtig, um den vermuteten Standort immer wieder zu überprüfen.
+KONKRETE SZENE: Navigator zeichnet neue Positionsmarke nach Himmelsbeobachtung und korrigiert vorherige gestrichelte Route.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 51 (4.6s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Am Himmel fanden Seefahrer Hinweise, die
+Visual Purpose: Nächtliches Schiff, Navigator richtet Beobachtungsinstrument auf Sterne, Wind treibt Wolken daneben
+Topic Anchor: Gerechneter Kurs
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Europäische Seefahrt 16.–18. Jahrhundert
+VOICE-INHALT: Am Himmel fanden Seefahrer Hinweise, die sich nicht mit dem Wind verschieben.
+KONKRETE SZENE: Nächtliches Schiff, Navigator richtet Beobachtungsinstrument auf Sterne, Wind treibt Wolken daneben.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+

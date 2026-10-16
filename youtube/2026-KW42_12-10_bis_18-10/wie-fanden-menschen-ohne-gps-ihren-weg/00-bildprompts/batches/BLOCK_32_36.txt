@@ -1,0 +1,63 @@
+STRICHKOSMOS — VERBINDLICHER GOOGLE-FLOW-BLOCK 32–36
+VORBEDINGUNG: Der Nutzer hat A/B/C für die 3 Cover gewählt. Kein Zwischenstopp oder neues WEITER. Höchstens 5 Bilder gleichzeitig, nach jeder fertigen 5er-Gruppe stille QC der echten Bilder (Aussage, Stickman statt Mensch, Welt/Epoche, korrekter lesbarer deutscher Text, Anatomie), nur defekte Nummern korrigieren und ohne Rückfrage nächste Gruppe laden. Alles flach als Bild XX.png in 00-bildprompts/images/ speichern. Keine Bildreferenzen.
+
+Bild 32 (6.13s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Der Kompass wurde über Jahrhunderte weiterentwickelt;
+Visual Purpose: Historische Sachmontage chinesischer Kompassform, maritimer Nadelkompass und europäischer Seekarte, ohne behauptete genaue Einzeljahre
+Topic Anchor: Der Kompass
+Visual Form: Anschauliche Sachillustration
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Historische Schifffahrt 14.–17. Jahrhundert
+VOICE-INHALT: Der Kompass wurde über Jahrhunderte weiterentwickelt; frühe Formen kamen aus China und verbreiteten sich später weiter.
+KONKRETE SZENE: Historische Sachmontage chinesischer Kompassform, maritimer Nadelkompass und europäischer Seekarte, ohne behauptete genaue Einzeljahre.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 33 (4.98s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: In Europa war der magnetische Schiffskompass
+Visual Purpose: Spätmittelalterlicher Seefahrer an Schiffsteuerung mit einfachem Kompass, passende Schiffsausrüstung
+Topic Anchor: Der Kompass
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Historische Schifffahrt 14.–17. Jahrhundert
+VOICE-INHALT: In Europa war der magnetische Schiffskompass spätestens im späten Mittelalter ein wichtiges Navigationsmittel.
+KONKRETE SZENE: Spätmittelalterlicher Seefahrer an Schiffsteuerung mit einfachem Kompass, passende Schiffsausrüstung.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 34 (3.83s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Doch seine Nadel zeigt nicht überall
+Visual Purpose: Zwei große Richtungszeiger: magnetisch und geografisch Norden, geringe unterschiedliche Ausrichtung, kurzes Label UNTERSCHIED
+Topic Anchor: Der Kompass
+Visual Form: Anschauliche Sachillustration
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Historische Schifffahrt 14.–17. Jahrhundert
+VOICE-INHALT: Doch seine Nadel zeigt nicht überall exakt zum geografischen Nordpol.
+KONKRETE SZENE: Zwei große Richtungszeiger: magnetisch und geografisch Norden, geringe unterschiedliche Ausrichtung, kurzes Label UNTERSCHIED.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 35 (6.9s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Und ohne zu wissen, wo du
+Visual Purpose: Kompass groß im Vordergrund, im Hintergrund unendliches offenes Meer ohne Positionshinweis
+Topic Anchor: Der Kompass
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Historische Schifffahrt 14.–17. Jahrhundert
+VOICE-INHALT: Und ohne zu wissen, wo du begonnen hast, sagt die Nadel noch lange nicht, wo du dich befindest.
+KONKRETE SZENE: Kompass groß im Vordergrund, im Hintergrund unendliches offenes Meer ohne Positionshinweis.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
+Bild 36 (4.98s geplant, NIE INS BILD SCHREIBEN)
+Audio Anchor: Karten machten aus einzelnen Beobachtungen ein
+Visual Purpose: Mehrere Reisende arbeiten an großer historischer Karte, Küsten, Routen und Gebirge sichtbar
+Topic Anchor: Wie Karten helfen
+Visual Form: Lebendige Editorial-Stickman-Szene
+VOLLSTÄNDIGER INDIVIDUELLER BILDPROMPT:
+16:9, 1920×1080, handgezeichneter 2D-StrichKosmos-Stickman-Editorialstil. Einfache ovale warme Elfenbeinköpfe, schlanke Strich-Körper, unregelmäßige anthrazitfarbene Tuschekonturen, gedämpfte Farben Sand/Ocker/Rost/Salbei/Blaugrau. Figuren mit Ausdruck, Kleidung, Haar und Bart dürfen sich verändern, bleiben aber IMMER klar gezeichnete Stickmen; keine realistischen oder halbrealistischen Menschen. Nur Figuren, wenn sie zum Audio passen; Objekte/Karten/Diagramme/Schiffe/Sterne ohne Figuren ausdrücklich erlaubt. Eine klare inhaltliche Szene, vielfältige Perspektive, keine sterile Textfolie. Labels fast nie, höchstens zwei große korrekte deutsche bei wirklichem Mehrwert. Keine englischen Mini-Legenden, kein Pseudotext, kein 'GEPLANTER HOLD' und keine Regieanweisungen als Schrift.
+KAPITELWELT: Historische Küsten- und Handelsnavigation
+VOICE-INHALT: Karten machten aus einzelnen Beobachtungen ein gemeinsames Gedächtnis von Wegen, Küsten und Orten.
+KONKRETE SZENE: Mehrere Reisende arbeiten an großer historischer Karte, Küsten, Routen und Gebirge sichtbar.
+Erzeuge eine eigenständige gut lesbare Illustration exakt zu dieser Aussage. Gleiche Bildwelt ohne Referenz zu vorherigen Generierungen, niemals erfundene Gerätschaften oder falsche kulturelle Details.
+
