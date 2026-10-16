@@ -58,6 +58,7 @@ export async function validatePostVideoReview(review, { projectDir, checkFiles =
   const lessons = Array.isArray(review.lessons) ? review.lessons : null;
   if (!findings) errors.push('findings muss ein Array sein.');
   if (!lessons) errors.push('lessons muss ein Array sein.');
+  else if (!lessons.length) errors.push('Jede Video-Review benötigt mindestens eine übertragbare Lesson oder ein überprüfbares Experiment.');
   if (findings && !findings.length && String(review.noIssuesReason ?? '').trim().length < 40) {
     errors.push('Ohne Findings eine überprüfbare Begründung mit mindestens 40 Zeichen eintragen.');
   }
@@ -84,8 +85,12 @@ export async function validatePostVideoReview(review, { projectDir, checkFiles =
     const label = 'Lesson ' + (i + 1);
     if (!['APPLIED','EXPERIMENT','BACKLOG'].includes(lesson.status)) errors.push(label + ': Status ungültig.');
     if (String(lesson.rule ?? '').trim().length < 20) errors.push(label + ': konkrete Regel fehlt.');
-    if (!Number.isInteger(lesson.findingIndex) || lesson.findingIndex < 0 ||
-        lesson.findingIndex >= (findings?.length ?? 0)) errors.push(label + ': Finding-Index fehlt.');
+    if (findings?.length) {
+      if (!Number.isInteger(lesson.findingIndex) || lesson.findingIndex < 0 ||
+          lesson.findingIndex >= findings.length) errors.push(label + ': Finding-Index fehlt.');
+    } else if (lesson.findingIndex !== null) errors.push(label + ': Ohne Findings muss findingIndex null sein.');
+    if (lesson.status === 'EXPERIMENT' && String(lesson.verificationPlan ?? '').trim().length < 20) errors.push(label + ': Experiment benötigt einen konkreten Prüfplan.');
+    if (lesson.status === 'BACKLOG' && String(lesson.backlogReason ?? '').trim().length < 20) errors.push(label + ': Backlog-Begründung fehlt.');
     if (lesson.status === 'APPLIED') {
       if (!Array.isArray(lesson.changedFiles) || !lesson.changedFiles.length) {
         errors.push(label + ': systemweite Änderungen fehlen.');
