@@ -33,7 +33,8 @@ async function main() {
   run('src/cli/render-youtube.js', common);
   run('src/cli/finalize-youtube-export.js', common);
   run('src/cli/validate-youtube-phase3.js', [...common, '--post-render']);
-  console.log('\nYouTube Phase 3: BESTANDEN');
+  run('src/cli/quality-review-youtube.js', [...common, '--init']);
+  console.log('\nYouTube Phase 3: BESTANDEN — vollständige Video-Review ist noch offen. Vor dem nächsten Video quality:close ausführen.');
 }
 
 main().catch((error) => {
