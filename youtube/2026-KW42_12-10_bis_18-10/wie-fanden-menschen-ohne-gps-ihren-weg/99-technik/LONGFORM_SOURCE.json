@@ -1,0 +1,417 @@
+{
+  "schemaVersion": 1,
+  "status": "DRAFT",
+  "videoTitle": "Wie fanden Menschen ohne GPS ihren Weg?",
+  "targetDurationSeconds": 400,
+  "chapters": [
+    {
+      "key": "hook",
+      "name": "Verirrt ohne GPS",
+      "era": "Historischer Waldweg, neutrale frühe Neuzeit",
+      "shots": [
+        [
+          "Ein falscher Weg konnte früher bedeuten, dass Menschen tagelang umherirrten.",
+          "Abzweigung im historischen Wald, reisende Stickman-Figur mit Gepäck vor zwei gleich wirkenden Pfaden, ernst und lebendig."
+        ],
+        [
+          "Trotzdem erreichten Reisende ferne Städte, überquerten Wüsten und steuerten Schiffe über riesige Ozeane.",
+          "Lebendiger verbindender Blick von historischer Handelsstraße zur Wüste und fernem Segelschiff, keine moderne Technik."
+        ],
+        [
+          "Wie fanden sie die richtige Richtung, obwohl kein Bildschirm ihren Standort als blauen Punkt anzeigte?",
+          "Großer historischer Landschaftsausschnitt mit mehreren denkbaren Routen; Figur fragt sich, wohin, ohne Smartphone im historischen Bild."
+        ]
+      ]
+    },
+    {
+      "key": "setup",
+      "name": "Wissen statt Satelliten",
+      "era": "Historische Reisewelt, 16.–18. Jahrhundert neutral",
+      "shots": [
+        [
+          "Der Trick war nicht ein einziges Gerät, sondern eine Mischung aus Beobachtung, Erfahrung und später präziseren Instrumenten.",
+          "Gute Gesamtillustration mit drei historischen Reisenden: Landschaft beobachten, Sonnenstand deuten, einfache Seekarte lesen."
+        ],
+        [
+          "Menschen mussten zwei verschiedene Fragen beantworten: In welche Richtung gehen wir, und wo sind wir gerade?",
+          "Zwei einfache große Vergleichsszenen: Weggabelung mit Richtungsfrage und Schiff vor leerem Horizont mit Ortsfrage."
+        ],
+        [
+          "Das klingt ähnlich, ist aber ein gewaltiger Unterschied, sobald bekannte Wege oder Küsten verschwinden.",
+          "Reisende verlassen markierten Pfad in offenes hügeliges Land; Ferne wirkt weniger eindeutig."
+        ],
+        [
+          "Denn eine feste Richtung kann man halten und trotzdem am falschen Ort landen.",
+          "Illustrierte Route biegt durch Wind/Umweg neben das Ziel, Person läuft überzeugt, Stadt liegt deutlich seitlich."
+        ]
+      ]
+    },
+    {
+      "key": "landmarks",
+      "name": "Die Landschaft als Karte",
+      "era": "Historischer Handelsweg und Dorfwege, gemäßigtes Klima",
+      "shots": [
+        [
+          "An Land waren Flüsse, Berge, Täler und auffällige Felsen natürliche Wegweiser.",
+          "Stickman-Handelsreisende vor markantem Flussknick, fernem Berg und Felsformation; Leserichtung klar."
+        ],
+        [
+          "Wer eine Gegend kannte, merkte sich, welche Brücke hinter dem Hügel auftauchen musste.",
+          "Reisende mit Merkpunkten im Kopf; reale Steinbrücke hinter bekanntem Hügel, kleines Gedächtnisdetail."
+        ],
+        [
+          "Wege waren außerdem soziale Informationen: Händler, Hirten und Bewohner kannten Übergänge und sichere Rastplätze.",
+          "Historische Kreuzung mit wanderndem Händler, lokalem Hirten und Dorfperson; eine weist freundlich den Weg."
+        ],
+        [
+          "Eine Erklärung konnte lauten: Folge dem Fluss, bis du die zwei großen Bäume siehst.",
+          "Breite Flusslandschaft mit zwei auffälligen Bäumen als gut erkennbare Wegmarke; Reisende folgen Ufer."
+        ],
+        [
+          "Solche Hinweise waren anschaulich, aber sie funktionierten nicht überall und nicht zu jeder Jahreszeit.",
+          "Gleicher Weg bei höherem Wasserstand; Flussübergang nicht passierbar, Reisender hält an."
+        ],
+        [
+          "Nebel, Schneefall oder Dunkelheit konnten sogar bekannte Orientierungspunkte plötzlich unsichtbar machen.",
+          "Historischer Reisender im Nebel; markanter Berg verschwindet hinter Wolkenschleier, passende gedämpfte Farben."
+        ]
+      ]
+    },
+    {
+      "key": "sun",
+      "name": "Mit der Sonne orientieren",
+      "era": "Offene historische Landschaft, gemäßigte nördliche Breiten",
+      "shots": [
+        [
+          "Bei klarem Himmel half die Sonne, die grobe Himmelsrichtung zu erkennen.",
+          "Reisende auf offener Ebene beobachtet Sonne über Horizont, Schatten sichtbar."
+        ],
+        [
+          "Ihr täglicher Weg über den Himmel bot Hinweise darauf, wie die Landschaft ausgerichtet war.",
+          "Eine zusammenhängende Landschaft mit Sonnenpositionen über den Tagesbogen, wenige klare Pfeile, keine Zahlenflut."
+        ],
+        [
+          "Aber die Sonne geht nicht an jedem Tag exakt im Osten auf oder genau im Westen unter.",
+          "Zwei saisonale Sonnenaufgangspunkte am selben Horizont, klarer Vergleich, kurze Labels FRÜHER/SPÄTER."
+        ],
+        [
+          "Außerdem verändert sich die Richtung eines Schattens im Laufe des Tages.",
+          "Stickman-Figur neben Pfosten, sichtbare kurze und längere Schatten als zeitliche Minisequenz."
+        ],
+        [
+          "Die Sonne war deshalb ein hilfreicher Hinweis, aber kein eingebauter Pfeil nach Hause.",
+          "Reisende nutzt Sonnenstand und zugleich Bergmarke, kombiniert Informationen statt magischer Navigation."
+        ]
+      ]
+    },
+    {
+      "key": "stars",
+      "name": "Die Sterne als Orientierung",
+      "era": "Historischer nächtlicher Landweg auf nördlicher Halbkugel",
+      "shots": [
+        [
+          "Nachts übernahm der Himmel eine andere Rolle: Bestimmte Sterne konnten als feste Bezugspunkte dienen.",
+          "Historischer Reisender schaut zum klaren Sternenhimmel, unaufgeregte große Komposition."
+        ],
+        [
+          "Auf der Nordhalbkugel liegt der Polarstern ungefähr in Richtung geografisch Nord.",
+          "Nordhimmel mit hervorgehobenem Polarstern, darunter ein kleiner reisender Stickman und ein einfacher NORD-Pfeil."
+        ],
+        [
+          "Er steht scheinbar vergleichsweise ruhig, während andere Sterne im Laufe der Nacht um ihn kreisen.",
+          "Zwei großzügige Sternbahnen um Polarstern als stilisierte Zeitrafferillustration, klare Nachtwelt."
+        ],
+        [
+          "Wer gelernt hatte, das Sternbild des Großen Wagens zu erkennen, konnte damit den Polarstern finden.",
+          "Großer Wagen und Zeigersterne mit einfacher Linie zum Polarstern; nicht zu viele Sternnamen einblenden."
+        ],
+        [
+          "Doch dichte Wolken machten auch diese Hilfe wertlos, und südlich des Äquators sieht man ihn nicht.",
+          "Bewölkter nächtlicher Weg und kleine sachliche Erdkugel mit südlicher Blickrichtung, keine globale Polaris-Falschdarstellung."
+        ],
+        [
+          "Aus einem einzelnen Stern ergab sich außerdem noch keine genaue Position auf einer riesigen Landkarte.",
+          "Reisende schaut nach Norden, mehrere mögliche Standorte entlang breiter Landschaftszone sind eingezeichnet."
+        ]
+      ]
+    },
+    {
+      "key": "uncertainty",
+      "name": "Warum Richtung nicht reicht",
+      "era": "Historische Wanderroute durch Gelände",
+      "shots": [
+        [
+          "Stell dir vor, du gehst eine Stunde nach Norden und weichst dabei einem sumpfigen Tal aus.",
+          "Reisende läuft an Sumpf vorbei; Weg knickt sichtbar, Nordpfeil bleibt gerade."
+        ],
+        [
+          "Anschließend glaubst du, wieder geradeaus zu gehen, obwohl der Umweg deine Strecke verändert hat.",
+          "Wanderer steht nach Umweg schief zur ursprünglichen Route, Zielberg weit seitlich."
+        ],
+        [
+          "Ohne Messung und bekannte Marken sammeln sich solche kleinen Fehler.",
+          "Reihe kurzer Wegstücke und kleine Abweichungen, am Ende deutlich versetztes Ziel, illustrative Sachszene."
+        ],
+        [
+          "Noch schwieriger wurde das auf dem Meer, wo es oft weder Straßen noch erkennbare Felsen gab.",
+          "Weites Meer mit historischem Schiff zwischen Wellen und wolkigem Horizont; keine sichtbare Küste."
+        ],
+        [
+          "Genau hier wurde ein anderes Werkzeug besonders wertvoll: der Kompass.",
+          "Historischer Navigator nimmt einfachen magnetischen Kompass in die Hand auf Schiffsdeck, Fokus Instrument."
+        ]
+      ]
+    },
+    {
+      "key": "compass",
+      "name": "Der Kompass",
+      "era": "Historische Schifffahrt 14.–17. Jahrhundert",
+      "shots": [
+        [
+          "Eine magnetisierte Nadel richtet sich im Erdmagnetfeld ungefähr entlang einer Nord-Süd-Achse aus.",
+          "Anschauliche Nahillustration einer einfachen schwimmenden Magnetnadel und eines Erdmagnetfeldbogens; groß und sachlich."
+        ],
+        [
+          "So ließ sich eine Richtung verfolgen, selbst wenn Himmel und Landschaft kaum Orientierung boten.",
+          "Seefahrer auf dunklem Deck prüft Kompass bei Wolkendecke; historisches Segelschiff sichtbar."
+        ],
+        [
+          "Der Kompass wurde über Jahrhunderte weiterentwickelt; frühe Formen kamen aus China und verbreiteten sich später weiter.",
+          "Historische Sachmontage chinesischer Kompassform, maritimer Nadelkompass und europäischer Seekarte, ohne behauptete genaue Einzeljahre."
+        ],
+        [
+          "In Europa war der magnetische Schiffskompass spätestens im späten Mittelalter ein wichtiges Navigationsmittel.",
+          "Spätmittelalterlicher Seefahrer an Schiffsteuerung mit einfachem Kompass, passende Schiffsausrüstung."
+        ],
+        [
+          "Doch seine Nadel zeigt nicht überall exakt zum geografischen Nordpol.",
+          "Zwei große Richtungszeiger: magnetisch und geografisch Norden, geringe unterschiedliche Ausrichtung, kurzes Label UNTERSCHIED."
+        ],
+        [
+          "Und ohne zu wissen, wo du begonnen hast, sagt die Nadel noch lange nicht, wo du dich befindest.",
+          "Kompass groß im Vordergrund, im Hintergrund unendliches offenes Meer ohne Positionshinweis."
+        ]
+      ]
+    },
+    {
+      "key": "maps",
+      "name": "Wie Karten helfen",
+      "era": "Historische Küsten- und Handelsnavigation",
+      "shots": [
+        [
+          "Karten machten aus einzelnen Beobachtungen ein gemeinsames Gedächtnis von Wegen, Küsten und Orten.",
+          "Mehrere Reisende arbeiten an großer historischer Karte, Küsten, Routen und Gebirge sichtbar."
+        ],
+        [
+          "Ein Navigator konnte bekannte Häfen, vorspringende Landzungen und Entfernungen miteinander vergleichen.",
+          "Seekarte liegt auf Tisch, Finger zeigt Landzunge, echtes Küstenprofil durch Fenster."
+        ],
+        [
+          "Doch Karten waren nur so brauchbar wie die Vermessung und Berichte, aus denen sie entstanden.",
+          "Gegenüberstellung von unvollständiger Karte und genau beobachteter Küste, Lücken klar erkennbar."
+        ],
+        [
+          "Unbekannte Küsten, falsche Entfernungen oder veränderte Ufer konnten gefährliche Fehler verursachen.",
+          "Kleine Küstenbucht auf Karte weicht sichtbar von echter Klippenküste ab, vorsichtiger Navigator hält inne."
+        ],
+        [
+          "Darum mussten erfahrene Reisende Karte, Instrumente und die wirkliche Umgebung ständig vergleichen.",
+          "Kapitän mit Karte, zweite Figur beobachtet Küste, dritte prüft Kompass; koordinierte Handlung."
+        ]
+      ]
+    },
+    {
+      "key": "ocean",
+      "name": "Das Rätsel des offenen Meeres",
+      "era": "Segelschiff der frühen Neuzeit, Nordatlantik, gemäßigtes Klima",
+      "shots": [
+        [
+          "Stell dir ein Segelschiff vor, das seit Tagen nur Wasser und Himmel sieht.",
+          "Weite Totale eines kleinen Segelschiffs unter riesigem Himmel, Mannschaft mit sichtbarer Anspannung."
+        ],
+        [
+          "Eine grobe Himmelsrichtung ist jetzt nicht genug: Strömungen und Wind können das Schiff seitlich versetzen.",
+          "Blick auf Schiff von oben, Wellen-/Windpfeile verschieben Kurs vom geraden Plan, nur wenige Pfeile."
+        ],
+        [
+          "Seefahrer beobachteten daher neben dem Kompass auch Geschwindigkeit und vergangene Zeit.",
+          "Kapitän und Matrose mit Sanduhr, Kompass und Knotentau als historische Sachszene."
+        ],
+        [
+          "Für Geschwindigkeit nutzten manche Seeleute eine Logge mit Leine und zählten die durchlaufenden Knoten.",
+          "Holzbrett-Logge hinter Schiff, Leine mit Knoten, Matrose hält Rolle; gut lesbares Prinzip, keine Schritt-für-Schritt-Anleitung."
+        ],
+        [
+          "Eine Sanduhr half, das dafür benötigte Zeitintervall abzuschätzen.",
+          "Nahbild eines Seemanns mit Sanduhr und Loggleine auf Deck; klare Objekthandlung."
+        ],
+        [
+          "Aus Richtung, geschätzter Geschwindigkeit und Zeit entstand eine fortlaufende Routenrechnung.",
+          "Seekarte mit mehreren Tagesrouten und laufenden Kursmarkierungen, handgezeichnete Pfeile, Navigationswerkzeuge daneben."
+        ]
+      ]
+    },
+    {
+      "key": "deadreckoning",
+      "name": "Gerechneter Kurs",
+      "era": "Europäische Seefahrt 16.–18. Jahrhundert",
+      "shots": [
+        [
+          "Diese Methode nennt man Koppelnavigation: Man rechnet von einer bekannten Ausgangsposition immer weiter.",
+          "Große Seekarte mit Startpunkt und mehreren aufeinanderfolgenden Kursstrichen, handgezeichnet, Label KOPPELNAVIGATION."
+        ],
+        [
+          "Das klingt clever, hat aber eine unangenehme Schwäche: Jeder Schätzfehler wandert mit.",
+          "Zwei farblich getrennte Linien auf Seekarte, geschätzt versus tatsächlich, Abweichung wächst."
+        ],
+        [
+          "Wenn eine Meeresströmung das Schiff abdriften lässt, kann der errechnete Ort völlig danebenliegen.",
+          "Schiff von oben wird von deutlicher Strömung seitlich geschoben, Kartenspur daneben."
+        ],
+        [
+          "Deshalb waren unabhängige Beobachtungen so wichtig, um den vermuteten Standort immer wieder zu überprüfen.",
+          "Navigator zeichnet neue Positionsmarke nach Himmelsbeobachtung und korrigiert vorherige gestrichelte Route."
+        ],
+        [
+          "Am Himmel fanden Seefahrer Hinweise, die sich nicht mit dem Wind verschieben.",
+          "Nächtliches Schiff, Navigator richtet Beobachtungsinstrument auf Sterne, Wind treibt Wolken daneben."
+        ],
+        [
+          "Vor allem Sonne und Sterne halfen bei der Frage, wie weit nördlich oder südlich man war.",
+          "Illustrierte Erdkugel mit Breitenkreisen, Schiff im Nordatlantik und große Sonne/Sterne darüber."
+        ]
+      ]
+    },
+    {
+      "key": "latitude",
+      "name": "Breite, aber noch keine Länge",
+      "era": "Historische Hochseefahrt und Himmelsmessung",
+      "shots": [
+        [
+          "Der Breitengrad beschreibt, wie weit ein Ort nördlich oder südlich des Äquators liegt.",
+          "Handgezeichnete Erdkugel mit nur Äquator und zwei Breitenkreisen, großes deutendes Stickman-Miniobjekt."
+        ],
+        [
+          "Auf der Nordhalbkugel liefert die Höhe des Polarsterns über dem Horizont einen ungefähren Hinweis darauf.",
+          "Sternwinkelskizze über Meereshorizont, Navigator auf Schiff, klarer einzelner Winkel."
+        ],
+        [
+          "Später nutzten Seeleute Instrumente, mit denen sie Winkel von Sonne oder Sternen genauer messen konnten.",
+          "Historische Instrumentensammlung mit Astrolabium, Quadrant und Sextant, alle groß und nicht wie moderne Spielzeuge."
+        ],
+        [
+          "Aber die zweite Koordinate, der Längengrad, blieb auf dem offenen Ozean lange besonders schwierig.",
+          "Erdkugel mit unklarer Ost-West-Position, zwei Schiffe am selben Breitengrad weit auseinander."
+        ],
+        [
+          "Für eine verlässliche astronomische Längenbestimmung brauchte man passende Himmelsbeobachtungen und genaue Zeitinformationen.",
+          "Historischer Navigator mit Seekarte, Himmelsmessung und präziser Schiffszeitmessung, klare Zusammengehörigkeit."
+        ],
+        [
+          "Seetaugliche Chronometer verbesserten diese Aufgabe erheblich, aber auch sie mussten sorgfältig verwendet werden.",
+          "18. Jahrhundert Schiffsdeck, geschützter Chronometer in Holzkasten, Navigator gleicht Karte ab."
+        ]
+      ]
+    },
+    {
+      "key": "pacific",
+      "name": "Navigation im Pazifik",
+      "era": "Traditionelle polynesische Hochseefahrt, tropischer Ozean",
+      "shots": [
+        [
+          "Währenddessen entwickelten polynesische Seefahrer eigene, hoch entwickelte Orientierungsmethoden über gewaltige Meeresräume.",
+          "Großes traditionelles polynesisches Ausleger-/Doppelrumpf-Segelkanu auf Ozean, erfahrene Stickman-Navigatorin schaut auf Horizont."
+        ],
+        [
+          "Sie merkten sich, wo bestimmte Sterne am Horizont aufgehen und wieder verschwinden.",
+          "Nachthimmel über traditionellem Kanu, mehrere einzelne Stern-Auf-/Untergangspunkte auf Horizont, ruhige Szene."
+        ],
+        [
+          "Anstatt sich auf einen einzigen Stern zu verlassen, beobachteten sie ganze Sternfolgen und Richtungen.",
+          "Navigator zeigt jungen Lernenden den Himmel, ein klarer Sternpfad, kein modernes Teleskop."
+        ],
+        [
+          "Wellen waren dabei nicht bloß Hindernisse, sondern trugen ebenfalls Informationen über das Meer.",
+          "Große Wellenstruktur um Kanu, Navigator fühlt Bewegung mit Händen an Bootskörper."
+        ],
+        [
+          "Lange regelmäßige Dünungswellen konnten auch dann eine Richtung verraten, wenn Sterne verdeckt waren.",
+          "Tropischer Himmel teilweise bewölkt, Kanu mit deutlich regelmäßiger Dünung, Navigator prüft Wellenwinkel."
+        ],
+        [
+          "Auch Wolken und bestimmte Seevögel konnten Hinweise geben, ob irgendwo Land in der Nähe lag.",
+          "Segelkanu, Seeschwalben fliegen auf eine ferne Insel zu, Wolken über Land angedeutet."
+        ],
+        [
+          "Dieses Wissen wurde erlernt, erinnert und über Generationen weitergegeben, nicht von einer App berechnet.",
+          "Älterer Navigator erklärt Sternrichtungen am Strand mit Steinen im Sand, mehrere Stickman-Schüler; respektvoll, nicht kindlich."
+        ]
+      ]
+    },
+    {
+      "key": "uncertainties",
+      "name": "Wenn alle Hinweise versagen",
+      "era": "Verschiedene historische Reisekontexte als deutliche Vergleichsbilder",
+      "shots": [
+        [
+          "Keine dieser Methoden war unfehlbar, und schlechte Sicht machte gleich mehrere Hinweise auf einmal unsicher.",
+          "Schiff unter Regenwolken, kein Stern sichtbar, Kompass allein auf Deck."
+        ],
+        [
+          "Ein Kompass half nicht gegen unbekannte Strömungen, eine Karte nicht gegen falsch eingezeichnete Küsten.",
+          "Zwei große illustrierte Mini-Szenen Schiffdrift und fehlerhafte Küstenkarte, klare Abgrenzung."
+        ],
+        [
+          "Wer einen Orientierungspunkt falsch erkannte, konnte einen Irrtum kilometerweit mit sich tragen.",
+          "Wanderer verwechselt ähnlich geformte Berge, eingezeichneter Umweg in Landschaft."
+        ],
+        [
+          "Erfahrene Navigatoren prüften deshalb verschiedene Hinweise gegeneinander, sobald sie die Gelegenheit dazu hatten.",
+          "Polynesisches Kanu prüft Wellen und Sterne; daneben kleiner europäischer Seefahrer mit Karte und Kompass, respektvoller Vergleich."
+        ],
+        [
+          "Orientierung war weniger ein Zaubertrick als die Kunst, Unsicherheit immer wieder zu verkleinern.",
+          "Mehrere zunächst unscharfe mögliche Wege verschmelzen zu einem plausiblen Weg, Figuren beobachten Hinweise."
+        ]
+      ]
+    },
+    {
+      "key": "resolution",
+      "name": "Die eigentliche Antwort",
+      "era": "Zusammenfassende Zeit- und Landschaftsmontage",
+      "shots": [
+        [
+          "An Land halfen auffällige Orte, erfahrene Wegkundige, Sonne und Sterne.",
+          "Reichhaltige Landschaftsszene mit Reisenden, markantem Berg, Fluss und Sternhimmel als vereinfachter Zeitvergleich."
+        ],
+        [
+          "Auf dem Meer kamen Kompass, Karten, Kursrechnung und genaue Himmelsbeobachtungen hinzu.",
+          "Historisches Schiff, Tisch mit Seekarte/Kompass und Navigator blickt zu Sternen."
+        ],
+        [
+          "Andere Seefahrtstraditionen nutzten Sterne, Wellen, Wind und Zeichen für nahes Land auf eigene Weise.",
+          "Traditionelles pazifisches Kanu in respektvoller Szene mit klaren Wellen, Horizontsternen und Seevogel."
+        ],
+        [
+          "Entscheidend war, aus vielen unvollkommenen Beobachtungen gemeinsam eine brauchbare Vorstellung vom eigenen Weg zu gewinnen.",
+          "Große anschauliche Kombiszene verschiedener natürlicher Wegzeichen und eine klar hervorgehobene Route."
+        ]
+      ]
+    },
+    {
+      "key": "closing",
+      "name": "Was GPS verändert hat",
+      "era": "Moderner Vergleich nur in den letzten Bildern",
+      "shots": [
+        [
+          "Heute schätzt ein Smartphone unsere Position mithilfe von Satellitensignalen, statt dass wir sie ständig selbst herleiten.",
+          "Modernes Handgerät zeigt grobe Kartennadel, Satelliten im Hintergrund als einfacher Querschnitt; kein technologischer Pseudotext."
+        ],
+        [
+          "Der erstaunliche Teil ist nicht, dass Menschen früher kein GPS hatten, sondern wie viel Orientierung sie trotzdem beherrschten.",
+          "Schlussbild: historischer Reisender blickt von Klippe aufs Meer, moderne Kartenansicht als kleines transparentes Gegenstück."
+        ]
+      ]
+    }
+  ]
+}
