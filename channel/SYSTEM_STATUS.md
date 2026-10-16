@@ -71,3 +71,11 @@ Diese offenen Punkte ändern nichts an der jetzt festgelegten Bildproduktionslog
 - Longform-Qualitätsregeln: `config/longform-policy.json` und Validator.
 - Phase 2/3: noch keine echten Bild- oder Voice-Assets. Google Flow startet mit genau 3 Covers, wartet ausschließlich auf Nutzerwahl; danach automatische 5er-Batches.
 - **Kein fertiges MP4 behaupten, bevor echte Assets, Alignment und Render vorliegen.**
+
+## Ab Oktober 2026: kontinuierliche Verbesserung ist höchste Priorität
+
+- Neue Policy: `config/quality-loop.json` und `channel/CONTINUOUS_IMPROVEMENT.md`.
+- Nach jedem fertig gerenderten Video entsteht ein **PENDING**-`POST_VIDEO_REVIEW.json`-Report.
+- `quality:close` verlangt echte Beobachtungen, Ursache, übertragbare Änderung und Nachprüfung und führt Lessons in `channel/IMPROVEMENT_LEDGER.json` zusammen.
+- `create:youtube` blockiert neue Projekte, wenn bereits lokal gerenderte Videos nicht überprüft wurden.
+- Grenzen: Weder automatische Sichtung der echten MP4 noch YouTube-Analytics-Abruf sind momentan implementiert. Erfolgreiche CI-Tests beweisen nicht automatisch hohe Videogüte.
