@@ -10,12 +10,92 @@ import { validatePhase1 } from '../src/cli/validate-youtube-phase1.js';
 import { phase1Links, phase1ChatLinks, renderPhase1Handoff } from '../src/lib/phase1-handoff.js';
 import { validatePacing } from '../src/cli/validate-youtube-pacing.js';
 import { normalizeText, similarity } from '../src/lib/pipeline.js';
+import { makeReview, validatePostVideoReview, assertReviewGateOpen, reviewPath } from '../src/lib/quality-loop.js';
+import { closeVideoReview } from '../src/cli/quality-review-youtube.js';
 
 const TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-feuer-ohne-streichhoelzer';
 const SECOND_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-machten-menschen-essen-ohne-kuehlschrank-haltbar';
 const THIRD_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-ueberlebten-menschen-eisige-winter-ohne-heizung';
 const FOURTH_TEST_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-wuschen-menschen-ihre-kleidung-ohne-waschmaschine';
 const LONGFORM_PROJECT = 'youtube/2026-KW41_05-10_bis_11-10/wie-bekamen-menschen-trinkwasser-ohne-wasserhahn';
+
+test('Qualitätskreislauf ist oberste Priorität und muss jedes Video überprüfbar verbessern', async () => {
+  const policy = JSON.parse(await readFile('config/quality-loop.json', 'utf8'));
+  const agent = await readFile('AGENTS.md', 'utf8');
+  const creator = await readFile('src/cli/create-youtube-project.js', 'utf8');
+  const phase3 = await readFile('src/cli/phase3-youtube.js', 'utf8');
+  assert.equal(policy.priority, 'HIGHEST');
+  assert.equal(policy.reviewRequiredAfterEveryVideo, true);
+  assert.equal(policy.reviewGateBeforeNextVideo, true);
+  assert.match(agent, /HÖCHSTE PRIORITÄT/);
+  assert.match(creator, /await assertReviewGateOpen\(\)/);
+  assert.match(phase3, /quality-review-youtube\.js.*--init/);
+  const review = await makeReview({ videoId: 'demo', title: 'Testtitel' });
+  assert.equal(review.status, 'PENDING');
+  const result = await validatePostVideoReview(review, { checkFiles: false });
+  assert.equal(result.passed, false);
+  assert.ok(result.errors.some(x => x.includes('Lesson')));
+  assert.ok(result.errors.some(x => x.includes('Ganzes Video')));
+});
+
+test('Ein fertiger Export blockiert das nächste Video bis zur nachgewiesenen Review', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'strichkosmos-quality-'));
+  const projectDir = path.join(root, 'youtube', '2026-KW42', 'test-video');
+  const techDir = path.join(projectDir, '99-technik');
+  const exportDir = path.join(projectDir, '03-export');
+  const ledgerFile = path.join(root, 'ledger.json');
+  await mkdir(techDir, { recursive: true });
+  await mkdir(exportDir, { recursive: true });
+  await writeFile(path.join(techDir, 'video.json'), JSON.stringify({ videoId: 'quality_test', title: 'Testvideo' }), 'utf8');
+  await writeFile(path.join(exportDir, 'FINAL_VIDEO.mp4'), 'fake local media for gate test', 'utf8');
+  await writeFile(ledgerFile, JSON.stringify({ schemaVersion: 1, version: 1, reviewedVideos: [], appliedLessons: [], experiments: [] }), 'utf8');
+  try {
+    await assert.rejects(assertReviewGateOpen(path.join(root, 'youtube')), /reviewen/);
+    const review = await makeReview({ videoId: 'quality_test', title: 'Testvideo' });
+    review.evidence.fullVideoWatched = true;
+    review.evidence.reviewNotes = 'Alle Szenen, Bildwechsel, Sprecherstellen, Hook und Schluss sind von Anfang bis Ende überprüft worden.';
+    review.evidence.strengths = ['Klarer Einstieg mit verständlicher Frage und passender Szene.'];
+    review.reviewer = 'Editorial review';
+    review.summary = 'Das Video wurde überprüft. Eine systemische Schwäche beim Erklärbild wurde mit einer zentralen Anpassung nachgebessert.';
+    for (const area of Object.keys(review.scores)) review.scores[area] = 4;
+    review.findings = [{
+      area: 'visuals', severity: 'MAJOR', timecodeSeconds: 38, imageNumber: 7,
+      observation: 'Einzelne Querschnitte zeigen unlesbar kleine englische Beschriftungen.',
+      rootCause: 'Die bisherigen Bildvorgaben verhindern kleinteilige Labels nicht zuverlässig.',
+      action: 'Schriftvorgabe in der zentralen Bildpolicy verschärfen und Bildgegenprobe durchführen.',
+      status: 'FIXED', changedFiles: ['config/visual-policy.json'],
+      verification: 'Bildprompt und zentralen Validator geprüft; Wiederholung im nächsten Video beobachten.'
+    }];
+    review.lessons = [{
+      findingIndex: 0, status: 'APPLIED',
+      rule: 'Kleine englische Mini-Labels in generierten Erklärbildern ausschließen.',
+      changedFiles: ['config/visual-policy.json'],
+      verification: 'Vorhandene Policy untersucht und Test für den Reviewabschluss ausgeführt.'
+    }];
+    await writeFile(reviewPath(projectDir), JSON.stringify(review, null, 2), 'utf8');
+    const pending = await validatePostVideoReview(review, { projectDir, checkFiles: true });
+    assert.equal(pending.passed, true, pending.errors.join('\n'));
+    await assert.rejects(assertReviewGateOpen(path.join(root, 'youtube')), /reviewen/);
+    const closed = await closeVideoReview(projectDir, { ledgerFile });
+    assert.equal(closed.newLessons, 1);
+    const saved = JSON.parse(await readFile(reviewPath(projectDir), 'utf8'));
+    assert.equal(saved.status, 'COMPLETE');
+    const ledger = JSON.parse(await readFile(ledgerFile, 'utf8'));
+    assert.equal(ledger.appliedLessons.length, 1);
+    assert.equal(ledger.reviewedVideos[0].videoId, 'quality_test');
+    await assertReviewGateOpen(path.join(root, 'youtube'));
+
+    // Bei zu wenig echten Nachweisen darf die Review nicht abgeschlossen werden.
+    const broken = structuredClone(review);
+    broken.evidence.fullVideoWatched = false;
+    broken.lessons = [];
+    const invalid = await validatePostVideoReview(broken, { projectDir, checkFiles: false });
+    assert.equal(invalid.passed, false);
+    assert.ok(invalid.errors.some(x => x.includes('übertragbare')));
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
 
 test('Phase-1-Handoff stellt beide direkten, mobil erreichbaren Videodateilinks bereit', async () => {
   const dir = 'youtube/2026-KW41_05-10_bis_11-10/wie-bekamen-menschen-trinkwasser-ohne-wasserhahn';
