@@ -1,7 +1,7 @@
 import React from 'react';
 import { AbsoluteFill, Audio, Img, Sequence, interpolate, staticFile, useCurrentFrame } from 'remotion';
 
-function Shot({ image, durationInFrames }) {
+function Shot({ image, durationInFrames, fps }) {
   const frame = useCurrentFrame();
   const progress = durationInFrames <= 1 ? 0 : frame / (durationInFrames - 1);
   const motion = image.motion ?? {};
@@ -21,6 +21,36 @@ function Shot({ image, durationInFrames }) {
           transformOrigin: 'center center'
         }}
       />
+      {(image.cues ?? []).filter(cue => cue?.type === 'highlight' || cue?.type === 'label').map((cue, index) => {
+        // Coordinates are editorial annotations (normalized 0..1), not AI-guessed paths.
+        const x = Number(cue.x), y = Number(cue.y);
+        const w = Number(cue.width ?? 0.2), h = Number(cue.height ?? 0.12);
+        if (![x, y, w, h].every(Number.isFinite) || x < 0 || y < 0 ||
+            w <= 0 || h <= 0 || x + w > 1 || y + h > 1) return null;
+        const at = Math.max(0, Number(cue.atSeconds ?? 0));
+        const until = Number(cue.untilSeconds ?? (durationInFrames / fps));
+        if (!Number.isFinite(until) || until <= at) return null;
+        const elapsed = frame / fps;
+        const opacity = elapsed < at || elapsed > until ? 0 :
+          Math.min(1, (elapsed - at) / 0.22, (until - elapsed) / 0.22);
+        const label = String(cue.text ?? '').trim();
+        if (cue.type === 'label' && (!label || label.length > 32 ||
+            /Bild\s*\d|SCENE_KEY|OUTPUT FILE|Polaris/i.test(label))) return null;
+        return (
+          <div key={index} style={{
+            position: 'absolute', left: (x * 100) + '%', top: (y * 100) + '%',
+            width: (w * 100) + '%', height: (h * 100) + '%',
+            opacity, boxSizing: 'border-box', pointerEvents: 'none',
+            border: cue.type === 'highlight' ? '5px solid #E6AF55' : 'none',
+            borderRadius: 14,
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            fontFamily: 'Arial, sans-serif', fontSize: 34, fontWeight: 700,
+            textAlign: 'center', color: '#fff',
+            textShadow: '0 2px 4px rgba(0,0,0,.8)',
+            background: cue.type === 'label' ? 'rgba(18,29,38,.82)' : 'transparent'
+          }}>{cue.type === 'label' ? label : null}</div>
+        );
+      })}
     </AbsoluteFill>
   );
 }
@@ -38,7 +68,7 @@ export function YouTubeComposition({ plan }) {
         const durationInFrames = end - from;
         return (
           <Sequence key={image.imageNumber} from={from} durationInFrames={durationInFrames} premountFor={fps}>
-            <Shot image={image} durationInFrames={durationInFrames} />
+            <Shot image={image} durationInFrames={durationInFrames} fps={fps} />
           </Sequence>
         );
       })}

@@ -70,5 +70,23 @@
       "label": "YouTube Help: interpreting CTR and impressions",
       "url": "https://support.google.com/youtube/answer/16767369"
     }
-  ]
+  ],
+  "visualQcPolicy": {
+    "requiredForNewProjects": true,
+    "manifest": "99-technik/VISUAL_QC.json",
+    "requiresRealPngReview": true,
+    "requiresAllImagesApproved": true,
+    "invalidatesApprovalsWhenPngChanges": true,
+    "checks": [
+      "matches narration",
+      "no production labels",
+      "German labels only",
+      "stickman anatomy",
+      "historically accurate",
+      "legible on phone",
+      "no pseudo-text",
+      "uncluttered"
+    ],
+    "limitation": "Gate validates signed-off reviewer attestations and PNG hashes, NOT visual pixel meaning."
+  }
 }

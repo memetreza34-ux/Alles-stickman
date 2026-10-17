@@ -69,3 +69,17 @@ Kurzform:
 ```
 
 **Es gibt nur einen Human-Gate: die Coverwahl.** Zwischen den 5er-Blöcken wird nicht gefragt und nicht auf `WEITER` gewartet.
+
+## Verbindliche Bildqualitaetskontrolle fuer neue Projekte
+
+Neue Videos besitzen `visualQualityGateRequired: true`. Nach Erzeugung aller PNGs:
+
+```bash
+npm run visual-qc:init -- --dir "youtube/<week>/<slug>"
+# Alle ECHTEN Bilder bei Smartphone-Groesse pruefen und VISUAL_QC.json ausfuellen
+npm run visual-qc:check -- --dir "youtube/<week>/<slug>"
+```
+
+Phase 2 und auch ein direkter Render werden blockiert, bis alle neun Bild-Checks pro PNG mit Reviewdatum, Reviewer und konkreter Notiz vorliegen. SHA256- und PNG-Dimensionspruefung machen fruehere Freigaben nach einem Bildaustausch ungueltig. **Dieses Gate erkennt Bildfehler NICHT automatisch**; die Bildsichtung muss real stattfinden.
+
+Die Timeline waehlt pro Szene passendes Camera-Motion: technische Schemata bleiben lesbar und weitgehend statisch, Landschaften werden ruhig geschwenkt und Storys dezent gezoomt. Fuer gezielte Erklaer-Hervorhebungen kann der Editor optionale `motionCues` in `SCENE_VISUALS_EN.json` setzen.
