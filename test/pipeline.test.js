@@ -555,7 +555,7 @@ test('YouTube-Export baut gültige SRT- und Zeitstempeldateien', () => {
   assert.equal((custom.match(/#Trinkwasser/g) ?? []).length, 1);
   assert.match(buildDescriptionWithHashtags('Text #Trinkwasser', {
     hashtags: ['#Trinkwasser', '#Geschichte']
-  }), /Text #Trinkwasser\n\n#AllesStickman #Geschichte/);
+  }), /Text #Trinkwasser\n\n#Geschichte/);
 
 });
 
