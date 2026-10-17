@@ -64,7 +64,8 @@ export function buildDescriptionWithHashtags(description, { hashtags = [], tags 
   const body = String(description ?? '').trim();
   const existing = [...body.matchAll(/#[\p{L}\p{N}_]+/gu)].map((m) => m[0]);
   const seen = new Set(existing.map((tag) => tag.toLocaleLowerCase('de')));
-  const suggested = ['#AllesStickman', ...(Array.isArray(hashtags) && hashtags.length ? hashtags : tags)];
+  // Channel identity comes from upload metadata, never from a hardcoded global hashtag.
+  const suggested = Array.isArray(hashtags) && hashtags.length ? hashtags : tags;
   const added = [];
   for (const value of suggested) {
     const tag = toHashtag(value);
