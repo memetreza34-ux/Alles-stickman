@@ -168,7 +168,17 @@ export async function validatePhase1(projectDirectory) {
       if (hookWords.length > maxHookWords) errors.push(`Pipeline v7+: Hook ist mit ${hookWords.length} Wörtern zu lang (max. ${maxHookWords} bis Setup).`);
       const hookSentences = hookText.split(/(?<=[.!?])\s+/).map((x) => x.trim()).filter(Boolean);
       const firstSentenceWords = (hookSentences[0] ?? '').split(/\s+/).filter(Boolean).length;
-      const firstTwoWords = hookSentences.slice(0,2).join(' ').split(/\s+/).filter(Boolean).length;
+      const firstTwo = hookSentences.slice(0,2).join(' ');
+      const firstTwoWords = firstTwo.split(/\s+/).filter(Boolean).length;
+      // Future videos: capitalized technical terms in the title must be spoken,
+      // not merely asserted in SCRIPT_PLAN titleConnection metadata.
+      if (meta.visualQualityGateRequired === true) {
+        for (const acronym of (String(meta.title ?? '').match(/\b[A-Z]{2,}[A-Z0-9]*\b/g) ?? [])) {
+          if (!new RegExp('\\b' + acronym + '\\b', 'i').test(firstTwo)) {
+            errors.push('Hook: Titelbegriff ' + acronym + ' muss in den ersten zwei gesprochenen Saetzen stehen.');
+          }
+        }
+      }
       const hardFirst = Number(scriptPolicy.hookQuality?.hardMaxFirstSentenceWords ?? 24);
       const hardTwo = Number(scriptPolicy.hookQuality?.hardMaxFirstTwoSentencesWords ?? 48);
       if (firstSentenceWords > hardFirst) errors.push(`Pipeline v7+: Erster Hook-Satz ist mit ${firstSentenceWords} Wörtern zu lang (Hard-Max ${hardFirst}).`);
