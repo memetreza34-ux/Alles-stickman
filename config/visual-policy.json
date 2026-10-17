@@ -354,5 +354,20 @@
     "positiveReasoning": "Choose shot medium, color scheme, level of detail and need for people from the spoken statement, preserving illustration identity across topics.",
     "approvalScope": "The user approved five detailed English prompts as style direction; v14 unifies their common craft. Generated results still require inspection.",
     "canonicalMasterPath": "channel/MASTER_VISUAL_STYLE_EN.txt"
+  },
+  "visualOutputAcceptance": {
+    "requiredForNewProjects": true,
+    "qualityGate": "99-technik/VISUAL_QC.json after actual PNG inspection",
+    "noPrintedSceneNumber": true,
+    "forbiddenExamples": [
+      "Bild 11",
+      "Bild 47",
+      "SCENE_KEY",
+      "OUTPUT FILE",
+      "Polaris as an English in-image label"
+    ],
+    "characterStandard": "All humans, including historical and Polynesian sailors, must be recognizably simple 2D stick figures. No realistic anatomy.",
+    "technicalDesign": "One key point per frame; avoid overcrowded arrow diagrams and unreadable worksheet panels.",
+    "manualVisionReviewRequired": true
   }
 }
