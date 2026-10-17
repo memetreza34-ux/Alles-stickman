@@ -67,8 +67,8 @@ async function main() {
     'No dense worksheet panels, tiny route legends or visually false diagrams. One readable explanatory purpose per image.',
     'The cover selected as Bild 01 must also match the opening narration. A clickworthy unrelated picture is NOT acceptable.',
     'After generation inspect REAL PNGs visually, complete VISUAL_QC.json with honest evidence before rendering.'
-  ].join('\\n');
-  await writeFile(promptPath, prompt + '\\n' + imageAcceptanceGuard + '\\n', 'utf8');
+  ].join('\n');
+  await writeFile(promptPath, prompt + '\n' + imageAcceptanceGuard + '\n', 'utf8');
   const starterPath = path.join(destination, '00-bildprompts', 'GOOGLE_FLOW_START_COPY.txt');
   await writeFile(starterPath, embedCanonicalVisualStyle(await readFile(starterPath, 'utf8'), masterStyle), 'utf8');
 
