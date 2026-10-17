@@ -544,7 +544,8 @@ test('YouTube-Export baut gültige SRT- und Zeitstempeldateien', () => {
   assert.match(upload, /TAGS\nMenschheit, Geschichte/);
   assert.match(upload, /SUBTITLES\.srt/);
   assert.match(upload, /TIMED_SCRIPT\.txt/);
-  assert.match(upload, /BESCHREIBUNG\nTestbeschreibung\n\n#AllesStickman #Menschheit #Geschichte/);
+  assert.match(upload, /BESCHREIBUNG\nTestbeschreibung\n\n#Menschheit #Geschichte/);
+  assert.doesNotMatch(upload, /#AllesStickman/);
   const custom = buildUploadText({
     title: 'Wasser', description: 'Quellen und Brunnen',
     tags: ['Menschheit', 'Aquädukt'],
