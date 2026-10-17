@@ -69,3 +69,17 @@ Das direkte Linkformat wird zentral erzeugt von `src/lib/phase1-handoff.js`. Fü
 Bei jeder Video-Phase 1 zusätzlich zur Titel-/Beschreibung-/Tag-Planung **2–3 relevante Hashtags** in `video.json.uploadMetadata.hashtags` eintragen, zum Beispiel `#AllesStickman`, `#Geschichte` und ein konkreter Themen-Hashtag. Der Export `YOUTUBE_UPLOAD.txt` setzt sie automatisch ans Ende der Beschreibung und dedupliziert sie. Die SRT-Untertitel bleiben unverändert. Keine irrelevanten `#Shorts`, `#viral` oder Hashtag-Wände.
 
 Für jedes künftige Google-Flow-Bild gelten `config/visual-policy.json.sceneEnergy` und die aktuellen Masterprompts: lebendige Figuren und Szenen, keine unnötigen englischen winzigen Beschriftungen oder mitgerenderten Produktionsnotizen. Nicht alle Bilder als Cover gestalten; nur dessen klaren Fokus und Ausdruck als Qualitätsmaßstab übernehmen.
+
+## SYSTEMWEITE VORSORGE NACH GPS-REVIEW (17.10.2026)
+
+**Alle folgenden Regeln gelten fuer jedes NEUE Videoprojekt, nicht nur GPS.**
+
+- Sichtbare Bildnummern wie Bild 11/Bild 47, SCENE_KEY, OUTPUT FILE, Produktionsnotizen, kryptische und englische Bildlabels sind verboten. Bei Bedarf nur kurze korrekte deutsche und mobil lesbare Labels.
+- Alle Menschen, einschliesslich historischer/polynesischer Navigatoren, sind eindeutig gezeichnete einfache 2D-Stickmen. Technische Objektgrafiken koennen figurenfrei sein.
+- Bildinhalt folgt exakt der Sprecherstelle. Fachgrafiken brauchen einen klaren Fokus, keinen ueberladenen Schulbuch-Mehrfachvergleich oder zu kleine Pfeile.
+- Nach Bilderzeugung JEDES echte PNG am Handy ansehen und dokumentieren. Fuer neue Projekte: npm run visual-qc:init -- --dir "youtube/<week>/<slug>". Dann alle neun Kontrollen, Reviewer, Datum, konkrete Notiz in 99-technik/VISUAL_QC.json ausfuellen; danach npm run visual-qc:check -- --dir "youtube/<week>/<slug>". Kein Abhaken ohne Bildsichtung. Neu generierte PNGs invalidieren vorherige Hash-Freigaben.
+- Phase 2 und direkter Render blockieren neue Projekte ohne verifizierbare Freigabe. Achtung: Validator kontrolliert Dokumentation und Dateihashes, keine eigenstaendige KI-Sichtpruefung.
+- Rendering: Diagramme/technische Erklaerbilder ruhig lassen; Landschaften passend sanft bewegen. Echte inhaltliche Animation nur mittels vorher redaktionell platzierter motionCues (Typ highlight/label, x,y,width,height normalisiert 0..1, atSeconds/untilSeconds) in SCENE_VISUALS_EN.json.
+- Ein technisches Akronym des Titels muss bei neuen Projekten innerhalb der ersten zwei gesprochenen Saetze fallen; nicht nur in der Hook-Metadatei.
+- Hashtags aus dem jeweiligen Videoprojekt, keine starre globale Marke.
+- Alte Projekte ohne visualQualityGateRequired bleiben kompatibel; auch sie muessen vor einer Veroeffentlichung auf dem echten Video geprueft werden.
