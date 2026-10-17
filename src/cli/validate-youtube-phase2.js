@@ -3,6 +3,7 @@
 import { readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { arg, discoverAudioFiles, exists, listFinalImages, projectPaths, readJson } from '../lib/pipeline.js';
+import { validateVisualQc } from '../lib/visual-qc.js';
 
 export async function validatePhase2(projectDirectory) {
   const p = projectPaths(projectDirectory);
@@ -29,6 +30,11 @@ export async function validatePhase2(projectDirectory) {
     if (dirs.length) errors.push('Der finale Bilderordner muss flach sein; Unterordner sind nicht erlaubt.');
   }
 
+  // New projects require actual reviewed and unchanged PNGs, not only numbered files.
+  if (meta.visualQualityGateRequired === true) {
+    const qc = await validateVisualQc(projectDirectory);
+    errors.push(...qc.errors);
+  }
   const audio = await discoverAudioFiles(p.audioDir);
   if (audio.length !== 1) errors.push(`Unter 02-audio wird genau eine finale Voice-over-Datei erwartet; gefunden: ${audio.length}.`);
 
