@@ -57,7 +57,18 @@ async function main() {
   const prompt = embedCanonicalVisualStyle((await readFile(promptPath, 'utf8'))
     .replace('[VIDEO-TITEL]', title)
     .replace('ACTIVE_STYLE_ID: UNSET', `ACTIVE_STYLE_ID: ${visual.styleId ?? 'UNSET'}`), masterStyle);
-  await writeFile(promptPath, prompt, 'utf8');
+  // Fresh episodes repeat the actual GPS-review failures in their image prompts.
+  const imageAcceptanceGuard = [
+    '',
+    'NON-NEGOTIABLE RENDERED IMAGE ACCEPTANCE:',
+    'Never draw scene/file numbers such as Bild 11 or Bild 47, SCENE_KEY, OUTPUT FILE, asset IDs or prompt instructions inside any image.',
+    'Any visible non-cover labels must be intentional, brief, correct and GERMAN only (e.g. POLARSTERN, not Polaris). Avoid gibberish letters.',
+    'Every human from every culture and era MUST be a clear simple hand-drawn 2D stickman, including Polynesian navigators. No realistic people.',
+    'No dense worksheet panels, tiny route legends or visually false diagrams. One readable explanatory purpose per image.',
+    'The cover selected as Bild 01 must also match the opening narration. A clickworthy unrelated picture is NOT acceptable.',
+    'After generation inspect REAL PNGs visually, complete VISUAL_QC.json with honest evidence before rendering.'
+  ].join('\\n');
+  await writeFile(promptPath, prompt + '\\n' + imageAcceptanceGuard + '\\n', 'utf8');
   const starterPath = path.join(destination, '00-bildprompts', 'GOOGLE_FLOW_START_COPY.txt');
   await writeFile(starterPath, embedCanonicalVisualStyle(await readFile(starterPath, 'utf8'), masterStyle), 'utf8');
 
