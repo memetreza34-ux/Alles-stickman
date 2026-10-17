@@ -61,7 +61,7 @@ async function main() {
   const imageAcceptanceGuard = [
     '',
     'NON-NEGOTIABLE RENDERED IMAGE ACCEPTANCE:',
-    'Never draw scene/file numbers such as Bild 11 or Bild 47, SCENE_KEY, OUTPUT FILE, asset IDs or prompt instructions inside any image.',
+    'Do not print file names, numbered scene identifiers, asset IDs or production/prompt instructions into generated image pixels.',
     'Any visible non-cover labels must be intentional, brief, correct and GERMAN only (e.g. POLARSTERN, not Polaris). Avoid gibberish letters.',
     'Every human from every culture and era MUST be a clear simple hand-drawn 2D stickman, including Polynesian navigators. No realistic people.',
     'No dense worksheet panels, tiny route legends or visually false diagrams. One readable explanatory purpose per image.',
