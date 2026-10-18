@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
@@ -12,6 +12,7 @@ import { buildPrompts } from '../src/cli/build-youtube-prompts.js';
 import { validatePhase1 } from '../src/cli/validate-youtube-phase1.js';
 import { motionFor } from '../src/cli/build-youtube-timeline.js';
 import { headlineFontSize } from '../src/lib/thumbnail.js';
+import { assertReviewGateOpen } from '../src/lib/quality-loop.js';
 
 const GPS = 'youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg';
 const FIXTURE_SCRIPT = 'test/fixtures/v8-laengengrad/voice-script.txt';
@@ -168,6 +169,23 @@ test('v8: Beispielprojekt besteht Phase 1; Handänderung oder Leak blockiert', a
     await writeFile(planFile, JSON.stringify(plan));
     const unsourced = await validatePhase1(dir);
     assert.ok(unsourced.errors.some((e) => e.includes('fehlt in RECHERCHE.md')));
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test('Review-Sperre: nur ausdrücklich begründete Testvideos sind ausgenommen', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'stickman-gate-'));
+  const dir = path.join(root, 'youtube', '2026-KW41', 'testvideo');
+  try {
+    await mkdir(path.join(dir, '99-technik'), { recursive: true });
+    await mkdir(path.join(dir, '03-export'), { recursive: true });
+    await writeFile(path.join(dir, '03-export', 'FINAL_VIDEO.mp4'), 'fake');
+    const metaFile = path.join(dir, '99-technik', 'video.json');
+    await writeFile(metaFile, JSON.stringify({ videoId: 't', title: 'T', reviewExempt: 'Test' }));
+    await assert.rejects(assertReviewGateOpen(path.join(root, 'youtube')), /reviewen/, 'zu kurze Begründung zählt nicht');
+    await writeFile(metaFile, JSON.stringify({ videoId: 't', title: 'T', reviewExempt: 'Testvideo der 2-Minuten-Testphase, Nutzerentscheidung.' }));
+    await assertReviewGateOpen(path.join(root, 'youtube'));
   } finally {
     await rm(root, { recursive: true, force: true });
   }

@@ -28,6 +28,8 @@ export async function completedVideoProjects(youtubeDir = path.resolve('youtube'
       const p = projectPaths(dir);
       if (!(await exists(p.meta))) continue;
       const meta = await readJson(p.meta);
+      // Ausdrücklich begründete Ausnahme (z. B. 2-Minuten-Testphase), sichtbar im Projekt selbst.
+      if (String(meta.reviewExempt ?? '').trim().length >= 20) continue;
       const status = await readJson(p.status, {});
       if (await exists(path.join(p.exportDir, 'FINAL_VIDEO.mp4')) ||
           meta.renderReady === true || status.renderReady === true) result.push(dir);

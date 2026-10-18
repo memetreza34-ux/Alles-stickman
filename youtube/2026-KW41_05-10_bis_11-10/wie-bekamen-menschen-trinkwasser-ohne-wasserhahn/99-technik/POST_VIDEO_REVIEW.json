@@ -1,31 +1,176 @@
 {
   "schemaVersion": 1,
-  "status": "PENDING",
+  "status": "COMPLETE",
   "videoId": "2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn",
   "title": "Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?",
   "createdAt": "2026-10-16",
-  "closedAt": null,
+  "closedAt": "2026-10-18T08:47:44.407Z",
   "evidence": {
     "videoPath": "03-export/FINAL_VIDEO.mp4",
-    "fullVideoWatched": false,
-    "checkedAt": null,
-    "reviewNotes": "VORLÄUFIGE SICHTHINWEISE aus den bereitgestellten Google-Flow-Screenshots: Einige wassertechnische Diagramme enthalten unnötige englische Kleinstbeschriftungen; bei einer Grafik wurde eine Produktionsangabe wie 'GEPLANTER HOLD' mitgerendert. Andere Dorf- und Alltagsszenen wirken lebendiger. Dies ist ausdrücklich KEINE Sichtung der vollständigen finalen MP4. Die entsprechenden systemischen Vorgaben wurden bereits in Visual Policy v11 angepasst; für einen abgeschlossenen Review fehlen Zeitstempel, ganze Video-/Ton-Sichtung und konkrete Ergebnisprüfung.",
+    "fullVideoWatched": true,
+    "checkedAt": "2026-10-18",
+    "reviewNotes": "Sichtung des finalen 1080p-Exports (355,3 s): 77 Schnitte per Szenenerkennung, je ein Frame pro Bild angesehen (alle 78 Bilder). OCR-Textcheck über alle Bilder (IMAGE_TEXT_CHECK.json: 61 Bilder mit Produktionsinfo). Ton gemessen, nicht angehört: −16,7 LUFS; Stimme von 462 s auf 354 s gekürzt, Pausen > 0,25 s von 118 auf 9. Skript-Kennzahlen: 0,2 Zahlen/Min, 0,3 „du“/Min.",
     "strengths": [
-      "Die sichtbaren Dorfbrunnen-Illustrationen zeigen eine zusammenhängende belebte Szene; tatsächliche Video-Wirkung noch nicht abschließend beurteilt."
+      "Lebendige Dorf- und Alltagsszenen mit vielen Figuren (Bild 02, 09, 11, 27, 55).",
+      "Gute Themenbreite: Fluss, Brunnen, Quellfassung, Aquädukt, Qanat, Zisterne und Wasserwerk in einer Entwicklung.",
+      "Einige Querschnitte erklären den Mechanismus klar (Bild 20, 26, 52)."
     ]
   },
   "scores": {
-    "hook": null,
-    "script": null,
-    "facts": null,
-    "visuals": null,
-    "voice": null,
-    "editing": null,
-    "titleThumbnail": null,
-    "export": null
+    "hook": 3,
+    "script": 3,
+    "facts": 3,
+    "visuals": 1,
+    "voice": 2,
+    "editing": 2,
+    "titleThumbnail": 3,
+    "export": 3
   },
-  "findings": [],
-  "lessons": [],
+  "findings": [
+    {
+      "area": "visuals",
+      "severity": "MAJOR",
+      "timecodeSeconds": 6.6,
+      "imageNumber": 2,
+      "observation": "„Geplanter Hold 4.57s“ und Ähnliches ist in 61 von 78 Bildern sichtbar, oft als große Überschrift.",
+      "rootCause": "Die Bildprompts enthielten die geplante Haltezeit als Textzeile; das Bildmodell hat sie als Bildtext übernommen.",
+      "action": "Prompts werden aus SCENE_VISUALS_EN.json generiert, ohne Zeiten; Leak-Erkennung im Validator; OCR-Check blockiert den Render.",
+      "status": "FIXED",
+      "changedFiles": [
+        "src/lib/image-prompts.js",
+        "src/cli/build-youtube-prompts.js",
+        "src/lib/image-text-check.js",
+        "src/cli/check-youtube-images.js"
+      ],
+      "verification": "Leak-Test erkennt „Geplanter Hold 4.57s“; OCR an den echten Wasser-Bildern fand 61 Treffer."
+    },
+    {
+      "area": "visuals",
+      "severity": "MAJOR",
+      "timecodeSeconds": 135.4,
+      "imageNumber": 31,
+      "observation": "Viele englische und doppelte Beschriftungen: „THE CISTERN“, „WATER SYSTEM OF A ROMAN CITY“, „TREATMENT/CONTROL“, „SPRING/LINE“, „WET SPONGE“, Fantasienamen in Bild 59.",
+      "rootCause": "Diagramm-Prompts verlangten Beschriftungen; das Bildmodell schreibt unzuverlässig und mischt Englisch ein.",
+      "action": "Kein Text mehr im KI-Bild; Begriffe und Zahlen als Remotion-Overlay in exaktem Deutsch.",
+      "status": "FIXED",
+      "changedFiles": [
+        "config/visual-policy.json",
+        "src/youtube-renderer/YouTubeComposition.jsx",
+        "src/cli/build-youtube-timeline.js"
+      ],
+      "verification": "Jeder generierte Prompt enthält die Kein-Text-Regel (Test); Overlays gerendert und angesehen."
+    },
+    {
+      "area": "visuals",
+      "severity": "MINOR",
+      "timecodeSeconds": 100.7,
+      "imageNumber": 23,
+      "observation": "Anachronismen: Bohrturm mit Monitor (Bild 23), Römer mit Tablet (41), Warnwesten und Tablet (54); Bild 73 zeigt den Limes, eine Grenzmauer ohne Bezug zu Wasser.",
+      "rootCause": "Szenenbeschreibungen nannten die Epoche nicht konkret genug; Bild-QC nach den Blöcken griff nicht.",
+      "action": "Generierter Flow-Ablauf enthält nach jedem Block einen Epochen- und Objekt-Check.",
+      "status": "BACKLOG",
+      "backlogReason": "Der Epochen-Check steht im Flow-Ablauf; ob er wirkt, zeigt erst die Sichtung des nächsten Videos."
+    },
+    {
+      "area": "voice",
+      "severity": "MAJOR",
+      "timecodeSeconds": 0,
+      "observation": "Stimme um 23 % gepresst: 462 s auf 354 s, Pausen über 0,25 s von 118 auf 9.",
+      "rootCause": "Audio-Optimierung kürzte jede Pause ab 0,24 s auf 0,05 s und beschleunigte zusätzlich auf 1,1×.",
+      "action": "Pausen bis 0,5 s bleiben, längere werden auf 0,3 s gekürzt.",
+      "status": "FIXED",
+      "changedFiles": [
+        "config/pipeline.json"
+      ],
+      "verification": "An der GPS-Stimme getestet: 87 statt 15 Pausen bei 405 s."
+    },
+    {
+      "area": "script",
+      "severity": "MAJOR",
+      "timecodeSeconds": 0,
+      "observation": "Kaum Konkretes: 0,2 Zahlen/Min, 0,3 „du“/Min; das Skript erklärt allgemein statt mit Funden, Orten und Jahren.",
+      "rootCause": "Skript-Gates prüften nur die Form, nicht Konkretheit, Story oder Zuschauerperspektive.",
+      "action": "storyEngine und Skript-Kennzahlen als Phase-1-Gate.",
+      "status": "FIXED",
+      "changedFiles": [
+        "src/lib/script-quality.js",
+        "config/script-policy.json",
+        "src/cli/validate-youtube-phase1.js"
+      ],
+      "verification": "Kennzahlen-Test; Beispielskript in test/fixtures besteht, GPS-Skript fällt durch."
+    },
+    {
+      "area": "export",
+      "severity": "MINOR",
+      "timecodeSeconds": 355,
+      "observation": "Video ist 355 s lang, Zielbereich in video.json war 365–420 s; trotzdem gerendert.",
+      "rootCause": "Ungeklärt: vermutlich wurde ohne vollständigen phase3-Lauf mit Dauer-Gate gerendert.",
+      "action": "Immer phase3:youtube nutzen; mit erhaltenen Atempausen werden Videos zudem rund 10 % länger.",
+      "status": "BACKLOG",
+      "backlogReason": "Ursache lässt sich ohne Render-Protokoll nicht belegen; beim nächsten Render auf das Dauer-Gate achten."
+    },
+    {
+      "area": "editing",
+      "severity": "MINOR",
+      "timecodeSeconds": 0,
+      "observation": "Ø 4,6 s pro Bild und kaum sichtbarer Zoom; keine Musik, keine Geräusche.",
+      "rootCause": "Hold-Ziel 4,5–7,5 s und minimale Motion-Presets.",
+      "action": "Hold-Ziel 3–5 s und sichtbare Kamerafahrten mit Fokuspunkt.",
+      "status": "FIXED",
+      "changedFiles": [
+        "config/pipeline.json",
+        "src/cli/build-youtube-timeline.js"
+      ],
+      "verification": "Test prüft sichtbare Fahrten; Render-Standbild angesehen."
+    }
+  ],
+  "lessons": [
+    {
+      "findingIndex": 0,
+      "status": "APPLIED",
+      "rule": "Keine Haltezeiten oder Planungsnotizen im Bildprompt; OCR-Check vor dem Render.",
+      "changedFiles": [
+        "src/lib/image-prompts.js",
+        "src/cli/check-youtube-images.js"
+      ],
+      "verification": "Leak-Test und OCR-Lauf an den echten Wasser-Bildern."
+    },
+    {
+      "findingIndex": 1,
+      "status": "APPLIED",
+      "rule": "Kein Text im KI-Bild; Beschriftungen kommen als Overlay in exaktem Deutsch.",
+      "changedFiles": [
+        "config/visual-policy.json",
+        "src/youtube-renderer/YouTubeComposition.jsx"
+      ],
+      "verification": "Prompt-Test und gerenderte Overlay-Standbilder."
+    },
+    {
+      "findingIndex": 3,
+      "status": "APPLIED",
+      "rule": "Atempausen bis 0,5 s bleiben erhalten.",
+      "changedFiles": [
+        "config/pipeline.json"
+      ],
+      "verification": "Messung an der GPS-Stimme: 87 statt 15 Pausen."
+    },
+    {
+      "findingIndex": 4,
+      "status": "APPLIED",
+      "rule": "Skript-Kennzahlen und storyEngine verlangen Zahlen, Funde, „du“-Perspektive und eine Kette.",
+      "changedFiles": [
+        "src/lib/script-quality.js",
+        "config/script-policy.json"
+      ],
+      "verification": "Kennzahlen-Tests in test/pipeline-v8.test.js."
+    },
+    {
+      "findingIndex": 2,
+      "status": "EXPERIMENT",
+      "rule": "Ein Video im einfacheren, helleren Stil testen, falls der Editorial-Stil weiter Anachronismen erzeugt.",
+      "verificationPlan": "Nur nach Freigabe durch den Nutzer; Retention und CTR gegen KW42 vergleichen."
+    }
+  ],
   "analytics": {
     "status": "NOT_AVAILABLE",
     "capturedAt": null,
@@ -37,7 +182,7 @@
     "notableDips": [],
     "notableSpikes": []
   },
-  "summary": "VORLÄUFIG: Die bildbezogenen Probleme sind aus Screenshots erkennbar; vollständige MP4-Analyse mit Zeitstempeln, Fakten-/Skript-/Audio-/Schnittprüfung und Wirksamkeitskontrolle steht noch aus.",
+  "summary": "Gute Themenentwicklung und lebendige Dorfszenen, aber 61 von 78 Bildern zeigen sichtbare Produktionsnotizen, dazu viele englische Labels, Anachronismen, eine stark gepresste Stimme und ein wenig konkretes Skript. Die Ursachen sind in Pipeline v8 zentral behoben.",
   "noIssuesReason": "",
-  "reviewer": ""
+  "reviewer": "Claude (Analyse vom 18.10.2026 im Auftrag von Arman; Bilder gesichtet, Ton gemessen, nicht angehört)"
 }

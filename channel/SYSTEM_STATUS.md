@@ -10,7 +10,7 @@ Stand: 18.10.2026 · Pipeline v8 · Bildwelt v15
 | 41 | Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn? | 5:55 | gerendert; „Geplanter Hold“ in 61 von 78 Bildern |
 | 42 | Wie fanden Menschen ohne GPS ihren Weg? | 6:07 | gerendert; „Bild XX“ in 10 Bildern, ~9 Stilbrüche |
 
-Bilder, Stimmen und MP4s liegen lokal, nicht auf GitHub (`.gitignore`). Die Reviews beider Longform-Videos sind noch offen.
+Bilder, Stimmen und MP4s liegen lokal, nicht auf GitHub (`.gitignore`). Die Reviews von Wasser und GPS sind abgeschlossen (18.10.2026); die vier Testvideos sind per `reviewExempt` von der Review-Sperre ausgenommen.
 
 ## Neu in v8
 
