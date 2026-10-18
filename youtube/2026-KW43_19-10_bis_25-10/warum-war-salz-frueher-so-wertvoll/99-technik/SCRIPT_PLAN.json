@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "status": "READY",
+  "structure": [
+    "hook",
+    "setup",
+    "main",
+    "resolution",
+    "closing"
+  ],
+  "sections": [
+    {
+      "id": "hook",
+      "startAnchor": "Du kippst Salz ins Nudelwasser",
+      "purpose": "Neugier/Kernfrage sofort eröffnen",
+      "hookType": "contrast",
+      "curiosityGap": "Warum war ein Pulver, das heute fast nichts kostet, früher so viel wert, dass Menschen dafür in Berge krochen?",
+      "titleConnection": "Die Hook-Frage ist wörtlich die Titelfrage: Warum war Salz früher so wertvoll?",
+      "payoffPromise": "Salz war nie selten, aber lebenswichtig fürs Haltbarmachen und nur an wenigen Orten leicht zu holen – deshalb Handel, Macht und Steuern; heute machen Maschinen, Transport und Kühlschrank es billig.",
+      "sceneSettingOnly": false
+    },
+    {
+      "id": "setup",
+      "startAnchor": "Für diese Menschen ging es nicht um Geschmack.",
+      "purpose": "Nur nötigen Kontext liefern"
+    },
+    {
+      "id": "main",
+      "startAnchor": "Am Anfang brauchten Menschen kaum zusätzliches Salz.",
+      "purpose": "Erklärung als Entwicklung erzählen"
+    },
+    {
+      "id": "resolution",
+      "startAnchor": "Warum war Salz also so wertvoll?",
+      "purpose": "Hook-Frage eindeutig beantworten"
+    },
+    {
+      "id": "closing",
+      "startAnchor": "Wenn du also das nächste Mal Salz ins Nudelwasser kippst",
+      "purpose": "Kurzer letzter Gedanke ohne langes Outro"
+    }
+  ],
+  "storyEngine": {
+    "openingContrast": {
+      "today": "Du kippst Salz ins Nudelwasser, ohne nachzudenken.",
+      "past": "Vor über 3.000 Jahren kriechen Bergleute mit brennenden Spänen in den Salzberg von Hallstatt.",
+      "anchor": "Vor über 3.000 Jahren krochen Menschen dafür"
+    },
+    "stakes": "Ohne Salz verdarben Fleisch und Fisch, ohne Vorrat kam im Winter der Hunger; später kosteten Salzvergehen Gefängnis, Galeere oder das Leben.",
+    "escalation": [
+      {
+        "problem": "Sesshafte Menschen müssen Essen über lange Winter bringen.",
+        "solution": "Salzwasser an Küsten und Quellen einkochen – öffnet das Problem: viel Holz, wenige Quellen.",
+        "anchor": "kochte salziges Wasser ein"
+      },
+      {
+        "problem": "Das Salz steckt tief im Berg.",
+        "solution": "Bergbau in Hallstatt – öffnet das Problem: Salz gibt es nur an wenigen Orten.",
+        "anchor": "gruben Menschen direkt in den Berg"
+      },
+      {
+        "problem": "Salz liegt weit weg, Fisch verdirbt in Tagen.",
+        "solution": "Fernhandel über Salzstraßen nach Lübeck und über die Ostsee – öffnet das Problem: alle hängen am Salz.",
+        "anchor": "Auf der Alten Salzstraße rollten Wagen"
+      },
+      {
+        "problem": "Alle hängen vom Salz ab.",
+        "solution": "Herrscher machen Salz zum Monopol und zur Steuer – öffnet das Problem: Zwangskauf, Schmuggel, Hass.",
+        "anchor": "In China machte der Staat Salz zum Monopol."
+      },
+      {
+        "problem": "Das britische Salzgesetz verbietet Indern eigenes Salz.",
+        "solution": "Gandhis Salzmarsch und massenhafter Ungehorsam.",
+        "anchor": "Mahatma Gandhi los"
+      }
+    ],
+    "evidence": [
+      {
+        "claim": "Hallstatt: Holztreppe im Salz, Jahrringe datieren sie auf 1344 v. Chr., älteste erhaltene Holztreppe Europas.",
+        "anchor": "Wir wissen das, weil im Salz eine hölzerne Treppe überlebt hat.",
+        "source": "https://www.nhm.at/hallstatt/en/interdisciplinary/wood_research"
+      },
+      {
+        "claim": "Kot der Bergleute im Salz erhalten: Bohnen, Getreide, Blauschimmelkäse und Bier vor rund 2.700 Jahren.",
+        "anchor": "Der Kot der Bergleute blieb im Salz erhalten.",
+        "source": "https://www.nhm.at/en/press/beer_and_blue_cheese_already_on_the_menu_2700_years_ago"
+      },
+      {
+        "claim": "Kein antiker Text nutzt salarium als Salzgeld; die Salz-Sold-Geschichte entsteht erst im 19. Jahrhundert; Polybios: 2 Obolen pro Tag.",
+        "anchor": "Wir wissen das, weil kein einziger antiker Text",
+        "source": "https://kiwihellenist.blogspot.com/2017/01/salt-and-salary.html"
+      },
+      {
+        "claim": "Salzmarsch 1930: 24 Tage, 387 km, über 60.000 Verhaftete.",
+        "anchor": "und über 60.000 Menschen wurden verhaftet.",
+        "source": "https://en.wikipedia.org/wiki/Salt_March"
+      }
+    ],
+    "callback": {
+      "anchor": "Wenn du also das nächste Mal Salz ins Nudelwasser kippst",
+      "callsBackTo": "Du kippst Salz ins Nudelwasser"
+    }
+  }
+}
