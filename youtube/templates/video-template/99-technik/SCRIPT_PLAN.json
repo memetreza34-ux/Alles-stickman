@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "status": "PLANNED",
   "structure": [
     "hook",
@@ -39,5 +39,28 @@
       "startAnchor": "[CLOSING-START]",
       "purpose": "Kurzer letzter Gedanke ohne langes Outro"
     }
-  ]
+  ],
+  "storyEngine": {
+    "openingContrast": {
+      "today": "[HEUTIGER ALLTAGSMOMENT DES ZUSCHAUERS, z. B. Handy zeigt blauen Punkt]",
+      "past": "[DERSELBE MOMENT FRÜHER, z. B. Seemann ohne Land in Sicht]",
+      "anchor": "[EXAKTER SKRIPTTEXT IM HOOK]"
+    },
+    "stakes": "[WAS STAND AUF DEM SPIEL? z. B. Schiffbruch, Hunger, Tod]",
+    "escalation": [
+      { "problem": "[PROBLEM 1]", "solution": "[LÖSUNG 1, DIE PROBLEM 2 ÖFFNET]", "anchor": "[EXAKTER SKRIPTTEXT]" },
+      { "problem": "[PROBLEM 2]", "solution": "[LÖSUNG 2]", "anchor": "[EXAKTER SKRIPTTEXT]" },
+      { "problem": "[PROBLEM 3]", "solution": "[LÖSUNG 3]", "anchor": "[EXAKTER SKRIPTTEXT]" },
+      { "problem": "[PROBLEM 4]", "solution": "[LÖSUNG 4]", "anchor": "[EXAKTER SKRIPTTEXT]" }
+    ],
+    "evidence": [
+      { "claim": "[FUND/BELEG MIT ORT, JAHR, ZAHL]", "anchor": "[EXAKTER SKRIPTTEXT]", "source": "[URL AUS RECHERCHE.md]" },
+      { "claim": "[FUND/BELEG]", "anchor": "[EXAKTER SKRIPTTEXT]", "source": "[URL AUS RECHERCHE.md]" },
+      { "claim": "[FUND/BELEG]", "anchor": "[EXAKTER SKRIPTTEXT]", "source": "[URL AUS RECHERCHE.md]" }
+    ],
+    "callback": {
+      "anchor": "[EXAKTER SKRIPTTEXT IM SCHLUSS, DER DEN HOOK AUFGREIFT]",
+      "callsBackTo": "[EXAKTER SKRIPTTEXT IM HOOK]"
+    }
+  }
 }

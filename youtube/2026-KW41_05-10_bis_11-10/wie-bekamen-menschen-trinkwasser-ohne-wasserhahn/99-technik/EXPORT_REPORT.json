@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-10T11:37:52.907Z",
+  "videoFile": "03-export/FINAL_VIDEO.mp4",
+  "thumbnailFile": "03-export/THUMBNAIL.png",
+  "uploadMetadataFile": "03-export/YOUTUBE_UPLOAD.txt",
+  "subtitlesFile": "03-export/SUBTITLES.srt",
+  "timedScriptFile": "03-export/TIMED_SCRIPT.txt",
+  "subtitleSource": "99-technik/whisper/YOUTUBE_AUDIO_OPTIMIZED.json",
+  "subtitleSegments": 118,
+  "youtubeTitle": "Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?",
+  "youtubeDescriptionPresent": true,
+  "youtubeTagCount": 9,
+  "thumbnailSource": "00-bildprompts/images/Bild 01.png",
+  "coverSha256": "5d04f296b85a55720385aa9701ce58d6745ef4452a1a7b24e31e4d03ef6ea101",
+  "thumbnailSha256": "5d04f296b85a55720385aa9701ce58d6745ef4452a1a7b24e31e4d03ef6ea101",
+  "thumbnailIdenticalToCover": true
+}

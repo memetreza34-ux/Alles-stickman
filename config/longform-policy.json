@@ -25,13 +25,13 @@
   "visuals": {
     "contentDrivenImageCount": true,
     "illustrationFirst": true,
-    "minimumAverageHoldSeconds": 4.5,
-    "maximumAverageHoldSeconds": 7.5,
+    "minimumAverageHoldSeconds": 3,
+    "maximumAverageHoldSeconds": 5,
     "coverCandidates": 3,
     "coverSelectionAuthority": "user",
     "automaticBlocksOf": 5,
     "batchQualityCheck": true,
-    "referenceMode": "none",
+    "referenceMode": "style-sheet-optional",
     "finalFlatImageFolder": true,
     "finalImageCountMustMatchPlan": true
   },
@@ -58,6 +58,7 @@
     "Weder starre Zahl 70 Bilder noch immer dieselbe Bildart erzwingen; Bildzahl aus dem Skript ableiten.",
     "Historische Orte und Epochen bei Übergängen explizit in visualContinuityProfile belegen.",
     "Bei Storywelt-/Anatomiefehlern einzelne Bildnummer reparieren und QC wiederholen.",
-    "Das Erfüllen von Dateitests allein ersetzt keine echte Sichtkontrolle, Quellenprüfung oder Ton-/MP4-QC."
+    "Das Erfüllen von Dateitests allein ersetzt keine echte Sichtkontrolle, Quellenprüfung oder Ton-/MP4-QC.",
+    "Ab Pipeline v8: Ø 3–5 s pro Bild, Zahlen/Begriffe als Overlay, storyEngine mit Kette und Beweisen (siehe channel/SCRIPT_SYSTEM.md)."
   ]
 }

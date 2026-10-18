@@ -1,435 +1,77 @@
-# YouTube Workflow — Alles Stickman
+# YouTube Workflow — Alles Stickman (Pipeline v8)
 
-Dieses Repository ist die Produktionsbasis für den deutschsprachigen faceless YouTube-Kanal **Alles Stickman**.
-
-Kanalthemen: Menschheit, Evolution, Überleben, Erfindungen, Ressourcen, historische Gesellschaften und ungewöhnliche Alltagsfragen.
-
-## Grundprinzip
+Deutschsprachiger faceless Erklärkanal: Menschheit, Überleben, Erfindungen, Alltag früher. Ein Video pro Woche, 6–7 Minuten, nur Stimme + Bilder.
 
 ```text
-Thema
-→ Recherche / Fakten-QC
-→ Voice-over-Skript
-→ Bildplanung
-→ 3 Cover-Kandidaten
-→ HARD STOP
-→ Nutzer wählt A/B/C
-→ Auswahl = Bild 01
-→ 2 Cover-Verlierer löschen
-→ Bild 02–06
-→ automatisch Bild 07–11
-→ automatisch nächster 5er-Block
-→ bis Bild NN
-→ Vollständigkeitscheck
-→ fehlende/kaputte Bilder gezielt neu erzeugen
-→ finale Voice-over-Datei
-→ Audio-Optimierung
-→ Wort-/Anchor-Alignment
-→ Timeline
-→ Pacing-QC
-→ Remotion-Render
-→ Export-QC
-→ fertiges YouTube-Uploadpaket
+Thema → Recherche mit Story-Material → Skript nach Formel → Szenenplan → Prompts generieren
+→ Phase-1-Check → 3 Cover → STOPP, Nutzer wählt → 5er-Blöcke automatisch → Bild-Textcheck
+→ Stimme → Audio mit Atempausen → Alignment → Timeline mit Overlays → Render → Export mit Thumbnail-Headline
+→ ehrliche Video-Review → Erkenntnisse ins System
 ```
 
-## 0. Einmalige Einrichtung
+Voraussetzungen: Node ≥ 24, ffmpeg/ffprobe, whisper, tesseract, `npm install`.
 
-Aktive Bildwelt:
-- `config/visual-policy.json`
-- Style-ID: `alles-stickman-editorial-v1`
-
-Lokale Voraussetzungen:
-- Node.js >= 24
-- FFmpeg / FFprobe
-- Whisper CLI (`whisper`)
-- `npm install`
-
-## 1. Thema prüfen
+## Phase 1 — Planung
 
 ```bash
 npm run topic:youtube -- --topic "THEMA"
+npm run create:youtube -- --topic "THEMA" --title "TITEL" --week "YYYY-KWNN_DD-MM_bis_DD-MM" --slug "slug"
 ```
 
-## 2. Projekt anlegen
+1. **Recherche** (`99-technik/RECHERCHE.md`): mindestens 5 konkrete Momente mit Zahl/Jahr/Ort/Name und URL, plus der größte Mythos.
+2. **Skript** (`01-voice-script/voice-script.txt`) nach [Skript-System](../channel/SCRIPT_SYSTEM.md): du-Hook, Fallhöhe, Kette, Beweise, Rückbezug.
+3. **SCRIPT_PLAN.json**: Abschnitte + `storyEngine` mit exakten Ankern.
+4. **Bild-Audio-Zuordnung** (`BILD_AUDIO_ZUORDNUNG.json`): ein Bild pro Halbsatz bis Satz, Ø 3–5 s. Optional pro Bild:
+   - `overlay`: `{ "text": "1707", "style": "caption", "position": "top" }`. Styles: `caption` (große gelbe Schrift), `card` (Textkarte, ersetzt das Bild), `label` (kleines Schild). Ziel: mindestens 1 Overlay pro 12 Bilder.
+   - `motion`: `{ "zoomFrom": 1, "zoomTo": 1.15, "focusX": 40, "focusY": 55 }` für gezielte Fahrten auf das Wichtige.
+5. **Szenenplan** (`SCENE_VISUALS_EN.json`): pro Bild englischer `brief`, `shot`, `protagonist`; 3 Cover-Ideen. Siehe [Bildwelt](../channel/VISUAL_WORLD.md).
+6. **Upload-Daten** in `video.json → uploadMetadata`: Titel als Frage, Beschreibung, Tags, 2–3 Hashtags, `thumbnailText` (2–4 Wörter).
+7. Prompts erzeugen und prüfen:
 
 ```bash
-npm run create:youtube -- \
-  --topic "THEMA" \
-  --title "TITEL" \
-  --week "YYYY-KWNN_DD-MM_bis_DD-MM" \
-  --slug "themen-slug"
-```
-
-Projektstruktur:
-
-```text
-youtube/<week>/<slug>/
-├── 00-bildprompts/
-│   ├── google-flow-prompt.txt
-│   └── images/
-├── 01-voice-script/
-│   └── voice-script.txt
-├── 02-audio/
-├── 03-export/
-└── 99-technik/
-    ├── video.json
-    ├── BILD_AUDIO_ZUORDNUNG.json
-    ├── SCRIPT_PLAN.json
-    ├── RECHERCHE.md
-    ├── PHASE1_QC.md
-    ├── PHASE1_START_HERE.md
-    ├── PRODUKTIONSPLAN.md
-    ├── YOUTUBE_CHAPTERS.json
-    ├── YOUTUBE_RENDER_PLAN.json
-    └── status.json
-```
-
-## 3. Phase 1 — Recherche, Skript, Bildplan und Upload-Metadaten
-
-Pflicht:
-- Kernfrage
-- belastbare Faktenbasis
-- Unsicherheiten/Vereinfachungen
-- Voice-over-Skript
-- `SCRIPT_PLAN.json` mit Hook, Setup, Hauptteil, Auflösung und Schluss
-- kanaltypisches Skript-Gate nach `config/script-policy.json`
-- Hook-Metadaten: hookType, curiosityGap, titleConnection, payoffPromise
-- visualContinuityProfile für Umgebung/Klima/Epoche/Grundstimmung
-- Ziel-Länge
-- inhaltsgetriebene Bildzahl
-- Audio-Anker
-- Visual Purpose
-- Topic Anchor
-- Visual Form
-- Planned Hold
-- vollständige Bildprompts
-- Render-/SFX-Plan
-- finaler YouTube-Titel
-- finale YouTube-Beschreibung
-- normale Upload-Tags und zusätzlich **2–3 thematisch passende Hashtags** für die Beschreibung/Caption (nicht für SRT-Untertitel)
-
-Upload-Daten stehen in `99-technik/video.json` unter `uploadMetadata`.
-
-Bildplan-Regeln:
-- keine starre Bildzahl
-- 1 Bild = 1 klare visuelle Funktion oder zusammengehörige Informationseinheit
-- durchschnittlich ca. 4,5–7,5 s pro Bild
-- ab 9 s Split prüfen
-- ab 11 s Split stark bevorzugen
-- 16 s Hard-Max
-- keine Füllbilder
-
-Skriptregeln:
-- Hook beginnt direkt, ohne Begrüßung oder „In diesem Video ...“
-- erster Satz enthält bereits Problem, Widerspruch, Überraschung oder offene Frage
-- reine Atmosphären-/Wetterbeschreibung ist kein ausreichender Hook
-- Titelbezug innerhalb der ersten zwei Sätze
-- Hook bis Setup kompakt, Ziel max. ca. 45 Wörter
-- Setup bleibt kurz
-- Hauptteil erzählt eine Entwicklung statt einer bloßen Faktenliste
-- alle ca. 20–40 Sekunden neuer Informationsimpuls
-- Auflösung beantwortet die Hook-Frage
-- Schluss sehr kurz, kein langes Outro
-- natürliches Deutsch, keine KI-Floskeln
-- 32 Wörter pro Satz Hard-Max
-- Pipeline v7+: Wortdichte ungefähr 150–170 effektive Wörter/Minute, bevorzugt 155–165
-- möglichst jeder Absatz muss visualisierbar sein
-
-Details: `channel/SCRIPT_SYSTEM.md`
-
-Vor Asset-Erzeugung:
-
-```bash
+npm run prompts:youtube -- --dir "youtube/<week>/<slug>"
 npm run validate:youtube-phase1 -- --dir "youtube/<week>/<slug>"
 ```
 
-### Verpflichtende Phase-1-Übergabe — zwei Direktlinks
+Nach bestandener Phase 1 im Chat **sofort die zwei Links** ausgeben (Google-Flow-Prompt, Voice-Skript), siehe [AGENTS.md](../AGENTS.md).
 
-**NEU: Pflicht zur SOFORTIGEN Chat-Antwort, auch unterwegs am Tablet.** Der Abschluss einer Phase 1 besteht aus **beidem**: (a) Dateien + Startseite im Repo committen, (b) dem Nutzer direkt im selben Chat zuerst zwei funktionierende Dateilinks präsentieren. Die Startseite im Repo oder ein allgemeiner Projekt-Link **ersetzen nie** die zwei sichtbaren Chatlinks. Kein „schau in GitHub“, keine erneute Nachfrage. Vor dem Versand beide Dateien/URLs auf das aktuelle Video prüfen. Verwende die zentral erzeugten Links aus `phase1ChatLinks(meta)`.
+## Phase 2 — Bilder und Stimme
 
+Google Flow arbeitet `00-bildprompts/google-flow-prompt.txt` ab:
 
-**Nach einer bestandenen Phase-1-Prüfung muss die Antwort im Chat sofort beide klickbaren Links anzeigen**, auch wenn das Video noch keine Bilder oder Stimme besitzt:
-
-- **Google-Flow-Prompt öffnen:** direkter GitHub-Dateilink auf `00-bildprompts/google-flow-prompt.txt`
-- **Voice-over-Skript öffnen:** direkter GitHub-Dateilink auf `01-voice-script/voice-script.txt`
-
-Nicht nur Dateinamen oder den GitHub-Projektordner angeben. Die zwei Links sollen in ChatGPT als klickbare Links oder, sofern verfügbar, als zwei echte Öffnen-Buttons erscheinen und mobil benutzbar sein.
-
-Jedes Videoprojekt erhält dazu `99-technik/PHASE1_START_HERE.md`. Die lokale Projekterstellung bereitet diese Startseite automatisch vor; die erfolgreiche Phase-1-CLI-Prüfung aktualisiert den Status und gibt beide Links aus.
-
-Für nachträgliches Erstellen/Aktualisieren:
-```bash
-npm run handoff:youtube -- --dir "youtube/<week>/<slug>"
-```
-
-**Wichtig:** Die Links öffnen die Textdateien in GitHub. Sie starten Google Flow/TTS nicht selbst. Die bisherige Coverwahl A/B/C und automatische 5er-Bildproduktion ändern sich nicht.
-
-
-## 4. Google Flow — verbindlicher Ablauf mit genau einem Human-Gate
-
-Masterprompt:
-
-`00-bildprompts/google-flow-prompt.txt`
-
-### Phase 1: Plan laden
-- aktive Bildwelt laden
-- Skript laden
-- Bildplan laden
-- NN bestimmen
-
-### Phase 2: exakt 3 Cover erzeugen
-Temporär:
-- `TEMP_COVER_A.png`
-- `TEMP_COVER_B.png`
-- `TEMP_COVER_C.png`
-
-Bild 01 ist Cover und erste Videoszene.
-
-### Phase 3: HARD STOP — Nutzer wählt das Cover
-Nach A, B und C darf Flow **nichts weiter erzeugen**.
-
-Verboten vor Nutzerwahl:
-- Gewinner selbst bestimmen
-- Cover löschen
-- Bild 01 festlegen
-- Bild 02 erzeugen
-
-Der Nutzer wählt ausdrücklich A, B oder C.
-
-Erst danach:
-- Auswahl → `Bild 01.png`
-- beide Verlierer löschen
-- keine Kopien der Verlierer behalten
-
-### Phase 4: automatische 5er-Blöcke bis Bild NN
-
-Vor und während der Generierung gilt zusätzlich das `visualContinuityProfile` aus `video.json`. Klima, Jahreszeit, Epoche, Vegetation und Grundstimmung dürfen nicht unbegründet springen.
-
-Nach jedem 5er-Block führt Flow **intern** eine Bild-QC durch. Schlechte Bilder werden unter derselben Bildnummer neu erzeugt, bevor automatisch der nächste Block startet. Der Nutzer wird dafür nicht gefragt.
-Nach der Coverwahl läuft Flow automatisch weiter:
-
-```text
-Bild 02–06
-→ Bild 07–11
-→ Bild 12–16
-→ ...
-→ Bild NN
-```
-
-Regeln:
-- maximal 5 aktive Generationen
-- maximal 5 Bilder pro Block
-- sobald ein Block vollständig gespeichert ist, automatisch den nächsten starten
-- **keine Nutzer-Rückfrage zwischen Blöcken**
-- **kein `WEITER` verlangen**
-- kein HARD STOP zwischen Blöcken
-- jedes Nicht-Cover-Bild genau einmal
-- keine A/B-Alternativen
-- **keine Bildreferenz verwenden**
-- weder Bild 01 noch Cover-Verlierer noch vorherige Szenenbilder als Vorlage benutzen
-- Konsistenz ausschließlich über `config/visual-policy.json` + vollständigen Textprompt des jeweiligen Bildes
-- individuelle Komposition passend zum Inhalt
-- Visual Form frei nach Erklärwert wählen
-
-Nur bei technischem Fehlschlag oder eindeutig unbrauchbarem Output darf exakt dieselbe Bildnummer neu erzeugt werden.
-
-### Phase 5: finaler Ordner + automatische Vollständigkeitsprüfung
-Nach Bild NN prüft Flow den gesamten Ordner gegen die Soll-Liste `Bild 01.png` bis `Bild NN.png`.
-
-Fehlt eine Bildnummer oder ist eine Datei technisch kaputt, wird **genau diese Bildnummer** mit ihrem ursprünglichen Prompt neu erzeugt. Danach wird erneut geprüft. Erst wenn alle Nummern lückenlos vorhanden sind, ist Phase 5 abgeschlossen.
-
-Danach darf `00-bildprompts/images/` ausschließlich enthalten:
-
-```text
-Bild 01.png
-Bild 02.png
-Bild 03.png
-...
-Bild NN.png
-```
-
-Keine TEMP-Dateien, Cover-Verlierer, Varianten, Unterordner, Zwischenbilder oder Zusatz-Thumbnails.
-
-## 5. Konsistenz ohne Referenzbild
-
-Für Folgebilder gilt ausdrücklich:
-
-**Kein generiertes Bild dient als Referenzvorlage.** `referenceMode` ist verbindlich `none`.
-
-Die gemeinsame Alles-Stickman-Welt wird gehalten durch:
-- feste Linienlogik
-- feste Grundpalette
-- feste Figuren-/Gesichtslogik
-- feste Text-/Labelbehandlung
-- feste Informationsdesign-Regeln
-- vollständige individuelle Prompts
-
-Warum: Ein Cover ist auf Klickstärke optimiert und kann Karten, Diagramme, Multi-Panels oder Objektgrafiken unnötig in eine ähnliche Komposition drücken.
-
-### Lebendigere Szenen ohne Text-Chaos
-
-- Szenen dürfen erzählerisch so spannend und ausdrucksstark wie ein gutes Cover wirken, **aber ohne es als generiertes Referenzbild zu verwenden**.
-- Bevorzuge, wenn passend, aktive Körperhaltungen, sichtbare Interaktionen, klare Mimik und interessante Perspektiven statt starrer Standbilder.
-- Karten und Querschnitte bleiben erlaubt, sollen aber anschaulich statt voller englischer Mini-Legenden oder Textkästen sein.
-- Sichtbarer Text meistens 0–2 große deutsche Labels, normalerweise maximal 3. Kein automatisch eingeblendeter englischer Bildtitel, kein Pseudotext, kein `GEPLANTER HOLD`, keine Zeit-/Szenen- oder Audioankernotizen.
-- Falsche Beschriftungen und überladene Mini-Panels sind ein Bild-QC-Fehler: nur die betroffene Bildnummer nachbessern.
-- Hashtags sind **Beschreibungstext**, normale `uploadMetadata.tags` bleiben separate Upload-Tags; die SRT-Datei enthält keine Hashtags.
-
-### Illustration-zuerst-Regel
-
-Für die Bildplanung gilt zusätzlich:
-- Standard ist eine reichhaltige, leicht lesbare Illustration oder Szene
-- mehrere passende Figuren, Gegenstände, Kleidung, Tiere, Gebäude, Landschaft und kleine Nebenhandlungen sind erlaubt
-- Multi-Panels bevorzugt als illustrierte Mini-Szenen
-- reine Infografiken, Diagramme oder Textkarten nur verwenden, wenn sie die Aussage klarer erklären
-- mehrere sterile Info-Karten direkt hintereinander vermeiden
-- Ziel: reichhaltig, aber mit klaren 1–3 Hauptblickpunkten
-
-## 6. Eigene Bildwelt
-
-Verbindlich:
-- `config/visual-policy.json`
-- `channel/VISUAL_WORLD.md`
-
-Erlaubt sind unter anderem:
-- Handlungsszenen
-- Objektbilder
-- Karten
-- Zeitleisten
-- Prozesse
-- Diagramme
-- Zahlenvergleiche
-- Infografiken
-- Multi-Panels
-- Querschnitte
-- Text-/Zahlenbilder
-- Szenen ohne Menschen
-
-## 7. Phase 2 — Assets
-
-Finale Bilder:
-`00-bildprompts/images/Bild 01.png` bis `Bild NN.png`
-
-Finales Voice-over: genau eine Audiodatei unter `02-audio/`.
-
-Prüfung:
+1. Liegen freigegebene Bilder in `channel/style-sheet/`, werden sie bei jedem Bild als Referenz angehängt. Cover und vorherige Szenen sind nie Referenz.
+2. Drei Cover erzeugen → **STOPP**, Nutzer wählt A/B/C → Gewinner = `Bild 01.png`, Rest löschen.
+3. Danach automatisch alle Blöcke aus `batches/`, ohne Rückfragen. Pro Bild nur den Text zwischen den Markierungen einfügen.
+4. Nach jedem Block: nur durchgefallene Bilder neu erzeugen (keine Strichfigur, Text im Bild, falsche Epoche, unlesbar).
+5. Alle Bilder flach in `00-bildprompts/images/`, dann:
 
 ```bash
 npm run validate:youtube-phase2 -- --dir "youtube/<week>/<slug>"
+npm run check:youtube-images -- --dir "youtube/<week>/<slug>"
 ```
 
-## 8. Phase 3 — Audio, Alignment, Timeline, Render und Export
+Genau eine Stimme in `02-audio/`. Musik nur als echte lizenzfreie Datei (z. B. YouTube Audio Library) in `YOUTUBE_RENDER_PLAN.json → backgroundMusic`. Die per Skript erzeugte Sinus-Musik (`src/audio/generate-assets.py`) vorher anhören.
+
+## Phase 3 — Audio, Render, Export
 
 ```bash
 npm run phase3:youtube -- --dir "youtube/<week>/<slug>"
 ```
 
-Reihenfolge:
-1. Preflight
-2. Phase-1-Gate
-3. Phase-2-Gate
-4. Audio intern optimieren
-5. Whisper auf optimiertem Audio
-6. Bildanker ausrichten
-7. finale Timeline bauen
-8. Pacing + echte Gesamtdauer gegen `targetDurationRangeSeconds` prüfen
-9. Pre-Render-QC
-10. Remotion rendern
-11. Thumbnail aus Bild 01 kopieren
-12. YouTube-Metadaten-Datei erzeugen
-13. SRT-Untertitel aus echten Whisper-Zeitstempeln erzeugen
-14. lesbares Skript mit Zeitbereichen erzeugen
-15. Post-Render-QC
+Reihenfolge: Preflight → Phase 1/2 → **Bild-Textcheck (blockiert)** → Audio (Tempo 1,1×, Pausen bis 0,5 s bleiben, längere → 0,3 s) → Whisper-Alignment → Timeline mit Overlays und Kamerafahrten → Pacing → Render → Export.
 
-## 9. Finaler Exportordner
+`03-export/`: `FINAL_VIDEO.mp4`, `THUMBNAIL.png` (Bild 01 + Headline), `YOUTUBE_UPLOAD.txt`, `SUBTITLES.srt`, `TIMED_SCRIPT.txt`.
 
-```text
-03-export/
-├── FINAL_VIDEO.mp4
-├── THUMBNAIL.png
-├── YOUTUBE_UPLOAD.txt
-├── SUBTITLES.srt
-└── TIMED_SCRIPT.txt
-```
-
-- `FINAL_VIDEO.mp4`: fertiges Video
-- `THUMBNAIL.png`: finales Bild 01
-- `YOUTUBE_UPLOAD.txt`: Titel, Beschreibung **mit passenden Hashtags am Ende**, normale Tags getrennt
-- `SUBTITLES.srt`: YouTube-Untertitel mit echten Zeitstempeln
-- `TIMED_SCRIPT.txt`: lesbares Skript mit Zeitbereichen
-
-## Definition of Done
-
-Ein Video ist erst fertig, wenn:
-- Thema geprüft ist
-- Recherche/Skript/Bildplan fertig sind
-- YouTube-Titel und Beschreibung fertig sind
-- aktive Bildwelt `READY` ist
-- genau 3 Cover-Kandidaten erzeugt wurden
-- nach den 3 Cover-Kandidaten wirklich gestoppt wurde
-- der Nutzer A, B oder C ausdrücklich gewählt hat
-- exakt diese Auswahl als `Bild 01.png` übrig bleibt
-- die 2 Cover-Verlierer erst danach gelöscht wurden
-- für Bild 02–NN keine Bildreferenz verwendet wurde
-- Bild 02–NN in echten 5er-Schritten erzeugt wurden
-- nach der Coverwahl alle 5er-Blöcke automatisch ohne weitere Nutzerfreigabe erzeugt wurden
-- nach Bild NN ein Soll-Ist-Check durchgeführt wurde
-- fehlende oder technisch kaputte Bildnummern gezielt neu erzeugt und erneut geprüft wurden
-- finale Bilder lückenlos benannt sind
-- alle finalen Bilder in einem flachen Ordner liegen
-- genau eine finale Stimme vorliegt
-- Audio-QC bestanden ist
-- echte Wortzeiten vorliegen
-- Timeline keine Lücken/Überlappungen hat
-- Pacing bestanden ist
-- tatsächliche Videodauer innerhalb von `targetDurationRangeSeconds` liegt
-- `FINAL_VIDEO.mp4` existiert
-- `THUMBNAIL.png` existiert
-- `YOUTUBE_UPLOAD.txt` existiert
-- `SUBTITLES.srt` existiert
-- `TIMED_SCRIPT.txt` existiert
-- Post-Render-QC bestanden ist
-
-## Longform-Modus: 6–7 Minuten
-
-- Neue Longform-Projekte setzen in `video.json` **`contentMode: "longform"`** und ein `longformProfile`.
-- Ziel: 360–420 Sekunden, bevorzugt ungefähr 6:30–6:45, keine generische künstliche Verlängerung.
-- Skript weiterhin gegen 150–170 effektive Wörter/Minute validieren; echte VO-Dauer entscheidet später über das Rendering.
-- Ein `LONGFORM_CHAPTER_PLAN.json` mit Startankern und echten Informations-/Spannungsimpulsen wird vor Assets gepflegt.
-- Individuelle ausführbare 5er-Prompts in `00-bildprompts/batches/BLOCK_XX_YY.txt`; Masterprompt enthält die gesamte Reihenfolge und den Bildindex.
-- Google Flow darf nur auf die **Cover-Auswahl** warten, danach automatisch alle 5er-Blöcke abarbeiten und fehlende/schlechte Bilder reparieren.
-- Verschiedene historische Regionen dürfen wechseln, wenn der Sprecher sie an dieser Stelle einführt. Die Alles-Stickman-Bildsprache bleibt gleich.
-- Kein automatischer Clip-/Sprach-Upload behaupten: Flow/TTS benötigen die externen Produktionsschritte, bevor Remotion laufen kann.
-
-Verbindlich: `config/longform-policy.json`.
-
-## 9. Pflicht nach JEDEM Video — kontinuierliche Verbesserung
-
-**Oberste Priorität vor der Planung des nächsten Videos:** Aus der gerade gerenderten MP4 lernen. `phase3:youtube` legt die ausstehende Datei `99-technik/POST_VIDEO_REVIEW.json` an, führt aber keine visuelle Vollprüfung durch.
+## Nach jedem Video — Review
 
 ```bash
 npm run quality:init -- --dir "youtube/<week>/<slug>"
-# Echte MP4 mit Bild und Ton vollständig ansehen und konkrete Szenen bewerten.
-# Fehler mit Zeitstempeln, Ursachen, Fixes, Lessons und Testbelegen eintragen.
+# POST_VIDEO_REVIEW.json mit echten Beobachtungen + Zeitstempeln füllen
 npm run quality:close -- --dir "youtube/<week>/<slug>"
-npm run quality:status
 ```
 
-- Kritische/größere Probleme müssen vor Reviewabschluss **systematisch behoben und getestet** sein; minor findings dürfen nur begründet in den Backlog.
-- Jede relevante Erkenntnis verändert wenn möglich gemeinsame Regeln/Prompts/Software statt lediglich ein Einzelvideo zu reparieren.
-- Das globale Register `channel/IMPROVEMENT_LEDGER.json` enthält übertragbare Lessons und noch laufende Experimente. Theorien nicht als gesichert darstellen.
-- Die Projekterstellung blockiert, wenn **lokal** ein fertiger Export mit offener Review vorliegt. Von anderen Rechnern nicht synchronisierte MP4s sind nicht automatisch sichtbar — die beteiligten Agenten müssen ihre Review daher auch manuell einfordern.
-- Später ergänzt YouTube Studio nur echte verfügbare Werte (Intro-Zuschauerbindung nach 30 s, CTR/Impressionen, Wiedergabedauer, zeitmarkierte Dips/Spikes).
+Regeln: [CONTINUOUS_IMPROVEMENT.md](../channel/CONTINUOUS_IMPROVEMENT.md). Eine Review mit lauter 5ern und ohne Befund ist kein Review.
 
-Verbindliche Detailregel: `channel/CONTINUOUS_IMPROVEMENT.md`.
+## Alte Projekte
 
-## English Flow prompt standard v13
-All generated-image instruction language is English (master, batches, individual copy files); on-image text is exclusively German, large and accurate when necessary. Voice-over remains German. A shared 2D stickman line identity is required, but not a fixed palette or old parchment landscape. Avoid generic green vector clipart and crowded lesson-sheet typography. Use a ready-to-paste short start prompt and scene-wise copy files. QC every batch and update future rules based on actual rendered evidence.
-
-## Endgültige vom Nutzer bestätigte Bildwelt v13
-
-Die fünf ausführlichen englischen Referenzprompts (Stickman-Szene, korrektes Stromkreis-Schema ohne Menschen, Psychologie-Vergleich, geschichtliches Aquädukt und Wasserkreislauf-Infografik) sind unsere verbindlichen Qualitätsbeispiele: `channel/style-reference-prompts/`. Die zentrale Richtlinie heißt `channel/VISUAL_WORLD.md` und ist v13. **Keine Bildart priorisieren**: pro Satz immer die beste visuelle Erklärung wählen; charakterstarke Stickmen nur bei Bedarf. Premium-2D-Zeichnung, klare anthrazitfarbene Tintenlinie, harmonische wechselnde Szenenfarben. Alle KI-Anweisungen Englisch, Bildlabels ausschließlich Deutsch. Keine automatisch generierten Bilder auf eine reine Prompt-Anfrage. Nach jedem fertigen Bildblock echte Resultate auf Lesbarkeit, fachliche Korrektheit und Einhaltung der Bildwelt prüfen.
-
-## Endgültiger Master-Stil v14 — eine einzige Bildwelt
-
-Nur `channel/MASTER_VISUAL_STYLE_EN.txt` ist die verbindliche vollständige englische Stildefinition. Nicht auf v13 Kurzregeln zurückgreifen. Projekterstellung fügt den vollständigen Text direkt in Google-Flow-Master und Coverstarter ein. Szenen-/Cover-/5er-Prompts müssen denselben Text wortgetreu enthalten und werden vor Freigabe technisch darauf geprüft. Fünf Beispielprompts bleiben optionale Qualitätsvergleiche. Das klare Ziel: ein hochwertiger konsistenter 2D-Zeichenstil bei freier Visualisierung jedes gesprochenen Satzes. Alle Prompts Englisch, Bildtext nur Deutsch, Personen nur als optionale Stickmen. Echte Bilder erst nach Generierung bewerten.
+Projekte mit `pipelineVersion` ≤ 7 werden weiter nach den alten Regeln geprüft (Bildwelt v14 in `config/legacy/`). Sie werden nicht neu produziert.

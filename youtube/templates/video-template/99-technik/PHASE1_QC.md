@@ -1,62 +1,22 @@
-# Phase-1-QC
+# Phase-1-QC (Pipeline v8)
 
-## Thema
-- Duplicate-Check bestanden: [ ]
+Automatisch geprüft von `npm run validate:youtube-phase1`. Hier nur, was ein Mensch beurteilen muss.
 
-## Skript
-- SCRIPT_PLAN.json vollständig und READY: [ ]
-- Hook startet sofort, keine Begrüßung/Meta-Einleitung: [ ]
-- Hook enthält Problem/Widerspruch/Überraschung/Frage statt nur Atmosphäre: [ ]
-- Hook-Metadaten hookType/curiosityGap/titleConnection/payoffPromise ausgefüllt: [ ]
-- Titelbezug in den ersten zwei Sätzen klar: [ ]
-- Hook bis Setup kompakt (max. ca. 45 Wörter): [ ]
-- Setup liefert nur nötigen Kontext: [ ]
-- Hauptteil hat erkennbare Entwicklung statt Faktenliste: [ ]
-- Auflösung beantwortet die Hook-Frage: [ ]
-- Schluss ist kurz und ohne langes Outro: [ ]
-- natürliche Sprache / keine KI-Floskeln: [ ]
-- Fakten geprüft: [ ]
-- Ziel-Länge und Wortdichte plausibel: [ ]
-- jeder Absatz sinnvoll visualisierbar: [ ]
-
-## YouTube-Upload
-- finaler Titel eingetragen: [ ]
-- finale Beschreibung eingetragen: [ ]
-- Tags geprüft: [ ]
+## Skript laut vorlesen
+- Erste 15 Sekunden: Würde ich weiterschauen? [ ]
+- „du“-Moment heute ↔ damals im Hook spürbar: [ ]
+- Jede Lösung öffnet ein neues Problem (keine Aufzählung): [ ]
+- Mindestens 3 „Wir wissen das, weil …“-Momente mit echter Quelle: [ ]
+- Schluss greift den Anfang auf und endet mit einem Gefühl, nicht mit Abo-Bitte: [ ]
+- Fakten gegen RECHERCHE.md geprüft: [ ]
 
 ## Bilder
-- Bildzahl inhaltsgetrieben: [ ]
-- 1 Bild = 1 klare visuelle Funktion: [ ]
-- Topic Anchor pro Bild: [ ]
-- Visual Form pro Bild: [ ]
-- Bild 01 = Cover + erste Szene: [ ]
-- Nutzer-Coverwahl A/B/C vorgesehen: [ ]
-- HARD STOP nach 3 Cover-Kandidaten: [ ]
-- vor Nutzerwahl kein Bild 02: [ ]
-- automatische 5er-Fortsetzung nach Coverwahl: [ ]
-- keine Nutzerfreigabe zwischen 5er-Blöcken: [ ]
-- finaler Soll-Ist-Bildercheck vorgesehen: [ ]
-- fehlende/kaputte Bildnummern werden gezielt neu erzeugt: [ ]
-- keine Füllbilder: [ ]
-- Illustration/Szene als Standard geprüft: [ ]
-- reine Infografik/Diagramm nur bei echtem Erklärvorteil: [ ]
-- keine lange Folge steriler Info-Karten: [ ]
-- visualContinuityProfile vollständig: [ ]
-- Klima/Jahreszeit/Epoche/Grundstimmung logisch konsistent: [ ]
-- stille Bild-QC nach jedem 5er-Block vorgesehen: [ ]
-- schlechte Bilder werden vor dem nächsten Block gezielt neu erzeugt: [ ]
+- Hauptfigur (roter Schal) in den Story-Momenten: [ ]
+- Viele Close-ups bei Emotionen und Objekten: [ ]
+- Zahlen/Begriffe als Overlay geplant, nicht im KI-Bild: [ ]
+- Ø Hold 3–5 s, lange Sätze auf mehrere Bilder verteilt: [ ]
 
-## Bildwelt
-- Alles-Stickman-Bildwelt aktiv: [ ]
-- keine fremde Kanalgestaltung kopiert: [ ]
-
-## Audio / Ende
-- genau eine finale Stimme vorgesehen: [ ]
-- Schluss-Hold 1,2–1,5 s: [ ]
-
-## Geplanter Final-Export
-- FINAL_VIDEO.mp4: [ ]
-- THUMBNAIL.png: [ ]
-- YOUTUBE_UPLOAD.txt: [ ]
-- SUBTITLES.srt: [ ]
-- TIMED_SCRIPT.txt: [ ]
+## Upload
+- Titel als klare Frage: [ ]
+- Thumbnail-Text 2–4 Wörter: [ ]
+- Beschreibung + 2–3 Hashtags: [ ]

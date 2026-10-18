@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-18T04:11:57.024Z",
+  "pipelineVersion": 7,
+  "imagesChecked": 76,
+  "imagesWithMetaText": [
+    "Bild 05.png",
+    "Bild 11.png",
+    "Bild 22.png",
+    "Bild 28.png",
+    "Bild 30.png",
+    "Bild 34.png",
+    "Bild 47.png",
+    "Bild 53.png",
+    "Bild 66.png",
+    "Bild 75.png"
+  ],
+  "imagesWithUnexpectedText": [
+    "Bild 11.png",
+    "Bild 16.png",
+    "Bild 20.png",
+    "Bild 47.png",
+    "Bild 53.png"
+  ],
+  "results": [
+    {
+      "image": "Bild 05.png",
+      "metaText": [
+        {
+          "text": "Bild 0S",
+          "reasons": [
+            "Dateiname/Bildnummer"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 11.png",
+      "metaText": [
+        {
+          "text": "| Bild 11 |",
+          "reasons": [
+            "Dateiname/Bildnummer"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "OLGEN"
+      ]
+    },
+    {
+      "image": "Bild 16.png",
+      "metaText": [],
+      "unexpectedText": [
+        "OSTEN"
+      ]
+    },
+    {
+      "image": "Bild 20.png",
+      "metaText": [],
+      "unexpectedText": [
+        "Polaris"
+      ]
+    },
+    {
+      "image": "Bild 22.png",
+      "metaText": [
+        {
+          "text": "Bild 22.png",
+          "reasons": [
+            "Dateiname/Bildnummer",
+            "Dateiendung"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 28.png",
+      "metaText": [
+        {
+          "text": "Bild 28",
+          "reasons": [
+            "Dateiname/Bildnummer"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 30.png",
+      "metaText": [
+        {
+          "text": "Bild 30",
+          "reasons": [
+            "Dateiname/Bildnummer"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 34.png",
+      "metaText": [
+        {
+          "text": "Bild 34",
+          "reasons": [
+            "Dateiname/Bildnummer"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 47.png",
+      "metaText": [
+        {
+          "text": "Bild 47",
+          "reasons": [
+            "Dateiname/Bildnummer"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "UNBESTIMMTE",
+        "POSITION",
+        "START",
+        "HAFEN"
+      ]
+    },
+    {
+      "image": "Bild 53.png",
+      "metaText": [
+        {
+          "text": "Bild 53",
+          "reasons": [
+            "Dateiname/Bildnummer"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "EITENGRA"
+      ]
+    },
+    {
+      "image": "Bild 66.png",
+      "metaText": [
+        {
+          "text": "Bild 66",
+          "reasons": [
+            "Dateiname/Bildnummer"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 75.png",
+      "metaText": [
+        {
+          "text": "Bild",
+          "reasons": [
+            "Dateiname/Bildnummer"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    }
+  ]
+}

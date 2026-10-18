@@ -5,10 +5,16 @@ import path from 'node:path';
 import { arg, exists, projectPaths, readJson } from '../lib/pipeline.js';
 import { phase1ChatLinks, renderPhase1Handoff } from '../lib/phase1-handoff.js';
 import { loadCanonicalVisualStyle } from '../lib/visual-master.js';
+import { buildPrompts } from './build-youtube-prompts.js';
+import { analyzeScript, evaluateScriptMetrics, validateStoryEngine } from '../lib/script-quality.js';
+
+const OVERLAY_STYLES = ['caption', 'card', 'label'];
+const OVERLAY_POSITIONS = ['top', 'center', 'bottom'];
 
 export async function validatePhase1(projectDirectory) {
   const p = projectPaths(projectDirectory);
   const errors = [];
+  const warnings = [];
 
   for (const required of [p.meta, p.mapping, p.prompt, p.script, p.scriptPlan, p.renderPlan]) {
     if (!(await exists(required))) errors.push(`Pflichtdatei fehlt: ${path.relative(p.projectDir, required)}`);
@@ -40,6 +46,9 @@ export async function validatePhase1(projectDirectory) {
   const humanGatedCoverFlow = pipelineVersion >= 5;
   const automaticBatchFlow = pipelineVersion >= 6;
   const qualityV7 = pipelineVersion >= 7;
+  const isV8 = pipelineVersion >= 8;
+  // Projekte bis v7 wurden mit der Bildwelt v14 geplant und werden weiter gegen sie geprüft.
+  const policyVisual = isV8 ? visual : await readJson(path.resolve('config/legacy/visual-policy-v14.json'));
   const isPlaceholder = (value) => {
     const text = String(value ?? '').trim();
     return !text || /^\[.*\]$/.test(text) || /TODO|PLACEHOLDER/i.test(text);
@@ -77,7 +86,12 @@ export async function validatePhase1(projectDirectory) {
   }
   if (meta.coverPolicy?.winnerBecomesFirstSceneAndThumbnail !== true) errors.push('Der gewählte Cover-Gewinner muss Bild 01 und Thumbnail werden.');
   if (meta.coverPolicy?.deleteLosingCandidates !== true) errors.push('Die zwei nicht gewählten Cover-Kandidaten müssen gelöscht werden.');
-  if (meta.coverPolicy?.separateThumbnailForbidden !== true) errors.push('Bild 01 muss Cover und erste Videoszene bleiben.');
+  if (!isV8 && meta.coverPolicy?.separateThumbnailForbidden !== true) errors.push('Bild 01 muss Cover und erste Videoszene bleiben.');
+  if (isV8) {
+    const headlineWords = String(uploadMetadata.thumbnailText ?? '').trim().split(/\s+/).filter(Boolean).length;
+    const [minWords, maxWords] = visual.cover?.headlineWords ?? [2, 4];
+    if (headlineWords < minWords || headlineWords > maxWords) errors.push(`Pipeline v8: uploadMetadata.thumbnailText braucht ${minWords}–${maxWords} Wörter (wird aufs Thumbnail gesetzt, nicht ins KI-Bild).`);
+  }
 
   if (meta.imageDensityPolicy?.generationBatchSize !== 5) errors.push('Folgebilder müssen in 5er-Blöcken geplant werden.');
   if (meta.imageDensityPolicy?.maxConcurrentGenerations !== 5) errors.push('Maximal 5 aktive Bildgenerierungen sind erlaubt.');
@@ -104,13 +118,17 @@ export async function validatePhase1(projectDirectory) {
     if (meta.imageDensityPolicy?.explicitContinueRequired !== true) errors.push('Legacy v5: Der nächste Block darf nur nach ausdrücklichem WEITER starten.');
   }
   if (meta.imageDensityPolicy?.nonCoverGenerationCount !== 1) errors.push('Bild 02 bis Bild NN dürfen jeweils nur einmal erzeugt werden.');
-  if (meta.imageDensityPolicy?.referenceMode !== 'none') errors.push('imageDensityPolicy.referenceMode muss none sein.');
-  if (meta.imageDensityPolicy?.useImageReferences !== false) errors.push('Für Bild 02 bis Bild NN dürfen keine Bildreferenzen verwendet werden.');
-  if (meta.imageDensityPolicy?.generatedImageReferenceForbidden !== true) errors.push('Generierte Bilder müssen als Referenzvorlagen ausdrücklich verboten sein.');
-
-  if (visual.referenceConsistency?.referenceMode !== 'none') errors.push('visual-policy.referenceConsistency.referenceMode muss none sein.');
-  if (visual.referenceConsistency?.useImageReferences !== false) errors.push('visual-policy muss Bildreferenzen ausdrücklich deaktivieren.');
-  if (visual.referenceConsistency?.generatedImageReferenceForbidden !== true) errors.push('visual-policy muss generierte Bildreferenzen ausdrücklich verbieten.');
+  if (isV8) {
+    if (!['none', 'style-sheet-optional'].includes(meta.imageDensityPolicy?.referenceMode)) errors.push('Pipeline v8: imageDensityPolicy.referenceMode muss none oder style-sheet-optional sein.');
+    if (meta.imageDensityPolicy?.sceneOrCoverReferenceForbidden !== true) errors.push('Pipeline v8: Cover und vorherige Szenen dürfen nie als Bildreferenz dienen.');
+  } else {
+    if (meta.imageDensityPolicy?.referenceMode !== 'none') errors.push('imageDensityPolicy.referenceMode muss none sein.');
+    if (meta.imageDensityPolicy?.useImageReferences !== false) errors.push('Für Bild 02 bis Bild NN dürfen keine Bildreferenzen verwendet werden.');
+    if (meta.imageDensityPolicy?.generatedImageReferenceForbidden !== true) errors.push('Generierte Bilder müssen als Referenzvorlagen ausdrücklich verboten sein.');
+    if (policyVisual.referenceConsistency?.referenceMode !== 'none') errors.push('visual-policy.referenceConsistency.referenceMode muss none sein.');
+    if (policyVisual.referenceConsistency?.useImageReferences !== false) errors.push('visual-policy muss Bildreferenzen ausdrücklich deaktivieren.');
+    if (policyVisual.referenceConsistency?.generatedImageReferenceForbidden !== true) errors.push('visual-policy muss generierte Bildreferenzen ausdrücklich verbieten.');
+  }
 
   const hold = Number(meta.renderPolicy?.endHoldSeconds);
   const minHold = Number(pipeline.endHoldPolicy?.minimumSeconds ?? 1.2);
@@ -211,98 +229,119 @@ export async function validatePhase1(projectDirectory) {
     }
     seenSentences.add(normalizedSentence);
   }
-  if (!prompt.includes(`ACTIVE_STYLE_ID: ${visual.styleId}`)) errors.push('Flow-Prompt nennt nicht die aktive styleId.');
-  if (/ACTIVE_STYLE_ID:\s*UNSET/i.test(prompt)) errors.push('Flow-Prompt enthält noch UNSET.');
+
+  if (isV8) {
+    const metrics = analyzeScript(cleanScript, Number(meta.targetDurationSeconds));
+    const metricResult = evaluateScriptMetrics(metrics, scriptPolicy.scriptMetrics);
+    errors.push(...metricResult.errors);
+    warnings.push(...metricResult.warnings);
+    const research = (await exists(p.research)) ? await readFile(p.research, 'utf8') : '';
+    errors.push(...validateStoryEngine(scriptPlan, cleanScript, research, scriptPolicy.storyEngine).errors);
+
+    const promptResult = await buildPrompts(projectDirectory, { write: false });
+    errors.push(...promptResult.errors);
+    warnings.push(...promptResult.warnings);
+    for (const [relative, expectedContent] of promptResult.files) {
+      const file = path.join(p.projectDir, '00-bildprompts', relative);
+      if (!(await exists(file))) errors.push(`Generierter Bildprompt fehlt: 00-bildprompts/${relative} – npm run prompts:youtube ausführen.`);
+      else if ((await readFile(file, 'utf8')) !== expectedContent) errors.push(`Bildprompt veraltet oder von Hand geändert: 00-bildprompts/${relative} – npm run prompts:youtube ausführen.`);
+    }
+  }
+
   const englishPrompt = /PROMPT_LANGUAGE:\s*ENGLISH/i.test(prompt);
-  const canonicalStyle = Number(visual.visualPolicyVersion) >= 14 ? await loadCanonicalVisualStyle() : null;
-  if (englishPrompt && canonicalStyle && !prompt.includes(canonicalStyle)) errors.push('Flow master missing full canonical visual style v14.');
-  if (englishPrompt) {
-    if (canonicalStyle && !prompt.includes('VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14')) errors.push('Flow master prompt does not use canonical visual style v14.');
-    const required = [
-      [/EXACTLY THREE COVER CANDIDATES/i, "exactly three cover candidates"],
-      [/USER CHOOSES A, B OR C/i, "explicit user cover selection"],
-      [/HARD STOP/i, "cover hard stop"],
-      [/NEVER GENERATE Bild 02 BEFORE THE USER CHOOSES/i, "no image 02 before cover selection"],
-      [/AUTOMATIC FIVE-IMAGE BATCHES/i, "automatic batches of five"],
-      [/NO MORE USER PROMPTS AFTER COVER SELECTION/i, "no further questions"],
-      [/FINAL IMAGE INTEGRITY CHECK/i, "final image audit"],
-      [/REGENERATE MISSING OR BROKEN IMAGE NUMBERS/i, "targeted missing image repair"],
-      [/SINGLE SHARED FINAL FOLDER/i, "flat output folder"],
-      [/NO GENERATED IMAGE REFERENCES/i, "reference-free generation"],
-      [/ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/i, "German-only visible labels"],
-      [/IMAGE PROMPTS ARE WRITTEN IN ENGLISH/i, "English generation prompts"]
-    ];
-    if (qualityV7) required.push(
-      [/visualContinuityProfile/i, "location and era context"],
-      [/WORLD AND ERA CONTINUITY/i, "historical continuity"],
-      [/SILENT QUALITY CONTROL AFTER EVERY FIVE-IMAGE BATCH/i, "batch QC"],
-      [/REGENERATE ONLY FAILED IMAGE NUMBERS/i, "targeted QC repair"]
-    );
-    for (const [pattern, label] of required) {
-      if (!pattern.test(prompt)) errors.push('English Flow prompt missing: ' + label);
-    }
-  } else {
-  if (!/GENAU 3 COVER/i.test(prompt)) errors.push('Flow-Prompt enthält die 3-Cover-Regel nicht eindeutig.');
-  if (humanGatedCoverFlow) {
-    if (!/HARD STOP/i.test(prompt)) errors.push('Pipeline v5+: Flow-Prompt muss den HARD STOP nach den Covers eindeutig enthalten.');
-    if (!/Nutzer.*(A, B oder C|A\/B\/C|wähl)/i.test(prompt)) errors.push('Pipeline v5+: Flow-Prompt muss die Nutzer-Coverwahl eindeutig verlangen.');
-    if (!/(kein|NICHT).*Bild 02/i.test(prompt)) errors.push('Pipeline v5+: Vor der Coverwahl muss Bild 02 ausdrücklich verboten sein.');
-  } else {
-    if (!/Google Flow.*selbst/i.test(prompt)) errors.push('Legacy v4: Flow-Prompt muss automatische Coverwahl enthalten.');
-  }
-  if (automaticBatchFlow) {
-    if (!/(automatisch|sofort).*5ER-Bl[öo]ck|5ER-Bl[öo]ck.*automatisch/is.test(prompt)) errors.push('Pipeline v6+: Flow-Prompt muss automatische 5er-Block-Fortsetzung eindeutig enthalten.');
-    if (!/(ohne Rückfrage|nicht fragen|KEIN.*WEITER|nicht auf .*WEITER.*warten)/is.test(prompt)) errors.push('Pipeline v6+: Zwischen Blöcken darf keine Nutzerfreigabe verlangt werden.');
-    if (/(antworte WEITER|nur nach .*WEITER|ausdrückliche[mrns ]+.*WEITER)/i.test(prompt)) errors.push('Pipeline v6+: Flow-Prompt enthält noch ein verbotenes WEITER-Gate zwischen Blöcken.');
-    if (!/(Soll-Ist|Vollständigkeits).*(prüf|abgleich)|prüf.*Bild 01.*Bild NN/is.test(prompt)) errors.push('Pipeline v6+: Finaler Vollständigkeitscheck fehlt im Flow-Prompt.');
-    if (!/(fehlt|fehlende).*(neu erzeug|erzeug.*neu|repar)/is.test(prompt)) errors.push('Pipeline v6+: Flow-Prompt muss fehlende Bildnummern automatisch neu erzeugen.');
-    if (!/gemeinsam.*Ordner|selben Ordner|gemeinsamen finalen Ordner/is.test(prompt)) errors.push('Pipeline v6+: Alle finalen Bilder müssen gemeinsam in einem Ordner liegen.');
-  } else if (humanGatedCoverFlow) {
-    if (!/WEITER/i.test(prompt)) errors.push('Legacy v5: Flow-Prompt muss WEITER als Batch-Freigabe verlangen.');
-  }
-  if (qualityV7) {
-    if (!/visualContinuityProfile/i.test(prompt)) errors.push('Pipeline v7+: Flow-Prompt muss visualContinuityProfile laden.');
-    if (!/WELT- UND UMGEBUNGSKONTINUITÄT/i.test(prompt)) errors.push('Pipeline v7+: Flow-Prompt enthält keine verbindliche Umweltkontinuitätsregel.');
-    if (!/STILLE BILD-QC NACH JEDEM 5ER-BLOCK/i.test(prompt)) errors.push('Pipeline v7+: Flow-Prompt enthält keine stille Bild-QC nach jedem Batch.');
-    if (!/(Umgebung|Klima).*Epoche/is.test(prompt)) errors.push('Pipeline v7+: Bild-QC muss Umgebung/Klima/Epoche prüfen.');
-    if (!/(durchfällt|schlecht).*neu erzeug/is.test(prompt)) errors.push('Pipeline v7+: Schlechte Bilder müssen vor dem Weiterlaufen gezielt neu erzeugt werden.');
-  }
-  if (!/KEINE Bildreferenz/i.test(prompt)) errors.push('Flow-Prompt enthält die referenzfreie Bildregel nicht eindeutig.');
-  if (!/5ER-(BLÖCKEN|SCHRITTEN)/i.test(prompt)) errors.push('Flow-Prompt enthält die 5er-Block-Regel nicht eindeutig.');
-
-  }
-
-
-  if (englishPrompt && meta.contentMode === 'longform') {
-    const copyRoot = path.join(p.projectDir, '00-bildprompts');
-    const short = path.join(copyRoot, 'GOOGLE_FLOW_START_COPY.txt');
-    if (!(await exists(short))) errors.push('English prompt project: short ready-to-copy Google Flow starter missing.');
-    else {
-      const starter = await readFile(short, 'utf8');
-      if (!/PROMPT_LANGUAGE: ENGLISH/i.test(starter)) errors.push('English copy starter must be in English.');
-      if (canonicalStyle && !starter.includes(canonicalStyle)) errors.push('English copy starter missing full canonical visual style v14.');
-    }
-    for (const letter of ['A', 'B', 'C']) {
-      const file = path.join(copyRoot, 'prompts', `COVER_${letter}_COPY.txt`);
-      if (!(await exists(file))) errors.push('English standalone cover prompt missing: ' + letter);
-      else if (canonicalStyle && !(await readFile(file, 'utf8')).includes(canonicalStyle)) errors.push('Cover '+letter+' missing full canonical visual style v14.');
-    }
-    for (let n = 1; n <= Number(meta.plannedImageCount); n++) {
-      const num = String(n).padStart(2, '0');
-      const file = path.join(copyRoot, 'prompts', `Bild_${num}_COPY.txt`);
-      if (!(await exists(file))) {
-        errors.push('English standalone copy-ready image prompt missing for Bild ' + num);
-        continue;
+  const canonicalStyle = !isV8 && Number(policyVisual.visualPolicyVersion) >= 14 ? await loadCanonicalVisualStyle() : null;
+  if (!isV8) {
+    if (!prompt.includes(`ACTIVE_STYLE_ID: ${visual.styleId}`)) errors.push('Flow-Prompt nennt nicht die aktive styleId.');
+    if (/ACTIVE_STYLE_ID:\s*UNSET/i.test(prompt)) errors.push('Flow-Prompt enthält noch UNSET.');
+    if (englishPrompt && canonicalStyle && !prompt.includes(canonicalStyle)) errors.push('Flow master missing full canonical visual style v14.');
+    if (englishPrompt) {
+      if (canonicalStyle && !prompt.includes('VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14')) errors.push('Flow master prompt does not use canonical visual style v14.');
+      const required = [
+        [/EXACTLY THREE COVER CANDIDATES/i, "exactly three cover candidates"],
+        [/USER CHOOSES A, B OR C/i, "explicit user cover selection"],
+        [/HARD STOP/i, "cover hard stop"],
+        [/NEVER GENERATE Bild 02 BEFORE THE USER CHOOSES/i, "no image 02 before cover selection"],
+        [/AUTOMATIC FIVE-IMAGE BATCHES/i, "automatic batches of five"],
+        [/NO MORE USER PROMPTS AFTER COVER SELECTION/i, "no further questions"],
+        [/FINAL IMAGE INTEGRITY CHECK/i, "final image audit"],
+        [/REGENERATE MISSING OR BROKEN IMAGE NUMBERS/i, "targeted missing image repair"],
+        [/SINGLE SHARED FINAL FOLDER/i, "flat output folder"],
+        [/NO GENERATED IMAGE REFERENCES/i, "reference-free generation"],
+        [/ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/i, "German-only visible labels"],
+        [/IMAGE PROMPTS ARE WRITTEN IN ENGLISH/i, "English generation prompts"]
+      ];
+      if (qualityV7) required.push(
+        [/visualContinuityProfile/i, "location and era context"],
+        [/WORLD AND ERA CONTINUITY/i, "historical continuity"],
+        [/SILENT QUALITY CONTROL AFTER EVERY FIVE-IMAGE BATCH/i, "batch QC"],
+        [/REGENERATE ONLY FAILED IMAGE NUMBERS/i, "targeted QC repair"]
+      );
+      for (const [pattern, label] of required) {
+        if (!pattern.test(prompt)) errors.push('English Flow prompt missing: ' + label);
       }
-      const standalone = await readFile(file, 'utf8');
-      if (!/PROMPT_LANGUAGE: ENGLISH/i.test(standalone)) errors.push('Image copy prompt must be English: Bild ' + num);
-      if (canonicalStyle && !standalone.includes(canonicalStyle)) errors.push('Standalone image prompt missing complete v14 master: Bild ' + num);
-      if (n > 1) {
-        if (!standalone.includes(`SCENE_KEY: ${num}`)) errors.push('Standalone prompt scene ID mismatch: Bild ' + num);
-        if (!/ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/i.test(standalone)) errors.push('German-only label instruction missing: Bild ' + num);
+    } else {
+    if (!/GENAU 3 COVER/i.test(prompt)) errors.push('Flow-Prompt enthält die 3-Cover-Regel nicht eindeutig.');
+    if (humanGatedCoverFlow) {
+      if (!/HARD STOP/i.test(prompt)) errors.push('Pipeline v5+: Flow-Prompt muss den HARD STOP nach den Covers eindeutig enthalten.');
+      if (!/Nutzer.*(A, B oder C|A\/B\/C|wähl)/i.test(prompt)) errors.push('Pipeline v5+: Flow-Prompt muss die Nutzer-Coverwahl eindeutig verlangen.');
+      if (!/(kein|NICHT).*Bild 02/i.test(prompt)) errors.push('Pipeline v5+: Vor der Coverwahl muss Bild 02 ausdrücklich verboten sein.');
+    } else {
+      if (!/Google Flow.*selbst/i.test(prompt)) errors.push('Legacy v4: Flow-Prompt muss automatische Coverwahl enthalten.');
+    }
+    if (automaticBatchFlow) {
+      if (!/(automatisch|sofort).*5ER-Bl[öo]ck|5ER-Bl[öo]ck.*automatisch/is.test(prompt)) errors.push('Pipeline v6+: Flow-Prompt muss automatische 5er-Block-Fortsetzung eindeutig enthalten.');
+      if (!/(ohne Rückfrage|nicht fragen|KEIN.*WEITER|nicht auf .*WEITER.*warten)/is.test(prompt)) errors.push('Pipeline v6+: Zwischen Blöcken darf keine Nutzerfreigabe verlangt werden.');
+      if (/(antworte WEITER|nur nach .*WEITER|ausdrückliche[mrns ]+.*WEITER)/i.test(prompt)) errors.push('Pipeline v6+: Flow-Prompt enthält noch ein verbotenes WEITER-Gate zwischen Blöcken.');
+      if (!/(Soll-Ist|Vollständigkeits).*(prüf|abgleich)|prüf.*Bild 01.*Bild NN/is.test(prompt)) errors.push('Pipeline v6+: Finaler Vollständigkeitscheck fehlt im Flow-Prompt.');
+      if (!/(fehlt|fehlende).*(neu erzeug|erzeug.*neu|repar)/is.test(prompt)) errors.push('Pipeline v6+: Flow-Prompt muss fehlende Bildnummern automatisch neu erzeugen.');
+      if (!/gemeinsam.*Ordner|selben Ordner|gemeinsamen finalen Ordner/is.test(prompt)) errors.push('Pipeline v6+: Alle finalen Bilder müssen gemeinsam in einem Ordner liegen.');
+    } else if (humanGatedCoverFlow) {
+      if (!/WEITER/i.test(prompt)) errors.push('Legacy v5: Flow-Prompt muss WEITER als Batch-Freigabe verlangen.');
+    }
+    if (qualityV7) {
+      if (!/visualContinuityProfile/i.test(prompt)) errors.push('Pipeline v7+: Flow-Prompt muss visualContinuityProfile laden.');
+      if (!/WELT- UND UMGEBUNGSKONTINUITÄT/i.test(prompt)) errors.push('Pipeline v7+: Flow-Prompt enthält keine verbindliche Umweltkontinuitätsregel.');
+      if (!/STILLE BILD-QC NACH JEDEM 5ER-BLOCK/i.test(prompt)) errors.push('Pipeline v7+: Flow-Prompt enthält keine stille Bild-QC nach jedem Batch.');
+      if (!/(Umgebung|Klima).*Epoche/is.test(prompt)) errors.push('Pipeline v7+: Bild-QC muss Umgebung/Klima/Epoche prüfen.');
+      if (!/(durchfällt|schlecht).*neu erzeug/is.test(prompt)) errors.push('Pipeline v7+: Schlechte Bilder müssen vor dem Weiterlaufen gezielt neu erzeugt werden.');
+    }
+    if (!/KEINE Bildreferenz/i.test(prompt)) errors.push('Flow-Prompt enthält die referenzfreie Bildregel nicht eindeutig.');
+    if (!/5ER-(BLÖCKEN|SCHRITTEN)/i.test(prompt)) errors.push('Flow-Prompt enthält die 5er-Block-Regel nicht eindeutig.');
+
+    }
+
+
+    if (englishPrompt && meta.contentMode === 'longform') {
+      const copyRoot = path.join(p.projectDir, '00-bildprompts');
+      const short = path.join(copyRoot, 'GOOGLE_FLOW_START_COPY.txt');
+      if (!(await exists(short))) errors.push('English prompt project: short ready-to-copy Google Flow starter missing.');
+      else {
+        const starter = await readFile(short, 'utf8');
+        if (!/PROMPT_LANGUAGE: ENGLISH/i.test(starter)) errors.push('English copy starter must be in English.');
+        if (canonicalStyle && !starter.includes(canonicalStyle)) errors.push('English copy starter missing full canonical visual style v14.');
+      }
+      for (const letter of ['A', 'B', 'C']) {
+        const file = path.join(copyRoot, 'prompts', `COVER_${letter}_COPY.txt`);
+        if (!(await exists(file))) errors.push('English standalone cover prompt missing: ' + letter);
+        else if (canonicalStyle && !(await readFile(file, 'utf8')).includes(canonicalStyle)) errors.push('Cover '+letter+' missing full canonical visual style v14.');
+      }
+      for (let n = 1; n <= Number(meta.plannedImageCount); n++) {
+        const num = String(n).padStart(2, '0');
+        const file = path.join(copyRoot, 'prompts', `Bild_${num}_COPY.txt`);
+        if (!(await exists(file))) {
+          errors.push('English standalone copy-ready image prompt missing for Bild ' + num);
+          continue;
+        }
+        const standalone = await readFile(file, 'utf8');
+        if (!/PROMPT_LANGUAGE: ENGLISH/i.test(standalone)) errors.push('Image copy prompt must be English: Bild ' + num);
+        if (canonicalStyle && !standalone.includes(canonicalStyle)) errors.push('Standalone image prompt missing complete v14 master: Bild ' + num);
+        if (n > 1) {
+          if (!standalone.includes(`SCENE_KEY: ${num}`)) errors.push('Standalone prompt scene ID mismatch: Bild ' + num);
+          if (!/ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/i.test(standalone)) errors.push('German-only label instruction missing: Bild ' + num);
+        }
       }
     }
-  }
+  } // Ende der Prompt-Prüfung für Projekte bis Pipeline v7
 
   const images = Array.isArray(mapping.images) ? mapping.images : [];
   if (Number.isInteger(meta.plannedImageCount) && images.length !== meta.plannedImageCount) {
@@ -329,8 +368,25 @@ export async function validatePhase1(projectDirectory) {
       else lastAnchorIndex = at;
     }
 
-    const marker = `Bild ${String(expected).padStart(2, '0')}`;
-    if (!prompt.includes(marker)) errors.push(`${marker} fehlt im Flow-Prompt.`);
+    if (!isV8) {
+      const marker = `Bild ${String(expected).padStart(2, '0')}`;
+      if (!prompt.includes(marker)) errors.push(`${marker} fehlt im Flow-Prompt.`);
+    } else if (image.overlay) {
+      const overlay = image.overlay;
+      const text = String(overlay.text ?? '').trim();
+      if (!text || text.length > 40) errors.push(`Bild ${expected}: overlay.text muss 1–40 Zeichen haben.`);
+      if (!OVERLAY_STYLES.includes(overlay.style)) errors.push(`Bild ${expected}: overlay.style muss ${OVERLAY_STYLES.join('/')} sein.`);
+      if (overlay.position && !OVERLAY_POSITIONS.includes(overlay.position)) errors.push(`Bild ${expected}: overlay.position muss ${OVERLAY_POSITIONS.join('/')} sein.`);
+    }
+  }
+  if (isV8 && images.length) {
+    const holds = images.map((image) => Number(image.plannedHoldSeconds)).filter(Number.isFinite);
+    const average = holds.reduce((a, b) => a + b, 0) / Math.max(holds.length, 1);
+    const [minAvg, maxAvg] = meta.imageDensityPolicy?.targetAverageHoldSeconds ?? [3, 5];
+    if (average > maxAvg + 0.5) errors.push(`Pipeline v8: Ø geplanter Hold ${average.toFixed(1)}s ist zu langsam (Ziel ${minAvg}–${maxAvg}s). Lange Sätze auf mehrere Bilder aufteilen.`);
+    else if (average < minAvg - 0.5) warnings.push(`Ø geplanter Hold ${average.toFixed(1)}s ist sehr schnell (Ziel ${minAvg}–${maxAvg}s).`);
+    const overlays = images.filter((image) => image.overlay).length;
+    if (overlays < Math.ceil(images.length / 12)) warnings.push(`Nur ${overlays} Text-Overlays – Zahlen, Jahre und Schlüsselbegriffe als Overlay zeigen (Ziel ≥ 1 pro 12 Bilder).`);
   }
 
 
@@ -386,7 +442,8 @@ export async function validatePhase1(projectDirectory) {
 
     // Die 5er-Prompts sind ein eigenständiger Produktionsbestandteil. Prüfen, dass
     // ein Agent wirklich alle benötigten Einzelprompts statt nur den Masterindex bekommt.
-    for (let first = 2; first <= images.length; first += 5) {
+    // Ab v8 erzeugt build-youtube-prompts.js die Blöcke; geprüft wird oben per Abgleich.
+    for (let first = 2; !isV8 && first <= images.length; first += 5) {
       const last = Math.min(images.length, first + 4);
       const label = (n) => String(n).padStart(2, '0');
       const batchPath = path.join(p.projectDir, '00-bildprompts', 'batches', `BLOCK_${label(first)}_${label(last)}.txt`);
@@ -404,13 +461,14 @@ export async function validatePhase1(projectDirectory) {
     }
   }
 
-  return { passed: errors.length === 0, errors };
+  return { passed: errors.length === 0, errors, warnings };
 }
 
 async function main() {
   const dir = arg('--dir');
   if (!dir) throw new Error('Nutzung: npm run validate:youtube-phase1 -- --dir "youtube/<week>/<slug>"');
   const result = await validatePhase1(dir);
+  for (const warning of result.warnings ?? []) console.warn(`Hinweis: ${warning}`);
   if (!result.passed) {
     for (const error of result.errors) console.error(`- ${error}`);
     throw new Error(`${result.errors.length} Phase-1-Regel(n) verletzt.`);

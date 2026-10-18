@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { copyFile, mkdir, readFile, writeFile } from 'node:fs/promises';
+import { renderThumbnail } from '../lib/thumbnail.js';
 import path from 'node:path';
 import { arg, exists, projectPaths, readJson, sha256, writeJson } from '../lib/pipeline.js';
 
@@ -123,18 +124,29 @@ export async function finalizeExport(projectDirectory) {
   const meta = await readJson(p.meta);
   const uploadMetadata = meta.uploadMetadata ?? {};
   const title = String(uploadMetadata.title ?? meta.title ?? '').trim();
-  const description = String(uploadMetadata.description ?? '').trim();
+  let description = String(uploadMetadata.description ?? '').trim();
   const tags = Array.isArray(uploadMetadata.tags) ? uploadMetadata.tags : [];
   const hashtags = Array.isArray(uploadMetadata.hashtags) ? uploadMetadata.hashtags : [];
   if (!title) throw new Error('YouTube-Titel fehlt in video.json.uploadMetadata.title.');
   if (!description) throw new Error('YouTube-Beschreibung fehlt in video.json.uploadMetadata.description.');
+
+  const chaptersFile = path.join(p.techDir, 'YOUTUBE_CHAPTERS.json');
+  if (await exists(chaptersFile)) {
+    const chaptersData = await readJson(chaptersFile);
+    if (Array.isArray(chaptersData.chapters) && chaptersData.chapters.length && !description.includes('00:00')) {
+      const chapterLines = chaptersData.chapters.map((c) => `${c.time} ${c.title}`).join('\n');
+      description = `${description}\n\nKAPITEL:\n${chapterLines}`;
+    }
+  }
 
   const whisperJson = JSON.parse(await readFile(whisperFile, 'utf8'));
   const segments = subtitleSegments(whisperJson);
   if (!segments.length) throw new Error('Whisper-JSON enthält keine Untertitel-Segmente.');
 
   await mkdir(p.exportDir, { recursive: true });
-  await copyFile(cover, thumbnail);
+  const thumbnailHeadline = Number(meta.pipelineVersion ?? 0) >= 8 ? String(uploadMetadata.thumbnailText ?? '').trim() : '';
+  if (thumbnailHeadline) await renderThumbnail(cover, thumbnail, thumbnailHeadline);
+  else await copyFile(cover, thumbnail);
   await writeFile(uploadFile, buildUploadText({ title, description, tags, hashtags }), 'utf8');
   await writeFile(subtitlesFile, buildSrtFromWhisper(whisperJson), 'utf8');
   await writeFile(timedScriptFile, buildTimedScriptFromWhisper(whisperJson), 'utf8');
@@ -155,10 +167,11 @@ export async function finalizeExport(projectDirectory) {
     youtubeHashtags: [...buildDescriptionWithHashtags(description, { hashtags, tags }).matchAll(/#[\p{L}\p{N}_]+/gu)].map((match) => match[0]),
     thumbnailSource: '00-bildprompts/images/Bild 01.png',
     coverSha256: await sha256(cover),
-    thumbnailSha256: await sha256(thumbnail)
+    thumbnailSha256: await sha256(thumbnail),
+    thumbnailHeadline: thumbnailHeadline || null
   };
   report.thumbnailIdenticalToCover = report.coverSha256 === report.thumbnailSha256;
-  if (!report.thumbnailIdenticalToCover) throw new Error('Thumbnail ist nicht identisch zu Bild 01.');
+  if (!thumbnailHeadline && !report.thumbnailIdenticalToCover) throw new Error('Thumbnail ist nicht identisch zu Bild 01.');
   await writeJson(path.join(p.techDir, 'EXPORT_REPORT.json'), report);
 
   console.log('Export finalisiert: FINAL_VIDEO.mp4 + THUMBNAIL.png + YOUTUBE_UPLOAD.txt + SUBTITLES.srt + TIMED_SCRIPT.txt');

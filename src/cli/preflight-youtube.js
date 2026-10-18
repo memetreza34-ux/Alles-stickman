@@ -14,6 +14,7 @@ async function main() {
   if (!commandExists('ffmpeg', ['-version'])) errors.push('ffmpeg fehlt im PATH.');
   if (!commandExists('ffprobe', ['-version'])) errors.push('ffprobe fehlt im PATH.');
   if (!commandExists('whisper', ['--help'])) errors.push('Whisper CLI (`whisper`) fehlt im PATH.');
+  if (!commandExists('tesseract')) errors.push('tesseract fehlt im PATH (brew install tesseract) – nötig für den Bild-Textcheck.');
 
   if (errors.length) {
     for (const error of errors) console.error(`- ${error}`);

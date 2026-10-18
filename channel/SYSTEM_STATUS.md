@@ -1,81 +1,30 @@
-# Aktueller Systemstatus — Alles Stickman
+# Systemstatus — Alles Stickman
 
-Stand: 2026-10-07
+Stand: 18.10.2026 · Pipeline v8 · Bildwelt v15
 
-`SYSTEM_AUDIT.md` ist der frühere Ausgangs-Audit. Dieses Dokument beschreibt den aktuellen verbindlichen Stand.
+## Produziert
 
-## Jetzt verbindlich vorhanden
+| KW | Video | Länge | Status |
+|---|---|---|---|
+| 41 | Feuer, Kühlschrank, Heizung, Waschmaschine (Tests) | je ~2 min | gerendert |
+| 41 | Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn? | 5:55 | gerendert; „Geplanter Hold“ in 61 von 78 Bildern |
+| 42 | Wie fanden Menschen ohne GPS ihren Weg? | 6:07 | gerendert; „Bild XX“ in 10 Bildern, ~9 Stilbrüche |
 
-- eigene Bildwelt `alles-stickman-editorial-v1`
-- `config/visual-policy.json` steht auf `READY`
-- genau drei Cover-Kandidaten pro Video
-- nach genau drei Cover-Kandidaten gilt ein **HARD STOP**
-- **der Nutzer wählt selbst A, B oder C**
-- Auswahlhoheit: `user`
-- vor der Nutzerwahl dürfen weder Bild 01 festgelegt noch Folgebilder erzeugt werden
-- Gewinner wird `Bild 01.png`
-- beide Cover-Verlierer werden gelöscht
-- `Bild 01.png` ist Cover und erste Videoszene
-- **Bild 01 wird nicht als Referenzbild für Folgebilder verwendet**
-- auch andere Cover und vorherige Szenenbilder dürfen nicht als Referenz verwendet werden
-- Referenzmodus: `none`
-- für Bild 02 bis Bild NN werden überhaupt keine Bildreferenzen benutzt
-- Konsistenz entsteht ausschließlich über `config/visual-policy.json` und vollständige individuelle Textprompts
-- Bild 02 bis Bild NN jeweils genau eine finale Version
-- Folgebilder werden in **automatischen 5er-Blöcken** erzeugt
-- maximal 5 aktive Generationen
-- nach einem fertigen Block startet automatisch der nächste
-- zwischen den Blöcken keine Nutzerfrage, kein HARD STOP und kein `WEITER`
-- die einzige Nutzerfreigabe in der Bildphase ist die Coverwahl
-- nach Bild NN folgt ein vollständiger Soll-Ist-Check des Bilderordners
-- fehlende oder technisch kaputte Bildnummern werden gezielt neu erzeugt und erneut geprüft
-- flexible Visual Forms: Szenen, Objekte, Karten, Diagramme, Multi-Panels, Prozesse, Text-/Zahlenbilder usw.
-- **Illustration-zuerst-Priorität:** reichhaltige Szenen/Objekt-in-Kontext-Bilder sind Standard; reine Infografiken/Diagramme nur bei echtem Erklärvorteil
-- Bilddichte darf mittel bis reichhaltig sein: mehrere Figuren, Kleidung, Bärte, Tiere, Werkzeuge, Gebäude, Landschaft und Nebenhandlungen sind erlaubt, solange die Blickführung klar bleibt
-- mehrere sterile Info-/Diagramm-Karten direkt hintereinander sollen vermieden werden
-- finale Bilder liegen gemeinsam und flach in `00-bildprompts/images/`
-- Phase-1-Validator prüft Nutzer-Coverwahl, Cover-Hard-Stop, automatische 5er-Fortsetzung, Referenzfreiheit und den finalen Reparaturcheck
-- Phase-2-Validator lehnt zusätzliche Bilddateien und Unterordner im finalen Bilderordner ab
-- Export erzeugt Video, Thumbnail, Upload-Metadaten, SRT-Untertitel und Zeitstempel-Skript
-- verbindliches Skript-System in `config/script-policy.json`
-- feste Struktur: Hook → Setup → Hauptteil → Auflösung → Schluss
-- `SCRIPT_PLAN.json` pro Video mit exakten Abschnittsankern
-- Phase-1-Gate prüft Skriptstruktur, Hook-Start, generische Intros, Wortdichte, Satzlänge und exakte Wiederholungen
-- Pipeline v7 verlangt einen echten Neugier-Hook statt reiner Atmosphärenbeschreibung
-- Pipeline v7 verlangt `visualContinuityProfile` für Umgebung, Klima, Epoche und Grundstimmung
-- Flow führt nach jedem 5er-Bildblock stille Qualitätskontrolle durch und repariert schlechte Bilder automatisch
-- Pacing-QC blockiert Render, wenn die echte Videodauer außerhalb `targetDurationRangeSeconds` liegt
+Bilder, Stimmen und MP4s liegen lokal, nicht auf GitHub (`.gitignore`). Die Reviews beider Longform-Videos sind noch offen.
 
-## Warum keine Bildreferenz mehr
+## Neu in v8
 
-Das Cover ist auf Klickstärke optimiert. Als Referenzvorlage kann es spätere Karten, Diagramme, Multi-Panels und andere Erklärformen unnötig in dieselbe Bildkomposition drücken. Deshalb wird nur die **Designsprache** konstant gehalten, nicht ein konkretes Ausgangsbild.
+- **Skript:** Formel + `storyEngine` + Kennzahlen (Zahlen, „du“, Vorsichtswörter) als Phase-1-Gate.
+- **Bilder:** Prompts generiert aus `SCENE_VISUALS_EN.json`, kurzer Stil- und Figurenblock, Hauptfigur mit rotem Schal, kein Text im Bild, Shot-Typen, Ø 3–5 s.
+- **Prüfung:** OCR-Bildcheck blockiert den Render bei Produktionsinfo im Bild.
+- **Video:** Text-Overlays (caption/card/label) und deutlich sichtbare Kamerafahrten in Remotion.
+- **Audio:** Atempausen bleiben erhalten.
+- **Thumbnail:** Headline wird beim Export gesetzt.
+- **Fix:** `npm run create:youtube` lief unter Node 24 nicht.
 
-## Weiterhin offen für spätere Ausbaustufen
+## Offen
 
-- automatischer direkter Google-Flow-Aufruf aus Node statt Agentensteuerung
-- stärkeres Research-/Fact-Check-Gate
-- festes TTS-/Voice-Erzeugungssystem
-- erweiterte Remotion-Motionformen
-- Analytics-Feedbackloop
-
-Diese offenen Punkte ändern nichts an der jetzt festgelegten Bildproduktionslogik.
-
-## Erstes 6–7-Minuten-Longform (Oktober 2026)
-
-- Testphase abgeschlossen; Hauptformat jetzt 6–7 Minuten.
-- Projekt: `youtube/2026-KW41_05-10_bis_11-10/wie-bekamen-menschen-trinkwasser-ohne-wasserhahn`.
-- Titel: **Wie bekamen Menschen früher Trinkwasser ohne Wasserhahn?**
-- Phase 1: **READY**, CI-Phase-1-Validierung bestanden.
-- Skript: 1.048 Wörter, Zieldauer 6:40 Minuten.
-- 78 Bildszenen mit Audioankern, 16 ausführbare 5er-/Restblöcke.
-- Longform-Qualitätsregeln: `config/longform-policy.json` und Validator.
-- Phase 2/3: noch keine echten Bild- oder Voice-Assets. Google Flow startet mit genau 3 Covers, wartet ausschließlich auf Nutzerwahl; danach automatische 5er-Batches.
-- **Kein fertiges MP4 behaupten, bevor echte Assets, Alignment und Render vorliegen.**
-
-## Ab Oktober 2026: kontinuierliche Verbesserung ist höchste Priorität
-
-- Neue Policy: `config/quality-loop.json` und `channel/CONTINUOUS_IMPROVEMENT.md`.
-- Nach jedem fertig gerenderten Video entsteht ein **PENDING**-`POST_VIDEO_REVIEW.json`-Report.
-- `quality:close` verlangt echte Beobachtungen, Ursache, übertragbare Änderung und Nachprüfung und führt Lessons in `channel/IMPROVEMENT_LEDGER.json` zusammen.
-- `create:youtube` blockiert neue Projekte, wenn bereits lokal gerenderte Videos nicht überprüft wurden.
-- Grenzen: Weder automatische Sichtung der echten MP4 noch YouTube-Analytics-Abruf sind momentan implementiert. Erfolgreiche CI-Tests beweisen nicht automatisch hohe Videogüte.
+- Freigegebenes Figurenblatt für `channel/style-sheet/` (Hauptfigur festlegen).
+- Echte lizenzfreie Hintergrundmusik statt Sinus-Generator.
+- Erstes v8-Video produzieren und mit KW42 vergleichen.
+- YouTube-Analytics (CTR, Bindung nach 30 s) in die Reviews eintragen.

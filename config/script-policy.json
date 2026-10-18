@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "status": "READY",
   "language": "de",
   "structure": [
@@ -133,5 +133,38 @@
     ],
     "estimatedDurationTolerancePercent": 8,
     "rule": "Die Wortzahl muss zur geplanten Zieldauer passen. Zu kurze Skripte werden vor der Produktion blockiert; die spätere echte Audiodauer wird zusätzlich als Hard-Gate gegen targetDurationRangeSeconds geprüft."
+  },
+  "scriptMetrics": {
+    "requiredFromPipelineVersion": 8,
+    "source": "Vergleich eigener Videos (GPS, Wasser) mit Ink Explainer (0,86–14,5 Mio. Aufrufe), Oktober 2026 – siehe channel/REFERENCE_ANALYSIS.md",
+    "concretePerMinute": {
+      "error": 0.75,
+      "warn": 1.5
+    },
+    "hedgesPer100Words": {
+      "error": 2,
+      "warn": 1
+    },
+    "duPerMinute": {
+      "warn": 3
+    },
+    "questionsPerMinute": {
+      "warn": 0.4
+    },
+    "contrastStartShareMax": 0.15
+  },
+  "storyEngine": {
+    "requiredFromPipelineVersion": 8,
+    "planField": "SCRIPT_PLAN.json storyEngine",
+    "minEscalationSteps": 4,
+    "minEvidenceMoments": 3,
+    "formula": [
+      "Hook: heutiger Alltagsmoment des Zuschauers („du“) gegen denselben Moment früher, dann was auf dem Spiel stand.",
+      "Ein Mythos oder eine Erwartung, die das Video widerlegt oder bestätigt (Neugierlücke).",
+      "Hauptteil als Kette: Problem → Lösung → neues Problem, jede Lösung öffnet die nächste Frage.",
+      "Beweis-Momente: „Wir wissen das, weil …“ mit Fund, Ort, Jahr und Quelle.",
+      "Immersion: „Stell dir vor …“ / „du wachst auf …“ – Zuschauer erlebt die Szene.",
+      "Schluss greift den Hook-Moment wieder auf und endet mit einem emotionalen Gedanken statt Abo-Aufruf."
+    ]
   }
 }

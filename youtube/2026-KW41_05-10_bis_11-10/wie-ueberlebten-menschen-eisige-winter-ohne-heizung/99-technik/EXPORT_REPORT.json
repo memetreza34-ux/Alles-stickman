@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-07T17:20:11.077Z",
+  "videoFile": "03-export/FINAL_VIDEO.mp4",
+  "thumbnailFile": "03-export/THUMBNAIL.png",
+  "uploadMetadataFile": "03-export/YOUTUBE_UPLOAD.txt",
+  "subtitlesFile": "03-export/SUBTITLES.srt",
+  "timedScriptFile": "03-export/TIMED_SCRIPT.txt",
+  "subtitleSource": "99-technik/whisper/YOUTUBE_AUDIO_OPTIMIZED.json",
+  "subtitleSegments": 32,
+  "youtubeTitle": "Wie überlebten Menschen eisige Winter ohne Heizung?",
+  "youtubeDescriptionPresent": true,
+  "youtubeTagCount": 5,
+  "thumbnailSource": "00-bildprompts/images/Bild 01.png",
+  "coverSha256": "ab8732695da38eeacce6de9e890a0a113f50a2a7a69c7e52984f43ad5f45335a",
+  "thumbnailSha256": "ab8732695da38eeacce6de9e890a0a113f50a2a7a69c7e52984f43ad5f45335a",
+  "thumbnailIdenticalToCover": true
+}

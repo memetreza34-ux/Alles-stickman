@@ -19,6 +19,8 @@ async function main() {
   run('src/cli/preflight-youtube.js');
   run('src/cli/validate-youtube-phase1.js', common);
   run('src/cli/validate-youtube-phase2.js', common);
+  // Blockiert den Render, wenn Dateinamen, Hold-Zeiten o. Ä. im Bild stehen.
+  run('src/cli/check-youtube-images.js', common);
   run('src/cli/optimize-youtube-audio.js', common);
   run('src/cli/auto-align-youtube.js', [...common, '--model', model]);
   run('src/cli/build-youtube-timeline.js', common);

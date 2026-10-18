@@ -8,7 +8,8 @@ export async function validatePacing(projectDirectory) {
   const [timeline, pipeline, meta] = await Promise.all([
     readJson(p.timeline), readJson(path.resolve('config/pipeline.json')), readJson(p.meta)
   ]);
-  const policy = pipeline.imagePolicy;
+  // Projektwerte gewinnen: alte Videos behalten ihr Tempo, v8-Projekte nutzen 3–5 s.
+  const policy = { ...pipeline.imagePolicy, ...(meta.imageDensityPolicy ?? {}) };
   const errors = [];
   const warnings = [];
   const images = timeline.images ?? [];

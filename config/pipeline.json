@@ -1,5 +1,5 @@
 {
-  "pipelineVersion": 7,
+  "pipelineVersion": 8,
   "projectSchemaVersion": 1,
   "languageDefault": "de",
   "aspectRatio": "16:9",
@@ -24,30 +24,29 @@
       "TEMP_COVER_B.png",
       "TEMP_COVER_C.png"
     ],
-    "separateThumbnailForbidden": true
+    "separateThumbnailForbidden": false,
+    "thumbnailHeadlineOverlay": true
   },
   "imagePolicy": {
     "fixedImageCountForbidden": true,
     "oneImageOneVisualPurpose": true,
     "targetAverageHoldSeconds": [
-      4.5,
-      7.5
+      3,
+      5
     ],
-    "reviewAboveSeconds": 9,
-    "preferSplitAboveSeconds": 11,
-    "hardMaximumSeconds": 16,
-    "minimumUsefulHoldSeconds": 2.5,
+    "reviewAboveSeconds": 7,
+    "preferSplitAboveSeconds": 8,
+    "hardMaximumSeconds": 12,
+    "minimumUsefulHoldSeconds": 1.5,
     "generationBatchSize": 5,
     "maxConcurrentGenerations": 5,
     "nonCoverGenerationCount": 1,
-    "useImageReferences": false,
-    "consistencySource": "config/visual-policy.json + vollständiger individueller Textprompt pro Bild",
+    "consistencySource": "channel/STYLE_BLOCK_EN.txt + channel/CHARACTER_BIBLE_EN.txt + optional channel/style-sheet/, generiert per npm run prompts:youtube",
     "finalImageDirectory": "00-bildprompts/images",
     "finalFolderMustBeFlat": true,
     "finalFolderOnlyNumberedImages": true,
     "nonCoverAlternatesForbidden": true,
-    "referenceMode": "none",
-    "generatedImageReferenceForbidden": true,
+    "referenceMode": "style-sheet-optional",
     "hardStopAfterEachBatch": false,
     "userContinueRequiredBetweenBatches": false,
     "batchContinuationAuthority": "agent",
@@ -58,18 +57,21 @@
     "finalIntegrityCheckRequired": true,
     "finalCountMustMatchPlannedImageCount": true,
     "missingImageRepairRequired": true,
-    "repairOnlyMissingOrBroken": true
+    "repairOnlyMissingOrBroken": true,
+    "sceneOrCoverReferenceForbidden": true,
+    "pacingLesson": "Ink Explainer schneidet alle 2,5–2,7 s, die eigenen Videos alle 4,7 s."
   },
   "audioPolicy": {
     "playbackRate": 1.1,
     "silenceThresholdDb": -35,
-    "minimumLongPauseSeconds": 0.24,
-    "retainedPauseSeconds": 0.05,
+    "minimumLongPauseSeconds": 0.5,
+    "retainedPauseSeconds": 0.3,
     "loudnessTargetLufs": -16,
     "truePeakDbtp": -1.5,
     "loudnessRangeLra": 11,
     "outputSampleRateHz": 48000,
-    "userOriginalMustRemainUntouched": true
+    "userOriginalMustRemainUntouched": true,
+    "pauseLesson": "Bis v7 wurden Pausen ab 0,24 s auf 0,05 s gekürzt: GPS-Stimme 92 → 15 Atempausen, 6 Minuten fast ohne Luft. Ab v8 bleiben Pausen bis 0,5 s erhalten, längere werden auf 0,3 s gekürzt (GPS-Test: 405 s statt 366 s, 87 Pausen)."
   },
   "endHoldPolicy": {
     "minimumSeconds": 1.2,
@@ -86,6 +88,10 @@
     "strongHookRequiredFromVersion": 7,
     "visualContinuityProfileRequiredFromVersion": 7,
     "visualSelfReviewRequiredFromVersion": 7,
-    "targetDurationHardGate": true
+    "targetDurationHardGate": true,
+    "scriptMetricsRequiredFromVersion": 8,
+    "storyEngineRequiredFromVersion": 8,
+    "generatedImagePromptsRequiredFromVersion": 8,
+    "imageTextOcrBeforeRender": true
   }
 }

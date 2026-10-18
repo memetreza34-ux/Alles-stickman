@@ -6,7 +6,7 @@ import { arg, copyDirectory, exists, readJson, slugify, writeJson } from '../lib
 import { evaluateTopic } from './check-youtube-topic.js';
 import { renderPhase1Handoff } from '../lib/phase1-handoff.js';
 import { assertReviewGateOpen } from '../lib/quality-loop.js';
-import { loadCanonicalVisualStyle, embedCanonicalVisualStyle } from '../lib/visual-master.js';
+import { loadCanonicalVisualStyle, embedCanonicalVisualStyle, CANONICAL_STYLE_TOKEN } from '../lib/visual-master.js';
 
 async function main() {
   const topic = arg('--topic');
@@ -52,14 +52,16 @@ async function main() {
   });
   await writeJson(metaPath, meta);
 
+  // Ab Pipeline v8 erzeugt `npm run prompts:youtube` alle Bildprompts aus SCENE_VISUALS_EN.json.
+  // Nur ältere Vorlagen enthalten noch den Platzhalter für den v14-Master.
   const promptPath = path.join(destination, '00-bildprompts', 'google-flow-prompt.txt');
-  const masterStyle = await loadCanonicalVisualStyle();
-  const prompt = embedCanonicalVisualStyle((await readFile(promptPath, 'utf8'))
-    .replace('[VIDEO-TITEL]', title)
-    .replace('ACTIVE_STYLE_ID: UNSET', `ACTIVE_STYLE_ID: ${visual.styleId ?? 'UNSET'}`), masterStyle);
-  await writeFile(promptPath, prompt, 'utf8');
-  const starterPath = path.join(destination, '00-bildprompts', 'GOOGLE_FLOW_START_COPY.txt');
-  await writeFile(starterPath, embedCanonicalVisualStyle(await readFile(starterPath, 'utf8'), masterStyle), 'utf8');
+  const templatePrompt = await readFile(promptPath, 'utf8');
+  if (templatePrompt.includes(CANONICAL_STYLE_TOKEN)) {
+    const masterStyle = await loadCanonicalVisualStyle();
+    await writeFile(promptPath, embedCanonicalVisualStyle(templatePrompt
+      .replace('[VIDEO-TITEL]', title)
+      .replace('ACTIVE_STYLE_ID: UNSET', `ACTIVE_STYLE_ID: ${visual.styleId ?? 'UNSET'}`), masterStyle), 'utf8');
+  }
 
   // Das Projekt erhält sofort seine zwei direkten GitHub-Zugänge.
   // Erst nach erfolgreicher Phase-1-Validierung werden sie als READY ausgegeben.
