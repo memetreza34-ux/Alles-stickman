@@ -1,24 +1,27 @@
-# StrichKosmos — Phase 1 START HIER
+# Phase 1: Sofort loslegen — Wie fanden Menschen ohne GPS ihren Weg?
 
-**Status: READY — Wie fanden Menschen ohne GPS ihren Weg?**
+**Status:** Phase 1 validiert — bereit für Cover und Sprecheraufnahme
 
-## Sofort vom Tablet/Handy öffnen
+## 1. Google-Flow-Prompt
+[**Google-Flow-Prompt öffnen**](https://github.com/memetreza34-ux/Alles-stickman/blob/main/youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg/00-bildprompts/google-flow-prompt.txt)
 
-[Google-Flow-Bildprompt öffnen](https://github.com/memetreza34-ux/Alles-stickman/blob/main/youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg/00-bildprompts/google-flow-prompt.txt)
+Öffnet den vollständigen Bildproduktions-Prompt in GitHub. Zum Starten in Google Flow kopieren oder über den vorgesehenen Agenten-Workflow weitergeben.
 
-[Sprecher-Skript öffnen](https://github.com/memetreza34-ux/Alles-stickman/blob/main/youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg/01-voice-script/voice-script.txt)
+## 2. Voice-over-Skript
+[**Voice-over-Skript öffnen**](https://github.com/memetreza34-ux/Alles-stickman/blob/main/youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg/01-voice-script/voice-script.txt)
 
-Der Masterprompt enthält **alle 76 vollständigen Bildprompts**, die 3 Coverideen und die 15 Fünfer-Batches. Er startet die Bilderzeugung nicht automatisch; in Google Flow einfügen bzw. an den ausführenden Bildagenten übergeben.
+Öffnet das vollständige Sprecher-Skript in GitHub; für TTS kopieren oder an die Sprecherpipeline übergeben.
 
-Flow: Genau drei Cover A/B/C, Nutzer wählt eines; danach ohne weitere Rückfrage alle verbleibenden 75 Bilder in 5er-Schritten mit stiller QC. Skript direkt für TTS kopierbar.
+## Direktlinks für ChatGPT (nach Phase 1)
+[Google-Flow-Prompt öffnen](https://github.com/memetreza34-ux/Alles-stickman/blob/main/youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg/00-bildprompts/google-flow-prompt.txt) · [Voice-over-Skript öffnen](https://github.com/memetreza34-ux/Alles-stickman/blob/main/youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg/01-voice-script/voice-script.txt)
 
-[Alle Videodateien](https://github.com/memetreza34-ux/Alles-stickman/tree/main/youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg)
+**Phase 1 abgeschlossen — Wie fanden Menschen ohne GPS ihren Weg?**
 
-## Updated visual prompts v12 — all copy-ready in English
+Beide direkten GitHub-Dateilinks auch im Chat ausgeben (Tablet/Smartphone/Desktop). Der Google-Flow-Prompt und das Skript sind dort lesbar und kopierbar. Die Links starten Google Flow oder TTS nicht automatisch.
 
-- [**ONE-PASTE Google Flow cover start**](https://github.com/memetreza34-ux/Alles-stickman/blob/main/youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg/00-bildprompts/GOOGLE_FLOW_START_COPY.txt)
-- [**76 English individual image prompts**](https://github.com/memetreza34-ux/Alles-stickman/tree/main/youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg/00-bildprompts/prompts)
-- [**15 ready-to-paste five-image blocks**](https://github.com/memetreza34-ux/Alles-stickman/tree/main/youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg/00-bildprompts/batches)
-- [**First individual scene 02**](https://github.com/memetreza34-ux/Alles-stickman/blob/main/youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg/00-bildprompts/prompts/Bild_02_COPY.txt)
+## Projekt
+[**Videoprojekt öffnen**](https://github.com/memetreza34-ux/Alles-stickman/tree/main/youtube/2026-KW42_12-10_bis_18-10/wie-fanden-menschen-ohne-gps-ihren-weg)
 
-The English prompts are instructions for Google Flow; user-visible words in the rendered pictures are exclusively in German. The compact master includes the whole English scene plan. The individual COPY files are self-contained and can be pasted separately.
+**Verbindliche Übergabe:** Sobald Phase 1 bestanden ist, muss die ChatGPT-Antwort beide anklickbaren Zugänge oben enthalten — nicht nur eine allgemeine Ordnerverlinkung oder Dateinamen.
+
+**Bildablauf:** Genau 3 Cover erzeugen, auf die Nutzerwahl A/B/C warten. Erst danach übrige Bilder in automatischen 5er-Blöcken erstellen; keine weiteren Rückfragen. Die Links allein starten keine externen Generierungen.

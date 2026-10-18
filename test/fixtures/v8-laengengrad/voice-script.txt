@@ -1,0 +1,9 @@
+Dein Handy zeigt dir in einer Sekunde, wo du gerade bist. Im Oktober 1707 wusste das auf vier britischen Kriegsschiffen niemand, und sie liefen nachts auf Felsen. Wie fanden Seeleute heraus, wo sie auf dem Meer waren?
+
+Die Breite war lösbar. Mittags maßen Seeleute, wie hoch die Sonne stand, und wussten so, wie weit nördlich sie fuhren. Doch für Ost und West gab es keinen Trick. Ohne diese Länge rechneten Kapitäne mit Kurs, Tempo und Zeit einfach weiter. Nach Wochen auf See lag so eine Schätzung schnell Hunderte Kilometer daneben. Vor den Scilly-Inseln kostete dieser Fehler über tausend Seeleute das Leben.
+
+Das Problem war die Zeit. Die Erde dreht sich in 24 Stunden einmal, also 15 Grad pro Stunde. Wer an Bord die Uhrzeit des Heimathafens kannte, konnte die Länge ausrechnen. Aber Pendeluhren versagten auf schwankenden Schiffen völlig. 1714 setzte das britische Parlament deshalb bis zu 20.000 Pfund Preisgeld aus. Stell dir vor, du bist Tischler in einem kleinen Dorf und willst dieses Rätsel lösen. Genau das tat John Harrison. Er baute Uhren, die Hitze, Kälte und Wellen aushielten. Seine erste Seeuhr wog über 30 Kilo und stand in einem großen Holzkasten. Doch die Experten wollten lieber die Sterne nutzen und trauten keiner Uhr. Harrison baute trotzdem weiter, vier Modelle in über 30 Jahren. Die vierte war plötzlich klein genug für eine Hand. Wir wissen, wie gut sie war, weil sie 1761 auf einer Fahrt nach Jamaika getestet wurde. Nach 81 Tagen auf See lag sie nur wenige Sekunden daneben. Damit war das größte Rätsel der Seefahrt geknackt.
+
+So fanden Seeleute ihre Position: Die Sonne verriet die Breite, eine genaue Uhr die Länge. Wer beides kannte, konnte jeden Punkt auf der Karte finden. Aus Schätzen wurde Messen.
+
+Dein Handy macht heute dasselbe, nur mit Satelliten und Atomuhren. Und jedes Mal, wenn dein blauer Punkt erscheint, steckt darin die Idee eines Dorftischlers.

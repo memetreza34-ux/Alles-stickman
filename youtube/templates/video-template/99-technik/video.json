@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pipelineVersion": 7,
+  "pipelineVersion": 8,
   "videoId": "",
   "weekFolder": "",
   "topicSlug": "",
@@ -18,7 +18,8 @@
     "title": "",
     "description": "",
     "tags": [],
-    "hashtags": []
+    "hashtags": [],
+    "thumbnailText": ""
   },
   "coverPolicy": {
     "firstSceneIsCover": true,
@@ -31,27 +32,26 @@
     "continueBeforeUserSelectionForbidden": true,
     "winnerBecomesFirstSceneAndThumbnail": true,
     "deleteLosingCandidates": true,
-    "separateThumbnailForbidden": true
+    "separateThumbnailForbidden": false,
+    "thumbnailHeadlineOverlay": true
   },
   "imageDensityPolicy": {
     "contentDrivenImageCountRequired": true,
     "fixedImageCountForbidden": true,
     "oneImageOneVisualPurpose": true,
     "targetAverageHoldSeconds": [
-      4.5,
-      7.5
+      3,
+      5
     ],
-    "reviewAboveSeconds": 9,
-    "preferSplitAboveSeconds": 11,
-    "hardMaximumSeconds": 16,
-    "minimumUsefulHoldSeconds": 2.5,
+    "reviewAboveSeconds": 7,
+    "preferSplitAboveSeconds": 8,
+    "hardMaximumSeconds": 12,
+    "minimumUsefulHoldSeconds": 1.5,
     "generationBatchSize": 5,
     "maxConcurrentGenerations": 5,
     "nonCoverGenerationCount": 1,
-    "useImageReferences": false,
     "fillerImagesForbidden": true,
-    "referenceMode": "none",
-    "generatedImageReferenceForbidden": true,
+    "referenceMode": "style-sheet-optional",
     "hardStopAfterEachBatch": false,
     "userContinueRequiredBetweenBatches": false,
     "batchContinuationAuthority": "agent",
@@ -65,7 +65,8 @@
     "repairOnlyMissingOrBroken": true,
     "finalImageDirectory": "00-bildprompts/images",
     "finalFolderMustBeFlat": true,
-    "finalFolderOnlyNumberedImages": true
+    "finalFolderOnlyNumberedImages": true,
+    "sceneOrCoverReferenceForbidden": true
   },
   "audioPolicy": {
     "singleFinalVoiceoverRequired": true,

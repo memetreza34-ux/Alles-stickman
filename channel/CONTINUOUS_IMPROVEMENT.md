@@ -23,6 +23,16 @@ npm run quality:status
 
 Das normale `phase3:youtube` erstellt nach erfolgreichem Render/Export automatisch eine **ausstehende** Review-Datei. Eine Review schließt sich **niemals selbst ab**.
 
+## Was eine ehrliche Review braucht (Lehre aus KW42)
+
+Die GPS-Review vergab in allen Bereichen 5/5 und „technisch fehlerfrei“. Eine echte Sichtung fand danach „Bild XX“ in 10 Bildern, halb-realistische Menschen in etwa 9 Bildern und eine auf 20 % gepresste Stimme mit 15 statt 92 Atempausen. Deshalb gilt:
+
+- Die Review läuft auf der **finalen 1080p-MP4**, nicht auf einer komprimierten Kopie für einen Chat.
+- `99-technik/IMAGE_TEXT_CHECK.json` (OCR) gehört zur Review. Jeder Treffer ist ein Befund.
+- Jedes Bild einmal ansehen, z. B. als Kontaktbogen (1 Frame pro Bild). Prüfen: Strichfiguren? Text? Epoche? Hände?
+- Mindestens 3 konkrete Befunde oder eine begründete `noIssuesReason`. Lauter 5er ohne Befund ist ein Warnsignal.
+- Kennzahlen notieren: Ø Shotlänge, Zahlen/Minute, „du“/Minute, Pausen > 0,25 s.
+
 ## Welche Fehler wir gezielt verfolgen
 
 - **Hook**: Erste 5–30 Sekunden halten die Frage offen; weder belanglose Atmosphäre noch verwirrendes Versprechen.

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-16T18:00:23.897Z",
+  "model": "small",
+  "language": "de",
+  "audioFingerprintSha256": "639ab58981d3d702d7234e84e1468fb23cda0e94ae656ded75087581b48a8773",
+  "wordCount": 1013,
+  "matchedImages": 76,
+  "totalImages": 76,
+  "misses": [],
+  "passed": true
+}

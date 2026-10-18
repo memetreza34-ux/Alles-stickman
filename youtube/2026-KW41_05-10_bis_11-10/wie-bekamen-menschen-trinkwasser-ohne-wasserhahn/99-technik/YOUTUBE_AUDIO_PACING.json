@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-10T11:22:01.092Z",
+  "sourceFile": "02-audio/voice.wav",
+  "sourceFingerprintSha256": "9b99f795d4deea57ede68dea3fc3684d26099ab3d0e674a47ea7cfe8a9fdb578",
+  "optimizedFile": "99-technik/YOUTUBE_AUDIO_OPTIMIZED.wav",
+  "optimizedFingerprintSha256": "ee14ef3d8639329713f7b62822e2c3b4501c28efb3f10b508127e9785c76d28e",
+  "beforeSeconds": 462.147,
+  "afterSeconds": 353.999,
+  "removedSeconds": 108.148,
+  "playbackRate": 1.1,
+  "pitchPreserved": true,
+  "loudnessTargetLufs": -16,
+  "truePeakDbtp": -1.5,
+  "sampleRateHz": 48000,
+  "loudnessMeasurement": {
+    "measured": true,
+    "integratedLufs": -16.71,
+    "truePeakDbtp": -4.49,
+    "passed": true
+  },
+  "userOriginalModified": false,
+  "filter": "silenceremove=start_periods=1:start_duration=0.12:start_threshold=-38dB:start_silence=0.02:stop_periods=-1:stop_duration=0.24:stop_threshold=-35dB:stop_silence=0.05:detection=rms,atempo=1.1,areverse,silenceremove=start_periods=1:start_duration=0.10:start_threshold=-35dB:start_silence=0.05:detection=rms,areverse,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000",
+  "passed": true
+}

@@ -3,5 +3,78 @@
   "motionPolicy": "gentle-default",
   "backgroundMusic": false,
   "motionOverrides": [],
-  "soundEffects": []
+  "soundEffects": [
+    {
+      "imageNumber": 1,
+      "file": "channel/audio/sfx/celestial-chime.wav",
+      "offsetSeconds": 0.5,
+      "durationSeconds": 3.0,
+      "volume": 0.12,
+      "label": "Polarstern-Leuchten im Nachtsturm"
+    },
+    {
+      "imageNumber": 2,
+      "file": "channel/audio/sfx/whoosh-soft.wav",
+      "offsetSeconds": 0.0,
+      "durationSeconds": 0.8,
+      "volume": 0.10,
+      "label": "Panorama-Transition"
+    },
+    {
+      "imageNumber": 10,
+      "file": "channel/audio/sfx/whoosh-soft.wav",
+      "offsetSeconds": 0.0,
+      "durationSeconds": 0.8,
+      "volume": 0.10,
+      "label": "Landkarten-Transition"
+    },
+    {
+      "imageNumber": 22,
+      "file": "channel/audio/sfx/celestial-chime.wav",
+      "offsetSeconds": 0.2,
+      "durationSeconds": 3.0,
+      "volume": 0.10,
+      "label": "Polarstern-Erklärung"
+    },
+    {
+      "imageNumber": 30,
+      "file": "channel/audio/sfx/compass-click.wav",
+      "offsetSeconds": 0.3,
+      "durationSeconds": 0.4,
+      "volume": 0.14,
+      "label": "Kompassnadel rastet ein"
+    },
+    {
+      "imageNumber": 41,
+      "file": "channel/audio/sfx/ocean-waves.wav",
+      "offsetSeconds": 0.0,
+      "durationSeconds": 6.0,
+      "volume": 0.09,
+      "label": "Ozean-Wellen auf hoher See"
+    },
+    {
+      "imageNumber": 45,
+      "file": "channel/audio/sfx/sandglass-trickle.wav",
+      "offsetSeconds": 0.2,
+      "durationSeconds": 3.5,
+      "volume": 0.12,
+      "label": "Sanduhr und Loggleine"
+    },
+    {
+      "imageNumber": 60,
+      "file": "channel/audio/sfx/celestial-chime.wav",
+      "offsetSeconds": 0.5,
+      "durationSeconds": 3.0,
+      "volume": 0.10,
+      "label": "Polynesische Sternpfade"
+    },
+    {
+      "imageNumber": 76,
+      "file": "channel/audio/sfx/celestial-chime.wav",
+      "offsetSeconds": 1.0,
+      "durationSeconds": 3.0,
+      "volume": 0.10,
+      "label": "Schlussakkord Klippenblick"
+    }
+  ]
 }

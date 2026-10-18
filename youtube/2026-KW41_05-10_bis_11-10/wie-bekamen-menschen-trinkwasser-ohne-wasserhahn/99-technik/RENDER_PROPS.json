@@ -1,0 +1,1420 @@
+{
+  "plan": {
+    "schemaVersion": 1,
+    "createdAt": "2026-10-10T11:25:12.090Z",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "audioDurationSeconds": 353.999,
+    "endHoldSeconds": 1.3,
+    "durationSeconds": 355.299,
+    "audioFile": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/audio/YOUTUBE_AUDIO_OPTIMIZED.wav",
+    "images": [
+      {
+        "imageNumber": 1,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 01.png",
+        "startSeconds": 0,
+        "endSeconds": 6.6,
+        "durationSeconds": 6.6,
+        "visualPurpose": "Weite, reichhaltige Stadtansicht mit dichtem Häusermeer",
+        "topicAnchor": "Ohne Wasserhahn",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 2,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 02.png",
+        "startSeconds": 6.6,
+        "endSeconds": 11.84,
+        "durationSeconds": 5.24,
+        "visualPurpose": "Gleiche historische Stadtstraße",
+        "topicAnchor": "Ohne Wasserhahn",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 3,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 03.png",
+        "startSeconds": 11.84,
+        "endSeconds": 16.3,
+        "durationSeconds": 4.46,
+        "visualPurpose": "Dramatische Übersicht: trockener Stadtbrunnen im Vordergrund, jenseits der Mauern Quelle im Hügel",
+        "topicAnchor": "Ohne Wasserhahn",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 4,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 04.png",
+        "startSeconds": 16.3,
+        "endSeconds": 20.38,
+        "durationSeconds": 4.08,
+        "visualPurpose": "Breiter illustrierter Landschaftsvergleich: Flusstal, felsige Quelle und trockene Ebene, jeweils eine kleine andere Siedlung",
+        "topicAnchor": "Die drei Aufgaben",
+        "visualForm": "Illustrierter Vergleich",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 5,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 05.png",
+        "startSeconds": 20.38,
+        "endSeconds": 26.42,
+        "durationSeconds": 6.04,
+        "visualPurpose": "In einem zusammenhängenden Dorfhof drei Aktionen: Wasser schöpfen, transportieren, in bedecktes Tongefäß füllen",
+        "topicAnchor": "Die drei Aufgaben",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 6,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 06.png",
+        "startSeconds": 26.42,
+        "endSeconds": 30.32,
+        "durationSeconds": 3.9,
+        "visualPurpose": "Person schöpft am Ufer, daneben oberhalb Vieh und schlammiger Zulauf",
+        "topicAnchor": "Die drei Aufgaben",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 7,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 07.png",
+        "startSeconds": 30.32,
+        "endSeconds": 34.84,
+        "durationSeconds": 4.52,
+        "visualPurpose": "Quellenaustritt aus Fels in bewaldetem Hügelland, Dorf unten im Tal mit weitem Fußweg, zwei Figuren mit Krügen",
+        "topicAnchor": "Die drei Aufgaben",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 8,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 08.png",
+        "startSeconds": 34.84,
+        "endSeconds": 39.64,
+        "durationSeconds": 4.8,
+        "visualPurpose": "Panorama eines historisch neutralen Flusstals mit mehreren kleinen Häusern nahe Wasserlauf, Felder und schmale Wege",
+        "topicAnchor": "Wasser aus Landschaft",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 9,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 09.png",
+        "startSeconds": 39.64,
+        "endSeconds": 43.8,
+        "durationSeconds": 4.16,
+        "visualPurpose": "Mehrere Menschen mit Tonkrügen am ruhigen Flussabschnitt",
+        "topicAnchor": "Wasser aus Landschaft",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 10,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 10.png",
+        "startSeconds": 43.8,
+        "endSeconds": 47.56,
+        "durationSeconds": 3.76,
+        "visualPurpose": "Vorher/Nachher als zwei lebendige Mini-Szenen: drei Hütten mit kurzer Wasserroute versus größere Siedlung mit Menschenreihe",
+        "topicAnchor": "Wasser aus Landschaft",
+        "visualForm": "Illustrierter Vergleich",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 11,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 11.png",
+        "startSeconds": 47.56,
+        "endSeconds": 51.74,
+        "durationSeconds": 4.18,
+        "visualPurpose": "Lange Straße zur Wasserstelle, verschiedene Figuren tragen schwere Krüge, dicht stehende Häuser im Hintergrund",
+        "topicAnchor": "Wasser aus Landschaft",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 12,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 12.png",
+        "startSeconds": 51.74,
+        "endSeconds": 56.14,
+        "durationSeconds": 4.4,
+        "visualPurpose": "Historische Siedlung mit Brunnen am Zentrum, daneben Schaf, Handwerk, Gartenbeete",
+        "topicAnchor": "Wasser aus Landschaft",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 13,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 13.png",
+        "startSeconds": 56.14,
+        "endSeconds": 61.62,
+        "durationSeconds": 5.48,
+        "visualPurpose": "Illustrierte Gelände-Seitenansicht mit Berg, Poren im Gestein und natürlichem Wasseraustritt, darüber zwei historische Figuren an echter Quelle",
+        "topicAnchor": "Quellen",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 14,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 14.png",
+        "startSeconds": 61.62,
+        "endSeconds": 66.04,
+        "durationSeconds": 4.42,
+        "visualPurpose": "Grasiger Berghang im Regen, kleine integrierte Untergrund-Schnittblase mit Tropfen durch lockeres Gestein",
+        "topicAnchor": "Quellen",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 15,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 15.png",
+        "startSeconds": 66.04,
+        "endSeconds": 70.42,
+        "durationSeconds": 4.38,
+        "visualPurpose": "Zwei benachbarte Quellstellen: kleiner feuchter Hang und starke Quelle zwischen Steinen",
+        "topicAnchor": "Quellen",
+        "visualForm": "Illustrierter Vergleich",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 16,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 16.png",
+        "startSeconds": 70.42,
+        "endSeconds": 74.56,
+        "durationSeconds": 4.14,
+        "visualPurpose": "Einfach gemauerte historische Quellfassung am Hang mit Tongefäßen und zwei Personen, Laub und Stein als Hintergrund",
+        "topicAnchor": "Quellen",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 17,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 17.png",
+        "startSeconds": 74.56,
+        "endSeconds": 79.14,
+        "durationSeconds": 4.58,
+        "visualPurpose": "Gleiche Quellfassung mit niedrigerem Ausfluss in trockenerem Wetter, nicht kompletter Jahreszeitenwechsel",
+        "topicAnchor": "Quellen",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 18,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 18.png",
+        "startSeconds": 79.14,
+        "endSeconds": 83.3,
+        "durationSeconds": 4.16,
+        "visualPurpose": "Dorf auf Ebene, in der unteren Bildhälfte sanfter vereinfachter Erdquerschnitt mit wasserführender Schicht",
+        "topicAnchor": "Brunnen",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 19,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 19.png",
+        "startSeconds": 83.3,
+        "endSeconds": 87.96,
+        "durationSeconds": 4.66,
+        "visualPurpose": "Historische Gruppe gräbt einen Brunnen mit einfachen Werkzeugen und Holzstützen",
+        "topicAnchor": "Brunnen",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 20,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 20.png",
+        "startSeconds": 87.96,
+        "endSeconds": 92.14,
+        "durationSeconds": 4.18,
+        "visualPurpose": "Klarer 16:9-Brunnen-Querschnitt, oben Figur kurbelt Eimer, unten Grundwasser zwischen Gesteinsporen sichtbar",
+        "topicAnchor": "Brunnen",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 21,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 21.png",
+        "startSeconds": 92.14,
+        "endSeconds": 96.48,
+        "durationSeconds": 4.34,
+        "visualPurpose": "Historischer Brunnenhof: eine Person schöpft, andere repariert Holzaufbau, dritte reinigt Umgebung",
+        "topicAnchor": "Brunnen",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 22,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 22.png",
+        "startSeconds": 96.48,
+        "endSeconds": 100.74,
+        "durationSeconds": 4.26,
+        "visualPurpose": "Naher Brunnen mit dunklem Schatten und kleinem Lupenfenster der unsichtbaren Verschmutzung",
+        "topicAnchor": "Brunnen",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 23,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 23.png",
+        "startSeconds": 100.74,
+        "endSeconds": 104.36,
+        "durationSeconds": 3.62,
+        "visualPurpose": "Lebendige Schnittillustration: unten Sand, Kies und Gestein mit feinen wassergefüllten Zwischenräumen",
+        "topicAnchor": "Unsichtbares Wasser",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 24,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 24.png",
+        "startSeconds": 104.36,
+        "endSeconds": 109.08,
+        "durationSeconds": 4.72,
+        "visualPurpose": "Stark vergrößertes Kies-/Sanddetail neben einem nassen Schwamm als einfacher Objektvergleich",
+        "topicAnchor": "Unsichtbares Wasser",
+        "visualForm": "Illustrierter Vergleich",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 25,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 25.png",
+        "startSeconds": 109.08,
+        "endSeconds": 113.08,
+        "durationSeconds": 4,
+        "visualPurpose": "Drei benachbarte kleine Geländeillustrationen: flacher Brunnen mit Wasser, felsiger Untergrund, tiefes Wasser",
+        "topicAnchor": "Unsichtbares Wasser",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 26,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 26.png",
+        "startSeconds": 113.08,
+        "endSeconds": 118.7,
+        "durationSeconds": 5.62,
+        "visualPurpose": "Derselbe Brunnen in sachlichem Vorher/Nachher: Wasserstand früher höher, später niedriger",
+        "topicAnchor": "Unsichtbares Wasser",
+        "visualForm": "Illustrierter Vergleich",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 27,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 27.png",
+        "startSeconds": 118.7,
+        "endSeconds": 122.72,
+        "durationSeconds": 4.02,
+        "visualPurpose": "Arbeiter am Brunnen und parallel Menschen am Wassertransport zum Dorf, zwei Aufgaben in einem Blick zusammengeführt",
+        "topicAnchor": "Unsichtbares Wasser",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 28,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 28.png",
+        "startSeconds": 122.72,
+        "endSeconds": 126.48,
+        "durationSeconds": 3.76,
+        "visualPurpose": "Hofhaus in gemäßigt-trockenem Mittelmeerklima, erste Regentropfen auf Dach, Krüge bereit",
+        "topicAnchor": "Regen sammeln",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 29,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 29.png",
+        "startSeconds": 126.48,
+        "endSeconds": 130.9,
+        "durationSeconds": 4.42,
+        "visualPurpose": "Hausdach mit einfacher Regenrinne/Steinrinne führt zu unterirdischem Speicher, integrierter Querschnitt mit Weg der Tropfen",
+        "topicAnchor": "Regen sammeln",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 30,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 30.png",
+        "startSeconds": 130.9,
+        "endSeconds": 135.42,
+        "durationSeconds": 4.52,
+        "visualPurpose": "Historische Zisterne unter Hof mit überwölbtem Steinraum, darüber zwei Menschen entnehmen Wasser durch Öffnung, Label ZISTERNE",
+        "topicAnchor": "Regen sammeln",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 31,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 31.png",
+        "startSeconds": 135.42,
+        "endSeconds": 139.52,
+        "durationSeconds": 4.1,
+        "visualPurpose": "Vorher/Nachher gleiche Hauswelt: Regen füllt Zisterne, trockenere Zeit mit gefülltem Speicher",
+        "topicAnchor": "Regen sammeln",
+        "visualForm": "Illustrierter Vergleich",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 32,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 32.png",
+        "startSeconds": 139.52,
+        "endSeconds": 145.3,
+        "durationSeconds": 5.78,
+        "visualPurpose": "Historischer Haushalt reinigt Abdeckung einer Zisterne, Laub neben Zufluss",
+        "topicAnchor": "Regen sammeln",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 33,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 33.png",
+        "startSeconds": 145.3,
+        "endSeconds": 150.2,
+        "durationSeconds": 4.9,
+        "visualPurpose": "Mensch hält klares Wasser in Tonbecher, kleine Lupenblase mit unsichtbaren Keimen als didaktisches Symbol",
+        "topicAnchor": "Regen sammeln",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 34,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 34.png",
+        "startSeconds": 150.2,
+        "endSeconds": 155.26,
+        "durationSeconds": 5.06,
+        "visualPurpose": "Weite antike Stadtmauer im Tal, hoch gelegene Quelle in fernen Hügeln",
+        "topicAnchor": "Wasser für die Großstadt",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 35,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 35.png",
+        "startSeconds": 155.26,
+        "endSeconds": 159.52,
+        "durationSeconds": 4.26,
+        "visualPurpose": "Römische Bauarbeiter formen steinerne Wasserleitung im Umland, Fluss/Quelle in Ferne, antike Stadt als Ziel",
+        "topicAnchor": "Wasser für die Großstadt",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 36,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 36.png",
+        "startSeconds": 159.52,
+        "endSeconds": 163.2,
+        "durationSeconds": 3.68,
+        "visualPurpose": "Breite Landschaft mit dezenter halbtransparenter Schnittdarstellung eines unterirdischen römischen Kanals, oben Feldweg und Arbeitern",
+        "topicAnchor": "Wasser für die Großstadt",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 37,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 37.png",
+        "startSeconds": 163.2,
+        "endSeconds": 167.86,
+        "durationSeconds": 4.66,
+        "visualPurpose": "Römische Wasserleitung nähert sich Tal",
+        "topicAnchor": "Wasser für die Großstadt",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 38,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 38.png",
+        "startSeconds": 167.86,
+        "endSeconds": 172.68,
+        "durationSeconds": 4.82,
+        "visualPurpose": "Sehr anschaulicher länglicher Querschnitt mit leichten Neigungspfeilen",
+        "topicAnchor": "Wasser für die Großstadt",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 39,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 39.png",
+        "startSeconds": 172.68,
+        "endSeconds": 176.66,
+        "durationSeconds": 3.98,
+        "visualPurpose": "Querschnitt eines geneigten Stein-Kanals mit fließendem Wasser und schlichter Pfeilrichtung bergab, daneben erstaunte Stickman-Figur, kein Motor",
+        "topicAnchor": "Wasser für die Großstadt",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 40,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 40.png",
+        "startSeconds": 176.66,
+        "endSeconds": 181.04,
+        "durationSeconds": 4.38,
+        "visualPurpose": "Arbeiter in begehbarer gemauerter Wartungsöffnung entfernen Sedimente aus antikem Kanal, sicherer zeichnerischer Kontext",
+        "topicAnchor": "Wasser für die Großstadt",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 41,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 41.png",
+        "startSeconds": 181.04,
+        "endSeconds": 186.04,
+        "durationSeconds": 5,
+        "visualPurpose": "Römischer Aufseher mit Wachstafel steht am Zugang, Arbeiter prüfen Wasserlauf",
+        "topicAnchor": "Wasser für die Großstadt",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 42,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 42.png",
+        "startSeconds": 186.04,
+        "endSeconds": 191.56,
+        "durationSeconds": 5.52,
+        "visualPurpose": "Römischer Verteilerkasten castellum in Stein, mit mehreren abzweigenden Leitungen als vereinfachtes Sachbild innerhalb echter Stadtrand-Szene",
+        "topicAnchor": "Wasser in Rom",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 43,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 43.png",
+        "startSeconds": 191.56,
+        "endSeconds": 196.34,
+        "durationSeconds": 4.78,
+        "visualPurpose": "Dreieransicht echter römischer Stadtbereiche: öffentlicher Brunnen, Thermen, besser ausgestattetes Haus, über gemeinsame Wasserlinie verbunden",
+        "topicAnchor": "Wasser in Rom",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 44,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 44.png",
+        "startSeconds": 196.34,
+        "endSeconds": 201.06,
+        "durationSeconds": 4.72,
+        "visualPurpose": "Belebter römischer Straßenbrunnen mit mehreren unterschiedlich gekleideten Bewohnern und Tonkrügen, römische Häuser im Hintergrund",
+        "topicAnchor": "Wasser in Rom",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 45,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 45.png",
+        "startSeconds": 201.06,
+        "endSeconds": 203.96,
+        "durationSeconds": 2.9,
+        "visualPurpose": "Ein römischer Bewohner trägt zwei Krüge vom Straßenbrunnen durch enge Gasse zur Wohnung",
+        "topicAnchor": "Wasser in Rom",
+        "visualForm": "Illustrierter Vergleich",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 46,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 46.png",
+        "startSeconds": 203.96,
+        "endSeconds": 208.18,
+        "durationSeconds": 4.22,
+        "visualPurpose": "Römische Straßenecke: kurze Route zu Brunnen vs langer Weg für ärmere Wohnlagen",
+        "topicAnchor": "Wasser in Rom",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 47,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 47.png",
+        "startSeconds": 208.18,
+        "endSeconds": 212.12,
+        "durationSeconds": 3.94,
+        "visualPurpose": "Römisches Stadthaus mit Privatzuleitung neben dichtem Wohnhaus mit Menschen am öffentlichen Brunnen, klare unterschiedliche Versorgung",
+        "topicAnchor": "Wasser in Rom",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 48,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 48.png",
+        "startSeconds": 212.12,
+        "endSeconds": 216.44,
+        "durationSeconds": 4.32,
+        "visualPurpose": "Weite trockene iranische Hochebene mit gleißender Sonne, kleiner Siedlung und langer offener Rinne, dezente Verdunstungs-Symbole",
+        "topicAnchor": "Wasser unter der Wüste",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 49,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 49.png",
+        "startSeconds": 216.44,
+        "endSeconds": 220.72,
+        "durationSeconds": 4.28,
+        "visualPurpose": "Historische iranische Siedlung mit Lehmarchitektur und Gärten",
+        "topicAnchor": "Wasser unter der Wüste",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 50,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 50.png",
+        "startSeconds": 220.72,
+        "endSeconds": 224.56,
+        "durationSeconds": 3.84,
+        "visualPurpose": "Seitenansicht trockenes Gebirge, Schotter-/Grundwasserzone, sanft geneigter Tunnel",
+        "topicAnchor": "Wasser unter der Wüste",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 51,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 51.png",
+        "startSeconds": 224.56,
+        "endSeconds": 228.82,
+        "durationSeconds": 4.26,
+        "visualPurpose": "Einfacher illustrativer Querschnitt mit Sonne oben, Wasser im kühlen unterirdischen Tunnel unten",
+        "topicAnchor": "Wasser unter der Wüste",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 52,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 52.png",
+        "startSeconds": 228.82,
+        "endSeconds": 232.6,
+        "durationSeconds": 3.78,
+        "visualPurpose": "Qanat mit regelmäßig abstehenden vertikalen Schächten, Arbeiter an einer Öffnung mit Ton-/Holzwerkzeug, keine gefährliche Schritt-für-Schritt-Anleitung",
+        "topicAnchor": "Wasser unter der Wüste",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 53,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 53.png",
+        "startSeconds": 232.6,
+        "endSeconds": 235.46,
+        "durationSeconds": 2.86,
+        "visualPurpose": "Langer Tunnel mit fließendem Wasser zur bewachsenen Oase am Ausgang, kleine Pfeile zeigen Richtung",
+        "topicAnchor": "Wasser unter der Wüste",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 54,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 54.png",
+        "startSeconds": 235.46,
+        "endSeconds": 240.22,
+        "durationSeconds": 4.76,
+        "visualPurpose": "Menschen verschiedenem Alters bei Brunnen-/Kanalausgang, jemand dokumentiert, andere pflegen den Zugang",
+        "topicAnchor": "Wasser unter der Wüste",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 55,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 55.png",
+        "startSeconds": 240.22,
+        "endSeconds": 245.82,
+        "durationSeconds": 5.6,
+        "visualPurpose": "Lebendiger historischer Dorfbrunnen morgens, Menschen stehen an, tragen Krüge, Kinder helfen mit, neutrale Szene",
+        "topicAnchor": "Der tägliche Weg",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 56,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 56.png",
+        "startSeconds": 245.82,
+        "endSeconds": 249.34,
+        "durationSeconds": 3.52,
+        "visualPurpose": "Eine Person transportiert gefüllten Tonkrug durch gepflasterte Gasse und stellt ihn zu Hause in schattige Ecke, Mini-Sequenz",
+        "topicAnchor": "Der tägliche Weg",
+        "visualForm": "Illustrierter Vergleich",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 57,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 57.png",
+        "startSeconds": 249.34,
+        "endSeconds": 253.38,
+        "durationSeconds": 4.04,
+        "visualPurpose": "Historische Wanderroute von entferntem Brunnen über staubigen Weg, mehrere erschöpfte, aber kompetente Personen mit Krügen",
+        "topicAnchor": "Der tägliche Weg",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 58,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 58.png",
+        "startSeconds": 253.38,
+        "endSeconds": 257.48,
+        "durationSeconds": 4.1,
+        "visualPurpose": "Historischer Hausinnenhof mit Kochtopf, Wäschewanne und Handwerkerbottich, Krüge in der Mitte",
+        "topicAnchor": "Der tägliche Weg",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 59,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 59.png",
+        "startSeconds": 257.48,
+        "endSeconds": 262.1,
+        "durationSeconds": 4.62,
+        "visualPurpose": "Dorfgemeinschaft verteilt Schöpfzeiten, eine Figur zeigt Liste an Tafel, andere tragen Wasser",
+        "topicAnchor": "Der tägliche Weg",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 60,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 60.png",
+        "startSeconds": 262.1,
+        "endSeconds": 267.12,
+        "durationSeconds": 5.02,
+        "visualPurpose": "Geteilte historische Szene: Glas/Tonbecher mit klar wirkendem Wasser, dahinter verborgen verunreinigter Zufluss, große Frage",
+        "topicAnchor": "Klares Wasser – gefährliches Wasser?",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 61,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 61.png",
+        "startSeconds": 267.12,
+        "endSeconds": 270.66,
+        "durationSeconds": 3.54,
+        "visualPurpose": "Tonbecher mit kristallklarem Wasser, kleine gut lesbare Lupe zeigt Mikroorganismen als vereinfachte Symbole",
+        "topicAnchor": "Klares Wasser – gefährliches Wasser?",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 62,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 62.png",
+        "startSeconds": 270.66,
+        "endSeconds": 275.42,
+        "durationSeconds": 4.76,
+        "visualPurpose": "Flussoberlauf mit Siedlungsabfällen oberhalb eines Wasserentnahmepunktes, aus Distanz erkennbarer Zusammenhang",
+        "topicAnchor": "Klares Wasser – gefährliches Wasser?",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 63,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 63.png",
+        "startSeconds": 275.42,
+        "endSeconds": 279.36,
+        "durationSeconds": 3.94,
+        "visualPurpose": "Historische Tongefäße mit Wasser: links aufgewirbelt, rechts Sediment unten",
+        "topicAnchor": "Klares Wasser – gefährliches Wasser?",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 64,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 64.png",
+        "startSeconds": 279.36,
+        "endSeconds": 282.98,
+        "durationSeconds": 3.62,
+        "visualPurpose": "Historische Person gießt trübes Wasser durch einfaches Tuch/Sieb in Gefäß",
+        "topicAnchor": "Klares Wasser – gefährliches Wasser?",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 65,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 65.png",
+        "startSeconds": 282.98,
+        "endSeconds": 286.76,
+        "durationSeconds": 3.78,
+        "visualPurpose": "Person zeigt auf deutliches Warn-Zeichen neben gefiltertem Becher, kleines Lupenfeld für Keime",
+        "topicAnchor": "Klares Wasser – gefährliches Wasser?",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 66,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 66.png",
+        "startSeconds": 286.76,
+        "endSeconds": 291.82,
+        "durationSeconds": 5.06,
+        "visualPurpose": "Historisches Kochgefäß über Feuer, kleine separate Symbolhinweise auf Keime und chemische Belastung",
+        "topicAnchor": "Klares Wasser – gefährliches Wasser?",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 67,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 67.png",
+        "startSeconds": 291.82,
+        "endSeconds": 297.78,
+        "durationSeconds": 5.96,
+        "visualPurpose": "Historisches Stadtpanorama geht in städtisches Versorgungsnetz über, Wasserrohr und Menschenmenge, warme Stilwelt",
+        "topicAnchor": "Warum moderne Leitungen anders sind",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 68,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 68.png",
+        "startSeconds": 297.78,
+        "endSeconds": 303.04,
+        "durationSeconds": 5.26,
+        "visualPurpose": "Illustriertes modernes Wasserwerk neben einem Fluss, drei große Stationen: Entnahme, Aufbereitung, Kontrolle, Figuren in schlichter Arbeitskleidung",
+        "topicAnchor": "Warum moderne Leitungen anders sind",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 69,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 69.png",
+        "startSeconds": 303.04,
+        "endSeconds": 307.14,
+        "durationSeconds": 4.1,
+        "visualPurpose": "3er-Mini-Szenen moderner Anlage, Becken Sedimentation, Filtersäule, technische Kontrolle der Desinfektion",
+        "topicAnchor": "Warum moderne Leitungen anders sind",
+        "visualForm": "Illustrierter Vergleich",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 70,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 70.png",
+        "startSeconds": 307.14,
+        "endSeconds": 312.16,
+        "durationSeconds": 5.02,
+        "visualPurpose": "Historischer Stadtbrunnen geht per sanfter Zeitleiste zu modernem Wasserwerk über",
+        "topicAnchor": "Warum moderne Leitungen anders sind",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 71,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 71.png",
+        "startSeconds": 312.16,
+        "endSeconds": 316.32,
+        "durationSeconds": 4.16,
+        "visualPurpose": "Moderne Küche mit einfachem Wasserhahn, groß im Hintergrund eingeblendete geschichtete Stadtleitungen, Wasserwerk und Quellgebiet",
+        "topicAnchor": "Warum moderne Leitungen anders sind",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 72,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 72.png",
+        "startSeconds": 316.32,
+        "endSeconds": 322.06,
+        "durationSeconds": 5.74,
+        "visualPurpose": "Reichhaltige große Zusammenführungsmontage aus Flussufer, Bergquelle, Dorfbrunnen und Zisterne, in einheitlicher Editorial-Welt",
+        "topicAnchor": "Die eigentliche Antwort",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 73,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 73.png",
+        "startSeconds": 322.06,
+        "endSeconds": 328.8,
+        "durationSeconds": 6.74,
+        "visualPurpose": "Großes zusammenhängendes Landschaftspanorama: römische Leitung links und iranischer Qanat rechts als bewusst beschrifteter Vergleich zweier Regionen",
+        "topicAnchor": "Die eigentliche Antwort",
+        "visualForm": "Illustrierter Vergleich",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 74,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 74.png",
+        "startSeconds": 328.8,
+        "endSeconds": 333.54,
+        "durationSeconds": 4.74,
+        "visualPurpose": "Klarer illustrativer Berg-zu-Stadt-Querschnitt mit Wasserfluss bergab, römischer Kanal und Qanat als kleine Beispiele, großer Label GEFÄLLE",
+        "topicAnchor": "Die eigentliche Antwort",
+        "visualForm": "Illustrierter Querschnitt",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 75,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 75.png",
+        "startSeconds": 333.54,
+        "endSeconds": 338.18,
+        "durationSeconds": 4.64,
+        "visualPurpose": "Große Szene historischer Wasserverteiler: Mitarbeiter prüft Kanal, anderer reinigt Brunnenfassung, Warn-Lupenfeld für Wasserqualität",
+        "topicAnchor": "Die eigentliche Antwort",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 76,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 76.png",
+        "startSeconds": 338.18,
+        "endSeconds": 344.74,
+        "durationSeconds": 6.56,
+        "visualPurpose": "Vier große physische Teile einer durchgängigen Landschaftsszene: Quelle, Leitung, Zisterne, kontrollierter moderner Zapfhahn",
+        "topicAnchor": "Die eigentliche Antwort",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 77,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 77.png",
+        "startSeconds": 344.74,
+        "endSeconds": 349.42,
+        "durationSeconds": 4.68,
+        "visualPurpose": "Vorher/Nachher-Handlung: historische Person hebt schweren Krug, moderne Person dreht Wasserhahn",
+        "topicAnchor": "Schluss",
+        "visualForm": "Illustrierter Vergleich",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 78,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-bekamen-menschen-trinkwasser-ohne-wasserhahn/images/Bild 78.png",
+        "startSeconds": 349.42,
+        "endSeconds": 355.299,
+        "durationSeconds": 5.879,
+        "visualPurpose": "Großes Abschlussbild: links Krugweg durch historische Straße, rechts Leitungen unter moderner Stadt, verbindender Wasserfluss",
+        "topicAnchor": "Schluss",
+        "visualForm": "Reichhaltige Editorial-Szene",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      }
+    ],
+    "sounds": []
+  }
+}

@@ -1,104 +1,40 @@
-# Skript-System — Alles Stickman
+# Skript-System — Pipeline v8
 
-Status: **verbindlich**
+Ziel: Erklärgeschichten, bei denen der Zuschauer mitten drinsteckt. Keine Schulreferate. Grundlage: [Referenzanalyse](REFERENCE_ANALYSIS.md).
 
-## Ziel
+## Die Formel
 
-Die Skripte sollen wie kurze neugiergetriebene Erklärgeschichten funktionieren, nicht wie Schulreferate und nicht wie generische KI-Texte.
+| Teil | Was passiert | Beispiel (Längengrad) |
+|---|---|---|
+| **Hook** | du heute ↔ derselbe Moment früher, dann die Frage | „Dein Handy zeigt dir in einer Sekunde, wo du bist. Im Oktober 1707 wusste das auf vier Kriegsschiffen niemand …“ |
+| **Fallhöhe** | Was stand auf dem Spiel? Konkret. | „… über tausend Seeleute kostete dieser Fehler das Leben.“ |
+| **Kette** | Problem → Lösung → neues Problem (mind. 4×) | Zeit fehlt → Uhr → Pendel versagt → Preisgeld → niemand kann's → Tischler Harrison |
+| **Beweise** | „Wir wissen das, weil …“ mit Fund/Jahr/Ort (mind. 3×, Quelle in RECHERCHE.md) | „… weil sie 1761 auf einer Fahrt nach Jamaika getestet wurde.“ |
+| **Immersion** | „Stell dir vor, du …“ | „Stell dir vor, du bist Tischler in einem Dorf …“ |
+| **Auflösung** | Frage klar beantworten | „Die Sonne verriet die Breite, eine genaue Uhr die Länge.“ |
+| **Rückbezug** | Schluss greift den Hook auf, endet mit Gefühl | „Dein Handy macht heute dasselbe … die Idee eines Dorftischlers.“ |
 
-## Feste Struktur
+Vollständiges Beispielskript: [test/fixtures/v8-laengengrad/voice-script.txt](../test/fixtures/v8-laengengrad/voice-script.txt).
 
-### 1. Hook
+## Automatische Prüfung (Phase 1)
 
-Direkt mit der spannendsten Frage, einem Problem, einem Widerspruch oder einem überraschenden Fakt beginnen.
+`SCRIPT_PLAN.json → storyEngine` hält die Formel mit **exakten Ankern** fest: `openingContrast`, `stakes`, `escalation` (≥ 4), `evidence` (≥ 3, URL muss in RECHERCHE.md stehen), `callback`. Fehlt etwas oder steht ein Anker nicht im Skript, ist Phase 1 nicht bestanden.
 
-Nicht:
-- „Hallo und willkommen …“
-- „In diesem Video …“
-- „Heute schauen wir uns …“
+Dazu misst `src/lib/script-quality.js`:
 
-Der Zuschauer soll sofort verstehen, **warum die Frage interessant ist**.
+| Kennzahl | Fehler | Hinweis | GPS-Video | Ink Explainer |
+|---|---|---|---|---|
+| Zahlen/Jahre pro Minute | < 0,75 | < 1,5 | 0,5 | 1,3–7,2 |
+| Vorsichtswörter pro 100 Wörter | > 2,0 | > 1,0 | 1,5 | 0,6–0,9 |
+| „du“ pro Minute | – | < 3 | 1,5 | 6,9–8,7 |
+| Fragen pro Minute | – | < 0,4 | 0,3 | – |
 
-Ab Pipeline v7 gilt zusätzlich:
-- Der erste Satz braucht bereits **Problem, Widerspruch, Überraschung oder offene Frage**.
-- Reine Atmosphäre ist kein Hook. Ein Anfang wie „Der Wind ist kalt, der Boden gefroren …“ reicht allein nicht.
-- Titel/Kernfrage müssen innerhalb der ersten zwei Sätze erkennbar sein.
-- Der Hook soll eine **Curiosity Gap** öffnen: Was ist überraschend oder noch ungeklärt?
-- Der Hook darf die komplette Antwort nicht sofort verraten.
-- Der Hook bleibt kompakt: Ziel sind höchstens etwa 45 Wörter bis zum Setup.
+Unsicherheit **einmal klar benennen** („Wie genau, wissen wir nicht. Sicher ist …“), statt jeden Satz mit „vermutlich/konnte/ungefähr“ abzuschwächen.
 
-In `SCRIPT_PLAN.json` werden deshalb für den Hook zusätzlich `hookType`, `curiosityGap`, `titleConnection` und `payoffPromise` festgehalten.
+## Weiterhin gültig
 
-### 2. Setup
-
-Nur den Kontext erklären, der für den Hauptteil wirklich nötig ist. Keine lange Vorgeschichte.
-
-### 3. Hauptteil
-
-Bevorzugte Dramaturgie:
-
-```text
-Problem
-→ Versuch / Entwicklung
-→ neues Problem oder Einschränkung
-→ Lösung / nächste Entwicklung
-→ Folge
-```
-
-Nicht jedes Thema muss exakt diese fünf Schritte haben, aber der Hauptteil braucht eine erkennbare Entwicklung statt einer bloßen Faktenliste.
-
-Ungefähr alle 20–40 Sekunden soll ein neuer Informationsimpuls kommen: neue Ursache, neue Frage, Wendung, Vergleich, Konsequenz oder überraschendes Detail.
-
-### 4. Auflösung
-
-Die Kernfrage des Hooks klar beantworten. Nicht ausweichen und nicht nur zusammenfassen.
-
-### 5. Schluss
-
-Sehr kurz. Ein letzter Gedanke, eine interessante Konsequenz oder eine natürliche Weiterführung reicht. Kein langes Outro und kein erzwungener CTA.
-
-## Sprachregeln
-
-- natürliches, direktes Deutsch
-- kurze bis mittlere Sätze
-- bevorzugt höchstens etwa 22 Wörter pro Satz
-- 32 Wörter pro Satz sind Hard-Max
-- keine unnötigen Wiederholungen
-- keine Füllsätze
-- keine KI-Floskeln
-- Fachbegriffe sofort einfach erklären
-- Zahlen nur nutzen, wenn sie wirklich etwas erklären
-- Unsicherheiten in Geschichte, Evolution oder Wissenschaft sauber kennzeichnen
-- keine erfundenen Fakten
-- möglichst jeder Absatz muss visuell umsetzbar sein
-
-## Längenregel
-
-Die Wortzahl richtet sich nach der geplanten Videodauer. Für neue Pipeline-v7+-Videos wird enger geplant: ungefähr **150–170 effektive Wörter pro Minute**, bevorzugt 155–165.
-
-Die Pipeline prüft die Wortzahl gegen `targetDurationSeconds`. Nach der echten Audioerzeugung wird zusätzlich die **tatsächliche Videodauer** gegen `targetDurationRangeSeconds` geprüft. Ein deutlich zu kurzes oder zu langes Video darf nicht einfach gerendert werden.
-
-## SCRIPT_PLAN.json
-
-Jedes Video besitzt zusätzlich:
-
-`99-technik/SCRIPT_PLAN.json`
-
-Darin stehen die fünf Abschnitte mit einem exakten Startanker aus dem Voice-over. Dadurch kann Phase 1 automatisch prüfen, dass:
-
-- alle fünf Abschnitte vorhanden sind
-- die Anker exakt im Skript vorkommen
-- die Reihenfolge Hook → Setup → Hauptteil → Auflösung → Schluss stimmt
-- der Hook tatsächlich am Anfang beginnt
-- keine generische Begrüßung verwendet wird
-- die Wortzahl zur Zielzeit passt
-
-## Qualitätsprinzip
-
-Ein starkes Skript soll drei Dinge gleichzeitig leisten:
-
-1. **Neugier halten**
-2. **korrekt erklären**
-3. **gut visualisierbar sein**
-
-Wenn einer dieser drei Punkte fehlt, ist das Skript noch nicht Phase-1-ready.
+- Struktur Hook → Setup → Hauptteil → Auflösung → Schluss mit Startankern.
+- Erster Satz ≤ 24 Wörter, Hook bis Setup ≤ 45 Wörter, kein „Hallo“ und kein „In diesem Video“.
+- 150–170 Wörter pro Minute Zieldauer, Satz-Hard-Max 32 Wörter.
+- Keine erfundenen Fakten. Jede Zahl steht in RECHERCHE.md.
+- Kein Abo-Aufruf am Ende.

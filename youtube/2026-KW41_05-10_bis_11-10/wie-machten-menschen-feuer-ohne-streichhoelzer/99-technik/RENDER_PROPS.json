@@ -1,0 +1,340 @@
+{
+  "plan": {
+    "schemaVersion": 1,
+    "createdAt": "2026-10-05T16:15:45.728Z",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "audioDurationSeconds": 78.395,
+    "endHoldSeconds": 1.3,
+    "durationSeconds": 79.695,
+    "audioFile": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/audio/YOUTUBE_AUDIO_OPTIMIZED.wav",
+    "images": [
+      {
+        "imageNumber": 1,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 01.png",
+        "startSeconds": 0,
+        "endSeconds": 4.72,
+        "durationSeconds": 4.72,
+        "visualPurpose": "Hook: sofort zeigen, dass Menschen ohne moderne Hilfsmittel Feuer entzünden konnten.",
+        "topicAnchor": "prähistorischer Mensch, kleine Flamme, keine modernen Feuerzeuge",
+        "visualForm": "Cover / Handlungsszene mit kurzer Headline",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 2,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 02.png",
+        "startSeconds": 4.72,
+        "endSeconds": 9.8,
+        "durationSeconds": 5.08,
+        "visualPurpose": "Die drei Voraussetzungen für die Entzündung einfach verständlich machen.",
+        "topicAnchor": "Hitze, Zunder, Luft",
+        "visualForm": "Infografik / 3er-Informationslayout",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 3,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 03.png",
+        "startSeconds": 9.8,
+        "endSeconds": 14.44,
+        "durationSeconds": 4.64,
+        "visualPurpose": "Feuerstein und Pyrit als Funkenerzeuger erklären.",
+        "topicAnchor": "Feuerstein und Eisenpyrit",
+        "visualForm": "Objekt-/Fundstück-Erklärung",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 4,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 04.png",
+        "startSeconds": 14.44,
+        "endSeconds": 17.88,
+        "durationSeconds": 3.44,
+        "visualPurpose": "Klarstellen, dass nicht Feuerstein gegen Feuerstein die entscheidende Kombination ist.",
+        "topicAnchor": "Feuerstein trifft Pyrit statt Feuerstein",
+        "visualForm": "Stickman-Handlungsszene",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 5,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 05.png",
+        "startSeconds": 17.88,
+        "endSeconds": 23.36,
+        "durationSeconds": 5.48,
+        "visualPurpose": "Zeigen, wie heiße Partikel den Zunder erreichen.",
+        "topicAnchor": "Funken/heiße Partikel auf Zunder",
+        "visualForm": "Detail-/Nahaufnahme eines wichtigen Objekts",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 6,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 06.png",
+        "startSeconds": 23.36,
+        "endSeconds": 28.88,
+        "durationSeconds": 5.52,
+        "visualPurpose": "Geeignete Zundermaterialien anschaulich machen.",
+        "topicAnchor": "trockenes Gras, Rinde, Zunderpilz/Pilzmaterial",
+        "visualForm": "Objekt-/Sachillustration mit kurzen Labels",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 7,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 07.png",
+        "startSeconds": 28.88,
+        "endSeconds": 32.8,
+        "durationSeconds": 3.92,
+        "visualPurpose": "Glut und offene Flamme unterscheiden.",
+        "topicAnchor": "kleine Glut statt großer Flamme",
+        "visualForm": "2er-Multi-Panel",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 8,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 08.png",
+        "startSeconds": 32.8,
+        "endSeconds": 36.52,
+        "durationSeconds": 3.72,
+        "visualPurpose": "Erklären, warum vorsichtiges Pusten hilft.",
+        "topicAnchor": "Glut, Pusten, Luftstrom",
+        "visualForm": "Stickman-Handlungsszene mit Luft-Pfeilen",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 9,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 09.png",
+        "startSeconds": 36.52,
+        "endSeconds": 40.2,
+        "durationSeconds": 3.68,
+        "visualPurpose": "Vom Glutpunkt zur sichtbaren Flamme führen.",
+        "topicAnchor": "Zundernest, Glut, erste Flamme",
+        "visualForm": "3er-Mini-Sequenz",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 10,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 10.png",
+        "startSeconds": 40.2,
+        "endSeconds": 44.4,
+        "durationSeconds": 4.2,
+        "visualPurpose": "Holzreibung als zweite grundlegende Methode einführen.",
+        "topicAnchor": "Holzreibung",
+        "visualForm": "Split-Screen-Vergleich",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 11,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 11.png",
+        "startSeconds": 44.4,
+        "endSeconds": 48.78,
+        "durationSeconds": 4.38,
+        "visualPurpose": "Zeigen, wie Reibung Holzstaub erhitzt.",
+        "topicAnchor": "Holzstab, Holzbrett, feiner Holzstaub",
+        "visualForm": "Schritt-für-Schritt-Prozess",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 12,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 12.png",
+        "startSeconds": 48.78,
+        "endSeconds": 52.16,
+        "durationSeconds": 3.38,
+        "visualPurpose": "Die Entstehung einer kleinen Glut aus Holzstaub visualisieren.",
+        "topicAnchor": "glühender Holzstaub",
+        "visualForm": "Detail-/Nahaufnahme",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 13,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 13.png",
+        "startSeconds": 52.16,
+        "endSeconds": 56.16,
+        "durationSeconds": 4,
+        "visualPurpose": "Die Kernschwierigkeit hervorheben: Funke ist noch kein Feuer.",
+        "topicAnchor": "Funke versus fertiges Feuer",
+        "visualForm": "Text-/Zahlenfokus mit unterstützender Illustration",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 14,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 14.png",
+        "startSeconds": 56.16,
+        "endSeconds": 61.02,
+        "durationSeconds": 4.86,
+        "visualPurpose": "Typische Gründe für das Scheitern zeigen.",
+        "topicAnchor": "Feuchtigkeit, Wind, zu grobes Holz",
+        "visualForm": "3er-Multi-Panel / Fehlervergleich",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 15,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 15.png",
+        "startSeconds": 61.02,
+        "endSeconds": 65.32,
+        "durationSeconds": 4.3,
+        "visualPurpose": "Schutz der Glut und sehr feines Brennmaterial erklären.",
+        "topicAnchor": "geschützte Glut, feine trockene Zweige",
+        "visualForm": "Stickman-Handlungsszene",
+        "motion": {
+          "scaleFrom": 1.015,
+          "scaleTo": 1.04,
+          "xFrom": 6,
+          "xTo": -6,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 16,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 16.png",
+        "startSeconds": 65.32,
+        "endSeconds": 68.88,
+        "durationSeconds": 3.56,
+        "visualPurpose": "Den Aufbau des Feuers von fein zu grob zeigen.",
+        "topicAnchor": "Zunder -> dünne Zweige -> größere Zweige -> Holz",
+        "visualForm": "Prozess / Größenfolge",
+        "motion": {
+          "scaleFrom": 1.02,
+          "scaleTo": 1.04,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 4,
+          "yTo": -4
+        }
+      },
+      {
+        "imageNumber": 17,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 17.png",
+        "startSeconds": 68.88,
+        "endSeconds": 72.8,
+        "durationSeconds": 3.92,
+        "visualPurpose": "Zeigen, warum Feuererhaltung praktisch wichtig war.",
+        "topicAnchor": "Glut über Nacht, Feuerstelle",
+        "visualForm": "Umgebungsszene mit Figur",
+        "motion": {
+          "scaleFrom": 1.01,
+          "scaleTo": 1.035,
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      },
+      {
+        "imageNumber": 18,
+        "file": "__render/2026-KW41_05-10_bis_11-10_wie-machten-menschen-feuer-ohne-streichhoelzer/images/Bild 18.png",
+        "startSeconds": 72.8,
+        "endSeconds": 79.695,
+        "durationSeconds": 6.895,
+        "visualPurpose": "Die Antwort in vier klaren Faktoren zusammenfassen.",
+        "topicAnchor": "Hitze, Zunder, Sauerstoff, Übung",
+        "visualForm": "Infografik / Zusammenfassung",
+        "motion": {
+          "scaleFrom": 1.035,
+          "scaleTo": 1.01,
+          "xFrom": -8,
+          "xTo": 8,
+          "yFrom": 0,
+          "yTo": 0
+        }
+      }
+    ],
+    "sounds": []
+  }
+}

@@ -1,22 +1,6 @@
-VISUAL_POLICY_FILE: config/visual-policy.json
-ACTIVE_STYLE_ID: UNSET
-PROMPT_LANGUAGE: ENGLISH
-IMAGE PROMPTS ARE WRITTEN IN ENGLISH.
-ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN.
+Diese Datei wird erzeugt.
 
-GOOGLE FLOW MASTER PROMPT — STRICHKOSMOS — [VIDEO-TITEL]
-This is the reusable template; copy actual video-specific prompts from the rendered project. The project's full English master must embed its OWN complete numbered scene prompts, so Google Flow does not need direct repository access.
+1. 99-technik/SCENE_VISUALS_EN.json ausfüllen (pro Bild ein englischer brief + shot, dazu 3 Cover-Ideen).
+2. npm run prompts:youtube -- --dir "youtube/<week>/<slug>"
 
-EXACTLY THREE COVER CANDIDATES: Generate three professionally designed visual ideas for the video's title in expressive 2D stickman style. HARD STOP after A/B/C. USER CHOOSES A, B OR C. NEVER GENERATE Bild 02 BEFORE THE USER CHOOSES. Winner becomes Bild 01.png and video thumbnail; delete rejected candidates.
-
-AUTOMATIC FIVE-IMAGE BATCHES: After cover selection work five at a time through all scene images. NO MORE USER PROMPTS AFTER COVER SELECTION. No manual continue between batches.
-SILENT QUALITY CONTROL AFTER EVERY FIVE-IMAGE BATCH: Validate meaning, style, visible text, accuracy, visual attractiveness. REGENERATE ONLY FAILED IMAGE NUMBERS, then continue.
-WORLD AND ERA CONTINUITY: follow video.json.visualContinuityProfile, but allow background, palette, format and history to change when the story requires.
-NO GENERATED IMAGE REFERENCES: no previous cover/scene image is a reference for later scenes.
-FINAL IMAGE INTEGRITY CHECK: verify exactly all numbered images Bild 01.png through Bild NN.png, with nothing missing. REGENERATE MISSING OR BROKEN IMAGE NUMBERS. Save every final image in a SINGLE SHARED FINAL FOLDER: 00-bildprompts/images/.
-All human characters must be 2D stickmen and are optional; object-only illustrations, comparisons, simple cutaways and purposeful diagrams welcome. No hyper-realistic humans, generic green vector clipart, uniform sepia explorer-map template, or four tiny textbook panels. Keep all generated words exact German and big enough to read on a phone, or use NO text.
-
-{{CANONICAL_VISUAL_STYLE}}
-
-PRODUCTION PLACEHOLDERS FOR NEXT VIDEO:
-SCENE COUNT AND ENGLISH IMAGE PROMPTS: insert validated individual scene prompts for each image, and generate matching ready-to-copy files and batches.
+Danach stehen hier der Google-Flow-Ablauf und die drei Cover-Prompts, in prompts/ jedes Einzelbild und in batches/ die 5er-Blöcke.

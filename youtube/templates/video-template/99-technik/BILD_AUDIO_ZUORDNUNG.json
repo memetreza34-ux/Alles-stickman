@@ -19,7 +19,10 @@
       "plannedHoldSeconds": null,
       "actualStartSeconds": null,
       "actualEndSeconds": null,
-      "alignmentConfidence": null
+      "alignmentConfidence": null,
+      "overlay": null,
+      "motion": null
     }
-  ]
+  ],
+  "overlayHowTo": "Optional pro Bild: overlay {text (max 40 Zeichen, Deutsch), style caption|card|label, position top|center|bottom, delaySeconds}. motion {zoomFrom, zoomTo, focusX, focusY} in Prozent für gezielte Kamerafahrten."
 }

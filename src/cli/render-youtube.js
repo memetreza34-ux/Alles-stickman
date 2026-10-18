@@ -37,9 +37,24 @@ export async function prepareRender(projectDirectory) {
     });
   }
 
+  let backgroundMusicFile = null;
+  const bgmConfig = renderPlan.backgroundMusic;
+  if (bgmConfig && (typeof bgmConfig === 'string' || bgmConfig.file)) {
+    const bgmPath = path.resolve(typeof bgmConfig === 'string' ? bgmConfig : bgmConfig.file);
+    if (await exists(bgmPath)) {
+      const bgmName = `bgm-${path.basename(bgmPath)}`;
+      await copyFile(bgmPath, path.join(renderRoot, 'audio', bgmName));
+      backgroundMusicFile = `__render/${meta.videoId}/audio/${bgmName}`;
+    } else {
+      console.warn(`BGM-Datei nicht gefunden: ${bgmPath}`);
+    }
+  }
+
   const plan = {
     ...timeline,
     audioFile: `__render/${meta.videoId}/audio/YOUTUBE_AUDIO_OPTIMIZED.wav`,
+    backgroundMusicFile,
+    backgroundMusicVolume: typeof bgmConfig === 'object' ? Number(bgmConfig.volume ?? 0.08) : 0.08,
     sounds
   };
   await writeJson(p.renderProps, { plan });

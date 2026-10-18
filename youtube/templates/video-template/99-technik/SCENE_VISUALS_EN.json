@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "status": "PLANNED",
+  "howTo": "brief = englisch, konkret: wer tut was mit welchem Objekt, welche Emotion, welcher Ort/Epoche. Kein Text, keine Dateinamen, keine Zeiten. shot = close-up | medium | wide | top-down | cutaway | split. protagonist = true, wenn die wiederkehrende Hauptfigur (roter Schal) vorkommt. Beschriftungen/Zahlen gehören als overlay in BILD_AUDIO_ZUORDNUNG.json.",
+  "covers": [
+    { "id": "A", "brief": "[COVER-IDEE A: großes Gesicht mit starker Emotion + ein Story-Objekt]" },
+    { "id": "B", "brief": "[COVER-IDEE B]" },
+    { "id": "C", "brief": "[COVER-IDEE C]" }
+  ],
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "brief": "[ENGLISCHE SZENENBESCHREIBUNG, MIND. 15 WÖRTER]",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    }
+  ]
+}

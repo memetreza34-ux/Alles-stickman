@@ -35,7 +35,9 @@ export async function validatePhase3(projectDirectory, { postRender = false } = 
     else if ((await fileSize(video)) < 100_000) errors.push('FINAL_VIDEO.mp4 ist verdächtig klein.');
 
     if (!(await exists(thumbnail))) errors.push('THUMBNAIL.png fehlt.');
-    if (await exists(thumbnail) && await exists(cover) && (await sha256(thumbnail)) !== (await sha256(cover))) errors.push('THUMBNAIL.png ist nicht byte-identisch zu Bild 01.png.');
+    // Ab v8 trägt das Thumbnail die Headline aus uploadMetadata.thumbnailText und unterscheidet sich vom Cover.
+    const headlineThumbnail = Number(meta.pipelineVersion ?? 0) >= 8 && String(meta.uploadMetadata?.thumbnailText ?? '').trim();
+    if (!headlineThumbnail && await exists(thumbnail) && await exists(cover) && (await sha256(thumbnail)) !== (await sha256(cover))) errors.push('THUMBNAIL.png ist nicht byte-identisch zu Bild 01.png.');
 
     for (const [file, label] of [
       [upload, 'YOUTUBE_UPLOAD.txt'],

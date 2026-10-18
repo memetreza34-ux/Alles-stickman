@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-05T16:23:12.246Z",
+  "videoFile": "03-export/FINAL_VIDEO.mp4",
+  "thumbnailFile": "03-export/THUMBNAIL.png",
+  "uploadMetadataFile": "03-export/YOUTUBE_UPLOAD.txt",
+  "subtitlesFile": "03-export/SUBTITLES.srt",
+  "timedScriptFile": "03-export/TIMED_SCRIPT.txt",
+  "subtitleSource": "99-technik/whisper/YOUTUBE_AUDIO_OPTIMIZED.json",
+  "subtitleSegments": 17,
+  "youtubeTitle": "Wie machten Menschen Feuer ohne Streichhölzer?",
+  "youtubeDescriptionPresent": true,
+  "youtubeTagCount": 5,
+  "thumbnailSource": "00-bildprompts/images/Bild 01.png",
+  "coverSha256": "95cb8c8c3b0c6f24048e527e99554739eae3e5e48704369fb8be61a93768f4f1",
+  "thumbnailSha256": "95cb8c8c3b0c6f24048e527e99554739eae3e5e48704369fb8be61a93768f4f1",
+  "thumbnailIdenticalToCover": true
+}

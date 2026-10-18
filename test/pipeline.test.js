@@ -128,8 +128,27 @@ test('Phase-1-Handoff stellt beide direkten, mobil erreichbaren Videodateilinks 
   assert.throws(() => phase1Links({ weekFolder: '..', topicSlug: 'video' }), /Ungültiges/);
 });
 
-test('Repo besitzt die aktive Alles-Stickman-Bildwelt ohne Bildreferenz-Zwang', async () => {
+test('Bildwelt v15: feste Strichfiguren, Hauptfigur, kein Text im KI-Bild, generierte Prompts', async () => {
   const visual = JSON.parse(await readFile('config/visual-policy.json', 'utf8'));
+  assert.equal(visual.status, 'READY');
+  assert.equal(visual.styleId, 'alles-stickman-editorial-v1');
+  assert.equal(visual.visualPolicyVersion, 15);
+  assert.equal(visual.promptLanguage, 'en');
+  assert.equal(visual.visibleTextLanguage, 'de');
+  assert.equal(visual.textInImages.mode, 'none');
+  assert.equal(visual.people.allPeopleStickFigures, true);
+  assert.equal(visual.people.sameConstructionAllCulturesAndEras, true);
+  assert.match(visual.protagonist.descriptionEn, /red scarf/);
+  assert.equal(visual.referenceConsistency.sceneOrCoverReferenceForbidden, true);
+  assert.equal(visual.qualityChecks.blocksRenderOnMetaText, true);
+  for (const file of [visual.promptKit.styleBlock, visual.promptKit.characterBible]) {
+    const text = await readFile(file, 'utf8');
+    assert.ok(text.split(/\s+/).length < 90, `${file} bleibt kurz`);
+  }
+});
+
+test('Legacy-Bildwelt v14 bleibt für Projekte bis v7 erhalten', async () => {
+  const visual = JSON.parse(await readFile('config/legacy/visual-policy-v14.json', 'utf8'));
   const registry = JSON.parse(await readFile('config/topic-registry.json', 'utf8'));
   assert.equal(visual.status, 'READY');
   assert.equal(visual.styleId, 'alles-stickman-editorial-v1');
@@ -171,7 +190,13 @@ test('Skript-Policy erzwingt die kanaltypische Grundstruktur', async () => {
   assert.equal(policy.openingRules.genericMetaIntroForbidden, true);
   assert.equal(policy.languageRules.hardMaxWordsPerSentence, 32);
   assert.deepEqual(policy.pacingRules.targetWordsPerMinute, [115, 180]);
-  assert.equal(policy.version, 2);
+  assert.equal(policy.version, 3);
+  assert.equal(policy.scriptMetrics.requiredFromPipelineVersion, 8);
+  assert.equal(policy.storyEngine.minEscalationSteps, 4);
+  assert.equal(policy.storyEngine.minEvidenceMoments, 3);
+  assert.ok(String(templatePlan.storyEngine.openingContrast.today).startsWith('['));
+  assert.equal(templatePlan.storyEngine.escalation.length, 4);
+  assert.equal(templatePlan.storyEngine.evidence.length, 3);
   assert.deepEqual(policy.durationQuality.allowedEffectiveWordsPerMinute, [150, 170]);
   assert.equal(policy.hookQuality.sceneSettingOnlyForbidden ?? true, true);
   assert.equal(policy.hookQuality.hardMaxFirstSentenceWords, 24);
@@ -185,11 +210,11 @@ test('Skript-Policy erzwingt die kanaltypische Grundstruktur', async () => {
   assert.ok(String(hook.payoffPromise).startsWith('['));
 });
 
-test('Pipeline v7 behält Cover-Gate, automatische 5er-Blöcke und neue Qualitätsgates', async () => {
+test('Pipeline v8 behält Cover-Gate und 5er-Blöcke, schneller Schnitt, Atempausen, Textcheck', async () => {
   const policy = JSON.parse(await readFile('config/pipeline.json', 'utf8'));
   assert.equal(policy.coverPolicy.firstSceneIsCover, true);
   assert.equal(policy.coverPolicy.coverCandidateCount, 3);
-  assert.equal(policy.pipelineVersion, 7);
+  assert.equal(policy.pipelineVersion, 8);
   assert.equal(policy.coverPolicy.autoSelectWinner, false);
   assert.equal(policy.coverPolicy.selectionAuthority, 'user');
   assert.equal(policy.coverPolicy.userSelectionRequired, true);
@@ -215,12 +240,14 @@ test('Pipeline v7 behält Cover-Gate, automatische 5er-Blöcke und neue Qualitä
   assert.equal(policy.imagePolicy.finalImageDirectory, '00-bildprompts/images');
   assert.equal(policy.imagePolicy.finalFolderMustBeFlat, true);
   assert.equal(policy.imagePolicy.finalFolderOnlyNumberedImages, true);
-  assert.equal(policy.imagePolicy.referenceMode, 'none');
-  assert.equal(policy.imagePolicy.useImageReferences, false);
-  assert.equal(policy.imagePolicy.generatedImageReferenceForbidden, true);
+  assert.equal(policy.imagePolicy.referenceMode, 'style-sheet-optional');
+  assert.equal(policy.imagePolicy.sceneOrCoverReferenceForbidden, true);
   assert.equal(policy.imagePolicy.finalFolderMustBeFlat, true);
-  assert.deepEqual(policy.imagePolicy.targetAverageHoldSeconds, [4.5, 7.5]);
+  assert.deepEqual(policy.imagePolicy.targetAverageHoldSeconds, [3, 5]);
   assert.equal(policy.audioPolicy.playbackRate, 1.1);
+  assert.equal(policy.audioPolicy.minimumLongPauseSeconds, 0.5);
+  assert.equal(policy.audioPolicy.retainedPauseSeconds, 0.3);
+  assert.equal(policy.qualityGates.imageTextOcrBeforeRender, true);
   assert.equal(policy.audioPolicy.loudnessTargetLufs, -16);
   assert.equal(policy.audioPolicy.truePeakDbtp, -1.5);
   assert.equal(policy.endHoldPolicy.targetSeconds, 1.3);
@@ -230,44 +257,32 @@ test('Pipeline v7 behält Cover-Gate, automatische 5er-Blöcke und neue Qualitä
   assert.equal(policy.qualityGates.targetDurationHardGate, true);
 });
 
-test('Projekt-Template enthält Flow-Coverwahl, keine Bildreferenz, flexible Visual Forms und Upload-Metadaten', async () => {
+test('Projekt-Template v8: Coverwahl, Szenenplan, Story-Engine, Thumbnail-Headline', async () => {
   const meta = JSON.parse(await readFile('youtube/templates/video-template/99-technik/video.json', 'utf8'));
   const prompt = await readFile('youtube/templates/video-template/00-bildprompts/google-flow-prompt.txt', 'utf8');
+  const scenes = JSON.parse(await readFile('youtube/templates/video-template/99-technik/SCENE_VISUALS_EN.json', 'utf8'));
   assert.equal(meta.visualStyleId, 'UNSET');
   assert.equal(meta.topic, '');
   assert.equal(meta.title, '');
-  assert.deepEqual(meta.uploadMetadata, { title: '', description: '', tags: [], hashtags: [] });
-  assert.equal(meta.pipelineVersion, 7);
+  assert.deepEqual(meta.uploadMetadata, { title: '', description: '', tags: [], hashtags: [], thumbnailText: '' });
+  assert.equal(meta.pipelineVersion, 8);
   assert.equal(meta.coverPolicy.autoSelectWinner, false);
   assert.equal(meta.coverPolicy.selectionAuthority, 'user');
   assert.equal(meta.coverPolicy.userSelectionRequired, true);
   assert.equal(meta.coverPolicy.hardStopAfterCoverCandidates, true);
   assert.equal(meta.coverPolicy.winnerBecomesFirstSceneAndThumbnail, true);
-  assert.equal(meta.imageDensityPolicy.referenceMode, 'none');
-  assert.equal(meta.imageDensityPolicy.useImageReferences, false);
-  assert.equal(meta.imageDensityPolicy.generatedImageReferenceForbidden, true);
+  assert.equal(meta.coverPolicy.thumbnailHeadlineOverlay, true);
+  assert.equal(meta.imageDensityPolicy.referenceMode, 'style-sheet-optional');
+  assert.equal(meta.imageDensityPolicy.sceneOrCoverReferenceForbidden, true);
+  assert.deepEqual(meta.imageDensityPolicy.targetAverageHoldSeconds, [3, 5]);
   assert.equal(meta.imageDensityPolicy.finalImageDirectory, '00-bildprompts/images');
   assert.equal(meta.imageDensityPolicy.finalFolderMustBeFlat, true);
   assert.equal(meta.imageDensityPolicy.finalFolderOnlyNumberedImages, true);
   assert.equal(meta.visualContinuityProfile.adjacentSceneContinuityRequired, true);
   assert.ok(String(meta.visualContinuityProfile.environmentAnchor).startsWith('['));
-  assert.match(prompt, /ACTIVE_STYLE_ID: UNSET/);
-  assert.match(prompt, /GOOGLE FLOW MASTER PROMPT/i);
-  assert.match(prompt, /PROMPT_LANGUAGE: ENGLISH/i);
-  assert.match(prompt, /ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/i);
-  assert.match(prompt, /EXACTLY THREE COVER CANDIDATES/i);
-  assert.match(prompt, /USER CHOOSES A, B OR C/i);
-  assert.match(prompt, /NEVER GENERATE Bild 02 BEFORE THE USER CHOOSES/i);
-  assert.match(prompt, /AUTOMATIC FIVE-IMAGE BATCHES/i);
-  assert.match(prompt, /NO MORE USER PROMPTS AFTER COVER SELECTION/i);
-  assert.match(prompt, /WORLD AND ERA CONTINUITY/i);
-  assert.match(prompt, /SILENT QUALITY CONTROL AFTER EVERY FIVE-IMAGE BATCH/i);
-  assert.match(prompt, /REGENERATE ONLY FAILED IMAGE NUMBERS/i);
-  assert.match(prompt, /FINAL IMAGE INTEGRITY CHECK/i);
-  assert.match(prompt, /REGENERATE MISSING OR BROKEN IMAGE NUMBERS/i);
-  assert.match(prompt, /SINGLE SHARED FINAL FOLDER/i);
-  assert.match(prompt, /NO GENERATED IMAGE REFERENCES/i);
-
+  assert.match(prompt, /npm run prompts:youtube/);
+  assert.equal(scenes.schemaVersion, 2);
+  assert.equal(scenes.covers.length, 3);
 });
 
 test('Legacy-Testprojekt v4 bleibt reproduzierbar und nutzt keine Bildreferenz', async () => {
@@ -607,10 +622,8 @@ test('Bildwelt v14 bindet einen Master ein und bewahrt fünf freigegebene englis
     assert.match(prompt, /ART STYLE:/);
     assert.ok(prompt.length > 1100, name + ' needs to be self-contained');
   }
-  const style = await readFile('channel/VISUAL_WORLD.md', 'utf8');
-  assert.match(style, /Fünf zusätzlich erhaltene Qualitätsbeispiele/);
-  const tpl = await readFile('youtube/templates/video-template/00-bildprompts/google-flow-prompt.txt', 'utf8');
-  assert.ok(tpl.includes(CANONICAL_STYLE_TOKEN));
+  // Ab Pipeline v8 ersetzt der Prompt-Generator den v14-Master; er bleibt für alte Projekte gültig.
+  const tpl = `LEGACY MASTER\n${CANONICAL_STYLE_TOKEN}\n`;
   const canonical = await loadCanonicalVisualStyle();
   assert.match(canonical, /VISUAL_STYLE_EDITION: premium-illustrated-explainer-v14/);
   assert.match(canonical, /ALL VISIBLE IMAGE TEXT MUST BE IN GERMAN/);

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-17T04:55:32.129Z",
+  "videoFile": "03-export/FINAL_VIDEO.mp4",
+  "thumbnailFile": "03-export/THUMBNAIL.png",
+  "uploadMetadataFile": "03-export/YOUTUBE_UPLOAD.txt",
+  "subtitlesFile": "03-export/SUBTITLES.srt",
+  "timedScriptFile": "03-export/TIMED_SCRIPT.txt",
+  "subtitleSource": "99-technik/whisper/YOUTUBE_AUDIO_OPTIMIZED.json",
+  "subtitleSegments": 122,
+  "youtubeTitle": "Wie fanden Menschen ohne GPS ihren Weg?",
+  "youtubeDescriptionPresent": true,
+  "youtubeTagCount": 9,
+  "youtubeHashtags": [
+    "#AllesStickman",
+    "#StrichKosmos",
+    "#Navigation"
+  ],
+  "thumbnailSource": "00-bildprompts/images/Bild 01.png",
+  "coverSha256": "558f6ce8bd9d54abfb8a517ba633d43896be7308331137e5292eda5525e8f93e",
+  "thumbnailSha256": "558f6ce8bd9d54abfb8a517ba633d43896be7308331137e5292eda5525e8f93e",
+  "thumbnailIdenticalToCover": true
+}

@@ -1,0 +1,358 @@
+{
+  "visualPolicyVersion": 14,
+  "status": "READY",
+  "styleId": "alles-stickman-editorial-v1",
+  "description": "One canonical, comprehensive, approved English premium 2D editorial master style for all StrichKosmos topics and formats. Embedded verbatim into every generated Flow master, cover, batch and individual prompt; German-only visible labels, humans always stickmen when needed.",
+  "visibleTextLanguage": "de",
+  "principles": [
+    "Jeder Sprecher-Satz erhält den BESTEN VISUELLEN ERKLÄRTYP: Handlung, Objekt-Sachgrafik, Vergleich, Geschichtsszene, Prozess/Infografik, Diagramm, Karte oder Querschnitt. Keine Bildart wird pauschal bevorzugt.",
+    "Die EINE verbindliche v14 Master-Bildwelt in channel/MASTER_VISUAL_STYLE_EN.txt wird wörtlich in jeden Flow-Prompt eingebettet; fünf Referenzprompts bleiben Beispiele, nicht eigenständige Bildwelten.",
+    "Gemeinsame Welt bedeutet konsistente 2D-Konturen, schlüssige leicht handgezeichnete Objekte, Figurenlogik, klare Komposition und glaubwürdige Farbgestaltung – NICHT gleiche Szenerie, Papierfläche oder stets Figuren.",
+    "Menschen nur falls erzählerisch nötig, ausschließlich klar erkennbare einfache handgezeichnete Stickman-Körper; keine echten, realistischen oder halbrealistischen Personen.",
+    "Objekt-/Technikbilder ohne Menschen sind genauso vollwertig wie lebendige Handlungsszenen. Schalter, Kompass, Lampen, Aquädukte und Pflanzen dürfen präzise als 2D-Illustration ausgeführt sein.",
+    "Anspruch: hochwertige attraktive YouTube-Editorial-Illustration, leicht unregelmäßige kräftige anthrazitfarbene Linien, passende Tiefe und farbliche Akzente, klare Blickführung auch mobil.",
+    "Vollständige Google-Flow-Anweisungen und Einzelprompts immer auf Englisch, gesprochenes Skript auf Deutsch; ALLE sichtbaren Bildwörter ausschließlich exakt und gut lesbar auf Deutsch, idealerweise 0–2, bei echter Sachgrafik höchstens 3.",
+    "Keine unpassende alte Karten-/Pergamentoptik als genereller Stil, keine sterile grellgrüne Clipart, keine wiederkehrende beige Bildschablone und keine viereckigen Schulbuchtafeln mit winziger Schrift.",
+    "Je Bild maximal eine Kernaussage mit genügend visueller Substanz und eindeutigem Fokus; kein zwanghafter Minimalismus und keine nutzlose Dekoration.",
+    "Harte Regeln für Bildgenauigkeit, 3 Cover mit Nutzerwahl, 5er-Blöcke, referenzfreie Erzeugung, stille QC und vollständige Nummerierung bleiben erhalten."
+  ],
+  "characterStyle": {
+    "body": "Reduzierter Stickman-/Cartoon-Körper mit schlanken Gliedmaßen und einfacher klarer Torsoform; keine realistische Anatomie.",
+    "head": "Leicht ovaler bis runder Kopf in warmem Elfenbein statt reinem Weiß; klare dunkle Außenkontur.",
+    "face": "Zwei einfache gut lesbare Augen, kleine bis mittlere Pupillen, ausdrucksstarke Augenbrauen und klar gezeichneter Mund; Emotion muss auch klein lesbar sein.",
+    "hairAndBeards": "Vereinfachte handgezeichnete Haar- und Bartformen mit leicht unregelmäßigen Kanten; Frisur und Bart dürfen Figur, Alter und Epoche unterscheiden.",
+    "hands": "Vereinfachte Hände; keine detaillierten realistischen Finger, keine deformierten KI-Hände.",
+    "clothing": "Stark vereinfachte, aber epochemäßig plausible Kleidung; Farbe, Schnitt und Accessoires dienen der schnellen zeitlichen Einordnung.",
+    "diversity": "Menschen dürfen glaubwürdig unterschiedliche Hauttöne, Haare, Alter und Körpermerkmale haben, sofern es Thema und historische Einordnung sinnvoll unterstützen.",
+    "variety": "Figuren müssen nicht wie dieselbe Standardfigur aussehen. Haare, Bärte, Kleidung, Alter, Körperform, Hauttöne, Accessoires und historische Rollen dürfen deutlich variieren, solange die gemeinsame Alles-Stickman-Illustrationssprache erhalten bleibt.",
+    "identityRule": "Konsistenz entsteht durch Zeichenstil, Linien, Gesichtslogik und Farbwelt – nicht dadurch, dass jede Figur dieselbe Frisur, Kleidung, Bartform oder Silhouette besitzt."
+  },
+  "lineStyle": {
+    "color": "dunkles Anthrazit statt hartem Digital-Schwarz",
+    "quality": "leicht unregelmäßige handgezeichnete Tintenlinie",
+    "weight": "mittelstark, auch bei kleiner Darstellung lesbar",
+    "shading": "sparsam; flache Farbflächen plus sehr einfache Schatten, keine hochglänzende 3D-Beleuchtung"
+  },
+  "palette": {
+    "charcoal": "#242321",
+    "warmIvory": "#F1E5CF",
+    "sand": "#D5B17A",
+    "ochre": "#C48A35",
+    "rust": "#A75842",
+    "sage": "#7B8A65",
+    "mutedBlue": "#6B8FA3",
+    "nightNavy": "#2B3948",
+    "rule": "Gemeinsame Zeichen- und Farbqualität, aber KEINE starre beige/gelbe Pflichtpalette: Wald in natürlichen kühlen Grün-/Blautönen, Meer in Türkis und Marine, Psychologie in Koralle und gedecktem Teal, Technik auf ruhigem hellem neutralen Grund, Antike in Terrakotta/Himmelblau, Natur in balancierten Grün-/Blautönen. Pro Bild harmonisch, bewusst kontrollierte Kontraste, keine grelle Vektorclipart."
+  },
+  "backgroundStyle": {
+    "detailLevel": "mittel bis reichhaltig, aber klar lesbar",
+    "rule": "Hintergründe dürfen mehrere passende Gegenstände, Personen und Umgebungsdetails zeigen, wenn sie die Situation verständlicher oder lebendiger machen. Die Informationshierarchie muss trotzdem klar bleiben.",
+    "depth": "Vordergrund, Mittelgrund und Hintergrund dürfen klar getrennt sein; keine fotorealistische Tiefenunschärfe nötig.",
+    "historicalAccuracy": "Architektur, Vegetation, Werkzeuge und Alltagsobjekte nach Möglichkeit quellenbasiert und zeitlich plausibel darstellen."
+  },
+  "informationDesign": {
+    "sameWorldRequired": true,
+    "rule": "Gleichwertige hochwertige Bildtypen. Wähle für jedes Skript-Statement die visuell stärkste Form: Szene, präzise Objektgrafik, klarer Vergleich, Prozess, Querschnitt, Karte oder Infografik. Kein automatisch höherer Rang für Stickman-Handlungen oder für Infografiken.",
+    "labels": "Kurze deutsche Labels, Zahlen, Jahreszahlen, Namen, Pfeile und einfache Überschriften sind erlaubt, wenn sie echten Erklärwert haben.",
+    "charts": "Balken, Linien, Kreise, Mengenvergleiche oder vereinfachte statistische Diagramme dürfen genutzt werden; klare Hierarchie statt Dashboard-Optik.",
+    "maps": "Vereinfachte Karten mit klaren Flächen, Routen, Pfeilen, Regionen und kurzen deutschen Labels; keine fotorealistischen Satellitenkarten.",
+    "timelines": "Einfache horizontale oder vertikale Zeitachsen mit wenigen klaren Stationen, Jahreszahlen und passenden Illustrationen.",
+    "processes": "Schrittfolgen dürfen mit Pfeilen, Nummern, Mini-Szenen oder Objektzuständen erklärt werden.",
+    "cutaways": "Querschnitte, Explosionsdarstellungen und vereinfachte Innenansichten sind erlaubt, wenn sie den Aufbau besser erklären.",
+    "numbers": "Wichtige Zahlen dürfen groß und visuell dominant erscheinen; sie müssen korrekt und gut lesbar sein.",
+    "textBlocks": "Keine langen Fließtexte. Kurze Informationszeilen oder 1–3 kompakte Stichpunkte sind nur erlaubt, wenn ein Bild ohne sie deutlich schlechter verständlich wäre."
+  },
+  "multiPanelPolicy": {
+    "allowed": true,
+    "purpose": "Mehrere Teilbilder in einem 16:9-Frame sind erlaubt, wenn sie Vergleich, Ablauf, Ursache-Wirkung oder mehrere Perspektiven klarer erklären. Bevorzugt werden illustrierte Mini-Szenen statt leerer Karten-/Dashboard-Felder.",
+    "preferredLayouts": [
+      "2er-Split links/rechts",
+      "2er-Split oben/unten",
+      "3er-Sequenz",
+      "Vorher/Nachher",
+      "Ursache → Wirkung",
+      "Hauptbild plus kleine erklärende Nebenfelder"
+    ],
+    "rules": [
+      "Ein Splitvergleich mit zwei Szenen oder ein Ablauf in bis zu drei klaren Schritten ist erlaubt, wenn es dem Verständnis dient.",
+      "Ein 4er-Schulbuch-Arbeitsblatt mit winzigen Texten ist kein Standard und wird bei mobilem Lesen abgelehnt.",
+      "Alle Teilbilder teilen den Premium-2D-Editorial-Line-Art-Look, nicht zwangsläufig denselben Hintergrund.",
+      "Nur die minimal notwendigen deutschen Wörter, niemals lange Erklärtexte in den Panels.",
+      "Kein beliebiges Aneinanderreihen von Kacheln; eine eindeutige Leserichtung."
+    ]
+  },
+  "visualForms": [
+    "Stickman-Handlungsszene",
+    "Objekt-/Fundstück-Erklärung",
+    "Detail-/Nahaufnahme eines wichtigen Objekts",
+    "Vorher-Nachher-Vergleich",
+    "Ursache-Wirkung-Szene",
+    "Karte mit Route oder Ausbreitung",
+    "Zeitleiste",
+    "Schritt-für-Schritt-Prozess",
+    "Diagramm oder Zahlenvergleich",
+    "Infografik mit kurzen Labels",
+    "Querschnitt oder Aufbau",
+    "Explosionsdarstellung / Bestandteile",
+    "Split-Screen-Vergleich",
+    "2er- oder 3er-Multi-Panel",
+    "Hauptbild mit kleinen erklärenden Nebenfeldern",
+    "Mini-Sequenz mehrerer Schritte in einem Frame",
+    "Tabelle oder Matrix in stark vereinfachter illustrativer Form",
+    "Text-/Zahlenfokus mit unterstützender Illustration",
+    "Symbol-/Icon-Erklärung im Alles-Stickman-Stil",
+    "Umgebungsszene ohne Menschen",
+    "reine Objekt- oder Sachillustration ohne Figur"
+  ],
+  "coverStyle": {
+    "imageNumber": 1,
+    "isFirstVideoScene": true,
+    "candidateCount": 3,
+    "goal": "Ein sofort verständliches, neugierig machendes Schlüsselbild mit einem klaren Konflikt, Objekt oder Vorher-Nachher-Moment.",
+    "composition": "1 Hauptidee, typischerweise 1–3 große Figuren oder 1 große Figur plus 1 Hauptobjekt; Hintergrund stark vereinfacht.",
+    "text": "Wenn Text sinnvoll ist: maximal 2–4 kurze deutsche Wörter, groß, sauber geschrieben und mit sehr hohem Kontrast. Kein Pseudotext.",
+    "textStyle": "warme helle Schrift oder gedämpfter Amber-Akzent mit dunkler Kontur; nicht die exakte Typografie oder Farbformel eines Referenzkanals kopieren.",
+    "winnerRule": "Google Flow erzeugt genau drei Cover-Kandidaten und STOPPT danach vollständig. Der Nutzer wählt A, B oder C. Erst nach dieser ausdrücklichen Nutzerwahl wird der gewählte Kandidat zu Bild 01.png; die zwei Verlierer werden gelöscht. Danach läuft die Folgebildproduktion ohne weitere Rückfragen automatisch in 5er-Blöcken bis Bild NN.",
+    "selectionAuthority": "user",
+    "userSelectionRequired": true,
+    "hardStopAfterCandidates": true
+  },
+  "referenceConsistency": {
+    "referenceMode": "none",
+    "useImageReferences": false,
+    "generatedImageReferenceForbidden": true,
+    "consistencySource": "channel/MASTER_VISUAL_STYLE_EN.txt (entire embedded master v14) + one self-contained per-scene explanation. Five channel/style-reference-prompts exemplify ONE shared quality standard only; no image references.",
+    "reason": "Cover, Karten, Diagramme, Multi-Panels und Handlungsszenen haben unterschiedliche Aufgaben. Ein generiertes Referenzbild würde Layout und Motive unnötig verengen; deshalb wird die gemeinsame Designwelt ausschließlich über feste Stilregeln reproduziert.",
+    "styleDriftForbidden": true
+  },
+  "textPolicy": {
+    "language": "de",
+    "pseudoTextForbidden": true,
+    "longParagraphsInImageForbidden": true,
+    "labelsAllowed": true,
+    "numbersAllowed": true,
+    "shortHeadlinesAllowed": true,
+    "shortInfoLinesAllowed": true,
+    "mapsAndDiagramsMayUseShortLabels": true,
+    "rule": "Text ist ein normales Erklärwerkzeug, aber kein Selbstzweck. Kurze Labels, Zahlen, Jahreszahlen, Überschriften und sehr kompakte Infozeilen sind erlaubt, wenn sie das Verständnis verbessern."
+  },
+  "rules": [
+    "16:9-Komposition für 1920x1080.",
+    "Szenen müssen mit der gesprochenen Aussage und dem konkreten Thema übereinstimmen.",
+    "BESTE VISUELLE ERKLÄRFORM ZUERST: Handlungsszene, Objektgrafik, Vergleich, Querschnitt und Infografik sind gleichwertig. Entscheidend sind Aussage, attraktive Darstellung und Lesbarkeit.",
+    "Bilder dürfen visuell reichhaltig sein und mehrere zusammengehörige Dinge zeigen; keine künstliche Minimalismus-Pflicht.",
+    "Die wichtigsten 1–3 Blickpunkte müssen sofort erkennbar sein, weitere passende Details dürfen das Bild vertiefen.",
+    "Figuren dürfen sich in Haaren, Bart, Kleidung, Alter, Körperform, Hauttönen, Rolle und Epoche deutlich unterscheiden.",
+    "Diagramme, Karten, Zeitleisten und Infografiken bleiben erlaubt, wenn sie den Inhalt klarer erklären als eine Illustration.",
+    "Mehrere Teilbilder in einem Frame sind erlaubt, wenn sie gemeinsam eine klare Aussage erklären; illustrierte Mini-Szenen werden bevorzugt.",
+    "Text, Zahlen, Pfeile und Labels dürfen Illustrationen unterstützen, sollen sie aber nicht unnötig ersetzen.",
+    "Für Bild 02 bis Bild NN wird kein Bild als Referenzvorlage verwendet, auch nicht Bild 01.",
+    "Konsistenz wird ausschließlich über die aktive Visual Policy und den vollständigen Prompt jedes Bildes gesteuert.",
+    "Keine Füllbilder und keine austauschbaren Standardposen ohne Informationswert.",
+    "Bild 02 bis Bild NN jeweils nur einmal erzeugen; keine A/B-Varianten außer bei technischem Fehlschlag oder klar unbrauchbarem Output.",
+    "Nach Abschluss dürfen im finalen Bilderordner ausschließlich Bild 01.png bis Bild NN.png liegen.",
+    "Für neue Pipeline-v7+-Projekte muss video.json ein visualContinuityProfile enthalten; unbegründete Klima-, Jahreszeit-, Orts-, Tageszeit- oder Epochenwechsel sind verboten.",
+    "Nach jedem 5er-Bildblock erfolgt eine stille Qualitätsprüfung. Schlechte Bilder werden vor dem nächsten Block gezielt neu erzeugt; der Nutzer wird dafür nicht gefragt.",
+    "Mehr lebendige Handlungen, expressive Figuren, Tiefenstaffelung und wechselnde Kameranähe, wenn es zum Sprechertext passt; keine starre Standardpose.",
+    "Sichtbarer Text nur bei wirklichem Erklärnutzen, überwiegend 0–2 große deutsche Labels, normalerweise maximal 3; keine englischen Mini-Legenden oder Prompt-/Hold-Artefakte."
+  ],
+  "forbidden": [
+    "direkte Kopie eines konkreten Referenzkanals oder wiedererkennbarer Figuren daraus",
+    "3D-Pixar-Look",
+    "Fotorealismus",
+    "Anime-/Manga-Look",
+    "glänzende generische KI-3D-Optik",
+    "Pseudo-Schrift oder unlesbare Buchstaben",
+    "lange Textwände statt visueller Erklärung",
+    "überladene Dashboard-Infografiken mit zu vielen kleinen Informationen",
+    "zufällige Collagen ohne klare Leserichtung oder Zusammenhang",
+    "deformierte Hände, zusätzliche Gliedmaßen oder anatomische KI-Fehler",
+    "identische Pose und identische Bildkomposition über viele Szenen",
+    "unnötige Menschenmengen",
+    "moderne Gegenstände in historischen Szenen ohne inhaltlichen Grund",
+    "historisch unplausible Uniformen, Werkzeuge oder Architektur, wenn sie vermeidbar sind",
+    "Wasserzeichen, Logos fremder Kanäle oder Markenzeichen aus Referenzbildern",
+    "Verwendung eines zuvor generierten Bildes als visuelle Referenz für ein neues Szenenbild",
+    "unnötig komplizierte Kompositionen, bei denen die Kernaussage nicht mehr schnell erkennbar ist",
+    "lange Folgen steriler Infografik-/Diagramm-Karten, obwohl eine illustrative Szene möglich wäre",
+    "mitgerenderte Produktionsnotizen, geplante Hold-Dauer, Szenen-IDs oder Audioanker"
+  ],
+  "notes": [
+    "Die Referenzkanäle dienen nur zur Analyse des Formats. Diese Bildwelt ist eine eigene Kanalidentität.",
+    "Bei Unsicherheit über historische Details lieber vereinfachen als etwas Spezifisches zu erfinden.",
+    "Konsistenz bedeutet gleiche Welt und gleiche Designlogik, nicht gleiche Bildart. Ein Video darf zwischen Szene, Karte, Diagramm, Multi-Panel, Objektbild, Prozess und Text-/Zahlenbild wechseln.",
+    "Kein generiertes Bild wird als Referenzvorlage für ein anderes Bild verwendet.",
+    "Ziel ist nicht Minimalismus: Die besten Bilder wirken wie reichhaltige handgezeichnete YouTube-Illustrationen. Mehrere Figuren, Gegenstände, Landschaft, Kleidung, Tiere, kleine Nebenhandlungen und kurze Labels dürfen gemeinsam vorkommen, solange die Kernaussage schnell lesbar bleibt.",
+    "Cover-Gate: Nach genau drei Cover-Kandidaten muss der Agent stoppen und auf die ausdrückliche Auswahl des Nutzers warten.",
+    "Nach der Nutzer-Coverwahl läuft die Folgebildproduktion automatisch weiter: immer maximal 5 Bilder pro Block, danach sofort der nächste Block, ohne weitere Nutzerfreigabe.",
+    "Nach Bild NN folgt zwingend ein Vollständigkeitscheck des gemeinsamen finalen Bilderordners. Fehlende Bildnummern werden gezielt neu erzeugt; erst danach ist die Bildphase fertig.",
+    "Ab v14: Die eine kanonische Master-Bildwelt in channel/MASTER_VISUAL_STYLE_EN.txt ist verbindlich; die fünf Nutzer-freigegebenen Prompts in channel/style-reference-prompts/ sind zusätzliche Qualitätsbeispiele für Szene, Elektrotechnik, Psychologie, Geschichte und Naturwissenschaft. Nicht deren konkrete Gegenstände in andere Videos übernehmen, sondern deren visuelle Produktionsqualität."
+  ],
+  "compositionDensity": {
+    "target": "reichhaltige Illustration mit klarer Hierarchie",
+    "minimalismRequired": false,
+    "multipleRelatedElementsAllowed": true,
+    "multipleFiguresAllowed": true,
+    "supportingDetailsAllowed": true,
+    "rule": "Ausgewogen hochqualitativ: lebendige Handlungsszenen, gut gezeichnete detailreiche Objekte oder elegante Sachillustrationen – Bilddichte stets nach Informationszweck. Keine Pflicht zu Menschen, vielen Requisiten oder einem historischen Hintergrund.",
+    "readabilityGate": "Die wichtigsten 1–3 Blickpunkte müssen sofort erkennbar sein. Zusatzdetails dürfen danach entdeckt werden.",
+    "complexityLimit": "Komplexität ist nur dann zu hoch, wenn Blickführung, Textlesbarkeit oder die Kernaussage verloren gehen."
+  },
+  "visualFormPriority": {
+    "default": "best-format-for-spoken-statement",
+    "preferred": [
+      "reichhaltige Stickman-Handlungsszene",
+      "präzise 2D-Objekt-Erklärung ohne Figur",
+      "klarer 2er-Vergleich mit passenden Stickmen",
+      "illustrierter 3-Schritte-Ablauf ohne Figur",
+      "geschichtliche Umgebung mit Stickmen nur als Maßstab",
+      "leicht lesbare Infografik mit konkreter Sachillustration",
+      "Querschnitt oder technisches Prinzip",
+      "Karte oder Route wenn geografisch nötig"
+    ],
+    "secondary": [
+      "Zeitleiste mit illustrierten Stationen",
+      "Zahlenvergleich mit klarer visueller Gewichtung"
+    ],
+    "useOnlyWhenClearer": [
+      "sterile Symbol-/Icon-Grafik",
+      "reines Text-/Zahlenbild",
+      "reine ungegliederte Texttafeln"
+    ],
+    "rules": [
+      "Nie anhand des Themas pauschal eine historische Szene oder ein Landschaftsbild wählen.",
+      "Objekte und Sachzusammenhänge verdienen dieselbe ästhetische Qualität wie Charaktere.",
+      "Ein technisches Prinzip wird mit technisch korrekten großen Bauteilen gezeigt, nicht mit zusätzlichen Stickmen als Dekoration.",
+      "Vergleiche aus zwei lesbaren Situationen, maximal 3 Teilbereiche bei echter Notwendigkeit.",
+      "Mehr Details nur dann, wenn sie die Kernaussage oder den erzählerischen Reiz verbessern.",
+      "Alle Formate teilen den gleichen handgezeichneten Outline-/Shading-Look, dürfen aber frei unterschiedliche Farben und Hintergründe nutzen."
+    ],
+    "qualityRule": "Pick the visually strongest accurate explainer composition, regardless of narrative-versus-diagram format."
+  },
+  "environmentContinuity": {
+    "requiredFromPipelineVersion": 7,
+    "profileSource": "99-technik/video.json.visualContinuityProfile",
+    "rule": "Szenen desselben Videos müssen dieselbe erzählerische Welt logisch fortsetzen. Klima, Jahreszeit, Tagesstimmung, Vegetation, Architektur und historische Epoche dürfen nicht unbegründet springen.",
+    "noUnmotivatedEnvironmentShift": true,
+    "adjacentSceneContinuityRequired": true,
+    "intentionalChangesMustBeDeclared": true,
+    "examplesOfFailures": [
+      "eisiges Wintervideo springt ohne Grund in eine grüne warme Frühlingslandschaft",
+      "historische Szene enthält plötzlich moderne Objekte",
+      "Nacht-/Dämmerungswelt wechselt ohne Erzählgrund mehrfach zu hellem Mittag",
+      "Architektur oder Vegetation widersprechen dem gesetzten Ort/Klima"
+    ]
+  },
+  "visualSelfReview": {
+    "requiredFromPipelineVersion": 7,
+    "runAfterEveryBatch": true,
+    "runAgainAtFinalFolder": true,
+    "silentRepairBeforeContinue": true,
+    "criteria": [
+      "passt exakt zur gesprochenen Aussage und zum Topic Anchor",
+      "Umgebung/Klima/Epoche passen zum visualContinuityProfile",
+      "keine deformierten Hände, zusätzlichen Gliedmaßen oder kaputten Gesichter",
+      "sichtbarer Text korrekt, kurz und lesbar; kein Pseudotext",
+      "Kernaussage in wenigen Sekunden verständlich",
+      "keine sterile Infografik, wenn eine Illustration klarer wäre",
+      "nicht unnötig überladen und nicht künstlich leer",
+      "keine unbegründete Stil- oder Farbweltabweichung",
+      "keine modernen oder sachlich unpassenden Objekte"
+    ],
+    "repairRule": "Fällt ein Bild durch, nur diese Bildnummer mit demselben Inhalt und einem korrigierten Vollprompt neu erzeugen. Danach erneut prüfen; erst bei PASS weiter."
+  },
+  "sceneEnergy": {
+    "goal": "Normale Szenen dürfen so lebendig und ausdrucksstark wie ein gutes Cover wirken; Energie/Handlung übertragen, niemals das Coverbild als Vorlage oder Referenz verwenden.",
+    "acting": [
+      "Wenn Menschen in der Szene sinnvoll sind, etwas Konkretes tun, reagieren und mit Objekten interagieren lassen statt steif herumzustehen.",
+      "Klare Mimik und Gestik, aktive Körperhaltung, Gegenstände in Gebrauch, historisch stimmige Kleider/Haare/Bärte.",
+      "Wechsel zwischen dynamischer Nahaufnahme, mittlerer Handlungsszene und räumlichem Überblick; keine identischen Stillstandsbilder.",
+      "Eine dominante Handlung und optional 1–2 passende Nebenhandlungen. Bild reichhaltig, aber in 2–3 Sekunden verständlich.",
+      "Ruhige sachliche Objekt-/Querschnittbilder bleiben erlaubt, wenn sie dem Erklärwert dienen."
+    ],
+    "explainers": [
+      "Querschnitte und Sachbilder möglichst anschaulich in die Welt integrieren, mit klar erkennbaren großen Objekten.",
+      "Kleine aktive Figuren oder ein verständlicher Objektschritt können abstrakte Technik anschaulich machen, wenn sie nützen.",
+      "Keine Reihen komplizierter Lehrtafeln, winziger Legendenspalten oder unmotivierter Bildüberschriften.",
+      "Prompt-Metadaten sind nie Bildinhalt. GEPLANTER HOLD, Bildnummer, Szenen-ID, Audio Anchor und Sekundenangaben dürfen nicht ins Bild."
+    ],
+    "textReadability": {
+      "visibleLanguage": "de",
+      "onlyWhenUseful": true,
+      "preferredLabelsPerImage": [
+        0,
+        2
+      ],
+      "normalMaximumLabelsPerImage": 3,
+      "noEnglishMiniCaptions": true,
+      "noDuplicatePanelCaptions": true,
+      "noAutomaticHeadlines": true,
+      "noProductionMetadata": true,
+      "chartException": "Bei wirklich fachlich nötigen Grafiken nur so viele Labels wie auf Smartphonegröße tatsächlich lesbar bleiben.",
+      "failureRule": "Pseudotext, unnötige englische/zu kleine Labels, doppelte Beschriftungen, eingeblendete Hold-Zeiten oder Produktionsnotizen gelten als Qualitätsfehler."
+    },
+    "visualVariety": "Strong 2D editorial consistency with free storytelling, technical objects, psychology comparisons, history, science process graphics. Never force a historical background, figure or identical layout. All examples serve as approved quality benchmarks."
+  },
+  "promptLanguage": "en",
+  "visualStyleEdition": "premium-illustrated-explainer-v14",
+  "canonicalVisualMaster": {
+    "path": "channel/MASTER_VISUAL_STYLE_EN.txt",
+    "edition": "premium-illustrated-explainer-v14",
+    "embeddedVerbatim": true,
+    "allPromptsStandalone": true,
+    "sourceOfTruth": "single full English art-direction block; apply without removing detail",
+    "referenceExamples": "channel/style-reference-prompts/ (five approved samples, quality calibration only; never copy their subjects into unrelated scenes)",
+    "promptLanguage": "en",
+    "visibleTextLanguage": "de",
+    "heroFiguresOptional": true,
+    "formsEquallyEligible": true,
+    "technicalFidelityRequired": true,
+    "qualityEvidence": "must inspect actual generated images; CI validates written instructions only"
+  },
+  "visualDesignV14": {
+    "priority": "Every image generation prompt embeds the SAME complete canonical master text; scene-specific details follow it",
+    "edition": "premium-illustrated-explainer-v14",
+    "canonicalReferencesPath": "channel/style-reference-prompts/",
+    "referenceForms": [
+      "character-led historic situation",
+      "technically correct object-only schematic",
+      "two-beat psychological character comparison",
+      "historically grounded detailed wide shot with explanatory cutaway",
+      "coherent process / nature infographic"
+    ],
+    "commonArtDNA": [
+      "confident slightly irregular charcoal ink outlines",
+      "round or gently oval expressive simplified stickman faces where humans help",
+      "thin unmistakable stick limbs and simple period-appropriate accessories",
+      "purposeful readable silhouette and composition",
+      "polished carefully drawn 2D objects in same ink vocabulary",
+      "natural scene-specific color harmony and restrained shading",
+      "contextual attractive detail without visual overload",
+      "well-defined foreground/midground/background when useful"
+    ],
+    "allFormatsEqualWhenBest": true,
+    "figuresOptional": true,
+    "realisticHumansForbidden": true,
+    "consistentDesignNotSameScene": true,
+    "paletteFlexible": true,
+    "promptLanguage": "en",
+    "imageVisibleTextLanguage": "de",
+    "labelRule": "No labels unless specifically justified. One or two large exact German words preferred, maximum three in clear technical or nature diagrams. No tiny explanations, English words or generated pseudo-text.",
+    "screen": "16:9 at 1920x1080; clear on a mobile screen; output is image only",
+    "negativeExamples": [
+      "cheap bright-green clipart countryside",
+      "repeated beige-parchment illustration world",
+      "antique map for a non-map concept",
+      "3D or photorealistic people",
+      "realistically proportioned characters",
+      "four tiny worksheet panels with multi-line text",
+      "meaningless icon ring",
+      "uniform background for unrelated scenes",
+      "small illegible English notes",
+      "injected production metadata"
+    ],
+    "positiveReasoning": "Choose shot medium, color scheme, level of detail and need for people from the spoken statement, preserving illustration identity across topics.",
+    "approvalScope": "The user approved five detailed English prompts as style direction; v14 unifies their common craft. Generated results still require inspection.",
+    "canonicalMasterPath": "channel/MASTER_VISUAL_STYLE_EN.txt"
+  }
+}

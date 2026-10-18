@@ -1,0 +1,1304 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-18T04:12:41.260Z",
+  "pipelineVersion": 7,
+  "imagesChecked": 78,
+  "imagesWithMetaText": [
+    "Bild 02.png",
+    "Bild 03.png",
+    "Bild 04.png",
+    "Bild 05.png",
+    "Bild 06.png",
+    "Bild 08.png",
+    "Bild 11.png",
+    "Bild 12.png",
+    "Bild 13.png",
+    "Bild 15.png",
+    "Bild 16.png",
+    "Bild 17.png",
+    "Bild 18.png",
+    "Bild 20.png",
+    "Bild 21.png",
+    "Bild 22.png",
+    "Bild 23.png",
+    "Bild 24.png",
+    "Bild 25.png",
+    "Bild 27.png",
+    "Bild 28.png",
+    "Bild 29.png",
+    "Bild 30.png",
+    "Bild 33.png",
+    "Bild 34.png",
+    "Bild 35.png",
+    "Bild 36.png",
+    "Bild 37.png",
+    "Bild 38.png",
+    "Bild 39.png",
+    "Bild 40.png",
+    "Bild 41.png",
+    "Bild 42.png",
+    "Bild 44.png",
+    "Bild 46.png",
+    "Bild 48.png",
+    "Bild 50.png",
+    "Bild 51.png",
+    "Bild 53.png",
+    "Bild 54.png",
+    "Bild 56.png",
+    "Bild 57.png",
+    "Bild 58.png",
+    "Bild 59.png",
+    "Bild 60.png",
+    "Bild 61.png",
+    "Bild 62.png",
+    "Bild 63.png",
+    "Bild 65.png",
+    "Bild 66.png",
+    "Bild 67.png",
+    "Bild 69.png",
+    "Bild 70.png",
+    "Bild 71.png",
+    "Bild 72.png",
+    "Bild 73.png",
+    "Bild 74.png",
+    "Bild 75.png",
+    "Bild 76.png",
+    "Bild 77.png",
+    "Bild 78.png"
+  ],
+  "imagesWithUnexpectedText": [
+    "Bild 01.png",
+    "Bild 04.png",
+    "Bild 10.png",
+    "Bild 13.png",
+    "Bild 15.png",
+    "Bild 17.png",
+    "Bild 18.png",
+    "Bild 23.png",
+    "Bild 24.png",
+    "Bild 25.png",
+    "Bild 26.png",
+    "Bild 29.png",
+    "Bild 31.png",
+    "Bild 34.png",
+    "Bild 38.png",
+    "Bild 42.png",
+    "Bild 43.png",
+    "Bild 45.png",
+    "Bild 46.png",
+    "Bild 47.png",
+    "Bild 48.png",
+    "Bild 50.png",
+    "Bild 51.png",
+    "Bild 56.png",
+    "Bild 59.png",
+    "Bild 60.png",
+    "Bild 62.png",
+    "Bild 63.png",
+    "Bild 65.png",
+    "Bild 67.png",
+    "Bild 68.png",
+    "Bild 70.png",
+    "Bild 71.png",
+    "Bild 72.png",
+    "Bild 73.png",
+    "Bild 74.png",
+    "Bild 75.png",
+    "Bild 76.png",
+    "Bild 77.png",
+    "Bild 78.png"
+  ],
+  "results": [
+    {
+      "image": "Bild 01.png",
+      "metaText": [],
+      "unexpectedText": [
+        "WOHER WASSER?"
+      ]
+    },
+    {
+      "image": "Bild 02.png",
+      "metaText": [
+        {
+          "text": "Geplanter Held 4.5",
+          "reasons": [
+            "Planungsnotiz",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 03.png",
+      "metaText": [
+        {
+          "text": "eplanter HAd 5.335",
+          "reasons": [
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 04.png",
+      "metaText": [
+        {
+          "text": "GEPLANTER HOLD 4.95s",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Uppiges Flusstal",
+        "Trockene, flache Ebene"
+      ]
+    },
+    {
+      "image": "Bild 05.png",
+      "metaText": [
+        {
+          "text": "Gepl ad Hold 647s kc",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 06.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold 4.5%",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 08.png",
+      "metaText": [
+        {
+          "text": "Geplanter 4.955.",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 10.png",
+      "metaText": [],
+      "unexpectedText": [
+        "BEFORE"
+      ]
+    },
+    {
+      "image": "Bild 11.png",
+      "metaText": [
+        {
+          "text": "Hold 4.95s",
+          "reasons": [
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 12.png",
+      "metaText": [
+        {
+          "text": "GEPLANTER HOLD 4.5#s",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 13.png",
+      "metaText": [
+        {
+          "text": "02.92",
+          "reasons": [
+            "Zeitangabe"
+          ]
+        },
+        {
+          "text": "Geplanter Hold. 6.4%s",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Poren"
+      ]
+    },
+    {
+      "image": "Bild 15.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold 5.33s.",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Kleiner, feuchter Hang",
+        "Quelle"
+      ]
+    },
+    {
+      "image": "Bild 16.png",
+      "metaText": [
+        {
+          "text": "Geplanter",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "Hold 5 555\"",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 17.png",
+      "metaText": [
+        {
+          "text": "Hold",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Stein-Quellfassung",
+        "luss",
+        "Trockenzeit"
+      ]
+    },
+    {
+      "image": "Bild 18.png",
+      "metaText": [
+        {
+          "text": "HOLD",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "RDSCH",
+        "AQUIFER"
+      ]
+    },
+    {
+      "image": "Bild 20.png",
+      "metaText": [
+        {
+          "text": "Geplanter",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "Hold 6. ug",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 21.png",
+      "metaText": [
+        {
+          "text": "Geplauter Hold",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 22.png",
+      "metaText": [
+        {
+          "text": "45s |",
+          "reasons": [
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 23.png",
+      "metaText": [
+        {
+          "text": "6.2",
+          "reasons": [
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Boden",
+        "feine Raume",
+        "Sand, Kies",
+        "Fels",
+        "Kies"
+      ]
+    },
+    {
+      "image": "Bild 24.png",
+      "metaText": [
+        {
+          "text": "0.12",
+          "reasons": [
+            "Zeitangabe"
+          ]
+        },
+        {
+          "text": "Geplanter",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "Hold",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "SCHWAMM",
+        "SPONGE)",
+        "SPONGE)"
+      ]
+    },
+    {
+      "image": "Bild 25.png",
+      "metaText": [
+        {
+          "text": "Geplanter",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Flachbrunnen",
+        "Felsiger",
+        "Tiefenwasser",
+        "Untergrund"
+      ]
+    },
+    {
+      "image": "Bild 26.png",
+      "metaText": [],
+      "unexpectedText": [
+        "BEFORE",
+        "AFTER PERIOD)"
+      ]
+    },
+    {
+      "image": "Bild 27.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold 4.48%s",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 28.png",
+      "metaText": [
+        {
+          "text": "Hold 4.5%s. |",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 29.png",
+      "metaText": [
+        {
+          "text": "Geplanter",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "Hold 4.545",
+          "reasons": [
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "stone",
+        "guiter"
+      ]
+    },
+    {
+      "image": "Bild 30.png",
+      "metaText": [
+        {
+          "text": "Geplanter",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "Hote 4.545",
+          "reasons": [
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 31.png",
+      "metaText": [],
+      "unexpectedText": [
+        "BEFORE AFTER: CISTERN",
+        "AFTER: time, full storage",
+        "Rain fills",
+        "SEASON",
+        "RAINY SEASON",
+        "CISTERN",
+        "STORAGE!",
+        "FULL",
+        "ZISTERNE",
+        "VOLLER SPEICHER"
+      ]
+    },
+    {
+      "image": "Bild 33.png",
+      "metaText": [
+        {
+          "text": "Geplanter",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "Hold 6.09s.",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 34.png",
+      "metaText": [
+        {
+          "text": "GEPLANTER",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "HOLD",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "asserquelle"
+      ]
+    },
+    {
+      "image": "Bild 35.png",
+      "metaText": [
+        {
+          "text": "GEPLANTER HOLD: 4.955",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 36.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold 4.57s.",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 37.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        },
+        {
+          "text": "wy 1.2",
+          "reasons": [
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 38.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold: 4.95s",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Langsschnitt eines romischen Wasserkanals",
+        "Erde",
+        "Schacht Inspection Shaft",
+        "Mauerwerk Stone Masonry",
+        "Maverwerk",
+        "Stone Masonry",
+        "Slop"
+      ]
+    },
+    {
+      "image": "Bild 39.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 40.png",
+      "metaText": [
+        {
+          "text": "| Geplanter Hold 5.33s |",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 41.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold 5.33s.",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 42.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold 4.54s.",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Aquadukt",
+        "Stadt"
+      ]
+    },
+    {
+      "image": "Bild 43.png",
+      "metaText": [],
+      "unexpectedText": [
+        "SHARED WATER SYSTEM ROMAN CITY",
+        "PUBLIC FOUNTAIN",
+        "THERMAL BATHS",
+        "WELL-EQUIPPED HOUSE",
+        "DOMUS",
+        "LACUS)",
+        "(THERMAE)",
+        "IMPLUVIUM",
+        "PUBLIC",
+        "HYPOCAUST HEATING",
+        "FOUNTAIN",
+        "WELL-EQUIPPE",
+        "HOUSE",
+        "(LACUS)",
+        "(DOMUS)",
+        "SHARED WATER LINE (FISTULAE)"
+      ]
+    },
+    {
+      "image": "Bild 44.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold 4.95s.",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 45.png",
+      "metaText": [],
+      "unexpectedText": [
+        "SPQR"
+      ]
+    },
+    {
+      "image": "Bild 46.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "(Kurzer",
+        "BRUNNEN",
+        "ARMENVIERTELN",
+        "(Langer"
+      ]
+    },
+    {
+      "image": "Bild 47.png",
+      "metaText": [],
+      "unexpectedText": [
+        "AQUEDUCT",
+        "CROWDED",
+        "TENEMENT",
+        "(INSULA)",
+        "WATER MAIN",
+        "ROMAN",
+        "TOWNHOUS",
+        "(DOMUS)",
+        "Residents",
+        "must",
+        "public street",
+        "PRIVAT",
+        "PRIVATE WATER",
+        "CONNECTION",
+        "ROMAN TOWNHOUSE",
+        "PUBLIC",
+        "(DOMUS",
+        "FOUNTAIN"
+      ]
+    },
+    {
+      "image": "Bild 48.png",
+      "metaText": [
+        {
+          "text": "Geplante",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "Hold",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Verdunstung"
+      ]
+    },
+    {
+      "image": "Bild 50.png",
+      "metaText": [
+        {
+          "text": "Geplanter",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "Hold 4.5#s",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Mountains",
+        "Trockene Berge",
+        "Vertical Shafts",
+        "(Schachte)",
+        "Gravel",
+        "Qanat Tunnel",
+        "Groundwater Zone",
+        "(Gefalle)",
+        "Kies- Grundwasserzone"
+      ]
+    },
+    {
+      "image": "Bild 51.png",
+      "metaText": [
+        {
+          "text": "Hold 418s —>",
+          "reasons": [
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "lanter"
+      ]
+    },
+    {
+      "image": "Bild 53.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 54.png",
+      "metaText": [
+        {
+          "text": "EPLANTER HOLD 4.18s",
+          "reasons": [
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 56.png",
+      "metaText": [
+        {
+          "text": "GEPLANTER HOLD:",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Tragt durch",
+        "Stellt einen",
+        "Fullt Glas",
+        "Gasse",
+        "Full",
+        "Glas",
+        "Stellt einen",
+        "Tragt durch",
+        "Gasse"
+      ]
+    },
+    {
+      "image": "Bild 57.png",
+      "metaText": [
+        {
+          "text": "SI GEPLANTER HOLD 5.33s. IZ",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 58.png",
+      "metaText": [
+        {
+          "text": "Hold",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 59.png",
+      "metaText": [
+        {
+          "text": "Stanchen 06.50",
+          "reasons": [
+            "Zeitangabe"
+          ]
+        },
+        {
+          "text": "48.00",
+          "reasons": [
+            "Zeitangabe"
+          ]
+        },
+        {
+          "text": "49.00",
+          "reasons": [
+            "Zeitangabe"
+          ]
+        },
+        {
+          "text": "20.00",
+          "reasons": [
+            "Zeitangabe"
+          ]
+        },
+        {
+          "text": "23.10",
+          "reasons": [
+            "Zeitangabe"
+          ]
+        },
+        {
+          "text": "HOLD",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Henadh",
+        "Wasser",
+        "Marie",
+        "Warten",
+        "Lungan"
+      ]
+    },
+    {
+      "image": "Bild 60.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold 5.71s",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Scheinbar",
+        "sicner",
+        "Klar",
+        "Scheinbar",
+        "sicher.",
+        "Zufluss",
+        "Kontamination"
+      ]
+    },
+    {
+      "image": "Bild 61.png",
+      "metaText": [
+        {
+          "text": "GEPLANTER",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "HOLD:",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 62.png",
+      "metaText": [
+        {
+          "text": "| GEPLANTER HOLD: 4.95s |",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "FLUSSAUFWARTS",
+        "SIEDLUNGSABFALL",
+        "ABWASSER",
+        "WASSERENTNAHME"
+      ]
+    },
+    {
+      "image": "Bild 63.png",
+      "metaText": [
+        {
+          "text": "| Ge plomter Hold 454s. |",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "trub",
+        "Sediment"
+      ]
+    },
+    {
+      "image": "Bild 65.png",
+      "metaText": [
+        {
+          "text": "GEPLANTER",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "HOLD 4185 R",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Halt!",
+        "Nicht anfassen!",
+        "ACHTUNG!"
+      ]
+    },
+    {
+      "image": "Bild 66.png",
+      "metaText": [
+        {
+          "text": "Geplanter",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "Hold 4.95s",
+          "reasons": [
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 67.png",
+      "metaText": [
+        {
+          "text": "GEPLANTER HOLD:",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "METROPOLIS",
+        "METRO",
+        "REVOLUTION",
+        "INOUSTRIAL"
+      ]
+    },
+    {
+      "image": "Bild 68.png",
+      "metaText": [],
+      "unexpectedText": [
+        "TREATMENT",
+        "CONTROL"
+      ]
+    },
+    {
+      "image": "Bild 69.png",
+      "metaText": [
+        {
+          "text": "HOLD",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": []
+    },
+    {
+      "image": "Bild 70.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold:",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Historischer",
+        "Modernes",
+        "Stadtbrunnen",
+        "Wasserwerk",
+        "Entwicklung",
+        "Zeitverlauf"
+      ]
+    },
+    {
+      "image": "Bild 71.png",
+      "metaText": [
+        {
+          "text": "Hold: 5.71s",
+          "reasons": [
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Quellgebiet",
+        "Spring Area",
+        "Kiiche",
+        "Stadtisches Rohrnetz",
+        "Ipes",
+        "Wasserwerk",
+        "Wasserwerk",
+        "Kiiche",
+        "Stadtisches Rohrnetz",
+        "Quellgebiet",
+        "Ipes",
+        "Spring Area"
+      ]
+    },
+    {
+      "image": "Bild 72.png",
+      "metaText": [
+        {
+          "text": "44s",
+          "reasons": [
+            "Zeitangabe"
+          ]
+        },
+        {
+          "text": "Hold 6",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "Bergquelle",
+        "Well",
+        "Dorfbrunnen",
+        "bank",
+        "Ufer"
+      ]
+    },
+    {
+      "image": "Bild 73.png",
+      "metaText": [
+        {
+          "text": "Geplanter Hold 6.09s",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "COMPARISON REGIONS: ANCIENT INFRASTRUCTURE",
+        "ROMAN LINE (EUROPE)",
+        "IRANIAN QANAT (PERSIA)",
+        "BORDER WALL",
+        "WATCHTOWERS",
+        "ACCESS SHAFTS",
+        "FORT",
+        "IRRIGATED",
+        "FIELDS",
+        "OASIS",
+        "AQUEDUCT",
+        "QANAT",
+        "UNDERGROUND",
+        "FORCES",
+        "BUILDERS",
+        "WATER TUNNEL",
+        "IRRIGATION",
+        "CHANNELS"
+      ]
+    },
+    {
+      "image": "Bild 74.png",
+      "metaText": [
+        {
+          "text": "— GEPLANTER",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "» HOLD: 4.",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "ROMISCHER"
+      ]
+    },
+    {
+      "image": "Bild 75.png",
+      "metaText": [
+        {
+          "text": "GEPLANTE",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "HOLD",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "HISTORICAL WATER",
+        "HISTORISCHE WASSER-DISTRIBUTION",
+        "cleaning",
+        "Reingung",
+        "NNENFASSY",
+        "Water Quality test"
+      ]
+    },
+    {
+      "image": "Bild 76.png",
+      "metaText": [
+        {
+          "text": "GEPLANTER",
+          "reasons": [
+            "Planungsnotiz"
+          ]
+        },
+        {
+          "text": "HOLD",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "LINE",
+        "CONTROLLED",
+        "MODERN"
+      ]
+    },
+    {
+      "image": "Bild 77.png",
+      "metaText": [
+        {
+          "text": "GEPLANTER HOLD: 6.09s ©",
+          "reasons": [
+            "Planungsnotiz",
+            "Haltezeit",
+            "Zeitangabe"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "DAMALS",
+        "HEUTE",
+        "Schweres",
+        "eben"
+      ]
+    },
+    {
+      "image": "Bild 78.png",
+      "metaText": [
+        {
+          "text": "S LGEPLANTER HOLD 6.",
+          "reasons": [
+            "Haltezeit"
+          ]
+        }
+      ],
+      "unexpectedText": [
+        "sche Kannenroute",
+        "histori",
+        "NROUTE"
+      ]
+    }
+  ]
+}

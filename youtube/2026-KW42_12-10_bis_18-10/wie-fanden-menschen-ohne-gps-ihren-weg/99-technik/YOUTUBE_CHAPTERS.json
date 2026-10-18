@@ -1,5 +1,81 @@
 {
   "schemaVersion": 1,
   "timingSource": "FINAL_TIMELINE.json",
-  "chapters": []
+  "chapters": [
+    {
+      "time": "00:00",
+      "seconds": 0,
+      "title": "Verirrt ohne GPS"
+    },
+    {
+      "time": "00:15",
+      "seconds": 15.2,
+      "title": "Wissen statt Satelliten"
+    },
+    {
+      "time": "00:35",
+      "seconds": 35.96,
+      "title": "Die Landschaft als Karte"
+    },
+    {
+      "time": "01:04",
+      "seconds": 64.76,
+      "title": "Mit der Sonne orientieren"
+    },
+    {
+      "time": "01:23",
+      "seconds": 83.58,
+      "title": "Die Sterne als Orientierung"
+    },
+    {
+      "time": "01:55",
+      "seconds": 115,
+      "title": "Warum Richtung nicht reicht"
+    },
+    {
+      "time": "02:15",
+      "seconds": 135.36,
+      "title": "Der Kompass"
+    },
+    {
+      "time": "02:42",
+      "seconds": 162.28,
+      "title": "Wie Karten helfen"
+    },
+    {
+      "time": "03:05",
+      "seconds": 185.88,
+      "title": "Das Rätsel des offenen Meeres"
+    },
+    {
+      "time": "03:32",
+      "seconds": 212.94,
+      "title": "Gerechneter Kurs"
+    },
+    {
+      "time": "04:01",
+      "seconds": 241.74,
+      "title": "Breite, aber noch keine Länge"
+    },
+    {
+      "time": "04:34",
+      "seconds": 274.42,
+      "title": "Navigation im Pazifik"
+    },
+    {
+      "time": "05:08",
+      "seconds": 308.74,
+      "title": "Wenn alle Hinweise versagen"
+    },
+    {
+      "time": "05:32",
+      "seconds": 332.5,
+      "title": "Die eigentliche Antwort"
+    },
+    {
+      "time": "05:53",
+      "seconds": 353.26,
+      "title": "Was GPS verändert hat"
+    }
+  ]
 }

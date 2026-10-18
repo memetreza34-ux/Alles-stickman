@@ -3,14 +3,29 @@
 import path from 'node:path';
 import { arg, probeDuration, projectPaths, readJson, writeJson } from '../lib/pipeline.js';
 
-function motionFor(index) {
-  const presets = [
-    { scaleFrom: 1.01, scaleTo: 1.035, xFrom: 0, xTo: 0, yFrom: 0, yTo: 0 },
-    { scaleFrom: 1.035, scaleTo: 1.01, xFrom: -8, xTo: 8, yFrom: 0, yTo: 0 },
-    { scaleFrom: 1.015, scaleTo: 1.04, xFrom: 6, xTo: -6, yFrom: 0, yTo: 0 },
-    { scaleFrom: 1.02, scaleTo: 1.04, xFrom: 0, xTo: 0, yFrom: 4, yTo: -4 }
-  ];
-  return presets[index % presets.length];
+// Bis v7 zoomte jedes Bild nur 1–3,5 % – im fertigen Video wirkte das wie ein Standbild.
+// Die Presets wechseln jetzt zwischen Heranfahren, Herausfahren und seitlichen Fahrten.
+const MOTION_PRESETS = [
+  { scaleFrom: 1.0, scaleTo: 1.08, originX: 50, originY: 45 },
+  { scaleFrom: 1.08, scaleTo: 1.0, originX: 50, originY: 50 },
+  { scaleFrom: 1.03, scaleTo: 1.1, originX: 32, originY: 45 },
+  { scaleFrom: 1.06, scaleTo: 1.06, xFrom: -36, xTo: 36, originX: 50, originY: 50 },
+  { scaleFrom: 1.03, scaleTo: 1.1, originX: 68, originY: 45 }
+];
+
+export function motionFor(index, override = null) {
+  const preset = { xFrom: 0, xTo: 0, yFrom: 0, yTo: 0, ...MOTION_PRESETS[index % MOTION_PRESETS.length] };
+  if (!override) return preset;
+  // Gezielte Kamerafahrt aus BILD_AUDIO_ZUORDNUNG.json: Zoom auf den wichtigen Bildteil.
+  return {
+    ...preset,
+    scaleFrom: Number(override.zoomFrom ?? preset.scaleFrom),
+    scaleTo: Number(override.zoomTo ?? preset.scaleTo),
+    originX: Number(override.focusX ?? preset.originX),
+    originY: Number(override.focusY ?? preset.originY),
+    xFrom: 0,
+    xTo: 0
+  };
 }
 
 export async function buildTimeline(projectDirectory) {
@@ -38,7 +53,8 @@ export async function buildTimeline(projectDirectory) {
       visualPurpose: image.visualPurpose ?? '',
       topicAnchor: image.topicAnchor ?? '',
       visualForm: image.visualForm ?? '',
-      motion: motionFor(index)
+      motion: motionFor(index, image.motion),
+      overlay: image.overlay?.text ? image.overlay : null
     };
   });
 

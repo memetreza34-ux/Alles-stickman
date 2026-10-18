@@ -90,7 +90,8 @@ export function ensureInside(root, candidate) {
 }
 
 export async function copyDirectory(source, destination) {
-  await mkdir(destination, { recursive: true });
+  // cp legt das Ziel selbst an; ein vorher angelegter Ordner löst unter Node 24 EEXIST aus.
+  await mkdir(path.dirname(destination), { recursive: true });
   await cp(source, destination, { recursive: true, force: false, errorOnExist: true });
 }
 
@@ -158,6 +159,7 @@ export function projectPaths(projectDirectory) {
     meta: path.join(projectDir, '99-technik', 'video.json'),
     mapping: path.join(projectDir, '99-technik', 'BILD_AUDIO_ZUORDNUNG.json'),
     scriptPlan: path.join(projectDir, '99-technik', 'SCRIPT_PLAN.json'),
+    research: path.join(projectDir, '99-technik', 'RECHERCHE.md'),
     renderPlan: path.join(projectDir, '99-technik', 'YOUTUBE_RENDER_PLAN.json'),
     status: path.join(projectDir, '99-technik', 'status.json'),
     optimizedAudio: path.join(projectDir, '99-technik', 'YOUTUBE_AUDIO_OPTIMIZED.wav'),
