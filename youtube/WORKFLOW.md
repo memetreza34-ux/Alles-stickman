@@ -39,7 +39,7 @@ Nach bestandener Phase 1 im Chat **sofort die zwei Links** ausgeben (Google-Flow
 
 Google Flow arbeitet `00-bildprompts/google-flow-prompt.txt` ab:
 
-1. Liegen freigegebene Bilder in `channel/style-sheet/`, werden sie bei jedem Bild als Referenz angehängt. Cover und vorherige Szenen sind nie Referenz.
+1. Fehlt `channel/style-sheet/hauptfigur.png`, erzeugt und prüft Flow das Figurenblatt zuerst selbst; danach hängt es an jedem Bild als Referenz. Cover und vorherige Szenen sind nie Referenz.
 2. Drei Cover erzeugen → **STOPP**, Nutzer wählt A/B/C → Gewinner = `Bild 01.png`, Rest löschen.
 3. Danach automatisch alle Blöcke aus `batches/`, ohne Rückfragen. Pro Bild nur den Text zwischen den Markierungen einfügen.
 4. Nach jedem Block: nur durchgefallene Bilder neu erzeugen (keine Strichfigur, Text im Bild, falsche Epoche, unlesbar).

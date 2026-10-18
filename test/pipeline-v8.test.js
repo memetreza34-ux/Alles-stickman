@@ -114,6 +114,13 @@ test('v8: Bildprompts enthalten nie Dateinamen, Zeiten oder Steuerzeilen', async
     assert.match(prompt, /stick figure/);
     assert.ok(prompt.split(/\s+/).length < 260, 'Prompt bleibt kurz');
   }
+  const master = files.get('google-flow-prompt.txt');
+  assert.match(master, /FIGURENBLATT_PROMPT\.txt/, 'Flow erzeugt das Figurenblatt selbst, wenn es fehlt');
+  assert.match(master, /gleicht die Figur hauptfigur\.png/, 'Flow prüft die Hauptfigur nach jedem Block');
+  const sheet = await readFile('channel/style-sheet/FIGURENBLATT_PROMPT.txt', 'utf8');
+  const sheetPrompt = sheet.split(PROMPT_START)[1].split(PROMPT_END)[0];
+  assert.deepEqual(findMetaLeaks(sheetPrompt), []);
+  assert.match(sheetPrompt, /red scarf/);
   assert.match(buildScenePrompt(kit, plan.scenes[0]), /red scarf/, 'Hauptfigur nur, wenn protagonist=true');
   assert.doesNotMatch(buildScenePrompt(kit, plan.scenes[1]), /red scarf/);
 });

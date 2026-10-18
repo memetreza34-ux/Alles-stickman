@@ -24,7 +24,7 @@ Handgezeichnete 2D-Editorial-Cartoons: dunkle, leicht unregelmäßige Tuschekont
 - [STYLE_BLOCK_EN.txt](STYLE_BLOCK_EN.txt) – der Stil, in jedem Prompt
 - [CHARACTER_BIBLE_EN.txt](CHARACTER_BIBLE_EN.txt) – Strichfiguren-Konstruktion, in jedem Prompt
 - `config/visual-policy.json` – Hauptfigur, Shot-Typen, Cover, Textregel
-- `style-sheet/` – optional freigegebene Figuren-/Stilbilder als feste Referenz ([Anleitung](style-sheet/README.md))
+- `style-sheet/` – Figurenblatt der Hauptfigur, von Flow einmal erzeugt und selbst geprüft ([Anleitung](style-sheet/README.md))
 
 ## Szenenplan schreiben (`99-technik/SCENE_VISUALS_EN.json`)
 

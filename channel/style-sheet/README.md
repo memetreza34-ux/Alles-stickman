@@ -1,11 +1,8 @@
-# Stilblatt (optional)
+# Figurenblatt der Hauptfigur
 
-Hier liegen **vom Nutzer freigegebene** Referenzbilder, die Google Flow bei jedem Bild als Stil-/Figurenreferenz bekommt:
+`hauptfigur.png` ist die feste Vorlage für die Hauptfigur mit rotem Schal. Sie wird **einmal für den ganzen Kanal** erzeugt, nicht pro Video.
 
-1. `hauptfigur.png` – die Hauptfigur mit rotem Schal: vorne, seitlich, drei Emotionen (Figurenblatt, ohne Text).
-2. `stil-szene.png` – eine typische Szene im Kanalstil (z. B. ein starkes Bild aus dem GPS-Video ohne Text).
-
-Regeln:
-- Nur freigegebene Bilder, maximal 3.
-- Niemals das aktuelle Cover oder ein vorheriges Szenenbild als Referenz nutzen: Sie kopieren Komposition statt Stil.
-- Ist der Ordner leer, arbeitet Flow nur mit den Textregeln (wie bis v7).
+- Fehlt die Datei, erzeugt Google Flow sie beim nächsten Video automatisch nach [FIGURENBLATT_PROMPT.txt](FIGURENBLATT_PROMPT.txt), prüft sie selbst und erzeugt bei Fehlern neu. Der Nutzer muss nichts korrigieren.
+- Danach wird `hauptfigur.png` bei jedem Bild als Referenz angehängt. Nach jedem 5er-Block prüft Flow, ob die Figur der Vorlage gleicht.
+- Niemals das aktuelle Cover oder ein vorheriges Szenenbild als Referenz nutzen: Sie kopieren Komposition statt Figur.
+- Neue Figur gewünscht? `hauptfigur.png` löschen, dann entsteht beim nächsten Video eine neue.
