@@ -2,6 +2,16 @@
 
 Produktionsrepository für einen deutschsprachigen faceless YouTube-Erklärkanal über Menschheit, Überleben, Erfindungen, Ressourcen und Alltag früher. Ein Video pro Woche, 6–7 Minuten, Stimme + handgezeichnete Strichfiguren-Bilder.
 
+## Aktuelle Woche und neues Video
+
+**KW 43 · 19.–25. Oktober 2026: „Warum war Salz früher so wertvoll?“** — Phase 1 abgeschlossen, 106 Bildszenen geplant.
+
+- [Wochenübersicht / Claude-Code-Übergabe](youtube/2026-KW43_19-10_bis_25-10/START_HERE.md)
+- [Google-Flow-Bildprompt](youtube/2026-KW43_19-10_bis_25-10/warum-war-salz-frueher-so-wertvoll/00-bildprompts/google-flow-prompt.txt)
+- [Deutsches Sprecher-Skript](youtube/2026-KW43_19-10_bis_25-10/warum-war-salz-frueher-so-wertvoll/01-voice-script/voice-script.txt)
+
+Bei jedem Video unmittelbar nach validierter Phase 1 diese beiden direkten Links **auch im Chat** ausgeben. Die Links starten weder Bildgenerierung noch Sprachaufnahme automatisch.
+
 ## Kernsystem (Pipeline v8)
 
 - Ablauf und Befehle: [youtube/WORKFLOW.md](youtube/WORKFLOW.md)
