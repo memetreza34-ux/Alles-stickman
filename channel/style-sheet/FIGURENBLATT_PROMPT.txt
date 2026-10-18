@@ -1,0 +1,22 @@
+FIGURENBLATT DER HAUPTFIGUR – einmal für den ganzen Kanal
+
+Ablauf für Google Flow (ohne Rückfrage an den Nutzer):
+1. Nur den Text zwischen den Markierungen als Prompt einfügen und ein Bild im Format 16:9 erzeugen.
+2. Ergebnis selbst prüfen:
+   – genau 5 Posen, alle eindeutig dieselbe Figur (gleiche Kopfform, Augen, Strichstärke, Proportionen)
+   – echte Strichfigur: dünne Linien-Arme und -Beine, runde Handenden ohne Finger, kein realistischer Körper
+   – roter Schal in allen 5 Posen gut sichtbar und gleich rot
+   – kein Text, keine Buchstaben, Zahlen, Logos oder Wasserzeichen
+   – heller, leerer Hintergrund
+3. Fällt ein Punkt durch: neu erzeugen, höchstens 5 Versuche, nicht nachfragen.
+4. Das beste Ergebnis speichern unter channel/style-sheet/hauptfigur.png.
+
+▼▼▼ PROMPT START ▼▼▼
+Character model sheet for a recurring YouTube explainer character in 16:9 widescreen on a plain warm off-white background. Hand-drawn 2D editorial cartoon style: confident dark charcoal ink outlines with a slightly irregular hand-inked feel, flat colors and soft selective shading.
+
+The character is a simple stick figure: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without fingers, and a small red scarf tied around the neck.
+
+Show this same character five times in one row, evenly spaced, full body and the same size: front view neutral, side view walking, three-quarter view curious, front view surprised, front view worried. Head shape, line weight, proportions and scarf color are identical in all five poses.
+
+No text, letters, numbers, labels, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲

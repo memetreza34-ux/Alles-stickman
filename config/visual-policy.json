@@ -32,7 +32,14 @@
     "lesson": "Wasser-Video: „Geplanter Hold …“ in ~60 von 78 Bildern plus englische Labels. GPS-Video: „Bild XX“ in mindestens 11 Bildern. Text im KI-Bild ist unzuverlässig."
   },
   "shots": {
-    "types": ["close-up", "medium", "wide", "top-down", "cutaway", "split"],
+    "types": [
+      "close-up",
+      "medium",
+      "wide",
+      "top-down",
+      "cutaway",
+      "split"
+    ],
     "minCloseUpShare": 0.15,
     "minDistinctShotTypes": 3
   },
@@ -43,14 +50,19 @@
     "referenceMode": "style-sheet-optional",
     "styleSheetDir": "channel/style-sheet",
     "sceneOrCoverReferenceForbidden": true,
-    "reason": "Ein festes, freigegebenes Figuren-/Stilblatt hält Hauptfigur und Strich gleich. Cover und vorherige Szenen bleiben als Referenz verboten, weil sie Kompositionen kopieren."
+    "reason": "Ein festes Figurenblatt hält die Hauptfigur gleich. Flow erzeugt es beim ersten Mal selbst und prüft es per Checkliste. Cover und vorherige Szenen bleiben als Referenz verboten, weil sie Kompositionen kopieren.",
+    "styleSheetFile": "channel/style-sheet/hauptfigur.png",
+    "styleSheetPrompt": "channel/style-sheet/FIGURENBLATT_PROMPT.txt"
   },
   "cover": {
     "candidates": 3,
     "selectionAuthority": "user",
     "noTextInImage": true,
     "bigEmotionalFace": true,
-    "headlineWords": [2, 4],
+    "headlineWords": [
+      2,
+      4
+    ],
     "headlineStyle": "Gelb oder Weiß, dicke schwarze Kontur, oberes Drittel"
   },
   "qualityChecks": {

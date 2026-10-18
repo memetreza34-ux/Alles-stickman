@@ -25,7 +25,7 @@ Regeln: [VISUAL_WORLD.md](channel/VISUAL_WORLD.md).
 
 ## Google Flow: genau ein Human-Gate
 
-3 Cover → **HARD STOP** → Nutzer wählt A/B/C → danach alle 5er-Blöcke automatisch, ohne Rückfrage und ohne `WEITER`. Cover und vorherige Szenen nie als Referenz, nur freigegebene Bilder aus `channel/style-sheet/`. Am Ende `npm run check:youtube-images` und gefundene Bilder neu erzeugen.
+3 Cover → **HARD STOP** → Nutzer wählt A/B/C → danach alle 5er-Blöcke automatisch, ohne Rückfrage und ohne `WEITER`. Cover und vorherige Szenen nie als Referenz, nur `channel/style-sheet/hauptfigur.png` (erzeugt Flow beim ersten Mal selbst). Am Ende `npm run check:youtube-images` und gefundene Bilder neu erzeugen.
 
 ## Phase-1-Abschluss: SOFORT ZWEI LINKS IM CHAT
 

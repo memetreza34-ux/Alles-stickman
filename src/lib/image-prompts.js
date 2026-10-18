@@ -150,13 +150,15 @@ function renderFlowMaster(meta, count) {
 
 Bilder gesamt: ${count} (Bild 01 = gewähltes Cover)
 
-1. Falls channel/style-sheet/ freigegebene Stil-/Figurenbilder enthält: diese bei JEDEM Bild als Stilreferenz anhängen. Niemals das Cover oder ein vorheriges Szenenbild als Referenz nutzen.
+1. Fehlt channel/style-sheet/hauptfigur.png: zuerst das Figurenblatt nach channel/style-sheet/FIGURENBLATT_PROMPT.txt erzeugen und selbst prüfen (ohne Rückfrage).
+   Danach hauptfigur.png bei JEDEM Bild als Referenz anhängen. Niemals das Cover oder ein vorheriges Szenenbild als Referenz nutzen.
 2. Die drei Cover-Prompts unten erzeugen (TEMP_COVER_A/B/C.png). Danach STOPP: Nutzer wählt A, B oder C. Kein Bild 02 vor der Wahl.
 3. Gewähltes Cover als „Bild 01.png“ speichern, die zwei anderen löschen.
 4. Danach automatisch die Blöcke in batches/ abarbeiten (je max. 5 Bilder), ohne Rückfragen zwischen den Blöcken.
 5. Pro Bild NUR den Text zwischen den Markierungen einfügen. Dateinamen, Nummern oder Zeiten gehören nie in den Prompt.
 6. Nach jedem Block prüfen und nur durchgefallene Bilder neu erzeugen:
    – Alle Menschen sind Strichfiguren nach PEOPLE-Regel (auch Hände, auch jede Kultur)?
+   – Wo MAIN CHARACTER im Prompt steht: gleicht die Figur hauptfigur.png (Kopf, Augen, Strichstärke, roter Schal)?
    – Kein Text, keine Zahlen, keine Wasserzeichen im Bild?
    – Epoche, Ort und Objekte passen zur Szene?
    – Hauptmotiv auf dem Handy in 2 Sekunden erkennbar?

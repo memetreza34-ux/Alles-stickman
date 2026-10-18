@@ -24,7 +24,7 @@ Bilder, Stimmen und MP4s liegen lokal, nicht auf GitHub (`.gitignore`). Die Revi
 
 ## Offen
 
-- Freigegebenes Figurenblatt für `channel/style-sheet/` (Hauptfigur festlegen).
+- Figurenblatt `channel/style-sheet/hauptfigur.png` entsteht beim nächsten Video automatisch.
 - Echte lizenzfreie Hintergrundmusik statt Sinus-Generator.
 - Erstes v8-Video produzieren und mit KW42 vergleichen.
 - YouTube-Analytics (CTR, Bindung nach 30 s) in die Reviews eintragen.
