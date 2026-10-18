@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "videoTitle": "Warum war Salz früher so wertvoll?",
+  "targetDurationSeconds": 390,
+  "scriptWords": 1054,
+  "imageCount": 106,
+  "chapters": [
+    {
+      "key": "hook",
+      "name": "Salz im Nudeltopf",
+      "era": "Heute (Küche) ↔ Bronzezeit im Salzberg Hallstatt",
+      "shots": [
+        [
+          "Du kippst Salz ins Nudelwasser und denkst keine Sekunde darüber nach.",
+          "Heutiger Alltagsmoment: Salz ohne Nachdenken"
+        ],
+        [
+          "Vor über 3.000 Jahren krochen Menschen dafür tief in einen Berg in Österreich,",
+          "Derselbe Moment früher: Bergleute kriechen in den Salzberg"
+        ],
+        [
+          "im Dunkeln, mit brennenden Holzspänen.",
+          "Gefahr und Mühe im dunklen Stollen"
+        ],
+        [
+          "Warum war ein Pulver, das dich heute fast nichts kostet, früher so wertvoll?",
+          "Kernfrage: billig heute, kostbar früher"
+        ]
+      ]
+    },
+    {
+      "key": "setup",
+      "name": "Was auf dem Spiel stand",
+      "era": "Jungsteinzeitliches Bauerndorf im Winter",
+      "shots": [
+        [
+          "Für diese Menschen ging es nicht um Geschmack.",
+          "Fallhöhe: Vorrat entscheidet über den Winter"
+        ],
+        [
+          "Stell dir einen Winter ohne Salz vor:",
+          "Immersion: Winter ohne Salz"
+        ],
+        [
+          "Dein Fleisch verdirbt, bevor der Schnee schmilzt.",
+          "Verdorbenes Fleisch"
+        ],
+        [
+          "Ohne Salz gibt es keinen Vorrat, und ohne Vorrat kommt der Hunger.",
+          "Hunger als Folge"
+        ],
+        [
+          "Du kennst bestimmt die Geschichte, dass römische Soldaten mit Salz bezahlt wurden. Sie ist falsch.",
+          "Mythos anteasern"
+        ],
+        [
+          "Die wahre Geschichte führt von Bergwerken über Steuern",
+          "Versprechen: Bergwerk bis Steuer"
+        ],
+        [
+          "bis zu einem Mann, der 387 Kilometer bis ans Meer lief.",
+          "Versprechen: Gandhis Marsch"
+        ]
+      ]
+    },
+    {
+      "key": "bauern",
+      "name": "Bauern brauchen Salz",
+      "era": "Altsteinzeit → Jungsteinzeit, Küste und Salzquelle",
+      "shots": [
+        [
+          "Am Anfang brauchten Menschen kaum zusätzliches Salz.",
+          "Jäger ohne Salzbedarf"
+        ],
+        [
+          "Dein Körper braucht zwar Salz, damit Nerven und Muskeln arbeiten.",
+          "Körper braucht Salz"
+        ],
+        [
+          "Doch Forscher schätzen, dass Jäger der Steinzeit mit weniger als einem Gramm am Tag auskamen.",
+          "Weniger als ein Gramm"
+        ],
+        [
+          "Dann wurden Menschen sesshaft.",
+          "Sesshaftigkeit"
+        ],
+        [
+          "Sie mussten Getreide, Fleisch und Fisch über lange Winter bringen.",
+          "Vorräte für den Winter"
+        ],
+        [
+          "Salz machte Fleisch und Fisch monatelang haltbar.",
+          "Einsalzen als Lösung"
+        ],
+        [
+          "Wer an der Küste oder an einer Salzquelle lebte, kochte salziges Wasser ein,",
+          "Salzsieden an der Quelle"
+        ],
+        [
+          "bis weiße Kristalle übrig blieben.",
+          "Salzkristalle im Topf"
+        ],
+        [
+          "Doch das Feuer musste stundenlang brennen, und solche Quellen gab es nur an wenigen Orten.",
+          "Neues Problem: Holz und seltene Quellen"
+        ],
+        [
+          "Was machst du, wenn das Salz tief im Berg steckt?",
+          "Frage: Salz im Berg"
+        ]
+      ]
+    },
+    {
+      "key": "hallstatt",
+      "name": "Der Salzberg von Hallstatt",
+      "era": "Bronze- und Eisenzeit, Hallstatt in den Alpen; Ausgrabung im 19. Jh.",
+      "shots": [
+        [
+          "In Hallstatt in den österreichischen Alpen gruben Menschen direkt in den Berg.",
+          "Lösung: Bergbau in Hallstatt"
+        ],
+        [
+          "Mit Pickeln aus Bronze schlugen sie Salzbrocken aus dem Fels",
+          "Abbau mit Bronzepickel"
+        ],
+        [
+          "und trugen sie auf dem Rücken nach oben.",
+          "Salz nach oben tragen"
+        ],
+        [
+          "Wir wissen das, weil im Salz eine hölzerne Treppe überlebt hat.",
+          "Beweis: Holztreppe im Salz"
+        ],
+        [
+          "Ihre Jahresringe verraten, dass das Holz dafür 1344 vor Christus gefällt wurde.",
+          "Jahrringdatierung"
+        ],
+        [
+          "Es ist die älteste erhaltene Holztreppe Europas.",
+          "Älteste Holztreppe Europas"
+        ],
+        [
+          "Und das Bergwerk ist bis heute in Betrieb.",
+          "Ältestes aktives Salzbergwerk"
+        ],
+        [
+          "Stell dir vor, du arbeitest dort.",
+          "Immersion: du als Bergmann"
+        ],
+        [
+          "Es ist eng, die Luft ist kalt, rund acht Grad.",
+          "Enge und Kälte"
+        ],
+        [
+          "Dein einziges Licht ist ein brennender Span in deiner Hand.",
+          "Licht durch Leuchtspan"
+        ],
+        [
+          "Wir wissen sogar, was du dort gegessen hättest.",
+          "Essen im Bergwerk"
+        ],
+        [
+          "Der Kot der Bergleute blieb im Salz erhalten.",
+          "Beweis: Paläofäzes"
+        ],
+        [
+          "Forscher fanden darin Bohnen, Getreide und Spuren von Blauschimmelkäse und Bier, 2.700 Jahre alt.",
+          "Bohnen, Käse, Bier"
+        ],
+        [
+          "Salz machte Hallstatt reich. Im Tal fanden Forscher fast tausend Gräber,",
+          "Reichtum: Gräberfeld"
+        ],
+        [
+          "manche mit Schwertern und Dolchen.",
+          "Schwerter und Dolche"
+        ],
+        [
+          "Eine ganze Epoche Europas heißt heute nach diesem Dorf: die Hallstattzeit.",
+          "Eine Epoche trägt den Namen"
+        ],
+        [
+          "Aber genau hier lag das nächste Problem.",
+          "Wendepunkt"
+        ],
+        [
+          "Salz gab es nur an wenigen Orten.",
+          "Neues Problem: wenige Salzorte"
+        ],
+        [
+          "Wer es hatte, wurde mächtig. Hattest du keins, musstest du es kaufen, oft über weite Wege.",
+          "Macht und Fernhandel"
+        ]
+      ]
+    },
+    {
+      "key": "rom",
+      "name": "Rom und der Salz-Mythos",
+      "era": "Antikes Rom, Tibermündung, Salzsümpfe",
+      "shots": [
+        [
+          "Eine der ältesten Straßen Roms hieß Via Salaria, die Salzstraße.",
+          "Via Salaria"
+        ],
+        [
+          "Über sie holten Nachbarvölker Salz aus den Sümpfen an der Mündung des Tibers.",
+          "Salzsümpfe am Tiber"
+        ],
+        [
+          "Und hier steckt der Mythos.",
+          "Mythos ankündigen"
+        ],
+        [
+          "Römische Soldaten sollen ihren Lohn in Salz bekommen haben,",
+          "Die Legende vom Salz-Sold"
+        ],
+        [
+          "und daher komme unser Wort Salär.",
+          "Wortherkunft-Legende"
+        ],
+        [
+          "Klingt logisch, stimmt aber nicht.",
+          "Mythos widerlegt"
+        ],
+        [
+          "Wir wissen das, weil kein einziger antiker Text das Wort salarium als Salzgeld verwendet.",
+          "Beweis: keine antike Quelle"
+        ],
+        [
+          "Die Geschichte vom Salz-Sold taucht erst in den 1860er-Jahren auf.",
+          "Mythos ist modern"
+        ],
+        [
+          "Der griechische Geschichtsschreiber Polybios nennt dagegen den Sold eines Fußsoldaten:",
+          "Polybios"
+        ],
+        [
+          "zwei Obolen am Tag, also Münzen.",
+          "Sold in Münzen"
+        ],
+        [
+          "Woher das Wort genau kommt, weiß bis heute niemand. Sicher ist nur: Bezahlt wurde mit Geld.",
+          "Unsicherheit klar benannt"
+        ]
+      ]
+    },
+    {
+      "key": "hering",
+      "name": "Hering, Hanse und weißes Gold",
+      "era": "Mittelalter an Nord- und Ostsee, Lüneburg und Lübeck; Schweden 16. Jh.; Küche heute",
+      "shots": [
+        [
+          "Im Mittelalter brauchte der Norden Europas Salz vor allem für einen Fisch: den Hering.",
+          "Heringsfang"
+        ],
+        [
+          "Frischer Hering verdirbt in wenigen Tagen, eingesalzen hält er Monate.",
+          "Frisch gegen gesalzen"
+        ],
+        [
+          "Das Salz dafür kam zum Beispiel aus Lüneburg.",
+          "Saline Lüneburg"
+        ],
+        [
+          "Auf der Alten Salzstraße rollten Wagen über 100 Kilometer bis nach Lübeck,",
+          "Alte Salzstraße"
+        ],
+        [
+          "und von dort ging es übers Meer in den ganzen Ostseeraum.",
+          "Export über die Ostsee"
+        ],
+        [
+          "Lüneburg wurde durch dieses weiße Gold reich und ein wichtiges Mitglied der Hanse.",
+          "Weißes Gold und Hanse"
+        ],
+        [
+          "Das bis 1980 geförderte Salz würde die Altstadt rechnerisch neun Meter hoch bedecken.",
+          "Salzmenge Lüneburg"
+        ],
+        [
+          "Bis heute sackt dort der Boden ab.",
+          "Absenkung in Lüneburg"
+        ],
+        [
+          "Wie sehr Menschen am Salzfisch hingen, zeigt Schweden im 16. Jahrhundert.",
+          "Schweden und Salzfisch"
+        ],
+        [
+          "Forscher schätzen, dass Menschen dort rund 100 Gramm Salz pro Tag aßen.",
+          "100 Gramm am Tag"
+        ],
+        [
+          "Heute rät dir die Weltgesundheitsorganisation zu weniger als fünf Gramm.",
+          "Vergleich heute"
+        ],
+        [
+          "Und wenn alle von etwas abhängen, kommt jemand auf eine Idee: Man kann es besteuern.",
+          "Idee der Salzsteuer"
+        ]
+      ]
+    },
+    {
+      "key": "steuer",
+      "name": "Die Salzsteuer",
+      "era": "Tang-China 8. Jh.; Frankreich 14.–18. Jh.",
+      "shots": [
+        [
+          "In China machte der Staat Salz zum Monopol.",
+          "Salzmonopol China"
+        ],
+        [
+          "Er verkaufte Salz an Händler, und im Preis steckte die Steuer.",
+          "Steuer im Salzpreis"
+        ],
+        [
+          "Jeder, der Salz kaufte, zahlte mit.",
+          "Alle zahlen mit"
+        ],
+        [
+          "Im Jahr 779 brachte die Salzsteuer der Tang-Dynastie mehr als die Hälfte aller Staatseinnahmen.",
+          "Hälfte der Staatseinnahmen"
+        ],
+        [
+          "In Frankreich hieß die Salzsteuer Gabelle, und ab 1341 galt sie dauerhaft.",
+          "Gabelle"
+        ],
+        [
+          "In manchen Regionen musste jeder über acht Jahren",
+          "Kaufpflicht ab acht Jahren"
+        ],
+        [
+          "bis zu sieben Kilo Salz im Jahr kaufen, ob er wollte oder nicht.",
+          "Zwangskauf"
+        ],
+        [
+          "Stell dir vor, du lebst 1784 in der Provinz Berry.",
+          "Immersion: du in Berry"
+        ],
+        [
+          "Dein Salz kostet fast zwanzigmal so viel wie in der Bretagne.",
+          "Preisunterschied"
+        ],
+        [
+          "Was würdest du tun? Tausende schmuggelten.",
+          "Schmuggel"
+        ],
+        [
+          "Ende des 18. Jahrhunderts landeten jedes Jahr rund 3.000 Menschen im Gefängnis, auf Galeeren oder am Galgen.",
+          "Strafen"
+        ],
+        [
+          "Die Gabelle war eine der meistgehassten Steuern Frankreichs.",
+          "Hass auf die Gabelle"
+        ],
+        [
+          "1790 schaffte die Revolution sie ab.",
+          "Abschaffung"
+        ],
+        [
+          "Napoleon führte sie wieder ein, und endgültig verschwand sie erst 1945.",
+          "Rückkehr und Ende der Gabelle"
+        ]
+      ]
+    },
+    {
+      "key": "indien",
+      "name": "Gandhis Salzmarsch",
+      "era": "Indien, Westküste (Gujarat), März–April 1930, heiß und trocken",
+      "shots": [
+        [
+          "Das berühmteste Kapitel spielt in Indien.",
+          "Indische Küste"
+        ],
+        [
+          "Ein britisches Gesetz von 1882 verbot Indern, eigenes Salz zu gewinnen oder zu verkaufen.",
+          "Britisches Salzgesetz"
+        ],
+        [
+          "Selbst wer am Meer wohnte, musste teures, besteuertes Salz kaufen.",
+          "Teures Salz am Meer"
+        ],
+        [
+          "Am 12. März 1930 lief Mahatma Gandhi los, mit 78 Begleitern.",
+          "Start des Marsches"
+        ],
+        [
+          "24 Tage lang, 387 Kilometer, bis zum Strand von Dandi.",
+          "Route nach Dandi"
+        ],
+        [
+          "Unterwegs liefen immer mehr Menschen mit.",
+          "Wachsende Menge"
+        ],
+        [
+          "Am 6. April bückte er sich am Ufer und hob ein Stück salzigen Schlamm auf.",
+          "Salz aufheben"
+        ],
+        [
+          "Eine winzige Geste, aber sie war verboten.",
+          "Verbotene Geste"
+        ],
+        [
+          "Gandhi sagte dazu: Damit erschüttere ich die Grundfesten des britischen Weltreichs.",
+          "Gandhis Satz am Strand"
+        ],
+        [
+          "Danach machten Millionen Inder ihr eigenes Salz,",
+          "Massenhafter Ungehorsam"
+        ],
+        [
+          "und über 60.000 Menschen wurden verhaftet.",
+          "Verhaftungen"
+        ],
+        [
+          "Und tatsächlich: Ein Häufchen Salz brachte ein Weltreich ins Wanken.",
+          "Weltreich wankt"
+        ]
+      ]
+    },
+    {
+      "key": "resolution",
+      "name": "Die Antwort",
+      "era": "Zeitlos; 19./20. Jahrhundert bis heute",
+      "shots": [
+        [
+          "Warum war Salz also so wertvoll?",
+          "Frage aufgreifen"
+        ],
+        [
+          "Nicht, weil es selten ist.",
+          "Überraschung: Salz ist nicht selten"
+        ],
+        [
+          "Die Erde hat riesige Salzlager, und die Meere sind voll davon.",
+          "Riesige Vorkommen"
+        ],
+        [
+          "Wertvoll war es, weil jeder es zum Überleben brauchte,",
+          "Jeder brauchte Salz"
+        ],
+        [
+          "es aber nur an wenigen Orten leicht zu holen war.",
+          "Wenige leichte Orte"
+        ],
+        [
+          "Wer diese Orte und Wege kontrollierte, hatte Macht über alle anderen.",
+          "Kontrolle bedeutet Macht"
+        ],
+        [
+          "Genau das machte Salz zum perfekten Handelsgut und zur perfekten Steuer.",
+          "Handelsgut und Steuer"
+        ],
+        [
+          "Und warum ist es heute so billig? Maschinen holten Salz aus großer Tiefe, und Züge brachten es in jedes Dorf.",
+          "Industrialisierung"
+        ],
+        [
+          "Und der Kühlschrank ersetzte das Einsalzen.",
+          "Kühlschrank ersetzt Salz"
+        ],
+        [
+          "2024 förderte die Welt rund 280 Millionen Tonnen Salz.",
+          "Weltproduktion"
+        ],
+        [
+          "In den USA kostete eine Tonne Steinsalz rund 56 Dollar, keine sechs Cent pro Kilo.",
+          "Preis heute"
+        ],
+        [
+          "Und dort gehen nur vier Prozent in die Lebensmittelindustrie, aber 41 Prozent auf verschneite Straßen.",
+          "Streusalz statt Essen"
+        ]
+      ]
+    },
+    {
+      "key": "closing",
+      "name": "Die Prise im Topf",
+      "era": "Heute (Küche) mit Rückblick",
+      "shots": [
+        [
+          "Wenn du also das nächste Mal Salz ins Nudelwasser kippst, denk kurz an Hallstatt.",
+          "Rückbezug auf den Hook"
+        ],
+        [
+          "Für diese Prise in deinem Topf sind Menschen in Berge gekrochen,",
+          "Erinnerung: Bergleute"
+        ],
+        [
+          "haben geschmuggelt und sind bis ans Meer gelaufen.",
+          "Erinnerung: Schmuggler und Marsch"
+        ],
+        [
+          "Heute kostet sie dich fast nichts.",
+          "Heute fast nichts"
+        ],
+        [
+          "Früher kostete sie manche Menschen alles.",
+          "Emotionaler Schluss"
+        ]
+      ]
+    }
+  ]
+}

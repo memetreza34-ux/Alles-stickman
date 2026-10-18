@@ -1,0 +1,66 @@
+GOOGLE FLOW ABLAUF (Pipeline v8) · Warum war Salz früher so wertvoll?
+
+Bilder gesamt: 106 (Bild 01 = gewähltes Cover)
+
+1. Fehlt channel/style-sheet/hauptfigur.png: zuerst das Figurenblatt nach channel/style-sheet/FIGURENBLATT_PROMPT.txt erzeugen und selbst prüfen (ohne Rückfrage).
+   Danach hauptfigur.png bei JEDEM Bild als Referenz anhängen. Niemals das Cover oder ein vorheriges Szenenbild als Referenz nutzen.
+2. Die drei Cover-Prompts unten erzeugen (TEMP_COVER_A/B/C.png). Danach STOPP: Nutzer wählt A, B oder C. Kein Bild 02 vor der Wahl.
+3. Gewähltes Cover als „Bild 01.png“ speichern, die zwei anderen löschen.
+4. Danach automatisch die Blöcke in batches/ abarbeiten (je max. 5 Bilder), ohne Rückfragen zwischen den Blöcken.
+5. Pro Bild NUR den Text zwischen den Markierungen einfügen. Dateinamen, Nummern oder Zeiten gehören nie in den Prompt.
+6. Nach jedem Block prüfen und nur durchgefallene Bilder neu erzeugen:
+   – Alle Menschen sind Strichfiguren nach PEOPLE-Regel (auch Hände, auch jede Kultur)?
+   – Wo MAIN CHARACTER im Prompt steht: gleicht die Figur hauptfigur.png (Kopf, Augen, Strichstärke, roter Schal)?
+   – Kein Text, keine Zahlen, keine Wasserzeichen im Bild?
+   – Epoche, Ort und Objekte passen zur Szene?
+   – Hauptmotiv auf dem Handy in 2 Sekunden erkennbar?
+7. Am Ende: alle Bilder Bild 01.png bis Bild 106.png flach in 00-bildprompts/images/ und
+   npm run check:youtube-images -- --dir "youtube/2026-KW43_19-10_bis_25-10/warum-war-salz-frueher-so-wertvoll" ausführen.
+   Jedes Bild mit gefundenem Text neu erzeugen.
+
+COVER-PROMPTS
+
+Datei: TEMP_COVER_A.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight. Bright, saturated colors and very high contrast for a YouTube thumbnail.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE: The red-scarf stick figure stares wide-eyed in shock at a single glowing white salt crystal held up in front of its face like a precious jewel, a dark mine tunnel behind it.
+
+CAMERA: One big stick-figure face with a strong, instantly readable emotion fills about 40 percent of the frame, plus one clear story object. Simple background. Keep the top third calm and empty for a headline that is added later.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: TEMP_COVER_B.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight. Bright, saturated colors and very high contrast for a YouTube thumbnail.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE: A Bronze Age stick figure miner, face lit orange by a burning wooden taper, gasps in awe at a huge glittering wall of white rock salt inside a dark mountain tunnel.
+
+CAMERA: One big stick-figure face with a strong, instantly readable emotion fills about 40 percent of the frame, plus one clear story object. Simple background. Keep the top third calm and empty for a headline that is added later.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: TEMP_COVER_C.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight. Bright, saturated colors and very high contrast for a YouTube thumbnail.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE: The red-scarf stick figure looks nervous and guilty while hugging a heavy sack of salt like stolen treasure, as a stern royal tax collector glares at it from behind.
+
+CAMERA: One big stick-figure face with a strong, instantly readable emotion fills about 40 percent of the frame, plus one clear story object. Simple background. Keep the top third calm and empty for a headline that is added later.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲

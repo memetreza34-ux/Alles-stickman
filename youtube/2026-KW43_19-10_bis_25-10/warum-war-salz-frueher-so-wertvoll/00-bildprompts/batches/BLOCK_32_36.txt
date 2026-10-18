@@ -1,0 +1,71 @@
+GOOGLE FLOW – BLOCK Bild 32–36 · Warum war Salz früher so wertvoll?
+
+Für jedes Bild NUR den Text zwischen „▼▼▼ PROMPT START ▼▼▼“ und „▲▲▲ PROMPT ENDE ▲▲▲“ in Google Flow einfügen.
+Den Dateinamen nie in den Prompt schreiben. Bild speichern unter dem angegebenen Dateinamen.
+
+Datei: Bild 32.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE: The red-scarf stick figure sits on a rock inside the mine, spooning a thick bean and barley stew from a wooden bowl, a burning taper stuck in a crack beside it.
+
+CAMERA: Medium shot: characters from head to knees with the key object clearly visible.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 33.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: A stick figure scientist in gloves holds up a small dark dried lump with tweezers over a glass sample jar, wrinkling its nose but looking fascinated.
+
+CAMERA: Close-up shot: the main subject fills most of the frame, emotion or detail is unmistakable.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 34.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: Top-down view of a rough wooden table with a bowl of broad beans, a heap of barley, a wedge of blue-veined cheese and a clay mug of foaming beer.
+
+CAMERA: Top-down bird's-eye view: shapes and paths are simple, bold and easy to follow.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 35.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: Wide view of an alpine valley where nineteenth-century stick figure diggers in hats carefully open many small graves in neat rows beside the lake.
+
+CAMERA: Wide shot: the setting is readable, the main subject stays large and clear in the foreground.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 36.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: Close view into an opened ancient grave where an iron sword and a bronze dagger lie on the dark earth beside small clay pots, a brush resting nearby.
+
+CAMERA: Close-up shot: the main subject fills most of the frame, emotion or detail is unmistakable.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲

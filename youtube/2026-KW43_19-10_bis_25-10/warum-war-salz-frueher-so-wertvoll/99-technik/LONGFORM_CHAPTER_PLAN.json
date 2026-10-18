@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "status": "PLANNED-ANCHORS",
+  "timingNote": "Nur geschätzte Zeiten; nach echter Tonspur mit Whisper ersetzen.",
+  "sections": [
+    {
+      "id": "hook",
+      "title": "Salz im Nudeltopf",
+      "startImage": 1,
+      "endImage": 4,
+      "startAnchor": "Du kippst Salz ins Nudelwasser",
+      "estimatedStartSeconds": 0.0,
+      "sceneWorld": "Heute (Küche) ↔ Bronzezeit im Salzberg Hallstatt"
+    },
+    {
+      "id": "setup",
+      "title": "Was auf dem Spiel stand",
+      "startImage": 5,
+      "endImage": 11,
+      "startAnchor": "Für diese Menschen ging es",
+      "estimatedStartSeconds": 15.5,
+      "sceneWorld": "Jungsteinzeitliches Bauerndorf im Winter"
+    },
+    {
+      "id": "bauern",
+      "title": "Bauern brauchen Salz",
+      "startImage": 12,
+      "endImage": 21,
+      "startAnchor": "Am Anfang brauchten Menschen kaum",
+      "estimatedStartSeconds": 40.7,
+      "sceneWorld": "Altsteinzeit → Jungsteinzeit, Küste und Salzquelle"
+    },
+    {
+      "id": "hallstatt",
+      "title": "Der Salzberg von Hallstatt",
+      "startImage": 22,
+      "endImage": 40,
+      "startAnchor": "In Hallstatt in den österreichischen",
+      "estimatedStartSeconds": 76.2,
+      "sceneWorld": "Bronze- und Eisenzeit, Hallstatt in den Alpen; Ausgrabung im 19. Jh."
+    },
+    {
+      "id": "rom",
+      "title": "Rom und der Salz-Mythos",
+      "startImage": 41,
+      "endImage": 51,
+      "startAnchor": "Eine der ältesten Straßen Roms",
+      "estimatedStartSeconds": 143.2,
+      "sceneWorld": "Antikes Rom, Tibermündung, Salzsümpfe"
+    },
+    {
+      "id": "hering",
+      "title": "Hering, Hanse und weißes Gold",
+      "startImage": 52,
+      "endImage": 63,
+      "startAnchor": "Im Mittelalter brauchte der Norden",
+      "estimatedStartSeconds": 181.7,
+      "sceneWorld": "Mittelalter an Nord- und Ostsee, Lüneburg und Lübeck; Schweden 16. Jh.; Küche heute"
+    },
+    {
+      "id": "steuer",
+      "title": "Die Salzsteuer",
+      "startImage": 64,
+      "endImage": 77,
+      "startAnchor": "In China machte der Staat",
+      "estimatedStartSeconds": 232.0,
+      "sceneWorld": "Tang-China 8. Jh.; Frankreich 14.–18. Jh."
+    },
+    {
+      "id": "indien",
+      "title": "Gandhis Salzmarsch",
+      "startImage": 78,
+      "endImage": 89,
+      "startAnchor": "Das berühmteste Kapitel spielt in",
+      "estimatedStartSeconds": 284.2,
+      "sceneWorld": "Indien, Westküste (Gujarat), März–April 1930, heiß und trocken"
+    },
+    {
+      "id": "resolution",
+      "title": "Die Antwort",
+      "startImage": 90,
+      "endImage": 101,
+      "startAnchor": "Warum war Salz also so",
+      "estimatedStartSeconds": 326.0,
+      "sceneWorld": "Zeitlos; 19./20. Jahrhundert bis heute"
+    },
+    {
+      "id": "closing",
+      "title": "Die Prise im Topf",
+      "startImage": 102,
+      "endImage": 106,
+      "startAnchor": "Wenn du also das nächste",
+      "estimatedStartSeconds": 373.3,
+      "sceneWorld": "Heute (Küche) mit Rückblick"
+    }
+  ]
+}

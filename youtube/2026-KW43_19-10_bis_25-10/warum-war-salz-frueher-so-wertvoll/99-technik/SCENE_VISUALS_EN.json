@@ -1,0 +1,763 @@
+{
+  "schemaVersion": 2,
+  "status": "READY",
+  "howTo": "brief = englisch, konkret: wer tut was mit welchem Objekt, welche Emotion, welcher Ort/Epoche. Kein Text, keine Dateinamen, keine Zeiten. shot = close-up | medium | wide | top-down | cutaway | split. protagonist = true, wenn die wiederkehrende Hauptfigur (roter Schal) vorkommt. Beschriftungen/Zahlen gehören als overlay in BILD_AUDIO_ZUORDNUNG.json.",
+  "covers": [
+    {
+      "id": "A",
+      "brief": "The red-scarf stick figure stares wide-eyed in shock at a single glowing white salt crystal held up in front of its face like a precious jewel, a dark mine tunnel behind it."
+    },
+    {
+      "id": "B",
+      "brief": "A Bronze Age stick figure miner, face lit orange by a burning wooden taper, gasps in awe at a huge glittering wall of white rock salt inside a dark mountain tunnel."
+    },
+    {
+      "id": "C",
+      "brief": "The red-scarf stick figure looks nervous and guilty while hugging a heavy sack of salt like stolen treasure, as a stern royal tax collector glares at it from behind."
+    }
+  ],
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "brief": "The red-scarf stick figure stands in a cozy modern kitchen and casually tips a salt shaker over a big pot of boiling pasta water, steam rising, relaxed smile.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 2,
+      "brief": "Cutaway of a steep alpine mountain revealing a narrow tunnel deep inside, where tiny Bronze Age stick figure miners crawl on hands and knees toward a glittering white salt layer.",
+      "shot": "cutaway",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 3,
+      "brief": "A Bronze Age stick figure miner in a pitch-dark rock tunnel holds a thin burning wooden taper, its warm orange flame lighting his sweaty, determined face and the white salt wall.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 4,
+      "brief": "Left side: the red-scarf stick figure shrugs beside a cheap salt shaker on a modern table. Right side: an ancient stick figure guards one white salt lump like treasure.",
+      "shot": "split",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 5,
+      "brief": "A Stone Age farming family of stick figures sits inside a dim wooden hut, worriedly looking at a nearly empty storage pit while heavy snow falls outside the doorway.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 6,
+      "brief": "The red-scarf stick figure stands shivering in a snowy prehistoric village at dusk, arms wrapped around itself, looking at bare wooden drying racks with nothing on them.",
+      "shot": "wide",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 7,
+      "brief": "A hunk of meat hanging from a wooden beam turns green and grey, buzzing flies circle it, and a stick figure pinches its nose in disgust.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 8,
+      "brief": "Thin, tired stick figures sit beside empty woven baskets and cracked clay pots in a frozen village, a cold wind blowing snow across the ground.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 9,
+      "brief": "The red-scarf stick figure raises one hand to stop a Roman officer who is handing a small cloth bag of salt to a legionary, looking doubtful and shaking its head.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 10,
+      "brief": "A winding road leads from a dark mountain mine entrance down to a stern tax collector at a wooden table piled with salt sacks, travelers waiting in line.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 11,
+      "brief": "A thin elderly stick figure with small round glasses, a white shawl and a long walking stick walks along a dusty road toward a distant bright sea.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 12,
+      "brief": "Stone Age hunter stick figures in fur clothing sit around a crackling campfire at night, roasting big pieces of meat on sticks, relaxed and well fed.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 13,
+      "brief": "Simple bold cutaway of the red-scarf stick figure's body showing glowing nerve lines running from the head down the arms and legs, tiny sparks of energy flowing along them.",
+      "shot": "cutaway",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 14,
+      "brief": "A Stone Age hunter stick figure holds up a tiny pinch of white salt next to a big roasted leg of meat, looking amused at how little it is.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 15,
+      "brief": "Wide view of an early farming village with round wooden houses, small fields of golden grain, goats in a fence and stick figures working with simple tools.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 16,
+      "brief": "Stick figure farmers carry clay jars of grain into a storage hut while fish and meat hang from poles, autumn leaves falling and grey clouds approaching.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 17,
+      "brief": "A stick figure rubs coarse white salt into a split fish over a wooden barrel already packed with neatly layered salted fish, looking satisfied.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 18,
+      "brief": "Stick figures beside a bubbling natural spring pour salty water into clay pots set over a long open fire, white steam rising into the cold air.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 19,
+      "brief": "Extreme close view into a cracked clay pot where the last water has boiled away, leaving a thick crust of sparkling white salt crystals, the red-scarf stick figure gazing amazed.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 20,
+      "brief": "An exhausted stick figure drags a huge bundle of firewood past a hillside full of freshly cut tree stumps toward a smoking row of salt-boiling fires.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 21,
+      "brief": "Cutaway of a tall mountain showing a thick white salt layer hidden deep inside the rock, while the red-scarf stick figure stands at the foot, scratching its head.",
+      "shot": "cutaway",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 22,
+      "brief": "A small prehistoric settlement on a dark alpine lake below a steep forested mountain, with Bronze Age stick figure miners entering a timber-framed tunnel high on the slope.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 23,
+      "brief": "A Bronze Age stick figure miner swings a bronze pick with a wooden handle against a grey and white salt wall, chips of salt flying through the torchlight.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 24,
+      "brief": "A Bronze Age stick figure miner climbs a steep dark tunnel with a heavy leather sack of salt chunks on his back, bent forward under the weight.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 25,
+      "brief": "Cutaway of an ancient mine shaft where a long wooden staircase made of logs and planks descends into the darkness, perfectly preserved and sparkling with salt.",
+      "shot": "cutaway",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 26,
+      "brief": "A stick figure researcher in a white lab coat studies the tree rings on a cut wooden plank through a large magnifying glass, eyes wide with discovery.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 27,
+      "brief": "Stick figure archaeologists with helmets and lamps kneel inside a salt tunnel, gently brushing salt off the ancient wooden stairs, faces full of awe.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 28,
+      "brief": "Modern stick figure miners in helmets ride a small electric mine train into the same mountain above the alpine lake, an old timber tunnel entrance preserved right beside them.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 29,
+      "brief": "The red-scarf stick figure dressed in simple Bronze Age wool clothing stands inside the narrow salt tunnel, holding a pick, looking around nervously.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 30,
+      "brief": "The red-scarf stick figure squeezes sideways through a very tight salt tunnel, shoulders pressed between rock walls, its breath visible as small white clouds.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 31,
+      "brief": "In total darkness, only a thin burning wooden taper lights the face of the red-scarf stick figure and a small circle of glittering salt rock around it.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 32,
+      "brief": "The red-scarf stick figure sits on a rock inside the mine, spooning a thick bean and barley stew from a wooden bowl, a burning taper stuck in a crack beside it.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 33,
+      "brief": "A stick figure scientist in gloves holds up a small dark dried lump with tweezers over a glass sample jar, wrinkling its nose but looking fascinated.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 34,
+      "brief": "Top-down view of a rough wooden table with a bowl of broad beans, a heap of barley, a wedge of blue-veined cheese and a clay mug of foaming beer.",
+      "shot": "top-down",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 35,
+      "brief": "Wide view of an alpine valley where nineteenth-century stick figure diggers in hats carefully open many small graves in neat rows beside the lake.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 36,
+      "brief": "Close view into an opened ancient grave where an iron sword and a bronze dagger lie on the dark earth beside small clay pots, a brush resting nearby.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 37,
+      "brief": "Panorama of Iron Age Europe around the Alps with hilltop settlements, traders with pack horses and smoke rising from forges, all connected by winding paths.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 38,
+      "brief": "The red-scarf stick figure frowns and rubs its chin while standing at the mine entrance, looking out at a long line of people waiting for salt.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 39,
+      "brief": "Top-down view of a wide green landscape with many tiny villages, but only two small glittering white salt spots far apart, connected by long thin paths.",
+      "shot": "top-down",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 40,
+      "brief": "A long caravan of stick figure traders leads pack mules loaded with salt blocks along a narrow mountain path, while a proud chieftain watches from a hill.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 41,
+      "brief": "A straight ancient Roman stone road runs through sunny hills, ox carts loaded with salt sacks rolling along it toward distant city walls.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 42,
+      "brief": "Stick figures in simple tunics shovel white salt from shallow sunlit marsh pools near a wide river mouth, filling baskets, sea birds overhead.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 43,
+      "brief": "The red-scarf stick figure leans toward the viewer with one raised eyebrow and a knowing grin, a Roman legionary stick figure in a helmet standing behind it.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 44,
+      "brief": "A Roman officer at a wooden pay table pours salt from a large sack into the open bag of a legionary, other soldiers waiting in line.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 45,
+      "brief": "Left: a Roman legionary stick figure stares puzzled at a small heap of salt in his palm. Right: the red-scarf stick figure in office clothes holds a pay envelope.",
+      "shot": "split",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 46,
+      "brief": "The red-scarf stick figure crosses its arms and firmly shakes its head, while a Roman officer behind it freezes with a salt sack in his hands.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 47,
+      "brief": "A stick figure scholar sits surrounded by piles of unrolled ancient scrolls under a lamp, searching through them one by one and finding nothing, tired.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 48,
+      "brief": "A nineteenth-century stick figure writer with big sideburns dips a quill into ink by gaslight, a small Roman helmet and a bag of salt on the desk beside a closed leather book.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 49,
+      "brief": "An ancient Greek historian stick figure with a beard and a draped robe writes on a long scroll by the light of an oil lamp, soldiers marching outside the window.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 50,
+      "brief": "Two small silver coins rest in the open palm of a Roman foot soldier stick figure, who smiles slightly, his helmet tucked under his other arm.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 51,
+      "brief": "The red-scarf stick figure shrugs beside an ancient Roman milestone on a road at sunset, a pouch of coins in one hand and a puzzled smile.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 52,
+      "brief": "Medieval wooden fishing boats on a grey northern sea haul nets bursting with silver herring, stick figure fishermen pulling hard, gulls diving around them.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 53,
+      "brief": "Left: a pile of rotting fish with buzzing flies on a wooden dock. Right: a tidy oak barrel packed with neat layers of salted herring and white salt.",
+      "shot": "split",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 54,
+      "brief": "A medieval saltworks hall filled with steam, where stick figure workers stir large flat iron pans of boiling brine over glowing fires and rake out white salt.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 55,
+      "brief": "Horse-drawn wooden carts loaded with salt barrels roll along a sandy road through purple heathland and pine forest under a wide northern sky.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 56,
+      "brief": "A bulky medieval cog ship with a single square sail leaves a harbor of tall brick gabled houses, its deck stacked with barrels, stick figure sailors waving.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 57,
+      "brief": "Wealthy medieval stick figure merchants in fur-trimmed coats stand proudly in front of brick gabled houses, counting coins beside stacked barrels of salt.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 58,
+      "brief": "Top-down view of a medieval brick old town completely buried under a thick white blanket of salt, only church spires and steep rooftops poking out.",
+      "shot": "top-down",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 59,
+      "brief": "A crooked old brick house leans to one side above a sunken cobblestone street with wide cracks in its walls, the red-scarf stick figure staring up at it in surprise.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 60,
+      "brief": "A Swedish farming family of stick figures sits at a long wooden table in a log house, every plate holding salted fish, a salt barrel in the corner.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 61,
+      "brief": "The red-scarf stick figure stares in shock at a huge mound of white salt piled on a dinner plate next to a single small fish, a tiny spoon in its hand.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 62,
+      "brief": "The red-scarf stick figure in a modern kitchen holds up one small level teaspoon of salt, looking at it thoughtfully, a bowl of soup on the counter.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 63,
+      "brief": "A crowned king stick figure on a throne grins slyly and taps his fingertips together while looking at a long row of salt barrels in his hall.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 64,
+      "brief": "A grand Tang dynasty courtyard with curved red roofs, where official stick figures in long robes guard huge stacks of salt sacks while merchants wait.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 65,
+      "brief": "A Chinese official in a long robe weighs salt on a large wooden balance scale and hands the sack to a merchant who pays with strings of round coins.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 66,
+      "brief": "In a busy Tang dynasty market, ordinary stick figure families buy small bags of salt at a stall, each dropping coins into a box guarded by an official.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 67,
+      "brief": "Top-down view of a Chinese treasury table with two heaps of round coins, the clearly larger heap standing right beside a pile of salt sacks.",
+      "shot": "top-down",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 68,
+      "brief": "A stern French royal official in a velvet robe and feathered hat stands in a stone tax office beside tall stacks of salt bags, guards with halberds at the door.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 69,
+      "brief": "A long queue of French peasant stick figures, including children, waits in front of a royal salt warehouse with an armed guard at the door.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 70,
+      "brief": "An unhappy peasant stick figure family trudges home along a muddy road, struggling to carry a heavy sack of salt they were forced to buy.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 71,
+      "brief": "The red-scarf stick figure stands in a small eighteenth-century French village street with stone cottages and a church tower, holding an empty salt pouch.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 72,
+      "brief": "Left: the red-scarf stick figure pays a big pile of coins for a tiny pouch of salt. Right: a Breton fisherman gets a full sack of salt for a few coins.",
+      "shot": "split",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 73,
+      "brief": "At night the red-scarf stick figure hesitates at a moonlit river ford with a salt sack, while other smugglers wade across, one holding a shaded lantern.",
+      "shot": "wide",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 74,
+      "brief": "Royal guards with muskets arrest a group of smugglers on a dark country road, a torn salt sack spilling white salt across the ground.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 75,
+      "brief": "An angry crowd of eighteenth-century French peasants with pitchforks and raised fists shouts in front of a royal salt tax office with barred windows.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 76,
+      "brief": "A cheering revolutionary crowd in a French town square tears open salt sacks and throws salt into the air like snow, cockades on their hats.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 77,
+      "brief": "A short stick figure with a black bicorne hat and a long military coat points firmly at a pile of salt sacks while tax officials hurry to collect them.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 78,
+      "brief": "A hot Indian coastline at noon with shimmering white salt pans, palm trees and a calm blue sea under a blazing sun.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 79,
+      "brief": "A British colonial officer stick figure in a pith helmet stops an Indian villager stick figure who is scraping salt from a seaside pan, pointing sternly.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 80,
+      "brief": "An Indian woman stick figure in a sari hands coins across the counter of a government salt depot, the open sea visible through the doorway behind her.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 81,
+      "brief": "A thin elderly stick figure with small round glasses, a white shawl and a long walking stick leads a line of marchers in white clothes out of an ashram gate at dawn.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 82,
+      "brief": "Top-down view of a long dusty road winding through fields and villages toward a bright coastline, a thin line of tiny walking figures following it.",
+      "shot": "top-down",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 83,
+      "brief": "A huge crowd of stick figures in white clothing follows the thin elderly man with round glasses along a village road, people cheering from rooftops.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 84,
+      "brief": "On a wet beach at sunrise, the thin elderly stick figure with round glasses and a white shawl bends down and lifts a lump of grey salty mud.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 85,
+      "brief": "Close view of a simple stick-figure hand holding a small lump of mud glittering with salt crystals, the sea and a watching crowd softly blurred behind it.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 86,
+      "brief": "The thin elderly stick figure with round glasses holds the salty lump high toward the sky on the beach, calm and determined, as the crowd behind him falls silent.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 87,
+      "brief": "A long beach crowded with Indian stick figures boiling seawater in pots over small fires, white steam rising everywhere along the coast.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 88,
+      "brief": "Colonial police stick figures lead away calm protesters in white clothes who walk with their heads held high, more people sitting peacefully on the road.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 89,
+      "brief": "A tiny heap of white salt sits on the ground in front of a massive colonial stone palace, and long cracks spread up the palace walls.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 90,
+      "brief": "The red-scarf stick figure holds a single large salt crystal up to the light, studying it closely with a thoughtful frown, sparkles reflecting on its face.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 91,
+      "brief": "Cutaway of the Earth's crust showing enormous white salt layers deep underground beneath fields and towns, with a salty blue ocean at the side.",
+      "shot": "cutaway",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 92,
+      "brief": "Wide view of a vast shining salt flat stretching to the horizon beside a deep blue ocean, a tiny red-scarf stick figure standing amazed in the middle.",
+      "shot": "wide",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 93,
+      "brief": "A row of stick figures from different eras, a Stone Age farmer, a Bronze Age miner, a medieval fisherman and a French peasant, each holding salt.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 94,
+      "brief": "Top-down view of a landscape where all roads from many villages converge on one single bright salt mine in the mountains, long lines of travelers on them.",
+      "shot": "top-down",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 95,
+      "brief": "A guard stick figure with a spear stands on top of a wall of salt barrels blocking a narrow mountain pass, travelers waiting below with empty bags.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 96,
+      "brief": "Left: a trader exchanges a block of salt for bolts of cloth at a market stall. Right: a tax collector takes a sack of salt from a farmer.",
+      "shot": "split",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 97,
+      "brief": "A nineteenth-century saltworks with smoking steam engines and pumping towers, while a steam train with open wagons full of white salt pulls away.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 98,
+      "brief": "The red-scarf stick figure opens a rounded vintage refrigerator in a colorful mid-century kitchen, fresh fish and meat inside, an empty salt barrel pushed aside.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 99,
+      "brief": "A gigantic white mountain of salt at a modern salt mine with a tiny yellow excavator and trucks at its base, under a clear blue sky.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 100,
+      "brief": "One single small coin lies next to a big bulging sack of rock salt on a scale, and the red-scarf stick figure laughs at how cheap it is.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 101,
+      "brief": "At night a big orange snowplow truck spreads a wide fan of salt onto a snowy highway, headlights glowing through falling snowflakes.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 102,
+      "brief": "The red-scarf stick figure stands at the stove again with the salt shaker over the boiling pasta pot, pausing mid-motion with a soft, thoughtful smile.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 103,
+      "brief": "A Bronze Age miner crawls through a narrow salt tunnel holding a burning taper, the glow of the flame reflecting on glittering white walls.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 104,
+      "brief": "Left: smugglers carry salt sacks across a moonlit river. Right: a crowd of marchers in white clothes walks toward a bright sea at sunrise.",
+      "shot": "split",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 105,
+      "brief": "Extreme close view of a small pinch of white salt crystals falling from above into bubbling pasta water, steam swirling around them.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 106,
+      "brief": "A lone stick figure miner stands at the entrance of a mountain tunnel at dusk, holding a small burning taper, looking back at the quiet valley below.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    }
+  ]
+}

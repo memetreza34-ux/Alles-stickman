@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "status": "PENDING",
+  "videoId": "",
+  "title": "",
+  "createdAt": null,
+  "closedAt": null,
+  "evidence": {
+    "videoPath": "03-export/FINAL_VIDEO.mp4",
+    "fullVideoWatched": false,
+    "checkedAt": null,
+    "reviewNotes": "",
+    "strengths": []
+  },
+  "scores": {
+    "hook": null,
+    "script": null,
+    "facts": null,
+    "visuals": null,
+    "voice": null,
+    "editing": null,
+    "titleThumbnail": null,
+    "export": null
+  },
+  "findings": [],
+  "lessons": [],
+  "analytics": {
+    "status": "NOT_AVAILABLE",
+    "capturedAt": null,
+    "views": null,
+    "impressions": null,
+    "ctrPercent": null,
+    "averageViewDurationSeconds": null,
+    "retentionAt30SecondsPercent": null,
+    "notableDips": [],
+    "notableSpikes": []
+  },
+  "summary": "",
+  "noIssuesReason": "",
+  "reviewer": ""
+}
