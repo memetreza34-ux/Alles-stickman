@@ -10,6 +10,8 @@ Produktionsrepository für einen deutschsprachigen faceless YouTube-Erklärkanal
 - [Google-Flow-Bildprompt](youtube/2026-KW43_19-10_bis_25-10/warum-war-salz-frueher-so-wertvoll/00-bildprompts/google-flow-prompt.txt)
 - [Deutsches Sprecher-Skript](youtube/2026-KW43_19-10_bis_25-10/warum-war-salz-frueher-so-wertvoll/01-voice-script/voice-script.txt)
 
+Der Google-Flow-Bildprompt enthält alles in einer Datei: Stil, Figurenblatt-Prompt, drei Cover, historischen Kontext, alle Szenen, automatische 5er-Blöcke und Qualitätschecks. Den gesamten Inhalt einmal in Flow kopieren; keine weiteren Dateien oder nachgereichten Prompts nötig.
+
 Bei jedem Video unmittelbar nach validierter Phase 1 diese beiden direkten Links **auch im Chat** ausgeben. Die Links starten weder Bildgenerierung noch Sprachaufnahme automatisch.
 
 ## Kernsystem (Pipeline v8)

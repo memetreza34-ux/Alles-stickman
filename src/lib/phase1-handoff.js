@@ -43,7 +43,7 @@ export function renderPhase1Handoff(meta, { phase1Validated = false } = {}) {
 ## 1. Google-Flow-Prompt
 [**Google-Flow-Prompt öffnen**](${links.flowPrompt})
 
-Öffnet den vollständigen Bildproduktions-Prompt in GitHub. Zum Starten in Google Flow kopieren oder über den vorgesehenen Agenten-Workflow weitergeben.
+Öffnet den vollständigen Bildproduktions-Prompt in GitHub. Den gesamten Text einmal in Google Flow kopieren: Stil, Figurenblatt, Cover, alle Szenen und Qualitätschecks sind eingebettet. Keine weiteren Prompt-Dateien oder Uploads nötig.
 
 ## 2. Voice-over-Skript
 [**Voice-over-Skript öffnen**](${links.voiceScript})

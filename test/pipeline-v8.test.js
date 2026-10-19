@@ -107,7 +107,7 @@ test('v8: Bildprompts enthalten nie Dateinamen, Zeiten oder Steuerzeilen', async
     if (name.startsWith('prompts/')) return [content];
     return [...content.matchAll(new RegExp(`${PROMPT_START}\\n([\\s\\S]*?)\\n${PROMPT_END}`, 'g'))].map((m) => m[1]);
   });
-  assert.equal(prompts.length, 3 + 6 + 5 + 3, 'Einzel-, Block- und Cover-Prompts');
+  assert.equal(prompts.length, 3 + 6 + 5 + 1 + 3, 'Einzel-, Block-, Figurenblatt- und Cover-Prompts');
   for (const prompt of prompts) {
     assert.deepEqual(findMetaLeaks(prompt), [], prompt.slice(0, 80));
     assert.match(prompt, /No text, letters, numbers/);
@@ -115,14 +115,46 @@ test('v8: Bildprompts enthalten nie Dateinamen, Zeiten oder Steuerzeilen', async
     assert.ok(prompt.split(/\s+/).length < 260, 'Prompt bleibt kurz');
   }
   const master = files.get('google-flow-prompt.txt');
-  assert.match(master, /FIGURENBLATT_PROMPT\.txt/, 'Flow erzeugt das Figurenblatt selbst, wenn es fehlt');
-  assert.match(master, /gleicht die Figur hauptfigur\.png/, 'Flow prüft die Hauptfigur nach jedem Block');
+  assert.ok(master.includes(kit.characterSheet), 'Figurenblatt-Prompt steht vollständig im Gesamtprompt');
+  assert.match(master, /main character matches hauptfigur\.png/, 'Flow prüft die Hauptfigur nach jedem Block');
   const sheet = await readFile('channel/style-sheet/FIGURENBLATT_PROMPT.txt', 'utf8');
   const sheetPrompt = sheet.split(PROMPT_START)[1].split(PROMPT_END)[0];
   assert.deepEqual(findMetaLeaks(sheetPrompt), []);
   assert.match(sheetPrompt, /red scarf/);
   assert.match(buildScenePrompt(kit, plan.scenes[0]), /red scarf/, 'Hauptfigur nur, wenn protagonist=true');
   assert.doesNotMatch(buildScenePrompt(kit, plan.scenes[1]), /red scarf/);
+});
+
+test('v8: Salz-Gesamtprompt funktioniert ohne weitere Dateien und enthält alle 106 Bilder', async () => {
+  const dir = 'youtube/2026-KW43_19-10_bis_25-10/warum-war-salz-frueher-so-wertvoll';
+  const [kit, plan, meta] = await Promise.all([
+    loadPromptKit(),
+    readFile(path.join(dir, '99-technik/SCENE_VISUALS_EN.json'), 'utf8').then(JSON.parse),
+    readFile(path.join(dir, '99-technik/video.json'), 'utf8').then(JSON.parse)
+  ]);
+  const master = renderPromptFiles(kit, plan, meta).get('google-flow-prompt.txt');
+  assert.ok(master.includes(kit.style));
+  assert.ok(master.includes(kit.characters));
+  assert.ok(master.includes(kit.characterSheet));
+  for (const cover of plan.covers) assert.ok(master.includes(cover.brief), `Cover ${cover.id} fehlt`);
+  for (const scene of plan.scenes) assert.ok(master.includes(scene.brief), `Szene ${scene.sceneNumber} fehlt`);
+  const rows = [...master.matchAll(/^(\d+) \/ Bild (\d+)\.png \|/gm)];
+  assert.deepEqual(rows.map((row) => Number(row[1])), Array.from({ length: 106 }, (_, i) => i + 1));
+  assert.ok(rows.every((row) => row[1] === row[2]), 'Register und Downloadname stimmen überein');
+  assert.match(master, /Bild 02–Bild 06, Bild 07–Bild 11/);
+  assert.match(master, /Bild 102–Bild 106/);
+  assert.match(master, /HARD STOP and WAIT/);
+  assert.match(master, /Never generate Bild 02 before the user's choice/);
+  assert.match(master, /selected cover as Bild 01\.png/);
+  assert.match(master, /without asking for additional prompts/);
+  assert.match(master, /Exactly 106 accepted images/);
+  assert.match(master, /ZIP containing exactly these 106 images at its root/);
+  assert.match(master, /Never invent a download link/);
+  for (const key of ['environmentAnchor', 'climateSeasonAnchor', 'eraAnchor', 'paletteMoodAnchor']) {
+    assert.ok(master.includes(meta.visualContinuityProfile[key]), `Historischer Kontext ${key} fehlt`);
+  }
+  for (const mismatch of meta.visualContinuityProfile.forbiddenUnmotivatedChanges) assert.ok(master.includes(mismatch));
+  assert.doesNotMatch(master, /batches\/|prompts\/|channel\/|SCENE_VISUALS_EN\.json|npm run/);
 });
 
 test('v8: Leak-Erkennung findet die echten Fehler aus Wasser- und GPS-Video', () => {
@@ -164,6 +196,13 @@ test('v8: Beispielprojekt besteht Phase 1; Handänderung oder Leak blockiert', a
     const result = await validatePhase1(dir);
     assert.deepEqual(result.errors, []);
     assert.equal(result.passed, true);
+
+    const masterFile = path.join(dir, '00-bildprompts', 'google-flow-prompt.txt');
+    const master = await readFile(masterFile, 'utf8');
+    await writeFile(masterFile, master.split('COMPLETE VIDEO IMAGE REGISTER')[0]);
+    const incompleteMaster = await validatePhase1(dir);
+    assert.ok(incompleteMaster.errors.some((e) => e.includes('google-flow-prompt.txt')), 'Fehlendes Szenenregister blockiert Phase 1');
+    await writeFile(masterFile, master);
 
     const single = path.join(dir, '00-bildprompts', 'prompts', 'Bild_03.txt');
     await writeFile(single, `${await readFile(single, 'utf8')}\nOUTPUT FILE: Bild 03.png\n`);
