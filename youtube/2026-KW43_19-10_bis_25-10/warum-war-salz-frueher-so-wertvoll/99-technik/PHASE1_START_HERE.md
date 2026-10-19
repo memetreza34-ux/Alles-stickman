@@ -5,7 +5,7 @@
 ## 1. Google-Flow-Prompt
 [**Google-Flow-Prompt öffnen**](https://github.com/memetreza34-ux/Alles-stickman/blob/main/youtube/2026-KW43_19-10_bis_25-10/warum-war-salz-frueher-so-wertvoll/00-bildprompts/google-flow-prompt.txt)
 
-Öffnet den vollständigen Bildproduktions-Prompt in GitHub. Zum Starten in Google Flow kopieren oder über den vorgesehenen Agenten-Workflow weitergeben.
+Öffnet den vollständigen Bildproduktions-Prompt in GitHub. Den gesamten Text einmal in Google Flow kopieren: Stil, Figurenblatt, Cover, alle Szenen und Qualitätschecks sind eingebettet. Keine weiteren Prompt-Dateien oder Uploads nötig.
 
 ## 2. Voice-over-Skript
 [**Voice-over-Skript öffnen**](https://github.com/memetreza34-ux/Alles-stickman/blob/main/youtube/2026-KW43_19-10_bis_25-10/warum-war-salz-frueher-so-wertvoll/01-voice-script/voice-script.txt)

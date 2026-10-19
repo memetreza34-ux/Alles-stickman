@@ -37,13 +37,13 @@ Nach bestandener Phase 1 im Chat **sofort die zwei Links** ausgeben (Google-Flow
 
 ## Phase 2 — Bilder und Stimme
 
-Google Flow arbeitet `00-bildprompts/google-flow-prompt.txt` ab:
+Den gesamten Inhalt von `00-bildprompts/google-flow-prompt.txt` einmal in Google Flow einfügen. Die Datei enthält Stil, Figurenregeln, den Figurenblatt-Prompt, alle drei Cover, den historischen Kontext und das vollständige Szenenregister. Flow benötigt keine anderen Projektdateien, Uploads oder später nachgereichten Blöcke. `prompts/` und `batches/` bleiben optionale Einzelwerkzeuge.
 
-1. Fehlt `channel/style-sheet/hauptfigur.png`, erzeugt und prüft Flow das Figurenblatt zuerst selbst; danach hängt es an jedem Bild als Referenz. Cover und vorherige Szenen sind nie Referenz.
+1. Ist noch kein Figurenblatt in der Flow-Sitzung vorhanden, erzeugt und prüft Flow es mit dem vollständig eingebetteten Prompt selbst; danach hängt es an jedem Bild als Referenz, soweit unterstützt. Cover und vorherige Szenen sind nie Referenz. Das Figurenblatt gehört nicht in die finalen Videobilder.
 2. Drei Cover erzeugen → **STOPP**, Nutzer wählt A/B/C → Gewinner = `Bild 01.png`, Rest löschen.
-3. Danach automatisch alle Blöcke aus `batches/`, ohne Rückfragen. Pro Bild nur den Text zwischen den Markierungen einfügen.
+3. Danach automatisch alle Szenen aus dem eingebetteten Register in den angegebenen 5er-Blöcken, ohne Rückfragen. Jede Bildanfrage enthält Stil, Figurenregel, Szene und Kamera; Verwaltungszeilen und Dateinamen werden nicht an das Bildmodell geschickt.
 4. Nach jedem Block: nur durchgefallene Bilder neu erzeugen (keine Strichfigur, Text im Bild, falsche Epoche, unlesbar).
-5. Alle Bilder flach in `00-bildprompts/images/`, dann:
+5. Flow liefert, falls unterstützt, ein ZIP mit allen nummerierten Bildern ohne Zusatzdateien oder Unterordner; sonst die tatsächlich herunterladbaren Einzelbilder. Danach alle Bilder flach in `00-bildprompts/images/` übernehmen und lokal prüfen:
 
 ```bash
 npm run validate:youtube-phase2 -- --dir "youtube/<week>/<slug>"

@@ -18,6 +18,7 @@ Formel und Prüfwerte: [SCRIPT_SYSTEM.md](channel/SCRIPT_SYSTEM.md). Kurz: du-Ho
 Regeln: [VISUAL_WORLD.md](channel/VISUAL_WORLD.md).
 
 - Bildprompts **nie von Hand schreiben**. `SCENE_VISUALS_EN.json` ausfüllen, dann `npm run prompts:youtube`. Der Validator lehnt veraltete oder geänderte Prompt-Dateien ab.
+- `google-flow-prompt.txt` ist immer **ein vollständiger, eigenständig kopierbarer Gesamtprompt**: Stil, Figurenregeln, Figurenblatt-Prompt, 3 Cover, historischer Kontext, alle nummerierten Szenen, 5er-Ablauf, Qualitätskontrolle und Download. Flow darf keine weiteren Dateien, Skripts, Uploads oder nachgereichten Blöcke benötigen. Einzel- und Batch-Dateien sind nur zusätzliche Werkzeuge.
 - Briefs auf Englisch, konkret, ohne Dateinamen, Zeiten, Versionen oder Labels.
 - Kein Text im KI-Bild. Zahlen und Begriffe als `overlay` in `BILD_AUDIO_ZUORDNUNG.json`, Thumbnail-Headline in `uploadMetadata.thumbnailText`.
 - Jeder Mensch ist dieselbe Strichfigur, in jeder Kultur und Epoche, auch die Hände.

@@ -3,4 +3,4 @@ Diese Datei wird erzeugt.
 1. 99-technik/SCENE_VISUALS_EN.json ausfüllen (pro Bild ein englischer brief + shot, dazu 3 Cover-Ideen).
 2. npm run prompts:youtube -- --dir "youtube/<week>/<slug>"
 
-Danach stehen hier der Google-Flow-Ablauf und die drei Cover-Prompts, in prompts/ jedes Einzelbild und in batches/ die 5er-Blöcke.
+Danach steht hier EIN vollständiger Gesamtprompt zum Kopieren in Google Flow: Stil, Figurenregeln, Figurenblatt-Prompt, drei Cover, historischer Kontext, alle Szenen, automatische 5er-Blöcke, Qualitätscheck und Download. Keine weiteren Dateien oder Uploads sind zum Start nötig. prompts/ und batches/ bleiben optionale Einzelwerkzeuge.
