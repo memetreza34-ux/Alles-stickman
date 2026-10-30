@@ -123,13 +123,14 @@ export function validateScenePlan(plan, { plannedImageCount } = {}) {
 const pad = (n) => String(n).padStart(2, '0');
 
 export function renderPromptFiles(kit, plan, meta) {
+  const separateThumbnail = meta.coverPolicy?.separateThumbnailFromFirstScene === true;
   const files = new Map();
   const scenes = plan.scenes ?? [];
   for (const cover of plan.covers ?? []) files.set(`prompts/COVER_${cover.id}.txt`, `${buildCoverPrompt(kit, cover)}\n`);
   for (const scene of scenes) files.set(`prompts/Bild_${pad(scene.sceneNumber)}.txt`, `${buildScenePrompt(kit, scene)}\n`);
 
   const block = (fileName, prompt) => `Datei: ${fileName}\n${PROMPT_START}\n${prompt}\n${PROMPT_END}\n`;
-  for (let first = 2; first <= scenes.length; first += 5) {
+  for (let first = separateThumbnail ? 1 : 2; first <= scenes.length; first += 5) {
     const last = Math.min(scenes.length, first + 4);
     const body = scenes.slice(first - 1, last)
       .map((scene) => block(`Bild ${pad(scene.sceneNumber)}.png`, buildScenePrompt(kit, scene)))
@@ -146,15 +147,16 @@ export function renderPromptFiles(kit, plan, meta) {
 }
 
 function renderFlowMaster(meta, count) {
+  const separateThumbnail = meta.coverPolicy?.separateThumbnailFromFirstScene === true;
   return `GOOGLE FLOW ABLAUF (Pipeline v8) · ${meta.title}
 
-Bilder gesamt: ${count} (Bild 01 = gewähltes Cover)
+Bilder gesamt: ${count} (${separateThumbnail ? 'Bild 01 = erste Videoszene; Cover bleibt separat' : 'Bild 01 = gewähltes Cover (Altmodus)'})
 
 1. Fehlt channel/style-sheet/hauptfigur.png: zuerst das Figurenblatt nach channel/style-sheet/FIGURENBLATT_PROMPT.txt erzeugen und selbst prüfen (ohne Rückfrage).
    Danach hauptfigur.png bei JEDEM Bild als Referenz anhängen. Niemals das Cover oder ein vorheriges Szenenbild als Referenz nutzen.
-2. Die drei Cover-Prompts unten erzeugen (TEMP_COVER_A/B/C.png). Danach STOPP: Nutzer wählt A, B oder C. Kein Bild 02 vor der Wahl.
-3. Gewähltes Cover als „Bild 01.png“ speichern, die zwei anderen löschen.
-4. Danach automatisch die Blöcke in batches/ abarbeiten (je max. 5 Bilder), ohne Rückfragen zwischen den Blöcken.
+2. Die drei Cover-Prompts unten erzeugen (TEMP_COVER_A/B/C.png). Danach STOPP: Nutzer wählt A, B oder C. Vor der Wahl keine Videoszenen erzeugen.
+3. ${separateThumbnail ? 'Gewähltes Cover als „00-bildprompts/thumbnail-source.png“ separat speichern, die zwei anderen löschen. Cover darf nie als Bild 01 der Videotimeline verwendet werden.' : 'Gewähltes Cover als „Bild 01.png“ speichern, die zwei anderen löschen.'}
+4. Danach automatisch die Blöcke in batches/ abarbeiten (je max. 5 Bilder), ohne Rückfragen zwischen den Blöcken. ${separateThumbnail ? 'Bild 01.png bis Bild ' + pad(count) + '.png werden anhand ihrer EIGENEN Szenenprompts generiert.' : ''}
 5. Pro Bild NUR den Text zwischen den Markierungen einfügen. Dateinamen, Nummern oder Zeiten gehören nie in den Prompt.
 6. Nach jedem Block prüfen und nur durchgefallene Bilder neu erzeugen:
    – Alle Menschen sind Strichfiguren nach PEOPLE-Regel (auch Hände, auch jede Kultur)?
@@ -164,7 +166,7 @@ Bilder gesamt: ${count} (Bild 01 = gewähltes Cover)
    – Hauptmotiv auf dem Handy in 2 Sekunden erkennbar?
 7. Am Ende: alle Bilder Bild 01.png bis Bild ${pad(count)}.png flach in 00-bildprompts/images/ und
    npm run check:youtube-images -- --dir "youtube/${meta.weekFolder}/${meta.topicSlug}" ausführen.
-   Jedes Bild mit gefundenem Text neu erzeugen.
+   Jedes Bild mit gefundenem Text neu erzeugen.${separateThumbnail ? '\n   Außerdem separate Datei 00-bildprompts/thumbnail-source.png auf Existenz, Konsistenz und Textfreiheit prüfen.' : ''}
 
 COVER-PROMPTS
 `;

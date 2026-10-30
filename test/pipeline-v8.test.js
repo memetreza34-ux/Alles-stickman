@@ -206,3 +206,22 @@ test('v8: Kamerafahrten sind sichtbar und gezielt steuerbar', () => {
   assert.equal(focused.originX, 30);
   assert.ok(headlineFontSize('WO BIN ICH?') <= 1080 * 0.17);
 });
+
+test('v8: eigenständiges Thumbnail, erste Szene bleibt Bild 01', async () => {
+  const kit = await loadPromptKit();
+  const plan = {
+    covers: ['A', 'B', 'C'].map((id, n) => ({ id, brief: BRIEFS[n] })),
+    scenes: BRIEFS.map((brief, n) => ({ sceneNumber: n + 1, brief, shot: SHOTS[n], protagonist: n === 0 }))
+  };
+  const files = renderPromptFiles(kit, plan, {
+    title: 'Test', weekFolder: 'KW99', topicSlug: 'demo',
+    coverPolicy: { separateThumbnailFromFirstScene: true }
+  });
+  assert.ok(files.has('prompts/Bild_01.txt'));
+  assert.ok(files.has('batches/BLOCK_01_05.txt'));
+  assert.ok(files.has('batches/BLOCK_06_06.txt'));
+  assert.equal(files.has('batches/BLOCK_02_06.txt'), false);
+  assert.match(files.get('batches/BLOCK_01_05.txt'), /Bild 01\\.png/);
+  assert.match(files.get('google-flow-prompt.txt'), /thumbnail-source\\.png/);
+  assert.match(files.get('google-flow-prompt.txt'), /Cover darf nie als Bild 01/);
+});

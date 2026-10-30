@@ -12,6 +12,10 @@ export async function validatePhase2(projectDirectory) {
   const count = Number(meta.plannedImageCount);
   if (!Number.isInteger(count) || count < 1) errors.push('plannedImageCount ist ungültig.');
 
+  if (meta.coverPolicy?.separateThumbnailFromFirstScene === true &&
+      !(await exists(path.join(p.projectDir, '00-bildprompts', 'thumbnail-source.png')))) {
+    errors.push('Separates Thumbnail fehlt: 00-bildprompts/thumbnail-source.png (Bild 01 muss Videoszene bleiben).');
+  }
   const images = await listFinalImages(p.imagesDir);
   if (Number.isInteger(count) && images.length !== count) errors.push(`Finale Bildzahl: ${images.length}, erwartet ${count}.`);
   if (Number.isInteger(count)) {

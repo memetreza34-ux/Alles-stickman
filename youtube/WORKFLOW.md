@@ -40,8 +40,8 @@ Nach bestandener Phase 1 im Chat **sofort die zwei Links** ausgeben (Google-Flow
 Google Flow arbeitet `00-bildprompts/google-flow-prompt.txt` ab:
 
 1. Fehlt `channel/style-sheet/hauptfigur.png`, erzeugt und prüft Flow das Figurenblatt zuerst selbst; danach hängt es an jedem Bild als Referenz. Cover und vorherige Szenen sind nie Referenz.
-2. Drei Cover erzeugen → **STOPP**, Nutzer wählt A/B/C → Gewinner = `Bild 01.png`, Rest löschen.
-3. Danach automatisch alle Blöcke aus `batches/`, ohne Rückfragen. Pro Bild nur den Text zwischen den Markierungen einfügen.
+2. Drei Cover erzeugen → **STOPP**, Nutzer wählt A/B/C → Gewinner separat als `00-bildprompts/thumbnail-source.png` speichern, Rest löschen.
+3. Danach alle Videoszenen **ab Bild 01** aus `batches/` generieren, ohne Rückfragen. Pro Bild nur den Text zwischen den Markierungen einfügen.
 4. Nach jedem Block: nur durchgefallene Bilder neu erzeugen (keine Strichfigur, Text im Bild, falsche Epoche, unlesbar).
 5. Alle Bilder flach in `00-bildprompts/images/`, dann:
 
@@ -60,7 +60,7 @@ npm run phase3:youtube -- --dir "youtube/<week>/<slug>"
 
 Reihenfolge: Preflight → Phase 1/2 → **Bild-Textcheck (blockiert)** → Audio (Tempo 1,1×, Pausen bis 0,5 s bleiben, längere → 0,3 s) → Whisper-Alignment → Timeline mit Overlays und Kamerafahrten → Pacing → Render → Export.
 
-`03-export/`: `FINAL_VIDEO.mp4`, `THUMBNAIL.png` (Bild 01 + Headline), `YOUTUBE_UPLOAD.txt`, `SUBTITLES.srt`, `TIMED_SCRIPT.txt`.
+`03-export/`: `FINAL_VIDEO.mp4`, `THUMBNAIL.png` (separates Cover + Headline), `YOUTUBE_UPLOAD.txt`, `SUBTITLES.srt`, `TIMED_SCRIPT.txt`.
 
 ## Nach jedem Video — Review
 
@@ -72,6 +72,6 @@ npm run quality:close -- --dir "youtube/<week>/<slug>"
 
 Regeln: [CONTINUOUS_IMPROVEMENT.md](../channel/CONTINUOUS_IMPROVEMENT.md). Eine Review mit lauter 5ern und ohne Befund ist kein Review.
 
-## Alte Projekte
+**Bestehende Projekte mit Cover als erster Szene bleiben kompatibel**. Zur Migration müssen `video.json`-Coverflags geändert, sämtliche Prompt-Dateien mit `npm run prompts:youtube` neu generiert und das Cover separat erzeugt werden. Kein stillschweigender Wechsel für laufende Produktionen.\n\n## Alte Projekte
 
 Projekte mit `pipelineVersion` ≤ 7 werden weiter nach den alten Regeln geprüft (Bildwelt v14 in `config/legacy/`). Sie werden nicht neu produziert.

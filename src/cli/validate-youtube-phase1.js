@@ -84,7 +84,13 @@ export async function validatePhase1(projectDirectory) {
     if (meta.coverPolicy?.selectionAuthority !== 'google-flow') errors.push('Legacy v4: selectionAuthority muss google-flow sein.');
     if (meta.coverPolicy?.userSelectionRequired !== false) errors.push('Legacy v4: userSelectionRequired muss false sein.');
   }
-  if (meta.coverPolicy?.winnerBecomesFirstSceneAndThumbnail !== true) errors.push('Der gewählte Cover-Gewinner muss Bild 01 und Thumbnail werden.');
+  const separateThumbnail = isV8 && meta.coverPolicy?.separateThumbnailFromFirstScene === true;
+  if (separateThumbnail) {
+    if (meta.coverPolicy?.firstSceneIsCover !== false) errors.push('Separates Thumbnail: Bild 01 muss eine reguläre Videoszene sein.');
+    if (meta.coverPolicy?.winnerBecomesFirstSceneAndThumbnail !== false) errors.push('Separates Thumbnail darf Bild 01 nicht ersetzen.');
+  } else if (meta.coverPolicy?.winnerBecomesFirstSceneAndThumbnail !== true) {
+    errors.push('Altmodus: Der Cover-Gewinner muss Bild 01 und Thumbnail werden.');
+  }
   if (meta.coverPolicy?.deleteLosingCandidates !== true) errors.push('Die zwei nicht gewählten Cover-Kandidaten müssen gelöscht werden.');
   if (!isV8 && meta.coverPolicy?.separateThumbnailForbidden !== true) errors.push('Bild 01 muss Cover und erste Videoszene bleiben.');
   if (isV8) {

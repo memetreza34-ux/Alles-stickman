@@ -39,4 +39,4 @@ Nach jeder fertigen MP4 folgt eine echte Analyse mit Zeitstempeln. Ursachen gehe
 
 ## Bildproduktion: genau ein Human-Gate
 
-3 Cover → **STOPP** → Nutzer wählt A, B oder C → alle weiteren Bilder automatisch in 5er-Blöcken → Bild-Textcheck → fertig.
+3 Cover → **STOPP** → Nutzer wählt A, B oder C → Cover separat für Thumbnail → alle Videoszenen **ab Bild 01** in 5er-Blöcken → Bild-Textcheck → fertig. Alte Projekte bleiben kompatibel.
