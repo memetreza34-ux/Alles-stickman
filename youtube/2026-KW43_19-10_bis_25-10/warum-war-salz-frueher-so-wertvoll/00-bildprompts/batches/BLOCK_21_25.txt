@@ -1,61 +1,9 @@
-GOOGLE FLOW – BLOCK Bild 67–71 · Warum war Salz früher so wertvoll?
+GOOGLE FLOW – BLOCK Bild 21–25 · Warum war Salz früher so wertvoll?
 
 Für jedes Bild NUR den Text zwischen „▼▼▼ PROMPT START ▼▼▼“ und „▲▲▲ PROMPT ENDE ▲▲▲“ in Google Flow einfügen.
 Den Dateinamen nie in den Prompt schreiben. Bild speichern unter dem angegebenen Dateinamen.
 
-Datei: Bild 67.png
-▼▼▼ PROMPT START ▼▼▼
-STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
-
-PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
-
-SCENE: Top-down view of a Chinese treasury table with two heaps of round coins, the clearly larger heap standing right beside a pile of salt sacks.
-
-CAMERA: Top-down bird's-eye view: shapes and paths are simple, bold and easy to follow.
-
-TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
-▲▲▲ PROMPT ENDE ▲▲▲
-
-Datei: Bild 68.png
-▼▼▼ PROMPT START ▼▼▼
-STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
-
-PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
-
-SCENE: A stern French royal official in a velvet robe and feathered hat stands in a stone tax office beside tall stacks of salt bags, guards with halberds at the door.
-
-CAMERA: Medium shot: characters from head to knees with the key object clearly visible.
-
-TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
-▲▲▲ PROMPT ENDE ▲▲▲
-
-Datei: Bild 69.png
-▼▼▼ PROMPT START ▼▼▼
-STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
-
-PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
-
-SCENE: A long queue of French peasant stick figures, including children, waits in front of a royal salt warehouse with an armed guard at the door.
-
-CAMERA: Wide shot: the setting is readable, the main subject stays large and clear in the foreground.
-
-TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
-▲▲▲ PROMPT ENDE ▲▲▲
-
-Datei: Bild 70.png
-▼▼▼ PROMPT START ▼▼▼
-STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
-
-PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
-
-SCENE: An unhappy peasant stick figure family trudges home along a muddy road, struggling to carry a heavy sack of salt they were forced to buy.
-
-CAMERA: Medium shot: characters from head to knees with the key object clearly visible.
-
-TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
-▲▲▲ PROMPT ENDE ▲▲▲
-
-Datei: Bild 71.png
+Datei: Bild 21.png
 ▼▼▼ PROMPT START ▼▼▼
 STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
 
@@ -63,9 +11,61 @@ PEOPLE: Every person is a simple stick figure built the same way in every era an
 
 MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
 
-SCENE: The red-scarf stick figure stands in a small eighteenth-century French village street with stone cottages and a church tower, holding an empty salt pouch.
+SCENE: Cutaway of a tall mountain showing a thick white salt layer hidden deep inside the rock, while the red-scarf stick figure stands at the foot, scratching its head.
+
+CAMERA: Clean cutaway view that reveals the hidden inner mechanism with bold, simple parts.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 22.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: A small prehistoric settlement on a dark alpine lake below a steep forested mountain, with Bronze Age stick figure miners entering a timber-framed tunnel high on the slope.
+
+CAMERA: Wide shot: the setting is readable, the main subject stays large and clear in the foreground.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 23.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: A Bronze Age stick figure miner swings a bronze pick with a wooden handle against a grey and white salt wall, chips of salt flying through the torchlight.
+
+CAMERA: Close-up shot: the main subject fills most of the frame, emotion or detail is unmistakable.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 24.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: A Bronze Age stick figure miner climbs a steep dark tunnel with a heavy leather sack of salt chunks on his back, bent forward under the weight.
 
 CAMERA: Medium shot: characters from head to knees with the key object clearly visible.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 25.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: Cutaway of an ancient mine shaft where a long wooden staircase made of logs and planks descends into the darkness, perfectly preserved and sparkling with salt.
+
+CAMERA: Clean cutaway view that reveals the hidden inner mechanism with bold, simple parts.
 
 TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
 ▲▲▲ PROMPT ENDE ▲▲▲

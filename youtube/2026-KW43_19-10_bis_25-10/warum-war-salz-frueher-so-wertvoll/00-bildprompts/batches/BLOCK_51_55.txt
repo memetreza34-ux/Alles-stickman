@@ -1,48 +1,9 @@
-GOOGLE FLOW – BLOCK Bild 87–91 · Warum war Salz früher so wertvoll?
+GOOGLE FLOW – BLOCK Bild 51–55 · Warum war Salz früher so wertvoll?
 
 Für jedes Bild NUR den Text zwischen „▼▼▼ PROMPT START ▼▼▼“ und „▲▲▲ PROMPT ENDE ▲▲▲“ in Google Flow einfügen.
 Den Dateinamen nie in den Prompt schreiben. Bild speichern unter dem angegebenen Dateinamen.
 
-Datei: Bild 87.png
-▼▼▼ PROMPT START ▼▼▼
-STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
-
-PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
-
-SCENE: A long beach crowded with Indian stick figures boiling seawater in pots over small fires, white steam rising everywhere along the coast.
-
-CAMERA: Wide shot: the setting is readable, the main subject stays large and clear in the foreground.
-
-TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
-▲▲▲ PROMPT ENDE ▲▲▲
-
-Datei: Bild 88.png
-▼▼▼ PROMPT START ▼▼▼
-STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
-
-PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
-
-SCENE: Colonial police stick figures lead away calm protesters in white clothes who walk with their heads held high, more people sitting peacefully on the road.
-
-CAMERA: Medium shot: characters from head to knees with the key object clearly visible.
-
-TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
-▲▲▲ PROMPT ENDE ▲▲▲
-
-Datei: Bild 89.png
-▼▼▼ PROMPT START ▼▼▼
-STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
-
-PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
-
-SCENE: A tiny heap of white salt sits on the ground in front of a massive colonial stone palace, and long cracks spread up the palace walls.
-
-CAMERA: Wide shot: the setting is readable, the main subject stays large and clear in the foreground.
-
-TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
-▲▲▲ PROMPT ENDE ▲▲▲
-
-Datei: Bild 90.png
+Datei: Bild 51.png
 ▼▼▼ PROMPT START ▼▼▼
 STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
 
@@ -50,22 +11,61 @@ PEOPLE: Every person is a simple stick figure built the same way in every era an
 
 MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
 
-SCENE: The red-scarf stick figure holds a single large salt crystal up to the light, studying it closely with a thoughtful frown, sparkles reflecting on its face.
+SCENE: The red-scarf stick figure shrugs beside an ancient Roman milestone on a road at sunset, a pouch of coins in one hand and a puzzled smile.
 
-CAMERA: Close-up shot: the main subject fills most of the frame, emotion or detail is unmistakable.
+CAMERA: Medium shot: characters from head to knees with the key object clearly visible.
 
 TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
 ▲▲▲ PROMPT ENDE ▲▲▲
 
-Datei: Bild 91.png
+Datei: Bild 52.png
 ▼▼▼ PROMPT START ▼▼▼
 STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
 
 PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
 
-SCENE: Cutaway of the Earth's crust showing enormous white salt layers deep underground beneath fields and towns, with a salty blue ocean at the side.
+SCENE: Medieval wooden fishing boats on a grey northern sea haul nets bursting with silver herring, stick figure fishermen pulling hard, gulls diving around them.
 
-CAMERA: Clean cutaway view that reveals the hidden inner mechanism with bold, simple parts.
+CAMERA: Wide shot: the setting is readable, the main subject stays large and clear in the foreground.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 53.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: Left: a pile of rotting fish with buzzing flies on a wooden dock. Right: a tidy oak barrel packed with neat layers of salted herring and white salt.
+
+CAMERA: Two clearly separated side-by-side moments that compare one single difference.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 54.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: A medieval saltworks hall filled with steam, where stick figure workers stir large flat iron pans of boiling brine over glowing fires and rake out white salt.
+
+CAMERA: Medium shot: characters from head to knees with the key object clearly visible.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 55.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: Horse-drawn wooden carts loaded with salt barrels roll along a sandy road through purple heathland and pine forest under a wide northern sky.
+
+CAMERA: Wide shot: the setting is readable, the main subject stays large and clear in the foreground.
 
 TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
 ▲▲▲ PROMPT ENDE ▲▲▲
