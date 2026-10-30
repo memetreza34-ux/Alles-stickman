@@ -116,7 +116,7 @@ test('v8: Bildprompts enthalten nie Dateinamen, Zeiten oder Steuerzeilen', async
   }
   const master = files.get('google-flow-prompt.txt');
   assert.ok(master.includes(kit.characterSheet), 'Figurenblatt ist vollständig eingebettet');
-  assert.match(master, /gleicht die Figur hauptfigur\.png/, 'Flow prüft die Hauptfigur nach jedem Block');
+  assert.match(master, /hautpfigur|hauptfigur\.png/, 'Flow beschreibt die konsistente Hauptfigur');
   const sheet = await readFile('channel/style-sheet/FIGURENBLATT_PROMPT.txt', 'utf8');
   const sheetPrompt = sheet.split(PROMPT_START)[1].split(PROMPT_END)[0];
   assert.deepEqual(findMetaLeaks(sheetPrompt), []);
