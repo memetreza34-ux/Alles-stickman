@@ -223,7 +223,7 @@ test('v8: eigenständiges Thumbnail, erste Szene bleibt Bild 01', async () => {
   assert.equal(files.has('batches/BLOCK_02_06.txt'), false);
   assert.match(files.get('batches/BLOCK_01_05.txt'), /Bild 01\.png/);
   assert.match(files.get('google-flow-prompt.txt'), /thumbnail-source\.png/);
-  assert.match(files.get('google-flow-prompt.txt'), /Cover darf nie als Bild 01/);
+  assert.match(files.get('google-flow-prompt.txt'), /NOT Bild 01/);
 });
 
 test('Salt one-paste Flow prompt covers all 106 scenes and separates thumbnail', async () => {
