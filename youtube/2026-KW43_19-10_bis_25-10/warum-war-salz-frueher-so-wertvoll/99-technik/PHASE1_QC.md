@@ -24,3 +24,10 @@ Kennzahlen Skript (390 s geplant): 1.054 Wörter · 162 WPM · 6,2 Zahlen/Min ·
 - Titel als klare Frage: [x] „Warum war Salz früher so wertvoll?“
 - Thumbnail-Text 2–4 Wörter: [x] „Das weiße Gold“
 - Beschreibung + 2–3 Hashtags: [x] #AllesStickman (automatisch) #Geschichte #Salz
+
+## Migration und QC-Ergänzung – 30.10.2026
+- [x] Coverquelle von Bild 01 getrennt, damit der Sprecher-Einstieg Nudelwasser zur regulären Videoszene passt.
+- [x] Alle 106 Szenen sowie der Figurenblatt-Prompt in genau eine Flow-Datei eingebettet.
+- [x] 22 5er-Batches neu ab Bild 01 erzeugt, veraltete Batches entfernt.
+- [ ] Tatsächliche PNGs einschließlich der separaten Thumbnail-Quelle erzeugen und nach visueller Sichtung freigeben (`visual-qc:init`, `visual-qc:check`).
+- [ ] Stimme anhören, komplette MP4 ansehen, Review durchführen. Noch nicht als fertig kennzeichnen.

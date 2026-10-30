@@ -40,3 +40,5 @@ Nach jeder fertigen MP4 folgt eine echte Analyse mit Zeitstempeln. Ursachen gehe
 ## Bildproduktion: genau ein Human-Gate
 
 3 Cover → **STOPP** → Nutzer wählt A, B oder C → Cover separat für Thumbnail → alle Videoszenen **ab Bild 01** in 5er-Blöcken → Bild-Textcheck → fertig. Alte Projekte bleiben kompatibel.
+
+**Verbindlich ab der nächsten Produktion:** Der Google-Flow-Prompt enthält das gesamte Bildprogramm in einer Datei; Thumbnail und erste Videoszene sind separat. Vor dem Rendern wird jede reale PNG visuell geprüft und per SHA256 gebunden (`visual-qc:init` / `visual-qc:check`). Das ist eine manuelle Prüfung, keine automatische Behauptung guter Bildqualität.
