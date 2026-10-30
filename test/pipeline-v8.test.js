@@ -107,7 +107,7 @@ test('v8: Bildprompts enthalten nie Dateinamen, Zeiten oder Steuerzeilen', async
     if (name.startsWith('prompts/')) return [content];
     return [...content.matchAll(new RegExp(`${PROMPT_START}\\n([\\s\\S]*?)\\n${PROMPT_END}`, 'g'))].map((m) => m[1]);
   });
-  assert.equal(prompts.length, 3 + 6 + 5 + 3, 'Einzel-, Block- und Cover-Prompts');
+  assert.equal(prompts.length, 3 + 6 + 5 + 1 + 3, 'Einzel-, Block-, Figurenblatt- und Cover-Prompts');
   for (const prompt of prompts) {
     assert.deepEqual(findMetaLeaks(prompt), [], prompt.slice(0, 80));
     assert.match(prompt, /No text, letters, numbers/);
@@ -115,8 +115,8 @@ test('v8: Bildprompts enthalten nie Dateinamen, Zeiten oder Steuerzeilen', async
     assert.ok(prompt.split(/\s+/).length < 260, 'Prompt bleibt kurz');
   }
   const master = files.get('google-flow-prompt.txt');
-  assert.match(master, /FIGURENBLATT_PROMPT\.txt/, 'Flow erzeugt das Figurenblatt selbst, wenn es fehlt');
-  assert.match(master, /gleicht die Figur hauptfigur\.png/, 'Flow prüft die Hauptfigur nach jedem Block');
+  assert.ok(master.includes(kit.characterSheet), 'Figurenblatt ist vollständig eingebettet');
+  assert.match(master, /hautpfigur|hauptfigur\.png/, 'Flow beschreibt die konsistente Hauptfigur');
   const sheet = await readFile('channel/style-sheet/FIGURENBLATT_PROMPT.txt', 'utf8');
   const sheetPrompt = sheet.split(PROMPT_START)[1].split(PROMPT_END)[0];
   assert.deepEqual(findMetaLeaks(sheetPrompt), []);
@@ -223,5 +223,28 @@ test('v8: eigenständiges Thumbnail, erste Szene bleibt Bild 01', async () => {
   assert.equal(files.has('batches/BLOCK_02_06.txt'), false);
   assert.match(files.get('batches/BLOCK_01_05.txt'), /Bild 01\.png/);
   assert.match(files.get('google-flow-prompt.txt'), /thumbnail-source\.png/);
-  assert.match(files.get('google-flow-prompt.txt'), /Cover darf nie als Bild 01/);
+  assert.match(files.get('google-flow-prompt.txt'), /NOT Bild 01/);
+});
+
+test('Salt one-paste Flow prompt covers all 106 scenes and separates thumbnail', async () => {
+ const base='youtube/2026-KW43_19-10_bis_25-10/warum-war-salz-frueher-so-wertvoll';
+ const meta=JSON.parse(await readFile(path.join(base,'99-technik/video.json'),'utf8'));
+ const plan=JSON.parse(await readFile(path.join(base,'99-technik/SCENE_VISUALS_EN.json'),'utf8'));
+ const kit=await loadPromptKit();
+ const generated=renderPromptFiles(kit,plan,meta);
+ for(const [relative,expected] of generated){
+   if(relative === 'google-flow-prompt.txt' || relative.startsWith('batches/')){
+     const actual=await readFile(path.join(base,'00-bildprompts',relative),'utf8');
+     assert.equal(actual,expected,'outdated '+relative);
+   }
+ }
+ const master=generated.get('google-flow-prompt.txt');
+ assert.equal((master.match(/^SCENE [0-9]+ — output /gm)||[]).length,106);
+ assert.match(master,/Save the selected image separately/);
+ assert.match(master,/CHARACTER MODEL SHEET/);
+ assert.match(master,/SCENE 01 — output Bild 01.png/);
+ assert.ok(generated.has('batches/BLOCK_01_05.txt'));
+ assert.ok(generated.has('batches/BLOCK_106_106.txt'));
+ const phase1=await validatePhase1(base);
+ assert.deepEqual(phase1.errors,[], 'Salz-Phase1 muss nach Migration bestanden sein');
 });

@@ -7,6 +7,7 @@ import path from 'node:path';
 
 export const STYLE_BLOCK_PATH = 'channel/STYLE_BLOCK_EN.txt';
 export const CHARACTER_BIBLE_PATH = 'channel/CHARACTER_BIBLE_EN.txt';
+export const CHARACTER_SHEET_PATH = 'channel/style-sheet/FIGURENBLATT_PROMPT.txt';
 export const SHOT_TYPES = ['close-up', 'medium', 'wide', 'top-down', 'cutaway', 'split'];
 export const PROMPT_START = '▼▼▼ PROMPT START ▼▼▼';
 export const PROMPT_END = '▲▲▲ PROMPT ENDE ▲▲▲';
@@ -49,12 +50,15 @@ export function findMetaLeaks(text) {
 }
 
 export async function loadPromptKit(root = process.cwd(), visualPolicy = null) {
-  const [style, characters] = await Promise.all([
+  const [style, characters, sheet] = await Promise.all([
     readFile(path.resolve(root, STYLE_BLOCK_PATH), 'utf8'),
-    readFile(path.resolve(root, CHARACTER_BIBLE_PATH), 'utf8')
+    readFile(path.resolve(root, CHARACTER_BIBLE_PATH), 'utf8'),
+    readFile(path.resolve(root, CHARACTER_SHEET_PATH), 'utf8')
   ]);
   const visual = visualPolicy ?? JSON.parse(await readFile(path.resolve(root, 'config/visual-policy.json'), 'utf8'));
-  return { style: style.trim(), characters: characters.trim(), protagonist: visual.protagonist ?? null };
+  const characterSheet = sheet.split(PROMPT_START)[1]?.split(PROMPT_END)[0]?.trim();
+  if (!characterSheet) throw new Error('Figurenblatt-Prompt fehlt zwischen den Markierungen.');
+  return { style: style.trim(), characters: characters.trim(), characterSheet, protagonist: visual.protagonist ?? null };
 }
 
 function protagonistLine(kit, scene) {
@@ -141,33 +145,74 @@ export function renderPromptFiles(kit, plan, meta) {
       'Den Dateinamen nie in den Prompt schreiben. Bild speichern unter dem angegebenen Dateinamen.\n\n' + body);
   }
 
-  const coverBlocks = (plan.covers ?? []).map((cover) => block(`TEMP_COVER_${cover.id}.png`, buildCoverPrompt(kit, cover))).join('\n');
-  files.set('google-flow-prompt.txt', renderFlowMaster(meta, scenes.length) + '\n' + coverBlocks);
+  files.set('google-flow-prompt.txt', renderFlowMaster(kit, plan, meta));
   return files;
 }
 
-function renderFlowMaster(meta, count) {
-  const separateThumbnail = meta.coverPolicy?.separateThumbnailFromFirstScene === true;
-  return `GOOGLE FLOW ABLAUF (Pipeline v8) · ${meta.title}
+function renderFlowMaster(kit,plan,meta) {
+ const scenes=plan.scenes??[];
+ const separate=meta.coverPolicy?.separateThumbnailFromFirstScene===true;
+ const world=meta.visualContinuityProfile??{};
+ const count=scenes.length;
+ const covers=(plan.covers??[]).map(c=>`COVER ${c.id} — temporarily save as TEMP_COVER_${c.id}.png\n${PROMPT_START}\n${buildCoverPrompt(kit,c)}\n${PROMPT_END}`).join('\n\n');
+ const register=scenes.map(s=>`SCENE ${pad(s.sceneNumber)} — output Bild ${pad(s.sceneNumber)}.png\nSCENE: ${String(s.brief).trim()}\nCAMERA: ${s.shot}\n${s.protagonist?`MAIN CHARACTER: ${kit.protagonist?.descriptionEn??'a stick figure with a small red scarf'}\n`:''}${s.palette?`COLORS: ${s.palette}\n`:''}`).join('\n');
+ const first=separate?1:2;const groups=[];
+ for(let n=first;n<=count;n+=5)groups.push(`Bild ${pad(n)}–${pad(Math.min(count,n+4))}`);
+ return `ALLES STICKMAN — ONE COMPLETE GOOGLE FLOW PROMPT
+Topic: ${meta.title}
+Output: ${count} separate 16:9 editorial illustrations. DO NOT start until instructions are understood.
 
-Bilder gesamt: ${count} (${separateThumbnail ? 'Bild 01 = erste Videoszene; Cover bleibt separat' : 'Bild 01 = gewähltes Cover (Altmodus)'})
+THIS PROMPT IS SELF-CONTAINED. The full illustrator style, character model sheet image request, historical context, 3 cover prompts, ALL ${count} scene briefs and quality instructions are directly included here. Do not ask for GitHub, other files, batches, an additional prompt, the voice script or any further uploads. Do not invent images, ZIPs or attachments.
 
-1. Fehlt channel/style-sheet/hauptfigur.png: zuerst das Figurenblatt nach channel/style-sheet/FIGURENBLATT_PROMPT.txt erzeugen und selbst prüfen (ohne Rückfrage).
-   Danach hauptfigur.png bei JEDEM Bild als Referenz anhängen. Niemals das Cover oder ein vorheriges Szenenbild als Referenz nutzen.
-2. Die drei Cover-Prompts unten erzeugen (TEMP_COVER_A/B/C.png). Danach STOPP: Nutzer wählt A, B oder C. Vor der Wahl keine Videoszenen erzeugen.
-3. ${separateThumbnail ? 'Gewähltes Cover als „00-bildprompts/thumbnail-source.png“ separat speichern, die zwei anderen löschen. Cover darf nie als Bild 01 der Videotimeline verwendet werden.' : 'Gewähltes Cover als „Bild 01.png“ speichern, die zwei anderen löschen.'}
-4. Danach automatisch die Blöcke in batches/ abarbeiten (je max. 5 Bilder), ohne Rückfragen zwischen den Blöcken. ${separateThumbnail ? 'Bild 01.png bis Bild ' + pad(count) + '.png werden anhand ihrer EIGENEN Szenenprompts generiert.' : ''}
-5. Pro Bild NUR den Text zwischen den Markierungen einfügen. Dateinamen, Nummern oder Zeiten gehören nie in den Prompt.
-6. Nach jedem Block prüfen und nur durchgefallene Bilder neu erzeugen:
-   – Alle Menschen sind Strichfiguren nach PEOPLE-Regel (auch Hände, auch jede Kultur)?
-   – Wo MAIN CHARACTER im Prompt steht: gleicht die Figur hauptfigur.png (Kopf, Augen, Strichstärke, roter Schal)?
-   – Kein Text, keine Zahlen, keine Wasserzeichen im Bild?
-   – Epoche, Ort und Objekte passen zur Szene?
-   – Hauptmotiv auf dem Handy in 2 Sekunden erkennbar?
-7. Am Ende: alle Bilder Bild 01.png bis Bild ${pad(count)}.png flach in 00-bildprompts/images/ und
-   npm run check:youtube-images -- --dir "youtube/${meta.weekFolder}/${meta.topicSlug}" ausführen.
-   Jedes Bild mit gefundenem Text neu erzeugen.${separateThumbnail ? '\n   Außerdem separate Datei 00-bildprompts/thumbnail-source.png auf Existenz, Konsistenz und Textfreiheit prüfen.' : ''}
+PRODUCTION VS. PICTURE: Scene identifiers, numbering, filenames, internal metadata and all headings below are ONLY workflow instructions. Never put any of them into generated image pixels or send them as image content. To make EACH image, pass the entire STYLE BLOCK, PEOPLE BLOCK, optional MAIN CHARACTER line, the individual SCENE description, the CAMERA direction and the TEXT RULE. Repeat the complete style/people rules on every request. Every numbered scene must be a SEPARATE PNG, not a contact sheet.
 
-COVER-PROMPTS
+STYLE BLOCK (include with EVERY scene):
+${kit.style}
+
+PEOPLE BLOCK (include with EVERY scene):
+${kit.characters}
+
+MAIN CHARACTER (include only in scenes calling for the guide):
+${kit.protagonist?.descriptionEn??'a curious stick figure wearing a red scarf'}
+All people, regardless of culture or century, use exactly the same simple stick construction. Historical figures only differ via clothing, hair or props. No realistic faces or hands.
+
+TEXT RULE:
+${NO_TEXT_RULE}
+No pseudo-letters, English captions, production file numbers, or tiny labels. The video editor will add any exact German labels and figures afterwards.
+
+WORLD CONTINUITY:
+Locations and environments: ${world.environmentAnchor??'see scene register'}
+Climate and seasons: ${world.climateSeasonAnchor??'see scene register'}
+Historical periods: ${world.eraAnchor??'see scene register'}
+Colors and mood: ${world.paletteMoodAnchor??'follow the content'}
+Allowed intentional changes: ${(world.allowedIntentionalChanges??[]).join(' | ')||'only explicit ones'}
+Avoid: ${(world.forbiddenUnmotivatedChanges??[]).join(' | ')||'anachronisms and unrelated props'}
+Match local continuity between adjacent frames; historical changes between chapters are intentional. Each image should communicate ONE useful idea instantly at phone size. Vary close-ups, cutaways, maps, comparisons and scale; no formulaic repeated character poses or decorative crowds.
+
+CHARACTER MODEL SHEET: channel/style-sheet/FIGURENBLATT_PROMPT.txt is fully embedded below, NOT an external dependency. Unless an approved matching sheet is available in this conversation, produce it first. Check its five poses, small red scarf, stick hands and no writing. Repeat failed attempts only up to five times. Keep the accepted sheet as hauptfigur.png OUTSIDE the video image set. Attach it as character reference only if provider supports this feature; never attach a cover or previous scene as reference. If attachment is unavailable, repeat the PEOPLE description per image and explain this limit truthfully.
+${PROMPT_START}
+${kit.characterSheet}
+${PROMPT_END}
+
+COVER CANDIDATES — GENERATE EXACTLY THREE DISTINCT IMAGES:
+One big expressive stick-figure face and one important story object, readable on a phone. Bright contrast, top area quiet for later headline. Do not place text into the image.
+${covers}
+
+STOP AFTER THREE COVER IMAGES: Show A/B/C, ask the user to choose, then HARD STOP. Never assume their choice, never generate scene images before selection and never claim an image was generated if tools are not available.
+
+AFTER COVER SELECTION:
+${separate
+?'Save the selected image separately as 00-bildprompts/thumbnail-source.png. This is thumbnail-only, NOT Bild 01. Generate Bild 01.png independently from SCENE 01 (it must match the spoken opening). Discard losing covers from final set.'
+:'LEGACY MODE: Save the selected cover as Bild 01.png, the first video image, and do not regenerate scene 01.'}
+
+AUTOMATIC 5-IMAGE SEQUENCE, AFTER COVER CHOICE:
+Generate precisely ${count} numbered video images in order; images to CREATE after choice start at ${pad(first)} and end at ${pad(count)}. The batches are ${groups.join(', ')||'none'}. No new questions, no need for WEITER, no external files. One image per scene. Interpret camera instructions: close-up = large detail, medium = character and prop, wide = useful environment, top-down = spatial geometry, cutaway = inner mechanism, split = intentional two-part comparison. Any given scene is a content guide, not a caption to draw.
+
+ALL ${count} SCENE BRIEFS (COMPLETE):
+${register}
+
+MANDATORY VISUAL QUALITY CHECK after EACH batch: visually examine actual output files for adherence to the narrative, stick people/hands, historical location/era, legibility at mobile size, missing text/garbled writing, consistent scarves, visual diversity and no production annotations. Repair only failed or missing specific scene images and reinspect. Do not claim to have reviewed actual pixels if you only have written descriptions.
+
+FINAL INTEGRITY: ${count} actual, unique, sequential video frames named Bild 01.png–Bild ${pad(count)}.png, 16:9, no gaps; ${separate?'plus one separately named thumbnail-source.png':'first frame itself doubles as cover'}. Character sheet and losing cover candidates are not video frames. If ZIP export really works, create one genuine downloadable ZIP with correct files; otherwise provide actual per-image downloads. Never pretend to have created files or URLs. Do not generate the MP4 or audio. Report actual completion and first missing scene if generation is interrupted.
 `;
 }

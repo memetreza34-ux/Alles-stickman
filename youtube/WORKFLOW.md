@@ -33,6 +33,8 @@ npm run prompts:youtube -- --dir "youtube/<week>/<slug>"
 npm run validate:youtube-phase1 -- --dir "youtube/<week>/<slug>"
 ```
 
+Der Google-Flow-Link enthält einen vollständigen einmal kopierbaren Prompt samt Figurenblatt, drei Covervarianten, allen Szenen und ihrem Ablauf. Flow braucht keine separaten Prompt- oder Batch-Dateien.
+
 Nach bestandener Phase 1 im Chat **sofort die zwei Links** ausgeben (Google-Flow-Prompt, Voice-Skript), siehe [AGENTS.md](../AGENTS.md).
 
 ## Phase 2 — Bilder und Stimme
@@ -48,6 +50,9 @@ Google Flow arbeitet `00-bildprompts/google-flow-prompt.txt` ab:
 ```bash
 npm run validate:youtube-phase2 -- --dir "youtube/<week>/<slug>"
 npm run check:youtube-images -- --dir "youtube/<week>/<slug>"
+npm run visual-qc:init -- --dir "youtube/<week>/<slug>"
+# VISUAL_QC.json nach tatsächlicher Einzelbildsichtung bearbeiten.
+npm run visual-qc:check -- --dir "youtube/<week>/<slug>"
 ```
 
 Genau eine Stimme in `02-audio/`. Musik nur als echte lizenzfreie Datei (z. B. YouTube Audio Library) in `YOUTUBE_RENDER_PLAN.json → backgroundMusic`. Die per Skript erzeugte Sinus-Musik (`src/audio/generate-assets.py`) vorher anhören.

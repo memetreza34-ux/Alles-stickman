@@ -1,22 +1,9 @@
-GOOGLE FLOW – BLOCK Bild 42–46 · Warum war Salz früher so wertvoll?
+GOOGLE FLOW – BLOCK Bild 61–65 · Warum war Salz früher so wertvoll?
 
 Für jedes Bild NUR den Text zwischen „▼▼▼ PROMPT START ▼▼▼“ und „▲▲▲ PROMPT ENDE ▲▲▲“ in Google Flow einfügen.
 Den Dateinamen nie in den Prompt schreiben. Bild speichern unter dem angegebenen Dateinamen.
 
-Datei: Bild 42.png
-▼▼▼ PROMPT START ▼▼▼
-STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
-
-PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
-
-SCENE: Stick figures in simple tunics shovel white salt from shallow sunlit marsh pools near a wide river mouth, filling baskets, sea birds overhead.
-
-CAMERA: Medium shot: characters from head to knees with the key object clearly visible.
-
-TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
-▲▲▲ PROMPT ENDE ▲▲▲
-
-Datei: Bild 43.png
+Datei: Bild 61.png
 ▼▼▼ PROMPT START ▼▼▼
 STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
 
@@ -24,27 +11,14 @@ PEOPLE: Every person is a simple stick figure built the same way in every era an
 
 MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
 
-SCENE: The red-scarf stick figure leans toward the viewer with one raised eyebrow and a knowing grin, a Roman legionary stick figure in a helmet standing behind it.
+SCENE: The red-scarf stick figure stares in shock at a huge mound of white salt piled on a dinner plate next to a single small fish, a tiny spoon in its hand.
 
 CAMERA: Close-up shot: the main subject fills most of the frame, emotion or detail is unmistakable.
 
 TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
 ▲▲▲ PROMPT ENDE ▲▲▲
 
-Datei: Bild 44.png
-▼▼▼ PROMPT START ▼▼▼
-STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
-
-PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
-
-SCENE: A Roman officer at a wooden pay table pours salt from a large sack into the open bag of a legionary, other soldiers waiting in line.
-
-CAMERA: Medium shot: characters from head to knees with the key object clearly visible.
-
-TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
-▲▲▲ PROMPT ENDE ▲▲▲
-
-Datei: Bild 45.png
+Datei: Bild 62.png
 ▼▼▼ PROMPT START ▼▼▼
 STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
 
@@ -52,24 +26,48 @@ PEOPLE: Every person is a simple stick figure built the same way in every era an
 
 MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
 
-SCENE: Left: a Roman legionary stick figure stares puzzled at a small heap of salt in his palm. Right: the red-scarf stick figure in office clothes holds a pay envelope.
-
-CAMERA: Two clearly separated side-by-side moments that compare one single difference.
-
-TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
-▲▲▲ PROMPT ENDE ▲▲▲
-
-Datei: Bild 46.png
-▼▼▼ PROMPT START ▼▼▼
-STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
-
-PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
-
-MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
-
-SCENE: The red-scarf stick figure crosses its arms and firmly shakes its head, while a Roman officer behind it freezes with a salt sack in his hands.
+SCENE: The red-scarf stick figure in a modern kitchen holds up one small level teaspoon of salt, looking at it thoughtfully, a bowl of soup on the counter.
 
 CAMERA: Close-up shot: the main subject fills most of the frame, emotion or detail is unmistakable.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 63.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: A crowned king stick figure on a throne grins slyly and taps his fingertips together while looking at a long row of salt barrels in his hall.
+
+CAMERA: Close-up shot: the main subject fills most of the frame, emotion or detail is unmistakable.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 64.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: A grand Tang dynasty courtyard with curved red roofs, where official stick figures in long robes guard huge stacks of salt sacks while merchants wait.
+
+CAMERA: Wide shot: the setting is readable, the main subject stays large and clear in the foreground.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+Datei: Bild 65.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+SCENE: A Chinese official in a long robe weighs salt on a large wooden balance scale and hands the sack to a merchant who pays with strings of round coins.
+
+CAMERA: Medium shot: characters from head to knees with the key object clearly visible.
 
 TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
 ▲▲▲ PROMPT ENDE ▲▲▲

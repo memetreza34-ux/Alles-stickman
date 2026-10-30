@@ -104,5 +104,6 @@
       "[WIDERSPRÜCHLICHE UMGEBUNGSWECHSEL]"
     ],
     "adjacentSceneContinuityRequired": true
-  }
+  },
+  "visualQualityGateRequired": true
 }

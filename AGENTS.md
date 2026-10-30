@@ -18,6 +18,8 @@ Formel und Prüfwerte: [SCRIPT_SYSTEM.md](channel/SCRIPT_SYSTEM.md). Kurz: du-Ho
 Regeln: [VISUAL_WORLD.md](channel/VISUAL_WORLD.md).
 
 - Bildprompts **nie von Hand schreiben**. `SCENE_VISUALS_EN.json` ausfüllen, dann `npm run prompts:youtube`. Der Validator lehnt veraltete oder geänderte Prompt-Dateien ab.
+- Der Google-Flow-Master ist **ein einziges vollständig kopierbares Dokument** mit Figurenblatt, Stil, drei Covers, allen Szenen und QC. Batch-Dateien sind optional.
+- Für jedes neue und das migrierte Salzprojekt: nach tatsächlicher Bildproduktion `visual-qc:init`, alle PNGs wirklich ansehen und das SHA256-gebundene Manifest ehrlich freigeben. `visual-qc:check` muss vor jedem Render bestehen. Keine automatisch erfundene Sicht-QC.
 - Briefs auf Englisch, konkret, ohne Dateinamen, Zeiten, Versionen oder Labels.
 - Kein Text im KI-Bild. Zahlen und Begriffe als `overlay` in `BILD_AUDIO_ZUORDNUNG.json`, Thumbnail-Headline in `uploadMetadata.thumbnailText`.
 - Jeder Mensch ist dieselbe Strichfigur, in jeder Kultur und Epoche, auch die Hände.
