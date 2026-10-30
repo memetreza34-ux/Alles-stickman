@@ -4,10 +4,15 @@ import { copyFile, mkdir, rm } from 'node:fs/promises';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { arg, exists, projectPaths, readJson, writeJson } from '../lib/pipeline.js';
+import { validateVisualQc } from '../lib/visual-qc.js';
 
 export async function prepareRender(projectDirectory) {
   const p = projectPaths(projectDirectory);
   const [meta, timeline, renderPlan] = await Promise.all([readJson(p.meta), readJson(p.timeline), readJson(p.renderPlan)]);
+  if (meta.visualQualityGateRequired === true) {
+    const qc = await validateVisualQc(projectDirectory);
+    if (!qc.passed) throw new Error('Render gesperrt: ' + qc.errors.slice(0, 4).join('; '));
+  }
   const renderRoot = path.resolve('public', '__render', meta.videoId);
   await rm(renderRoot, { recursive: true, force: true });
   await mkdir(path.join(renderRoot, 'images'), { recursive: true });
