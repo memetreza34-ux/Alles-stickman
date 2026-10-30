@@ -245,4 +245,6 @@ test('Salt one-paste Flow prompt covers all 106 scenes and separates thumbnail',
  assert.match(master,/SCENE 01 — output Bild 01.png/);
  assert.ok(generated.has('batches/BLOCK_01_05.txt'));
  assert.ok(generated.has('batches/BLOCK_106_106.txt'));
+ const phase1=await validatePhase1(base);
+ assert.deepEqual(phase1.errors,[], 'Salz-Phase1 muss nach Migration bestanden sein');
 });
