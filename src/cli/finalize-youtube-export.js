@@ -110,7 +110,11 @@ export function buildUploadText({ title, description, tags = [], hashtags = [] }
 export async function finalizeExport(projectDirectory) {
   const p = projectPaths(projectDirectory);
   const video = path.join(p.exportDir, 'FINAL_VIDEO.mp4');
-  const cover = path.join(p.imagesDir, 'Bild 01.png');
+  const meta = await readJson(p.meta);
+  const separateThumbnail = meta.coverPolicy?.separateThumbnailFromFirstScene === true;
+  const cover = separateThumbnail
+    ? path.join(p.projectDir, '00-bildprompts', 'thumbnail-source.png')
+    : path.join(p.imagesDir, 'Bild 01.png');
   const thumbnail = path.join(p.exportDir, 'THUMBNAIL.png');
   const uploadFile = path.join(p.exportDir, 'YOUTUBE_UPLOAD.txt');
   const subtitlesFile = path.join(p.exportDir, 'SUBTITLES.srt');
@@ -118,10 +122,9 @@ export async function finalizeExport(projectDirectory) {
   const whisperFile = path.join(p.techDir, 'whisper', 'YOUTUBE_AUDIO_OPTIMIZED.json');
 
   if (!(await exists(video))) throw new Error('FINAL_VIDEO.mp4 fehlt.');
-  if (!(await exists(cover))) throw new Error('Bild 01.png fehlt.');
+  if (!(await exists(cover))) throw new Error(separateThumbnail ? 'Separates thumbnail-source.png fehlt.' : 'Bild 01.png fehlt.');
   if (!(await exists(whisperFile))) throw new Error('Whisper-JSON fehlt. Phase 3 muss vor dem Export erfolgreich gelaufen sein.');
 
-  const meta = await readJson(p.meta);
   const uploadMetadata = meta.uploadMetadata ?? {};
   const title = String(uploadMetadata.title ?? meta.title ?? '').trim();
   let description = String(uploadMetadata.description ?? '').trim();
@@ -165,13 +168,13 @@ export async function finalizeExport(projectDirectory) {
     youtubeDescriptionPresent: Boolean(description),
     youtubeTagCount: tags.length,
     youtubeHashtags: [...buildDescriptionWithHashtags(description, { hashtags, tags }).matchAll(/#[\p{L}\p{N}_]+/gu)].map((match) => match[0]),
-    thumbnailSource: '00-bildprompts/images/Bild 01.png',
+    thumbnailSource: separateThumbnail ? '00-bildprompts/thumbnail-source.png' : '00-bildprompts/images/Bild 01.png',
     coverSha256: await sha256(cover),
     thumbnailSha256: await sha256(thumbnail),
     thumbnailHeadline: thumbnailHeadline || null
   };
   report.thumbnailIdenticalToCover = report.coverSha256 === report.thumbnailSha256;
-  if (!thumbnailHeadline && !report.thumbnailIdenticalToCover) throw new Error('Thumbnail ist nicht identisch zu Bild 01.');
+  if (!thumbnailHeadline && !report.thumbnailIdenticalToCover) throw new Error('Thumbnail ist nicht identisch zur Quelldatei.');
   await writeJson(path.join(p.techDir, 'EXPORT_REPORT.json'), report);
 
   console.log('Export finalisiert: FINAL_VIDEO.mp4 + THUMBNAIL.png + YOUTUBE_UPLOAD.txt + SUBTITLES.srt + TIMED_SCRIPT.txt');

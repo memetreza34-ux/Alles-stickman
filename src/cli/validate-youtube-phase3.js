@@ -29,15 +29,18 @@ export async function validatePhase3(projectDirectory, { postRender = false } = 
     const upload = path.join(p.exportDir, 'YOUTUBE_UPLOAD.txt');
     const subtitles = path.join(p.exportDir, 'SUBTITLES.srt');
     const timedScript = path.join(p.exportDir, 'TIMED_SCRIPT.txt');
-    const cover = path.join(p.imagesDir, 'Bild 01.png');
+    const cover = meta.coverPolicy?.separateThumbnailFromFirstScene === true
+      ? path.join(p.projectDir, '00-bildprompts', 'thumbnail-source.png')
+      : path.join(p.imagesDir, 'Bild 01.png');
 
     if (!(await exists(video))) errors.push('FINAL_VIDEO.mp4 fehlt.');
     else if ((await fileSize(video)) < 100_000) errors.push('FINAL_VIDEO.mp4 ist verdächtig klein.');
 
     if (!(await exists(thumbnail))) errors.push('THUMBNAIL.png fehlt.');
+    if (!(await exists(cover))) errors.push('Thumbnail-Quelldatei fehlt.');
     // Ab v8 trägt das Thumbnail die Headline aus uploadMetadata.thumbnailText und unterscheidet sich vom Cover.
     const headlineThumbnail = Number(meta.pipelineVersion ?? 0) >= 8 && String(meta.uploadMetadata?.thumbnailText ?? '').trim();
-    if (!headlineThumbnail && await exists(thumbnail) && await exists(cover) && (await sha256(thumbnail)) !== (await sha256(cover))) errors.push('THUMBNAIL.png ist nicht byte-identisch zu Bild 01.png.');
+    if (!headlineThumbnail && await exists(thumbnail) && await exists(cover) && (await sha256(thumbnail)) !== (await sha256(cover))) errors.push('THUMBNAIL.png ist nicht byte-identisch zur Thumbnail-Quelldatei.');
 
     for (const [file, label] of [
       [upload, 'YOUTUBE_UPLOAD.txt'],

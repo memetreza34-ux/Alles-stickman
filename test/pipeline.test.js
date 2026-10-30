@@ -212,7 +212,7 @@ test('Skript-Policy erzwingt die kanaltypische Grundstruktur', async () => {
 
 test('Pipeline v8 behält Cover-Gate und 5er-Blöcke, schneller Schnitt, Atempausen, Textcheck', async () => {
   const policy = JSON.parse(await readFile('config/pipeline.json', 'utf8'));
-  assert.equal(policy.coverPolicy.firstSceneIsCover, true);
+  assert.equal(policy.coverPolicy.firstSceneIsCover, false);
   assert.equal(policy.coverPolicy.coverCandidateCount, 3);
   assert.equal(policy.pipelineVersion, 8);
   assert.equal(policy.coverPolicy.autoSelectWinner, false);
@@ -220,7 +220,8 @@ test('Pipeline v8 behält Cover-Gate und 5er-Blöcke, schneller Schnitt, Atempau
   assert.equal(policy.coverPolicy.userSelectionRequired, true);
   assert.equal(policy.coverPolicy.hardStopAfterCoverCandidates, true);
   assert.equal(policy.coverPolicy.continueBeforeUserSelectionForbidden, true);
-  assert.equal(policy.coverPolicy.winnerBecomesFirstSceneAndThumbnail, true);
+  assert.equal(policy.coverPolicy.winnerBecomesFirstSceneAndThumbnail, false);
+  assert.equal(policy.coverPolicy.separateThumbnailFromFirstScene, true);
   assert.equal(policy.coverPolicy.deleteLosingCandidates, true);
   assert.equal(policy.imagePolicy.fixedImageCountForbidden, true);
   assert.equal(policy.imagePolicy.nonCoverGenerationCount, 1);
@@ -270,7 +271,8 @@ test('Projekt-Template v8: Coverwahl, Szenenplan, Story-Engine, Thumbnail-Headli
   assert.equal(meta.coverPolicy.selectionAuthority, 'user');
   assert.equal(meta.coverPolicy.userSelectionRequired, true);
   assert.equal(meta.coverPolicy.hardStopAfterCoverCandidates, true);
-  assert.equal(meta.coverPolicy.winnerBecomesFirstSceneAndThumbnail, true);
+  assert.equal(meta.coverPolicy.winnerBecomesFirstSceneAndThumbnail, false);
+  assert.equal(meta.coverPolicy.separateThumbnailFromFirstScene, true);
   assert.equal(meta.coverPolicy.thumbnailHeadlineOverlay, true);
   assert.equal(meta.imageDensityPolicy.referenceMode, 'style-sheet-optional');
   assert.equal(meta.imageDensityPolicy.sceneOrCoverReferenceForbidden, true);

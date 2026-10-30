@@ -22,18 +22,19 @@
     "thumbnailText": ""
   },
   "coverPolicy": {
-    "firstSceneIsCover": true,
-    "coverImageNumber": 1,
+    "firstSceneIsCover": false,
+    "coverImageNumber": null,
     "coverCandidateCount": 3,
     "autoSelectWinner": false,
     "selectionAuthority": "user",
     "userSelectionRequired": true,
     "hardStopAfterCoverCandidates": true,
     "continueBeforeUserSelectionForbidden": true,
-    "winnerBecomesFirstSceneAndThumbnail": true,
+    "winnerBecomesFirstSceneAndThumbnail": false,
     "deleteLosingCandidates": true,
     "separateThumbnailForbidden": false,
-    "thumbnailHeadlineOverlay": true
+    "thumbnailHeadlineOverlay": true,
+    "separateThumbnailFromFirstScene": true
   },
   "imageDensityPolicy": {
     "contentDrivenImageCountRequired": true,

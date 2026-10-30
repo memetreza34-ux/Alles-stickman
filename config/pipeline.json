@@ -9,15 +9,15 @@
     "height": 1080
   },
   "coverPolicy": {
-    "firstSceneIsCover": true,
-    "coverImageNumber": 1,
+    "firstSceneIsCover": false,
+    "coverImageNumber": null,
     "coverCandidateCount": 3,
     "autoSelectWinner": false,
     "selectionAuthority": "user",
     "userSelectionRequired": true,
     "hardStopAfterCoverCandidates": true,
     "continueBeforeUserSelectionForbidden": true,
-    "winnerBecomesFirstSceneAndThumbnail": true,
+    "winnerBecomesFirstSceneAndThumbnail": false,
     "deleteLosingCandidates": true,
     "temporaryCandidateNames": [
       "TEMP_COVER_A.png",
@@ -25,7 +25,8 @@
       "TEMP_COVER_C.png"
     ],
     "separateThumbnailForbidden": false,
-    "thumbnailHeadlineOverlay": true
+    "thumbnailHeadlineOverlay": true,
+    "separateThumbnailFromFirstScene": true
   },
   "imagePolicy": {
     "fixedImageCountForbidden": true,
