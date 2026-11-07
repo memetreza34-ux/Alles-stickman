@@ -16,6 +16,7 @@
     "validate:youtube-phase2": "node src/cli/validate-youtube-phase2.js",
     "check:youtube-images": "node src/cli/check-youtube-images.js",
     "preflight:youtube": "node src/cli/preflight-youtube.js",
+    "voice:youtube": "node src/cli/generate-youtube-voice.js",
     "optimize:youtube-audio": "node src/cli/optimize-youtube-audio.js",
     "auto-align:youtube": "node src/cli/auto-align-youtube.js",
     "build:youtube-timeline": "node src/cli/build-youtube-timeline.js",

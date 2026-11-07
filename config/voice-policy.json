@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "defaultProfile": "stickman-user-clone",
+  "audioFormat": {
+    "sampleRateHz": 48000,
+    "channels": 1,
+    "codec": "pcm_s16le",
+    "outputFilename": "voice.wav"
+  },
+  "voiceBoost": {
+    "enabled": true,
+    "highpassHz": 75,
+    "deess": {
+      "enabled": true,
+      "intensity": 0.45,
+      "max": 0.55,
+      "frequency": 0.5,
+      "freqHz": 6600,
+      "gainDb": -3.5,
+      "q": 2.0
+    },
+    "warmth": {
+      "freqHz": 180,
+      "gainDb": 2.2,
+      "q": 1.2
+    },
+    "presence": {
+      "freqHz": 3200,
+      "gainDb": 2.0,
+      "q": 1.2
+    },
+    "aiSheenTame": {
+      "freqHz": 11500,
+      "gainDb": -2.5,
+      "q": 1.0
+    },
+    "tubeWarmth": {
+      "enabled": true,
+      "type": "tanh",
+      "threshold": 0.88,
+      "output": 0.98
+    },
+    "roomPresence": {
+      "enabled": true,
+      "inGain": 0.88,
+      "outGain": 0.95,
+      "delays": "18|28",
+      "decays": "0.04|0.02"
+    },
+    "compand": "attacks=0.02:decays=0.15:points=-60/-60|-24/-18|-12/-10|0/-3:gain=1",
+    "limiter": 0.92
+  },
+  "profiles": {
+    "stickman-user-clone": {
+      "provider": "qwen-mlx",
+      "engine": "qwen-mlx",
+      "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16",
+      "voice": "stickman-user-clone",
+      "refAudio": "channel/audio/reference/user_voice_reference.wav",
+      "refMetadata": "channel/audio/reference/user_voice_reference.json",
+      "refText": "Willkommen bei Alles Stickman. Wir erzählen die krassesten und faszinierendsten Geschichten der Menschheit. Unzensiert, direkt und auf den Punkt. Was passiert, wenn alles schief geht und du nur eine einzige Chance hast zu überleben? Genau das finden wir heute heraus. Lehn dich zurück und bleib bis zum Ende dran.",
+      "temperature": 0.7,
+      "tempo": 0.95,
+      "rate": "-5%",
+      "maxPauseSeconds": 0.30,
+      "preStretchMaxPauseSeconds": 0.285,
+      "maxWordsPerChunk": 32,
+      "description": "100% lokales MLX Voice-Cloning auf Apple Silicon (Qwen3-TTS 1.7B Base-Modell): Geklont von der echten Stimme des Kanal-Inhabers via In-Context Learning im ausgewogenen 0.95x Tempo mit knackigen 0.30s Pausen und Broadcaster-Audio-Mastering."
+    }
+  }
+}

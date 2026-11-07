@@ -55,7 +55,15 @@ npm run visual-qc:init -- --dir "youtube/<week>/<slug>"
 npm run visual-qc:check -- --dir "youtube/<week>/<slug>"
 ```
 
-Genau eine Stimme in `02-audio/`. Musik nur als echte lizenzfreie Datei (z. B. YouTube Audio Library) in `YOUTUBE_RENDER_PLAN.json → backgroundMusic`. Die per Skript erzeugte Sinus-Musik (`src/audio/generate-assets.py`) vorher anhören.
+Genau eine Stimme in `02-audio/`. Die Stimme wird automatisiert und lokal per Qwen3-TTS MLX Voice-Cloning erzeugt:
+
+```bash
+npm run voice:youtube -- --dir "youtube/<week>/<slug>"
+# Optional: --profile stickman-user-clone (0.95x Tempo, max 0.30s Pausen, 32 Wörter/Chunk)
+# Optional ohne Mastering: --no-boost
+```
+
+Erzeugt `02-audio/voice.wav` mit dem kanalspezifischen Voice-Profil `stickman-user-clone` (Qwen3-TTS 1.7B MLX Voice-Clone aus `channel/audio/reference/user_voice_reference.wav` mit `0.95x` Tempo, maximal `0.30s` Pausen und `32` Wörtern pro Chunk) sowie Broadcast Voice Boost (Studio Humanizer: 75 Hz Lowcut, 6,6 kHz De-Essing, 180 Hz Wärme, 3,2 kHz Präsenz, 11,5 kHz Dämpfung digitaler Schärfe, Tanh Röhrensättigung, Studio Booth Raumpräsenz, Dynamic Compander, Limiter). Musik nur als echte lizenzfreie Datei in `YOUTUBE_RENDER_PLAN.json → backgroundMusic`. Die per Skript erzeugte Sinus-Musik (`src/audio/generate-assets.py`) vorher anhören.
 
 ## Phase 3 — Audio, Render, Export
 

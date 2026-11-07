@@ -1,0 +1,25 @@
+{
+  "voiceId": "stickman-user-clone",
+  "name": "Master Creator Voice Reference (0.95x Tempo)",
+  "language": "de-DE",
+  "source": "Unbenanntes Video.mp4",
+  "audioFile": "channel/audio/reference/user_voice_reference.wav",
+  "text": "Willkommen bei Alles Stickman. Wir erzählen die krassesten und faszinierendsten Geschichten der Menschheit. Unzensiert, direkt und auf den Punkt. Was passiert, wenn alles schief geht und du nur eine einzige Chance hast zu überleben? Genau das finden wir heute heraus. Lehn dich zurück und bleib bis zum Ende dran.",
+  "sampleRateHz": 24000,
+  "channels": 1,
+  "codec": "pcm_s16le",
+  "durationSeconds": 18.475,
+  "synthesisConfig": {
+    "engine": "qwen-mlx",
+    "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16",
+    "temperature": 0.7,
+    "tempo": 0.95,
+    "rate": "-5%",
+    "maxPauseSeconds": 0.3,
+    "preStretchMaxPauseSeconds": 0.285,
+    "maxWordsPerChunk": 32,
+    "targetLufs": -16.0,
+    "truePeakDb": -1.5
+  },
+  "purpose": "Zentrale Master-Referenzstimme für 100% lokales MLX Qwen3-TTS Base In-Context Voice Cloning (alle YouTube-Kanäle)"
+}
