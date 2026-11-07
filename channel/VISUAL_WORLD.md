@@ -1,6 +1,6 @@
 # Bildwelt v15 — Alles Stickman
 
-Gilt ab Pipeline v8. Projekte bis v7 nutzen weiter [MASTER_VISUAL_STYLE_EN.txt](MASTER_VISUAL_STYLE_EN.txt) (v14, Archiv).
+Gilt ab Pipeline v8 für **alle Longform-Videos (16:9)** und **Shorts / Reels (9:16)**. Die Bildwelt, Strichfiguren-Konstruktion, Tusche-Ästhetik, Hauptfigur (roter Schal) und die Null-Text-Regel sind für beide Formate zu 100 % identisch (bei Shorts lediglich als vertikale 9:16-Komposition). Projekte bis v7 nutzen weiter [MASTER_VISUAL_STYLE_EN.txt](MASTER_VISUAL_STYLE_EN.txt) (v14, Archiv).
 
 ## Was gleich bleibt
 

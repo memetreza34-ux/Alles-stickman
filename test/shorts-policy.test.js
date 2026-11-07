@@ -36,6 +36,13 @@ test('shorts: shorts-policy.json ist vollständig kalibriert (60s–90s Dauer, 9
   assert.equal(policy.flowWorkflow.namingScheme, 'Bild NN.png');
   assert.equal(policy.flowWorkflow.flatImageFolder, '00-bildprompts/images');
 
+  // Bildwelt: Zu 100 % identisch mit Longform
+  assert.equal(policy.visuals.identicalVisualWorldWithLongform, true);
+  assert.equal(policy.visuals.visualWorld.styleId, 'alles-stickman-editorial-v1');
+  assert.equal(policy.visuals.visualWorld.visualStyleEdition, 'stickman-editorial-v15');
+  assert.equal(policy.visuals.visualWorld.allPeopleStickFigures, true);
+  assert.equal(policy.visuals.visualWorld.noTextInImages, true);
+
   // Workflow: Phase 1 erzeugt Stimme direkt; Phase 2 dient nur den Bildern
   assert.equal(policy.production.voiceGeneratedInPhase1, true);
   assert.equal(policy.production.userGeneratesOnlyImagesInPhase2, true);
@@ -80,6 +87,11 @@ test('workflow: AGENTS.md und WORKFLOW.md dokumentieren Phase 1 Stimme und Short
   assert.match(workflow, /Drei Cover erzeugen/i);
   assert.match(workflow, /5er-Schritten/i);
   assert.match(workflow, /00-bildprompts\/images/i);
+
+  // Prüfung der 100 % identischen Bildwelt in AGENTS.md und VISUAL_WORLD.md
+  assert.match(agents, /100 % identische Bildwelt für Longform & Shorts/i);
+  const visualWorldDoc = await readFile('channel/VISUAL_WORLD.md', 'utf8');
+  assert.match(visualWorldDoc, /alle Longform-Videos.*und.*Shorts/i);
 });
 
 test('shorts: shorts-template besitzt die vollständige 5-teilige YouTube-Struktur', async () => {

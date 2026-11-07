@@ -54,6 +54,7 @@ Formel und Prüfwerte: [SCRIPT_SYSTEM.md](channel/SCRIPT_SYSTEM.md). Kurz: du-Ho
 
 Regeln: [VISUAL_WORLD.md](channel/VISUAL_WORLD.md).
 
+- **100 % identische Bildwelt für Longform & Shorts:** Shorts nutzen dieselbe Bildwelt v15, denselben 2D-Tusche-Editorial-Stil, dieselbe Character-Bible (jeder Mensch ist dieselbe Strichfigur, keine realistischen Hände/Finger), dieselbe Hauptfigur mit rotem Schal, dasselbe Figurenblatt (`hauptfigur.png`) und dieselbe Null-Text-Regel. Der einzige Unterschied ist die vertikale 9:16-Komposition.
 - Bildprompts **nie von Hand schreiben**. `SCENE_VISUALS_EN.json` ausfüllen, dann `npm run prompts:youtube`. Der Validator lehnt veraltete oder geänderte Prompt-Dateien ab.
 - Der Google-Flow-Master ist **ein einziges vollständig kopierbares Dokument** mit Figurenblatt, Stil, drei Covers, allen Szenen und QC. Batch-Dateien sind optional.
 - Für jedes neue und das migrierte Salzprojekt: nach tatsächlicher Bildproduktion `visual-qc:init`, alle PNGs wirklich ansehen und das SHA256-gebundene Manifest ehrlich freigeben. `visual-qc:check` muss vor jedem Render bestehen. Keine automatisch erfundene Sicht-QC.
