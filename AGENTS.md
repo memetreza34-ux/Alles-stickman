@@ -21,7 +21,7 @@ Ablauf und Befehle: [youtube/WORKFLOW.md](youtube/WORKFLOW.md). Neue Videos und 
   - **Direkte Stimmenerzeugung in Phase 1:** Der Agent generiert sofort das Voiceover über die lokale MLX Qwen3-TTS Engine (`npm run voice:youtube`) mit `stickman-user-clone` (`0.95x` Tempo, `0.30s` Pausen, `32` Wörter/Chunk).
   - Dadurch stehen Audiodauer, Timing und Satzpausen bereits vor der Bildproduktion unverrückbar fest.
 - **Phase 2 (Nutzer-Fokus):**
-  - Der Nutzer kümmert sich **ausschließlich um die Generierung der Bilder** (bei Longform: 3 Cover erzeugen, 1 auswählen, danach 5er-Blöcke; bei Shorts: direkte 9:16-Bilder).
+  - Der Nutzer kümmert sich **ausschließlich um die Generierung der Bilder** (sowohl bei Longform als auch bei Shorts: 3 Cover erzeugen, 1 auswählen, danach automatische 5er-Blöcke; alle Bilder lückenlos flach in `00-bildprompts/images/`).
   - Der Nutzer muss **keine** Audios aufnehmen oder Stimmdateien anfassen.
 - **Phase 3 (Agent autonom):**
   - Audio-Alignment via Whisper, Overlays/Captions, Pacing-Validierung, Remotion-Rendering und Post-Video-Review.
@@ -62,9 +62,9 @@ Regeln: [VISUAL_WORLD.md](channel/VISUAL_WORLD.md).
 - Jeder Mensch ist dieselbe Strichfigur, in jeder Kultur und Epoche, auch die Hände.
 - Nur Bilder generieren, wenn der Nutzer Bilder will. Bei einer reinen Prompt-Anfrage nur Prompts liefern.
 
-## Google Flow: genau ein Human-Gate
+## Google Flow: genau ein Human-Gate (Longform & Shorts)
 
-3 Cover → **HARD STOP** → Nutzer wählt A/B/C → danach alle 5er-Blöcke automatisch, ohne Rückfrage und ohne `WEITER`. Cover und vorherige Szenen nie als Referenz, nur `channel/style-sheet/hauptfigur.png` (erzeugt Flow beim ersten Mal selbst). Am Ende `npm run check:youtube-images` und gefundene Bilder neu erzeugen.
+Exakt gleicher Ablauf für Longform und Shorts: 3 Cover (A/B/C) → **HARD STOP** → Nutzer wählt A/B/C → danach alle 5er-Blöcke automatisch, ohne Rückfrage und ohne `WEITER` generieren → nach Standard benennen (`Bild 01.png` bis `Bild NN.png`) → am Ende liegen das Cover und alle Bilder lückenlos zusammen in einem einzigen flachen Ordner (`00-bildprompts/images/`). Cover und vorherige Szenen nie als Referenz, nur `channel/style-sheet/hauptfigur.png` (erzeugt Flow beim ersten Mal selbst). Am Ende `npm run check:youtube-images` und gefundene Bilder neu erzeugen.
 
 ## Phase-1-Abschluss: SOFORT ZWEI LINKS IM CHAT
 

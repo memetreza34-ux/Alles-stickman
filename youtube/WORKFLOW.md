@@ -73,10 +73,11 @@ Nach bestandener Phase 1 im Chat **sofort die zwei Links** ausgeben (Google-Flow
 Der Nutzer kümmert sich **ausschließlich um die Bilder**. Es müssen keine Audios mehr aufgenommen oder Stimmen gewählt werden! Google Flow oder Midjourney arbeitet `00-bildprompts/google-flow-prompt.txt` ab:
 
 1. Fehlt `channel/style-sheet/hauptfigur.png`, erzeugt und prüft Flow das Figurenblatt zuerst selbst; danach hängt es an jedem Bild als Referenz. Cover und vorherige Szenen sind nie Referenz.
-2. Für Longform: Drei Cover erzeugen → **STOPP**, Nutzer wählt A/B/C → Gewinner separat als `00-bildprompts/thumbnail-source.png` speichern, Rest löschen. (Bei Shorts entfällt die Cover-Wahl; erstes Bild ist Bild 01).
-3. Danach alle Videoszenen **ab Bild 01** aus `batches/` generieren, ohne Rückfragen. Pro Bild nur den Text zwischen den Markierungen einfügen.
-4. Nach jedem Block: nur durchgefallene Bilder neu erzeugen (keine Strichfigur, Text im Bild, falsche Epoche, unlesbar).
-5. Alle Bilder flach in `00-bildprompts/images/`, dann:
+2. Für Longform & Shorts: Drei Cover erzeugen → **STOPP**, Nutzer wählt A/B/C → Gewinner separat als `00-bildprompts/thumbnail-source.png` (bzw. im Bilderordner) speichern, Verlierer löschen.
+3. Danach alle Videoszenen **ab Bild 01** in automatischen **5er-Schritten** aus `batches/` generieren, ohne Rückfragen. Pro Bild nur den Text zwischen den Markierungen einfügen.
+4. Alle Bilder ordentlich nach Schema benennen (`Bild 01.png`, `Bild 02.png`, etc.).
+5. Nach jedem Block: nur durchgefallene Bilder neu erzeugen (keine Strichfigur, Text im Bild, falsche Epoche, unlesbar).
+6. Wenn fertig: **alles zusammen in einem einzigen flachen Ordner ablegen**: `00-bildprompts/images/` (Cover + alle durchnummerierten Szenenbilder), dann:
 
 ```bash
 npm run validate:youtube-phase2 -- --dir "youtube/<week>/<slug>"

@@ -27,12 +27,19 @@ Die finalen Upload-Metadaten werden in `99-technik/video.json` unter `uploadMeta
 - Bildprompts erzeugt (`npm run prompts:youtube`): [ ]
 - Phase-1-Validierung bestanden: [ ]
 
-## Phase 2 (Nutzer – Reine Bildgenerierung)
+## Phase 2 (Nutzer – Reine Bildgenerierung via Google Flow)
 
-- Bilder im Format 9:16 vertikal erstellen
-- Keine Audio-Aufnahmen oder Audio-Arbeit durch den Nutzer
-- Bilder in `00-bildprompts/images/Bild 01.png` etc. ablegen
-- Finale Bildanzahl lückenlos
+- Google Flow arbeitet One-Paste Master ab: [ ]
+- 3 vertikale Cover erzeugt (TEMP_COVER_A/B/C): [ ]
+- HARD STOP nach den 3 Cover-Kandidaten: [ ]
+- Nutzerwahl A/B/C erhalten: [ ]
+- Gewählte Variante als Cover gespeichert, Verlierer gelöscht: [ ]
+- Erster 5er-Block (Bild 01–05) erzeugt: [ ]
+- Weitere 5er-Blöcke automatisch ohne Rückfrage erzeugt: [ ]
+- Bilder nummeriert als Bild 01.png bis Bild NN.png: [ ]
+- Finaler Soll-Ist-Bildercheck durchgeführt: [ ]
+- Alle Bilder flach und lückenlos in `00-bildprompts/images/`: [ ]
+- Keine Audio-Aufnahmen oder Audio-Arbeit durch den Nutzer: [ ]
 
 ## Phase 3 (Agent – Schnitt, Render & Export)
 

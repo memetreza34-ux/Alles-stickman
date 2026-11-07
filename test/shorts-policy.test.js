@@ -29,6 +29,13 @@ test('shorts: shorts-policy.json ist vollständig kalibriert (60s–90s Dauer, 9
   assert.deepEqual(policy.visuals.targetAverageHoldSeconds, [1.5, 2.8]);
   assert.equal(policy.visuals.hardMaximumSeconds, 6.0);
 
+  // Google Flow Workflow: 3 Cover zuerst -> 5er-Schritte -> Umbenennung -> flacher Ordner
+  assert.equal(policy.flowWorkflow.coversFirst, true);
+  assert.equal(policy.flowWorkflow.coverCandidateCount, 3);
+  assert.equal(policy.flowWorkflow.generationBatchSize, 5);
+  assert.equal(policy.flowWorkflow.namingScheme, 'Bild NN.png');
+  assert.equal(policy.flowWorkflow.flatImageFolder, '00-bildprompts/images');
+
   // Workflow: Phase 1 erzeugt Stimme direkt; Phase 2 dient nur den Bildern
   assert.equal(policy.production.voiceGeneratedInPhase1, true);
   assert.equal(policy.production.userGeneratesOnlyImagesInPhase2, true);
@@ -66,6 +73,13 @@ test('workflow: AGENTS.md und WORKFLOW.md dokumentieren Phase 1 Stimme und Short
   // Prüfung der hohen Bilddichte in AGENTS.md und WORKFLOW.md
   assert.match(agents, /Viel mehr Bilder als bei Longform/i);
   assert.match(workflow, /Viel mehr Bilder als bei Longform/i);
+
+  // Prüfung des Google Flow Ablaufs (Cover -> 5er-Schritte -> Umbenennung -> flacher Ordner)
+  assert.match(agents, /3 Cover \(A\/B\/C\)/i);
+  assert.match(agents, /5er-Blöcke/i);
+  assert.match(workflow, /Drei Cover erzeugen/i);
+  assert.match(workflow, /5er-Schritten/i);
+  assert.match(workflow, /00-bildprompts\/images/i);
 });
 
 test('shorts: shorts-template besitzt die vollständige 5-teilige YouTube-Struktur', async () => {
