@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 2,
+  "status": "READY",
+  "howTo": "brief = englisch, konkret: wer tut was mit welchem Objekt, welche Emotion, welcher Ort/Epoche. Kein Text, keine Dateinamen, keine Zeiten. shot = close-up | medium | wide | top-down | cutaway | split. protagonist = true, wenn die wiederkehrende Hauptfigur (roter Schal) vorkommt. Vertikale Komposition für 9:16.",
+  "covers": [
+    {
+      "id": "A",
+      "brief": "A huge terrified stick-figure face fills the frame, eyes wide with horror as bright orange flames burst out from an ancient Roman stone toilet below, with a wooden sponge-stick lying nearby on the marble floor. High contrast, top third calm for title."
+    },
+    {
+      "id": "B",
+      "brief": "A shocked stick figure wearing a red scarf recoils in disgust while holding up a dripping sea sponge tied to a wooden stick, with an ancient crowded Roman communal latrine visible in the background. High contrast, top third clear."
+    },
+    {
+      "id": "C",
+      "brief": "A wide-eyed stick figure sitting uncomfortably on an ancient marble latrine bench tightly sandwiched between other Romans, pointing downward in shock at a giant sewer rat emerging from the toilet hole. High contrast, top third calm."
+    }
+  ],
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "brief": "A clean modern bathroom where the stick figure with a red scarf walks calmly toward a bright white ceramic toilet.",
+      "shot": "medium",
+      "protagonist": true
+    },
+    {
+      "sceneNumber": 2,
+      "brief": "The stick figure hand turns a small metal lock on a modern wooden bathroom door, safely securing complete privacy.",
+      "shot": "close-up",
+      "protagonist": true
+    },
+    {
+      "sceneNumber": 3,
+      "brief": "A sudden jump into ancient Rome where the red-scarf stick figure stands stunned amidst huge classical marble arches and bustling streets.",
+      "shot": "wide",
+      "protagonist": true
+    },
+    {
+      "sceneNumber": 4,
+      "brief": "A long ancient Roman stone bench viewed from above, showing several round holes carved into the slab with running water underneath.",
+      "shot": "top-down",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 5,
+      "brief": "The red-scarf stick figure sits uncomfortably squeezed between two Roman citizens wrapped in togas on the open marble bench.",
+      "shot": "medium",
+      "protagonist": true
+    },
+    {
+      "sceneNumber": 6,
+      "brief": "A large public Roman latrine hall with twenty stick-figure citizens sitting shoulder to shoulder along stone walls without any dividers.",
+      "shot": "wide",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 7,
+      "brief": "A wide panoramic view over ancient Rome showing the giant Colosseum and thousands of tiny stick figures crowding narrow stone avenues.",
+      "shot": "wide",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 8,
+      "brief": "A clean cutaway illustration of a crowded Roman apartment insula building showing multiple cramped floors without any pipes or running water.",
+      "shot": "cutaway",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 9,
+      "brief": "A Roman stick figure standing inside a dim room holding an empty terracotta chamber pot with an exhausted, frustrated expression.",
+      "shot": "close-up",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 10,
+      "brief": "A crowd of Roman stick citizens rushing down a paved stone street toward the grand entrance of a public bathhouse.",
+      "shot": "wide",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 11,
+      "brief": "The grand stone portal of a Roman public latrine where several citizens in tunics enter beneath a carved stone archway.",
+      "shot": "medium",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 12,
+      "brief": "Two Roman stick figures sitting side by side on marble toilet openings, casually chatting with friendly hand gestures.",
+      "shot": "medium",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 13,
+      "brief": "A Roman stick figure sitting on the stone toilet opening while enthusiastically unrolling a parchment scroll to discuss current politics.",
+      "shot": "close-up",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 14,
+      "brief": "Two wealthy Roman stickmen shaking stick hands across the toilet bench to finalize a business deal while remaining seated.",
+      "shot": "medium",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 15,
+      "brief": "The red-scarf stick figure looking downward with massive wide panic eyes and visible sweat drops forming on the round head.",
+      "shot": "close-up",
+      "protagonist": true
+    },
+    {
+      "sceneNumber": 16,
+      "brief": "A modern roll of soft toilet paper shown clearly with a bold red diagonal cancellation line crossed directly over it.",
+      "shot": "close-up",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 17,
+      "brief": "A stick hand reaching down to grasp the wooden handle of a Roman tersorium tool with a natural sea sponge attached.",
+      "shot": "close-up",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 18,
+      "brief": "A detailed illustration of the tersorium stick featuring rough fibrous sea sponge lashed securely to the carved wooden rod with cord.",
+      "shot": "medium",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 19,
+      "brief": "The red-scarf stick figure pinching its nose with one hand and leaning backward in intense, unmistakable disgust.",
+      "shot": "close-up",
+      "protagonist": true
+    },
+    {
+      "sceneNumber": 20,
+      "brief": "A weathered wooden bucket sitting on the stone floor holding several dripping tersorium sticks immersed in murky liquid.",
+      "shot": "medium",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 21,
+      "brief": "Water sloshing inside a wooden bucket with coarse sea salt crystals and vinegar droplets floating beside the submerged sponge.",
+      "shot": "close-up",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 22,
+      "brief": "A top-down bird eye view showing three different stick hands reaching at the same moment toward a single communal sponge bucket.",
+      "shot": "top-down",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 23,
+      "brief": "A dark sinister shadow creeping upward through the circular hole of an ancient stone toilet seat, signaling hidden underground peril.",
+      "shot": "cutaway",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 24,
+      "brief": "A vertical cutaway view showing running sewage water flowing swiftly through a deep stone channel directly underneath the toilet holes.",
+      "shot": "cutaway",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 25,
+      "brief": "The massive subterranean vaulted brick tunnel of the Cloaca Maxima carrying dark wastewater deep beneath ancient Rome.",
+      "shot": "wide",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 26,
+      "brief": "A split comparison comparing a modern curved water-trap pipe that blocks gas on the left with an open ancient straight hole on the right.",
+      "shot": "split",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 27,
+      "brief": "A vicious stick-figure rat with sharp teeth and long whiskers poking its head boldly out of an open stone toilet hole.",
+      "shot": "close-up",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 28,
+      "brief": "A cutaway view showing green poisonous gas bubbles accumulating under high pressure in the enclosed underground masonry channel.",
+      "shot": "cutaway",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 29,
+      "brief": "A sudden burst of bright yellow and orange fire exploding upward out of the circular opening of a stone toilet seat.",
+      "shot": "medium",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 30,
+      "brief": "A terrified Roman stick figure jumping into the air in shock as tall flames leap out from the bench beneath his toga.",
+      "shot": "close-up",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 31,
+      "brief": "A group of Roman citizens backing away from the toilet bench with raised hands, staring nervously at the dark openings.",
+      "shot": "medium",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 32,
+      "brief": "The red-scarf stick figure kneeling respectfully with clasped hands before a colorful fresco painted directly on the latrine wall.",
+      "shot": "medium",
+      "protagonist": true
+    },
+    {
+      "sceneNumber": 33,
+      "brief": "A small stone altar with burning incense resting on the tiled floor immediately beside the marble latrine bench.",
+      "shot": "medium",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 34,
+      "brief": "An ancient wall painting of the goddess Fortuna holding a cornucopia and wheel of fortune right above the toilet bench.",
+      "shot": "close-up",
+      "protagonist": false
+    },
+    {
+      "sceneNumber": 35,
+      "brief": "The red-scarf stick figure standing comfortably inside a quiet, pristine modern bathroom with bright white tiles and shiny chrome fixtures.",
+      "shot": "medium",
+      "protagonist": true
+    },
+    {
+      "sceneNumber": 36,
+      "brief": "The happy red-scarf stick figure hugging a soft roll of clean toilet paper with a relieved smile behind a closed bathroom door.",
+      "shot": "close-up",
+      "protagonist": true
+    }
+  ]
+}

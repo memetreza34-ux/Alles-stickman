@@ -1,0 +1,255 @@
+ALLES STICKMAN — ONE COMPLETE GOOGLE FLOW PROMPT
+Topic: Wie funktionierten Toiletten im antiken Rom?
+Output: 36 separate 9:16 editorial illustrations. DO NOT start until instructions are understood.
+
+THIS PROMPT IS SELF-CONTAINED. The full illustrator style, character model sheet image request, historical context, 3 cover prompts, ALL 36 scene briefs and quality instructions are directly included here. Do not ask for GitHub, other files, batches, an additional prompt, the voice script or any further uploads. Do not invent images, ZIPs or attachments.
+
+PRODUCTION VS. PICTURE: Scene identifiers, numbering, filenames, internal metadata and all headings below are ONLY workflow instructions. Never put any of them into generated image pixels or send them as image content. To make EACH image, pass the entire STYLE BLOCK, PEOPLE BLOCK, optional MAIN CHARACTER line, the individual SCENE description, the CAMERA direction and the TEXT RULE. Repeat the complete style/people rules on every request. Every numbered scene must be a SEPARATE PNG, not a contact sheet.
+
+STYLE BLOCK (include with EVERY scene):
+Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE BLOCK (include with EVERY scene):
+Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+MAIN CHARACTER (include only in scenes calling for the guide):
+the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+All people, regardless of culture or century, use exactly the same simple stick construction. Historical figures only differ via clothing, hair or props. No realistic faces or hands.
+
+TEXT RULE:
+No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+No pseudo-letters, English captions, production file numbers, or tiny labels. The video editor will add any exact German labels and figures afterwards.
+
+WORLD CONTINUITY:
+Locations and environments: Antike römische Marmorlatrinen und Stadtszenen mit klassischen Säulen und Torbögen im handgezeichneten 2D-Tusche-Cartoondesign
+Climate and seasons: warmes mediterranes Sonnenlicht in den Außenbereichen, kühles gedämpftes Licht in den Latrinenhallen
+Historical periods: Antikes Römisches Reich (ca. 1. bis 2. Jahrhundert n. Chr.) im Kontrast zum sauberen modernen Badezimmer
+Colors and mood: Helle warme Sandtöne, Terrakotta und kühler Marmor, markante schwarze Tuschelinien
+Allowed intentional changes: Szenenwechsel zwischen modernem weiß-gefliestem Badezimmer und antiker römischer Marmorlatrine | Unterirdischer Querschnitt zur dunklen Kanalisation der Cloaca Maxima
+Avoid: Moderne Plastikobjekte in antiken Szenen | Halbrealistische Menschen oder detaillierte Gesichter statt einheitlicher Strichfiguren
+Match local continuity between adjacent frames; historical changes between chapters are intentional. Each image should communicate ONE useful idea instantly at phone size. Vary close-ups, cutaways, maps, comparisons and scale; no formulaic repeated character poses or decorative crowds.
+
+CHARACTER MODEL SHEET: channel/style-sheet/FIGURENBLATT_PROMPT.txt is fully embedded below, NOT an external dependency. Unless an approved matching sheet is available in this conversation, produce it first. Check its five poses, small red scarf, stick hands and no writing. Repeat failed attempts only up to five times. Keep the accepted sheet as hauptfigur.png OUTSIDE the video image set. Attach it as character reference only if provider supports this feature; never attach a cover or previous scene as reference. If attachment is unavailable, repeat the PEOPLE description per image and explain this limit truthfully.
+▼▼▼ PROMPT START ▼▼▼
+Character model sheet for a recurring YouTube explainer character in 16:9 widescreen on a plain warm off-white background. Hand-drawn 2D editorial cartoon style: confident dark charcoal ink outlines with a slightly irregular hand-inked feel, flat colors and soft selective shading.
+
+The character is a simple stick figure: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without fingers, and a small red scarf tied around the neck.
+
+Show this same character five times in one row, evenly spaced, full body and the same size: front view neutral, side view walking, three-quarter view curious, front view surprised, front view worried. Head shape, line weight, proportions and scarf color are identical in all five poses.
+
+No text, letters, numbers, labels, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+COVER CANDIDATES — GENERATE EXACTLY THREE DISTINCT IMAGES:
+One big expressive stick-figure face and one important story object, readable on a phone. Bright contrast, top area quiet for later headline. Do not place text into the image.
+COVER A — temporarily save as TEMP_COVER_A.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight. Bright, saturated colors and very high contrast for a YouTube thumbnail.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE: A huge terrified stick-figure face fills the frame, eyes wide with horror as bright orange flames burst out from an ancient Roman stone toilet below, with a wooden sponge-stick lying nearby on the marble floor. High contrast, top third calm for title.
+
+CAMERA: One big stick-figure face with a strong, instantly readable emotion fills about 40 percent of the frame, plus one clear story object. Simple background. Keep the top third calm and empty for a headline that is added later.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+COVER B — temporarily save as TEMP_COVER_B.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight. Bright, saturated colors and very high contrast for a YouTube thumbnail.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE: A shocked stick figure wearing a red scarf recoils in disgust while holding up a dripping sea sponge tied to a wooden stick, with an ancient crowded Roman communal latrine visible in the background. High contrast, top third clear.
+
+CAMERA: One big stick-figure face with a strong, instantly readable emotion fills about 40 percent of the frame, plus one clear story object. Simple background. Keep the top third calm and empty for a headline that is added later.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+COVER C — temporarily save as TEMP_COVER_C.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight. Bright, saturated colors and very high contrast for a YouTube thumbnail.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE: A wide-eyed stick figure sitting uncomfortably on an ancient marble latrine bench tightly sandwiched between other Romans, pointing downward in shock at a giant sewer rat emerging from the toilet hole. High contrast, top third calm.
+
+CAMERA: One big stick-figure face with a strong, instantly readable emotion fills about 40 percent of the frame, plus one clear story object. Simple background. Keep the top third calm and empty for a headline that is added later.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+STOP AFTER THREE COVER IMAGES: Show A/B/C, ask the user to choose, then HARD STOP. Never assume their choice, never generate scene images before selection and never claim an image was generated if tools are not available.
+
+AFTER COVER SELECTION:
+Save the selected image separately as 00-bildprompts/thumbnail-source.png. This is thumbnail-only, NOT Bild 01. Generate Bild 01.png independently from SCENE 01 (it must match the spoken opening). Discard losing covers from final set.
+
+AUTOMATIC 5-IMAGE SEQUENCE, AFTER COVER CHOICE:
+Generate precisely 36 numbered video images in order; images to CREATE after choice start at 01 and end at 36. The batches are Bild 01–05, Bild 06–10, Bild 11–15, Bild 16–20, Bild 21–25, Bild 26–30, Bild 31–35, Bild 36–36. No new questions, no need for WEITER, no external files. One image per scene. Interpret camera instructions: close-up = large detail, medium = character and prop, wide = useful environment, top-down = spatial geometry, cutaway = inner mechanism, split = intentional two-part comparison. Any given scene is a content guide, not a caption to draw.
+
+ALL 36 SCENE BRIEFS (COMPLETE):
+SCENE 01 — output Bild 01.png
+SCENE: A clean modern bathroom where the stick figure with a red scarf walks calmly toward a bright white ceramic toilet.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 02 — output Bild 02.png
+SCENE: The stick figure hand turns a small metal lock on a modern wooden bathroom door, safely securing complete privacy.
+CAMERA: close-up
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 03 — output Bild 03.png
+SCENE: A sudden jump into ancient Rome where the red-scarf stick figure stands stunned amidst huge classical marble arches and bustling streets.
+CAMERA: wide
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 04 — output Bild 04.png
+SCENE: A long ancient Roman stone bench viewed from above, showing several round holes carved into the slab with running water underneath.
+CAMERA: top-down
+
+SCENE 05 — output Bild 05.png
+SCENE: The red-scarf stick figure sits uncomfortably squeezed between two Roman citizens wrapped in togas on the open marble bench.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 06 — output Bild 06.png
+SCENE: A large public Roman latrine hall with twenty stick-figure citizens sitting shoulder to shoulder along stone walls without any dividers.
+CAMERA: wide
+
+SCENE 07 — output Bild 07.png
+SCENE: A wide panoramic view over ancient Rome showing the giant Colosseum and thousands of tiny stick figures crowding narrow stone avenues.
+CAMERA: wide
+
+SCENE 08 — output Bild 08.png
+SCENE: A clean cutaway illustration of a crowded Roman apartment insula building showing multiple cramped floors without any pipes or running water.
+CAMERA: cutaway
+
+SCENE 09 — output Bild 09.png
+SCENE: A Roman stick figure standing inside a dim room holding an empty terracotta chamber pot with an exhausted, frustrated expression.
+CAMERA: close-up
+
+SCENE 10 — output Bild 10.png
+SCENE: A crowd of Roman stick citizens rushing down a paved stone street toward the grand entrance of a public bathhouse.
+CAMERA: wide
+
+SCENE 11 — output Bild 11.png
+SCENE: The grand stone portal of a Roman public latrine where several citizens in tunics enter beneath a carved stone archway.
+CAMERA: medium
+
+SCENE 12 — output Bild 12.png
+SCENE: Two Roman stick figures sitting side by side on marble toilet openings, casually chatting with friendly hand gestures.
+CAMERA: medium
+
+SCENE 13 — output Bild 13.png
+SCENE: A Roman stick figure sitting on the stone toilet opening while enthusiastically unrolling a parchment scroll to discuss current politics.
+CAMERA: close-up
+
+SCENE 14 — output Bild 14.png
+SCENE: Two wealthy Roman stickmen shaking stick hands across the toilet bench to finalize a business deal while remaining seated.
+CAMERA: medium
+
+SCENE 15 — output Bild 15.png
+SCENE: The red-scarf stick figure looking downward with massive wide panic eyes and visible sweat drops forming on the round head.
+CAMERA: close-up
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 16 — output Bild 16.png
+SCENE: A modern roll of soft toilet paper shown clearly with a bold red diagonal cancellation line crossed directly over it.
+CAMERA: close-up
+
+SCENE 17 — output Bild 17.png
+SCENE: A stick hand reaching down to grasp the wooden handle of a Roman tersorium tool with a natural sea sponge attached.
+CAMERA: close-up
+
+SCENE 18 — output Bild 18.png
+SCENE: A detailed illustration of the tersorium stick featuring rough fibrous sea sponge lashed securely to the carved wooden rod with cord.
+CAMERA: medium
+
+SCENE 19 — output Bild 19.png
+SCENE: The red-scarf stick figure pinching its nose with one hand and leaning backward in intense, unmistakable disgust.
+CAMERA: close-up
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 20 — output Bild 20.png
+SCENE: A weathered wooden bucket sitting on the stone floor holding several dripping tersorium sticks immersed in murky liquid.
+CAMERA: medium
+
+SCENE 21 — output Bild 21.png
+SCENE: Water sloshing inside a wooden bucket with coarse sea salt crystals and vinegar droplets floating beside the submerged sponge.
+CAMERA: close-up
+
+SCENE 22 — output Bild 22.png
+SCENE: A top-down bird eye view showing three different stick hands reaching at the same moment toward a single communal sponge bucket.
+CAMERA: top-down
+
+SCENE 23 — output Bild 23.png
+SCENE: A dark sinister shadow creeping upward through the circular hole of an ancient stone toilet seat, signaling hidden underground peril.
+CAMERA: cutaway
+
+SCENE 24 — output Bild 24.png
+SCENE: A vertical cutaway view showing running sewage water flowing swiftly through a deep stone channel directly underneath the toilet holes.
+CAMERA: cutaway
+
+SCENE 25 — output Bild 25.png
+SCENE: The massive subterranean vaulted brick tunnel of the Cloaca Maxima carrying dark wastewater deep beneath ancient Rome.
+CAMERA: wide
+
+SCENE 26 — output Bild 26.png
+SCENE: A split comparison comparing a modern curved water-trap pipe that blocks gas on the left with an open ancient straight hole on the right.
+CAMERA: split
+
+SCENE 27 — output Bild 27.png
+SCENE: A vicious stick-figure rat with sharp teeth and long whiskers poking its head boldly out of an open stone toilet hole.
+CAMERA: close-up
+
+SCENE 28 — output Bild 28.png
+SCENE: A cutaway view showing green poisonous gas bubbles accumulating under high pressure in the enclosed underground masonry channel.
+CAMERA: cutaway
+
+SCENE 29 — output Bild 29.png
+SCENE: A sudden burst of bright yellow and orange fire exploding upward out of the circular opening of a stone toilet seat.
+CAMERA: medium
+
+SCENE 30 — output Bild 30.png
+SCENE: A terrified Roman stick figure jumping into the air in shock as tall flames leap out from the bench beneath his toga.
+CAMERA: close-up
+
+SCENE 31 — output Bild 31.png
+SCENE: A group of Roman citizens backing away from the toilet bench with raised hands, staring nervously at the dark openings.
+CAMERA: medium
+
+SCENE 32 — output Bild 32.png
+SCENE: The red-scarf stick figure kneeling respectfully with clasped hands before a colorful fresco painted directly on the latrine wall.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 33 — output Bild 33.png
+SCENE: A small stone altar with burning incense resting on the tiled floor immediately beside the marble latrine bench.
+CAMERA: medium
+
+SCENE 34 — output Bild 34.png
+SCENE: An ancient wall painting of the goddess Fortuna holding a cornucopia and wheel of fortune right above the toilet bench.
+CAMERA: close-up
+
+SCENE 35 — output Bild 35.png
+SCENE: The red-scarf stick figure standing comfortably inside a quiet, pristine modern bathroom with bright white tiles and shiny chrome fixtures.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 36 — output Bild 36.png
+SCENE: The happy red-scarf stick figure hugging a soft roll of clean toilet paper with a relieved smile behind a closed bathroom door.
+CAMERA: close-up
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+
+MANDATORY VISUAL QUALITY CHECK after EACH batch: visually examine actual output files for adherence to the narrative, stick people/hands, historical location/era, legibility at mobile size, missing text/garbled writing, consistent scarves, visual diversity and no production annotations. Repair only failed or missing specific scene images and reinspect. Do not claim to have reviewed actual pixels if you only have written descriptions.
+
+FINAL INTEGRITY: 36 actual, unique, sequential video frames named Bild 01.png–Bild 36.png, 9:16, no gaps; plus one separately named thumbnail-source.png. Character sheet and losing cover candidates are not video frames. If ZIP export really works, create one genuine downloadable ZIP with correct files; otherwise provide actual per-image downloads. Never pretend to have created files or URLs. Do not generate the MP4 or audio. Report actual completion and first missing scene if generation is interrupted.

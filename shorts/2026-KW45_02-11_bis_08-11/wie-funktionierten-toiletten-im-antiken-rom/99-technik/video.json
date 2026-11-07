@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "pipelineVersion": 8,
+  "videoId": "short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom",
+  "weekFolder": "2026-KW45_02-11_bis_08-11",
+  "topicSlug": "wie-funktionierten-toiletten-im-antiken-rom",
+  "title": "Wie funktionierten Toiletten im antiken Rom?",
+  "topic": "Wie funktionierten Toiletten im antiken Rom?",
+  "format": "short",
+  "mode": "shorts",
+  "language": "de",
+  "aspectRatio": "9:16",
+  "status": "planned",
+  "visualPolicyFile": "config/visual-policy.json",
+  "visualStyleId": "alles-stickman-editorial-v1",
+  "targetDurationSeconds": 75,
+  "targetDurationRangeSeconds": [
+    60,
+    90
+  ],
+  "plannedImageCount": 36,
+  "uploadMetadata": {
+    "title": "Wie funktionierten Toiletten im antiken Rom? #shorts",
+    "description": "Du sitzt auf dem Klo – mit 20 Fremden nebeneinander! 🏛️ Wie gingen die alten Römer ohne Toilettenpapier aufs Klo und was hat es mit dem berüchtigten Schwamm am Stock auf sich? Die eklige Wahrheit über römische Latrinen.\n\n#shorts #AllesStickman #geschichte #antikesrom #wissen #fakten",
+    "tags": [
+      "Toiletten im antiken Rom",
+      "Antikes Rom",
+      "Römer Alltag",
+      "Tersorium",
+      "Geschichte",
+      "Stickman",
+      "Erklärvideo",
+      "Shorts"
+    ],
+    "hashtags": [
+      "#shorts",
+      "#AllesStickman",
+      "#geschichte"
+    ],
+    "thumbnailText": "Klo im alten Rom"
+  },
+  "coverPolicy": {
+    "firstSceneIsCover": false,
+    "coverImageNumber": null,
+    "coverCandidateCount": 3,
+    "autoSelectWinner": false,
+    "selectionAuthority": "user",
+    "userSelectionRequired": true,
+    "hardStopAfterCoverCandidates": true,
+    "continueBeforeUserSelectionForbidden": true,
+    "winnerBecomesFirstSceneAndThumbnail": false,
+    "deleteLosingCandidates": true,
+    "separateThumbnailForbidden": false,
+    "thumbnailHeadlineOverlay": true,
+    "separateThumbnailFromFirstScene": true
+  },
+  "imageDensityPolicy": {
+    "contentDrivenImageCountRequired": true,
+    "fixedImageCountForbidden": true,
+    "oneImageOneVisualPurpose": true,
+    "highDensityShortsPacing": true,
+    "targetAverageHoldSeconds": [
+      1.5,
+      2.8
+    ],
+    "reviewAboveSeconds": 3.8,
+    "preferSplitAboveSeconds": 4.5,
+    "hardMaximumSeconds": 6,
+    "minimumUsefulHoldSeconds": 0.8,
+    "generationBatchSize": 5,
+    "maxConcurrentGenerations": 5,
+    "nonCoverGenerationCount": 1,
+    "fillerImagesForbidden": true,
+    "referenceMode": "style-sheet-optional",
+    "hardStopAfterEachBatch": false,
+    "userContinueRequiredBetweenBatches": false,
+    "batchContinuationAuthority": "agent",
+    "explicitContinueRequired": false,
+    "batchExecutionMode": "automatic-sequential",
+    "automaticBatchContinuation": true,
+    "continueUntilImageNN": true,
+    "finalIntegrityCheckRequired": true,
+    "finalCountMustMatchPlannedImageCount": true,
+    "missingImageRepairRequired": true,
+    "repairOnlyMissingOrBroken": true,
+    "finalImageDirectory": "00-bildprompts/images",
+    "finalFolderMustBeFlat": true,
+    "finalFolderOnlyNumberedImages": true,
+    "sceneOrCoverReferenceForbidden": true
+  },
+  "audioPolicy": {
+    "singleFinalVoiceoverRequired": true,
+    "userOriginalMustRemainUntouched": true,
+    "playbackRate": 1,
+    "loudnessTargetLufs": -14,
+    "truePeakDbtp": -1,
+    "sampleRateHz": 48000,
+    "voiceProfile": "stickman-user-clone",
+    "voiceTempo": 0.95,
+    "maxPauseSeconds": 0.3
+  },
+  "renderPolicy": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "endHoldSeconds": 1.3,
+    "backgroundMusic": false,
+    "subtitles": false
+  },
+  "phase1Ready": true,
+  "imagesReady": false,
+  "audioReady": true,
+  "renderReady": false,
+  "createdAt": "2026-11-07T17:43:21.778Z",
+  "updatedAt": "2026-11-07T17:43:21.778Z",
+  "visualContinuityProfile": {
+    "continuityMode": "story-world",
+    "environmentAnchor": "Antike römische Marmorlatrinen und Stadtszenen mit klassischen Säulen und Torbögen im handgezeichneten 2D-Tusche-Cartoondesign",
+    "climateSeasonAnchor": "warmes mediterranes Sonnenlicht in den Außenbereichen, kühles gedämpftes Licht in den Latrinenhallen",
+    "eraAnchor": "Antikes Römisches Reich (ca. 1. bis 2. Jahrhundert n. Chr.) im Kontrast zum sauberen modernen Badezimmer",
+    "paletteMoodAnchor": "Helle warme Sandtöne, Terrakotta und kühler Marmor, markante schwarze Tuschelinien",
+    "allowedIntentionalChanges": [
+      "Szenenwechsel zwischen modernem weiß-gefliestem Badezimmer und antiker römischer Marmorlatrine",
+      "Unterirdischer Querschnitt zur dunklen Kanalisation der Cloaca Maxima"
+    ],
+    "forbiddenUnmotivatedChanges": [
+      "Moderne Plastikobjekte in antiken Szenen",
+      "Halbrealistische Menschen oder detaillierte Gesichter statt einheitlicher Strichfiguren"
+    ],
+    "adjacentSceneContinuityRequired": true
+  },
+  "visualQualityGateRequired": true
+}

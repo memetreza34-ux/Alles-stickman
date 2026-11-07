@@ -14,7 +14,8 @@ export function phase1Links(meta, { repositoryUrl = REPOSITORY_URL, branch = DEF
   if (!/^https:\/\/github\.com\/[\w.-]+\/[\w.-]+$/.test(root)) {
     throw new Error('Phase-1-Links benötigen eine gültige GitHub-Repository-URL.');
   }
-  const base = `${root}/blob/${safeSegment(branch, 'branch')}/youtube/${safeSegment(meta.weekFolder, 'weekFolder')}/${safeSegment(meta.topicSlug, 'topicSlug')}`;
+  const typeFolder = (meta.format === 'short' || meta.mode === 'shorts') ? 'shorts' : 'youtube';
+  const base = `${root}/blob/${safeSegment(branch, 'branch')}/${typeFolder}/${safeSegment(meta.weekFolder, 'weekFolder')}/${safeSegment(meta.topicSlug, 'topicSlug')}`;
   return {
     project: base.replace('/blob/', '/tree/'),
     flowPrompt: `${base}/00-bildprompts/google-flow-prompt.txt`,

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-07T17:54:53.947Z",
+  "projectDirectory": "shorts/2026-KW45_02-11_bis_08-11/wie-funktionierten-toiletten-im-antiken-rom",
+  "scriptFile": "01-voice-script/voice-script.txt",
+  "outputAudioFile": "02-audio/voice.wav",
+  "audioFingerprintSha256": "45e10d4cdb1a5becf9e65bcef71f2d30532bf6ff534e1ab5fb5c06076f3308d9",
+  "profile": "stickman-user-clone",
+  "provider": "qwen-mlx",
+  "voice": "stickman-user-clone",
+  "settings": {
+    "rate": "-5%",
+    "tempo": 0.95,
+    "maxPauseSeconds": 0.3,
+    "preStretchMaxPauseSeconds": 0.285,
+    "maxWordsPerChunk": 32,
+    "temperature": 0.7,
+    "refAudio": "channel/audio/reference/user_voice_reference.wav"
+  },
+  "voiceBoostApplied": true,
+  "durationSeconds": 71.962,
+  "estimatedOptimizedSeconds": 64.3,
+  "wordCount": 208,
+  "wordsPerMinute": 173.4,
+  "targetDurationSeconds": 75,
+  "targetDurationRangeSeconds": [
+    60,
+    90
+  ],
+  "matchesDurationTarget": true
+}

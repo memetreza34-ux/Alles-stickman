@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 3,
+  "status": "READY",
+  "language": "de",
+  "format": "short",
+  "targetDurationSeconds": 75,
+  "targetDurationRangeSeconds": [
+    60,
+    90
+  ],
+  "sections": [
+    {
+      "id": "hook",
+      "name": "Hook",
+      "startAnchor": "Wenn du heute auf die Toilette gehst",
+      "hookType": "problem",
+      "curiosityGap": "Warum saß man in Rom mit 20 Fremden nebeneinander und wie funktionierte die Hygiene ohne Papier?",
+      "titleConnection": "Stellt die antiken römischen Toiletten direkt dem heutigen Alltag gegenüber.",
+      "payoffPromise": "Der Zuschauer erfährt das Geheimnis des Tersoriums, die Gefahren der Kanalisation und den Kult um Fortuna.",
+      "sceneSettingOnly": false
+    },
+    {
+      "id": "setup",
+      "name": "Setup",
+      "startAnchor": "Die Stadt Rom zählte über eine Million Einwohner",
+      "goal": "Erklärt, warum es in Rom fast keine privaten Toiletten gab und warum öffentliche Latrinen nötig waren."
+    },
+    {
+      "id": "main",
+      "name": "Hauptteil",
+      "startAnchor": "Man saß direkt nebeneinander",
+      "goal": "Eskalation: Smalltalk auf Steinbänken -> Ekel vor dem gemeinsamen Schwamm am Stock -> Lebensgefahr durch Ratten und brennbare Gase."
+    },
+    {
+      "id": "resolution",
+      "name": "Auflösung",
+      "startAnchor": "Aus purer Angst vor dem giftigen Abgrund",
+      "goal": "Zeigt den skurrilen Schutzaltar der Göttin Fortuna und erklärt die Bedeutung der Religion beim Toilettengang."
+    },
+    {
+      "id": "closing",
+      "name": "Schluss",
+      "startAnchor": "Wenn du also das nächste Mal dein Badezimmer betrittst",
+      "goal": "Rückbezug zum modernen Alltag und Dankbarkeit für die eigene Kloschüssel."
+    }
+  ],
+  "storyEngine": {
+    "openingContrast": {
+      "today": "Eigene verschlossene Badezimmertür und absolute Privatsphäre.",
+      "past": "Offene Steinbank ohne Trennwände, Schulter an Schulter mit zwanzig Fremden.",
+      "anchor": "Wenn du heute auf die Toilette gehst"
+    },
+    "stakes": "Unglaubliche Infektionsgefahren durch gemeinsame Schwämme, aufsteigende Kanalratten und explodierende Methangase.",
+    "escalation": [
+      {
+        "problem": "Schulter an Schulter ohne jede Intimität auf der offenen Steinbank zu sitzen.",
+        "solution": "Man machte aus der Not eine Tugend, plauderte über Politik und schloss Geschäfte ab.",
+        "anchor": "Man saß direkt nebeneinander"
+      },
+      {
+        "problem": "Absolut kein Toilettenpapier für die tägliche Hygiene vorhanden.",
+        "solution": "Erfindung des Tersoriums: ein Meerschwamm, der an einem Holzstab festgebunden war.",
+        "anchor": "Doch das eigentliche Grauen begann beim Saubermachen"
+      },
+      {
+        "problem": "Der Meerschwamm wird im Gemeinschaftseimer von allen geteilt und verbreitet Keime.",
+        "solution": "Gemeinsame Nutzung trotz Ekel, da es keine individuellen Alternativen gab.",
+        "anchor": "Und das Ekelhafteste: Dieser Schwamm stand in einem gemeinsamen Eimer"
+      },
+      {
+        "problem": "Fehlende Geruchsverschlüsse ließen brennbares Methangas und hungrige Ratten nach oben steigen.",
+        "solution": "Fließendes Abwasser unter den Sitzen spülte Fäkalien in die Cloaca Maxima, konnte Gase aber nicht stoppen.",
+        "anchor": "Unter den Steinsitzen strömte zwar fließendes Abwasser"
+      },
+      {
+        "problem": "Aus den Rohren krochen Ungeziefer und plötzliche Methangas-Explosionen entzündeten sich an Fackeln.",
+        "solution": "Aufstellen von Schutzaltären und Schutzgebete an die Göttin Fortuna.",
+        "anchor": "Aus den Rohren krochen hungrige Ratten"
+      }
+    ],
+    "evidence": [
+      {
+        "claim": "In Ostia Antica und Pompeji legten Archäologen Dutzende Gemeinschaftslatrinen mit bis zu fünfzig Sitzen ohne Trennwände frei.",
+        "source": "https://www.worldhistory.org/article/1841/roman-toilets-hygiene/",
+        "anchor": "Stattdessen strömten die Bürger in öffentliche Latrinen"
+      },
+      {
+        "claim": "Der Philosoph Seneca dokumentierte die berüchtigte Nutzung des Schwamms am Holzstab (Tersorium/Xylospongium) im Gemeinschaftseimer.",
+        "source": "https://www.bmj.com/content/345/bmj.e8287",
+        "anchor": "Stattdessen griff man zum Tersorium"
+      },
+      {
+        "claim": "In den Latrinen von Pompeji fand man Wandmalereien der Schutzgöttin Fortuna gegen aufsteigende Flammen und böse Geister.",
+        "source": "https://www.nationalgeographic.com/history/article/ancient-rome-toilets-hygiene-parasites",
+        "anchor": "Aus purer Angst vor dem giftigen Abgrund beteten die Römer"
+      }
+    ],
+    "callback": {
+      "anchor": "Wenn du also das nächste Mal dein Badezimmer betrittst",
+      "callsBackTo": "Wenn du heute auf die Toilette gehst"
+    }
+  }
+}
