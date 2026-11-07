@@ -1,48 +1,61 @@
 # YouTube Workflow — Alles Stickman (Pipeline v8)
 
-Deutschsprachiger faceless Erklärkanal: Menschheit, Überleben, Erfindungen, Alltag früher. Ein Video pro Woche, 6–7 Minuten, nur Stimme + Bilder.
+Deutschsprachiger faceless Erklärkanal: Menschheit, Überleben, Erfindungen, Alltag früher.
+- **Longform-Videos (16:9 Querformat):** 6–7 Minuten (360–420 s), Ø 3–5 s pro Bild, Recherche mit Story-Engine, 3 Cover zur Auswahl.
+- **Shorts / Reels (9:16 Hochformat):** **mindestens 60 Sekunden (1 Minute) bis höchstens 90 Sekunden (1,5 Minuten) Audio** (60–90 s), schnelles Pacing (Ø 2–3,5 s pro Bild), vertikaler Strichfiguren-Fokus, direkter Konflikt-Hook in den ersten 3 Sekunden.
 
 ```text
-Thema → Recherche mit Story-Material → Skript nach Formel → Szenenplan → Prompts generieren
-→ Phase-1-Check → 3 Cover → STOPP, Nutzer wählt → 5er-Blöcke automatisch → Bild-Textcheck
-→ Stimme → Audio mit Atempausen → Alignment → Timeline mit Overlays → Render → Export mit Thumbnail-Headline
-→ ehrliche Video-Review → Erkenntnisse ins System
+Phase 1: Recherche → Skript nach Formel → Szenenplan/Prompts → STIMME DIREKT GENERIEREN (stickman-user-clone 0.95x)
+Phase 2: Nutzer generiert NUR DIE BILDER (Cover wählen + Szenenbilder via Google Flow / Midjourney)
+Phase 3: Audio-Alignment → Overlays/Captions → Remotion Render (16:9 oder 9:16) → Export → Review
 ```
 
 Voraussetzungen: Node ≥ 24, ffmpeg/ffprobe, whisper, tesseract, `npm install`.
 
-## Phase 1 — Planung
+## Phase 1 — Planung, Skript & direkte Stimmengenerierung (Agent autonom)
 
 ```bash
 npm run topic:youtube -- --topic "THEMA"
 npm run create:youtube -- --topic "THEMA" --title "TITEL" --week "YYYY-KWNN_DD-MM_bis_DD-MM" --slug "slug"
 ```
 
-1. **Recherche** (`99-technik/RECHERCHE.md`): mindestens 5 konkrete Momente mit Zahl/Jahr/Ort/Name und URL, plus der größte Mythos.
-2. **Skript** (`01-voice-script/voice-script.txt`) nach [Skript-System](../channel/SCRIPT_SYSTEM.md): du-Hook, Fallhöhe, Kette, Beweise, Rückbezug.
+1. **Recherche** (`99-technik/RECHERCHE.md`): mindestens 5 konkrete Momente mit Zahl/Jahr/Ort/Name und URL, plus der größte Mythos (bei Shorts: 1 fokussiertes Kernereignis).
+2. **Skript** (`01-voice-script/voice-script.txt`) nach [Skript-System](../channel/SCRIPT_SYSTEM.md): du-Hook, Fallhöhe, Kette, Beweise, Rückbezug. Bei Shorts: 60–90 s Zieldauer.
 3. **SCRIPT_PLAN.json**: Abschnitte + `storyEngine` mit exakten Ankern.
-4. **Bild-Audio-Zuordnung** (`BILD_AUDIO_ZUORDNUNG.json`): ein Bild pro Halbsatz bis Satz, Ø 3–5 s. Optional pro Bild:
+4. **Bild-Audio-Zuordnung** (`BILD_AUDIO_ZUORDNUNG.json`): ein Bild pro Halbsatz bis Satz, Ø 3–5 s (Shorts: Ø 2–3,5 s). Optional pro Bild:
    - `overlay`: `{ "text": "1707", "style": "caption", "position": "top" }`. Styles: `caption` (große gelbe Schrift), `card` (Textkarte, ersetzt das Bild), `label` (kleines Schild). Ziel: mindestens 1 Overlay pro 12 Bilder.
    - `motion`: `{ "zoomFrom": 1, "zoomTo": 1.15, "focusX": 40, "focusY": 55 }` für gezielte Fahrten auf das Wichtige.
-5. **Szenenplan** (`SCENE_VISUALS_EN.json`): pro Bild englischer `brief`, `shot`, `protagonist`; 3 Cover-Ideen. Siehe [Bildwelt](../channel/VISUAL_WORLD.md).
+5. **Szenenplan** (`SCENE_VISUALS_EN.json`): pro Bild englischer `brief`, `shot`, `protagonist`; 3 Cover-Ideen (bei Longform). Siehe [Bildwelt](../channel/VISUAL_WORLD.md).
 6. **Upload-Daten** in `video.json → uploadMetadata`: Titel als Frage, Beschreibung, Tags, 2–3 Hashtags, `thumbnailText` (2–4 Wörter).
-7. Prompts erzeugen und prüfen:
+7. Prompts erzeugen:
 
 ```bash
 npm run prompts:youtube -- --dir "youtube/<week>/<slug>"
+```
+
+8. **Verbindlich in Phase 1 — Fertige Stimme direkt generieren:**
+   Der Agent erzeugt sofort das Voiceover über die lokale Apple Silicon MLX Qwen3-TTS Engine mit deiner kalibrierten Stimme:
+
+```bash
+npm run voice:youtube -- --dir "youtube/<week>/<slug>"
+```
+
+   Erzeugt `02-audio/voice.wav` mit `stickman-user-clone` (`0.95x` Tempo, feste `0.30s` Pausen, `32` Wörter/Chunk) und Broadcast Voice Boost. Dadurch steht die exakte Dauer schon in Phase 1 unverrückbar fest.
+
+9. Phase-1-Validierung ausführen:
+
+```bash
 npm run validate:youtube-phase1 -- --dir "youtube/<week>/<slug>"
 ```
 
-Der Google-Flow-Link enthält einen vollständigen einmal kopierbaren Prompt samt Figurenblatt, drei Covervarianten, allen Szenen und ihrem Ablauf. Flow braucht keine separaten Prompt- oder Batch-Dateien.
-
 Nach bestandener Phase 1 im Chat **sofort die zwei Links** ausgeben (Google-Flow-Prompt, Voice-Skript), siehe [AGENTS.md](../AGENTS.md).
 
-## Phase 2 — Bilder und Stimme
+## Phase 2 — Reine Bildgenerierung (Nutzer-Fokus)
 
-Google Flow arbeitet `00-bildprompts/google-flow-prompt.txt` ab:
+Der Nutzer kümmert sich **ausschließlich um die Bilder**. Es müssen keine Audios mehr aufgenommen oder Stimmen gewählt werden! Google Flow oder Midjourney arbeitet `00-bildprompts/google-flow-prompt.txt` ab:
 
 1. Fehlt `channel/style-sheet/hauptfigur.png`, erzeugt und prüft Flow das Figurenblatt zuerst selbst; danach hängt es an jedem Bild als Referenz. Cover und vorherige Szenen sind nie Referenz.
-2. Drei Cover erzeugen → **STOPP**, Nutzer wählt A/B/C → Gewinner separat als `00-bildprompts/thumbnail-source.png` speichern, Rest löschen.
+2. Für Longform: Drei Cover erzeugen → **STOPP**, Nutzer wählt A/B/C → Gewinner separat als `00-bildprompts/thumbnail-source.png` speichern, Rest löschen. (Bei Shorts entfällt die Cover-Wahl; erstes Bild ist Bild 01).
 3. Danach alle Videoszenen **ab Bild 01** aus `batches/` generieren, ohne Rückfragen. Pro Bild nur den Text zwischen den Markierungen einfügen.
 4. Nach jedem Block: nur durchgefallene Bilder neu erzeugen (keine Strichfigur, Text im Bild, falsche Epoche, unlesbar).
 5. Alle Bilder flach in `00-bildprompts/images/`, dann:
@@ -55,17 +68,7 @@ npm run visual-qc:init -- --dir "youtube/<week>/<slug>"
 npm run visual-qc:check -- --dir "youtube/<week>/<slug>"
 ```
 
-Genau eine Stimme in `02-audio/`. Die Stimme wird automatisiert und lokal per Qwen3-TTS MLX Voice-Cloning erzeugt:
-
-```bash
-npm run voice:youtube -- --dir "youtube/<week>/<slug>"
-# Optional: --profile stickman-user-clone (0.95x Tempo, max 0.30s Pausen, 32 Wörter/Chunk)
-# Optional ohne Mastering: --no-boost
-```
-
-Erzeugt `02-audio/voice.wav` mit dem kanalspezifischen Voice-Profil `stickman-user-clone` (Qwen3-TTS 1.7B MLX Voice-Clone aus `channel/audio/reference/user_voice_reference.wav` mit `0.95x` Tempo, maximal `0.30s` Pausen und `32` Wörtern pro Chunk) sowie Broadcast Voice Boost (Studio Humanizer: 75 Hz Lowcut, 6,6 kHz De-Essing, 180 Hz Wärme, 3,2 kHz Präsenz, 11,5 kHz Dämpfung digitaler Schärfe, Tanh Röhrensättigung, Studio Booth Raumpräsenz, Dynamic Compander, Limiter). Musik nur als echte lizenzfreie Datei in `YOUTUBE_RENDER_PLAN.json → backgroundMusic`. Die per Skript erzeugte Sinus-Musik (`src/audio/generate-assets.py`) vorher anhören.
-
-## Phase 3 — Audio, Render, Export
+## Phase 3 — Audio-Alignment, Render, Export (Agent autonom)
 
 ```bash
 npm run phase3:youtube -- --dir "youtube/<week>/<slug>"

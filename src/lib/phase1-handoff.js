@@ -38,17 +38,17 @@ export function renderPhase1Handoff(meta, { phase1Validated = false } = {}) {
   const links = phase1Links(meta);
   return `# Phase 1: Sofort loslegen — ${meta.title || meta.topic || 'YouTube-Video'}
 
-**Status:** ${phase1Validated ? 'Phase 1 validiert — bereit für Cover und Sprecheraufnahme' : 'Links vorbereitet — Phase-1-Validierung noch ausstehend'}
+**Status:** ${phase1Validated ? 'Phase 1 validiert (Skript, Bildprompts & Stimme bereit) — bereit für Bildproduktion in Phase 2' : 'Links vorbereitet — Phase-1-Validierung noch ausstehend'}
 
 ## 1. Google-Flow-Prompt
 [**Google-Flow-Prompt öffnen**](${links.flowPrompt})
 
 Öffnet den vollständigen Bildproduktions-Prompt in GitHub. Zum Starten in Google Flow kopieren oder über den vorgesehenen Agenten-Workflow weitergeben.
 
-## 2. Voice-over-Skript
+## 2. Voice-over-Skript & Audio
 [**Voice-over-Skript öffnen**](${links.voiceScript})
 
-Öffnet das vollständige Sprecher-Skript in GitHub; für TTS kopieren oder an die Sprecherpipeline übergeben.
+Das Voiceover wird direkt in Phase 1 per Qwen3-TTS Voice-Cloning erzeugt (\`02-audio/voice.wav\`, stickman-user-clone 0.95x). Der Nutzer generiert in Phase 2 ausschließlich die Bilder.
 
 ## Direktlinks für ChatGPT (nach Phase 1)
 ${phase1ChatLinks(meta)}

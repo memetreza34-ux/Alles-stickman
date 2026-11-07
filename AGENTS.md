@@ -1,6 +1,30 @@
 # Alles Stickman — Regeln für alle Agenten (Claude, ChatGPT, Codex, Google Flow)
 
-Ablauf und Befehle: [youtube/WORKFLOW.md](youtube/WORKFLOW.md). Neue Videos laufen mit **Pipeline v8**.
+Ablauf und Befehle: [youtube/WORKFLOW.md](youtube/WORKFLOW.md). Neue Videos und Shorts laufen mit **Pipeline v8**.
+
+## Kanalformate & Audio-Länge
+
+1. **Longform-Videos (16:9 Querformat):**
+   - Zieldauer: **6–7 Minuten** (360–420 Sekunden)
+   - Visueller Takt: Ø 3–5 Sekunden pro Bild
+   - Struktur: Du-Hook, Kette, 3 belegte Momente, Rückbezug
+2. **Shorts / Reels (9:16 Hochformat, 1080×1920):**
+   - Zieldauer: **mindestens 60 Sekunden (1 Minute) bis höchstens 90 Sekunden (1,5 Minuten) Audio** (60–90 s)
+   - Schneller Bildtakt: Ø 2–3,5 Sekunden pro Bild
+   - Vertikale Bildkomposition, sofortiger Konflikt-Hook in den ersten 3 Sekunden
+
+## Verbindlicher 3-Phasen-Ablauf (wer macht was)
+
+- **Phase 1 (Agent autonom):**
+  - Thema prüfen, Recherche und Skript schreiben.
+  - Bildprompts für Google Flow erstellen (`npm run prompts:youtube`).
+  - **Direkte Stimmenerzeugung in Phase 1:** Der Agent generiert sofort das Voiceover über die lokale MLX Qwen3-TTS Engine (`npm run voice:youtube`) mit `stickman-user-clone` (`0.95x` Tempo, `0.30s` Pausen, `32` Wörter/Chunk).
+  - Dadurch stehen Audiodauer, Timing und Satzpausen bereits vor der Bildproduktion unverrückbar fest.
+- **Phase 2 (Nutzer-Fokus):**
+  - Der Nutzer kümmert sich **ausschließlich um die Generierung der Bilder** (bei Longform: 3 Cover erzeugen, 1 auswählen, danach 5er-Blöcke; bei Shorts: direkte 9:16-Bilder).
+  - Der Nutzer muss **keine** Audios aufnehmen oder Stimmdateien anfassen.
+- **Phase 3 (Agent autonom):**
+  - Audio-Alignment via Whisper, Overlays/Captions, Pacing-Validierung, Remotion-Rendering und Post-Video-Review.
 
 ## HÖCHSTE PRIORITÄT: Jedes Video besser als das letzte
 

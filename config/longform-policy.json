@@ -43,7 +43,9 @@
     "renderRequiresRealAudio": true,
     "chaptersUseRealAlignment": true,
     "allowEmptyYoutubeChaptersUntilTimeline": true,
-    "ttsGenerationIsExternal": true,
+    "voiceGeneratedInPhase1": true,
+    "userGeneratesOnlyImagesInPhase2": true,
+    "ttsGenerationIsExternal": false,
     "googleFlowGenerationIsExternal": true,
     "finalArtifacts": [
       "FINAL_VIDEO.mp4",

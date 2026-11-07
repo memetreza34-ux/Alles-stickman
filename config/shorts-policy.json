@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "status": "READY",
+  "mode": "shorts",
+  "targetDurationSecondsRange": [
+    60,
+    90
+  ],
+  "preferredDurationSecondsRange": [
+    65,
+    85
+  ],
+  "aspectRatio": "9:16",
+  "resolution": {
+    "width": 1080,
+    "height": 1920
+  },
+  "fps": 30,
+  "voiceProfile": "stickman-user-clone",
+  "voiceSettings": {
+    "engine": "qwen-mlx",
+    "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16",
+    "tempo": 0.95,
+    "rate": "-5%",
+    "maxPauseSeconds": 0.3,
+    "preStretchMaxPauseSeconds": 0.285,
+    "maxWordsPerChunk": 32,
+    "temperature": 0.7
+  },
+  "narrative": {
+    "hookMaxWordsBeforeSetup": 18,
+    "hookImmediateConflictSeconds": 3,
+    "noGreeting": true,
+    "fastResolutionRequired": true,
+    "loopOrStrongClosingRequired": true
+  },
+  "visuals": {
+    "aspectRatio": "9:16",
+    "targetAverageHoldSeconds": [
+      2,
+      3.5
+    ],
+    "coverRequired": false,
+    "allPeopleStickFigures": true,
+    "verticalComposition": true
+  },
+  "production": {
+    "audioSecondsRange": [
+      60,
+      90
+    ],
+    "voiceGeneratedInPhase1": true,
+    "userGeneratesOnlyImagesInPhase2": true,
+    "renderRequiresRealAudio": true
+  },
+  "qualityNotes": [
+    "Shorts-Dauer: Verbindlich zwischen 60 Sekunden (1 Minute) und 90 Sekunden (1,5 Minuten) Audio.",
+    "Phase 1 erzeugt Skript, Prompts UND fertige Stimme (stickman-user-clone, 0.95x) vollautomatisch durch den Agenten.",
+    "Phase 2 dient rein der Generierung der vertikalen 9:16-Bilder durch den Nutzer (keine Audio-Arbeit).",
+    "Phase 3 rendert die 9:16-Remotion-Komposition mit harter Schnittfolge und animierten Captions."
+  ]
+}
