@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 3,
+  "status": "PLANNED",
+  "language": "de",
+  "format": "short",
+  "targetDurationSeconds": 75,
+  "targetDurationRangeSeconds": [
+    60,
+    90
+  ],
+  "sections": [
+    {
+      "id": "hook",
+      "name": "Hook",
+      "startAnchor": "[EXAKTER START DES HOOKS]",
+      "hookType": "problem",
+      "curiosityGap": "[WAS WIRD ANGEKÜNDIGT, ABER ERST SPÄTER GELÖST?]",
+      "titleConnection": "[WIE BEZIEHT SICH DER HOOK DIREKT AUF DEN TITEL?]",
+      "payoffPromise": "[WAS WEISS DER ZUSCHAUER AM ENDE DES SHORTS?]",
+      "sceneSettingOnly": false
+    },
+    {
+      "id": "setup",
+      "name": "Setup",
+      "startAnchor": "[START DES SETUPS]",
+      "goal": "Kurzer historischer oder praktischer Kontext in 1-2 Sätzen."
+    },
+    {
+      "id": "main",
+      "name": "Hauptteil",
+      "startAnchor": "[START DES HAUPTTEILS]",
+      "goal": "Schnelle Entwicklung: Problem -> Versuch -> neues Problem -> Lösung."
+    },
+    {
+      "id": "resolution",
+      "name": "Auflösung",
+      "startAnchor": "[START DER AUFLÖSUNG]",
+      "goal": "Die Kernfrage des Shorts klar und pointiert beantworten."
+    },
+    {
+      "id": "closing",
+      "name": "Schluss",
+      "startAnchor": "[START DES SCHLUSSES]",
+      "goal": "Prägnanter Schlusssatz oder nahtloser Loop-Übergang."
+    }
+  ],
+  "storyEngine": {
+    "openingContrast": {
+      "today": "[HEUTIGER ALLTAG]",
+      "past": "[DERSELBE MOMENT FRÜHER]",
+      "anchor": "[ANKER IM HOOK]"
+    },
+    "stakes": "[WAS STAND FÜR DIE MENSCHEN AUF DEM SPIEL?]",
+    "escalation": [
+      {
+        "problem": "[PROBLEM 1]",
+        "solution": "[VERSUCH 1]",
+        "anchor": "[ANKER IM SKRIPT]"
+      },
+      {
+        "problem": "[PROBLEM 2]",
+        "solution": "[DURCHBRUCH/LÖSUNG]",
+        "anchor": "[ANKER IM SKRIPT]"
+      }
+    ],
+    "evidence": [
+      {
+        "claim": "[HISTORISCHER FAKT 1]",
+        "source": "https://example.org/quelle-1",
+        "anchor": "[ANKER IM SKRIPT]"
+      },
+      {
+        "claim": "[HISTORISCHER FAKT 2]",
+        "source": "https://example.org/quelle-2",
+        "anchor": "[ANKER IM SKRIPT]"
+      }
+    ],
+    "callback": {
+      "anchor": "[ANKER IN AUFLÖSUNG]",
+      "callsBackTo": "[ANKER AUS DEM HOOK]"
+    }
+  }
+}

@@ -11,13 +11,18 @@ export const VISUAL_CHECKS = Object.freeze([
 ]);
 export const visualQcPath = dir => path.join(projectPaths(dir).techDir, 'VISUAL_QC.json');
 
-export async function fingerprintPng(filename) {
+export async function fingerprintPng(filename, expectedRatio = '16:9') {
   const bytes = await readFile(filename);
   if (bytes.length < 24 || bytes.subarray(0, 8).toString('hex') !== '89504e470d0a1a0a' ||
       bytes.toString('ascii', 12, 16) !== 'IHDR') throw new Error('Ungueltige PNG-Datei: ' + filename);
   const width = bytes.readUInt32BE(16), height = bytes.readUInt32BE(20);
-  if (width < 1280 || height < 720 || Math.abs(width / height - 16 / 9) > 0.02)
-    throw new Error('PNG muss mindestens 1280x720 im 16:9-Format sein: ' + filename);
+  if (expectedRatio === '9:16') {
+    if (width < 720 || height < 1280 || Math.abs(width / height - 9 / 16) > 0.02)
+      throw new Error('PNG muss mindestens 720x1280 im 9:16-Format sein: ' + filename);
+  } else {
+    if (width < 1280 || height < 720 || Math.abs(width / height - 16 / 9) > 0.02)
+      throw new Error('PNG muss mindestens 1280x720 im 16:9-Format sein: ' + filename);
+  }
   return { sha256: createHash('sha256').update(bytes).digest('hex'), width, height };
 }
 
@@ -25,11 +30,12 @@ export async function buildVisualQcTemplate(dir) {
   const p = projectPaths(dir), meta = await readJson(p.meta);
   const count = Number(meta.plannedImageCount);
   if (!Number.isInteger(count) || count < 1) throw new Error('plannedImageCount fehlt.');
+  const expectedRatio = meta.aspectRatio ?? '16:9';
   const images = [];
   for (let i = 1; i <= count; i++) {
     const file = 'Bild ' + String(i).padStart(2, '0') + '.png';
     if (!(await exists(path.join(p.imagesDir, file)))) throw new Error('PNG fehlt: ' + file);
-    images.push({ imageNumber: i, file, ...(await fingerprintPng(path.join(p.imagesDir, file))),
+    images.push({ imageNumber: i, file, ...(await fingerprintPng(path.join(p.imagesDir, file), expectedRatio)),
       checks: Object.fromEntries(VISUAL_CHECKS.map(key => [key, false])),
       status: 'PENDING', reviewer: '', reviewedAt: null, notes: '' });
   }

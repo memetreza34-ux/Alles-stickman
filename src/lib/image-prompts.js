@@ -160,7 +160,7 @@ function renderFlowMaster(kit,plan,meta) {
  for(let n=first;n<=count;n+=5)groups.push(`Bild ${pad(n)}–${pad(Math.min(count,n+4))}`);
  return `ALLES STICKMAN — ONE COMPLETE GOOGLE FLOW PROMPT
 Topic: ${meta.title}
-Output: ${count} separate 16:9 editorial illustrations. DO NOT start until instructions are understood.
+Output: ${count} separate ${meta.aspectRatio ?? '16:9'} editorial illustrations. DO NOT start until instructions are understood.
 
 THIS PROMPT IS SELF-CONTAINED. The full illustrator style, character model sheet image request, historical context, 3 cover prompts, ALL ${count} scene briefs and quality instructions are directly included here. Do not ask for GitHub, other files, batches, an additional prompt, the voice script or any further uploads. Do not invent images, ZIPs or attachments.
 
@@ -213,6 +213,6 @@ ${register}
 
 MANDATORY VISUAL QUALITY CHECK after EACH batch: visually examine actual output files for adherence to the narrative, stick people/hands, historical location/era, legibility at mobile size, missing text/garbled writing, consistent scarves, visual diversity and no production annotations. Repair only failed or missing specific scene images and reinspect. Do not claim to have reviewed actual pixels if you only have written descriptions.
 
-FINAL INTEGRITY: ${count} actual, unique, sequential video frames named Bild 01.png–Bild ${pad(count)}.png, 16:9, no gaps; ${separate?'plus one separately named thumbnail-source.png':'first frame itself doubles as cover'}. Character sheet and losing cover candidates are not video frames. If ZIP export really works, create one genuine downloadable ZIP with correct files; otherwise provide actual per-image downloads. Never pretend to have created files or URLs. Do not generate the MP4 or audio. Report actual completion and first missing scene if generation is interrupted.
+FINAL INTEGRITY: ${count} actual, unique, sequential video frames named Bild 01.png–Bild ${pad(count)}.png, ${meta.aspectRatio ?? '16:9'}, no gaps; ${separate?'plus one separately named thumbnail-source.png':'first frame itself doubles as cover'}. Character sheet and losing cover candidates are not video frames. If ZIP export really works, create one genuine downloadable ZIP with correct files; otherwise provide actual per-image downloads. Never pretend to have created files or URLs. Do not generate the MP4 or audio. Report actual completion and first missing scene if generation is interrupted.
 `;
 }

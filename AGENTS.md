@@ -26,6 +26,19 @@ Ablauf und Befehle: [youtube/WORKFLOW.md](youtube/WORKFLOW.md). Neue Videos und 
 - **Phase 3 (Agent autonom):**
   - Audio-Alignment via Whisper, Overlays/Captions, Pacing-Validierung, Remotion-Rendering und Post-Video-Review.
 
+## Einheitliche Projektstruktur für YouTube & Shorts
+
+Alle Videos und Shorts teilen exakt dieselbe 5-teilige Ordnerstruktur:
+- **Longform-Videos:** `youtube/<Woche>/<Thema-Slug>/`
+- **Shorts / Reels:** `shorts/<Woche>/<Thema-Slug>/`
+
+Jedes Projektverzeichnis besteht aus:
+1. `00-bildprompts/` — `google-flow-prompt.txt`, `images/` (`Bild 01.png` etc.), `prompts/`, `batches/`
+2. `01-voice-script/` — `voice-script.txt` (Voiceover-Text)
+3. `02-audio/` — `voice.wav` (autonome Stimme aus Phase 1)
+4. `03-export/` — `FINAL_VIDEO.mp4`, `SUBTITLES.srt`, `TIMED_SCRIPT.txt`, `YOUTUBE_UPLOAD.txt`
+5. `99-technik/` — `video.json`, `status.json`, `PRODUKTIONSPLAN.md`, `SCRIPT_PLAN.json`, `BILD_AUDIO_ZUORDNUNG.json`, `RECHERCHE.md`, `SCENE_VISUALS_EN.json`, `YOUTUBE_RENDER_PLAN.json`, `PHASE1_START_HERE.md`
+
 ## HÖCHSTE PRIORITÄT: Jedes Video besser als das letzte
 
 - Jede fertige MP4 **wirklich ansehen und anhören**, Befunde mit Zeitstempel/Bildnummer in `99-technik/POST_VIDEO_REVIEW.json`. Regeln: [CONTINUOUS_IMPROVEMENT.md](channel/CONTINUOUS_IMPROVEMENT.md).

@@ -12,15 +12,16 @@ export async function collectKnownTopics(root = process.cwd()) {
     known.push({ source: 'registry', title: entry.title ?? '', aliases: entry.aliases ?? [] });
   }
 
-  const youtubeRoot = path.join(root, 'youtube');
-  for (const file of await walkFiles(youtubeRoot)) {
-    if (!file.endsWith(path.join('99-technik', 'video.json'))) continue;
-    if (file.includes(`${path.sep}templates${path.sep}`)) continue;
-    try {
-      const meta = JSON.parse(await readFile(file, 'utf8'));
-      if (meta.topic || meta.title) known.push({ source: file, title: meta.topic || meta.title, aliases: [meta.title].filter(Boolean) });
-    } catch {
-      // Ungültige Altdateien werden im eigentlichen Policy-Gate behandelt.
+  for (const rootDir of [path.join(root, 'youtube'), path.join(root, 'shorts')]) {
+    for (const file of await walkFiles(rootDir)) {
+      if (!file.endsWith(path.join('99-technik', 'video.json'))) continue;
+      if (file.includes(`${path.sep}templates${path.sep}`)) continue;
+      try {
+        const meta = JSON.parse(await readFile(file, 'utf8'));
+        if (meta.topic || meta.title) known.push({ source: file, title: meta.topic || meta.title, aliases: [meta.title].filter(Boolean) });
+      } catch {
+        // Ungültige Altdateien werden im eigentlichen Policy-Gate behandelt.
+      }
     }
   }
   return known;

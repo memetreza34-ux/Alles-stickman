@@ -1,0 +1,6 @@
+Diese Datei wird erzeugt.
+
+1. 99-technik/SCENE_VISUALS_EN.json ausfüllen (pro Bild ein englischer brief + shot, dazu 3 Cover-Ideen).
+2. npm run prompts:youtube -- --dir "shorts/<week>/<slug>"
+
+Danach stehen hier der Google-Flow-Ablauf (vertikal 9:16) und die Prompts in prompts/ und batches/.

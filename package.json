@@ -6,6 +6,7 @@
   "description": "Bildwelt- und themenneutrale Produktionspipeline für YouTube-Videos.",
   "scripts": {
     "create:youtube": "node src/cli/create-youtube-project.js",
+    "create:short": "node src/cli/create-short-project.js",
     "topic:youtube": "node src/cli/check-youtube-topic.js",
     "validate:youtube-phase1": "node src/cli/validate-youtube-phase1.js",
     "handoff:youtube": "node src/cli/print-youtube-handoff.js",

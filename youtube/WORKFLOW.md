@@ -12,11 +12,29 @@ Phase 3: Audio-Alignment → Overlays/Captions → Remotion Render (16:9 oder 9:
 
 Voraussetzungen: Node ≥ 24, ffmpeg/ffprobe, whisper, tesseract, `npm install`.
 
+## Format-Struktur & Ordneraufbau
+
+Beide Formate teilen exakt dieselbe 5-stufige Ordnerstruktur mit identischer Verzeichnis- und Dateilogik:
+
+- **Longform-Videos:** `youtube/<Woche>/<Thema-Slug>/` (z. B. `youtube/2026-KW44_26-10_bis_01-11/wie-ueberlebte-man-eine-operation-ohne-narkose/`)
+- **Shorts / Reels:** `shorts/<Woche>/<Thema-Slug>/` (z. B. `shorts/2026-KW44_26-10_bis_01-11/operation-ohne-narkose-short/`)
+
+Jedes Projekt (Longform oder Short) enthält:
+1. `00-bildprompts/` — `google-flow-prompt.txt`, `images/` (Endbilder `Bild 01.png` etc.), optionale `batches/` und `prompts/`
+2. `01-voice-script/` — `voice-script.txt` (lesbares Skript ohne Steuerzeichen)
+3. `02-audio/` — `voice.wav` (autonom in Phase 1 generierte Stimme)
+4. `03-export/` — `FINAL_VIDEO.mp4`, `SUBTITLES.srt`, `TIMED_SCRIPT.txt`, `YOUTUBE_UPLOAD.txt` (bzw. Thumbnail bei Longform)
+5. `99-technik/` — `video.json`, `status.json`, `PRODUKTIONSPLAN.md`, `SCRIPT_PLAN.json`, `BILD_AUDIO_ZUORDNUNG.json`, `RECHERCHE.md`, `SCENE_VISUALS_EN.json`, `YOUTUBE_RENDER_PLAN.json`, `PHASE1_START_HERE.md`, `PHASE1_QC.md`
+
 ## Phase 1 — Planung, Skript & direkte Stimmengenerierung (Agent autonom)
 
 ```bash
+# Longform-Projekt anlegen:
 npm run topic:youtube -- --topic "THEMA"
 npm run create:youtube -- --topic "THEMA" --title "TITEL" --week "YYYY-KWNN_DD-MM_bis_DD-MM" --slug "slug"
+
+# ODER Short-Projekt anlegen:
+npm run create:short -- --topic "THEMA" --title "TITEL" --week "YYYY-KWNN_DD-MM_bis_DD-MM" --slug "slug"
 ```
 
 1. **Recherche** (`99-technik/RECHERCHE.md`): mindestens 5 konkrete Momente mit Zahl/Jahr/Ort/Name und URL, plus der größte Mythos (bei Shorts: 1 fokussiertes Kernereignis).
