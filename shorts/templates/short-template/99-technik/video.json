@@ -49,14 +49,15 @@
     "contentDrivenImageCountRequired": true,
     "fixedImageCountForbidden": true,
     "oneImageOneVisualPurpose": true,
+    "highDensityShortsPacing": true,
     "targetAverageHoldSeconds": [
-      2,
-      4
+      1.5,
+      2.8
     ],
-    "reviewAboveSeconds": 6,
-    "preferSplitAboveSeconds": 7,
-    "hardMaximumSeconds": 10,
-    "minimumUsefulHoldSeconds": 1.2,
+    "reviewAboveSeconds": 3.8,
+    "preferSplitAboveSeconds": 4.5,
+    "hardMaximumSeconds": 6.0,
+    "minimumUsefulHoldSeconds": 0.8,
     "generationBatchSize": 5,
     "maxConcurrentGenerations": 5,
     "nonCoverGenerationCount": 1,

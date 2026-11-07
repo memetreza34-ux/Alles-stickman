@@ -59,6 +59,15 @@ async function main() {
       height: 1920,
       fps: 30
     },
+    imageDensityPolicy: {
+      ...(meta.imageDensityPolicy ?? {}),
+      highDensityShortsPacing: true,
+      targetAverageHoldSeconds: shortsPolicy.visuals?.targetAverageHoldSeconds ?? [1.5, 2.8],
+      reviewAboveSeconds: shortsPolicy.visuals?.reviewAboveSeconds ?? 3.8,
+      preferSplitAboveSeconds: shortsPolicy.visuals?.preferSplitAboveSeconds ?? 4.5,
+      hardMaximumSeconds: shortsPolicy.visuals?.hardMaximumSeconds ?? 6.0,
+      minimumUsefulHoldSeconds: shortsPolicy.visuals?.minimumUsefulHoldSeconds ?? 0.8
+    },
     createdAt: now,
     updatedAt: now
   });

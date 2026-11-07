@@ -4,6 +4,7 @@
 
 - Format: Shorts / Reel (9:16 vertikal, 1080 × 1920)
 - Ziel-Länge: 60–90 Sekunden Audio (mindestens 1 Minute, höchstens 1,5 Minuten)
+- Bilddichte: Extrem hoch (viel mehr Bilder als bei Longform). Schnittfrequenz Ø 1,5–2,8s pro Bild (ca. 30–50 Bilder pro Short). Kein Bild steht lange still.
 - Thema: [THEMA]
 - Sprache: Deutsch
 - Stimme: stickman-user-clone (0.95x Tempo, max. 0,30s Pause)

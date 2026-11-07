@@ -10,7 +10,7 @@ Ablauf und Befehle: [youtube/WORKFLOW.md](youtube/WORKFLOW.md). Neue Videos und 
    - Struktur: Du-Hook, Kette, 3 belegte Momente, Rückbezug
 2. **Shorts / Reels (9:16 Hochformat, 1080×1920):**
    - Zieldauer: **mindestens 60 Sekunden (1 Minute) bis höchstens 90 Sekunden (1,5 Minuten) Audio** (60–90 s)
-   - Schneller Bildtakt: Ø 2–3,5 Sekunden pro Bild
+   - Bilddichte: **Viel mehr Bilder als bei Longform-Videos!** Schneller visueller Schnitt: Ø 1,5–2,8 Sekunden pro Bild (ca. 30–50 Bilder pro Short). Kein Standbild.
    - Vertikale Bildkomposition, sofortiger Konflikt-Hook in den ersten 3 Sekunden
 
 ## Verbindlicher 3-Phasen-Ablauf (wer macht was)

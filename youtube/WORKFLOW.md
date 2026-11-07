@@ -2,7 +2,7 @@
 
 Deutschsprachiger faceless Erklärkanal: Menschheit, Überleben, Erfindungen, Alltag früher.
 - **Longform-Videos (16:9 Querformat):** 6–7 Minuten (360–420 s), Ø 3–5 s pro Bild, Recherche mit Story-Engine, 3 Cover zur Auswahl.
-- **Shorts / Reels (9:16 Hochformat):** **mindestens 60 Sekunden (1 Minute) bis höchstens 90 Sekunden (1,5 Minuten) Audio** (60–90 s), schnelles Pacing (Ø 2–3,5 s pro Bild), vertikaler Strichfiguren-Fokus, direkter Konflikt-Hook in den ersten 3 Sekunden.
+- **Shorts / Reels (9:16 Hochformat):** **mindestens 60 Sekunden (1 Minute) bis höchstens 90 Sekunden (1,5 Minuten) Audio** (60–90 s), **viel mehr Bilder als bei Longform-Videos** (Ø 1,5–2,8 s pro Bild, ca. 30–50 Bilder pro Short!), vertikaler Strichfiguren-Fokus, direkter Konflikt-Hook in den ersten 3 Sekunden.
 
 ```text
 Phase 1: Recherche → Skript nach Formel → Szenenplan/Prompts → STIMME DIREKT GENERIEREN (stickman-user-clone 0.95x)
@@ -40,7 +40,7 @@ npm run create:short -- --topic "THEMA" --title "TITEL" --week "YYYY-KWNN_DD-MM_
 1. **Recherche** (`99-technik/RECHERCHE.md`): mindestens 5 konkrete Momente mit Zahl/Jahr/Ort/Name und URL, plus der größte Mythos (bei Shorts: 1 fokussiertes Kernereignis).
 2. **Skript** (`01-voice-script/voice-script.txt`) nach [Skript-System](../channel/SCRIPT_SYSTEM.md): du-Hook, Fallhöhe, Kette, Beweise, Rückbezug. Bei Shorts: 60–90 s Zieldauer.
 3. **SCRIPT_PLAN.json**: Abschnitte + `storyEngine` mit exakten Ankern.
-4. **Bild-Audio-Zuordnung** (`BILD_AUDIO_ZUORDNUNG.json`): ein Bild pro Halbsatz bis Satz, Ø 3–5 s (Shorts: Ø 2–3,5 s). Optional pro Bild:
+4. **Bild-Audio-Zuordnung** (`BILD_AUDIO_ZUORDNUNG.json`): ein Bild pro Halbsatz bis Satz, Ø 3–5 s (Shorts: viel mehr Bilder, Ø 1,5–2,8 s, ca. 30–50 Bilder pro Short). Optional pro Bild:
    - `overlay`: `{ "text": "1707", "style": "caption", "position": "top" }`. Styles: `caption` (große gelbe Schrift), `card` (Textkarte, ersetzt das Bild), `label` (kleines Schild). Ziel: mindestens 1 Overlay pro 12 Bilder.
    - `motion`: `{ "zoomFrom": 1, "zoomTo": 1.15, "focusX": 40, "focusY": 55 }` für gezielte Fahrten auf das Wichtige.
 5. **Szenenplan** (`SCENE_VISUALS_EN.json`): pro Bild englischer `brief`, `shot`, `protagonist`; 3 Cover-Ideen (bei Longform). Siehe [Bildwelt](../channel/VISUAL_WORLD.md).

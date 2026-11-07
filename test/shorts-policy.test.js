@@ -24,6 +24,11 @@ test('shorts: shorts-policy.json ist vollständig kalibriert (60s–90s Dauer, 9
   assert.equal(policy.voiceSettings.maxPauseSeconds, 0.3);
   assert.equal(policy.voiceSettings.maxWordsPerChunk, 32);
 
+  // Bilddichte: viel mehr Bilder als bei Longform (1,5 bis 2,8s Hold)
+  assert.equal(policy.visuals.highImageDensity, true);
+  assert.deepEqual(policy.visuals.targetAverageHoldSeconds, [1.5, 2.8]);
+  assert.equal(policy.visuals.hardMaximumSeconds, 6.0);
+
   // Workflow: Phase 1 erzeugt Stimme direkt; Phase 2 dient nur den Bildern
   assert.equal(policy.production.voiceGeneratedInPhase1, true);
   assert.equal(policy.production.userGeneratesOnlyImagesInPhase2, true);
@@ -57,6 +62,10 @@ test('workflow: AGENTS.md und WORKFLOW.md dokumentieren Phase 1 Stimme und Short
 
   assert.match(workflow, /shorts\/<Woche>\/<Thema-Slug>/i);
   assert.match(workflow, /create:short/);
+
+  // Prüfung der hohen Bilddichte in AGENTS.md und WORKFLOW.md
+  assert.match(agents, /Viel mehr Bilder als bei Longform/i);
+  assert.match(workflow, /Viel mehr Bilder als bei Longform/i);
 });
 
 test('shorts: shorts-template besitzt die vollständige 5-teilige YouTube-Struktur', async () => {
@@ -87,6 +96,11 @@ test('shorts: shorts-template besitzt die vollständige 5-teilige YouTube-Strukt
   assert.deepEqual(meta.targetDurationRangeSeconds, [60, 90]);
   assert.equal(meta.renderPolicy.width, 1080);
   assert.equal(meta.renderPolicy.height, 1920);
+
+  // Bilddichte-Richtlinie im Template
+  assert.equal(meta.imageDensityPolicy.highDensityShortsPacing, true);
+  assert.deepEqual(meta.imageDensityPolicy.targetAverageHoldSeconds, [1.5, 2.8]);
+  assert.equal(meta.imageDensityPolicy.hardMaximumSeconds, 6.0);
 });
 
 test('visual-qc: fingerprintPng validiert 9:16 vertikale Bilder für Shorts', async () => {
