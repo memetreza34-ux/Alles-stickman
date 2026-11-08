@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "status": "READY",
+  "structure": [
+    "hook",
+    "setup",
+    "main",
+    "resolution",
+    "closing"
+  ],
+  "sections": [
+    {
+      "id": "hook",
+      "startAnchor": "Du sitzt beim Zahnarzt, bekommst einen winzigen Piks",
+      "purpose": "Neugier/Kernfrage sofort eröffnen",
+      "hookType": "contrast",
+      "curiosityGap": "Wie konnte ein Mensch diesen unvorstellbaren Schock überleben, bevor es Betäubung gab?",
+      "titleConnection": "Die Hook-Frage führt direkt zur Titelfrage: Wie überlebte man eine Operation ohne Narkose?",
+      "payoffPromise": "Überleben hing nicht von Schmerzmitteln ab, sondern von extrem schnellen Chirurgen wie Robert Liston, massiver Körperkraft gegen den Schock und sauberer Luft statt infektiöser Lazarette; 1846 beendete der Äther den Schmerz.",
+      "sceneSettingOnly": false
+    },
+    {
+      "id": "setup",
+      "startAnchor": "Du kennst bestimmt die Szene aus Western-Filmen",
+      "purpose": "Nur nötigen Kontext liefern"
+    },
+    {
+      "id": "main",
+      "startAnchor": "Alkohol half dir damals nicht.",
+      "purpose": "Erklärung als Entwicklung erzählen"
+    },
+    {
+      "id": "resolution",
+      "startAnchor": "Wie überlebte man eine Operation ohne Narkose?",
+      "purpose": "Hook-Frage eindeutig beantworten"
+    },
+    {
+      "id": "closing",
+      "startAnchor": "Wenn du das nächste Mal auf dem Behandlungsstuhl liegst",
+      "purpose": "Kurzer letzter Gedanke ohne langes Outro"
+    }
+  ],
+  "storyEngine": {
+    "openingContrast": {
+      "today": "Du sitzt beim Zahnarzt, bekommst einen winzigen Piks und spürst zwei Stunden lang gar nichts.",
+      "past": "Vor 1846 war jede Operation die pure Hölle bei vollem Bewusstsein.",
+      "anchor": "Vor 1846 war jede Operation"
+    },
+    "stakes": "Jede Sekunde quälender Schmerz trieb den Körper näher an den neurogenen Schock und das Herzversagen; nach der OP drohte fast jedem zweiten Patienten der tödliche Hospitalbrand.",
+    "escalation": [
+      {
+        "problem": "Alkohol und Opium versagen bei tiefen chirurgischen Schnitten oder führen zum Ersticken.",
+        "solution": "Chirurgen setzen auf rohe Gewalt: Vier bis sechs Dressers werfen sich auf den Patienten.",
+        "anchor": "Chirurgen setzten auf rohe Gewalt."
+      },
+      {
+        "problem": "Lange Schmerzen führen zum tödlichen Kreislaufkollaps (neurogener Schock).",
+        "solution": "Extreme Schnelligkeit als Lebensretter: Robert Liston amputiert Beine in unter zweieinhalb Minuten.",
+        "anchor": "In dieser Welt entschied für einen Chirurgen nur eine Fähigkeit über Leben und Tod"
+      },
+      {
+        "problem": "Rasendes Tempo führt zu Hektik und tödlichen Kunstfehlern.",
+        "solution": "Die berüchtigte 300-%-Operation zwingt zur Erkenntnis, dass Hektik gefährlich ist.",
+        "anchor": "Dieses rasende Tempo forderte Opfer."
+      },
+      {
+        "problem": "Schock überlebt, aber tödliche Wundkeime im Hospitalbett fressen sich durch die Stationen.",
+        "solution": "Das Rätsel der Frühgeschichte: Inkas überleben Schädelöffnungen in sauberer Bergluft.",
+        "anchor": "Hier wartet das größte Rätsel der Medizingeschichte."
+      },
+      {
+        "problem": "Wie beendet man das jahrtausendelange Leiden der Menschheit unter dem Messer?",
+        "solution": "Die Entdeckung der Narkose am 16. Oktober 1846 (Ether Day) in Boston.",
+        "anchor": "Die Erlösung kam an einem Freitagmorgen in Boston."
+      }
+    ],
+    "evidence": [
+      {
+        "claim": "Robert Listons Rekord: Beinamputation in 28 Sekunden und die berühmte 300-%-Mortalitäts-OP.",
+        "anchor": "Sein persönlicher Rekord lag bei unglaublichen 28 Sekunden.",
+        "source": "https://en.wikipedia.org/wiki/Robert_Liston"
+      },
+      {
+        "claim": "Inka-Schädelstudie 2018: 75 % bis 83 % Überlebensrate dank verheilter Knochenränder.",
+        "anchor": "Eine Studie aus dem Jahr 2018 untersuchte über achthundert Schädel aus peruanischen Gräbern.",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/29886208/"
+      },
+      {
+        "claim": "Ether Day 1846: John Collins Warren entfernt Tumor schmerzfrei; Zitat: Gentlemen, this is no humbug.",
+        "anchor": "Am 16. Oktober 1846 betrat der Zahnarzt William Morton das Amphitheater des Massachusetts General Hospital.",
+        "source": "https://www.massgeneral.org/museum/history/ether-dome"
+      }
+    ],
+    "callback": {
+      "anchor": "Wenn du das nächste Mal auf dem Behandlungsstuhl liegst",
+      "callsBackTo": "Du sitzt beim Zahnarzt, bekommst einen winzigen Piks"
+    }
+  }
+}

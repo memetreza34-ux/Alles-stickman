@@ -1,0 +1,560 @@
+ALLES STICKMAN — ONE COMPLETE GOOGLE FLOW PROMPT
+Topic: Wie überlebte man eine Operation ohne Narkose?
+Output: 107 separate 16:9 editorial illustrations. DO NOT start until instructions are understood.
+
+THIS PROMPT IS SELF-CONTAINED. The full illustrator style, character model sheet image request, historical context, 3 cover prompts, ALL 107 scene briefs and quality instructions are directly included here. Do not ask for GitHub, other files, batches, an additional prompt, the voice script or any further uploads. Do not invent images, ZIPs or attachments.
+
+PRODUCTION VS. PICTURE: Scene identifiers, numbering, filenames, internal metadata and all headings below are ONLY workflow instructions. Never put any of them into generated image pixels or send them as image content. To make EACH image, pass the entire STYLE BLOCK, PEOPLE BLOCK, optional MAIN CHARACTER line, the individual SCENE description, the CAMERA direction and the TEXT RULE. Repeat the complete style/people rules on every request. Every numbered scene must be a SEPARATE PNG, not a contact sheet.
+
+STYLE BLOCK (include with EVERY scene):
+Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight.
+
+PEOPLE BLOCK (include with EVERY scene):
+Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+MAIN CHARACTER (include only in scenes calling for the guide):
+the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+All people, regardless of culture or century, use exactly the same simple stick construction. Historical figures only differ via clothing, hair or props. No realistic faces or hands.
+
+TEXT RULE:
+No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+No pseudo-letters, English captions, production file numbers, or tiny labels. The video editor will add any exact German labels and figures afterwards.
+
+WORLD CONTINUITY:
+Locations and environments: Reise durch medizinische Epochen: moderner Zahnarztstuhl als Rahmen, hölzernes OP-Theater in London (1830er), Lazarette des 19. Jahrhunderts, sonnige Andenberge der Inkas, Massachusetts General Hospital (1846).
+Climate and seasons: flexible-wenn-inhaltlich-begründet: moderner Behandlungsraum, düsteres Londoner OP-Theater, kühle saubere Andenluft, historischer Hörsaal in Boston.
+Historical periods: Steinzeit und Inka-Epoche über 1830er- und 1840er-Jahre bis heute; klare historische Kostüme und Requisiten.
+Colors and mood: Kühles Klinikweiß heute; düsteres Holzbraun und Kerzenlicht in London; warmes Terrakotta und Berggrau bei den Inkas; sanftes Tageslicht im Ether Dome.
+Allowed intentional changes: Wechsel zwischen modernem Behandlungszimmer und historischen OP-Sälen (Hook, Schluss) | Kapitelwechsel London 1830er → Hospitalbett → Inka-Berge → Boston 1846 | Ausgrabungsszenen und Schädeluntersuchung als Beweis-Momente
+Avoid: moderne Gegenstände in historischen Szenen | Tageslicht oder Neonröhren in Operationssälen des 18. Jahrhunderts | Schnee in den Bostoner Frühsommer- oder Londoner Sommer-Szenen
+Match local continuity between adjacent frames; historical changes between chapters are intentional. Each image should communicate ONE useful idea instantly at phone size. Vary close-ups, cutaways, maps, comparisons and scale; no formulaic repeated character poses or decorative crowds.
+
+CHARACTER MODEL SHEET: channel/style-sheet/FIGURENBLATT_PROMPT.txt is fully embedded below, NOT an external dependency. Unless an approved matching sheet is available in this conversation, produce it first. Check its five poses, small red scarf, stick hands and no writing. Repeat failed attempts only up to five times. Keep the accepted sheet as hauptfigur.png OUTSIDE the video image set. Attach it as character reference only if provider supports this feature; never attach a cover or previous scene as reference. If attachment is unavailable, repeat the PEOPLE description per image and explain this limit truthfully.
+▼▼▼ PROMPT START ▼▼▼
+Character model sheet for a recurring YouTube explainer character in 16:9 widescreen on a plain warm off-white background. Hand-drawn 2D editorial cartoon style: confident dark charcoal ink outlines with a slightly irregular hand-inked feel, flat colors and soft selective shading.
+
+The character is a simple stick figure: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without fingers, and a small red scarf tied around the neck.
+
+Show this same character five times in one row, evenly spaced, full body and the same size: front view neutral, side view walking, three-quarter view curious, front view surprised, front view worried. Head shape, line weight, proportions and scarf color are identical in all five poses.
+
+No text, letters, numbers, labels, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+COVER CANDIDATES — GENERATE EXACTLY THREE DISTINCT IMAGES:
+One big expressive stick-figure face and one important story object, readable on a phone. Bright contrast, top area quiet for later headline. Do not place text into the image.
+COVER A — temporarily save as TEMP_COVER_A.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight. Bright, saturated colors and very high contrast for a YouTube thumbnail.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE: The red-scarf stick figure lies terrified on a wooden operating table with wide eyes, while a tall Victorian surgeon holds a bone saw and a giant pocket watch under dramatic lighting.
+
+CAMERA: One big stick-figure face with a strong, instantly readable emotion fills about 40 percent of the frame, plus one clear story object. Simple background. Keep the top third calm and empty for a headline that is added later.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+COVER B — temporarily save as TEMP_COVER_B.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight. Bright, saturated colors and very high contrast for a YouTube thumbnail.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE: A Victorian surgeon in a dark woolen frock coat raises a gleaming surgical bone saw triumphantly next to a giant brass pocket watch, intense golden spotlight and dark shadows.
+
+CAMERA: One big stick-figure face with a strong, instantly readable emotion fills about 40 percent of the frame, plus one clear story object. Simple background. Keep the top third calm and empty for a headline that is added later.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+COVER C — temporarily save as TEMP_COVER_C.png
+▼▼▼ PROMPT START ▼▼▼
+STYLE: Hand-drawn 2D editorial cartoon illustration in 16:9 widescreen. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors chosen for the scene. Simple believable objects and settings, one clear main subject, uncluttered background, strong silhouettes that read instantly on a phone screen. Every image looks drawn by the same illustrator with the same line weight. Bright, saturated colors and very high contrast for a YouTube thumbnail.
+
+PEOPLE: Every person is a simple stick figure built the same way in every era and culture: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without detailed fingers. Hair, clothing and props show era and culture, but body and face construction never change. Never draw realistic, semi-realistic, anatomically detailed or 3D people, faces or hands.
+
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE: The red-scarf stick figure clutches its head in sheer disbelief and shock beside an antique wooden hospital bed, bold dramatic contrast under bright stage lighting.
+
+CAMERA: One big stick-figure face with a strong, instantly readable emotion fills about 40 percent of the frame, plus one clear story object. Simple background. Keep the top third calm and empty for a headline that is added later.
+
+TEXT: No text, letters, numbers, labels, signs, captions, logos or watermarks anywhere in the image.
+▲▲▲ PROMPT ENDE ▲▲▲
+
+STOP AFTER THREE COVER IMAGES: Show A/B/C, ask the user to choose, then HARD STOP. Never assume their choice, never generate scene images before selection and never claim an image was generated if tools are not available.
+
+AFTER COVER SELECTION:
+Save the selected image separately as 00-bildprompts/thumbnail-source.png. This is thumbnail-only, NOT Bild 01. Generate Bild 01.png independently from SCENE 01 (it must match the spoken opening). Discard losing covers from final set.
+
+AUTOMATIC 5-IMAGE SEQUENCE, AFTER COVER CHOICE:
+Generate precisely 107 numbered video images in order; images to CREATE after choice start at 01 and end at 107. The batches are Bild 01–05, Bild 06–10, Bild 11–15, Bild 16–20, Bild 21–25, Bild 26–30, Bild 31–35, Bild 36–40, Bild 41–45, Bild 46–50, Bild 51–55, Bild 56–60, Bild 61–65, Bild 66–70, Bild 71–75, Bild 76–80, Bild 81–85, Bild 86–90, Bild 91–95, Bild 96–100, Bild 101–105, Bild 106–107. No new questions, no need for WEITER, no external files. One image per scene. Interpret camera instructions: close-up = large detail, medium = character and prop, wide = useful environment, top-down = spatial geometry, cutaway = inner mechanism, split = intentional two-part comparison. Any given scene is a content guide, not a caption to draw.
+
+ALL 107 SCENE BRIEFS (COMPLETE):
+SCENE 01 — output Bild 01.png
+SCENE: The red-scarf stick figure sits comfortably reclined in a sleek modern dental chair, feeling completely calm and relaxed under soft lighting.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 02 — output Bild 02.png
+SCENE: Extreme close-up of a tiny, shiny modern dental syringe gently administering local anesthetic, smooth and completely painless without any discomfort.
+CAMERA: close-up
+
+SCENE 03 — output Bild 03.png
+SCENE: The red-scarf stick figure touches its numb cheek with a peaceful, slightly lopsided smile on a clean white background.
+CAMERA: close-up
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 04 — output Bild 04.png
+SCENE: Dramatic time rewind graphic showing historical calendar pages spinning backward rapidly to a dark, shadowy hospital room in the distant past.
+CAMERA: wide
+
+SCENE 05 — output Bild 05.png
+SCENE: A historical stick figure patient lies wide awake on a rough wooden table, eyes wide with terrifying shock and raw realization.
+CAMERA: close-up
+
+SCENE 06 — output Bild 06.png
+SCENE: Split view showing a modern sleeping patient peacefully resting on the left contrasted with an alert, terrified historical patient on the right.
+CAMERA: split
+
+SCENE 07 — output Bild 07.png
+SCENE: The red-scarf stick figure stands between modern medicine and historical operating tools with a deeply puzzled, empathetic expression.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 08 — output Bild 08.png
+SCENE: Bold silhouette of an antique bone saw and jagged surgical knives laid out neatly on an unwashed wooden surgical cart.
+CAMERA: close-up
+
+SCENE 09 — output Bild 09.png
+SCENE: The red-scarf stick figure watches an old flickering cinema projector screen showing a dramatic cartoon cowboy inside a wooden saloon.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 10 — output Bild 10.png
+SCENE: A rugged stick figure cowboy eagerly gulps dark amber liquor from a glass bottle beside a dusty frontier wooden bar.
+CAMERA: close-up
+
+SCENE 11 — output Bild 11.png
+SCENE: Close-up of a stick figure biting firmly down on a wooden stick while a frontier doctor holds tweezers with a lead bullet.
+CAMERA: close-up
+
+SCENE 12 — output Bild 12.png
+SCENE: The red-scarf stick figure crosses its arms, vigorously shaking its head in strong disagreement against an alarming warning background.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 13 — output Bild 13.png
+SCENE: A Victorian family weeps beside a sickbed while a somber doctor shakes his head in deep sorrow beside a diseased limb.
+CAMERA: wide
+
+SCENE 14 — output Bild 14.png
+SCENE: An antique brass pocket watch ticking urgently beside an alarming drawing of a spiking and collapsing human heart rhythm.
+CAMERA: close-up
+
+SCENE 15 — output Bild 15.png
+SCENE: The red-scarf stick figure watches with intense curiosity as a dark bottle of strong liquor tipped over, spilling dark liquid across a heavily stained wooden operating table surface.
+CAMERA: close-up
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 16 — output Bild 16.png
+SCENE: A nervous stick figure patient drinks from a tin cup, looking briefly relieved before sudden overwhelming panic returns quickly.
+CAMERA: medium
+
+SCENE 17 — output Bild 17.png
+SCENE: Simple scientific cutaway showing blood vessels rapidly expanding and glowing red under skin with watery blood drops flowing profusely.
+CAMERA: cutaway
+
+SCENE 18 — output Bild 18.png
+SCENE: A surgeon gasps in dismay as blood surges far too quickly from a fresh incision onto the linen while assistants panic.
+CAMERA: medium
+
+SCENE 19 — output Bild 19.png
+SCENE: The red-scarf stick figure watches with intense curiosity as dried opium poppy seed pods and a vintage glass apothecary bottle labeled Laudanum sitting together on a dusty wooden shelf.
+CAMERA: close-up
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 20 — output Bild 20.png
+SCENE: The red-scarf stick figure examines a blooming red opium poppy flower with scholarly curiosity in a herbal garden setting.
+CAMERA: close-up
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 21 — output Bild 21.png
+SCENE: Dramatic silhouette of a heavy jagged surgical bone saw cutting harshly through a tough timber beam with wood splinters.
+CAMERA: medium
+
+SCENE 22 — output Bild 22.png
+SCENE: A brass balance scale showing heavy opium drops tipping completely toward a skull symbol as vital breathing lines flatten out.
+CAMERA: cutaway
+
+SCENE 23 — output Bild 23.png
+SCENE: The red-scarf stick figure shrugs with wide open hands, searching thoughtfully for answers in a dimly lit historical chamber.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 24 — output Bild 24.png
+SCENE: The red-scarf stick figure watches with intense curiosity as a large shadowy surgical theater where muscular hospital orderlies roll up their rough linen shirt sleeves aggressively and firmly.
+CAMERA: wide
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 25 — output Bild 25.png
+SCENE: A dusty operating room filled with cobwebs, dirty floorboards, and sawdust scattered beneath the table in a Victorian hospital.
+CAMERA: wide
+
+SCENE 26 — output Bild 26.png
+SCENE: Steep amphitheater tiers packed with stick figure medical students peering down with brass opera glasses, notebooks, and loud murmurs.
+CAMERA: wide
+
+SCENE 27 — output Bild 27.png
+SCENE: Four towering, burly stick figure assistants standing ready around a heavy timber operating table with stern expressions.
+CAMERA: medium
+
+SCENE 28 — output Bild 28.png
+SCENE: The orderlies lean heavily down, pinning the patient limbs firmly against the solid wooden surface with sheer muscular power.
+CAMERA: medium
+
+SCENE 29 — output Bild 29.png
+SCENE: Close-up of a thick brown leather strap placed between the jaws of a grimacing stick figure to protect the tongue.
+CAMERA: close-up
+
+SCENE 30 — output Bild 30.png
+SCENE: The red-scarf stick figure watches with intense curiosity as vibrating sound waves radiating outward from the operating room windows across the grim brick hospital walls into the city air.
+CAMERA: wide
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 31 — output Bild 31.png
+SCENE: A large church bell in a London hospital belfry swinging violently, tolling loudly above bustling cobblestone horse carriage streets.
+CAMERA: wide
+
+SCENE 32 — output Bild 32.png
+SCENE: The red-scarf stick figure points urgently toward a glowing golden stopwatch suspended in mid-air in front of a dark curtain.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 33 — output Bild 33.png
+SCENE: A dynamic blur of surgical hands moving with lightning speed over a gleaming tray of antique surgical tools.
+CAMERA: close-up
+
+SCENE 34 — output Bild 34.png
+SCENE: The red-scarf stick figure watches with intense curiosity as human nervous system diagram glowing bright neon red with alarming warning pulses shooting through spine and brain pathways.
+CAMERA: cutaway
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 35 — output Bild 35.png
+SCENE: Graphic representation of overloaded neural pathways suddenly snapping apart and plunging the conscious figure into dark shadow.
+CAMERA: close-up
+
+SCENE 36 — output Bild 36.png
+SCENE: A vintage medical dial plummeting to zero alongside a flatlining red heartbeat line on a black clinical background.
+CAMERA: close-up
+
+SCENE 37 — output Bild 37.png
+SCENE: A Victorian surgeon practicing rapid knife incisions on a training dummy while an assistant measures time with a stopwatch.
+CAMERA: medium
+
+SCENE 38 — output Bild 38.png
+SCENE: Portrait of a tall, imposing Victorian gentleman surgeon in a dark green frock coat with remarkably sharp, confident eyes.
+CAMERA: medium
+
+SCENE 39 — output Bild 39.png
+SCENE: Grand neoclassical facade of University College Hospital in London under dramatic cloudy English skies with gas lamps glowing.
+CAMERA: wide
+
+SCENE 40 — output Bild 40.png
+SCENE: A shiny surgical blade slicing smoothly through air leaving a shimmering silver speed trail behind its polished edge.
+CAMERA: close-up
+
+SCENE 41 — output Bild 41.png
+SCENE: The red-scarf stick figure watches with intense curiosity as the tall surgeon Liston towers impressively in his dark green woolen frock coat over shorter assistants in the theater.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 42 — output Bild 42.png
+SCENE: Liston dramatically pulls a gleaming silver pocket watch by its chain from his waistcoat pocket facing the attentive students.
+CAMERA: medium
+
+SCENE 43 — output Bild 43.png
+SCENE: Liston opens his arms wide toward the gallery audience, calling out his famous catchphrase with confident theatrical flair.
+CAMERA: medium
+
+SCENE 44 — output Bild 44.png
+SCENE: Top-down view of surgeons operating with coordinated mechanical efficiency around the table under bright focused skylight.
+CAMERA: top-down
+
+SCENE 45 — output Bild 45.png
+SCENE: A large brass vintage pocket watch clearly showing the small hand stopped at a remarkably swift surgical mark.
+CAMERA: close-up
+
+SCENE 46 — output Bild 46.png
+SCENE: The red-scarf stick figure looks anxious, biting its lip while warning signs flash in dark amber behind it.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 47 — output Bild 47.png
+SCENE: A dramatic historical banner displaying mortality figures of three hundred percent with a bold grim skull icon.
+CAMERA: medium
+
+SCENE 48 — output Bild 48.png
+SCENE: A chaotic blur of flying surgical knives, splashing dark fluids, and hurried hands rushing around the operating table.
+CAMERA: medium
+
+SCENE 49 — output Bild 49.png
+SCENE: The red-scarf stick figure watches with intense curiosity as an assistant screams in shock and recoils backwards, clutching his wounded hand with severed fingertips in utter disbelief.
+CAMERA: close-up
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 50 — output Bild 50.png
+SCENE: The sharp tip of Liston long knife accidentally cuts right through a spectator long black tailcoat with a clean rip.
+CAMERA: close-up
+
+SCENE 51 — output Bild 51.png
+SCENE: An elderly spectator doctor gasps in pure terror, staring down at his ripped coat in sheer panic and clutching his chest.
+CAMERA: close-up
+
+SCENE 52 — output Bild 52.png
+SCENE: The elderly doctor collapses backwards onto the wooden gallery bench, succumbing instantly to shock while observers gather around.
+CAMERA: wide
+
+SCENE 53 — output Bild 53.png
+SCENE: Two hospital beds side-by-side with dim lamps and heavy black mourning drapes hanging down in a quiet ward.
+CAMERA: wide
+
+SCENE 54 — output Bild 54.png
+SCENE: Three solemn stick figure tombstones standing in a neat row in a foggy Victorian London cemetery under weeping willow trees.
+CAMERA: wide
+
+SCENE 55 — output Bild 55.png
+SCENE: The red-scarf stick figure rests bandaged in bed, breathing a sigh of immense temporary relief with eyes gently closed.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 56 — output Bild 56.png
+SCENE: The red-scarf stick figure watches with intense curiosity as two orderlies carry a wooden stretcher carefully down a dimly lit hospital corridor lined with dark wooden doors.
+CAMERA: wide
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 57 — output Bild 57.png
+SCENE: A dark shadowy mist full of invisible spiky microbes creeping slowly into the recovery ward through open windows.
+CAMERA: wide
+
+SCENE 58 — output Bild 58.png
+SCENE: A confused Victorian doctor peering into an empty brass magnifying glass, completely blind to microscopic bacteria floating everywhere.
+CAMERA: medium
+
+SCENE 59 — output Bild 59.png
+SCENE: Close-up of a doctor dirty hands with dark grime under fingernails picking up clean metal surgical blades carelessly.
+CAMERA: close-up
+
+SCENE 60 — output Bild 60.png
+SCENE: A surgeon drops a surgical knife onto dusty sawdust, casually picks it up, and wipes it on his dirty coat sleeve.
+CAMERA: close-up
+
+SCENE 61 — output Bild 61.png
+SCENE: An empty, blood-caked Victorian doctor frock coat stands completely upright on its own in a shadowy hospital room corner.
+CAMERA: medium
+
+SCENE 62 — output Bild 62.png
+SCENE: Two young medical students gaze in awe and admiration at a senior surgeon filthy, stained frock coat with wide smiles.
+CAMERA: medium
+
+SCENE 63 — output Bild 63.png
+SCENE: The red-scarf stick figure watches with intense curiosity as pie chart graphic showing nearly half the circle shaded dark red, labeled with mortality against a dark clinical background.
+CAMERA: split
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 64 — output Bild 64.png
+SCENE: A long ward of Victorian hospital beds where red fever thermometers glow dangerously high above shivering stick figure patients.
+CAMERA: wide
+
+SCENE 65 — output Bild 65.png
+SCENE: Two Victorian doctors smile happily while inspecting a swollen wound that is oozing thick yellow pus onto fresh bandages.
+CAMERA: close-up
+
+SCENE 66 — output Bild 66.png
+SCENE: An antique medical textbook displaying an old Latin inscription: Pus bonum et laudabile, decorated with ornate flourishes.
+CAMERA: close-up
+
+SCENE 67 — output Bild 67.png
+SCENE: The red-scarf stick figure balances two glowing golden dice on its outstretched fingertips with a thoughtful expression.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 68 — output Bild 68.png
+SCENE: Split view showing surviving the operating table on the left and surviving the dirty hospital bed on the right.
+CAMERA: split
+
+SCENE 69 — output Bild 69.png
+SCENE: The red-scarf stick figure stands before a mysterious, ancient stone carved archway leading into deep archaeological excavations.
+CAMERA: wide
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 70 — output Bild 70.png
+SCENE: A grim Victorian hospital building silhouetted against a stormy sky with dark ominous crows circling above the roof.
+CAMERA: wide
+
+SCENE 71 — output Bild 71.png
+SCENE: The red-scarf stick figure ponders with a hand on its chin, looking back through time toward distant prehistoric mountains.
+CAMERA: close-up
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 72 — output Bild 72.png
+SCENE: An archaeologist in sun hat carefully brushing desert sand away from an ancient buried human skull in a sunlit trench.
+CAMERA: medium
+
+SCENE 73 — output Bild 73.png
+SCENE: Close-up of an ancient skull showing a clean circular hole cut into the top bone with an ancient shaman tool beside it.
+CAMERA: close-up
+
+SCENE 74 — output Bild 74.png
+SCENE: The red-scarf stick figure watches with intense curiosity as stone Age hunter-gatherers gathering around a campfire with flint scrapers and leather wraps laid out on animal skin.
+CAMERA: wide
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 75 — output Bild 75.png
+SCENE: Majestic mountain peaks of the Andes with ancient stone Inca city terraces shining under bright sunlight and green valleys.
+CAMERA: wide
+
+SCENE 76 — output Bild 76.png
+SCENE: Close-up of shiny black razor-sharp obsidian glass knives and notched bronze chisels used skillfully by Inca healers.
+CAMERA: close-up
+
+SCENE 77 — output Bild 77.png
+SCENE: A group of healthy Inca warriors wearing colorful woven headbands smiling and walking together across high mountain terraces.
+CAMERA: wide
+
+SCENE 78 — output Bild 78.png
+SCENE: Modern research laboratory with scientists analyzing rows of ancient Peruvian skulls on padded trays under bright lights.
+CAMERA: medium
+
+SCENE 79 — output Bild 79.png
+SCENE: A bold statistical bar chart shooting high up to eighty-three percent survival rate in shining golden color.
+CAMERA: split
+
+SCENE 80 — output Bild 80.png
+SCENE: Extreme macro cutaway view of a drilled skull bone showing smooth, rounded new bone growth along the edges.
+CAMERA: close-up
+
+SCENE 81 — output Bild 81.png
+SCENE: The red-scarf stick figure examines a skull model under a magnifying glass, pointing with awe at the smooth healed edges.
+CAMERA: close-up
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 82 — output Bild 82.png
+SCENE: The red-scarf stick figure watches with intense curiosity as comparison showing a resilient Inca in fresh mountain air on the left versus a crowded 1862 war tent on the right.
+CAMERA: split
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 83 — output Bild 83.png
+SCENE: Clean, fresh Andean mountain breeze blowing through blooming wildflowers under a brilliant blue open sky with flying condors.
+CAMERA: wide
+
+SCENE 84 — output Bild 84.png
+SCENE: Historic red-brick cobblestone streets of 1846 Boston under autumn trees on a crisp, quiet morning with horse carriages.
+CAMERA: wide
+
+SCENE 85 — output Bild 85.png
+SCENE: Dentist William Morton walks nervously into the sunlight-flooded amphitheater holding a small leather instrument satchel.
+CAMERA: medium
+
+SCENE 86 — output Bild 86.png
+SCENE: Close-up of a delicate glass sphere inhaler with brass mouthpiece filled with shimmering clear liquid anesthetic compound.
+CAMERA: close-up
+
+SCENE 87 — output Bild 87.png
+SCENE: A pale, nervous young stick figure patient sitting quietly in a high-backed wooden surgical chair holding his hands together.
+CAMERA: medium
+
+SCENE 88 — output Bild 88.png
+SCENE: Abbott breathes deeply through the glass inhaler mouthpiece, his eyes slowly and peacefully closing into restful slumber.
+CAMERA: close-up
+
+SCENE 89 — output Bild 89.png
+SCENE: Distinguished grey-haired surgeon John Collins Warren carefully positions his shiny silver scalpel near the relaxed neck.
+CAMERA: close-up
+
+SCENE 90 — output Bild 90.png
+SCENE: The red-scarf stick figure watches with intense curiosity as dozens of medical students lean over wooden amphitheater railings with held breath and tense, silent anticipation.
+CAMERA: wide
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 91 — output Bild 91.png
+SCENE: Close-up of Abbott face remaining completely tranquil and deeply relaxed without flinching a single facial muscle at all.
+CAMERA: close-up
+
+SCENE 92 — output Bild 92.png
+SCENE: Top-down view of the patient resting serenely on the operating chair like a sleeping child under soft morning sunbeams.
+CAMERA: top-down
+
+SCENE 93 — output Bild 93.png
+SCENE: Abbott gently opens his eyes, blinking softly in the bright skylight overhead, completely unharmed and bewildered.
+CAMERA: close-up
+
+SCENE 94 — output Bild 94.png
+SCENE: Surgeon Warren bends down with deep fatherly concern, kindly asking the waking patient how he feels right now.
+CAMERA: medium
+
+SCENE 95 — output Bild 95.png
+SCENE: A soft white bird feather gently brushing across a calm stick figure neck in surreal, peaceful artistic imagery.
+CAMERA: close-up
+
+SCENE 96 — output Bild 96.png
+SCENE: Close-up of surgeon Warren removing his wire-rimmed spectacles, gently wiping a joyful tear from his weathered cheek.
+CAMERA: close-up
+
+SCENE 97 — output Bild 97.png
+SCENE: Warren addresses the completely silent amphitheater, uttering his historic phrase with immense dignity and profound relief.
+CAMERA: medium
+
+SCENE 98 — output Bild 98.png
+SCENE: Glowing golden light spreading rapidly across a vintage world globe from Boston to European cities and beyond.
+CAMERA: wide
+
+SCENE 99 — output Bild 99.png
+SCENE: A dark monstrous shadow representing ancient pain dissolving into harmless bright golden morning light across the horizon.
+CAMERA: wide
+
+SCENE 100 — output Bild 100.png
+SCENE: Two calm surgeons working carefully and methodically under bright lamps, saving precious human lives with steady precision.
+CAMERA: medium
+
+SCENE 101 — output Bild 101.png
+SCENE: The red-scarf stick figure stands proudly in front of a neat visual summary chart of the historical survival factors.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 102 — output Bild 102.png
+SCENE: Three neat visual icons: a fast stopwatch, strong restraint hands, and clean fresh air shown side by side clearly.
+CAMERA: split
+
+SCENE 103 — output Bild 103.png
+SCENE: The red-scarf stick figure relaxes again in the clean modern dental chair, smiling contentedly with hands folded peacefully.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 104 — output Bild 104.png
+SCENE: Close-up of a gentle, modern sterile syringe with a drop of clear anesthetic glowing softly at its polished tip.
+CAMERA: close-up
+
+SCENE 105 — output Bild 105.png
+SCENE: The red-scarf stick figure gazes thoughtfully at a ghostly silhouette of Liston with his antique pocket watch fading softly.
+CAMERA: medium
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+SCENE 106 — output Bild 106.png
+SCENE: A cheerful stick figure walks happily out of a modern clinic into bright warm sunny daylight with birds singing.
+CAMERA: wide
+
+SCENE 107 — output Bild 107.png
+SCENE: The red-scarf stick figure gives a warm, grateful nod directly to the camera against a soft warm golden glow.
+CAMERA: close-up
+MAIN CHARACTER: the channel's recurring guide: a curious, expressive stick figure who always wears a small red scarf
+
+
+MANDATORY VISUAL QUALITY CHECK after EACH batch: visually examine actual output files for adherence to the narrative, stick people/hands, historical location/era, legibility at mobile size, missing text/garbled writing, consistent scarves, visual diversity and no production annotations. Repair only failed or missing specific scene images and reinspect. Do not claim to have reviewed actual pixels if you only have written descriptions.
+
+FINAL INTEGRITY: 107 actual, unique, sequential video frames named Bild 01.png–Bild 107.png, 16:9, no gaps; plus one separately named thumbnail-source.png. Character sheet and losing cover candidates are not video frames. If ZIP export really works, create one genuine downloadable ZIP with correct files; otherwise provide actual per-image downloads. Never pretend to have created files or URLs. Do not generate the MP4 or audio. Report actual completion and first missing scene if generation is interrupted.

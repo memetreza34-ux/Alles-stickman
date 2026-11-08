@@ -1,0 +1,770 @@
+{
+  "schemaVersion": 2,
+  "status": "READY",
+  "howTo": "brief = englisch, konkret: wer tut was mit welchem Objekt, welche Emotion, welcher Ort/Epoche. Kein Text, keine Dateinamen, keine Zeiten. shot = close-up | medium | wide | top-down | cutaway | split. protagonist = true, wenn die wiederkehrende Hauptfigur (roter Schal) vorkommt. Beschriftungen/Zahlen gehören als overlay in BILD_AUDIO_ZUORDNUNG.json.",
+  "covers": [
+    {
+      "id": "A",
+      "brief": "The red-scarf stick figure lies terrified on a wooden operating table with wide eyes, while a tall Victorian surgeon holds a bone saw and a giant pocket watch under dramatic lighting."
+    },
+    {
+      "id": "B",
+      "brief": "A Victorian surgeon in a dark woolen frock coat raises a gleaming surgical bone saw triumphantly next to a giant brass pocket watch, intense golden spotlight and dark shadows."
+    },
+    {
+      "id": "C",
+      "brief": "The red-scarf stick figure clutches its head in sheer disbelief and shock beside an antique wooden hospital bed, bold dramatic contrast under bright stage lighting."
+    }
+  ],
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "brief": "The red-scarf stick figure sits comfortably reclined in a sleek modern dental chair, feeling completely calm and relaxed under soft lighting.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 2,
+      "brief": "Extreme close-up of a tiny, shiny modern dental syringe gently administering local anesthetic, smooth and completely painless without any discomfort.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 3,
+      "brief": "The red-scarf stick figure touches its numb cheek with a peaceful, slightly lopsided smile on a clean white background.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 4,
+      "brief": "Dramatic time rewind graphic showing historical calendar pages spinning backward rapidly to a dark, shadowy hospital room in the distant past.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 5,
+      "brief": "A historical stick figure patient lies wide awake on a rough wooden table, eyes wide with terrifying shock and raw realization.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 6,
+      "brief": "Split view showing a modern sleeping patient peacefully resting on the left contrasted with an alert, terrified historical patient on the right.",
+      "shot": "split",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 7,
+      "brief": "The red-scarf stick figure stands between modern medicine and historical operating tools with a deeply puzzled, empathetic expression.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 8,
+      "brief": "Bold silhouette of an antique bone saw and jagged surgical knives laid out neatly on an unwashed wooden surgical cart.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 9,
+      "brief": "The red-scarf stick figure watches an old flickering cinema projector screen showing a dramatic cartoon cowboy inside a wooden saloon.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 10,
+      "brief": "A rugged stick figure cowboy eagerly gulps dark amber liquor from a glass bottle beside a dusty frontier wooden bar.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 11,
+      "brief": "Close-up of a stick figure biting firmly down on a wooden stick while a frontier doctor holds tweezers with a lead bullet.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 12,
+      "brief": "The red-scarf stick figure crosses its arms, vigorously shaking its head in strong disagreement against an alarming warning background.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 13,
+      "brief": "A Victorian family weeps beside a sickbed while a somber doctor shakes his head in deep sorrow beside a diseased limb.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 14,
+      "brief": "An antique brass pocket watch ticking urgently beside an alarming drawing of a spiking and collapsing human heart rhythm.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 15,
+      "brief": "The red-scarf stick figure watches with intense curiosity as a dark bottle of strong liquor tipped over, spilling dark liquid across a heavily stained wooden operating table surface.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 16,
+      "brief": "A nervous stick figure patient drinks from a tin cup, looking briefly relieved before sudden overwhelming panic returns quickly.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 17,
+      "brief": "Simple scientific cutaway showing blood vessels rapidly expanding and glowing red under skin with watery blood drops flowing profusely.",
+      "shot": "cutaway",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 18,
+      "brief": "A surgeon gasps in dismay as blood surges far too quickly from a fresh incision onto the linen while assistants panic.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 19,
+      "brief": "The red-scarf stick figure watches with intense curiosity as dried opium poppy seed pods and a vintage glass apothecary bottle labeled Laudanum sitting together on a dusty wooden shelf.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 20,
+      "brief": "The red-scarf stick figure examines a blooming red opium poppy flower with scholarly curiosity in a herbal garden setting.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 21,
+      "brief": "Dramatic silhouette of a heavy jagged surgical bone saw cutting harshly through a tough timber beam with wood splinters.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 22,
+      "brief": "A brass balance scale showing heavy opium drops tipping completely toward a skull symbol as vital breathing lines flatten out.",
+      "shot": "cutaway",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 23,
+      "brief": "The red-scarf stick figure shrugs with wide open hands, searching thoughtfully for answers in a dimly lit historical chamber.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 24,
+      "brief": "The red-scarf stick figure watches with intense curiosity as a large shadowy surgical theater where muscular hospital orderlies roll up their rough linen shirt sleeves aggressively and firmly.",
+      "shot": "wide",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 25,
+      "brief": "A dusty operating room filled with cobwebs, dirty floorboards, and sawdust scattered beneath the table in a Victorian hospital.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 26,
+      "brief": "Steep amphitheater tiers packed with stick figure medical students peering down with brass opera glasses, notebooks, and loud murmurs.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 27,
+      "brief": "Four towering, burly stick figure assistants standing ready around a heavy timber operating table with stern expressions.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 28,
+      "brief": "The orderlies lean heavily down, pinning the patient limbs firmly against the solid wooden surface with sheer muscular power.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 29,
+      "brief": "Close-up of a thick brown leather strap placed between the jaws of a grimacing stick figure to protect the tongue.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 30,
+      "brief": "The red-scarf stick figure watches with intense curiosity as vibrating sound waves radiating outward from the operating room windows across the grim brick hospital walls into the city air.",
+      "shot": "wide",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 31,
+      "brief": "A large church bell in a London hospital belfry swinging violently, tolling loudly above bustling cobblestone horse carriage streets.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 32,
+      "brief": "The red-scarf stick figure points urgently toward a glowing golden stopwatch suspended in mid-air in front of a dark curtain.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 33,
+      "brief": "A dynamic blur of surgical hands moving with lightning speed over a gleaming tray of antique surgical tools.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 34,
+      "brief": "The red-scarf stick figure watches with intense curiosity as human nervous system diagram glowing bright neon red with alarming warning pulses shooting through spine and brain pathways.",
+      "shot": "cutaway",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 35,
+      "brief": "Graphic representation of overloaded neural pathways suddenly snapping apart and plunging the conscious figure into dark shadow.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 36,
+      "brief": "A vintage medical dial plummeting to zero alongside a flatlining red heartbeat line on a black clinical background.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 37,
+      "brief": "A Victorian surgeon practicing rapid knife incisions on a training dummy while an assistant measures time with a stopwatch.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 38,
+      "brief": "Portrait of a tall, imposing Victorian gentleman surgeon in a dark green frock coat with remarkably sharp, confident eyes.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 39,
+      "brief": "Grand neoclassical facade of University College Hospital in London under dramatic cloudy English skies with gas lamps glowing.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 40,
+      "brief": "A shiny surgical blade slicing smoothly through air leaving a shimmering silver speed trail behind its polished edge.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 41,
+      "brief": "The red-scarf stick figure watches with intense curiosity as the tall surgeon Liston towers impressively in his dark green woolen frock coat over shorter assistants in the theater.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 42,
+      "brief": "Liston dramatically pulls a gleaming silver pocket watch by its chain from his waistcoat pocket facing the attentive students.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 43,
+      "brief": "Liston opens his arms wide toward the gallery audience, calling out his famous catchphrase with confident theatrical flair.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 44,
+      "brief": "Top-down view of surgeons operating with coordinated mechanical efficiency around the table under bright focused skylight.",
+      "shot": "top-down",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 45,
+      "brief": "A large brass vintage pocket watch clearly showing the small hand stopped at a remarkably swift surgical mark.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 46,
+      "brief": "The red-scarf stick figure looks anxious, biting its lip while warning signs flash in dark amber behind it.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 47,
+      "brief": "A dramatic historical banner displaying mortality figures of three hundred percent with a bold grim skull icon.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 48,
+      "brief": "A chaotic blur of flying surgical knives, splashing dark fluids, and hurried hands rushing around the operating table.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 49,
+      "brief": "The red-scarf stick figure watches with intense curiosity as an assistant screams in shock and recoils backwards, clutching his wounded hand with severed fingertips in utter disbelief.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 50,
+      "brief": "The sharp tip of Liston long knife accidentally cuts right through a spectator long black tailcoat with a clean rip.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 51,
+      "brief": "An elderly spectator doctor gasps in pure terror, staring down at his ripped coat in sheer panic and clutching his chest.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 52,
+      "brief": "The elderly doctor collapses backwards onto the wooden gallery bench, succumbing instantly to shock while observers gather around.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 53,
+      "brief": "Two hospital beds side-by-side with dim lamps and heavy black mourning drapes hanging down in a quiet ward.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 54,
+      "brief": "Three solemn stick figure tombstones standing in a neat row in a foggy Victorian London cemetery under weeping willow trees.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 55,
+      "brief": "The red-scarf stick figure rests bandaged in bed, breathing a sigh of immense temporary relief with eyes gently closed.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 56,
+      "brief": "The red-scarf stick figure watches with intense curiosity as two orderlies carry a wooden stretcher carefully down a dimly lit hospital corridor lined with dark wooden doors.",
+      "shot": "wide",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 57,
+      "brief": "A dark shadowy mist full of invisible spiky microbes creeping slowly into the recovery ward through open windows.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 58,
+      "brief": "A confused Victorian doctor peering into an empty brass magnifying glass, completely blind to microscopic bacteria floating everywhere.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 59,
+      "brief": "Close-up of a doctor dirty hands with dark grime under fingernails picking up clean metal surgical blades carelessly.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 60,
+      "brief": "A surgeon drops a surgical knife onto dusty sawdust, casually picks it up, and wipes it on his dirty coat sleeve.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 61,
+      "brief": "An empty, blood-caked Victorian doctor frock coat stands completely upright on its own in a shadowy hospital room corner.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 62,
+      "brief": "Two young medical students gaze in awe and admiration at a senior surgeon filthy, stained frock coat with wide smiles.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 63,
+      "brief": "The red-scarf stick figure watches with intense curiosity as pie chart graphic showing nearly half the circle shaded dark red, labeled with mortality against a dark clinical background.",
+      "shot": "split",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 64,
+      "brief": "A long ward of Victorian hospital beds where red fever thermometers glow dangerously high above shivering stick figure patients.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 65,
+      "brief": "Two Victorian doctors smile happily while inspecting a swollen wound that is oozing thick yellow pus onto fresh bandages.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 66,
+      "brief": "An antique medical textbook displaying an old Latin inscription: Pus bonum et laudabile, decorated with ornate flourishes.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 67,
+      "brief": "The red-scarf stick figure balances two glowing golden dice on its outstretched fingertips with a thoughtful expression.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 68,
+      "brief": "Split view showing surviving the operating table on the left and surviving the dirty hospital bed on the right.",
+      "shot": "split",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 69,
+      "brief": "The red-scarf stick figure stands before a mysterious, ancient stone carved archway leading into deep archaeological excavations.",
+      "shot": "wide",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 70,
+      "brief": "A grim Victorian hospital building silhouetted against a stormy sky with dark ominous crows circling above the roof.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 71,
+      "brief": "The red-scarf stick figure ponders with a hand on its chin, looking back through time toward distant prehistoric mountains.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 72,
+      "brief": "An archaeologist in sun hat carefully brushing desert sand away from an ancient buried human skull in a sunlit trench.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 73,
+      "brief": "Close-up of an ancient skull showing a clean circular hole cut into the top bone with an ancient shaman tool beside it.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 74,
+      "brief": "The red-scarf stick figure watches with intense curiosity as stone Age hunter-gatherers gathering around a campfire with flint scrapers and leather wraps laid out on animal skin.",
+      "shot": "wide",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 75,
+      "brief": "Majestic mountain peaks of the Andes with ancient stone Inca city terraces shining under bright sunlight and green valleys.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 76,
+      "brief": "Close-up of shiny black razor-sharp obsidian glass knives and notched bronze chisels used skillfully by Inca healers.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 77,
+      "brief": "A group of healthy Inca warriors wearing colorful woven headbands smiling and walking together across high mountain terraces.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 78,
+      "brief": "Modern research laboratory with scientists analyzing rows of ancient Peruvian skulls on padded trays under bright lights.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 79,
+      "brief": "A bold statistical bar chart shooting high up to eighty-three percent survival rate in shining golden color.",
+      "shot": "split",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 80,
+      "brief": "Extreme macro cutaway view of a drilled skull bone showing smooth, rounded new bone growth along the edges.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 81,
+      "brief": "The red-scarf stick figure examines a skull model under a magnifying glass, pointing with awe at the smooth healed edges.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 82,
+      "brief": "The red-scarf stick figure watches with intense curiosity as comparison showing a resilient Inca in fresh mountain air on the left versus a crowded 1862 war tent on the right.",
+      "shot": "split",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 83,
+      "brief": "Clean, fresh Andean mountain breeze blowing through blooming wildflowers under a brilliant blue open sky with flying condors.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 84,
+      "brief": "Historic red-brick cobblestone streets of 1846 Boston under autumn trees on a crisp, quiet morning with horse carriages.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 85,
+      "brief": "Dentist William Morton walks nervously into the sunlight-flooded amphitheater holding a small leather instrument satchel.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 86,
+      "brief": "Close-up of a delicate glass sphere inhaler with brass mouthpiece filled with shimmering clear liquid anesthetic compound.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 87,
+      "brief": "A pale, nervous young stick figure patient sitting quietly in a high-backed wooden surgical chair holding his hands together.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 88,
+      "brief": "Abbott breathes deeply through the glass inhaler mouthpiece, his eyes slowly and peacefully closing into restful slumber.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 89,
+      "brief": "Distinguished grey-haired surgeon John Collins Warren carefully positions his shiny silver scalpel near the relaxed neck.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 90,
+      "brief": "The red-scarf stick figure watches with intense curiosity as dozens of medical students lean over wooden amphitheater railings with held breath and tense, silent anticipation.",
+      "shot": "wide",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 91,
+      "brief": "Close-up of Abbott face remaining completely tranquil and deeply relaxed without flinching a single facial muscle at all.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 92,
+      "brief": "Top-down view of the patient resting serenely on the operating chair like a sleeping child under soft morning sunbeams.",
+      "shot": "top-down",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 93,
+      "brief": "Abbott gently opens his eyes, blinking softly in the bright skylight overhead, completely unharmed and bewildered.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 94,
+      "brief": "Surgeon Warren bends down with deep fatherly concern, kindly asking the waking patient how he feels right now.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 95,
+      "brief": "A soft white bird feather gently brushing across a calm stick figure neck in surreal, peaceful artistic imagery.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 96,
+      "brief": "Close-up of surgeon Warren removing his wire-rimmed spectacles, gently wiping a joyful tear from his weathered cheek.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 97,
+      "brief": "Warren addresses the completely silent amphitheater, uttering his historic phrase with immense dignity and profound relief.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 98,
+      "brief": "Glowing golden light spreading rapidly across a vintage world globe from Boston to European cities and beyond.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 99,
+      "brief": "A dark monstrous shadow representing ancient pain dissolving into harmless bright golden morning light across the horizon.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 100,
+      "brief": "Two calm surgeons working carefully and methodically under bright lamps, saving precious human lives with steady precision.",
+      "shot": "medium",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 101,
+      "brief": "The red-scarf stick figure stands proudly in front of a neat visual summary chart of the historical survival factors.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 102,
+      "brief": "Three neat visual icons: a fast stopwatch, strong restraint hands, and clean fresh air shown side by side clearly.",
+      "shot": "split",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 103,
+      "brief": "The red-scarf stick figure relaxes again in the clean modern dental chair, smiling contentedly with hands folded peacefully.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 104,
+      "brief": "Close-up of a gentle, modern sterile syringe with a drop of clear anesthetic glowing softly at its polished tip.",
+      "shot": "close-up",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 105,
+      "brief": "The red-scarf stick figure gazes thoughtfully at a ghostly silhouette of Liston with his antique pocket watch fading softly.",
+      "shot": "medium",
+      "protagonist": true,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 106,
+      "brief": "A cheerful stick figure walks happily out of a modern clinic into bright warm sunny daylight with birds singing.",
+      "shot": "wide",
+      "protagonist": false,
+      "palette": ""
+    },
+    {
+      "sceneNumber": 107,
+      "brief": "The red-scarf stick figure gives a warm, grateful nod directly to the camera against a soft warm golden glow.",
+      "shot": "close-up",
+      "protagonist": true,
+      "palette": ""
+    }
+  ]
+}

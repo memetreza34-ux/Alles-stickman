@@ -1,4 +1,4 @@
-import { execFile } from 'node:child_process';
+import { execFile, spawn } from 'node:child_process';
 import { existsSync } from 'node:fs';
 import { mkdir, mkdtemp, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
@@ -277,10 +277,23 @@ export async function synthesizeWithQwenMlx(text, profile, outputPath, tempDir) 
   }
 
   const env = { ...process.env, HF_HOME: '/Users/arman/finanzneo-tts/hf' };
-  const { stderr } = await execFileAsync(pythonBin, cmdArgs, { timeout: 1_200_000, env });
-  if (!existsSync(outputPath)) {
-    throw new Error(`Qwen3-TTS Synthese erzeugte keine Datei: ${stderr}`);
-  }
+  await new Promise((resolve, reject) => {
+    const child = spawn(pythonBin, cmdArgs, { env });
+    let stderr = '';
+    child.stdout.on('data', (d) => process.stdout.write(d));
+    child.stderr.on('data', (d) => {
+      stderr += d.toString();
+      process.stderr.write(d);
+    });
+    child.on('error', reject);
+    child.on('close', (code) => {
+      if (code === 0 && existsSync(outputPath)) {
+        resolve();
+      } else {
+        reject(new Error(`Qwen3-TTS Synthese beendet mit Code ${code}: ${stderr}`));
+      }
+    });
+  });
 }
 
 export async function synthesizeVoice({

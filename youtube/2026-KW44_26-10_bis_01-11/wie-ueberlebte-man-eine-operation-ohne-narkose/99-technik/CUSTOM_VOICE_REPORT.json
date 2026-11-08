@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-01T12:10:53.071Z",
+  "projectDirectory": "youtube/2026-KW44_26-10_bis_01-11/wie-ueberlebte-man-eine-operation-ohne-narkose",
+  "scriptFile": "01-voice-script/voice-script.txt",
+  "outputAudioFile": "../../../../../../../../../tmp/custom_test_voice.wav",
+  "audioFingerprintSha256": "c25689a112a80afbd4ebbf5124e8cdc57f0c064011df2c7eac1bc5f150fb7c24",
+  "engine": "custom-human-voice-cloning",
+  "profile": "stickman-custom-clone",
+  "baseVoice": "de-DE-FlorianMultilingualNeural",
+  "referenceAudio": "channel/audio/reference/florian_reference.wav",
+  "settings": {
+    "rate": "+2%",
+    "pitch": "+0Hz",
+    "volume": "+0%"
+  },
+  "humanizerApplied": {
+    "deessing": true,
+    "tubeWarmth": true,
+    "roomPresence": true,
+    "subLowCut": true
+  },
+  "durationSeconds": 409.768,
+  "wordCount": 1051,
+  "wordsPerMinute": 153.9
+}

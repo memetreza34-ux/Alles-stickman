@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "status": "READY",
+  "videoTitle": "Wie überlebte man eine Operation ohne Narkose?",
+  "targetDurationSeconds": 390,
+  "scriptWords": 1051,
+  "imageCount": 107,
+  "chapters": [
+    {
+      "key": "hook",
+      "name": "Zahnarztstuhl vs. Holztisch",
+      "era": "Heute (Zahnarzt) ↔ OP vor 1846",
+      "shots": [
+        [
+          "Du sitzt beim Zahnarzt,",
+          "Heutiger Alltagsmoment beim Zahnarzt"
+        ],
+        [
+          "bekommst einen winzigen Piks",
+          "Moderne Betäubung ohne Schmerz"
+        ],
+        [
+          "und spürst zwei Stunden lang überhaupt nichts.",
+          "Wirkung der modernen Betäubung"
+        ],
+        [
+          "Vor 1846 war jede Operation die pure Hölle",
+          "Zeitsprung vor 1846"
+        ],
+        [
+          "bei vollem Bewusstsein.",
+          "Volles Bewusstsein beim Eingriff"
+        ],
+        [
+          "Kein Einschlafen, kein Wegdämmern, keine Schmerzausschaltung.",
+          "Keine Schmerzausschaltung"
+        ],
+        [
+          "Wie konnte ein Mensch diesen unvorstellbaren Schock überleben,",
+          "Kernfrage des Videos"
+        ],
+        [
+          "bevor es Betäubung gab?",
+          "Titelthema Einführung"
+        ]
+      ]
+    },
+    {
+      "key": "western",
+      "name": "Der Mythos vom Whisky-Cowboy",
+      "era": "Wilder Westen & Realität",
+      "shots": [
+        [
+          "Du kennst bestimmt die Szene aus Western-Filmen:",
+          "Klischee aus Western-Filmen"
+        ],
+        [
+          "Der verletzte Cowboy trinkt eine halbe Flasche Whisky,",
+          "Whisky als angebliche Betäubung"
+        ],
+        [
+          "beißt auf einen Holzstock, und dann holt der Arzt die Kugel heraus.",
+          "Beißen auf Holz und Kugel holen"
+        ],
+        [
+          "Das klingt heldenhaft, ist aber eine tödliche Illusion.",
+          "Aufdecken der Illusion"
+        ],
+        [
+          "In der echten Geschichte war ein chirurgischer Eingriff das letzte Mittel, wenn ohne ihn der sichere Tod drohte.",
+          "Chirurgie als allerletzter Ausweg"
+        ],
+        [
+          "Eine Operation ohne Narkose war ein Wettlauf gegen das Herzversagen.",
+          "Wettlauf gegen Herzversagen"
+        ]
+      ]
+    },
+    {
+      "key": "betaeubung",
+      "name": "Warum Alkohol und Opium versagten",
+      "era": "19. Jahrhundert, Apotheke & Wundsaal",
+      "shots": [
+        [
+          "Alkohol half dir damals nicht.",
+          "Alkohol versagt als Schmerzmittel"
+        ],
+        [
+          "Er nahm dir für zwei Minuten die Angst,",
+          "Kurze trügerische Beruhigung"
+        ],
+        [
+          "doch hochprozentiger Schnaps erweitert die Blutgefäße und verdünnt das Blut.",
+          "Gefäßerweiterung und Blutverdünnung"
+        ],
+        [
+          "Wer betrunken auf den Tisch stieg, verblutete oft schon beim ersten tiefen Schnitt, oder er erbrach sich und erstickte hilflos.",
+          "Tödlicher Blutverlust und Erstickungsgefahr"
+        ],
+        [
+          "Auch Opium half kaum.",
+          "Opium als unzureichendes Mittel"
+        ],
+        [
+          "In sicheren Dosen linderte der Saft des Schlafmohns dumpfe Zahnschmerzen,",
+          "Schlafmohn bei leichten Schmerzen"
+        ],
+        [
+          "doch gegen den Schock einer Knochensäge war er machtlos.",
+          "Machtlos gegen Knochensägen"
+        ],
+        [
+          "Eine Dosis, die diesen Schmerz ausgeschaltet hätte, hätte deine Atmung gestoppt.",
+          "Atemstillstand durch Überdosis"
+        ],
+        [
+          "Was machst du, wenn Schmerzmittel versagen?",
+          "Frage: Was bleibt übrig?"
+        ]
+      ]
+    },
+    {
+      "key": "gewalt",
+      "name": "Rohe Gewalt: Die Dressers",
+      "era": "Altes Operations-Theater in London",
+      "shots": [
+        [
+          "Chirurgen setzten auf rohe Gewalt.",
+          "Chirurgie setzt auf rohe Gewalt"
+        ],
+        [
+          "Wenn du im frühen neunzehnten Jahrhundert operiert werden musstest, betratest du keinen sterilen Saal.",
+          "Frühes 19. Jahrhundert kein steriler Raum"
+        ],
+        [
+          "Du kamst in ein vollgepacktes Theater vor Dutzenden gaffenden Medizinstudenten.",
+          "Zuschauerränge voll mit Studenten"
+        ],
+        [
+          "Auf dem Holztisch warteten vier bis sechs stämmige Gehilfen,",
+          "Vier bis sechs Gehilfen"
+        ],
+        [
+          "die man damals Dressers nannte. Ihre einzige Aufgabe: sich mit vollem Körpergewicht auf deine Arme, Beine und deine Brust werfen.",
+          "Fixieren durch Dressers mit vollem Gewicht"
+        ],
+        [
+          "Ein Lederriemen zwischen deinen Zähnen verhinderte, dass du dir die eigene Zunge abbissest.",
+          "Lederriemen verhindert Zungenbisse"
+        ],
+        [
+          "Die Schreie der Patienten waren so laut,",
+          "Unerträgliche Schreie"
+        ],
+        [
+          "dass Londoner Hospitäler Glocken läuteten, um den Lärm vor den Straßen zu dämpfen.",
+          "Glockenläuten gegen den Lärm"
+        ]
+      ]
+    },
+    {
+      "key": "schnelligkeit",
+      "name": "Robert Listons 28-Sekunden-Rekord",
+      "era": "University College Hospital London 1830er",
+      "shots": [
+        [
+          "In dieser Welt entschied für einen Chirurgen nur eine Fähigkeit über Leben und Tod:",
+          "Entscheidende Fähigkeit"
+        ],
+        [
+          "extreme Schnelligkeit.",
+          "Extreme Schnelligkeit"
+        ],
+        [
+          "Jeder zusätzliche Schnitt trieb den Körper näher an den neurogenen Schock.",
+          "Gefahr des neurogenen Schocks"
+        ],
+        [
+          "Das Nervensystem kollabierte unter der Last der Reize,",
+          "Nervensystem bricht zusammen"
+        ],
+        [
+          "der Blutdruck stürzte ab, und das Herz hörte auf zu schlagen.",
+          "Blutdruckabfall und Herzstillstand"
+        ],
+        [
+          "Die besten Chirurgen trainierten ihre Hände wie Sprinter.",
+          "Chirurgen trainieren wie Sprinter"
+        ],
+        [
+          "Der berühmteste von ihnen hieß Robert Liston.",
+          "Robert Liston Vorstellung"
+        ],
+        [
+          "In den 1830er-Jahren arbeitete er am University College Hospital in London",
+          "University College Hospital London"
+        ],
+        [
+          "und galt als das schnellste Messer im Empire.",
+          "Schnellstes Messer im Empire"
+        ],
+        [
+          "Liston war fast zwei Meter groß, trug einen dunkelgrünen Gehrock und war stolz auf sein Tempo.",
+          "Listons Statur und Gehrock"
+        ],
+        [
+          "Wenn er den Operationssaal betrat, zog er seine Taschenuhr heraus, wandte sich an die Studenten auf den Holzbänken",
+          "Liston zieht die Taschenuhr"
+        ],
+        [
+          "und rief laut: Stoppt die Zeit, meine Herren!",
+          "Stoppt die Zeit meine Herren!"
+        ],
+        [
+          "Er amputierte ein menschliches Bein in weniger als zweieinhalb Minuten.",
+          "Amputation unter zweieinhalb Minuten"
+        ],
+        [
+          "Sein persönlicher Rekord lag bei unglaublichen 28 Sekunden.",
+          "Rekordzeit Amputation"
+        ]
+      ]
+    },
+    {
+      "key": "todesrate",
+      "name": "Die berüchtigte 300-%-Operation",
+      "era": "Operationssaal und Friedhof",
+      "shots": [
+        [
+          "Dieses rasende Tempo forderte Opfer.",
+          "Risiken des Tempos"
+        ],
+        [
+          "Listons berüchtigtster Eingriff ging als die einzige Operation mit dreihundert Prozent Todesrate in die Geschichte ein.",
+          "Operation mit 300 Prozent Todesrate"
+        ],
+        [
+          "Liston operierte in solcher Hektik,",
+          "Listons rasende Hektik"
+        ],
+        [
+          "dass er beim Durchtrennen des Oberschenkels die Finger seines Assistenten abschnitt.",
+          "Finger des Assistenten abgetrennt"
+        ],
+        [
+          "Beim Zurückschwingen der Klinge schlitzte er den Rockzipfel eines zuschauenden Arztes auf.",
+          "Rockzipfel des Zuschauers aufgeschlitzt"
+        ],
+        [
+          "Der Zuschauer dachte, die Klinge traf sein Fleisch,",
+          "Zuschauer glaubt an tödliche Wunde"
+        ],
+        [
+          "erlitt vor Todesangst einen Herzinfarkt und starb im Saal.",
+          "Todesangst und Herzinfarkt"
+        ],
+        [
+          "Der Patient und Listons Assistent starben Tage später an Wundbrand.",
+          "Patient und Assistent sterben an Wundbrand"
+        ],
+        [
+          "Ein Eingriff, drei Tote.",
+          "Drei Tote durch einen Eingriff"
+        ]
+      ]
+    },
+    {
+      "key": "keime",
+      "name": "Der wahre Killer: Hospitalbrand",
+      "era": "Historische Lazarette und Betten",
+      "shots": [
+        [
+          "Stell dir vor, du hast diesen Wahnsinn auf dem Tisch überlebt.",
+          "Überleben auf dem Tisch"
+        ],
+        [
+          "Dein Herz schlägt weiter, und Träger bringen dich in dein Krankenbett.",
+          "Transport ins Krankenbett"
+        ],
+        [
+          "Die eigentliche Gefahr begann jetzt erst.",
+          "Die wahre Gefahr beginnt"
+        ],
+        [
+          "Vor Mitte des neunzehnten Jahrhunderts wusste kein Arzt, was Bakterien sind.",
+          "Unbekannte Bakterien"
+        ],
+        [
+          "Hände wuschen Chirurgen vor dem Eingriff nie,",
+          "Ungewaschene Hände"
+        ],
+        [
+          "Messer fielen auf den Dielenboden und wurden am Ärmel abgewischt.",
+          "Messer am Ärmel abwischen"
+        ],
+        [
+          "Die Ärzte operierten in Gehrocken, die vor getrocknetem Blut und Eiter so steif waren, dass sie in der Ecke standen.",
+          "Gehrock steht steif in der Ecke"
+        ],
+        [
+          "Je verkrusteter die Kleidung eines Arztes war, desto erfahrener wirkte er auf Kollegen.",
+          "Dreck als Statussymbol"
+        ],
+        [
+          "Fast die Hälfte aller Amputierten starb in den Tagen nach dem Eingriff an Hospitalbrand.",
+          "Fast die Hälfte stirbt an Hospitalbrand"
+        ],
+        [
+          "Wundfieber und Blutvergiftung fraßen sich durch die Betten.",
+          "Wundfieber und Sepsis"
+        ],
+        [
+          "Wenn eine Wunde nach Tagen dicken Eiter absonderte, freuten sich die Mediziner.",
+          "Freude über Eiter"
+        ],
+        [
+          "Sie nannten es lobenswerten Eiter und dachten, der Körper scheidet Gift aus.",
+          "Lobenswerter Eiter Irrglaube"
+        ],
+        [
+          "Wer eine Operation vor 1846 überlebte, brauchte zweimal Glück:",
+          "Zweimal unglaubliches Glück"
+        ],
+        [
+          "auf dem Tisch gegen den Schock, und im Bett gegen Keime.",
+          "Gegen Schock und gegen Keime"
+        ]
+      ]
+    },
+    {
+      "key": "urzeit",
+      "name": "Das Rätsel der Inka-Schädelbohrungen",
+      "era": "Steinzeit & Andenberge (Peru)",
+      "shots": [
+        [
+          "Hier wartet das größte Rätsel der Medizingeschichte.",
+          "Rätsel der Medizingeschichte"
+        ],
+        [
+          "Wenn Krankenhäuser im neunzehnten Jahrhundert reine Todesfallen waren:",
+          "Hospitäler als Todesfallen"
+        ],
+        [
+          "Wie sah es in der Urzeit aus?",
+          "Frage: Wie war es in der Urzeit?"
+        ],
+        [
+          "Forscher machten bei Ausgrabungen eine Entdeckung.",
+          "Ausgrabungen und Funde"
+        ],
+        [
+          "Das älteste chirurgische Verfahren der Menschheit ist die Trepanation: das Öffnen des Schädels bei lebendigem Leib.",
+          "Trepanation Schädelöffnung bei Bewusstsein"
+        ],
+        [
+          "Menschen taten das in der Steinzeit vor über achttausend Jahren,",
+          "Steinzeit vor 8000 Jahren"
+        ],
+        [
+          "und die Inkas in Südamerika bauten die Methode aus.",
+          "Inkas in Südamerika"
+        ],
+        [
+          "Mit Klingen aus Obsidian oder Bronze schabten Inka-Heiler Löcher in die Schädeldecken verletzter Krieger.",
+          "Obsidian- und Bronzeklingen"
+        ],
+        [
+          "Sie überlebten es in Scharen.",
+          "Erstaunliches Überleben der Inkas"
+        ],
+        [
+          "Eine Studie aus dem Jahr 2018 untersuchte über achthundert Schädel aus peruanischen Gräbern.",
+          "Studie 2018 an 800 Schädeln"
+        ],
+        [
+          "In der späten Inkazeit lag die Überlebensrate bei fünfundsiebzig bis dreiundachtzig Prozent.",
+          "75 bis 83 Prozent Überlebensrate"
+        ],
+        [
+          "Wir wissen das sicher, weil an den Rändern der Bohrlöcher Knochen nachwuchs.",
+          "Knochenwachstum an Bohrlochkanten"
+        ],
+        [
+          "Glatte, runde Kanten beweisen, dass Patienten nach dem Eingriff Jahre weiterlebten.",
+          "Glatte Kanten als Beweis"
+        ],
+        [
+          "Inka-Krieger in den Anden überlebten Schädelöffnungen mit Steinmessern häufiger als Soldaten im amerikanischen Bürgerkrieg Jahrhunderte später.",
+          "Vergleich Inkas vs. US-Bürgerkrieg"
+        ],
+        [
+          "Warum? Sie operierten draußen in sauberer Bergluft statt in verseuchten Hospitälern.",
+          "Saubere Bergluft als Schutz"
+        ]
+      ]
+    },
+    {
+      "key": "etherday",
+      "name": "16. Oktober 1846: Ether Day in Boston",
+      "era": "Massachusetts General Hospital",
+      "shots": [
+        [
+          "Die Erlösung kam an einem Freitagmorgen in Boston.",
+          "Freitagmorgen in Boston"
+        ],
+        [
+          "Am 16. Oktober 1846 betrat der Zahnarzt William Morton das Amphitheater des Massachusetts General Hospital.",
+          "William Morton betritt das Amphitheater"
+        ],
+        [
+          "In seiner Hand hielt er eine Glaskugel mit Äther.",
+          "Glaskugel mit Äther"
+        ],
+        [
+          "Sein Patient, der zwanzigjährige Edward Abbott, litt an einem Tumor am Hals.",
+          "Patient Edward Abbott"
+        ],
+        [
+          "Morton ließ Abbott die Dämpfe einatmen, bis der junge Mann ruhig atmete.",
+          "Inhalation der Ätherdämpfe"
+        ],
+        [
+          "Dann setzte Chefchirurg John Collins Warren das Skalpell an.",
+          "Warren setzt das Skalpell an"
+        ],
+        [
+          "Der Saal hielt den Atem an und wartete auf Schreie.",
+          "Der Saal wartet auf Schreie"
+        ],
+        [
+          "Abbott verzog keine Miene.",
+          "Keine Miene verzogen"
+        ],
+        [
+          "Er lag da, als schliefe er tief.",
+          "Tief und friedlich schlafen"
+        ],
+        [
+          "Als der Tumor entfernt war und der Patient die Augen aufschlug,",
+          "Patient erwacht schmerzfrei"
+        ],
+        [
+          "fragte Warren ihn nach seinen Schmerzen.",
+          "Warren fragt nach Schmerzen"
+        ],
+        [
+          "Abbotts berühmte Antwort: Es fühlte sich an, als hätte jemand meinen Hals mit einer Feder gekratzt.",
+          "Berühmte Antwort Feder"
+        ],
+        [
+          "Warren stand den Tränen nahe.",
+          "Warren zu Tränen gerührt"
+        ],
+        [
+          "Er wandte sich an die Studenten und sprach die Worte: Meine Herren, das ist kein Schwindel.",
+          "Das ist kein Schwindel"
+        ],
+        [
+          "Innerhalb weniger Monate verbreitete sich die Narkose über die Erde.",
+          "Verbreitung der Narkose weltweit"
+        ],
+        [
+          "Der Schmerz war besiegt.",
+          "Der Schmerz ist besiegt"
+        ],
+        [
+          "Chirurgen rannten nicht mehr um die Wette, sondern nahmen sich Zeit, banden Arterien ab und retteten Organe.",
+          "Sorgfältige Chirurgie statt Wettrennen"
+        ]
+      ]
+    },
+    {
+      "key": "resolution",
+      "name": "Das Ende des Schmerzes",
+      "era": "Moderne Klinik & Rückbezug",
+      "shots": [
+        [
+          "Wie überlebte man eine Operation ohne Narkose?",
+          "Auflösung der Kernfrage"
+        ],
+        [
+          "Nicht durch Schmerzmittel, sondern durch brutales Tempo, Gehilfen, die dich festhielten, und das Glück, dem Wundbrand zu entkommen.",
+          "Zusammenfassung der Überlebensfaktoren"
+        ],
+        [
+          "Wenn du das nächste Mal auf dem Behandlungsstuhl liegst",
+          "Rückbezug Behandlungsstuhl"
+        ],
+        [
+          "und die winzige Nadel deiner Betäubung kaum spürst:",
+          "Kaum spürbare Betäubung"
+        ],
+        [
+          "Denk kurz an Robert Liston, seine tickende Taschenuhr und die Patienten auf dem Holztisch.",
+          "Erinnerung an Liston und die Patienten"
+        ],
+        [
+          "Heute ist Schmerzfreiheit beim Arzt selbstverständlich.",
+          "Schmerzfreiheit heute selbstverständlich"
+        ],
+        [
+          "Früher war sie ein Wunder.",
+          "Schlussgedanke: Früher ein Wunder"
+        ]
+      ]
+    }
+  ]
+}

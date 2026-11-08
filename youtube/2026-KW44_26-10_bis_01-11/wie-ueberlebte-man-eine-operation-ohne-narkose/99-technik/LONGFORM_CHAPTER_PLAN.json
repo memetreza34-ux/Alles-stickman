@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "status": "PLANNED-ANCHORS",
+  "timingNote": "Nur geschätzte Zeiten; nach echter Tonspur mit Whisper ersetzen.",
+  "sections": [
+    {
+      "id": "hook",
+      "title": "Zahnarztstuhl vs. Holztisch",
+      "startImage": 1,
+      "endImage": 8,
+      "startAnchor": "Du sitzt beim Zahnarzt,",
+      "estimatedStartSeconds": 0.0,
+      "sceneWorld": "Heute (Zahnarzt) ↔ OP vor 1846"
+    },
+    {
+      "id": "western",
+      "title": "Der Mythos vom Whisky-Cowboy",
+      "startImage": 9,
+      "endImage": 14,
+      "startAnchor": "Du kennst bestimmt die Szene aus Western-Filmen:",
+      "estimatedStartSeconds": 16.3,
+      "sceneWorld": "Wilder Westen & Realität"
+    },
+    {
+      "id": "betaeubung",
+      "title": "Warum Alkohol und Opium versagten",
+      "startImage": 15,
+      "endImage": 23,
+      "startAnchor": "Alkohol half dir damals nicht.",
+      "estimatedStartSeconds": 39.7,
+      "sceneWorld": "19. Jahrhundert, Apotheke & Wundsaal"
+    },
+    {
+      "id": "gewalt",
+      "title": "Rohe Gewalt: Die Dressers",
+      "startImage": 24,
+      "endImage": 31,
+      "startAnchor": "Chirurgen setzten auf rohe Gewalt.",
+      "estimatedStartSeconds": 70.5,
+      "sceneWorld": "Altes Operations-Theater in London"
+    },
+    {
+      "id": "schnelligkeit",
+      "title": "Robert Listons 28-Sekunden-Rekord",
+      "startImage": 32,
+      "endImage": 45,
+      "startAnchor": "In dieser Welt entschied für einen Chirurgen nur eine Fähigkeit über Leben und Tod:",
+      "estimatedStartSeconds": 104.3,
+      "sceneWorld": "University College Hospital London 1830er"
+    },
+    {
+      "id": "todesrate",
+      "title": "Die berüchtigte 300-%-Operation",
+      "startImage": 46,
+      "endImage": 54,
+      "startAnchor": "Dieses rasende Tempo forderte Opfer.",
+      "estimatedStartSeconds": 156.2,
+      "sceneWorld": "Operationssaal und Friedhof"
+    },
+    {
+      "id": "keime",
+      "title": "Der wahre Killer: Hospitalbrand",
+      "startImage": 55,
+      "endImage": 68,
+      "startAnchor": "Stell dir vor, du hast diesen Wahnsinn auf dem Tisch überlebt.",
+      "estimatedStartSeconds": 185.9,
+      "sceneWorld": "Historische Lazarette und Betten"
+    },
+    {
+      "id": "urzeit",
+      "title": "Das Rätsel der Inka-Schädelbohrungen",
+      "startImage": 69,
+      "endImage": 83,
+      "startAnchor": "Hier wartet das größte Rätsel der Medizingeschichte.",
+      "estimatedStartSeconds": 243.4,
+      "sceneWorld": "Steinzeit & Andenberge (Peru)"
+    },
+    {
+      "id": "etherday",
+      "title": "16. Oktober 1846: Ether Day in Boston",
+      "startImage": 84,
+      "endImage": 100,
+      "startAnchor": "Die Erlösung kam an einem Freitagmorgen in Boston.",
+      "estimatedStartSeconds": 301.7,
+      "sceneWorld": "Massachusetts General Hospital"
+    },
+    {
+      "id": "resolution",
+      "title": "Das Ende des Schmerzes",
+      "startImage": 101,
+      "endImage": 107,
+      "startAnchor": "Wie überlebte man eine Operation ohne Narkose?",
+      "estimatedStartSeconds": 365.1,
+      "sceneWorld": "Moderne Klinik & Rückbezug"
+    }
+  ]
+}
