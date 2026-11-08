@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-11-08T17:40:04.322Z",
+  "videoFile": "03-export/FINAL_VIDEO.mp4",
+  "thumbnailFile": "03-export/THUMBNAIL.png",
+  "uploadMetadataFile": "03-export/YOUTUBE_UPLOAD.txt",
+  "subtitlesFile": "03-export/SUBTITLES.srt",
+  "timedScriptFile": "03-export/TIMED_SCRIPT.txt",
+  "subtitleSource": "99-technik/whisper/YOUTUBE_AUDIO_OPTIMIZED.json",
+  "subtitleSegments": 135,
+  "youtubeTitle": "Wie überlebte man eine Operation ohne Narkose?",
+  "youtubeDescriptionPresent": true,
+  "youtubeTagCount": 9,
+  "youtubeHashtags": [
+    "#AllesStickman",
+    "#Geschichte",
+    "#Medizin"
+  ],
+  "thumbnailSource": "00-bildprompts/thumbnail-source.png",
+  "coverSha256": "a5bff86182485c4960029b913be06dc0b94097f4eaf82589a404e7a81f4d4791",
+  "thumbnailSha256": "b25a86d204081ef13ef0f883e7f5fb30547fed0e00793e3b31708c70675d9681",
+  "thumbnailHeadline": "28 SEKUNDEN!",
+  "thumbnailIdenticalToCover": false
+}

@@ -15,3 +15,4 @@ public/__render/
 **/03-export/YOUTUBE_UPLOAD.txt
 **/03-export/SUBTITLES.srt
 **/03-export/TIMED_SCRIPT.txt
+*.zip

@@ -25,11 +25,35 @@ function editDistance(a, b) {
   return row[b.length];
 }
 
+const NUMBER_WORDS = {
+  '19': ['neunzehnten', 'neunzehnte', 'neunzehnter', 'neunzehn'],
+  '300': ['dreihundert'],
+  '800': ['achthundert'],
+  '8000': ['achttausend'],
+  '20': ['zwanzig'],
+  '20jaehrig': ['zwanzigjaehrig', 'zwanzigjaehrige', 'zwanzigjaehriger'],
+  '75': ['fuenfundsiebzig'],
+  '83': ['dreiundachtzig'],
+  'lichten': ['liston'],
+  'inker': ['inka'],
+  'halft': ['half']
+};
+
+function normalizeToken(token) {
+  let clean = normalizeText(token).replace(/\.$/, '');
+  for (const [canon, aliases] of Object.entries(NUMBER_WORDS)) {
+    if (clean === canon || aliases.some((a) => clean.startsWith(a) || a.startsWith(clean))) return canon;
+  }
+  return clean;
+}
+
 function wordsMatch(targetWord, whisperWord) {
-  if (targetWord === whisperWord) return true;
-  const maxLen = Math.max(targetWord.length, whisperWord.length);
-  if (maxLen <= 3) return false;
-  const dist = editDistance(targetWord, whisperWord);
+  const na = normalizeToken(targetWord);
+  const nb = normalizeToken(whisperWord);
+  if (na === nb) return true;
+  const maxLen = Math.max(na.length, nb.length);
+  if (maxLen <= 2) return false;
+  const dist = editDistance(na, nb);
   if (maxLen <= 5) return dist <= 1;
   return dist <= 2;
 }
@@ -56,17 +80,17 @@ function flattenWords(whisperJson) {
 function findAnchor(words, anchor, fromIndex = 0) {
   const target = tokens(anchor);
   if (!target.length) return null;
-  const normalizedWords = words.map((word) => normalizeText(word.text));
-  const minMatch = Math.min(target.length, Math.max(3, Math.ceil(target.length * 0.55)));
+  const minMatch = Math.min(target.length, Math.max(2, Math.min(3, Math.ceil(target.length * 0.45))));
 
-  for (let start = Math.max(0, fromIndex); start < normalizedWords.length; start += 1) {
+  for (let start = Math.max(0, fromIndex); start < words.length; start += 1) {
     let tIdx = 0;
     let wIdx = start;
     let matched = 0;
+    let skips = 0;
 
-    while (tIdx < target.length && wIdx < normalizedWords.length) {
+    while (tIdx < target.length && wIdx < words.length && skips <= 2) {
       const tw = target[tIdx];
-      const ww = normalizedWords[wIdx];
+      const ww = words[wIdx].text;
 
       if (wordsMatch(tw, ww)) {
         matched += 1;
@@ -76,10 +100,20 @@ function findAnchor(words, anchor, fromIndex = 0) {
         matched += 2;
         tIdx += 2;
         wIdx += 1;
-      } else if (wIdx + 1 < normalizedWords.length && wordsMatch(tw, ww + normalizedWords[wIdx + 1])) {
+      } else if (wIdx + 1 < words.length && wordsMatch(tw, ww + words[wIdx + 1].text)) {
         matched += 1;
         tIdx += 1;
         wIdx += 2;
+      } else if (tIdx + 1 < target.length && wordsMatch(target[tIdx + 1], ww)) {
+        skips += 1;
+        tIdx += 1;
+      } else if (wIdx + 1 < words.length && wordsMatch(tw, words[wIdx + 1].text)) {
+        skips += 1;
+        wIdx += 1;
+      } else if (tIdx + 1 < target.length && wIdx + 1 < words.length && wordsMatch(target[tIdx + 1], words[wIdx + 1].text)) {
+        skips += 1;
+        tIdx += 1;
+        wIdx += 1;
       } else {
         break;
       }
@@ -133,7 +167,11 @@ export async function alignProject(projectDirectory, { model = 'small', refresh 
   let cursor = 0;
   const aligned = images.map((image, index) => {
     if (index === 0) {
-      const first = findAnchor(words, image.startAnchor, 0);
+      let first = findAnchor(words, image.startAnchor, 0);
+      if (!first) {
+        const sub = tokens(image.startAnchor).slice(1).join(' ');
+        first = findAnchor(words, sub, 0);
+      }
       if (!first) misses.push({ imageNumber: image.imageNumber, startAnchor: image.startAnchor });
       else cursor = first.wordIndex;
       return { ...image, actualStartSeconds: 0, alignmentConfidence: first?.confidence ?? 0 };

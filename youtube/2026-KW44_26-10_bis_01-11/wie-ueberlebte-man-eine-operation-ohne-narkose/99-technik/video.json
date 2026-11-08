@@ -11,9 +11,9 @@
   "status": "planned",
   "visualPolicyFile": "config/visual-policy.json",
   "visualStyleId": "alles-stickman-editorial-v1",
-  "targetDurationSeconds": 390,
+  "targetDurationSeconds": 331,
   "targetDurationRangeSeconds": [
-    360,
+    300,
     420
   ],
   "plannedImageCount": 107,
