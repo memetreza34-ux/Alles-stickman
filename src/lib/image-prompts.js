@@ -127,17 +127,20 @@ export function validateScenePlan(plan, { plannedImageCount } = {}) {
 const pad = (n) => String(n).padStart(2, '0');
 
 export function renderPromptFiles(kit, plan, meta) {
+  const effectiveKit = (meta?.aspectRatio === '9:16' || meta?.format === 'short')
+    ? { ...kit, style: kit.style.replace('16:9 widescreen', '9:16 vertical portrait format') }
+    : kit;
   const separateThumbnail = meta.coverPolicy?.separateThumbnailFromFirstScene === true;
   const files = new Map();
   const scenes = plan.scenes ?? [];
-  for (const cover of plan.covers ?? []) files.set(`prompts/COVER_${cover.id}.txt`, `${buildCoverPrompt(kit, cover)}\n`);
-  for (const scene of scenes) files.set(`prompts/Bild_${pad(scene.sceneNumber)}.txt`, `${buildScenePrompt(kit, scene)}\n`);
+  for (const cover of plan.covers ?? []) files.set(`prompts/COVER_${cover.id}.txt`, `${buildCoverPrompt(effectiveKit, cover)}\n`);
+  for (const scene of scenes) files.set(`prompts/Bild_${pad(scene.sceneNumber)}.txt`, `${buildScenePrompt(effectiveKit, scene)}\n`);
 
   const block = (fileName, prompt) => `Datei: ${fileName}\n${PROMPT_START}\n${prompt}\n${PROMPT_END}\n`;
   for (let first = separateThumbnail ? 1 : 2; first <= scenes.length; first += 5) {
     const last = Math.min(scenes.length, first + 4);
     const body = scenes.slice(first - 1, last)
-      .map((scene) => block(`Bild ${pad(scene.sceneNumber)}.png`, buildScenePrompt(kit, scene)))
+      .map((scene) => block(`Bild ${pad(scene.sceneNumber)}.png`, buildScenePrompt(effectiveKit, scene)))
       .join('\n');
     files.set(`batches/BLOCK_${pad(first)}_${pad(last)}.txt`,
       `GOOGLE FLOW – BLOCK Bild ${pad(first)}–${pad(last)} · ${meta.title}\n\n` +
@@ -145,7 +148,7 @@ export function renderPromptFiles(kit, plan, meta) {
       'Den Dateinamen nie in den Prompt schreiben. Bild speichern unter dem angegebenen Dateinamen.\n\n' + body);
   }
 
-  files.set('google-flow-prompt.txt', renderFlowMaster(kit, plan, meta));
+  files.set('google-flow-prompt.txt', renderFlowMaster(effectiveKit, plan, meta));
   return files;
 }
 
