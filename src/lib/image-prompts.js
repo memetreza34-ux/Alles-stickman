@@ -192,7 +192,7 @@ Allowed intentional changes: ${(world.allowedIntentionalChanges??[]).join(' | ')
 Avoid: ${(world.forbiddenUnmotivatedChanges??[]).join(' | ')||'anachronisms and unrelated props'}
 Match local continuity between adjacent frames; historical changes between chapters are intentional. Each image should communicate ONE useful idea instantly at phone size. Vary close-ups, cutaways, maps, comparisons and scale; no formulaic repeated character poses or decorative crowds.
 
-CHARACTER MODEL SHEET: channel/style-sheet/FIGURENBLATT_PROMPT.txt is fully embedded below, NOT an external dependency. Unless an approved matching sheet is available in this conversation, produce it first. Check its five poses, small red scarf, stick hands and no writing. Repeat failed attempts only up to five times. Keep the accepted sheet as hauptfigur.png OUTSIDE the video image set. Attach it as character reference only if provider supports this feature; never attach a cover or previous scene as reference. If attachment is unavailable, repeat the PEOPLE description per image and explain this limit truthfully.
+CHARACTER MODEL SHEET: channel/style-sheet/FIGURENBLATT_PROMPT.txt is fully embedded below, NOT an external dependency. Unless an approved matching sheet is available in this conversation, produce it first. Check its five poses, small red scarf, stick hands and no writing. Repeat failed attempts only up to five times. Keep the accepted sheet as hauptfigur.png OUTSIDE the video image set. Use it as the primary character reference template together with the chosen cover (see AFTER COVER SELECTION below).
 ${PROMPT_START}
 ${kit.characterSheet}
 ${PROMPT_END}
@@ -207,6 +207,7 @@ AFTER COVER SELECTION:
 ${separate
 ?'Save the selected image separately as 00-bildprompts/thumbnail-source.png. This is thumbnail-only, NOT Bild 01. Generate Bild 01.png independently from SCENE 01 (it must match the spoken opening). Discard losing covers from final set.'
 :'LEGACY MODE: Save the selected cover as Bild 01.png, the first video image, and do not regenerate scene 01.'}
+CRITICAL REFERENCE RULE: For all following video scene images, use BOTH the generated Character Model Sheet (hauptfigur.png) AND the chosen Cover as visual reference templates (Vorlagen). The Character Sheet locks in the stick figure anatomy and red scarf; the chosen Cover locks in the artistic style, line weight, lighting and atmosphere. Discard the two losing covers immediately.
 
 AUTOMATIC 5-IMAGE SEQUENCE, AFTER COVER CHOICE:
 Generate precisely ${count} numbered video images in order; images to CREATE after choice start at ${pad(first)} and end at ${pad(count)}. The batches are ${groups.join(', ')||'none'}. No new questions, no need for WEITER, no external files. One image per scene. Interpret camera instructions: close-up = large detail, medium = character and prop, wide = useful environment, top-down = spatial geometry, cutaway = inner mechanism, split = intentional two-part comparison. Any given scene is a content guide, not a caption to draw.
