@@ -58,11 +58,12 @@ export async function validateVisualQc(dir) {
   if (report.videoId !== meta.videoId) errors.push('VISUAL_QC gehoert zu anderem Video.');
   if (!Array.isArray(report.images) || report.images.length !== Number(meta.plannedImageCount))
     return { passed: false, errors: [...errors, 'VISUAL_QC-Bildanzahl stimmt nicht.'] };
+  const expectedRatio = meta.aspectRatio ?? '16:9';
   for (let i = 1; i <= report.images.length; i++) {
     const item = report.images[i - 1], file = 'Bild ' + String(i).padStart(2, '0') + '.png';
     if (item.imageNumber !== i || item.file !== file) { errors.push(file + ': falsche Bildnummer.'); continue; }
     try {
-      const fp = await fingerprintPng(path.join(p.imagesDir, file));
+      const fp = await fingerprintPng(path.join(p.imagesDir, file), expectedRatio);
       if (item.sha256 !== fp.sha256 || item.width !== fp.width || item.height !== fp.height)
         errors.push(file + ': PNG wurde seit Freigabe veraendert.');
     } catch (error) { errors.push(file + ': ' + error.message); continue; }

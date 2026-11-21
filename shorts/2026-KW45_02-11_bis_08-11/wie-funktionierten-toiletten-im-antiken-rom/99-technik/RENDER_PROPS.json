@@ -1,0 +1,786 @@
+{
+  "plan": {
+    "schemaVersion": 1,
+    "createdAt": "2026-11-21T19:37:00.798Z",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "audioDurationSeconds": 64.733,
+    "endHoldSeconds": 1.3,
+    "durationSeconds": 66.033,
+    "audioFile": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/audio/YOUTUBE_AUDIO_OPTIMIZED.wav",
+    "images": [
+      {
+        "imageNumber": 1,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 01.png",
+        "startSeconds": 0,
+        "endSeconds": 0.72,
+        "durationSeconds": 0.72,
+        "visualPurpose": "Modernes Badezimmer, Strichfigur geht zum WC",
+        "topicAnchor": "Heute",
+        "visualForm": "medium",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1,
+          "scaleTo": 1.08,
+          "originX": 50,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 2,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 02.png",
+        "startSeconds": 0.72,
+        "endSeconds": 2.36,
+        "durationSeconds": 1.64,
+        "visualPurpose": "Türschloss wird umgedreht, Privatsphäre",
+        "topicAnchor": "Privatsphäre",
+        "visualForm": "close-up",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.08,
+          "scaleTo": 1,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 3,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 03.png",
+        "startSeconds": 2.36,
+        "endSeconds": 4.34,
+        "durationSeconds": 1.98,
+        "visualPurpose": "Sprung ins antike Rom, Kolosseum und Trubel",
+        "topicAnchor": "Rom",
+        "visualForm": "wide",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 32,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 4,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 04.png",
+        "startSeconds": 4.34,
+        "endSeconds": 5.94,
+        "durationSeconds": 1.6,
+        "visualPurpose": "Draufsicht auf die Marmorbank mit Klo-Löchern",
+        "topicAnchor": "Steinbank",
+        "visualForm": "top-down",
+        "motion": {
+          "xFrom": -36,
+          "xTo": 36,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.06,
+          "scaleTo": 1.06,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 5,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 05.png",
+        "startSeconds": 5.94,
+        "endSeconds": 7.18,
+        "durationSeconds": 1.24,
+        "visualPurpose": "Eingequetscht zwischen zwei Römern",
+        "topicAnchor": "Enge",
+        "visualForm": "medium",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 68,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 6,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 06.png",
+        "startSeconds": 7.18,
+        "endSeconds": 8,
+        "durationSeconds": 0.82,
+        "visualPurpose": "Totale der vollen Latrine mit 20 Bürgern",
+        "topicAnchor": "Menge",
+        "visualForm": "wide",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1,
+          "scaleTo": 1.08,
+          "originX": 50,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 7,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 07.png",
+        "startSeconds": 8,
+        "endSeconds": 10.36,
+        "durationSeconds": 2.36,
+        "visualPurpose": "Metropole Rom mit dichter Bevölkerung",
+        "topicAnchor": "1 Million Einwohner",
+        "visualForm": "wide",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.08,
+          "scaleTo": 1,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 8,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 08.png",
+        "startSeconds": 10.36,
+        "endSeconds": 12.48,
+        "durationSeconds": 2.12,
+        "visualPurpose": "Querschnitt eines römischen Mietshauses (Insula)",
+        "topicAnchor": "Mietshaus",
+        "visualForm": "cutaway",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 32,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 9,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 09.png",
+        "startSeconds": 12.48,
+        "endSeconds": 13.54,
+        "durationSeconds": 1.06,
+        "visualPurpose": "Römer hält hilflos einen leeren Nachttopf",
+        "topicAnchor": "Kein Klo",
+        "visualForm": "close-up",
+        "motion": {
+          "xFrom": -36,
+          "xTo": 36,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.06,
+          "scaleTo": 1.06,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 10,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 10.png",
+        "startSeconds": 13.54,
+        "endSeconds": 14.8,
+        "durationSeconds": 1.26,
+        "visualPurpose": "Bürger strömen eilig durch die Straßen",
+        "topicAnchor": "Ansturm",
+        "visualForm": "wide",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 68,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 11,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 11.png",
+        "startSeconds": 14.8,
+        "endSeconds": 16.56,
+        "durationSeconds": 1.76,
+        "visualPurpose": "Portal der Foricae-Gemeinschaftslatrine",
+        "topicAnchor": "Foricae",
+        "visualForm": "medium",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1,
+          "scaleTo": 1.08,
+          "originX": 50,
+          "originY": 45
+        },
+        "overlay": {
+          "text": "FORICAE",
+          "style": "caption",
+          "position": "top"
+        }
+      },
+      {
+        "imageNumber": 12,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 12.png",
+        "startSeconds": 16.56,
+        "endSeconds": 18,
+        "durationSeconds": 1.44,
+        "visualPurpose": "Zwei Römer nebeneinander auf Steinlöchern",
+        "topicAnchor": "Nebeneinander",
+        "visualForm": "medium",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.08,
+          "scaleTo": 1,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 13,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 13.png",
+        "startSeconds": 18,
+        "endSeconds": 19.62,
+        "durationSeconds": 1.62,
+        "visualPurpose": "Römer gestikuliert mit Schriftrolle auf dem Klo",
+        "topicAnchor": "Politik",
+        "visualForm": "close-up",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 32,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 14,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 14.png",
+        "startSeconds": 19.62,
+        "endSeconds": 21.18,
+        "durationSeconds": 1.56,
+        "visualPurpose": "Händeschütteln über der Latrinenbank",
+        "topicAnchor": "Geschäfte",
+        "visualForm": "medium",
+        "motion": {
+          "xFrom": -36,
+          "xTo": 36,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.06,
+          "scaleTo": 1.06,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 15,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 15.png",
+        "startSeconds": 21.18,
+        "endSeconds": 23.14,
+        "durationSeconds": 1.96,
+        "visualPurpose": "Strichfigur blickt panisch nach unten",
+        "topicAnchor": "Grauen",
+        "visualForm": "close-up",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 68,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 16,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 16.png",
+        "startSeconds": 23.14,
+        "endSeconds": 25.46,
+        "durationSeconds": 2.32,
+        "visualPurpose": "Klopapierrolle durchgestrichen",
+        "topicAnchor": "Kein Papier",
+        "visualForm": "close-up",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1,
+          "scaleTo": 1.08,
+          "originX": 50,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 17,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 17.png",
+        "startSeconds": 25.46,
+        "endSeconds": 26.98,
+        "durationSeconds": 1.52,
+        "visualPurpose": "Hand greift nach dem Tersorium-Holzstab",
+        "topicAnchor": "Tersorium",
+        "visualForm": "close-up",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.08,
+          "scaleTo": 1,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": {
+          "text": "TERSORIUM",
+          "style": "card",
+          "position": "top"
+        }
+      },
+      {
+        "imageNumber": 18,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 18.png",
+        "startSeconds": 26.98,
+        "endSeconds": 30.4,
+        "durationSeconds": 3.42,
+        "visualPurpose": "Detail des Meerschwamms am Holzstab",
+        "topicAnchor": "Schwamm am Stock",
+        "visualForm": "medium",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 32,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 19,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 19.png",
+        "startSeconds": 30.4,
+        "endSeconds": 31.3,
+        "durationSeconds": 0.9,
+        "visualPurpose": "Strichfigur hält Nase zu vor Ekel",
+        "topicAnchor": "Ekel",
+        "visualForm": "close-up",
+        "motion": {
+          "xFrom": -36,
+          "xTo": 36,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.06,
+          "scaleTo": 1.06,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 20,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 20.png",
+        "startSeconds": 31.3,
+        "endSeconds": 34,
+        "durationSeconds": 2.7,
+        "visualPurpose": "Holzeimer mit tropfenden Schwämmen",
+        "topicAnchor": "Gemeinsamer Eimer",
+        "visualForm": "medium",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 68,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 21,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 21.png",
+        "startSeconds": 34,
+        "endSeconds": 34.5,
+        "durationSeconds": 0.5,
+        "visualPurpose": "Salzwasser und Essig schwappen im Eimer",
+        "topicAnchor": "Salzwasser",
+        "visualForm": "close-up",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1,
+          "scaleTo": 1.08,
+          "originX": 50,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 22,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 22.png",
+        "startSeconds": 34.5,
+        "endSeconds": 36.26,
+        "durationSeconds": 1.76,
+        "visualPurpose": "Drei Hände greifen gleichzeitig nach dem Eimer",
+        "topicAnchor": "Von allen geteilt",
+        "visualForm": "top-down",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.08,
+          "scaleTo": 1,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 23,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 23.png",
+        "startSeconds": 36.26,
+        "endSeconds": 38.7,
+        "durationSeconds": 2.44,
+        "visualPurpose": "Düstere Silhouette aus dem Abgrund",
+        "topicAnchor": "Gefahr",
+        "visualForm": "cutaway",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 32,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 24,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 24.png",
+        "startSeconds": 38.7,
+        "endSeconds": 41.26,
+        "durationSeconds": 2.56,
+        "visualPurpose": "Querschnitt: Abwasserkanal unter der Bank",
+        "topicAnchor": "Abwasser",
+        "visualForm": "cutaway",
+        "motion": {
+          "xFrom": -36,
+          "xTo": 36,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.06,
+          "scaleTo": 1.06,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 25,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 25.png",
+        "startSeconds": 41.26,
+        "endSeconds": 42.66,
+        "durationSeconds": 1.4,
+        "visualPurpose": "Gewölbter Riesentunnel der Cloaca Maxima",
+        "topicAnchor": "Cloaca Maxima",
+        "visualForm": "wide",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 68,
+          "originY": 45
+        },
+        "overlay": {
+          "text": "CLOACA MAXIMA",
+          "style": "label",
+          "position": "bottom"
+        }
+      },
+      {
+        "imageNumber": 26,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 26.png",
+        "startSeconds": 42.66,
+        "endSeconds": 44.44,
+        "durationSeconds": 1.78,
+        "visualPurpose": "Vergleich S-Rohr modern vs offenes Rohr antik",
+        "topicAnchor": "Kein Geruchsverschluss",
+        "visualForm": "split",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1,
+          "scaleTo": 1.08,
+          "originX": 50,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 27,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 27.png",
+        "startSeconds": 44.44,
+        "endSeconds": 46.64,
+        "durationSeconds": 2.2,
+        "visualPurpose": "Kanalratte kriecht aus dem Klositz nach oben",
+        "topicAnchor": "Ratten",
+        "visualForm": "close-up",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.08,
+          "scaleTo": 1,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 28,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 28.png",
+        "startSeconds": 46.64,
+        "endSeconds": 49.62,
+        "durationSeconds": 2.98,
+        "visualPurpose": "Gasblasen stauen sich im Kanalgewölbe",
+        "topicAnchor": "Methangas",
+        "visualForm": "cutaway",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 32,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 29,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 29.png",
+        "startSeconds": 49.62,
+        "endSeconds": 50.04,
+        "durationSeconds": 0.42,
+        "visualPurpose": "Stichflamme schießt aus dem Steinloch empor",
+        "topicAnchor": "Flammen",
+        "visualForm": "medium",
+        "motion": {
+          "xFrom": -36,
+          "xTo": 36,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.06,
+          "scaleTo": 1.06,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 30,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 30.png",
+        "startSeconds": 50.04,
+        "endSeconds": 51.92,
+        "durationSeconds": 1.88,
+        "visualPurpose": "Römer springt schockiert in die Höhe",
+        "topicAnchor": "Explosion",
+        "visualForm": "close-up",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 68,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 31,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 31.png",
+        "startSeconds": 51.92,
+        "endSeconds": 53.88,
+        "durationSeconds": 1.96,
+        "visualPurpose": "Römer weichen ängstlich von der Bank zurück",
+        "topicAnchor": "Angst",
+        "visualForm": "medium",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1,
+          "scaleTo": 1.08,
+          "originX": 50,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 32,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 32.png",
+        "startSeconds": 53.88,
+        "endSeconds": 56.02,
+        "durationSeconds": 2.14,
+        "visualPurpose": "Strichfigur kniet betend vor Wandfresko",
+        "topicAnchor": "Göttin Fortuna",
+        "visualForm": "medium",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.08,
+          "scaleTo": 1,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 33,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 33.png",
+        "startSeconds": 56.02,
+        "endSeconds": 58.02,
+        "durationSeconds": 2,
+        "visualPurpose": "Räucheraltar direkt neben der Latrinenbank",
+        "topicAnchor": "Altar",
+        "visualForm": "medium",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 32,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 34,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 34.png",
+        "startSeconds": 58.02,
+        "endSeconds": 59.16,
+        "durationSeconds": 1.14,
+        "visualPurpose": "Fortuna-Wandmalerei mit Füllhorn über dem WC",
+        "topicAnchor": "Wandmalerei",
+        "visualForm": "close-up",
+        "motion": {
+          "xFrom": -36,
+          "xTo": 36,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.06,
+          "scaleTo": 1.06,
+          "originX": 50,
+          "originY": 50
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 35,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 35.png",
+        "startSeconds": 59.16,
+        "endSeconds": 61.32,
+        "durationSeconds": 2.16,
+        "visualPurpose": "Rückkehr ins saubere, friedliche moderne Bad",
+        "topicAnchor": "Modernes Bad",
+        "visualForm": "medium",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1.03,
+          "scaleTo": 1.1,
+          "originX": 68,
+          "originY": 45
+        },
+        "overlay": null
+      },
+      {
+        "imageNumber": 36,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/images/Bild 36.png",
+        "startSeconds": 61.32,
+        "endSeconds": 66.033,
+        "durationSeconds": 4.713,
+        "visualPurpose": "Glückliche Strichfigur umarmt Klopapierrolle",
+        "topicAnchor": "Erleichterung",
+        "visualForm": "close-up",
+        "motion": {
+          "xFrom": 0,
+          "xTo": 0,
+          "yFrom": 0,
+          "yTo": 0,
+          "scaleFrom": 1,
+          "scaleTo": 1.08,
+          "originX": 50,
+          "originY": 45
+        },
+        "overlay": null
+      }
+    ],
+    "sounds": [],
+    "backgroundMusicFile": null,
+    "backgroundMusicVolume": 0.08
+  }
+}

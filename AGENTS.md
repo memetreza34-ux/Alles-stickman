@@ -1,82 +1,34 @@
-# Alles Stickman — Regeln für alle Agenten (Claude, ChatGPT, Codex, Google Flow)
+# Alles Stickman — Verbindlicher 1-Phasen-Vollautopilot
 
-Ablauf und Befehle: [youtube/WORKFLOW.md](youtube/WORKFLOW.md). Neue Videos und Shorts laufen mit **Pipeline v8**.
+Es gibt **keine getrennten 2 oder 3 Phasen und keine Zwischenfragen mehr**. Jedes neue Video (16:9 Longform oder 9:16 Short) wird vom Agenten in **einem einzigen, durchgehenden Autopilot-Lauf (7 interne Schritte)** komplett autonom erstellt, geprüft und gerendert.
 
 ## Kanalformate & Audio-Länge
 
-1. **Longform-Videos (16:9 Querformat):**
+1. **Longform-Videos (16:9 Querformat, 1920×1080):**
    - Zieldauer: **6–7 Minuten** (360–420 Sekunden)
    - Visueller Takt: Ø 3–5 Sekunden pro Bild
-   - Struktur: Du-Hook, Kette, 3 belegte Momente, Rückbezug
+   - Struktur: Du-Hook, Kette Problem → Lösung → neues Problem, mindestens 3 belegte „Wir wissen das, weil …“-Momente, Rückbezug am Schluss
 2. **Shorts / Reels (9:16 Hochformat, 1080×1920):**
-   - Zieldauer: **mindestens 60 Sekunden (1 Minute) bis höchstens 90 Sekunden (1,5 Minuten) Audio** (60–90 s)
-   - Bilddichte: **Viel mehr Bilder als bei Longform-Videos!** Schneller visueller Schnitt: Ø 1,5–2,8 Sekunden pro Bild (ca. 30–50 Bilder pro Short). Kein Standbild.
-   - Vertikale Bildkomposition, sofortiger Konflikt-Hook in den ersten 3 Sekunden
+   - Zieldauer: **60 bis 90 Sekunden Audio**
+   - Visueller Takt: Ø 1,5–2,8 Sekunden pro Bild (ca. 30–50 Bilder pro Short), sofortiger Konflikt-Hook in den ersten 3 Sekunden
 
-## Verbindlicher 3-Phasen-Ablauf (wer macht was)
+---
 
-- **Phase 1 (Agent autonom):**
-  - Thema prüfen, Recherche und Skript schreiben.
-  - Bildprompts für Google Flow erstellen (`npm run prompts:youtube`).
-  - **Direkte Stimmenerzeugung in Phase 1:** Der Agent generiert sofort das Voiceover über die lokale MLX Qwen3-TTS Engine (`npm run voice:youtube`) mit `stickman-user-clone` (`0.95x` Tempo, `0.30s` Pausen, `32` Wörter/Chunk).
-  - Dadurch stehen Audiodauer, Timing und Satzpausen bereits vor der Bildproduktion unverrückbar fest.
-- **Phase 2 (Nutzer-Fokus):**
-  - Der Nutzer kümmert sich **ausschließlich um die Generierung der Bilder** (sowohl bei Longform als auch bei Shorts: 3 Cover erzeugen, 1 auswählen, danach automatische 5er-Blöcke; alle Bilder lückenlos flach in `00-bildprompts/images/`).
-  - Der Nutzer muss **keine** Audios aufnehmen oder Stimmdateien anfassen.
-- **Phase 3 (Agent autonom):**
-  - Audio-Alignment via Whisper, Overlays/Captions, Pacing-Validierung, Remotion-Rendering und Post-Video-Review.
+## Die verbindliche 7-Schritte-Chronologie (1 durchgehender Lauf)
 
-## Einheitliche Projektstruktur für YouTube & Shorts
-
-Alle Videos und Shorts teilen exakt dieselbe 5-teilige Ordnerstruktur:
-- **Longform-Videos:** `youtube/<Woche>/<Thema-Slug>/`
-- **Shorts / Reels:** `shorts/<Woche>/<Thema-Slug>/`
-
-Jedes Projektverzeichnis besteht aus:
-1. `00-bildprompts/` — `google-flow-prompt.txt`, `images/` (`Bild 01.png` etc.), `prompts/`, `batches/`
-2. `01-voice-script/` — `voice-script.txt` (Voiceover-Text)
-3. `02-audio/` — `voice.wav` (autonome Stimme aus Phase 1)
-4. `03-export/` — `FINAL_VIDEO.mp4`, `SUBTITLES.srt`, `TIMED_SCRIPT.txt`, `YOUTUBE_UPLOAD.txt`
-5. `99-technik/` — `video.json`, `status.json`, `PRODUKTIONSPLAN.md`, `SCRIPT_PLAN.json`, `BILD_AUDIO_ZUORDNUNG.json`, `RECHERCHE.md`, `SCENE_VISUALS_EN.json`, `YOUTUBE_RENDER_PLAN.json`, `PHASE1_START_HERE.md`
-
-## HÖCHSTE PRIORITÄT: Jedes Video besser als das letzte
-
-- Jede fertige MP4 **wirklich ansehen und anhören**, Befunde mit Zeitstempel/Bildnummer in `99-technik/POST_VIDEO_REVIEW.json`. Regeln: [CONTINUOUS_IMPROVEMENT.md](channel/CONTINUOUS_IMPROVEMENT.md).
-- Ursachen zentral beheben (Policy, Generator, Validator, Renderer), nicht nur im einen Video.
-- Nie behaupten, ein Video geprüft zu haben, wenn nur Dateinamen, Screenshots, eine komprimierte Kopie oder Tests vorliegen. Keine erfundenen Analytics.
-- `create:youtube` blockiert neue Projekte, solange ein lokal fertiges Video keine abgeschlossene Review hat.
-
-## Skript
-
-Formel und Prüfwerte: [SCRIPT_SYSTEM.md](channel/SCRIPT_SYSTEM.md). Kurz: du-Hook heute ↔ damals, Fallhöhe, Kette Problem → Lösung → neues Problem, mindestens 3 belegte „Wir wissen das, weil …“-Momente, Rückbezug am Schluss. Jede Zahl steht mit URL in `RECHERCHE.md`.
-
-## Bilder
-
-Regeln: [VISUAL_WORLD.md](channel/VISUAL_WORLD.md).
-
-- **100 % identische Bildwelt für Longform & Shorts:** Shorts nutzen dieselbe Bildwelt v15, denselben 2D-Tusche-Editorial-Stil, dieselbe Character-Bible (jeder Mensch ist dieselbe Strichfigur, keine realistischen Hände/Finger), dieselbe Hauptfigur mit rotem Schal, dasselbe Figurenblatt (`hauptfigur.png`) und dieselbe Null-Text-Regel. Der einzige Unterschied ist die vertikale 9:16-Komposition.
-- Bildprompts **nie von Hand schreiben**. `SCENE_VISUALS_EN.json` ausfüllen, dann `npm run prompts:youtube`. Der Validator lehnt veraltete oder geänderte Prompt-Dateien ab.
-- Der Google-Flow-Master ist **ein einziges vollständig kopierbares Dokument** mit Figurenblatt, Stil, drei Covers, allen Szenen und QC. Batch-Dateien sind optional.
-- Für jedes neue und das migrierte Salzprojekt: nach tatsächlicher Bildproduktion `visual-qc:init`, alle PNGs wirklich ansehen und das SHA256-gebundene Manifest ehrlich freigeben. `visual-qc:check` muss vor jedem Render bestehen. Keine automatisch erfundene Sicht-QC.
-- Briefs auf Englisch, konkret, ohne Dateinamen, Zeiten, Versionen oder Labels.
-- Kein Text im KI-Bild. Zahlen und Begriffe als `overlay` in `BILD_AUDIO_ZUORDNUNG.json`, Thumbnail-Headline in `uploadMetadata.thumbnailText`.
-- Jeder Mensch ist dieselbe Strichfigur, in jeder Kultur und Epoche, auch die Hände.
-- Nur Bilder generieren, wenn der Nutzer Bilder will. Bei einer reinen Prompt-Anfrage nur Prompts liefern.
-
-## Google Flow: genau ein Human-Gate (Longform & Shorts)
-
-Exakt gleicher Ablauf für Longform und Shorts: 3 Cover (A/B/C) → **HARD STOP** → Nutzer wählt A/B/C → danach alle 5er-Blöcke automatisch, ohne Rückfrage und ohne `WEITER` generieren → nach Standard benennen (`Bild 01.png` bis `Bild NN.png`) → am Ende liegen das Cover und alle Bilder lückenlos zusammen in einem einzigen flachen Ordner (`00-bildprompts/images/`). Cover und vorherige Szenen nie als Referenz, nur `channel/style-sheet/hauptfigur.png` (erzeugt Flow beim ersten Mal selbst). Am Ende `npm run check:youtube-images` und gefundene Bilder neu erzeugen.
-
-## Phase-1-Abschluss: SOFORT ZWEI LINKS IM CHAT
-
-Die erste Antwort nach bestandener Phase 1 beginnt mit zwei direkt anklickbaren Links zu den Dateien **des gerade erstellten Videos**. **Diese Links IM CHAT anzeigen**, nicht nur ins Repo schreiben: Der Nutzer arbeitet oft unterwegs am Tablet oder Smartphone. Keine Platzhalter, keine Ordner- oder Template-Links, keine Nachfrage.
-
-> Phase 1 ist bereit.
->
-> [Google-Flow-Prompt öffnen](https://github.com/memetreza34-ux/Alles-stickman/blob/main/youtube/<week>/<slug>/00-bildprompts/google-flow-prompt.txt) · [Voice-over-Skript öffnen](https://github.com/memetreza34-ux/Alles-stickman/blob/main/youtube/<week>/<slug>/01-voice-script/voice-script.txt)
-
-Links werden zentral von `src/lib/phase1-handoff.js` erzeugt (`npm run handoff:youtube`). Vorher prüfen, dass beide Dateien existieren. Die Links öffnen nur den Text auf GitHub; sie starten weder Flow noch TTS.
-
-## Upload
-
-Titel als klare Frage, Beschreibung mit 2–3 passenden Hashtags (`#AllesStickman` + Thema), keine `#Shorts`/`#viral`-Wände. Hashtags kommen nicht in die SRT.
+1. **1. Thema, Recherche & Klick-Konzept (Autonom):**
+   - Der Agent wählt selbstständig ein starkes, unverbrauchtes Thema, sichert alle Zahlen/Quellen in `99-technik/RECHERCHE.md` und legt Titel + Thumbnail-Konzept fest.
+2. **2. Skript & Szenen-Regieplan:**
+   - Skript nach [SCRIPT_SYSTEM.md](channel/SCRIPT_SYSTEM.md) schreiben (`01-voice-script/voice-script.txt`), Szenen in `99-technik/SCENE_VISUALS_EN.json` planen und Prompts erzeugen (`npm run prompts:youtube`).
+3. **3. Geklonte Master-Stimme zuerst (`stickman-user-clone`):**
+   - Sofortige Stimmenerzeugung über die lokale MLX Qwen3-TTS Engine (`npm run voice:youtube`) mit `stickman-user-clone` (`0.95x` Tempo, `0.30s` Pausen, `32` Wörter/Chunk) in `02-audio/voice.wav`. Damit steht das exakte Timing vor der Bildproduktion fest.
+4. **4. Bildwelt-Anker & Autonome Cover-Entscheidung in Google Flow (`flow-mcp`):**
+   - **Bildwelt ([VISUAL_WORLD.md](channel/VISUAL_WORLD.md)):** 2D-Tusche-Editorial-Stil v15, jeder Mensch ist dieselbe Strichfigur (Hauptfigur mit rotem Schal, Referenz `channel/style-sheet/hauptfigur.png`), Null-Text-Regel im KI-Bild (Zahlen/Begriffe kommen als `overlay` aus dem Code).
+   - Der Agent öffnet via **Flow MCP** (`flow_new_project`) ein neues Projekt in Google Flow (0 Credits), generiert 3 Cover-Kandidaten (A/B/C), **prüft sie selbst visuell**, wählt das klickstärkste Cover als finales Thumbnail aus und **löscht die 2 anderen Kandidaten sofort selbst**.
+5. **5. Vollautomatische Szenen-Produktion & Strenge Eigenkontrolle (`flow-mcp`):**
+   - Der Agent generiert alle Szenenbilder (`Bild 01.png` bis `Bild NN.png`) mit angehängter Referenz (`channel/style-sheet/hauptfigur.png`) automatisch über `flow_agent_images` / `flow_generate` in Google Flow und lädt sie in `00-bildprompts/images/` herunter.
+   - **Eigenkontrolle:** Der Agent schaut sich jedes Bild selbst an (`visual-qc`). Weicht eine Figur vom Stickman-Stil ab, fehlt ein Bild oder taucht ungeplanter Text auf, **löscht der Agent dieses Bild und generiert genau diese Szene sofort neu**, bis alle Bilder von `01` bis `NN` perfekt sind.
+6. **6. Synchronisation, Motion, Overlays & Finaler Render:**
+   - Audio-Alignment via Whisper, Code-Overlays/Captions, Pacing-Validierung und Remotion-Render nach `03-export/FINAL_VIDEO.mp4`, `SUBTITLES.srt`, `TIMED_SCRIPT.txt`, `YOUTUBE_UPLOAD.txt`.
+7. **7. Endkontrolle & Schlüsselfertige Übergabe:**
+   - Fertige MP4 ansehen und anhören (`99-technik/POST_VIDEO_REVIEW.json`), erst nach bestandener Prüfung dem Nutzer direkt das fertige Endprodukt übergeben.

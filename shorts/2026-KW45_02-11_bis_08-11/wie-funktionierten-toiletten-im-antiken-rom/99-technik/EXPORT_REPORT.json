@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-11-21T19:40:29.336Z",
+  "videoFile": "03-export/FINAL_VIDEO.mp4",
+  "thumbnailFile": "03-export/THUMBNAIL.png",
+  "uploadMetadataFile": "03-export/YOUTUBE_UPLOAD.txt",
+  "subtitlesFile": "03-export/SUBTITLES.srt",
+  "timedScriptFile": "03-export/TIMED_SCRIPT.txt",
+  "subtitleSource": "99-technik/whisper/YOUTUBE_AUDIO_OPTIMIZED.json",
+  "subtitleSegments": 21,
+  "youtubeTitle": "Wie funktionierten Toiletten im antiken Rom? #shorts",
+  "youtubeDescriptionPresent": true,
+  "youtubeTagCount": 8,
+  "youtubeHashtags": [
+    "#shorts",
+    "#AllesStickman",
+    "#geschichte",
+    "#antikesrom",
+    "#wissen",
+    "#fakten"
+  ],
+  "thumbnailSource": "00-bildprompts/thumbnail-source.png",
+  "coverSha256": "6472b3b48bdddb12ce3d7b998d86f607aa23e59d7f12a521220970dbf33845c6",
+  "thumbnailSha256": "3f26709d20c4e45bdfbaa4739916a75e919b347f98c94519861dcd84c6311076",
+  "thumbnailHeadline": "Klo im alten Rom",
+  "thumbnailIdenticalToCover": false
+}
