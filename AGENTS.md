@@ -30,5 +30,6 @@ Es gibt **keine getrennten 2 oder 3 Phasen und keine Zwischenfragen mehr**. Jede
    - **Eigenkontrolle:** Der Agent schaut sich jedes Bild selbst an (`visual-qc`). Weicht eine Figur vom Stickman-Stil ab, fehlt ein Bild oder taucht ungeplanter Text auf, **löscht der Agent dieses Bild und generiert genau diese Szene sofort neu**, bis alle Bilder von `01` bis `NN` perfekt sind.
 6. **6. Synchronisation, Motion, Overlays & Finaler Render:**
    - Audio-Alignment via Whisper, Code-Overlays/Captions, Pacing-Validierung und Remotion-Render nach `03-export/FINAL_VIDEO.mp4`, `SUBTITLES.srt`, `TIMED_SCRIPT.txt`, `YOUTUBE_UPLOAD.txt`.
+   - **Audio-Regel (verbindlich):** **Keine Hintergrundmusik (`"backgroundMusic": false`)** in Shorts und Longform-Videos – nur die geklonte Sprecherstimme plus optional gezielte SFX.
 7. **7. Endkontrolle & Schlüsselfertige Übergabe:**
    - Fertige MP4 ansehen und anhören (`99-technik/POST_VIDEO_REVIEW.json`), erst nach bestandener Prüfung dem Nutzer direkt das fertige Endprodukt übergeben.
