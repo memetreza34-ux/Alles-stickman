@@ -16,6 +16,13 @@
       "reviewedAt": "2026-10-18T08:47:44.529Z",
       "findings": 7,
       "appliedLessons": 4
+    },
+    {
+      "videoId": "short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom",
+      "title": "Wie funktionierten Toiletten im antiken Rom?",
+      "reviewedAt": "2026-11-22T05:26:43.513Z",
+      "findings": 2,
+      "appliedLessons": 1
     }
   ],
   "appliedLessons": [
@@ -121,6 +128,18 @@
       "verification": "GPS-Skript fällt im Test durch, Beispielskript besteht.",
       "sourceVideoId": "2026-KW42_12-10_bis_18-10_wie-fanden-menschen-ohne-gps-ihren-weg",
       "recordedAt": "2026-10-18T08:47:44.529Z"
+    },
+    {
+      "findingIndex": 0,
+      "status": "APPLIED",
+      "rule": "Jedes Short nutzt vertikale 9:16 Safe-Area-Margins (120px oben/unten, kompakte Fontgröße) und eine thematisch passende BGM mit Voice-Notch-Filter plus gezielten SFX.",
+      "changedFiles": [
+        "src/audio/generate-assets.py",
+        "src/youtube-renderer/YouTubeComposition.jsx"
+      ],
+      "verification": "Neu-Render von wie-funktionierten-toiletten-im-antiken-rom bestanden; Frame 15s und Audio-Pegel geprüft.",
+      "sourceVideoId": "short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom",
+      "recordedAt": "2026-11-22T05:26:43.513Z"
     }
   ],
   "experiments": [

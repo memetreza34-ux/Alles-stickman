@@ -1,32 +1,80 @@
-import { runGeneration } from "/Users/arman/flow-mcp/dist/flow.js";
-import { copyFileSync, existsSync } from "node:fs";
-import { join } from "node:path";
+import { runGeneration, getFlowState } from "/Users/arman/flow-mcp/dist/flow.js";
+import { getFlowPage } from "/Users/arman/flow-mcp/dist/chrome.js";
+import { existsSync, mkdirSync, readFileSync } from "node:fs";
+import { join, resolve } from "node:path";
 
-const characterSheet = "/Users/arman/.gemini/antigravity/scratch/Alles-stickman/shorts/2026-KW45_02-11_bis_08-11/wie-funktionierten-toiletten-im-antiken-rom/00-bildprompts/hauptfigur.png";
-const outDir = "/Users/arman/.gemini/antigravity/scratch/Alles-stickman/shorts/2026-KW45_02-11_bis_08-11/wie-funktionierten-toiletten-im-antiken-rom/00-bildprompts/cover-candidates";
-
-const covers = [
-  {
-    id: "cover-a",
-    stem: "TEMP_COVER_A",
-    prompt: "Hand-drawn 2D editorial cartoon illustration in 9:16 vertical portrait format. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors. YouTube thumbnail cover: A huge terrified stick-figure face fills the frame, eyes wide with horror as bright orange flames burst out from an ancient Roman stone toilet below, with a wooden sponge-stick lying nearby on the marble floor. High contrast, top third calm and empty for later title. The character is a simple stick figure: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without fingers, wearing a small red scarf tied around neck. No text, letters, numbers, labels, signs, captions, logos or watermarks."
-  },
-  {
-    id: "cover-b",
-    stem: "TEMP_COVER_B",
-    prompt: "Hand-drawn 2D editorial cartoon illustration in 9:16 vertical portrait format. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors. YouTube thumbnail cover: A shocked stick figure wearing a red scarf recoils in disgust while holding up a dripping sea sponge tied to a wooden stick, with an ancient crowded Roman communal latrine visible in the background. High contrast, top third clear for later title. The character is a simple stick figure: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without fingers, wearing a small red scarf tied around neck. No text, letters, numbers, labels, signs, captions, logos or watermarks."
-  },
-  {
-    id: "cover-c",
-    stem: "TEMP_COVER_C",
-    prompt: "Hand-drawn 2D editorial cartoon illustration in 9:16 vertical portrait format. Confident dark charcoal ink outlines with a slightly irregular hand-inked feel, clean flat color fills, soft selective shading and warm natural colors. YouTube thumbnail cover: A wide-eyed stick figure sitting uncomfortably on an ancient marble latrine bench tightly sandwiched between other Romans, pointing downward in shock at a giant sewer rat emerging from the toilet hole. High contrast, top third calm for later title. The character is a simple stick figure: round white head, two black dot eyes, expressive eyebrows, small simple mouth, thin black stick arms and legs, simple round hand ends without fingers, wearing a small red scarf tied around neck. No text, letters, numbers, labels, signs, captions, logos or watermarks."
+function parseArgs(argv) {
+  const args = {};
+  for (let i = 0; i < argv.length; i += 1) {
+    if (argv[i].startsWith("--")) {
+      const key = argv[i].slice(2);
+      const next = argv[i + 1];
+      if (next && !next.startsWith("--")) {
+        args[key] = next;
+        i += 1;
+      } else {
+        args[key] = true;
+      }
+    }
   }
-];
+  return args;
+}
+
+const args = parseArgs(process.argv.slice(2));
+if (!args.dir) {
+  console.error("Nutzung: node scripts/generate_covers.mjs --dir <projekt-ordner> [--url <flow-url>] [--ref <pfad-oder-asset>] [--aspect 9:16|16:9]");
+  process.exit(1);
+}
+
+const projectRoot = resolve(args.dir);
+const metaPath = join(projectRoot, "99-technik", "video.json");
+const meta = existsSync(metaPath) ? JSON.parse(readFileSync(metaPath, "utf8")) : {};
+const aspectRatio = String(args.aspect || meta.aspectRatio || "16:9");
+const promptsDir = join(projectRoot, "00-bildprompts", "prompts");
+const outDir = join(projectRoot, "00-bildprompts", "cover-candidates");
+const defaultCharSheet = join(projectRoot, "00-bildprompts", "hauptfigur.png");
+const refImage = args.ref || (existsSync(defaultCharSheet) ? defaultCharSheet : null);
+
+mkdirSync(outDir, { recursive: true });
+
+const coverNames = ["COVER_A", "COVER_B", "COVER_C"];
+const covers = coverNames
+  .map((name, idx) => {
+    const file = join(promptsDir, `${name}.txt`);
+    if (!existsSync(file)) return null;
+    const raw = readFileSync(file, "utf8")
+      .split(/\r?\n/)
+      .filter((line) => !line.startsWith("#") && line.trim().length > 0)
+      .join(" ")
+      .trim();
+    return {
+      id: `cover-${String.fromCharCode(97 + idx)}`,
+      stem: `TEMP_${name}`,
+      prompt: raw
+    };
+  })
+  .filter(Boolean);
+
+if (covers.length === 0) {
+  console.error(`Keine Cover-Prompts (COVER_A/B/C.txt) gefunden in: ${promptsDir}`);
+  process.exit(1);
+}
+
+async function ensureProjectOpen() {
+  if (!args.url) return;
+  const state = await getFlowState();
+  if (!state.inProject || !state.url.includes("/project/")) {
+    const page = await getFlowPage();
+    await page.goto(args.url, { waitUntil: "domcontentloaded" });
+    await page.waitForTimeout(3000);
+  }
+}
 
 async function main() {
-  console.log("Generating 3 Cover Candidates in Google Flow (9:16)...");
+  console.log(`Generating ${covers.length} Cover Candidates (${aspectRatio}) in ${outDir}...`);
   for (const c of covers) {
     console.log(`\n--- Starting ${c.stem} (${c.id}) ---`);
+    await ensureProjectOpen();
     const job = {
       id: c.id,
       status: "queued",
@@ -34,8 +82,8 @@ async function main() {
         prompt: c.prompt,
         type: "image",
         max_credits: 25,
-        aspect_ratio: "9:16",
-        reference_images: [characterSheet],
+        aspect_ratio: aspectRatio,
+        reference_images: refImage ? [refImage] : [],
         output_dir: outDir,
         file_stem: c.stem
       },
@@ -51,7 +99,7 @@ async function main() {
   }
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error("Fatal:", err);
   process.exit(1);
 });

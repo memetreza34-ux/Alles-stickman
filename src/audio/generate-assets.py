@@ -274,6 +274,151 @@ def generate_navigation_bgm(total_seconds=367.0):
     
     return np.column_stack([left, right])
 
+def master_bgm(left, right, fade_in_sec=1.5, fade_out_sec=2.5):
+    sos_hp = signal.butter(2, 45, btype='highpass', fs=SAMPLE_RATE, output='sos')
+    left = signal.sosfilt(sos_hp, left)
+    right = signal.sosfilt(sos_hp, right)
+    sos_notch = signal.butter(1, [1200, 3200], btype='bandstop', fs=SAMPLE_RATE, output='sos')
+    left = 0.72 * signal.sosfilt(sos_notch, left) + 0.28 * left
+    right = 0.72 * signal.sosfilt(sos_notch, right) + 0.28 * right
+    fi = min(len(left), int(fade_in_sec * SAMPLE_RATE))
+    fo = min(len(left), int(fade_out_sec * SAMPLE_RATE))
+    left[:fi] *= np.linspace(0, 1, fi)
+    right[:fi] *= np.linspace(0, 1, fi)
+    left[-fo:] *= np.linspace(1, 0, fo)
+    right[-fo:] *= np.linspace(1, 0, fo)
+    return np.column_stack([left, right])
+
+def generate_pop_highlight():
+    duration = 0.22
+    t = np.linspace(0, duration, int(SAMPLE_RATE * duration), endpoint=False)
+    freq = 320.0 * np.exp(t * 9.0)
+    phase = 2 * np.pi * np.cumsum(freq) / SAMPLE_RATE
+    env = np.exp(-t * 28.0) * (1 - np.exp(-t * 240.0))
+    sig = np.sin(phase) * env + 0.25 * np.sin(2 * phase) * np.exp(-t * 40.0)
+    return np.column_stack([sig, np.roll(sig, 4)])
+
+def generate_whoosh_fast():
+    duration = 0.45
+    t = np.linspace(0, duration, int(SAMPLE_RATE * duration), endpoint=False)
+    noise = np.random.randn(len(t))
+    env = np.sin(np.pi * (t / duration)) ** 1.6
+    sos = signal.butter(2, [350, 2600], btype='bandpass', fs=SAMPLE_RATE, output='sos')
+    filtered = signal.sosfilt(sos, noise) * env
+    return np.column_stack([filtered, np.roll(filtered, 12)])
+
+def generate_boom_impact():
+    duration = 1.2
+    t = np.linspace(0, duration, int(SAMPLE_RATE * duration), endpoint=False)
+    freq = 110.0 * np.exp(-t * 4.5) + 36.0
+    phase = 2 * np.pi * np.cumsum(freq) / SAMPLE_RATE
+    sub_env = np.exp(-t * 3.8) * (1 - np.exp(-t * 120.0))
+    punch_noise = signal.sosfilt(signal.butter(2, [120, 900], btype='bandpass', fs=SAMPLE_RATE, output='sos'), np.random.randn(len(t))) * np.exp(-t * 14.0)
+    sig = np.sin(phase) * sub_env * 0.9 + punch_noise * 0.45
+    return np.column_stack([sig, np.roll(sig, 6)])
+
+def generate_bell_reveal():
+    duration = 1.4
+    t = np.linspace(0, duration, int(SAMPLE_RATE * duration), endpoint=False)
+    freqs = [880.0, 1318.5, 1760.0]
+    weights = [0.55, 0.30, 0.15]
+    sig = sum(w * np.sin(2 * np.pi * f * t) * np.exp(-t * (2.6 + i * 0.9)) for i, (f, w) in enumerate(zip(freqs, weights)))
+    sig *= (1 - np.exp(-t * 160.0))
+    return np.column_stack([sig, np.roll(sig, 8)])
+
+def generate_tick_tension():
+    duration = 0.16
+    t = np.linspace(0, duration, int(SAMPLE_RATE * duration), endpoint=False)
+    env = np.exp(-t * 75.0) * (1 - np.exp(-t * 400.0))
+    sig = (np.sin(2 * np.pi * 1650.0 * t) * 0.7 + np.random.randn(len(t)) * 0.25) * env
+    sos = signal.butter(2, [900, 4200], btype='bandpass', fs=SAMPLE_RATE, output='sos')
+    filtered = signal.sosfilt(sos, sig)
+    return np.column_stack([filtered, np.roll(filtered, 3)])
+
+def generate_history_mystery_bgm(duration=95.0):
+    np.random.seed(42)
+    t = np.linspace(0, duration, int(SAMPLE_RATE * duration), endpoint=False)
+    left = np.zeros_like(t)
+    right = np.zeros_like(t)
+    # Warm D-minor / Dorian progression: Dm - Bb - Gm - A
+    chords = [
+        [146.83, 220.00, 261.63, 349.23],
+        [116.54, 174.61, 233.08, 293.66],
+        [98.00, 146.83, 196.00, 233.08],
+        [110.00, 164.81, 220.00, 277.18],
+    ]
+    beat = 0.55
+    step = 0
+    cur = 0.0
+    while cur < duration - 1.0:
+        chord = chords[(step // 8) % len(chords)]
+        # Soft warm pad root every bar
+        if step % 8 == 0:
+            bar_dur = min(4.2, duration - cur)
+            n = int(bar_dur * SAMPLE_RATE)
+            bt = np.linspace(0, bar_dur, n, endpoint=False)
+            pad_env = np.sin(np.pi * bt / bar_dur) ** 0.8 * 0.09
+            pad = np.sin(2 * np.pi * chord[0] * bt) * pad_env
+            s0 = int(cur * SAMPLE_RATE)
+            left[s0:s0 + n] += pad
+            right[s0:s0 + n] += pad
+        # Gentle pizzicato pulse on each beat
+        note_f = chord[step % len(chord)]
+        nd = min(0.5, duration - cur)
+        ns = int(nd * SAMPLE_RATE)
+        nt = np.linspace(0, nd, ns, endpoint=False)
+        env = np.exp(-nt * 6.5) * (1 - np.exp(-nt * 90.0)) * 0.14
+        pluck = np.sin(2 * np.pi * note_f * nt) + 0.3 * np.sin(4 * np.pi * note_f * nt) * np.exp(-nt * 9.0)
+        pan = 0.5 + 0.25 * np.sin(step * 0.9)
+        s0 = int(cur * SAMPLE_RATE)
+        left[s0:s0 + ns] += pluck * env * (1 - pan) * 1.8
+        right[s0:s0 + ns] += pluck * env * pan * 1.8
+        step += 1
+        cur += beat
+    return master_bgm(left, right, 1.5, 2.5)
+
+def generate_short_energetic_bgm(duration=95.0):
+    np.random.seed(99)
+    t = np.linspace(0, duration, int(SAMPLE_RATE * duration), endpoint=False)
+    left = np.zeros_like(t)
+    right = np.zeros_like(t)
+    # Crisp rhythmic pulse in C minor: Cm - Ab - Eb - Bb
+    bass_notes = [65.41, 103.83, 77.78, 116.54]
+    arp_notes = [
+        [261.63, 311.13, 392.00, 523.25],
+        [207.65, 261.63, 311.13, 415.30],
+        [155.56, 233.08, 311.13, 392.00],
+        [233.08, 293.66, 349.23, 466.16],
+    ]
+    sixteenth = 0.22
+    step = 0
+    cur = 0.0
+    while cur < duration - 0.5:
+        bar = (step // 8) % 4
+        if step % 2 == 0:
+            bf = bass_notes[bar]
+            bd = min(0.32, duration - cur)
+            bn = int(bd * SAMPLE_RATE)
+            bt = np.linspace(0, bd, bn, endpoint=False)
+            benv = np.exp(-bt * 8.0) * (1 - np.exp(-bt * 120.0)) * 0.16
+            bsig = np.sin(2 * np.pi * bf * bt) * benv
+            s0 = int(cur * SAMPLE_RATE)
+            left[s0:s0 + bn] += bsig
+            right[s0:s0 + bn] += bsig
+        af = arp_notes[bar][step % 4]
+        ad = min(0.2, duration - cur)
+        an = int(ad * SAMPLE_RATE)
+        at = np.linspace(0, ad, an, endpoint=False)
+        aenv = np.exp(-at * 11.0) * (1 - np.exp(-at * 140.0)) * 0.11
+        asig = np.sin(2 * np.pi * af * at) * aenv
+        pan = 0.5 + 0.28 * np.cos(step * 1.1)
+        s0 = int(cur * SAMPLE_RATE)
+        left[s0:s0 + an] += asig * (1 - pan) * 1.8
+        right[s0:s0 + an] += asig * pan * 1.8
+        step += 1
+        cur += sixteenth
+    return master_bgm(left, right, 0.8, 2.0)
+
 if __name__ == '__main__':
     print("Generating Sound Effects...")
     save_wav("channel/audio/sfx/celestial-chime.wav", generate_celestial_chime())
@@ -281,8 +426,14 @@ if __name__ == '__main__':
     save_wav("channel/audio/sfx/ocean-waves.wav", generate_ocean_waves())
     save_wav("channel/audio/sfx/sandglass-trickle.wav", generate_sandglass_trickle())
     save_wav("channel/audio/sfx/whoosh-soft.wav", generate_whoosh_soft())
-    
-    print("\nGenerating Navigation Background Music Track (367s)...")
-    bgm = generate_navigation_bgm(367.0)
-    save_wav("channel/audio/music/navigation-acoustic-bgm.wav", bgm)
+    save_wav("channel/audio/sfx/pop-highlight.wav", generate_pop_highlight())
+    save_wav("channel/audio/sfx/whoosh-fast.wav", generate_whoosh_fast())
+    save_wav("channel/audio/sfx/boom-impact.wav", generate_boom_impact())
+    save_wav("channel/audio/sfx/bell-reveal.wav", generate_bell_reveal())
+    save_wav("channel/audio/sfx/tick-tension.wav", generate_tick_tension())
+
+    print("\nGenerating Background Music Tracks...")
+    save_wav("channel/audio/music/navigation-acoustic-bgm.wav", generate_navigation_bgm(367.0))
+    save_wav("channel/audio/music/history-mystery-bgm.wav", generate_history_mystery_bgm(95.0))
+    save_wav("channel/audio/music/short-energetic-bgm.wav", generate_short_energetic_bgm(95.0))
     print("All audio assets successfully synthesized!")

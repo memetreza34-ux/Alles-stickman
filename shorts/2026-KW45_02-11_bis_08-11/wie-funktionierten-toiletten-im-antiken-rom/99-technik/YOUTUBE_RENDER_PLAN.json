@@ -1,7 +1,59 @@
 {
   "schemaVersion": 1,
   "motionPolicy": "gentle-default",
-  "backgroundMusic": false,
+  "backgroundMusic": {
+    "file": "channel/audio/music/history-mystery-bgm.wav",
+    "volume": 0.08
+  },
   "motionOverrides": [],
-  "soundEffects": []
+  "soundEffects": [
+    {
+      "imageNumber": 3,
+      "file": "channel/audio/sfx/whoosh-fast.wav",
+      "volume": 0.16,
+      "durationSeconds": 0.45
+    },
+    {
+      "imageNumber": 7,
+      "file": "channel/audio/sfx/pop-highlight.wav",
+      "volume": 0.18,
+      "durationSeconds": 0.22
+    },
+    {
+      "imageNumber": 11,
+      "file": "channel/audio/sfx/bell-reveal.wav",
+      "volume": 0.14,
+      "durationSeconds": 1.4
+    },
+    {
+      "imageNumber": 15,
+      "file": "channel/audio/sfx/tick-tension.wav",
+      "volume": 0.2,
+      "durationSeconds": 0.16
+    },
+    {
+      "imageNumber": 19,
+      "file": "channel/audio/sfx/pop-highlight.wav",
+      "volume": 0.18,
+      "durationSeconds": 0.22
+    },
+    {
+      "imageNumber": 23,
+      "file": "channel/audio/sfx/whoosh-fast.wav",
+      "volume": 0.16,
+      "durationSeconds": 0.45
+    },
+    {
+      "imageNumber": 30,
+      "file": "channel/audio/sfx/boom-impact.wav",
+      "volume": 0.24,
+      "durationSeconds": 1.2
+    },
+    {
+      "imageNumber": 35,
+      "file": "channel/audio/sfx/whoosh-soft.wav",
+      "volume": 0.14,
+      "durationSeconds": 0.8
+    }
+  ]
 }

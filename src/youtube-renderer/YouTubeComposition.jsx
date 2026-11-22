@@ -3,11 +3,20 @@ import { AbsoluteFill, Audio, Img, Sequence, interpolate, spring, staticFile, us
 
 const FONT = '"Arial Black", "Helvetica Neue", Arial, sans-serif';
 
-function Shot({ image, durationInFrames }) {
+function Shot({ image, durationInFrames, isVertical }) {
   const frame = useCurrentFrame();
   const progress = durationInFrames <= 1 ? 0 : frame / (durationInFrames - 1);
   const motion = image.motion ?? {};
-  const scale = interpolate(progress, [0, 1], [Number(motion.scaleFrom ?? 1.01), Number(motion.scaleTo ?? 1.035)], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const hasExplicitScale = motion.scaleFrom != null || motion.scaleTo != null;
+  const zoomIn = Number(image.imageNumber ?? 1) % 2 === 1;
+  const defaultScaleFrom = isVertical ? (zoomIn ? 1.01 : 1.06) : 1.01;
+  const defaultScaleTo = isVertical ? (zoomIn ? 1.06 : 1.01) : 1.035;
+  const scale = interpolate(
+    progress,
+    [0, 1],
+    [Number(hasExplicitScale ? (motion.scaleFrom ?? 1.01) : defaultScaleFrom), Number(hasExplicitScale ? (motion.scaleTo ?? 1.035) : defaultScaleTo)],
+    { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
+  );
   const x = interpolate(progress, [0, 1], [Number(motion.xFrom ?? 0), Number(motion.xTo ?? 0)], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   const y = interpolate(progress, [0, 1], [Number(motion.yFrom ?? 0), Number(motion.yTo ?? 0)], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
@@ -28,7 +37,7 @@ function Shot({ image, durationInFrames }) {
 }
 
 // Text kommt nie aus dem Bildmodell, sondern exakt aus BILD_AUDIO_ZUORDNUNG.json (overlay).
-function Overlay({ overlay }) {
+function Overlay({ overlay, isVertical }) {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const delay = Math.round(Number(overlay.delaySeconds ?? 0) * fps);
@@ -40,7 +49,7 @@ function Overlay({ overlay }) {
   if (overlay.style === 'card') {
     return (
       <AbsoluteFill style={{ backgroundColor: '#FBF7EE', justifyContent: 'center', alignItems: 'center', opacity: Math.min(1, pop * 1.5) }}>
-        <div style={{ fontFamily: FONT, fontSize: 150, color: '#1F1E1C', textAlign: 'center', padding: '0 120px', lineHeight: 1.1, transform: `scale(${0.9 + 0.1 * pop})` }}>
+        <div style={{ fontFamily: FONT, fontSize: isVertical ? 96 : 150, color: '#1F1E1C', textAlign: 'center', padding: isVertical ? '0 72px' : '0 120px', lineHeight: 1.1, transform: `scale(${0.9 + 0.1 * pop})` }}>
           {overlay.text}
         </div>
       </AbsoluteFill>
@@ -49,16 +58,16 @@ function Overlay({ overlay }) {
 
   const label = overlay.style === 'label';
   return (
-    <AbsoluteFill style={{ justifyContent: justify, alignItems: 'center', padding: '70px 80px' }}>
+    <AbsoluteFill style={{ justifyContent: justify, alignItems: 'center', padding: isVertical ? '120px 64px' : '70px 80px' }}>
       <div
         style={{
           fontFamily: FONT,
-          fontSize: label ? 68 : 140,
+          fontSize: label ? (isVertical ? 52 : 68) : (isVertical ? 92 : 140),
           color: label ? '#FFFFFF' : '#FFD400',
           backgroundColor: label ? 'rgba(20, 20, 20, 0.82)' : 'transparent',
           borderRadius: label ? 18 : 0,
           padding: label ? '14px 34px' : 0,
-          WebkitTextStroke: label ? undefined : '10px #000',
+          WebkitTextStroke: label ? undefined : (isVertical ? '7px #000' : '10px #000'),
           paintOrder: 'stroke fill',
           textAlign: 'center',
           lineHeight: 1.05,
@@ -72,6 +81,8 @@ function Overlay({ overlay }) {
 }
 
 export function YouTubeComposition({ plan }) {
+  const { width, height } = useVideoConfig();
+  const isVertical = height > width;
   const fps = Number(plan.fps ?? 30);
   const totalFrames = Math.max(1, Math.ceil(Number(plan.durationSeconds ?? 1) * fps));
 
@@ -91,8 +102,8 @@ export function YouTubeComposition({ plan }) {
         const durationInFrames = end - from;
         return (
           <Sequence key={image.imageNumber} from={from} durationInFrames={durationInFrames} premountFor={fps}>
-            <Shot image={image} durationInFrames={durationInFrames} />
-            {image.overlay?.text ? <Overlay overlay={image.overlay} /> : null}
+            <Shot image={image} durationInFrames={durationInFrames} isVertical={isVertical} />
+            {image.overlay?.text ? <Overlay overlay={image.overlay} isVertical={isVertical} /> : null}
           </Sequence>
         );
       })}

@@ -1,7 +1,7 @@
 {
   "plan": {
     "schemaVersion": 1,
-    "createdAt": "2026-11-21T19:37:00.798Z",
+    "createdAt": "2026-11-22T05:16:21.293Z",
     "fps": 30,
     "width": 1080,
     "height": 1920,
@@ -779,8 +779,65 @@
         "overlay": null
       }
     ],
-    "sounds": [],
-    "backgroundMusicFile": null,
+    "sounds": [
+      {
+        "imageNumber": 3,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/sfx/01-whoosh-fast.wav",
+        "volume": 0.16,
+        "durationSeconds": 0.45,
+        "fromSeconds": 2.36
+      },
+      {
+        "imageNumber": 7,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/sfx/02-pop-highlight.wav",
+        "volume": 0.18,
+        "durationSeconds": 0.22,
+        "fromSeconds": 8
+      },
+      {
+        "imageNumber": 11,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/sfx/03-bell-reveal.wav",
+        "volume": 0.14,
+        "durationSeconds": 1.4,
+        "fromSeconds": 14.8
+      },
+      {
+        "imageNumber": 15,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/sfx/04-tick-tension.wav",
+        "volume": 0.2,
+        "durationSeconds": 0.16,
+        "fromSeconds": 21.18
+      },
+      {
+        "imageNumber": 19,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/sfx/05-pop-highlight.wav",
+        "volume": 0.18,
+        "durationSeconds": 0.22,
+        "fromSeconds": 30.4
+      },
+      {
+        "imageNumber": 23,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/sfx/06-whoosh-fast.wav",
+        "volume": 0.16,
+        "durationSeconds": 0.45,
+        "fromSeconds": 36.26
+      },
+      {
+        "imageNumber": 30,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/sfx/07-boom-impact.wav",
+        "volume": 0.24,
+        "durationSeconds": 1.2,
+        "fromSeconds": 50.04
+      },
+      {
+        "imageNumber": 35,
+        "file": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/sfx/08-whoosh-soft.wav",
+        "volume": 0.14,
+        "durationSeconds": 0.8,
+        "fromSeconds": 59.16
+      }
+    ],
+    "backgroundMusicFile": "__render/short_2026-KW45_02-11_bis_08-11_wie-funktionierten-toiletten-im-antiken-rom/audio/bgm-history-mystery-bgm.wav",
     "backgroundMusicVolume": 0.08
   }
 }
